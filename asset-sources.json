@@ -1,0 +1,38 @@
+{
+  "purpose": "Private proposal demo; confirm image usage rights before commercial launch.",
+  "products": [
+    {
+      "asset": "dist/assets/khamrah.jpg",
+      "source": "https://lattafa.com/product/khamrah/"
+    },
+    {
+      "asset": "dist/assets/asad.jpg",
+      "source": "https://lattafa.com/product/asad/"
+    },
+    {
+      "asset": "dist/assets/yara.jpg",
+      "source": "https://lattafa.com/product/yara/"
+    },
+    {
+      "asset": "dist/assets/oud-for-glory.jpg",
+      "source": "https://lattafa.com/product/badee-al-oud-oud-for-glory/"
+    },
+    {
+      "asset": "dist/assets/qahwa.jpg",
+      "source": "https://lattafa.com/product/khamrah-qahwa/"
+    },
+    {
+      "asset": "dist/assets/qaed.jpg",
+      "source": "https://lattafa.com/product/qaed-al-fursan/"
+    },
+    {
+      "asset": "dist/assets/hawas.jpg",
+      "source": "https://rasasistore.com/products/hawas-for-him"
+    }
+  ],
+  "hero": {
+    "asset": "dist/assets/hero.jpg",
+    "source": "Built-in image generation; unbranded illustrative composition; full prompt in README.md."
+  },
+  "notes": "Oud for Glory note lists conflict on the brand page. Its note pyramid is explicitly pending verification."
+}

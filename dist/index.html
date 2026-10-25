@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#25231f"><meta name="description" content="Discover the fragrance edit at Drip & Dusk. Browse full bottles and decants, save your favourites, and build a WhatsApp enquiry. Private concept demo with sample prices and stock.">
+<title>Drip & Dusk — Find your signature.</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="preload" as="image" href="assets/hero.jpg"><link rel="stylesheet" href="style.css"><script type="module" src="app.mjs"></script>
+</head>
+<body>
+<a class="skip" href="#collection">Skip to collection</a>
+<div class="demo-banner"><span class="demo-dot"></span> THE STOREFRONT CONCEPT <span class="banner-divider">/</span> Sample prices, offers & stock <a href="#admin">Explore owner studio ↗</a></div>
+<header class="header">
+<a class="wordmark" href="#home" aria-label="Drip and Dusk home">DRIP <i>&</i> DUSK<span>THE FRAGRANCE EDIT</span></a>
+<nav aria-label="Main navigation"><a href="#collection">The collection</a><a href="#deals">Current deals</a><a href="#story">Our story</a></nav>
+<div class="header-actions"><a href="#collection" class="icon-btn" aria-label="Search collection" data-focus-search><svg><use href="#search-icon"/></svg></a><button class="icon-btn" data-action="show-favourites" aria-label="Saved favourites"><svg><use href="#heart-icon"/></svg><span id="saved-count" class="mini-count"></span></button><button class="bag-button" data-action="basket" aria-label="Open enquiry basket"><svg><use href="#bag-icon"/></svg><span class="bag-label">Enquiry bag</span><span id="bag-count">0</span></button></div>
+</header>
+<main id="storefront">
+<section class="hero" id="home" aria-labelledby="hero-title">
+<img src="assets/hero.jpg" class="hero-image" alt="An illustrative still life of amber and smoked glass perfume bottles on dark stone" fetchpriority="high" width="1536" height="1024">
+<div class="hero-shade"></div><div class="hero-content"><p class="eyebrow"><span></span> A SCENT FOR EVERY SIDE OF YOU</p><h1 id="hero-title">Find your<br><em>signature.</em></h1><p>From the first impression to the lasting memory.<br class="desktop"> Discover fragrances worth making your own.</p><div class="hero-buttons"><a href="#collection" class="btn light">Browse collection <span>↗</span></a><a href="#deals" class="hero-deal">View deals <span>→</span></a></div></div>
+<div class="hero-bottom"><span>FULL BOTTLES. SMALL DISCOVERIES. YOUR NEXT FAVOURITE.</span><span class="hero-credit">Illustrative composition <button class="motion-btn" data-action="motion" aria-label="Pause ambient motion">Ⅱ</button></span></div>
+<div class="hero-index" aria-hidden="true"><b>01</b><span> / THE SIGNATURE EDIT</span></div>
+</section>
+<div class="benefit-strip"><span><svg><use href="#bottle-icon"/></svg> Multiple brands. One considered collection.</span><span><svg><use href="#spark-icon"/></svg> Full bottles & discovery decants</span><span><svg><use href="#chat-icon"/></svg> A conversation before you commit</span></div>
+<section class="section deals-section" id="deals"><div class="section-heading"><div><p class="eyebrow">GOOD FINDS, BETTER PRICES</p><h2>The current edit<span class="small-dot">.</span></h2></div><a href="#collection" class="text-link">Explore the collection <span>↗</span></a></div><div id="deals-grid" class="product-grid deals-grid"></div><p class="fineprint">A selection of sample offers. Reference prices and discounts are illustrative, not verified retail prices.</p></section>
+<section class="section collection-section" id="collection"><div class="section-heading"><div><p class="eyebrow">DISCOVER SOMETHING THAT FEELS LIKE YOU</p><h2>The collection<span class="small-dot">.</span></h2></div><span class="collection-note">A little discovery goes a long way.</span></div>
+<div class="catalogue-toolbar"><label class="search-box"><svg><use href="#search-icon"/></svg><input id="catalogue-search" type="search" placeholder="Search fragrances, brands, notes…" aria-label="Search fragrances, brands or notes"><kbd>/</kbd></label><button id="filter-toggle" class="filter-toggle" aria-expanded="true" aria-controls="filter-panel"><svg><use href="#filter-icon"/></svg> Filters <span id="filter-count"></span></button></div>
+<div class="filters" id="filter-panel"><label>Brand<select id="brand-filter"><option value="">All brands</option></select></label><label>Budget<select id="budget-filter"><option value="">Any budget</option><option value="500">Under ₹500</option><option value="1500">Under ₹1,500</option><option value="3000">Under ₹3,000</option><option value="over">₹3,000 & above</option></select></label><label>Availability<select id="stock-filter"><option value="">All availability</option><option value="in">In stock</option><option value="out">Sold out</option></select></label><label>Sort by<select id="sort-filter"><option value="curated">Our edit</option><option value="price-asc">Price: low to high</option><option value="price-desc">Price: high to low</option><option value="name">Name: A–Z</option></select></label></div>
+<div class="catalogue-subbar"><div class="tabs" role="group" aria-label="Product format"><button class="active" data-kind="all">All fragrances</button><button data-kind="Full bottle">Full bottles</button><button data-kind="Decant">Decants</button><button data-kind="saved">Saved <svg><use href="#heart-icon"/></svg></button></div><span id="results-count" aria-live="polite"></span></div><div id="catalogue-grid" class="product-grid"></div><div class="catalogue-foot"><p>All prices, quantities and bottle conditions shown are sample demo data.</p><button class="text-link" data-action="clear-filters">Clear filters ↗</button></div></section>
+<section id="featured" class="featured-section"></section>
+<section class="section story-section" id="story"><div class="story-heading"><p class="eyebrow">A NOTE FROM DRIP & DUSK</p><h2>Good fragrance.<br><em>Great conversation.</em></h2><p id="about-text"></p><span class="approval-label">INTRODUCTORY COPY · OWNER APPROVAL PENDING</span></div><div class="ordering"><p class="eyebrow">FROM DISCOVERY TO YOUR DOOR</p><div class="order-step"><span>01</span><div><h3>Make it your own.</h3><p>Explore the collection. Choose your exact bottle or decant size and add it to your enquiry bag.</p></div></div><div class="order-step"><span>02</span><div><h3>Let’s talk fragrance.</h3><p id="ordering-text"></p></div></div><div class="order-step"><span>03</span><div><h3>The details, confirmed.</h3><p id="shipping-text"></p></div></div><p class="fineprint" id="payment-text"></p></div></section>
+<section class="section info-section"><div><p class="eyebrow">A LITTLE CLARITY</p><h2>Before you ask.</h2><div id="faq-list" class="faq-list"></div></div><div class="reviews"><svg><use href="#quote-icon"/></svg><p class="eyebrow">THE WORD FROM OUR COMMUNITY</p><h3>Real people.<br>Real impressions.</h3><p id="review-text"></p><span class="approval-label">OWNER-APPROVED REVIEWS WILL APPEAR HERE</span></div></section>
+<section class="contact-section" id="contact"><div><p class="eyebrow">YOUR NEXT SIGNATURE STARTS HERE</p><h2>Something catch your senses?</h2><p>Build your shortlist. We’ll take the conversation from there.</p></div><button class="btn light" data-action="contact">Let’s talk fragrance <svg><use href="#chat-icon"/></svg></button></section>
+<footer><div><a class="wordmark" href="#home">DRIP <i>&</i> DUSK<span>THE FRAGRANCE EDIT</span></a><p>Different brands. Distinct personalities.<br>A collection by Drip & Dusk.</p></div><div class="footer-links"><a href="#collection">The collection</a><a href="#story">How to order</a><a href="#contact">Get in touch</a><a href="#admin">Owner studio ↗</a></div><div class="footer-bottom"><span>© <span id="year"></span> Drip & Dusk · A concept for Deepak Hotwani</span><span>Private demo · No checkout or confirmed orders</span></div></footer>
+</main>
+<main id="admin" hidden></main>
+<dialog id="modal" aria-labelledby="modal-title"><div id="modal-content"></div></dialog>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<svg class="svg-defs" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+<symbol id="search-icon" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></symbol>
+<symbol id="heart-icon" viewBox="0 0 24 24"><path d="M20.4 4.6a5.5 5.5 0 0 0-7.8 0l-.6.7-.6-.7a5.5 5.5 0 0 0-7.8 7.8L12 21l8.4-8.6a5.5 5.5 0 0 0 0-7.8Z"/></symbol>
+<symbol id="bag-icon" viewBox="0 0 24 24"><path d="M5 7h14l1 14H4L5 7Z"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/></symbol>
+<symbol id="bottle-icon" viewBox="0 0 24 24"><path d="M8 3h8v4H8zM7 9h10a2 2 0 0 1 2 2v9H5v-9a2 2 0 0 1 2-2Z"/><path d="M9 13h6v4H9z"/></symbol>
+<symbol id="spark-icon" viewBox="0 0 24 24"><path d="m12 2 2.8 7.2L22 12l-7.2 2.8L12 22l-2.8-7.2L2 12l7.2-2.8L12 2Z"/></symbol>
+<symbol id="chat-icon" viewBox="0 0 24 24"><path d="M21 11.5a9 9 0 0 1-13.4 7.9L3 21l1.6-4.6A9 9 0 1 1 21 11.5Z"/><path d="M8 8c0 4 3 7 7 7l1-2-2-1-1 1-2-2 1-1-1-2H8Z"/></symbol>
+<symbol id="filter-icon" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/><circle cx="8" cy="6" r="2"/><circle cx="16" cy="12" r="2"/><circle cx="8" cy="18" r="2"/></symbol>
+<symbol id="quote-icon" viewBox="0 0 24 24"><path d="M10 5H5v7h5v7H3V9a6 6 0 0 1 7-4ZM22 5h-5v7h5v7h-7V9a6 6 0 0 1 7-4Z"/></symbol>
+<symbol id="plus-icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+<symbol id="close-icon" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+</defs></svg>
+</body></html>
