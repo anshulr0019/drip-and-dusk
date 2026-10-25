@@ -1,6 +1,6 @@
 import test from 'node:test';import assert from 'node:assert/strict';
 import {defaults,inStock,discount,validateProduct,saleProduct,basketSummary,enquiryMessage,filterProducts} from '../dist/core.mjs';
-const {products}=defaults(),p=products[0];
+const products=defaults().products.filter(p=>!p.instagramSource),p=products[0];
 test('all 14 seeded variants are valid and have exact, unique sizes/formats',()=>{assert.equal(products.length,14);assert.equal(new Set(products.map(p=>p.id)).size,14);for(const p of products)assert.equal(validateProduct(p),'');assert.equal(products.find(p=>p.id==='qaed-bottle').size,90)});
 test('sold-out, hidden and archived products are not available',()=>{for(const patch of [{quantity:0},{available:false},{hidden:true},{archived:true}])assert.equal(inStock({...p,...patch}),false)});
 test('discounts require a strictly greater, finite reference price',()=>{assert.equal(discount(p),18);for(const reference of [null,0,NaN,Infinity,p.price,p.price-1])assert.equal(discount({...p,reference}),null)});

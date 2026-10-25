@@ -80,3 +80,14 @@ Fragrance details include bottle and label views of the same source image (not a
 Owner Studio adds optional scent collection, family, concentration and occasion fields. Existing local edits and uploaded images are preserved. All admin limitations documented above still apply: authentication and shared storage were explicitly deferred by the owner in this update.
 
 `tests/curation.test.mjs` checks grouping, collection composition, live price thresholds, custom metadata and preservation of exact decant matches. Product photos remain the existing brand references; a consistent original photography shoot is still a business task.
+
+
+## Instagram catalogue expansion
+
+The 18 identified perfumes from the supplied Instagram grid are now added as individual full-bottle reference listings, alongside the original seven demo scents. The default catalogue contains 25 fragrances / 32 listings including the original decants. The Instagram edit filter isolates the 18 additions, which appear first in curated order.
+
+Names and images are sourced from the previously collected product references in `asset-sources.json`. Bottle size, selling price, inventory, condition, concentration and notes are not inferred from retailer images. These listings use enquiry-only mode with “Ask for price”, “Size to confirm” and “Availability to confirm”. Product-specific message previews ask the seller for the exact version and commercial details; they cannot be added to a priced basket or counted as available stock. Products identified only from boxes carry an explicit version-confirmation note.
+
+The owner can keep enquiry-only mode while editing a listing, or uncheck it after entering a valid size, price and stock. The migration adds these 18 listings once to returning browsers, preserves existing local edits and images, and does not resurrect subsequent deletions. A genuine reset restores the expanded defaults.
+
+`dist/instagram-products.mjs` contains the reference catalogue. The 18 photographs are resized to a maximum 900 px and encoded as JPEGs with a white transparency background; together they add approximately 0.8 MB. Original references remain untouched. `tests/instagram-catalogue.test.mjs` checks packaged assets, migration, price/availability filtering, product-specific enquiry text and the transition into stocked inventory.

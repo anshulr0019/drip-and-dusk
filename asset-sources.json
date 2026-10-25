@@ -40,5 +40,133 @@
     "poster": "dist/assets/hero-poster.jpg",
     "source": "User-supplied Gemini videos: d&d-v3.mp4, d&d-v2.mp4, d&d-v1.mp4. Originals read without modification.",
     "preparation": "Silent 23.21-second H.264 loop with 0.8-second crossfades, including the last-to-first transition; 1280x720 at 24 fps. The ghosted middle of the Noir clip is trimmed."
-  }
+  },
+  "instagram_catalogue": [
+    {
+      "asset": "dist/assets/instagram-rasasi-hawas-lava-gold.jpg",
+      "name": "Rasasi Hawas Lava Gold",
+      "source": "https://www.rasasiexclusive.com/products/rasasi-hawas-lava-gold",
+      "image": "https://www.rasasiexclusive.com/cdn/shop/files/HAWAS_lavagold_bottle.png?v=1776440223&width=1206",
+      "identification": "Matched to the bottle shown in the Instagram feed. Confirm the exact size and condition with the seller."
+    },
+    {
+      "asset": "dist/assets/instagram-mykonos-inception.jpg",
+      "name": "Mykonos Inception",
+      "source": "https://officialmykonos.com/products/mykonos-inception-extrait-de-parfum-50ml",
+      "image": "https://officialmykonos.com/cdn/shop/files/inception_100ml_sku.jpg?v=1778043194&width=1070",
+      "identification": "Matched to the bottle shown in the Instagram feed. Confirm the exact size and condition with the seller."
+    },
+    {
+      "asset": "dist/assets/instagram-riiffs-momento.jpg",
+      "name": "RiiFFS Momento",
+      "source": "https://www.hiris.ro/parfumuri-arabesti/riiffs/riiffs-momento-extract-de-parfum-unisex-100-ml",
+      "image": "https://c.cdnmp.net/276449694/p/l/4/riiffs-momento-extract-de-parfum-unisex-100-ml~94334.jpg",
+      "identification": "Identified from packaging in the Instagram feed. Confirm the exact bottle version with the seller."
+    },
+    {
+      "asset": "dist/assets/instagram-rasasi-hawas-la-mer.jpg",
+      "name": "Rasasi Hawas La Mer",
+      "source": "https://cdon.no/produkt/rasasi-hawas-for-him-la-mer-eau-de-parfum-100-ml-man-82b6d278dac75996/",
+      "image": "https://images.cdon.com/images/f_auto/t_600x600/cdon-prod/231aa650453a4dc8/0d7404aa9635/rasasi-hawas-for-him-la-mer-eau-de-parfum-100-ml-man",
+      "identification": "Matched to the bottle shown in the Instagram feed. Confirm the exact size and condition with the seller."
+    },
+    {
+      "asset": "dist/assets/instagram-arabiyat-prestige-aristo.jpg",
+      "name": "Arabiyat Prestige Aristo",
+      "source": "https://souqscent.com/collections/new-arrival/products/aristo",
+      "image": "https://souqscent.com/cdn/shop/files/ARABIYATPRESTIGEARISTO.SOUQSCENT_2_1200x1200.png?v=1773213651",
+      "identification": "Matched to the bottle shown in the Instagram feed. Confirm the exact size and condition with the seller."
+    },
+    {
+      "asset": "dist/assets/instagram-khadlaj-karus-gold-absolu.jpg",
+      "name": "Khadlaj Karus Gold Absolu",
+      "source": "https://khadlaj-perfumes.com/products/karus-gold-absolu-100-ml-edp-spray",
+      "image": "https://khadlaj-perfumes.com/cdn/shop/files/New_Project.png?v=1783662902",
+      "identification": "Matched to the bottle shown in the Instagram feed. Confirm the exact size and condition with the seller."
+    },
+    {
+      "asset": "dist/assets/instagram-rasasi-hawas-nautilus.jpg",
+      "name": "Rasasi Hawas Nautilus",
+      "source": "https://beautyhouse.com/products/rasasi-hawas-nautilus-eau-de-parfum-for-men",
+      "image": "https://beautyhouse.com/cdn/shop/files/02cnsya5dz.png?v=1784237414&width=2000",
+      "identification": "Matched to the bottle shown in the Instagram feed. Confirm the exact size and condition with the seller."
+    },
+    {
+      "asset": "dist/assets/instagram-armani-stronger-with-you-parfum.jpg",
+      "name": "Emporio Armani Stronger With You Parfum",
+      "source": "https://www.armani-beauty.at/dufte/herrenduft/stronger-with-you/emporio-armani-stronger-with-you-parfum/ww-00911-arm.html",
+      "image": "https://www.armani-beauty.at/dw/image/v2/AAQP_PRD/on/demandware.static/-/Sites-gac-master-catalog/default/dw929deebe/products/ww-00911-arm/3614274219579/3614274219579_emporio-armani-stronger-with-you-parfum_100ml_main.jpg",
+      "identification": "Matched to the bottle shown in the Instagram feed. Confirm the exact size and condition with the seller."
+    },
+    {
+      "asset": "dist/assets/instagram-assaf-glitch.jpg",
+      "name": "Assaf Glitch",
+      "source": "https://souqscent.com/products/assaf-glitch-150-ml",
+      "image": "https://souqscent.com/cdn/shop/files/ASSAFGLITCH.SOUQSCENT.jpg?v=1773301214&width=1946",
+      "identification": "Matched to the bottle shown in the Instagram feed. Confirm the exact size and condition with the seller."
+    },
+    {
+      "asset": "dist/assets/instagram-al-majed-oud-boisee.jpg",
+      "name": "Al Majed Oud Boisée",
+      "source": "https://mdparfums.com/products/al-majed-oud-boisee-edp-150ml",
+      "image": "https://mdparfums.com/cdn/shop/files/Boisee_150ml_AlMajedOud.png?v=1764588912&width=1445",
+      "identification": "Matched to the bottle shown in the Instagram feed. Confirm the exact size and condition with the seller."
+    },
+    {
+      "asset": "dist/assets/instagram-al-majed-oud-cuir.jpg",
+      "name": "Al Majed Oud Cuir",
+      "source": "https://souqscent.com/products/al-majed-oud-cuir-edp",
+      "image": "https://souqscent.com/cdn/shop/files/UntitledProject_11.jpg?v=1766831246",
+      "identification": "Matched to the bottle shown in the Instagram feed. Confirm the exact size and condition with the seller."
+    },
+    {
+      "asset": "dist/assets/instagram-al-majed-oud-noir.jpg",
+      "name": "Al Majed Oud Noir",
+      "source": "https://scentira.in/collections/al-majed-oud",
+      "image": "https://scentira.in/cdn/shop/files/al-majed-oud-noir-parfum-perfume-3772433.png?v=1782869535&width=1470",
+      "identification": "Matched to the bottle shown in the Instagram feed. Confirm the exact size and condition with the seller."
+    },
+    {
+      "asset": "dist/assets/instagram-rayhaan-elixir.jpg",
+      "name": "Rayhaan Elixir",
+      "source": "https://www.oudhperfumes.co.uk/product-page/rayhaan-elixir-1",
+      "image": "https://static.wixstatic.com/media/08744a_db9ac043d65f44d49cc7cabad8b7bd7d~mv2.jpg",
+      "identification": "Matched to the bottle shown in the Instagram feed. Confirm the exact size and condition with the seller."
+    },
+    {
+      "asset": "dist/assets/instagram-armaf-club-de-nuit-intense-overdose.jpg",
+      "name": "Armaf Club de Nuit Intense Overdose",
+      "source": "https://armaf.com/products/club-de-nuit-intense-overdose",
+      "image": "https://armaf.com/cdn/shop/files/CDN-Overdose-john-Abraham-Edition-front.jpg?v=1783017344&width=2048",
+      "identification": "Matched to the bottle shown in the Instagram feed. Confirm the exact size and condition with the seller."
+    },
+    {
+      "asset": "dist/assets/instagram-rasasi-hawas-malibu.jpg",
+      "name": "Rasasi Hawas Malibu",
+      "source": "https://belvish.com/products/rasasi-hawas-malibu-edp-for-him",
+      "image": "https://belvish.com/cdn/shop/files/malibu_1.jpg?v=1754403152&width=1066",
+      "identification": "Matched to the bottle shown in the Instagram feed. Confirm the exact size and condition with the seller."
+    },
+    {
+      "asset": "dist/assets/instagram-assaf-attacks.jpg",
+      "name": "Assaf Attacks",
+      "source": "https://oleumperfumes.com/products/assaf-attacks-eau-de-parfum-for-men-150ml",
+      "image": "https://oleumperfumes.com/cdn/shop/files/Assaf_Attacks_Eau_de_Parfum_for_Men_150ml.jpg?v=1770802782",
+      "identification": "Identified from packaging in the Instagram feed. Confirm the exact bottle version with the seller."
+    },
+    {
+      "asset": "dist/assets/instagram-rayhaan-nocturno-elixir.jpg",
+      "name": "Rayhaan Nocturno Elixir",
+      "source": "https://perfumemarket.eu/collections/arabian-perfumes",
+      "image": "https://perfumemarket.eu/cdn/shop/files/6297001571026.png?v=1778163563&width=1265",
+      "identification": "Identified from packaging in the Instagram feed. Confirm the exact bottle version with the seller."
+    },
+    {
+      "asset": "dist/assets/instagram-rasasi-hawas-viper.jpg",
+      "name": "Rasasi Hawas Viper",
+      "source": "https://rasasistore.com/pages/launches",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/1.1_Hawas_Viper.jpg?v=1762593169",
+      "identification": "Identified from packaging in the Instagram feed. Confirm the exact bottle version with the seller."
+    }
+  ]
 }

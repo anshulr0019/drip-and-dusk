@@ -1,17 +1,19 @@
+import {instagramProducts} from './instagram-products.mjs';
 export const KEY = 'drip-dusk-demo-v1';
 export const money = value => new Intl.NumberFormat('en-IN',{style:'currency',currency:'INR',maximumFractionDigits:0}).format(value);
-export const inStock = p => !!p && !p.hidden && !p.archived && p.available && p.quantity > 0;
+export const inStock = p => !!p && !p.enquiryOnly && Number.isFinite(p.price) && Number.isInteger(p.size) && p.size>0 && !p.hidden && !p.archived && p.available && p.quantity > 0;
 export const discount = p => Number.isFinite(p.reference) && p.reference > p.price ? Math.round((p.reference-p.price)/p.reference*100) : null;
 export const normalize = s => String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]/g,'');
 export const catalogue = products => products.filter(p=>!p.hidden&&!p.archived).sort((a,b)=>a.order-b.order);
 export function filterProducts(products, f, saved=[]) {
- let out=catalogue(products).filter(p=>(!f.query||normalize([p.brand,p.name,p.notes,p.description].join(' ')).includes(normalize(f.query)))&&(!f.brand||p.brand===f.brand)&&(!f.budget||(f.budget==='over'?p.price>=3000:p.price<Number(f.budget)))&&(!f.stock||(f.stock==='in'?inStock(p):!inStock(p)))&&(!f.collection||matchesCollection(p,f.collection))&&(!f.kind||f.kind==='all'||(f.kind==='saved'?saved.includes(p.id):p.format===f.kind)));
- if(f.sort==='price-asc')out.sort((a,b)=>a.price-b.price);if(f.sort==='price-desc')out.sort((a,b)=>b.price-a.price);if(f.sort==='name')out.sort((a,b)=>a.name.localeCompare(b.name));return out;
+ let out=catalogue(products).filter(p=>(!f.query||normalize([p.brand,p.name,p.notes,p.description].join(' ')).includes(normalize(f.query)))&&(!f.brand||p.brand===f.brand)&&(!f.budget||(Number.isFinite(p.price)&&(f.budget==='over'?p.price>=3000:p.price<Number(f.budget))))&&(!f.stock||(f.stock==='in'?inStock(p):f.stock==='ask'?p.enquiryOnly:!p.enquiryOnly&&!inStock(p)))&&(!f.collection||matchesCollection(p,f.collection))&&(!f.kind||f.kind==='all'||(f.kind==='saved'?saved.includes(p.id):p.format===f.kind)));
+ if(f.sort==='price-asc')out.sort((a,b)=>(a.price??Infinity)-(b.price??Infinity));if(f.sort==='price-desc')out.sort((a,b)=>a.price===null?b.price===null?0:1:b.price===null?-1:b.price-a.price);if(f.sort==='name')out.sort((a,b)=>a.name.localeCompare(b.name));return out;
 }
 export function validateProduct(p) {
  if(!p.name?.trim()||!p.brand?.trim()) return 'Brand and product name are required.';
- if(!Number.isInteger(p.size)||p.size<=0||p.size>2000)return 'Size must be a whole number from 1 to 2,000 ml.';
- if(!Number.isFinite(p.price)||p.price<1||p.price>1000000)return 'Enter a selling price between ₹1 and ₹10,00,000.';
+ if(!(p.enquiryOnly&&p.size===null)&&(!Number.isInteger(p.size)||p.size<=0||p.size>2000))return 'Size must be a whole number from 1 to 2,000 ml.';
+ if(!(p.enquiryOnly&&p.price===null)&&(!Number.isFinite(p.price)||p.price<1||p.price>1000000))return 'Enter a selling price between ₹1 and ₹10,00,000.';
+ if(p.enquiryOnly&&(p.available||p.quantity!==0||p.reference!==null))return 'Enquiry-only products must have unconfirmed availability, zero recorded stock and no reference price.';
  if(p.reference!==null&&(!Number.isFinite(p.reference)||p.reference<=p.price))return 'Reference price must be greater than the selling price, or left blank.';
  if(!Number.isInteger(p.quantity)||p.quantity<0||p.quantity>10000)return 'Quantity must be a whole number from 0 to 10,000.';
  if(p.available&&p.quantity===0)return 'Add stock or mark this product sold out.';
@@ -44,7 +46,8 @@ export const defaults = () => {
  ];
  const products=seeds.map((s,i)=>({id:s[0]+'-bottle',group:s[0],image:`assets/${s[0]}.jpg`,brand:s[1],name:s[2],size:s[3],price:s[4],reference:s[5],quantity:s[6],description:s[7],notes:s[8],source:s[9],deal:s[10],featured:s[11],format:'Full bottle',condition:'Sealed retail bottle (demo)',available:s[6]>0,order:i,featureOrder:i,hidden:false,archived:false}));
  seeds.forEach((s,i)=>products.push({...products[i],id:s[0]+'-10ml',size:10,format:'Decant',condition:'Seller-filled atomiser (demo)',price:[499,349,299,279,399,329,229][i],reference:null,quantity:i===5?0:12-i,available:i!==5,deal:false,featured:false,order:7+i}));
- return {version:1,products,settings:{whatsapp:'',instagram:'',about:'Drip & Dusk is a multi-brand fragrance retailer owned by Deepak Hotwani. Explore full bottles and smaller decants, compare your options, and talk directly with the seller before deciding.',ordering:'Send your shortlist through WhatsApp. Deepak confirms current availability and answers your questions before you decide.',shipping:'Shipping locations, charges and delivery estimates will be confirmed by the seller. Owner-approved shipping information is pending.',payment:'Payment methods, returns and cancellation terms are pending owner approval. No payment is collected on this demo.',faq:'Are these live prices?|No. Every price, offer, quantity and condition in this concept is sample data. Ask the seller for current details.\nWhat is a decant?|A smaller amount transferred into a separate atomiser. In this demo, the original bottle photo identifies the fragrance; it does not show the decant packaging.\nDoes my enquiry reserve stock?|No. Adding to the bag or opening WhatsApp does not reserve stock or confirm an order.\nHow do shipping and payment work?|The seller will confirm shipping charges, payment details and any applicable policies before you decide.',reviews:'Customer reviews have not been supplied. This space is reserved for genuine feedback shared with permission.'}};
+ products.push(...structuredClone(instagramProducts));
+ return {version:1,catalogueRevision:2,products,settings:{whatsapp:'',instagram:'',about:'Drip & Dusk is a multi-brand fragrance retailer owned by Deepak Hotwani. Explore full bottles and smaller decants, compare your options, and talk directly with the seller before deciding.',ordering:'Send your shortlist through WhatsApp. Deepak confirms current availability and answers your questions before you decide.',shipping:'Shipping locations, charges and delivery estimates will be confirmed by the seller. Owner-approved shipping information is pending.',payment:'Payment methods, returns and cancellation terms are pending owner approval. No payment is collected on this demo.',faq:'Are these live prices?|No. Every price, offer, quantity and condition in this concept is sample data. Ask the seller for current details.\nWhat is a decant?|A smaller amount transferred into a separate atomiser. In this demo, the original bottle photo identifies the fragrance; it does not show the decant packaging.\nDoes my enquiry reserve stock?|No. Adding to the bag or opening WhatsApp does not reserve stock or confirm an order.\nHow do shipping and payment work?|The seller will confirm shipping charges, payment details and any applicable policies before you decide.',reviews:'Customer reviews have not been supplied. This space is reserved for genuine feedback shared with permission.'}};
 };
 
 // Styling and occasion pairings are editorial suggestions, not performance claims.
@@ -65,7 +68,8 @@ export const edits = [
  {id:'under3000',name:'Under ₹3,000',line:'A considered place to begin.',number:'04',image:'yara'}
 ];
 export function matchesCollection(p,id){
- if(id==='under3000')return p.price<3000;
+ if(id==='instagram')return !!p.instagramSource;
+ if(id==='under3000')return Number.isFinite(p.price)&&p.price<3000;
  if(id==='dark')return ['dark','warm'].includes(fragranceProfile(p).edit);
  return fragranceProfile(p).edit===id;
 }
@@ -74,4 +78,17 @@ export function catalogueDisplay(products,kind){
  const groups=new Map();
  for(const p of products){const key=p.group||p.id;const old=groups.get(key);if(!old||p.format==='Full bottle'&&old.format!=='Full bottle')groups.set(key,p)}
  return [...groups.values()];
+}
+
+export const sizeLabel = p => Number.isInteger(p.size)&&p.size>0?`${p.size} ml`:'Size to confirm';
+export const priceLabel = p => Number.isFinite(p.price)?money(p.price):'Ask for price';
+// Add the new catalogue once; preserve previous edits, archives and later deletions.
+export function migrateCatalogue(state){
+ if((state.catalogueRevision||0)>=2)return state;
+ const ids=new Set(state.products.map(p=>p.id));
+ return {...state,catalogueRevision:2,products:[...state.products,...structuredClone(instagramProducts).filter(p=>!ids.has(p.id))]};
+}
+export function referenceEnquiryMessage(p){
+ if(!p||!p.enquiryOnly||p.hidden||p.archived)throw Error('This fragrance is unavailable for enquiry.');
+ return `Hello Drip & Dusk! I’m interested in ${p.brand} ${p.name} from your Instagram edit. Please confirm the exact bottle version, available sizes, current price, stock, condition, shipping charges and payment details. This enquiry does not reserve stock or confirm an order.`;
 }
