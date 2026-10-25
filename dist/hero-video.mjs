@@ -1,0 +1,70 @@
+/** A decorative film never blocks shopping, starts with sound, or ignores motion preferences. */
+export function initHeroVideo({document:doc=document,window:win=window}={}) {
+ const video=doc.querySelector('#hero-video');
+ const hero=doc.querySelector('.hero');
+ const button=doc.querySelector('[data-action="motion"]');
+ if(!video||!hero||!button)return {toggle(){}};
+ const reduced=win.matchMedia('(prefers-reduced-motion: reduce)');
+ const connection=win.navigator.connection;
+ const rect=hero.getBoundingClientRect();
+ let visible=!hero.closest('[hidden]')&&rect.bottom>0&&rect.top<win.innerHeight;
+ let choice=null,failed=false,loaded=false,playPending=false;
+ const wantsMotion=()=>choice??!(reduced.matches||connection?.saveData);
+ video.muted=true;
+ video.defaultMuted=true;
+ video.playsInline=true;
+ button.hidden=false;
+ function updateButton(){
+  const enabled=wantsMotion()&&!failed;
+  button.textContent=enabled?'Ⅱ':'▷';
+  button.setAttribute('aria-label',enabled?'Pause background video':'Play background video');
+  button.hidden=failed;
+  doc.body.classList.toggle('paused',!enabled);
+ }
+ function sync(){
+  updateButton();
+  if(!wantsMotion()||failed||doc.hidden||!visible){
+   video.pause();
+   // A changed system preference returns to the immediately available poster.
+   if(reduced.matches&&choice!==true)hero.classList.remove('video-ready');
+   return;
+  }
+  if(!loaded){
+   loaded=true;
+   video.src=video.dataset.src;
+   video.load();
+  }
+  if(!video.paused||playPending)return;
+  playPending=true;
+  Promise.resolve(video.play()).catch(error=>{
+   // Pausing while the initial play request is pending is a normal lifecycle change.
+   if(error.name!=='AbortError'&&!doc.hidden&&visible){choice=false;updateButton();}
+  }).finally(()=>{
+   playPending=false;
+   if(video.paused&&wantsMotion()&&visible&&!doc.hidden&&!failed)sync();
+  });
+ }
+ video.addEventListener('playing',()=>{
+  if(!doc.hidden&&visible&&wantsMotion()&&!failed)hero.classList.add('video-ready');
+  else video.pause();
+ });
+ video.addEventListener('error',()=>{
+  failed=true;
+  video.pause();
+  hero.classList.remove('video-ready');
+  updateButton();
+ });
+ const preferenceChanged=()=>{choice=null;sync();};
+ reduced.addEventListener('change',preferenceChanged);
+ connection?.addEventListener?.('change',preferenceChanged);
+ doc.addEventListener('visibilitychange',sync);
+ if(win.IntersectionObserver){
+  const observer=new win.IntersectionObserver(entries=>{
+   visible=entries[0].isIntersecting;
+   sync();
+  },{threshold:0});
+  observer.observe(hero);
+ }
+ sync();
+ return {toggle(){choice=!wantsMotion();sync();}};
+}

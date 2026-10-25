@@ -30,9 +30,15 @@
       "source": "https://rasasistore.com/products/hawas-for-him"
     }
   ],
-  "hero": {
+  "notes": "Oud for Glory note lists conflict on the brand page. Its note pyramid is explicitly pending verification.",
+  "earlier_hero_concept": {
     "asset": "dist/assets/hero.jpg",
     "source": "Built-in image generation; unbranded illustrative composition; full prompt in README.md."
   },
-  "notes": "Oud for Glory note lists conflict on the brand page. Its note pyramid is explicitly pending verification."
+  "hero": {
+    "asset": "dist/assets/fragrance-loop.mp4",
+    "poster": "dist/assets/hero-poster.jpg",
+    "source": "User-supplied Gemini videos: d&d-v3.mp4, d&d-v2.mp4, d&d-v1.mp4. Originals read without modification.",
+    "preparation": "Silent 23.21-second H.264 loop with 0.8-second crossfades, including the last-to-first transition; 1280x720 at 24 fps. The ghosted middle of the Noir clip is trimmed."
+  }
 }

@@ -10,7 +10,7 @@ Run logic checks with `node --test tests/core.test.mjs`.
 
 ## Present the demo
 
-1. Open the storefront. The charcoal hero, warm ivory catalogue, editorial serif headings and restrained olive/champagne details give the collection a coherent identity. The static hero appears immediately, with gentle optional motion, a pause control and system reduced-motion support. No unrelated stock video is used.
+1. Open the storefront. The charcoal hero, warm ivory catalogue, editorial serif headings and restrained olive/champagne details give the collection a coherent identity. A matching poster appears immediately while three supplied fragrance films play as a silent loop with soft crossfades. A pause control, system reduced-motion support and data-saver fallback are included.
 2. Search for Khamrah, apply a budget or brand filter, and switch between full bottles and decants. Open a listing and select the exact variant. Original bottle images identify decants; they do not depict decant packaging.
 3. Add quantities to the enquiry bag and preview the WhatsApp message. The default number is blank, so the demo contacts nobody. Estimated totals exclude shipping and use displayed prices. An enquiry never reserves stock or confirms an order.
 4. Open Owner studio from the banner or footer, or use `/#admin`. Tap a price for a quick edit, mark a variant sold out, or use Duplicate to add another size. Changes immediately appear in the same browser’s storefront. A new product requires an uploaded image.
@@ -48,7 +48,13 @@ The bag stores product IDs and requested quantities. Current prices and stock ar
 
 Product imagery and note lists are referenced from Lattafa’s brand pages and Rasasi’s store. Each detail view links to its brand source. See asset-sources.json. The Oud for Glory brand page has conflicting note lists; this demo deliberately marks its note pyramid pending verification.
 
-The hero was generated with the built-in image-generation tool and saved at `dist/assets/hero.jpg`. It is illustrative, not a photograph of a product for sale.
+The current hero uses the three user-supplied Gemini videos `d&d-v3.mp4` (Lava Gold), `d&d-v2.mp4` (Nautilus) and `d&d-v1.mp4` (Noir), in that order. `dist/assets/fragrance-loop.mp4` combines them into a 23.21-second, 1280 × 720 H.264 loop with 0.8-second crossfades, including the last-to-first transition. The visibly ghosted middle of the Noir input is trimmed, with a short dissolve between its clear portions. Every audio track is removed; the approximately 1.3 MB MP4 has fast-start metadata. `dist/assets/hero-poster.jpg` is its opening frame. Originals in Downloads are not modified.
+
+Video downloads/playback are deferred when reduced motion or browser data-saving is enabled, unless the visitor explicitly presses Play. Playback pauses offscreen and in hidden tabs. Browser autoplay rejection leaves a Play control; media failures retain the poster. The whole bottle stays visible on desktop, with a right-focused crop on phones.
+
+To regenerate the media, run `python3 scripts/prepare-hero-video.py /path/to/Downloads` with ffmpeg and ffprobe installed.
+
+The earlier generated concept still remains at `dist/assets/hero.jpg` for reference; the current hero does not load it.
 
 Final hero prompt: “Use case: product-mockup. Asset type: premium fragrance retailer website hero photograph, wide landscape 1536x1024. Primary request: cinematic still life of two unbranded perfume bottles on dark brown travertine and charcoal stone, one clear faceted square bottle of deep amber liquid with heavy glass cap, one smoked dark glass bottle with black cap, cropped close. Scene: moody warm brown studio, rich dusk shadows, subtle haze, reflections on dark surface. Composition: perfume bottles in the right half, left half clean almost black negative space for website text. Art direction: sophisticated editorial still life, tangible material, diagonal shaft of soft afternoon amber light, restrained and photorealistic, no gold ornament. No text, no labels, no logos, no watermark. Not a mockup of a website.”
 
@@ -56,7 +62,10 @@ Final hero prompt: “Use case: product-mockup. Asset type: premium fragrance re
 
 - `dist/core.mjs`: shared sample model, filters, inventory validation, sale calculation, totals and message formatting.
 - `dist/app.mjs`: storefront, detail routes, favourites, enquiry dialogs, owner studio, uploads and local persistence.
+- `dist/hero-video.mjs`: background media lifecycle, pause/resume, reduced motion, data saving, offscreen/visibility handling and poster fallback.
 - `dist/style.css`: responsive design, visible focus and reduced-motion styles.
+- `scripts/prepare-hero-video.py`: repeatable local video preparation without modifying the originals.
+- `tests/hero-video.test.mjs`: reduced motion, data saving, pause/resume, visibility, autoplay rejection and media-failure checks.
 - `tests/core.test.mjs`: 12 checks for valid seeds, stock status, discounts, invalid values, sale limits, totals, unavailable bags, price/stock changes, search, combined filters, sorting and favourites.
 
 No application credentials are shipped in the static output. No real customer data is used.

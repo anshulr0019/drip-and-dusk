@@ -14,3 +14,12 @@
 .fineprint,.approval-label,.brand-row,.product-meta,.collection-note,.filters label,#results-count,.catalogue-foot p,.story-heading .eyebrow,.ordering>.eyebrow,.story-heading>p:not(.eyebrow),.order-step p,.info-section .eyebrow,.faq-list details p,.reviews>p:not(.eyebrow),.contact-section .eyebrow,.contact-section p:not(.eyebrow),footer p,.footer-links,.footer-bottom,.field-label,.detail-copy .eyebrow,.detail-copy>p,.note-row,.notes-section>a,.basket-line p,.admin-top p,.stat span,.admin-table th,.admin-product p,.form-grid label,.settings-form label,.admin-footer,.settings-form small,.settings-danger p{color:#626f55}
 @media(max-width:760px){.small-btn{min-height:44px}.icon-btn{min-width:40px}.admin-table .text-link{min-height:44px!important}}
 @media(max-width:360px){.header .wordmark{font-size:15px;letter-spacing:1.4px}.header .wordmark i{font-size:17px}.header .wordmark span{font-size:5px;letter-spacing:1.9px}.header .icon-btn{min-width:36px}.price del{display:block;margin-left:0}.product-bottom{align-items:center}.tabs button{font-size:8px;padding:6px 7px}}
+/* The film keeps the whole bottle in view on wide, compact hero layouts. */
+.hero{background:#090b0c}
+.hero-image,.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:right center;animation:none}
+.hero-video{opacity:0;pointer-events:none;transition:opacity .65s ease}
+.hero.video-ready .hero-video{opacity:1}
+.hero.video-ready .hero-image{opacity:0}
+.motion-btn{width:44px;height:44px;flex-shrink:0}
+@media(max-width:760px){.hero-image,.hero-video{object-fit:cover;object-position:74% center}.hero-credit{max-width:125px}.hero-bottom{align-items:center}}
+@media(max-width:760px){.hero-shade{background:linear-gradient(90deg,rgba(8,13,10,.93),rgba(8,13,10,.72) 45%,rgba(8,13,10,.12)),linear-gradient(0deg,#071007cc,transparent 70%)}}
