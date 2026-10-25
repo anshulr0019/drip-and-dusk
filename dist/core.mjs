@@ -5,7 +5,7 @@ export const discount = p => Number.isFinite(p.reference) && p.reference > p.pri
 export const normalize = s => String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]/g,'');
 export const catalogue = products => products.filter(p=>!p.hidden&&!p.archived).sort((a,b)=>a.order-b.order);
 export function filterProducts(products, f, saved=[]) {
- let out=catalogue(products).filter(p=>(!f.query||normalize([p.brand,p.name,p.notes,p.description].join(' ')).includes(normalize(f.query)))&&(!f.brand||p.brand===f.brand)&&(!f.budget||(f.budget==='over'?p.price>=3000:p.price<Number(f.budget)))&&(!f.stock||(f.stock==='in'?inStock(p):!inStock(p)))&&(!f.kind||f.kind==='all'||(f.kind==='saved'?saved.includes(p.id):p.format===f.kind)));
+ let out=catalogue(products).filter(p=>(!f.query||normalize([p.brand,p.name,p.notes,p.description].join(' ')).includes(normalize(f.query)))&&(!f.brand||p.brand===f.brand)&&(!f.budget||(f.budget==='over'?p.price>=3000:p.price<Number(f.budget)))&&(!f.stock||(f.stock==='in'?inStock(p):!inStock(p)))&&(!f.collection||matchesCollection(p,f.collection))&&(!f.kind||f.kind==='all'||(f.kind==='saved'?saved.includes(p.id):p.format===f.kind)));
  if(f.sort==='price-asc')out.sort((a,b)=>a.price-b.price);if(f.sort==='price-desc')out.sort((a,b)=>b.price-a.price);if(f.sort==='name')out.sort((a,b)=>a.name.localeCompare(b.name));return out;
 }
 export function validateProduct(p) {
@@ -46,3 +46,32 @@ export const defaults = () => {
  seeds.forEach((s,i)=>products.push({...products[i],id:s[0]+'-10ml',size:10,format:'Decant',condition:'Seller-filled atomiser (demo)',price:[499,349,299,279,399,329,229][i],reference:null,quantity:i===5?0:12-i,available:i!==5,deal:false,featured:false,order:7+i}));
  return {version:1,products,settings:{whatsapp:'',instagram:'',about:'Drip & Dusk is a multi-brand fragrance retailer owned by Deepak Hotwani. Explore full bottles and smaller decants, compare your options, and talk directly with the seller before deciding.',ordering:'Send your shortlist through WhatsApp. Deepak confirms current availability and answers your questions before you decide.',shipping:'Shipping locations, charges and delivery estimates will be confirmed by the seller. Owner-approved shipping information is pending.',payment:'Payment methods, returns and cancellation terms are pending owner approval. No payment is collected on this demo.',faq:'Are these live prices?|No. Every price, offer, quantity and condition in this concept is sample data. Ask the seller for current details.\nWhat is a decant?|A smaller amount transferred into a separate atomiser. In this demo, the original bottle photo identifies the fragrance; it does not show the decant packaging.\nDoes my enquiry reserve stock?|No. Adding to the bag or opening WhatsApp does not reserve stock or confirm an order.\nHow do shipping and payment work?|The seller will confirm shipping charges, payment details and any applicable policies before you decide.',reviews:'Customer reviews have not been supplied. This space is reserved for genuine feedback shared with permission.'}};
 };
+
+// Styling and occasion pairings are editorial suggestions, not performance claims.
+const PROFILES = {
+ hawas: {family:'Fresh & aquatic', pairing:'Everyday · warm afternoons', edit:'fresh', scale:'.88', position:'50% 50%'},
+ khamrah: {family:'Warm & gourmand', pairing:'After dark · cooler evenings', edit:'warm', scale:'1.55', position:'50% 50%'},
+ asad: {family:'Spicy & amber', pairing:'After dark · dressed-up occasions', edit:'dark', scale:'1.55', position:'50% 50%'},
+ yara: {family:'Soft & floral', pairing:'Everyday · unhurried weekends', edit:'soft', scale:'1.55', position:'50% 50%'},
+ qahwa: {family:'Coffee & gourmand', pairing:'After dark · cooler evenings', edit:'warm', scale:'1.55', position:'50% 50%'},
+ 'oud-for-glory': {family:'Woody & amber', pairing:'Ask us for a personal recommendation', edit:'dark', scale:'1.55', position:'50% 50%'},
+ qaed: {family:'Fruity & woody', pairing:'Everyday · relaxed occasions', edit:'fresh', scale:'1.55', position:'50% 50%'}
+};
+export const fragranceProfile = p => ({family:'Discover the scent',pairing:'Ask us for a personal recommendation',edit:'',scale:'1',position:'50% 50%',...PROFILES[p.group],...(p.family?{family:p.family}:{}),...(p.pairing?{pairing:p.pairing}:{}),...(['fresh','warm','dark','soft'].includes(p.scentEdit)?{edit:p.scentEdit}:{}),concentration:p.concentration||'Confirm with seller'});
+export const edits = [
+ {id:'dark',name:'After dark',line:'Depth, warmth & a little intrigue.',number:'01',image:'asad'},
+ {id:'fresh',name:'Fresh daily',line:'Bright openings. Easy company.',number:'02',image:'hawas'},
+ {id:'warm',name:'Warm & spiced',line:'Comfort in the richer details.',number:'03',image:'khamrah'},
+ {id:'under3000',name:'Under ₹3,000',line:'A considered place to begin.',number:'04',image:'yara'}
+];
+export function matchesCollection(p,id){
+ if(id==='under3000')return p.price<3000;
+ if(id==='dark')return ['dark','warm'].includes(fragranceProfile(p).edit);
+ return fragranceProfile(p).edit===id;
+}
+export function catalogueDisplay(products,kind){
+ if(kind==='Decant'||kind==='Full bottle'||kind==='saved')return products;
+ const groups=new Map();
+ for(const p of products){const key=p.group||p.id;const old=groups.get(key);if(!old||p.format==='Full bottle'&&old.format!=='Full bottle')groups.set(key,p)}
+ return [...groups.values()];
+}

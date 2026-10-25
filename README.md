@@ -6,7 +6,7 @@ A complete private concept for Deepak Hotwani’s multi-brand fragrance retail b
 
 From this folder, run `python3 -m http.server 4173 --bind 127.0.0.1 --directory dist`, then open http://127.0.0.1:4173. Use an HTTP server; ES modules do not run reliably from file URLs.
 
-Run logic checks with `node --test tests/core.test.mjs`.
+Run all logic and media checks with `node --test tests/*.test.mjs`.
 
 ## Present the demo
 
@@ -69,3 +69,14 @@ Final hero prompt: “Use case: product-mockup. Asset type: premium fragrance re
 - `tests/core.test.mjs`: 12 checks for valid seeds, stock status, discounts, invalid values, sale limits, totals, unavailable bags, price/stock changes, search, combined filters, sorting and favourites.
 
 No application credentials are shipped in the static output. No real customer data is used.
+
+
+## October storefront refinement
+
+The homepage now leads with one hero action and four live catalogue edits: After dark, Fresh daily, Warm & spiced and Under ₹3,000. Edits compose with search, format, budget and availability filters. All fragrances groups bottle/decant variants into one card per scent; explicit format and Saved views keep exact variants. Cards use restrained bottle presentation, editorial scent families and sample prices without promotional discount badges.
+
+Fragrance details include bottle and label views of the same source image (not additional product photographs), full-bottle/decant choices, current stock, quantity, notes, editorial occasion pairings and a sticky enquiry action. Delivery, sourcing, decant preparation and returns can be reviewed before enquiry. Concentration remains “Confirm with seller” until the owner supplies a verified value. Genuine customer text is shown only after the default placeholder is replaced; no testimonials, delivery promises or sourcing guarantees are invented.
+
+Owner Studio adds optional scent collection, family, concentration and occasion fields. Existing local edits and uploaded images are preserved. All admin limitations documented above still apply: authentication and shared storage were explicitly deferred by the owner in this update.
+
+`tests/curation.test.mjs` checks grouping, collection composition, live price thresholds, custom metadata and preservation of exact decant matches. Product photos remain the existing brand references; a consistent original photography shoot is still a business task.
