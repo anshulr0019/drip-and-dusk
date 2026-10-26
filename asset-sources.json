@@ -39,7 +39,7 @@
     "asset": "dist/assets/fragrance-loop.mp4",
     "poster": "dist/assets/hero-poster.jpg",
     "source": "User-supplied Gemini videos: d&d-v3.mp4, d&d-v2.mp4, d&d-v1.mp4. Originals read without modification.",
-    "preparation": "Silent 23.21-second H.264 loop with 0.8-second crossfades, including the last-to-first transition; 1280x720 at 24 fps. The ghosted middle of the Noir clip is trimmed."
+    "preparation": "Silent 23.21-second H.264 loop with 0.8-second crossfades, including the last-to-first transition; 1280x720 at 24 fps. The ghosted middle of the Noir clip is trimmed. The fixed Gemini badge is removed from a 64 × 64 px background region using spatial interpolation; bottle framing and labels are preserved. The AI-generated credit remains visible on the website."
   },
   "instagram_catalogue": [
     {
