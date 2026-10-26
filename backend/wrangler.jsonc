@@ -1,0 +1,10 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "drip-and-dusk-checkout",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-10-01",
+  "assets": { "directory": "../dist", "binding": "ASSETS", "run_worker_first": ["/api/*", "/commerce-config.mjs"] },
+  "d1_databases": [{ "binding": "DB", "database_name": "drip-and-dusk-orders", "database_id": "REPLACE_WITH_YOUR_D1_DATABASE_ID", "migrations_dir": "migrations" }],
+  "triggers": { "crons": ["*/5 * * * *"] },
+  "vars": { "COMMERCE_MODE": "sandbox", "PUBLIC_ORIGIN": "https://REPLACE_WITH_YOUR_CHECKOUT_DOMAIN", "ALLOW_SANDBOX_MESSAGES": "false" }
+}

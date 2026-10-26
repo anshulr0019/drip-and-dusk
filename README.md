@@ -1,6 +1,6 @@
 # Drip & Dusk — The Fragrance Edit
 
-A complete private concept for Deepak Hotwani’s multi-brand fragrance retail business. Built as a lightweight static site: no framework runtime, dependency installation or build step.
+A fragrance storefront concept for Deepak Hotwani’s multi-brand fragrance retail business. The public demo is a lightweight static site with no framework runtime or build step. A separate optional Worker/D1 checkout server supports Razorpay sandbox integration; it is not activated on the public Vercel demo.
 
 ## Run locally
 
@@ -12,7 +12,7 @@ Run all logic and media checks with `node --test tests/*.test.mjs`.
 
 1. Open the storefront. The charcoal hero, warm ivory catalogue, editorial serif headings and restrained olive/champagne details give the collection a coherent identity. A matching poster appears immediately while three supplied fragrance films play as a silent loop with soft crossfades. A pause control, system reduced-motion support and data-saver fallback are included.
 2. Search for Khamrah, apply a budget or brand filter, and switch between full bottles and decants. Open a listing and select the exact variant. Original bottle images identify decants; they do not depict decant packaging.
-3. Add quantities to the enquiry bag and preview the WhatsApp message. The default number is blank, so the demo contacts nobody. Estimated totals exclude shipping and use displayed prices. An enquiry never reserves stock or confirms an order.
+3. Add quantities to the bag and choose **Try checkout preview**. Review the example address and sample delivery charge (₹99, included above ₹3,000), simulate a failed or successful payment, then open Owner studio → Demo orders to advance Confirmed → Packed → Shipped → Delivered. This is a simulation with no charge, message or shipment. Demo orders and stock changes persist only in this browser; tracking links work only here. You can also preview the existing WhatsApp enquiry message. The default number is blank, so the demo contacts nobody. Estimated totals exclude shipping and use displayed prices. An enquiry never reserves stock or confirms an order.
 4. Open Owner studio from the banner or footer, or use `/#admin`. Tap a price for a quick edit, mark a variant sold out, or use Duplicate to add another size. Changes immediately appear in the same browser’s storefront. A new product requires an uploaded image.
 5. Use Edit for descriptions, notes, images, conditions, quantities, deals, featured flags and ordering. Lower catalogue/featured order numbers appear first. Hide removes a listing from the storefront. Archive removes it with a restore option; permanent deletion is available inside Archive with confirmation.
 6. Record sale reduces inventory, validates the quantity and marks zero stock sold out. Sales through WhatsApp, Instagram or any other channel must be recorded manually unless a future integration is added. Adding to a bag or opening WhatsApp never deducts stock.
@@ -32,7 +32,7 @@ There are 14 sample variants (seven fragrances, each as a bottle and 10 ml decan
 
 The owner studio has no authentication. Local storage is persistence, not security. Anyone using this browser can edit the demo; another device has an independent dataset. A private Sites deployment restricts access to the demo as a whole but does not turn the local studio into a secure production admin. Browser storage can be cleared, filled or disabled. Storage failures show feedback rather than silently pretending to save.
 
-The bag stores product IDs and requested quantities. Current prices and stock are revalidated from the shared model. Hidden, archived, deleted, sold-out or oversubscribed entries block an enquiry until adjusted or removed. Existing bags reflect price changes; the seller must still confirm final prices. No checkout, payments, reservation, backend order creation or customer information is collected.
+The bag stores product IDs and requested quantities. Current prices and stock are revalidated from the shared model. Hidden, archived, deleted, sold-out or oversubscribed entries block an enquiry until adjusted or removed. Existing bags reflect price changes; the seller must still confirm final prices. The public static site includes a labelled checkout simulation; it does not collect money, send messages or create shipments. Example delivery details remain in memory and are not saved with browser-local demo orders. The optional server implementation below is separate from the public preview.
 
 ## Before production
 
@@ -106,3 +106,12 @@ Recommendations use current inventory, exclude hidden/archived/sold-out/enquiry-
 ## Background video badge cleanup
 
 The user-supplied films include a fixed Gemini sparkle beside the bottle base. The preparation script now interpolates only the background rectangle at x=1128, y=568, width=64, height=64 in the normalized 1280×720 output. It applies this after the cyclic transitions, then regenerates the matching opening poster. This avoids cropping into the bottles or changing their labels; a small softened patch remains in the background texture. The video and poster URLs use a new media version so returning browsers fetch the cleaned files. The website continues to label the films as AI-generated. Audio remains removed, and the source files in Downloads remain untouched.
+
+
+## Checkout and order tracking
+
+The static deployment intentionally uses `dist/commerce-config.mjs` with `mode: 'preview'`. It must never treat browser storage as a real order database. Adding to the bag does not deduct stock; simulated payment success saves the demo order and stock change together. Repeated completion of the same request does not deduct twice. Example addresses/phone numbers are not persisted. Failed payment, stale quotes, invalid quantities, missing commercial details and unavailable stock block confirmation. Tracking links require an unguessable token but are a local demonstration, not cross-device private production tracking. Reset demo data also removes these demo orders.
+
+`backend/worker.mjs` and the D1 migration implement server-priced quotes, transactional stock reservations, idempotent orders, Razorpay test payment verification, authenticated order administration, token-protected tracking, a signed courier bridge and an optional direct WhatsApp confirmation outbox. The Worker serves `commerce-config.mjs` dynamically to activate the API on the same origin. Browser catalogue editing is disabled in connected mode, so it cannot pretend to update the server. No paid service has been purchased or activated, and no actual provider payment, courier or WhatsApp request has been tested with merchant credentials.
+
+See [backend/README.md](backend/README.md) for local testing, sandbox deployment, account setup and the remaining launch work. **Live payments are deliberately disabled in this release.** There are 57 automated checks covering the storefront, media, finder, model and checkout API. The checkout screens and browser-local fulfilment flow have also been checked in desktop and mobile browser views.

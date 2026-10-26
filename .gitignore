@@ -1,3 +1,15 @@
 .DS_Store
 .openai/*.local.*
 .openai/artifacts/
+
+# Checkout credentials and local order databases
+.env
+.env.*
+!.env.example
+backend/.dev.vars
+backend/.dev.vars.*
+!backend/.dev.vars.example
+backend/.wrangler/
+*.sqlite
+*.sqlite-*
+node_modules/

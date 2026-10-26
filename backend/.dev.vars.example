@@ -1,0 +1,21 @@
+# Copy to .dev.vars locally. Never put these values in dist/ or commit real keys.
+COMMERCE_MODE=sandbox
+PUBLIC_ORIGIN=http://127.0.0.1:4173
+TRACKING_SECRET=replace-with-at-least-32-random-characters
+ADMIN_SECRET=replace-with-a-different-32-character-random-secret
+RAZORPAY_KEY_ID=rzp_test_replace
+RAZORPAY_KEY_SECRET=replace
+RAZORPAY_WEBHOOK_SECRET=replace-with-a-separate-32-character-random-secret
+# Explicit, merchant-approved test rates in paise; no implicit pan-India promise.
+SHIPPING_RULES_JSON={"zones":[{"prefixes":["411"],"feePaise":9900,"label":"Test Pune delivery"}],"freeAbovePaise":300000}
+# Optional courier bridge, configured only after choosing a provider.
+COURIER_WEBHOOK_SECRET=
+# Optional direct Meta integration. Requires approved template and test recipient.
+ALLOW_SANDBOX_MESSAGES=false
+WHATSAPP_API_VERSION=
+WHATSAPP_PHONE_ID=
+WHATSAPP_ACCESS_TOKEN=
+WHATSAPP_TEMPLATE=drip_dusk_order_confirmed
+WHATSAPP_LANGUAGE=en
+WHATSAPP_APP_SECRET=
+WHATSAPP_VERIFY_TOKEN=
