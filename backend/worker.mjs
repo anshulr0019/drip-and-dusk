@@ -1,3 +1,4 @@
+import {createAuthService,authReady} from './auth.mjs';
 import {quoteCheckout,quoteFingerprint,validateAddress,previewShipping,stages} from '../dist/commerce-model.mjs';
 const encoder=new TextEncoder(),json=(data,status=200,headers={})=>new Response(JSON.stringify(data),{status,headers:{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store','Referrer-Policy':'no-referrer','X-Content-Type-Options':'nosniff',...headers}});
 const fail=(message,status=400)=>{throw Object.assign(Error(message),{status})};
@@ -7,7 +8,7 @@ const digest=async s=>[...new Uint8Array(await crypto.subtle.digest('SHA-256',en
 const stmt=(env,sql,...args)=>env.DB.prepare(sql).bind(...args),first=(env,sql,...args)=>stmt(env,sql,...args).first(),all=async(env,sql,...args)=>(await stmt(env,sql,...args).all()).results;
 const tokenFor=(env,id)=>hmac(env.TRACKING_SECRET,'tracking:'+id);
 const mode=env=>env.COMMERCE_MODE||'sandbox';
-function readiness(env){const preview=mode(env)==='preview';if(!['preview','sandbox'].includes(mode(env)))return false;return !!(env.TRACKING_SECRET?.length>=32&&env.ADMIN_SECRET?.length>=32&&(preview||(env.RAZORPAY_KEY_ID?.startsWith('rzp_test_')&&env.RAZORPAY_KEY_SECRET&&env.RAZORPAY_WEBHOOK_SECRET?.length>=32&&env.SHIPPING_RULES_JSON)))}
+function readiness(env){const preview=mode(env)==='preview';if(!['preview','sandbox'].includes(mode(env)))return false;return !!(env.TRACKING_SECRET?.length>=32&&(env.AUTH_PROVIDER==='supabase'?(authReady(env)&&!!env.AUTH_OWNER_IDS?.trim()):env.ADMIN_SECRET?.length>=32)&&(preview||(env.RAZORPAY_KEY_ID?.startsWith('rzp_test_')&&env.RAZORPAY_KEY_SECRET&&env.RAZORPAY_WEBHOOK_SECRET?.length>=32&&env.SHIPPING_RULES_JSON)))}
 function shipping(env){if(mode(env)==='preview')return previewShipping;let rules;try{rules=JSON.parse(env.SHIPPING_RULES_JSON)}catch{fail('Delivery rates are not configured.',503)}return {...rules,preview:false}}
 async function body(request){const raw=await request.text();if(raw.length>24000)fail('Request is too large.',413);try{return JSON.parse(raw)}catch{fail('Enter valid request data.')}}
 async function catalogue(env){return (await all(env,'SELECT * FROM products')).map(p=>({...JSON.parse(p.data),price:p.price_paise>0?p.price_paise/100:null,quantity:p.quantity-p.held,available:p.enabled===1&&p.quantity>p.held}));}
@@ -36,6 +37,8 @@ async function capture(env,o,payment,now){
  ]);
 }
 export function createHandler({fetchExternal=(...a)=>fetch(...a),now=()=>Date.now()}={}){
+ const auth=createAuthService({fetchExternal,now});
+ async function requireOwner(env,request,time){if(auth.configured(env)){const user=await auth.session(request,env);if(user?.role!=='owner')fail('Owner sign-in is required.',403);}else await requireAdmin(env,request,time);}
  return async function handle(request,env,ctx={waitUntil:()=>{}}){
   const url=new URL(request.url),path=url.pathname,time=now();
   try{
@@ -50,6 +53,8 @@ export function createHandler({fetchExternal=(...a)=>fetch(...a),now=()=>Date.no
    }
    if(mode(env)==='preview'&&!['localhost','127.0.0.1','[::1]'].includes(url.hostname))fail('Server payment simulation is local-only.',503);
    if(!['sandbox','preview'].includes(mode(env)))fail('Live payments are not enabled in this release.',503);
+   const authResponse=await auth.handle(request,env);if(authResponse)return authResponse;
+   if(path==='/api/account/orders'&&request.method==='GET'){const user=await auth.session(request,env);if(!user)fail('Sign in to view your orders.',401);const rows=await all(env,'SELECT * FROM orders WHERE customer_user_id=? ORDER BY created_at DESC LIMIT 100',user.id);return json({orders:await Promise.all(rows.map(async o=>({...await publicOrder(env,o),trackingPath:'#track/'+o.id+'/'+await tokenFor(env,o.id)})))});}
    if(path==='/api/config'&&request.method==='GET')return json({mode:mode(env),provider:mode(env)==='preview'?'preview':'razorpay',ready:readiness(env),shippingConfigured:!!env.SHIPPING_RULES_JSON||mode(env)==='preview',courierConnected:!!env.COURIER_WEBHOOK_SECRET,whatsappConnected:!!(env.WHATSAPP_ACCESS_TOKEN&&env.ALLOW_SANDBOX_MESSAGES==='true')});
    if(path==='/api/catalogue'&&request.method==='GET'){await expire(env,time);return json({products:await catalogue(env)})}
    if(path==='/api/checkout/quote'&&request.method==='POST'){
@@ -59,15 +64,15 @@ export function createHandler({fetchExternal=(...a)=>fetch(...a),now=()=>Date.no
    }
    if(path==='/api/orders'&&request.method==='POST'){
     if(!readiness(env))fail('Merchant test keys and delivery setup are not connected yet.',503);
-    await limit(env,request,'order',20,time);await expire(env,time);const b=await body(request),a=validateAddress(b.address);
+    await limit(env,request,'order',20,time);await expire(env,time);const b=await body(request),a=validateAddress(b.address),account=await auth.session(request,env);
     if(!/^[a-zA-Z0-9-]{20,80}$/.test(b.requestId||'')||typeof b.whatsappConsent!=='boolean')fail('Restart checkout and try again.');
-    const requestHash=await digest(JSON.stringify({quoteId:b.quoteId,basket:b.basket,address:a,consent:b.whatsappConsent}));
+    const requestHash=await digest(JSON.stringify({quoteId:b.quoteId,basket:b.basket,address:a,consent:b.whatsappConsent,customerUserId:account?.id||null}));
     const existing=await first(env,'SELECT * FROM orders WHERE request_id=?',b.requestId);if(existing){if(!equalSecret(requestHash,existing.request_hash))fail('This checkout request has changed. Restart checkout.',409);return json(await sessionFor(env,existing));}
     const saved=await first(env,'SELECT * FROM quotes WHERE id=?',b.quoteId||'');if(!saved||saved.expires_at<=time)fail('Delivery quote expired. Review your address and total again.',409);
     const quoted=JSON.parse(saved.data);let q;try{q=quoteCheckout(await catalogue(env),b.basket,a.postcode,shipping(env))}catch(e){fail(e.message,409)}if(quoteFingerprint(q)!==quoteFingerprint(quoted))fail('Prices, delivery or your bag changed. Review your total again.',409);
     const id=crypto.randomUUID(),ref='DD-TEST-'+id.replace(/-/g,'').slice(0,12).toUpperCase();
     try{await env.DB.batch([
-     stmt(env,'INSERT INTO orders(id,ref,request_id,request_hash,quote_id,customer,consent,lines,subtotal_paise,shipping_paise,total_paise,delivery_label,mode,created_at,expires_at,updated_at) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',id,ref,b.requestId,requestHash,b.quoteId,JSON.stringify(mode(env)==='preview'?{name:'Demo Customer',phone:'919999999999',line1:'12 Example Avenue',line2:'',city:'Pune',state:'Maharashtra',postcode:'411001',country:'IN'}:a),b.whatsappConsent?1:0,JSON.stringify(q.lines),q.subtotalPaise,q.feePaise,q.totalPaise,q.deliveryLabel||'Delivery',mode(env),time,time+900000,time),
+     stmt(env,'INSERT INTO orders(id,ref,request_id,request_hash,quote_id,customer,consent,lines,subtotal_paise,shipping_paise,total_paise,delivery_label,mode,created_at,expires_at,updated_at,customer_user_id) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',id,ref,b.requestId,requestHash,b.quoteId,JSON.stringify(mode(env)==='preview'?{name:'Demo Customer',phone:'919999999999',line1:'12 Example Avenue',line2:'',city:'Pune',state:'Maharashtra',postcode:'411001',country:'IN'}:a),b.whatsappConsent?1:0,JSON.stringify(q.lines),q.subtotalPaise,q.feePaise,q.totalPaise,q.deliveryLabel||'Delivery',mode(env),time,time+900000,time,account?.id||null),
      ...q.lines.map(l=>stmt(env,'INSERT INTO order_lines(order_id,product_id,qty,unit_paise) VALUES(?,?,?,?)',id,l.id,l.qty,l.unitPaise))
     ])}catch{
      const repeated=await first(env,'SELECT * FROM orders WHERE request_id=?',b.requestId);if(repeated&&equalSecret(repeated.request_hash,requestHash))return json(await sessionFor(env,repeated));
@@ -112,13 +117,14 @@ export function createHandler({fetchExternal=(...a)=>fetch(...a),now=()=>Date.no
     await env.DB.batch([stmt(env,'UPDATE orders SET status=?,updated_at=? WHERE id=? AND status IN('+stages.slice(1,to).map(()=>'?').join(',')+')',b.status,time,o.id,...stages.slice(1,to)),stmt(env,'INSERT OR IGNORE INTO order_events(order_id,status,at) SELECT id,?,? FROM orders WHERE id=? AND status=?',b.status,time,o.id,b.status),stmt(env,"INSERT OR IGNORE INTO webhook_receipts(provider,event_id,at) VALUES('courier',?,?)",b.eventId,time)]);return json({received:true});
    }
    if(path==='/api/admin/login'&&request.method==='POST'){
+    if(auth.configured(env))fail('Sign in with the approved owner account.',403);
     await limit(env,request,'login',5,time);const b=await body(request);if(env.ADMIN_SECRET?.length<32||!equalSecret(b.token,env.ADMIN_SECRET))fail('Owner access key is incorrect.',401);const expiry=String(time+3600000),mac=await hmac(env.ADMIN_SECRET,'owner:'+expiry);return json({signedIn:true},200,{'Set-Cookie':`dd_owner=${expiry}.${mac}; Path=/api/admin; HttpOnly; SameSite=Strict; Max-Age=3600${url.protocol==='https:'?'; Secure':''}`});
    }
    if(path==='/api/admin/logout'&&request.method==='POST')return json({signedIn:false},200,{'Set-Cookie':`dd_owner=; Path=/api/admin; HttpOnly; SameSite=Strict; Max-Age=0${url.protocol==='https:'?'; Secure':''}`});
-   if(path==='/api/admin/orders'&&request.method==='GET'){await requireAdmin(env,request,time);await expire(env,time);return json({orders:await all(env,'SELECT id,ref,status,payment_status,total_paise AS totalPaise,customer FROM orders ORDER BY created_at DESC LIMIT 100').then(rows=>rows.map(o=>({...o,customer:JSON.parse(o.customer)})))})}
+   if(path==='/api/admin/orders'&&request.method==='GET'){await requireOwner(env,request,time);await expire(env,time);return json({orders:await all(env,'SELECT id,ref,status,payment_status,total_paise AS totalPaise,customer FROM orders ORDER BY created_at DESC LIMIT 100').then(rows=>rows.map(o=>({...o,customer:JSON.parse(o.customer)})))})}
    const admin=path.match(/^\/api\/admin\/orders\/([a-zA-Z0-9-]+)\/status$/);
    if(admin&&request.method==='POST'){
-    await requireAdmin(env,request,time);const b=await body(request),o=await first(env,'SELECT * FROM orders WHERE id=?',admin[1]);if(!o||o.status!=='confirmed'||o.payment_status!=='captured'||b.status!=='packed')fail('Only confirmed, paid orders can be marked packed.',409);
+    await requireOwner(env,request,time);const b=await body(request),o=await first(env,'SELECT * FROM orders WHERE id=?',admin[1]);if(!o||o.status!=='confirmed'||o.payment_status!=='captured'||b.status!=='packed')fail('Only confirmed, paid orders can be marked packed.',409);
     if(b.shipmentId&&!/^[a-zA-Z0-9_-]{1,100}$/.test(b.shipmentId))fail('Invalid shipment ID.');await env.DB.batch([stmt(env,"UPDATE orders SET status='packed',shipment_id=?,updated_at=? WHERE id=? AND status='confirmed'",b.shipmentId||null,time,o.id),stmt(env,"INSERT OR IGNORE INTO order_events(order_id,status,at) VALUES(?,'packed',?)",o.id,time)]);return json({status:'packed'});
    }
    if(path==='/api/webhooks/whatsapp'&&request.method==='GET'){
@@ -143,4 +149,4 @@ export async function dispatchNotifications(env,{fetchExternal=(...a)=>fetch(...
  }
 }
 const handler=createHandler();
-export default {fetch:handler,async scheduled(_event,env,ctx){const now=Date.now();await expire(env,now);await stmt(env,'DELETE FROM rate_limits WHERE window<?',Math.floor(now/600000)-2).run();await stmt(env,'DELETE FROM quotes WHERE expires_at<? AND id NOT IN(SELECT quote_id FROM orders)',now-86400000).run();ctx.waitUntil(dispatchNotifications(env,{now}));}};
+export default {fetch:handler,async scheduled(_event,env,ctx){const now=Date.now();await expire(env,now);await stmt(env,'DELETE FROM auth_flows WHERE expires_at<?',now).run();await stmt(env,'DELETE FROM auth_sessions WHERE expires_at<?',now).run();await stmt(env,'DELETE FROM rate_limits WHERE window<?',Math.floor(now/600000)-2).run();await stmt(env,'DELETE FROM quotes WHERE expires_at<? AND id NOT IN(SELECT quote_id FROM orders)',now-86400000).run();ctx.waitUntil(dispatchNotifications(env,{now}));}};

@@ -19,3 +19,10 @@ WHATSAPP_TEMPLATE=drip_dusk_order_confirmed
 WHATSAPP_LANGUAGE=en
 WHATSAPP_APP_SECRET=
 WHATSAPP_VERIFY_TOKEN=
+# Optional managed customer/owner accounts. Real login stays disabled until set.
+AUTH_PROVIDER=supabase
+SUPABASE_URL=https://YOUR_PROJECT.supabase.co
+SUPABASE_PUBLISHABLE_KEY=sb_publishable_replace
+AUTH_SESSION_SECRET=replace-with-a-separate-random-secret-of-at-least-32-characters
+# Verified Supabase user UUIDs, set by the store operator. Never read roles from user metadata.
+AUTH_OWNER_IDS=
