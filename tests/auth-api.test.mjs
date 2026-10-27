@@ -22,7 +22,7 @@ function setup(t){const DB=new LocalD1();DB.exec(schema);DB.exec(seedSQL());t.af
   throw Error('Unexpected request: '+url.pathname);
  };
  const handler=createHandler({fetchExternal,now:()=>clock});
- function client(){const jar=new Map();return {jar,async request(path,{method='GET',body,headers={}}={}){const req=new Request(origin+path,{method,headers:{Origin:origin,'Content-Type':'application/json',Cookie:[...jar].map(([k,v])=>k+'='+v).join('; '),...headers},...(method!=='GET'?{body:JSON.stringify(body||{})}:{})});const r=await handler(req,env,{waitUntil:()=>{}});for(const value of r.headers.getSetCookie()){const [pair]=value.split(';'),index=pair.indexOf('='),key=pair.slice(0,index),v=pair.slice(index+1);if(v)jar.set(key,v);else jar.delete(key)}let data=null;const raw=await r.text();try{data=JSON.parse(raw)}catch{}return {status:r.status,data,headers:r.headers,raw};}}}
+ function client(transportOrigin=origin){const jar=new Map();return {jar,async request(path,{method='GET',body,headers={}}={}){const req=new Request(transportOrigin+path,{method,headers:{Origin:origin,'Content-Type':'application/json',Cookie:[...jar].map(([k,v])=>k+'='+v).join('; '),...headers},...(method!=='GET'?{body:JSON.stringify(body||{})}:{})});const r=await handler(req,env,{waitUntil:()=>{}});for(const value of r.headers.getSetCookie()){const [pair]=value.split(';'),index=pair.indexOf('='),key=pair.slice(0,index),v=pair.slice(index+1);if(v)jar.set(key,v);else jar.delete(key)}let data=null;const raw=await r.text();try{data=JSON.parse(raw)}catch{}return {status:r.status,data,headers:r.headers,raw};}}}
  async function login(c,email='buyer@example.test'){assert.equal((await c.request('/api/auth/email/start',{method:'POST',body:{email}})).status,200);const result=await c.request('/api/auth/email/verify',{method:'POST',body:{code:'123456'}});assert.equal(result.status,200);return result;}
  async function order(c){const basket=[{id:'khamrah-bottle',qty:1}],quote=await c.request('/api/checkout/quote',{method:'POST',body:{basket,postcode:'411001'}});assert.equal(quote.status,200);return c.request('/api/orders',{method:'POST',body:{basket,quoteId:quote.data.quoteId,address:{name:'Example Buyer',phone:'9999999999',line1:'12 Example Avenue',city:'Pune',state:'Maharashtra',postcode:'411001'},whatsappConsent:false,requestId:crypto.randomUUID()}})}
  return {env,DB,calls,client,login,order,advance:ms=>clock+=ms,setChallenge:x=>expectedChallenge=x,setGoogleBuyer:()=>googleUser='buyer',revokeOwner:()=>ownerAllowed=false,revokeRefresh:()=>refreshFailure=true,outage:()=>providerUnavailable=true,users};
@@ -41,3 +41,29 @@ test('cross-origin login and logout are blocked; OTP send requests are rate limi
 test('provider outage does not grant access or erase a still-valid session',async t=>{const s=setup(t),c=s.client();await s.login(c,'owner@example.test');s.outage();assert.equal((await c.request('/api/admin/orders')).status,503);assert.equal((await s.DB.prepare('SELECT COUNT(*) AS n FROM auth_sessions').first()).n,1);});
 
 test('disabled Google provider is advertised and cannot start a broken OAuth flow',async t=>{const s=setup(t),c=s.client();s.env.AUTH_GOOGLE_ENABLED='false';assert.equal((await c.request('/api/auth/config')).data.methods.google,false);assert.equal((await c.request('/api/auth/config')).data.methods.email,true);assert.equal((await c.request('/api/auth/google/start',{method:'POST',body:{returnTo:'#account'}})).status,503);});
+
+
+test('proxied Google sign-in keeps cookies and redirects on the storefront and rejects foreign origins',async t=>{
+ const s=setup(t),backendOrigin='https://api.example.test',c=s.client(backendOrigin);
+ assert.equal((await c.request('/api/auth/google/start',{method:'POST'})).status,403);
+ s.env.BACKEND_ORIGIN=backendOrigin;
+ const start=await c.request('/api/auth/google/start',{method:'POST',body:{returnTo:'#account'}});
+ assert.equal(start.status,200);
+ const provider=new URL(start.data.url);
+ assert.equal(provider.searchParams.get('redirect_to'),origin+'/api/auth/callback');
+ assert.match(start.headers.get('Set-Cookie'),/__Host-dd_auth_flow=.*; Path=\/; HttpOnly; SameSite=Lax;.*Secure/);
+ s.setChallenge(provider.searchParams.get('code_challenge'));
+ const callback=await c.request('/api/auth/callback?code=valid-code');
+ assert.equal(callback.status,303);
+ assert.equal(callback.headers.get('Location'),origin+'/#account');
+ assert(c.jar.has('__Host-dd_session'));
+ assert.equal((await c.request('/api/auth/session')).data.user.id,ownerId);
+ assert.equal((await c.request('/api/auth/logout',{method:'POST',headers:{Origin:backendOrigin}})).status,403);
+ assert.equal((await c.request('/api/auth/logout',{method:'POST',headers:{Origin:'https://attacker.example','X-Forwarded-Host':'store.example.test'}})).status,403);
+ assert.equal((await s.client('https://unconfigured.example').request('/api/auth/logout',{method:'POST',headers:{'X-Forwarded-Host':'store.example.test'}})).status,403);
+ assert.equal((await c.request('/api/auth/logout',{method:'POST'})).status,200);
+ assert.equal((await c.request('/api/auth/session')).data.user,null);
+});
+
+
+test('disabled email sign-in is advertised and sends no provider request',async t=>{const s=setup(t),c=s.client();s.env.AUTH_EMAIL_ENABLED='false';const config=await c.request('/api/auth/config');assert.equal(config.data.methods.email,false);assert.equal(config.data.methods.google,true);assert.equal((await c.request('/api/auth/email/start',{method:'POST',body:{email:'buyer@example.test'}})).status,503);assert.equal(s.calls.length,0);});

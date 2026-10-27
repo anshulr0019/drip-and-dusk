@@ -45,10 +45,11 @@ export function createHandler({fetchExternal=(...a)=>fetch(...a),now=()=>Date.no
    if(path==='/commerce-config.mjs')return new Response("export const commerceConfig={mode:'api',apiBase:''};",{headers:{'Content-Type':'text/javascript','Cache-Control':'no-store'}});
    if(!path.startsWith('/api/'))return env.ASSETS.fetch(request);
    if(!env.DB)fail('Checkout storage is not configured.',503);
-   // Same-origin JSON requests only. Provider callbacks use their own signatures.
+   // Browser writes must originate on the storefront. A configured backend origin
+   // supports same-origin reverse proxies without trusting forwarded host headers.
    const isWebhook=path.startsWith('/api/webhooks/');
    if(!isWebhook&&request.method!=='GET'){
-    if(request.headers.get('Origin')!==env.PUBLIC_ORIGIN||url.origin!==env.PUBLIC_ORIGIN)fail('Request origin is not allowed.',403);
+    if(request.headers.get('Origin')!==env.PUBLIC_ORIGIN||![env.PUBLIC_ORIGIN,env.BACKEND_ORIGIN].includes(url.origin))fail('Request origin is not allowed.',403);
     if(!request.headers.get('Content-Type')?.startsWith('application/json'))fail('JSON requests are required.',415);
    }
    if(mode(env)==='preview'&&!['localhost','127.0.0.1','[::1]'].includes(url.hostname))fail('Server payment simulation is local-only.',503);

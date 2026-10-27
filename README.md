@@ -11,7 +11,7 @@ A mobile-first fragrance storefront demo with a lightweight static frontend and 
 - Customer account screens for Google and email-code sign-in, with guest checkout retained.
 - A separate owner entry screen and an explicitly labelled local demo studio.
 
-The public static site uses sample prices and stock. It does not collect money, send messages or create shipments. Google/email sign-in remains disabled until the store operator connects the required services. An account preview is not a real login. Browser-local demo edits are not production administration.
+The catalogue uses sample prices and stock. Checkout does not collect money, send messages or create shipments. Real account sign-in requires the configured backend and enabled identity provider. The standalone static preview keeps real sign-in disabled. An account preview is not a real login. Browser-local demo edits are not production administration.
 
 ## Run locally
 
@@ -27,7 +27,7 @@ Open `http://127.0.0.1:4173`. No build step is needed for the static frontend.
 node --test tests/*.test.mjs
 ```
 
-The 70 automated checks cover catalogue logic, media controls, recommendations, checkout and authentication behavior. Provider responses are mocked in tests; real account configuration requires separate verification by the store operator.
+The 72 automated checks cover catalogue logic, media controls, recommendations, checkout and authentication behavior. Provider responses are mocked in tests; real account configuration requires separate verification by the store operator.
 
 ## Backend
 

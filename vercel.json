@@ -3,5 +3,18 @@
   "framework": null,
   "buildCommand": "",
   "installCommand": "",
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "routes": [
+    {
+      "src": "/commerce-config\\.mjs",
+      "dest": "https://drip-and-dusk-checkout.drip-and-dusk.workers.dev/commerce-config.mjs",
+      "headers": { "Cache-Control": "no-store", "CDN-Cache-Control": "no-store", "Vercel-CDN-Cache-Control": "no-store" }
+    },
+    {
+      "src": "/api/(.*)",
+      "dest": "https://drip-and-dusk-checkout.drip-and-dusk.workers.dev/api/$1",
+      "headers": { "Cache-Control": "no-store", "CDN-Cache-Control": "no-store", "Vercel-CDN-Cache-Control": "no-store" }
+    },
+    { "handle": "filesystem" }
+  ]
 }
