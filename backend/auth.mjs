@@ -36,11 +36,12 @@ export function createAuthService({fetchExternal=(...a)=>fetch(...a),now=Date.no
  async function flow(request,env,kind){const handle=cookieValue(request,'dd_auth_flow',env);if(!/^[A-Za-z0-9_-]{43}$/.test(handle))fail('Sign-in expired. Start again.',401);const row=await query(env,'SELECT * FROM auth_flows WHERE hash=?',await digest(handle)).first();if(!row||row.kind!==kind||row.expires_at<=now()||row.attempts>=5)fail('Sign-in expired. Start again.',401);return row;}
  async function handle(request,env){
   const url=new URL(request.url),path=url.pathname,time=now();
-  if(path==='/api/auth/config'&&request.method==='GET')return json({available:authReady(env),provider:env.AUTH_PROVIDER||'none',guestCheckout:true,ownerRestricted:env.AUTH_PROVIDER==='supabase'});
+  if(path==='/api/auth/config'&&request.method==='GET')return json({available:authReady(env),provider:env.AUTH_PROVIDER||'none',guestCheckout:true,ownerRestricted:env.AUTH_PROVIDER==='supabase',methods:{google:authReady(env)&&env.AUTH_GOOGLE_ENABLED==='true',email:authReady(env)&&env.AUTH_EMAIL_ENABLED!=='false'}});
   if(path==='/api/auth/session'&&request.method==='GET')return json({user:await session(request,env)});
   if(!path.startsWith('/api/auth/'))return null;
   if(!authReady(env))fail('Account sign-in is not connected yet. You can continue as a guest.',503);
   if(path==='/api/auth/email/start'&&request.method==='POST'){
+   if(env.AUTH_EMAIL_ENABLED==='false')fail('Email sign-in is not enabled yet.',503);
    const b=await body(request),email=String(b.email||'').trim().toLowerCase();if(email.length>254||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))fail('Enter a valid email address.');
    await throttle(env,'ip:'+(request.headers.get('cf-connecting-ip')||'local'),8,time);await throttle(env,'email:'+email,3,time);
    const handle=random();await query(env,'INSERT INTO auth_flows(hash,kind,email,return_path,expires_at) VALUES(?,?,?,?,?)',await digest(handle),'email',email,safeReturnPath(b.returnTo),time+600000).run();
@@ -55,6 +56,7 @@ export function createAuthService({fetchExternal=(...a)=>fetch(...a),now=Date.no
    headers.set('Content-Type','application/json');headers.set('Cache-Control','no-store');headers.set('Referrer-Policy','no-referrer');return new Response(JSON.stringify({user:result.user,returnTo:f.return_path}),{headers});
   }
   if(path==='/api/auth/google/start'&&request.method==='POST'){
+   if(env.AUTH_GOOGLE_ENABLED!=='true')fail('Google sign-in is not enabled yet.',503);
    await throttle(env,'google:'+(request.headers.get('cf-connecting-ip')||'local'),10,time);const b=await body(request),handle=random(),verifier=random(),challenge=await digest(verifier);
    await query(env,'INSERT INTO auth_flows(hash,kind,verifier,return_path,expires_at) VALUES(?,?,?,?,?)',await digest(handle),'google',await encrypt(env,verifier),safeReturnPath(b.returnTo),time+600000).run();
    const target=new URL(env.SUPABASE_URL.replace(/\/$/,'')+'/auth/v1/authorize');target.search=new URLSearchParams({provider:'google',prompt:'select_account',redirect_to:env.PUBLIC_ORIGIN+'/api/auth/callback',code_challenge:challenge,code_challenge_method:'s256'}).toString();return json({url:target.href},200,{'Set-Cookie':cookie(env,'dd_auth_flow',handle,600,'/api/auth')});

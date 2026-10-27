@@ -13,3 +13,8 @@ backend/.wrangler/
 *.sqlite
 *.sqlite-*
 node_modules/
+
+# Account-specific deployment settings
+backend/wrangler.production.jsonc
+
+.wrangler/

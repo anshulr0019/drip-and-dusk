@@ -21,6 +21,9 @@ WHATSAPP_APP_SECRET=
 WHATSAPP_VERIFY_TOKEN=
 # Optional managed customer/owner accounts. Real login stays disabled until set.
 AUTH_PROVIDER=supabase
+# Enable Google only after configuring the provider and callback URLs.
+AUTH_GOOGLE_ENABLED=false
+AUTH_EMAIL_ENABLED=true
 SUPABASE_URL=https://YOUR_PROJECT.supabase.co
 SUPABASE_PUBLISHABLE_KEY=sb_publishable_replace
 AUTH_SESSION_SECRET=replace-with-a-separate-random-secret-of-at-least-32-characters
