@@ -29,7 +29,7 @@ Open `http://127.0.0.1:4173`. No build step is needed for the static frontend.
 node --test tests/*.test.mjs
 ```
 
-The 81 automated checks cover catalogue logic, media controls, recommendations, checkout and authentication behavior. Provider responses are mocked in tests; real account configuration requires separate verification by the store operator.
+The 85 automated checks cover catalogue logic, media controls, recommendations, checkout and authentication behavior. Provider responses are mocked in tests; real account configuration requires separate verification by the store operator.
 
 ## Backend
 
@@ -46,3 +46,11 @@ The sample identity `dripanddusk@example` is not a payment destination. No payme
 Apply all SQL migrations before deploying the updated Worker. Keep account-specific deployment files and secrets ignored. `manual_demo` uses sample delivery charges and replaces entered personal details with a fixed sample address before persisting the order. Live UPI collection still needs a real merchant identity, approved prices, delivery rules, policies and an explicit release change.
 
 Owner fragrance forms store structured notes. Deterministic note matching derives scent directions and occasion pairings, then the server finder applies availability, budget and format. It does not call an AI model. Unverified or incomplete pyramids stay out of recommendations. Hot sellers is an owner selection, not a claim about measured sales.
+
+## Traffic preparation
+
+Public catalogue reads share a five-second in-memory snapshot per Worker instance, including in-flight reads. Product, settings and stock changes invalidate the local snapshot; checkout always revalidates against current stock and prices. Browser rendering starts before optional account checks, and catalogue/configuration reads run in parallel. The scent finder ranks the backend-processed catalogue in the browser, avoiding an API request per shortlist.
+
+A signed anonymous visitor cookie separates per-browser rate limits for customers behind the Vercel proxy. It grants no authentication or owner access. An additional shared-origin cap remains in place, and unverified cookies fall back to the backend IP bucket. Supabase and Google retain their own provider limits; this does not promise 150 simultaneous completed sign-ins.
+
+Run the bounded, read-only first-visit check with `node scripts/traffic-check.mjs https://drip-and-dusk-nine.vercel.app 150 300`. It requests public pages/APIs and media only, and creates no orders, sign-ins or messages. Reports are written under `output/performance/`. This measures HTTP traffic from one generator, not browser rendering or an uptime guarantee.

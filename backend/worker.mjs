@@ -1,3 +1,4 @@
+import {visitorId,backendIP} from './traffic.mjs';
 import {prepareProduct,prepareSettings} from './catalogue.mjs';
 import {recommendScents} from '../dist/scent-matching.mjs';
 import {processNotes} from '../dist/fragrance-notes.mjs';
@@ -18,8 +19,19 @@ function shipping(env){if(mode(env)==='preview'||manual(env))return previewShipp
 async function body(request,max=24000){const raw=await request.text();if(raw.length>max)fail('Request is too large.',413);try{return JSON.parse(raw)}catch{fail('Enter valid request data.')}}
 async function catalogue(env,owner=false){return (await all(env,'SELECT * FROM products')).map(p=>{const data=JSON.parse(p.data),profile=data.finderVerified===true?processNotes(data):{};return {...data,...profile,revision:p.revision||1,price:p.price_paise>0?p.price_paise/100:null,quantity:owner?p.quantity:p.quantity-p.held,held:owner?p.held:undefined,available:owner?data.available===true:p.enabled===1&&p.quantity>p.held};}).filter(p=>owner||!p.hidden&&!p.archived);}
 async function settings(env){const row=await first(env,'SELECT * FROM store_settings WHERE id=1');return row?{...JSON.parse(row.data),revision:row.revision}:null;}
-async function expire(env,now){await stmt(env,"UPDATE orders SET status='expired',updated_at=? WHERE status IN('pending','awaiting_verification') AND payment_status='pending' AND expires_at<=?",now,now).run();}
-async function limit(env,request,scope,max,now){const window=Math.floor(now/600000),key=await digest(scope+':'+(request.headers.get('cf-connecting-ip')||'local')+':'+window);const r=await first(env,'INSERT INTO rate_limits(key,window,count) VALUES(?,?,1) ON CONFLICT(key) DO UPDATE SET count=count+1 RETURNING count',key,window);if(r.count>max)fail('Too many requests. Please try again in a few minutes.',429)}
+const snapshots=new WeakMap();
+const invalidate=env=>snapshots.delete(env.DB);
+async function publicSnapshot(env,time){
+ const existing=snapshots.get(env.DB);if(existing&&existing.until>time)return existing.promise;
+ const entry={until:time+5000};entry.promise=(async()=>{await expire(env,time);const [products,business]=await Promise.all([catalogue(env),settings(env)]);return {products,settings:business};})();snapshots.set(env.DB,entry);
+ try{return await entry.promise}catch(e){if(snapshots.get(env.DB)===entry)snapshots.delete(env.DB);throw e;}
+}
+async function expire(env,now){const result=await stmt(env,"UPDATE orders SET status='expired',updated_at=? WHERE status IN('pending','awaiting_verification') AND payment_status='pending' AND expires_at<=?",now,now).run();if(result.meta.changes)invalidate(env);}
+async function limit(env,request,scope,max,now){
+ const window=Math.floor(now/600000),visitor=await visitorId(request,env,now),ip=backendIP(request);
+ const keys=[['origin:'+scope+':'+ip,scope==='track'?5000:1000],[scope+':'+(visitor?'visitor:'+visitor:'ip:'+ip),max]];
+ for(const [bucket,cap] of keys){const key=await digest(bucket+':'+window),r=await first(env,'INSERT INTO rate_limits(key,window,count) VALUES(?,?,1) ON CONFLICT(key) DO UPDATE SET count=count+1 RETURNING count',key,window);if(r.count>cap)fail('Too many requests. Please try again in a few minutes.',429);}
+}
 async function requireTracking(env,request,id){const token=request.headers.get('Authorization')?.replace(/^Bearer /,'');if(!env.TRACKING_SECRET||!equalSecret(token,await tokenFor(env,id)))fail('This tracking link is unavailable.',404);const order=await first(env,'SELECT * FROM orders WHERE id=?',id);if(!order)fail('This tracking link is unavailable.',404);return order;}
 async function isAdmin(env,request,now){if((env.ADMIN_SECRET?.length||0)<32)return false;const bearer=request.headers.get('Authorization')?.replace(/^Bearer /,'');if(bearer&&equalSecret(bearer,env.ADMIN_SECRET))return true;const cookie=request.headers.get('Cookie')?.match(/(?:^|;\s*)dd_owner=([^;]+)/)?.[1];if(!cookie)return false;const [expiry,mac]=cookie.split('.');return /^\d+$/.test(expiry)&&Number(expiry)>now&&Number(expiry)<=now+3600000&&equalSecret(mac,await hmac(env.ADMIN_SECRET,'owner:'+expiry));}
 async function requireAdmin(env,request,now){if(!await isAdmin(env,request,now))fail('Owner sign-in is required.',401)}
@@ -46,7 +58,7 @@ async function capture(env,o,payment,now){
   stmt(env,"UPDATE orders SET payment_status='captured',payment_id=?,status='confirmed',updated_at=? WHERE id=? AND payment_status='pending' AND status='pending'",payment.id,now,o.id),
   stmt(env,"INSERT OR IGNORE INTO order_events(order_id,status,at) SELECT id,'confirmed',? FROM orders WHERE id=? AND status='confirmed'",now,o.id),
   stmt(env,"INSERT OR IGNORE INTO notifications(id,order_id,kind) SELECT ?,id,'confirmation' FROM orders WHERE id=? AND status='confirmed' AND consent=1",crypto.randomUUID(),o.id)
- ]);
+ ]);invalidate(env);
 }
 export function createHandler({fetchExternal=(...a)=>fetch(...a),now=()=>Date.now()}={}){
  const auth=createAuthService({fetchExternal,now});
@@ -69,8 +81,8 @@ export function createHandler({fetchExternal=(...a)=>fetch(...a),now=()=>Date.no
    const authResponse=await auth.handle(request,env);if(authResponse)return authResponse;
    if(path==='/api/account/orders'&&request.method==='GET'){const user=await auth.session(request,env);if(!user)fail('Sign in to view your orders.',401);const rows=await all(env,'SELECT * FROM orders WHERE customer_user_id=? ORDER BY created_at DESC LIMIT 100',user.id);return json({orders:await Promise.all(rows.map(async o=>({...await publicOrder(env,o),trackingPath:'#track/'+o.id+'/'+await tokenFor(env,o.id)})))});}
    if(path==='/api/config'&&request.method==='GET')return json({mode:mode(env),provider:manual(env)?'manual_upi':mode(env)==='preview'?'preview':'razorpay',payment:manual(env)?samplePayment:undefined,ready:readiness(env),shippingConfigured:!!env.SHIPPING_RULES_JSON||mode(env)==='preview'||manual(env),courierConnected:!!env.COURIER_WEBHOOK_SECRET,whatsappConnected:!!(env.WHATSAPP_ACCESS_TOKEN&&env.ALLOW_SANDBOX_MESSAGES==='true')});
-   if(path==='/api/catalogue'&&request.method==='GET'){await expire(env,time);return json({products:await catalogue(env),settings:await settings(env)})}
-   if(path==='/api/scent-matches'&&request.method==='POST'){await limit(env,request,'finder',120,time);const b=await body(request);return json({matches:recommendScents(await catalogue(env),b.answers)});}
+   if(path==='/api/catalogue'&&request.method==='GET')return json(await publicSnapshot(env,time));
+   if(path==='/api/scent-matches'&&request.method==='POST'){await limit(env,request,'finder',120,time);const b=await body(request);return json({matches:recommendScents((await publicSnapshot(env,time)).products,b.answers)});}
    if(path==='/api/admin/products'&&request.method==='GET'){await requireOwner(env,request,time);await expire(env,time);return json({products:await catalogue(env,true)});}
    const productPath=path.match(/^\/api\/admin\/products\/([a-zA-Z0-9-]+)$/);
    if(productPath&&request.method==='PUT'){
@@ -85,13 +97,13 @@ export function createHandler({fetchExternal=(...a)=>fetch(...a),now=()=>Date.no
      if(b.expectedRevision!==null)fail('This fragrance no longer exists. Reload before saving.',409);
      await stmt(env,'INSERT INTO products(id,data,price_paise,quantity,enabled) VALUES(?,?,?,?,?)',p.id,JSON.stringify(p),Math.round((p.price||0)*100),p.quantity,p.available&&!p.enquiryOnly&&!p.hidden&&!p.archived?1:0).run();
     }
-    return json({products:await catalogue(env,true)});
+    invalidate(env);return json({products:await catalogue(env,true)});
    }
    if(path==='/api/admin/settings'&&request.method==='PUT'){
     await requireOwner(env,request,time);const b=await body(request,50000),data=prepareSettings(b.settings),old=await settings(env);
     if((old?.revision??null)!==b.expectedRevision)fail('Business settings changed. Reload before saving.',409);
     const result=old?await stmt(env,'UPDATE store_settings SET data=?,revision=revision+1 WHERE id=1 AND revision=?',JSON.stringify(data),b.expectedRevision).run():await stmt(env,'INSERT OR IGNORE INTO store_settings(id,data) VALUES(1,?)',JSON.stringify(data)).run();
-    if(!result.meta.changes)fail('Settings changed. Reload before saving.',409);return json({settings:await settings(env)});
+    if(!result.meta.changes)fail('Settings changed. Reload before saving.',409);invalidate(env);return json({settings:await settings(env)});
    }
    if(path==='/api/checkout/quote'&&request.method==='POST'){
     if(!readiness(env))fail('Merchant test keys and delivery setup are not connected yet.',503);
@@ -114,6 +126,7 @@ export function createHandler({fetchExternal=(...a)=>fetch(...a),now=()=>Date.no
      const repeated=await first(env,'SELECT * FROM orders WHERE request_id=?',b.requestId);if(repeated&&equalSecret(repeated.request_hash,requestHash))return json(await sessionFor(env,repeated));
      fail('Stock or checkout changed. Refresh your bag and review the order again.',409);
     }
+    invalidate(env);
     if(mode(env)==='sandbox'){
      // Never create another gateway order on an ambiguous network timeout. The hold expires safely.
      let created;try{created=await gateway(env,'orders',{method:'POST',body:JSON.stringify({amount:q.totalPaise,currency:'INR',receipt:ref})},fetchExternal)}catch(e){throw e}
@@ -172,7 +185,7 @@ export function createHandler({fetchExternal=(...a)=>fetch(...a),now=()=>Date.no
     if(!o||o.payment_method!=='manual_upi')fail('Manual UPI order not found.',404);
     if(manualOrder[2]==='cancel'){
      if(o.status==='cancelled')return json({status:o.status});if(!['pending','awaiting_verification'].includes(o.status))fail('Only unpaid orders can be cancelled here.',409);
-     await env.DB.batch([stmt(env,"UPDATE orders SET status='cancelled',updated_at=? WHERE id=? AND payment_status='pending' AND status IN('pending','awaiting_verification')",time,o.id),stmt(env,"INSERT INTO owner_audit(id,order_id,action,actor,at) VALUES(?,?,'cancel',?,?)",crypto.randomUUID(),o.id,actor,time)]);return json({status:'cancelled'});
+     await env.DB.batch([stmt(env,"UPDATE orders SET status='cancelled',updated_at=? WHERE id=? AND payment_status='pending' AND status IN('pending','awaiting_verification')",time,o.id),stmt(env,"INSERT INTO owner_audit(id,order_id,action,actor,at) VALUES(?,?,'cancel',?,?)",crypto.randomUUID(),o.id,actor,time)]);invalidate(env);return json({status:'cancelled'});
     }
     const reference=String(b.bankReference||'').trim();if(b.checkedBank!==true||b.amountPaise!==o.total_paise||!/^[a-zA-Z0-9-]{6,40}$/.test(reference))fail('Check the bank receipt, enter its reference and the exact amount before approving.');
     const paymentId='manual-'+reference.toUpperCase();
@@ -184,7 +197,7 @@ export function createHandler({fetchExternal=(...a)=>fetch(...a),now=()=>Date.no
      stmt(env,"INSERT INTO owner_audit(id,order_id,action,actor,reference,at) SELECT ?,id,'approve-payment',?,?,? FROM orders WHERE id=? AND status='confirmed' AND payment_id=?",crypto.randomUUID(),actor,reference,time,o.id,paymentId)
     ]);}catch{fail('That bank reference is already in use, or this order changed. Reload and verify the receipt.',409);}
     if(!approval[0].meta.changes){const current=await first(env,'SELECT * FROM orders WHERE id=?',o.id);if(current?.payment_status!=='captured'||current.payment_id!==paymentId)fail('This order changed before approval. Reload and review it.',409);}
-    return json({status:'confirmed'});
+    invalidate(env);return json({status:'confirmed'});
    }
    const admin=path.match(/^\/api\/admin\/orders\/([a-zA-Z0-9-]+)\/status$/);
    if(admin&&request.method==='POST'){

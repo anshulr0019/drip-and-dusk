@@ -67,3 +67,26 @@ test('proxied Google sign-in keeps cookies and redirects on the storefront and r
 
 
 test('disabled email sign-in is advertised and sends no provider request',async t=>{const s=setup(t),c=s.client();s.env.AUTH_EMAIL_ENABLED='false';const config=await c.request('/api/auth/config');assert.equal(config.data.methods.email,false);assert.equal(config.data.methods.google,true);assert.equal((await c.request('/api/auth/email/start',{method:'POST',body:{email:'buyer@example.test'}})).status,503);assert.equal(s.calls.length,0);});
+
+test('150 visitors behind one proxy can start Google sign-in without sharing the per-browser bucket',async t=>{
+ const s=setup(t),clients=Array.from({length:150},()=>s.client()),headers={'cf-connecting-ip':'203.0.113.8'};
+ await Promise.all(clients.map(c=>c.request('/api/auth/config')));
+ const started=await Promise.all(clients.map(c=>c.request('/api/auth/google/start',{method:'POST',body:{returnTo:'#account'},headers})));
+ assert(started.every(r=>r.status===200));assert.equal(s.calls.length,0);
+ for(let i=0;i<9;i++)assert.equal((await clients[0].request('/api/auth/google/start',{method:'POST',headers})).status,200);
+ assert.equal((await clients[0].request('/api/auth/google/start',{method:'POST',headers})).status,429);
+ assert.equal((await clients[1].request('/api/auth/google/start',{method:'POST',headers})).status,200);
+ const visit=clients[0].jar.get('__Host-dd_visit');assert(visit);assert(!visit.includes(ownerId));
+});
+test('forged visitor cookies and forwarded IP headers cannot evade the anonymous fallback limit',async t=>{
+ const s=setup(t),c=s.client();
+ for(let i=0;i<11;i++){
+  c.jar.set('__Host-dd_visit',crypto.randomUUID()+'.1800000001000.'+'0'.repeat(64));
+  const r=await c.request('/api/auth/google/start',{method:'POST',headers:{'cf-connecting-ip':'203.0.113.9','X-Forwarded-For':'10.0.0.'+i}});
+  assert.equal(r.status,i<10?200:429);
+ }
+});
+test('fresh signed visitor identities remain subject to an overall proxy abuse limit',async t=>{
+ const s=setup(t),headers={'cf-connecting-ip':'203.0.113.10'};
+ for(let i=0;i<301;i++){const c=s.client();await c.request('/api/auth/config');const r=await c.request('/api/auth/google/start',{method:'POST',headers});assert.equal(r.status,i<300?200:429);}
+});

@@ -1,3 +1,4 @@
+import {visitorId,visitorCookie,backendIP} from './traffic.mjs';
 // Supabase verifies identity. Our cookie contains only a random, revocable session handle.
 const enc=new TextEncoder(),dec=new TextDecoder();
 const fail=(message,status=400)=>{throw Object.assign(Error(message),{status})};
@@ -16,6 +17,12 @@ const cookieValue=(request,name,env)=>request.headers.get('Cookie')?.split(';').
 function cookie(env,name,value,seconds,path='/'){return `${cookieName(env,name)}=${value}; Path=/; HttpOnly; SameSite=Lax; Max-Age=${seconds}${new URL(env.PUBLIC_ORIGIN).protocol==='https:'?'; Secure':''}`}
 async function body(request){const text=await request.text();if(text.length>3000)fail('Sign-in request is too large.',413);try{return JSON.parse(text)}catch{fail('Invalid sign-in request.')}}
 async function throttle(env,key,max,time){const window=Math.floor(time/600000),hash=await digest('auth:'+key+':'+window);const r=await query(env,'INSERT INTO rate_limits(key,window,count) VALUES(?,?,1) ON CONFLICT(key) DO UPDATE SET count=count+1 RETURNING count',hash,window).first();if(r.count>max)fail('Too many sign-in attempts. Try again in a few minutes.',429)}
+async function browserThrottle(env,request,scope,max,time){
+ const visitor=await visitorId(request,env,time),ip=backendIP(request);
+ // Keep a shared origin guard as well; issuing fresh visitor cookies cannot remove it.
+ await throttle(env,'origin:'+scope+':'+ip,300,time);
+ await throttle(env,scope+':'+(visitor?'visitor:'+visitor:'ip:'+ip),max,time);
+}
 export function createAuthService({fetchExternal=(...a)=>fetch(...a),now=Date.now}={}){
  const cache=new WeakMap();
  async function provider(env,path,{method='GET',data,token}={}){let r;try{r=await fetchExternal(env.SUPABASE_URL.replace(/\/$/,'')+'/auth/v1/'+path,{method,signal:AbortSignal.timeout(15000),headers:{apikey:env.SUPABASE_PUBLISHABLE_KEY,'Content-Type':'application/json',...(token?{Authorization:'Bearer '+token}:{})},...(data?{body:JSON.stringify(data)}:{})})}catch{fail('Sign-in service is temporarily unavailable.',503)}let value;try{value=await r.json()}catch{value={}}if(!r.ok)throw Object.assign(Error('Sign-in could not be verified. Please try again.'),{status:r.status===429?429:r.status>=500?503:401});return value;}
@@ -36,14 +43,14 @@ export function createAuthService({fetchExternal=(...a)=>fetch(...a),now=Date.no
  async function flow(request,env,kind){const handle=cookieValue(request,'dd_auth_flow',env);if(!/^[A-Za-z0-9_-]{43}$/.test(handle))fail('Sign-in expired. Start again.',401);const row=await query(env,'SELECT * FROM auth_flows WHERE hash=?',await digest(handle)).first();if(!row||row.kind!==kind||row.expires_at<=now()||row.attempts>=5)fail('Sign-in expired. Start again.',401);return row;}
  async function handle(request,env){
   const url=new URL(request.url),path=url.pathname,time=now();
-  if(path==='/api/auth/config'&&request.method==='GET')return json({available:authReady(env),provider:env.AUTH_PROVIDER||'none',guestCheckout:true,ownerRestricted:env.AUTH_PROVIDER==='supabase',methods:{google:authReady(env)&&env.AUTH_GOOGLE_ENABLED==='true',email:authReady(env)&&env.AUTH_EMAIL_ENABLED!=='false'}});
+  if(path==='/api/auth/config'&&request.method==='GET'){const visitor=await visitorCookie(request,env,time);return json({available:authReady(env),provider:env.AUTH_PROVIDER||'none',guestCheckout:true,ownerRestricted:env.AUTH_PROVIDER==='supabase',methods:{google:authReady(env)&&env.AUTH_GOOGLE_ENABLED==='true',email:authReady(env)&&env.AUTH_EMAIL_ENABLED!=='false'}},200,visitor?{'Set-Cookie':visitor}:{});}
   if(path==='/api/auth/session'&&request.method==='GET')return json({user:await session(request,env)});
   if(!path.startsWith('/api/auth/'))return null;
   if(!authReady(env))fail('Account sign-in is not connected yet. You can continue as a guest.',503);
   if(path==='/api/auth/email/start'&&request.method==='POST'){
    if(env.AUTH_EMAIL_ENABLED==='false')fail('Email sign-in is not enabled yet.',503);
    const b=await body(request),email=String(b.email||'').trim().toLowerCase();if(email.length>254||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))fail('Enter a valid email address.');
-   await throttle(env,'ip:'+(request.headers.get('cf-connecting-ip')||'local'),8,time);await throttle(env,'email:'+email,3,time);
+   await browserThrottle(env,request,'email-start',8,time);await throttle(env,'email:'+email,3,time);
    const handle=random();await query(env,'INSERT INTO auth_flows(hash,kind,email,return_path,expires_at) VALUES(?,?,?,?,?)',await digest(handle),'email',email,safeReturnPath(b.returnTo),time+600000).run();
    try{await provider(env,'otp',{method:'POST',data:{email,create_user:true}})}catch(e){if(e.status!==401)throw e;/* Same response for blocked/nonexistent accounts. */}
    return json({message:'If this address can receive sign-in email, a code is on its way.'},200,{'Set-Cookie':cookie(env,'dd_auth_flow',handle,600,'/api/auth')});
@@ -57,7 +64,7 @@ export function createAuthService({fetchExternal=(...a)=>fetch(...a),now=Date.no
   }
   if(path==='/api/auth/google/start'&&request.method==='POST'){
    if(env.AUTH_GOOGLE_ENABLED!=='true')fail('Google sign-in is not enabled yet.',503);
-   await throttle(env,'google:'+(request.headers.get('cf-connecting-ip')||'local'),10,time);const b=await body(request),handle=random(),verifier=random(),challenge=await digest(verifier);
+   await browserThrottle(env,request,'google',10,time);const b=await body(request),handle=random(),verifier=random(),challenge=await digest(verifier);
    await query(env,'INSERT INTO auth_flows(hash,kind,verifier,return_path,expires_at) VALUES(?,?,?,?,?)',await digest(handle),'google',await encrypt(env,verifier),safeReturnPath(b.returnTo),time+600000).run();
    const target=new URL(env.SUPABASE_URL.replace(/\/$/,'')+'/auth/v1/authorize');target.search=new URLSearchParams({provider:'google',prompt:'select_account',redirect_to:env.PUBLIC_ORIGIN+'/api/auth/callback',code_challenge:challenge,code_challenge_method:'s256'}).toString();return json({url:target.href},200,{'Set-Cookie':cookie(env,'dd_auth_flow',handle,600,'/api/auth')});
   }
