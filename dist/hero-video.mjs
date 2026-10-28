@@ -9,7 +9,7 @@ export function initHeroVideo({document:doc=document,window:win=window}={}) {
  const rect=hero.getBoundingClientRect();
  let visible=!hero.closest('[hidden]')&&rect.bottom>0&&rect.top<win.innerHeight;
  let choice=null,failed=false,loaded=false,playPending=false;
- const wantsMotion=()=>choice??!(reduced.matches||connection?.saveData);
+ const wantsMotion=()=>choice??!(reduced.matches||connection?.saveData||['slow-2g','2g','3g'].includes(connection?.effectiveType));
  video.muted=true;
  video.defaultMuted=true;
  video.playsInline=true;
@@ -48,6 +48,8 @@ export function initHeroVideo({document:doc=document,window:win=window}={}) {
   if(!doc.hidden&&visible&&wantsMotion()&&!failed)hero.classList.add('video-ready');
   else video.pause();
  });
+ // A buffering film must not replace the immediately available poster.
+ for(const event of ['waiting','stalled'])video.addEventListener(event,()=>hero.classList.remove('video-ready'));
  video.addEventListener('error',()=>{
   failed=true;
   video.pause();

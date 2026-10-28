@@ -29,7 +29,7 @@ Open `http://127.0.0.1:4173`. No build step is needed for the static frontend.
 node --test tests/*.test.mjs
 ```
 
-The 85 automated checks cover catalogue logic, media controls, recommendations, checkout and authentication behavior. Provider responses are mocked in tests; real account configuration requires separate verification by the store operator.
+The 86 automated checks cover catalogue logic, media controls, recommendations, checkout and authentication behavior. Provider responses are mocked in tests; real account configuration requires separate verification by the store operator.
 
 ## Backend
 
@@ -53,4 +53,8 @@ Public catalogue reads share a five-second in-memory snapshot per Worker instanc
 
 A signed anonymous visitor cookie separates per-browser rate limits for customers behind the Vercel proxy. It grants no authentication or owner access. An additional shared-origin cap remains in place, and unverified cookies fall back to the backend IP bucket. Supabase and Google retain their own provider limits; this does not promise 150 simultaneous completed sign-ins.
 
-Run the bounded, read-only first-visit check with `node scripts/traffic-check.mjs https://drip-and-dusk-nine.vercel.app 150 300`. It requests public pages/APIs and media only, and creates no orders, sign-ins or messages. Reports are written under `output/performance/`. This measures HTTP traffic from one generator, not browser rendering or an uptime guarantee.
+Run the bounded, read-only first-visit check with `node scripts/traffic-check.mjs https://drip-and-dusk-nine.vercel.app 150 300 h2 critical`. It requests public pages/APIs and media only, and creates no orders, sign-ins or messages. Reports are written under `output/performance/`. This measures HTTP traffic from one generator, not browser rendering or an uptime guarantee.
+
+The `critical` profile measures the shopping page without waiting for a full background-video download. Omit `critical` to include the film. HTTP/2 mode uses four established TLS connections with multiplexed requests; it does not simulate 150 separate TLS handshakes. Slow mobile connections and stalled playback retain the poster image.
+
+On 28 October 2026, the critical-page HTTP/2 check completed 3,900 requests from 150 simulated guests with zero errors, including 600 public API requests. The 95th-percentile time to first byte was 559 ms overall. This is a single-generator browsing result with the optional full-film transfer excluded; earlier full-media and connection tests recorded timeouts, so it is not a blanket reliability or video-playback guarantee. Local reports retain those limitations.
