@@ -16,7 +16,7 @@ export function initHeroVideo({document:doc=document,window:win=window}={}) {
  button.hidden=false;
  function updateButton(){
   const enabled=wantsMotion()&&!failed;
-  button.textContent=enabled?'Ⅱ':'▷';
+  button.innerHTML=enabled?'<svg class=ui-icon aria-hidden=true focusable=false><use href=#pause-icon></use></svg>':'<svg class=ui-icon aria-hidden=true focusable=false><use href=#play-icon></use></svg>';
   button.setAttribute('aria-label',enabled?'Pause background video':'Play background video');
   button.hidden=failed||!siteEnabled;
   doc.body.classList.toggle('paused',!enabled);
