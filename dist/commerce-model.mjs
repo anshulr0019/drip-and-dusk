@@ -1,3 +1,4 @@
+import {deliveryRules} from './store-settings.mjs';
 import {inStock} from './core.mjs';
 export const stages=['confirmed','packed','shipped','delivered'];
 export const stageLabels={confirmed:'Confirmed',packed:'Packed',shipped:'Shipped',delivered:'Delivered',pending:'Awaiting payment',awaiting_verification:'Awaiting verification',expired:'Payment window expired',cancelled:'Cancelled',payment_review:'Payment needs review'};
@@ -25,7 +26,7 @@ export const quoteFingerprint=q=>JSON.stringify({lines:q.lines.map(l=>[l.id,l.qt
 export function completePreviewOrder(state,basket,quote,{requestId,consent=false,now=new Date().toISOString()}={}){
  const existing=(state.demoOrders||[]).find(o=>o.requestId===requestId);if(existing)return {state,order:existing};
  if(!requestId)throw Error('Restart checkout and try again.');
- const current=quoteCheckout(state.products,basket,quote.postcode,previewShipping);if(quoteFingerprint(current)!==quoteFingerprint(quote))throw Error('Your bag or prices changed. Review delivery and totals again.');
+ const current=quoteCheckout(state.products,basket,quote.postcode,deliveryRules(state.settings));if(quoteFingerprint(current)!==quoteFingerprint(quote))throw Error('Your bag or prices changed. Review delivery and totals again.');
  const next=structuredClone(state),id='demo-'+crypto.randomUUID(),token=crypto.randomUUID()+crypto.randomUUID();
  const order={id,token,ref:'DD-DEMO-'+id.slice(-8).toUpperCase(),requestId,mode:'preview',status:'confirmed',paymentStatus:'simulated',notificationStatus:consent?'preview':'not_requested',lines:quote.lines,subtotalPaise:quote.subtotalPaise,feePaise:quote.feePaise,totalPaise:quote.totalPaise,deliveryLabel:quote.deliveryLabel,events:[{status:'confirmed',at:now}],createdAt:now};
  for(const line of order.lines){const p=next.products.find(p=>p.id===line.id);p.quantity-=line.qty;p.available=p.quantity>0;}

@@ -1,11 +1,11 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {readFile} from 'node:fs/promises';
+import {readFile,readdir} from 'node:fs/promises';
 import {LocalD1} from '../backend/local-db.mjs';
 import {seedSQL} from '../backend/seed.mjs';
 import {createHandler} from '../backend/worker.mjs';
 import {digest,safeReturnPath} from '../backend/auth.mjs';
-const schema=await readFile(new URL('../backend/migrations/0001_orders.sql',import.meta.url),'utf8')+await readFile(new URL('../backend/migrations/0002_accounts.sql',import.meta.url),'utf8')+await readFile(new URL('../backend/migrations/0003_manual_upi_catalogue.sql',import.meta.url),'utf8');
+const folder=new URL('../backend/migrations/',import.meta.url),schema=(await Promise.all((await readdir(folder)).filter(n=>n.endsWith('.sql')).sort().map(n=>readFile(new URL(n,folder),'utf8')))).join('\n');
 const origin='https://store.example.test',ownerId='11111111-1111-4111-8111-111111111111',buyerId='22222222-2222-4222-8222-222222222222';
 function setup(t){const DB=new LocalD1();DB.exec(schema);DB.exec(seedSQL());t.after(()=>DB.close());let clock=1800000000000,expectedChallenge='',googleUser='owner',ownerAllowed=true,refreshFailure=false,providerUnavailable=false;const calls=[];
  const env={DB,COMMERCE_MODE:'sandbox',PUBLIC_ORIGIN:origin,TRACKING_SECRET:'tracking-secret-with-thirty-two-characters',ADMIN_SECRET:'legacy-owner-secret-with-thirty-two-characters',AUTH_PROVIDER:'supabase',AUTH_GOOGLE_ENABLED:'true',SUPABASE_URL:'https://test-project.supabase.co',SUPABASE_PUBLISHABLE_KEY:'sb_publishable_example',AUTH_SESSION_SECRET:'separate-auth-encryption-secret-with-thirty-two-characters',AUTH_OWNER_IDS:ownerId,RAZORPAY_KEY_ID:'rzp_test_example',RAZORPAY_KEY_SECRET:'test-secret',RAZORPAY_WEBHOOK_SECRET:'gateway-webhook-secret-with-thirty-two-characters',SHIPPING_RULES_JSON:JSON.stringify({zones:[{prefixes:['411'],feePaise:9900,label:'Test delivery'}]})};

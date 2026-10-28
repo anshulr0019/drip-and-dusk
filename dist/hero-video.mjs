@@ -8,8 +8,8 @@ export function initHeroVideo({document:doc=document,window:win=window}={}) {
  const connection=win.navigator.connection;
  const rect=hero.getBoundingClientRect();
  let visible=!hero.closest('[hidden]')&&rect.bottom>0&&rect.top<win.innerHeight;
- let choice=null,failed=false,loaded=false,playPending=false;
- const wantsMotion=()=>choice??!(reduced.matches||connection?.saveData||['slow-2g','2g','3g'].includes(connection?.effectiveType));
+ let siteEnabled=true,choice=null,failed=false,loaded=false,playPending=false;
+ const wantsMotion=()=>siteEnabled&&(choice??!(reduced.matches||connection?.saveData||['slow-2g','2g','3g'].includes(connection?.effectiveType)));
  video.muted=true;
  video.defaultMuted=true;
  video.playsInline=true;
@@ -18,7 +18,7 @@ export function initHeroVideo({document:doc=document,window:win=window}={}) {
   const enabled=wantsMotion()&&!failed;
   button.textContent=enabled?'Ⅱ':'▷';
   button.setAttribute('aria-label',enabled?'Pause background video':'Play background video');
-  button.hidden=failed;
+  button.hidden=failed||!siteEnabled;
   doc.body.classList.toggle('paused',!enabled);
  }
  function sync(){
@@ -26,7 +26,7 @@ export function initHeroVideo({document:doc=document,window:win=window}={}) {
   if(!wantsMotion()||failed||doc.hidden||!visible){
    video.pause();
    // A changed system preference returns to the immediately available poster.
-   if(reduced.matches&&choice!==true)hero.classList.remove('video-ready');
+   if(!siteEnabled||reduced.matches&&choice!==true)hero.classList.remove('video-ready');
    return;
   }
   if(!loaded){
@@ -68,5 +68,5 @@ export function initHeroVideo({document:doc=document,window:win=window}={}) {
   observer.observe(hero);
  }
  sync();
- return {toggle(){choice=!wantsMotion();sync();}};
+ return {toggle(){choice=!wantsMotion();sync();},setEnabled(value){siteEnabled=!!value;sync();}};
 }

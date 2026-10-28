@@ -1,3 +1,6 @@
+import {shipmentFields,aftercareFields,orderFilter} from './owner-operations.mjs';
+import {deliveryRules} from '../dist/store-settings.mjs';
+import {orderRows,ordersCSV} from '../dist/owner-model.mjs';
 import {paymentOptions,choosePaymentMethod,razorpayTestReady} from './payment-options.mjs';
 import {visitorId,backendIP} from './traffic.mjs';
 import {prepareProduct,prepareSettings} from './catalogue.mjs';
@@ -16,7 +19,7 @@ const mode=env=>env.COMMERCE_MODE||'sandbox';
 const manual=env=>mode(env)==='manual_demo';
 const samplePayment={sample:true,upiId:'dripanddusk@example',payeeName:'Drip & Dusk (sample)',whatsapp:''};
 function readiness(env){const preview=mode(env)==='preview';if(manual(env))return env.TRACKING_SECRET?.length>=32;if(!['preview','sandbox'].includes(mode(env)))return false;return !!(env.TRACKING_SECRET?.length>=32&&(env.AUTH_PROVIDER==='supabase'?(authReady(env)&&!!env.AUTH_OWNER_IDS?.trim()):env.ADMIN_SECRET?.length>=32)&&(preview||(env.RAZORPAY_KEY_ID?.startsWith('rzp_test_')&&env.RAZORPAY_KEY_SECRET&&env.RAZORPAY_WEBHOOK_SECRET?.length>=32&&env.SHIPPING_RULES_JSON)))}
-function shipping(env){if(mode(env)==='preview'||manual(env))return previewShipping;let rules;try{rules=JSON.parse(env.SHIPPING_RULES_JSON)}catch{fail('Delivery rates are not configured.',503)}return {...rules,preview:false}}
+async function shipping(env){const business=await settings(env);if(business?.delivery)return deliveryRules(business,mode(env)==='preview'||manual(env));if(mode(env)==='preview'||manual(env))return previewShipping;let rules;try{rules=JSON.parse(env.SHIPPING_RULES_JSON)}catch{fail('Delivery rates are not configured.',503)}return {...rules,preview:false}}
 async function body(request,max=24000){const raw=await request.text();if(raw.length>max)fail('Request is too large.',413);try{return JSON.parse(raw)}catch{fail('Enter valid request data.')}}
 async function catalogue(env,owner=false){return (await all(env,'SELECT * FROM products')).map(p=>{const data=JSON.parse(p.data),profile=data.finderVerified===true?processNotes(data):{};return {...data,...profile,revision:p.revision||1,price:p.price_paise>0?p.price_paise/100:null,quantity:owner?p.quantity:p.quantity-p.held,held:owner?p.held:undefined,available:owner?data.available===true:p.enabled===1&&p.quantity>p.held};}).filter(p=>owner||!p.hidden&&!p.archived);}
 async function settings(env){const row=await first(env,'SELECT * FROM store_settings WHERE id=1');return row?{...JSON.parse(row.data),revision:row.revision}:null;}
@@ -36,7 +39,7 @@ async function limit(env,request,scope,max,now){
 async function requireTracking(env,request,id){const token=request.headers.get('Authorization')?.replace(/^Bearer /,'');if(!env.TRACKING_SECRET||!equalSecret(token,await tokenFor(env,id)))fail('This tracking link is unavailable.',404);const order=await first(env,'SELECT * FROM orders WHERE id=?',id);if(!order)fail('This tracking link is unavailable.',404);return order;}
 async function isAdmin(env,request,now){if((env.ADMIN_SECRET?.length||0)<32)return false;const bearer=request.headers.get('Authorization')?.replace(/^Bearer /,'');if(bearer&&equalSecret(bearer,env.ADMIN_SECRET))return true;const cookie=request.headers.get('Cookie')?.match(/(?:^|;\s*)dd_owner=([^;]+)/)?.[1];if(!cookie)return false;const [expiry,mac]=cookie.split('.');return /^\d+$/.test(expiry)&&Number(expiry)>now&&Number(expiry)<=now+3600000&&equalSecret(mac,await hmac(env.ADMIN_SECRET,'owner:'+expiry));}
 async function requireAdmin(env,request,now){if(!await isAdmin(env,request,now))fail('Owner sign-in is required.',401)}
-async function publicOrder(env,o){const n=await first(env,"SELECT status FROM notifications WHERE order_id=? AND kind='confirmation'",o.id);return {id:o.id,ref:o.ref,mode:o.mode,status:o.status,paymentStatus:o.payment_status,paymentMethod:o.payment_method,expiresAt:new Date(o.expires_at).toISOString(),payment:o.payment_method==='manual_upi'?samplePayment:undefined,notificationStatus:o.payment_method==='manual_upi'?'manual':!o.consent?'not_requested':o.mode==='preview'?'preview':n?.status||'pending',lines:JSON.parse(o.lines),subtotalPaise:o.subtotal_paise,feePaise:o.shipping_paise,totalPaise:o.total_paise,deliveryLabel:o.delivery_label,events:(await all(env,'SELECT status,at FROM order_events WHERE order_id=? ORDER BY at',o.id)).map(e=>({...e,at:new Date(e.at).toISOString()})),createdAt:new Date(o.created_at).toISOString()};}
+async function publicOrder(env,o){const n=await first(env,"SELECT status FROM notifications WHERE order_id=? AND kind='confirmation'",o.id);return {id:o.id,ref:o.ref,mode:o.mode,status:o.status,paymentStatus:o.payment_status,paymentMethod:o.payment_method,shipment:{courier:o.courier_name||'',awb:o.shipment_id||'',trackingUrl:o.tracking_url||''},expiresAt:new Date(o.expires_at).toISOString(),payment:o.payment_method==='manual_upi'?samplePayment:undefined,notificationStatus:o.payment_method==='manual_upi'?'manual':!o.consent?'not_requested':o.mode==='preview'?'preview':n?.status||'pending',lines:JSON.parse(o.lines),subtotalPaise:o.subtotal_paise,feePaise:o.shipping_paise,totalPaise:o.total_paise,deliveryLabel:o.delivery_label,events:(await all(env,'SELECT status,at FROM order_events WHERE order_id=? ORDER BY at',o.id)).map(e=>({...e,at:new Date(e.at).toISOString()})),createdAt:new Date(o.created_at).toISOString()};}
 async function sessionFor(env,o){
  const result={id:o.id,ref:o.ref,token:await tokenFor(env,o.id),provider:o.payment_method==='manual_upi'?'manual_upi':o.mode==='preview'?'preview':'razorpay',status:o.status,amount:o.total_paise};
  if(o.payment_method==='manual_upi')return {...result,payment:samplePayment};
@@ -109,7 +112,7 @@ export function createHandler({fetchExternal=(...a)=>fetch(...a),now=()=>Date.no
    }
    if(path==='/api/checkout/quote'&&request.method==='POST'){
     if(!readiness(env))fail('Merchant test keys and delivery setup are not connected yet.',503);
-    await limit(env,request,'quote',60,time);await expire(env,time);const b=await body(request),q=quoteCheckout(await catalogue(env),b.basket,String(b.postcode),shipping(env)),id=crypto.randomUUID();
+    await limit(env,request,'quote',60,time);await expire(env,time);const b=await body(request),q=quoteCheckout(await catalogue(env),b.basket,String(b.postcode),await shipping(env)),id=crypto.randomUUID();
     await stmt(env,'INSERT INTO quotes(id,data,expires_at) VALUES(?,?,?)',id,JSON.stringify(q),time+600000).run();return json({...q,quoteId:id,expiresAt:new Date(time+600000).toISOString()});
    }
    if(path==='/api/orders'&&request.method==='POST'){
@@ -119,7 +122,7 @@ export function createHandler({fetchExternal=(...a)=>fetch(...a),now=()=>Date.no
     const requestHash=await digest(JSON.stringify({quoteId:b.quoteId,basket:b.basket,address:a,consent:b.whatsappConsent,customerUserId:account?.id||null,paymentMethod}));
     const existing=await first(env,'SELECT * FROM orders WHERE request_id=?',b.requestId);if(existing){if(!equalSecret(requestHash,existing.request_hash))fail('This checkout request has changed. Restart checkout.',409);return json(await sessionFor(env,existing));}
     const saved=await first(env,'SELECT * FROM quotes WHERE id=?',b.quoteId||'');if(!saved||saved.expires_at<=time)fail('Delivery quote expired. Review your address and total again.',409);
-    const quoted=JSON.parse(saved.data);let q;try{q=quoteCheckout(await catalogue(env),b.basket,a.postcode,shipping(env))}catch(e){fail(e.message,409)}if(quoteFingerprint(q)!==quoteFingerprint(quoted))fail('Prices, delivery or your bag changed. Review your total again.',409);
+    const quoted=JSON.parse(saved.data);let q;try{q=quoteCheckout(await catalogue(env),b.basket,a.postcode,await shipping(env))}catch(e){fail(e.message,409)}if(quoteFingerprint(q)!==quoteFingerprint(quoted))fail('Prices, delivery or your bag changed. Review your total again.',409);
     const orderMode=paymentMethod==='manual_upi'?'manual_demo':mode(env)==='preview'?'preview':'sandbox';
     const id=crypto.randomUUID(),ref=(paymentMethod==='manual_upi'?'DD-DEMO-':'DD-TEST-')+id.replace(/-/g,'').slice(0,12).toUpperCase();
     try{await env.DB.batch([
@@ -185,7 +188,27 @@ export function createHandler({fetchExternal=(...a)=>fetch(...a),now=()=>Date.no
     await limit(env,request,'login',5,time);const b=await body(request);if(env.ADMIN_SECRET?.length<32||!equalSecret(b.token,env.ADMIN_SECRET))fail('Owner access key is incorrect.',401);const expiry=String(time+3600000),mac=await hmac(env.ADMIN_SECRET,'owner:'+expiry);return json({signedIn:true},200,{'Set-Cookie':`dd_owner=${expiry}.${mac}; Path=/api/admin; HttpOnly; SameSite=Strict; Max-Age=3600${url.protocol==='https:'?'; Secure':''}`});
    }
    if(path==='/api/admin/logout'&&request.method==='POST')return json({signedIn:false},200,{'Set-Cookie':`dd_owner=; Path=/api/admin; HttpOnly; SameSite=Strict; Max-Age=0${url.protocol==='https:'?'; Secure':''}`});
-   if(path==='/api/admin/orders'&&request.method==='GET'){await requireOwner(env,request,time);await expire(env,time);return json({orders:await all(env,'SELECT id,ref,status,payment_status,payment_method,payment_reference,lines,expires_at,total_paise AS totalPaise,customer FROM orders ORDER BY created_at DESC LIMIT 100').then(rows=>Promise.all(rows.map(async o=>({...o,customer:JSON.parse(o.customer),lines:JSON.parse(o.lines),trackingPath:'#track/'+o.id+'/'+await tokenFor(env,o.id)}))))})}
+   if(['/api/admin/orders','/api/admin/orders/export'].includes(path)&&request.method==='GET'){
+    await requireOwner(env,request,time);await expire(env,time);const f=orderFilter(url),count=await first(env,'SELECT COUNT(*) total FROM orders'+f.where,...f.args);
+    const exportCSV=path.endsWith('/export');if(exportCSV&&count.total>10000)fail('Narrow the date range to export at most 10,000 orders.',400);
+    const rows=await all(env,'SELECT * FROM orders'+f.where+' ORDER BY created_at DESC,id DESC LIMIT ? OFFSET ?',...f.args,exportCSV?10000:50,exportCSV?0:f.offset);
+    const orders=orderRows(rows.map(o=>({...o,totalPaise:o.total_paise,customer:JSON.parse(o.customer),lines:JSON.parse(o.lines)})));
+    if(exportCSV)return new Response(ordersCSV(orders),{headers:{'Content-Type':'text/csv; charset=utf-8','Content-Disposition':'attachment; filename="drip-dusk-orders.csv"','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});
+    const report=await first(env,`SELECT COUNT(*) orders,COALESCE(SUM(CASE WHEN payment_status='captured' THEN 1 ELSE 0 END),0) paidOrders,COALESCE(SUM(CASE WHEN payment_status='captured' THEN total_paise ELSE 0 END),0) collectedPaise,COALESCE(SUM(CASE WHEN payment_status='captured' THEN shipping_paise ELSE 0 END),0) deliveryPaise,COALESCE(SUM(refund_amount_paise),0) recordedRefundPaise FROM orders`+f.where,...f.args);
+    return json({orders:await Promise.all(orders.map(async o=>({...o,trackingPath:'#track/'+o.id+'/'+await tokenFor(env,o.id)}))),total:count.total,offset:f.offset,limit:50,report});
+   }
+   const operations=path.match(/^\/api\/admin\/orders\/([a-zA-Z0-9-]+)\/(shipment|aftercare)$/);
+   if(operations&&request.method==='PUT'){
+    const actor=await requireOwner(env,request,time),b=await body(request),o=await first(env,'SELECT * FROM orders WHERE id=?',operations[1]);if(!o)fail('Order not found.',404);
+    if(o.ops_revision!==b.expectedRevision)fail('This order changed. Reload before saving.',409);
+    let sql,args,reference;
+    if(operations[2]==='shipment'){
+     if(o.payment_status!=='captured')fail('Save shipment details after payment is confirmed.',409);const fields=shipmentFields(b);reference=JSON.stringify(fields);
+     sql='UPDATE orders SET courier_name=?,shipment_id=?,tracking_url=?,ops_revision=ops_revision+1,updated_at=? WHERE id=? AND ops_revision=?';args=[fields.courier,fields.shipmentId||null,fields.trackingUrl,time,o.id,b.expectedRevision];
+    }else{const fields=aftercareFields(b,o);reference=JSON.stringify(fields);sql='UPDATE orders SET return_status=?,return_note=?,refund_amount_paise=?,refund_reference=?,ops_revision=ops_revision+1,updated_at=? WHERE id=? AND ops_revision=?';args=[fields.status,fields.note,fields.amount,fields.reference,time,o.id,b.expectedRevision];}
+    const result=await env.DB.batch([stmt(env,sql,...args),stmt(env,"INSERT INTO owner_audit(id,order_id,action,actor,reference,at) SELECT ?,id,?,?,?,? FROM orders WHERE id=? AND ops_revision=? AND changes()=1",crypto.randomUUID(),operations[2],actor,reference,time,o.id,b.expectedRevision+1)]);
+    if(!result[0].meta.changes)fail('This order changed. Reload before saving.',409);return json({saved:true});
+   }
    const manualOrder=path.match(/^\/api\/admin\/orders\/([a-zA-Z0-9-]+)\/(approve-payment|cancel)$/);
    if(manualOrder&&request.method==='POST'){
     const actor=await requireOwner(env,request,time);await expire(env,time);const b=await body(request),o=await first(env,'SELECT * FROM orders WHERE id=?',manualOrder[1]);
@@ -212,7 +235,7 @@ export function createHandler({fetchExternal=(...a)=>fetch(...a),now=()=>Date.no
     const allowed={confirmed:'packed',packed:'shipped',shipped:'delivered'};
     if(!o||o.payment_status!=='captured'||allowed[o.status]!==b.status)fail('Advance a paid order one fulfilment stage at a time.',409);
     if(b.shipmentId&&!/^[a-zA-Z0-9_-]{1,100}$/.test(b.shipmentId))fail('Invalid shipment ID.');
-    await env.DB.batch([stmt(env,'UPDATE orders SET status=?,shipment_id=COALESCE(?,shipment_id),updated_at=? WHERE id=? AND status=?',b.status,b.shipmentId||null,time,o.id,o.status),stmt(env,'INSERT OR IGNORE INTO order_events(order_id,status,at) SELECT id,?,? FROM orders WHERE id=? AND status=?',b.status,time,o.id,b.status)]);return json({status:b.status});
+    await env.DB.batch([stmt(env,'UPDATE orders SET status=?,shipment_id=COALESCE(?,shipment_id),ops_revision=ops_revision+1,updated_at=? WHERE id=? AND status=?',b.status,b.shipmentId||null,time,o.id,o.status),stmt(env,'INSERT OR IGNORE INTO order_events(order_id,status,at) SELECT id,?,? FROM orders WHERE id=? AND status=?',b.status,time,o.id,b.status)]);return json({status:b.status});
    }
    if(path==='/api/webhooks/whatsapp'&&request.method==='GET'){
     if(!env.WHATSAPP_VERIFY_TOKEN||!equalSecret(url.searchParams.get('hub.verify_token'),env.WHATSAPP_VERIFY_TOKEN)||url.searchParams.get('hub.mode')!=='subscribe')fail('Webhook verification failed.',403);return new Response(url.searchParams.get('hub.challenge')||'',{headers:{'Content-Type':'text/plain'}});

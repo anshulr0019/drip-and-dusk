@@ -1,0 +1,8 @@
+ALTER TABLE orders ADD COLUMN courier_name TEXT NOT NULL DEFAULT '';
+ALTER TABLE orders ADD COLUMN tracking_url TEXT NOT NULL DEFAULT '';
+ALTER TABLE orders ADD COLUMN return_status TEXT NOT NULL DEFAULT 'none';
+ALTER TABLE orders ADD COLUMN return_note TEXT NOT NULL DEFAULT '';
+ALTER TABLE orders ADD COLUMN refund_amount_paise INTEGER NOT NULL DEFAULT 0;
+ALTER TABLE orders ADD COLUMN refund_reference TEXT NOT NULL DEFAULT '';
+ALTER TABLE orders ADD COLUMN ops_revision INTEGER NOT NULL DEFAULT 1;
+CREATE INDEX orders_created ON orders(created_at DESC,id DESC);

@@ -1,3 +1,4 @@
+import {prepareStoreFields} from '../dist/store-settings.mjs';
 import {researchMetadata} from '../dist/fragrance-facts.mjs';
 import {validateProduct,defaults} from '../dist/core.mjs';
 import {processNotes,notesError} from '../dist/fragrance-notes.mjs';
@@ -22,7 +23,7 @@ export function prepareProduct(input){
  return p;
 }
 export function prepareSettings(input){
- const out={};
+ const out=prepareStoreFields(input);
  for(const key of ['about','ordering','shipping','payment','faq','reviews']){out[key]=String(input[key]??defaults().settings[key]).trim();if(out[key].length>6000)fail('Business information is too long.');}
  out.whatsapp=String(input.whatsapp||'').trim();if(out.whatsapp&&!/^[1-9]\d{7,14}$/.test(out.whatsapp))fail('Enter a WhatsApp number with country code, or leave it blank.');
  out.communityUrl=String(input.communityUrl||'').trim();if(out.communityUrl&&!/^https:\/\/chat\.whatsapp\.com\/[A-Za-z0-9]{10,100}$/.test(out.communityUrl))fail('Use the official WhatsApp community invite link (https://chat.whatsapp.com/…).');

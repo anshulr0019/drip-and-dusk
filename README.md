@@ -70,3 +70,11 @@ Migration `0004_fragrance_facts.sql` updates seed metadata while preserving pric
 ## Two payment choices
 
 The payment selector preserves Direct UPI as the sample default and displays Razorpay as Setup pending until test API keys and a separate webhook secret are configured. In the hosted manual-demo profile, both methods can coexist; each order stores its chosen method. The backend verifies captured payments, exact amounts and callback signatures. Signed webhooks are idempotent, and the private order page can resume the existing Razorpay gateway order after dismissal. Test keys only; customer surcharges and live payments are disabled. See `backend/RAZORPAY.md` for the merchant-account setup and test verification still required.
+
+## Owner operations
+
+Owner studio → Business & ordering now controls the store display name, support email, business/returns address, Instagram link, homepage announcement and hero copy, existing film versus still image, a flat India-wide checkout delivery charge, optional free-delivery threshold and low-stock threshold. Design, API secrets and owner permissions remain deployment settings. Custom video uploads and postcode-specific shipping zones are not provided by this form.
+
+Orders supports search, stage/payment/method/return filters, India-time date ranges and 50-record pages. Recorded collections, delivery collected and externally recorded refunds cover all filtered records, including records beyond the current page. They are demonstration/test figures, not profit or settlement reports. Order CSV exports apply the same filters (at most 10,000 records; narrow the dates above that); inventory CSV includes stock and reserved quantities. Low-stock indicators use stock remaining after reservations.
+
+Paid orders support saved courier/AWB/HTTPS tracking links, visible through private customer tracking. Shipment fields do not book a courier or automate updates. Internal return/refund records require a reason; completed external refunds require an amount, reference and explicit confirmation. These records do not initiate a refund, change payment verification or automatically restock goods. Operation revisions reject conflicting edits, and shared mutations require owner authentication. Apply migration `0005_owner_operations.sql` before deploying the updated Worker.
