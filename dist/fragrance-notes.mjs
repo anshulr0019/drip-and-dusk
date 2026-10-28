@@ -1,11 +1,16 @@
 // Shared by the owner form, server catalogue and scent finder.
 const clean=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+export const matchesNoteTerm=(note,term)=>term==='sand'?/\bsand\b/.test(clean(note)):clean(note).includes(term);
 export const noteTerms={
- fresh:['bergamot','lemon','lime','orange','mandarin','tangerine','grapefruit','apple','pineapple','aquatic','marine','citrus','mint','green','pear'],
+ fresh:['bergamot','lemon','lime','orange','mandarin','tangerine','grapefruit','apple','pineapple','aquatic','marine','citrus','mint','green','pear','sea water','ambergris'],
  sweet:['vanilla','praline','tonka','dates','candied','gourmand','caramel','chocolate','honey','tropical'],
  woody:['wood','patchouli','cedar','sandalwood','oud','fir balsam','vetiver'],
- floral:['flower','jasmine','orchid','heliotrope','iris','tuberose','lily','peony','rose','lavender','violet'],
- coffee:['coffee']
+ floral:['flower','jasmine','orchid','heliotrope','iris','tuberose','lily','peony','rose','lavender','violet','magnolia','neroli','freesia','orris'],
+ coffee:['coffee'],
+ spicy:['pepper','cinnamon','nutmeg','saffron','cardamom','ginger','basil','thyme','armoise'],
+ leather:['leather'],
+ marine:['sea water','marine','aquatic','ambergris','sand','driftwood'],
+ tea:['tea']
 };
 const split=s=>(Array.isArray(s)?s:String(s||'').split(/[·,;\n]/)).map(n=>String(n).trim()).filter(Boolean);
 export function notePyramid(p){
@@ -19,7 +24,7 @@ export function notesError(pyramid){
 }
 export function processNotes(p){
  const pyramid=notePyramid(p),notes=['top','heart','base'].map(k=>pyramid[k].join(' · ')).join(' / ');
- const scores=Object.fromEntries(Object.entries(noteTerms).map(([style,terms])=>[style,['top','heart','base'].reduce((sum,k,i)=>sum+pyramid[k].filter(n=>terms.some(t=>clean(n).includes(t))).length*[2,3,2][i],0)]));
+ const scores=Object.fromEntries(Object.entries(noteTerms).map(([style,terms])=>[style,['top','heart','base'].reduce((sum,k,i)=>sum+pyramid[k].filter(n=>terms.some(t=>matchesNoteTerm(n,t))).length*[2,3,2][i],0)]));
  // One bright top note must not turn a vanilla/amber fragrance into a fresh scent.
  const spices=(clean(notes).match(/cinnamon|nutmeg|tobacco|pepper|myrrh/g)||[]).length;
  const floralCore=scores.floral>=4&&scores.sweet<=scores.floral+5&&spices<2;

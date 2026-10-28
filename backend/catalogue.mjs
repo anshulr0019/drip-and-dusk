@@ -1,3 +1,4 @@
+import {researchMetadata} from '../dist/fragrance-facts.mjs';
 import {validateProduct,defaults} from '../dist/core.mjs';
 import {processNotes,notesError} from '../dist/fragrance-notes.mjs';
 const fail=(message,status=400)=>{throw Object.assign(Error(message),{status})};
@@ -15,8 +16,9 @@ export function prepareProduct(input){
  if(!/^(assets\/[a-zA-Z0-9._-]+|data:image\/(jpeg|png|webp);base64,[A-Za-z0-9+/=]+)$/.test(p.image)||p.image.length>1500000)fail('Choose a valid product image under 1 MB after resizing.');
  if(p.source){try{if(new URL(p.source).protocol!=='https:')fail('Use an HTTPS source link.')}catch{fail('Use a valid HTTPS source link.')}}
  const error=validateProduct(p);if(error)fail(error);
- if(p.finderVerified){const processed=processNotes(input),error=notesError(processed.notePyramid);if(error)fail(error);Object.assign(p,processed);p.family=processed.scentProfile.family;p.scentEdit=processed.scentProfile.edit;}
+ if(p.finderVerified){const processed=processNotes(input),error=notesError(processed.notePyramid);if(error)fail(error);Object.assign(p,processed);p.family=p.family||processed.scentProfile.family;p.scentEdit=p.scentEdit||processed.scentProfile.edit;}
  else if(input.notePyramid){p.notePyramid=processNotes(input).notePyramid;}
+ Object.assign(p,researchMetadata(p));
  return p;
 }
 export function prepareSettings(input){

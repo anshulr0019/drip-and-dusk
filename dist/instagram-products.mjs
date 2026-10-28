@@ -1,3 +1,4 @@
+import {enrichFragrance} from './fragrance-facts.mjs';
 // Matched to the supplied Instagram screenshot. Commercial details remain unconfirmed.
 export const instagramProducts = [
   {
@@ -522,4 +523,4 @@ export const instagramProducts = [
     "imageScale": ".92",
     "family": "From the Instagram edit"
   }
-];
+].map(enrichFragrance);

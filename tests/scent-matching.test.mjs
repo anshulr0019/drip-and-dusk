@@ -24,14 +24,14 @@ test('changed prices and stock, hidden products and archives are used immediatel
  const results=recommendScents(products,answers),first=results[0].product;
  for(const patch of [{quantity:0},{available:false},{hidden:true},{archived:true},{enquiryOnly:true},{price:9000}])assert.ok(!recommendScents(products.map(p=>p.id===first.id?{...p,...patch}:p),answers).some(m=>m.product.id===first.id));
 });
-test('unverified Instagram entries and conflicting notes are excluded, even with invented stock',()=>{
- for(const p of products.filter(p=>p.instagramSource)){assert.equal(verifiedForFinder(p),false);assert.equal(recommendScents([{...p,enquiryOnly:false,size:100,price:1500,available:true,quantity:10}],{...answers,style:'unsure'}).length,0);}
- assert.equal(verifiedForFinder(products.find(p=>p.group==='oud-for-glory')),false);
+test('researched entries have complete verified notes without converting unknown stock into available recommendations',()=>{
+ for(const p of products.filter(p=>p.instagramSource)){assert.equal(verifiedForFinder(p),true);assert.equal(recommendScents([p],{...answers,style:'unsure',budget:'any'}).length,0);}
+ assert.equal(verifiedForFinder(products.find(p=>p.group==='oud-for-glory')),true);
  assert.equal(verifiedForFinder({...products[0],notes:'New unverified / changed / content'}),false);
  assert.equal(verifiedForFinder({...products[0],finderVerified:false}),false);
 });
 test('owner-confirmed notes enable custom products, while a verification checkbox alone cannot enable pending data',()=>{
- const custom={...products[0],id:'custom',group:'new',name:'New fragrance',finderVerified:true,price:1500,notes:'Bergamot / Coffee · Jasmine / Sandalwood'};
+ const custom={...products[0],id:'custom',group:'new',name:'New fragrance',notePyramid:undefined,finderVerified:true,price:1500,notes:'Bergamot / Coffee · Jasmine / Sandalwood'};
  assert.equal(verifiedForFinder(custom),true);assert.equal(recommendScents([custom],{...answers,style:'coffee'}).length,1);
  for(const notes of ['Pending verification','Pending / Coffee / Vanilla','Coffee / / Vanilla'])assert.equal(verifiedForFinder({...custom,notes}),false);
  assert.equal(recommendScents([{...custom,enquiryOnly:true}],{...answers,style:'coffee'}).length,0);

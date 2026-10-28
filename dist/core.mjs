@@ -1,3 +1,4 @@
+import {enrichFragrance,migrateFragranceFacts} from './fragrance-facts.mjs';
 import {processNotes} from './fragrance-notes.mjs';
 import {instagramProducts} from './instagram-products.mjs';
 export const KEY = 'drip-dusk-demo-v1';
@@ -45,11 +46,11 @@ export const defaults = () => {
  ['oud-for-glory','Lattafa','Badee Al Oud — Oud for Glory',100,1999,null,0,'An amber-woody entry in the collection. Ask the seller to confirm the scent profile.','Note pyramid pending verification: the brand page contains conflicting note lists.','https://lattafa.com/product/badee-al-oud-oud-for-glory/',false,false],
  ['qaed','Lattafa','Qaed Al Fursan',90,1299,null,9,'Pineapple and saffron open into an aromatic heart and a warm, woody base.','Saffron · Pineapple / Jasmine · Fir balsam / Oud wood · Cedarwood · Amber','https://lattafa.com/product/qaed-al-fursan/',false,false]
  ];
- const products=seeds.map((s,i)=>({id:s[0]+'-bottle',group:s[0],image:`assets/${s[0]}.jpg`,brand:s[1],name:s[2],size:s[3],price:s[4],reference:s[5],quantity:s[6],description:s[7],notes:s[8],source:s[9],deal:s[10],featured:s[11],format:'Full bottle',condition:'Sealed retail bottle (demo)',available:s[6]>0,order:i,featureOrder:i,hidden:false,archived:false}));
+ const products=seeds.map((s,i)=>enrichFragrance({id:s[0]+'-bottle',group:s[0],image:`assets/${s[0]}.jpg`,brand:s[1],name:s[2],size:s[3],price:s[4],reference:s[5],quantity:s[6],description:s[7],notes:s[8],source:s[9],deal:s[10],featured:s[11],format:'Full bottle',condition:'Sealed retail bottle (demo)',available:s[6]>0,order:i,featureOrder:i,hidden:false,archived:false}));
  seeds.forEach((s,i)=>products.push({...products[i],id:s[0]+'-10ml',size:10,format:'Decant',condition:'Seller-filled atomiser (demo)',price:[499,349,299,279,399,329,229][i],reference:null,quantity:i===5?0:12-i,available:i!==5,deal:false,featured:false,order:7+i}));
  products.push(...structuredClone(instagramProducts));
  products.forEach(p=>{if(['hawas','khamrah','qahwa','yara'].includes(p.group)&&p.format==='Full bottle')p.hotSeller=true;});
- return {version:1,catalogueRevision:3,products,settings:{communityUrl:'',whatsapp:'',instagram:'',about:'Drip & Dusk is a multi-brand fragrance retailer. Explore full bottles and smaller decants, compare your options, and talk directly with the seller before deciding.',ordering:'Choose your fragrance, enter delivery details and review the total. Try the sample UPI flow; orders stay awaiting verification until the owner approves payment.',shipping:'Shipping locations, charges and delivery estimates will be confirmed by the seller. Owner-approved shipping information is pending.',payment:'Sample merchant UPI checkout is available for demonstration. No real payment should be made. The owner checks the bank receipt before confirming an order; returns and cancellation terms need owner approval.',faq:'Are these live prices?|No. Every price, offer, quantity and condition in this concept is sample data. Ask the seller for current details.\nWhat is a decant?|A smaller amount transferred into a separate atomiser. In this demo, the original bottle photo identifies the fragrance; it does not show the decant packaging.\nDoes my enquiry reserve stock?|No. Adding to the bag or opening WhatsApp does not reserve stock or confirm an order.\nHow do shipping and payment work?|The seller will confirm shipping charges, payment details and any applicable policies before you decide.',reviews:'Customer reviews have not been supplied. This space is reserved for genuine feedback shared with permission.'}};
+ return {version:1,catalogueRevision:4,products,settings:{communityUrl:'',whatsapp:'',instagram:'',about:'Drip & Dusk is a multi-brand fragrance retailer. Explore full bottles and smaller decants, compare your options, and talk directly with the seller before deciding.',ordering:'Choose your fragrance, enter delivery details and review the total. Try the sample UPI flow; orders stay awaiting verification until the owner approves payment.',shipping:'Shipping locations, charges and delivery estimates will be confirmed by the seller. Owner-approved shipping information is pending.',payment:'Sample merchant UPI checkout is available for demonstration. No real payment should be made. The owner checks the bank receipt before confirming an order; returns and cancellation terms need owner approval.',faq:'Are these live prices?|No. Every price, offer, quantity and condition in this concept is sample data. Ask the seller for current details.\nWhat is a decant?|A smaller amount transferred into a separate atomiser. In this demo, the original bottle photo identifies the fragrance; it does not show the decant packaging.\nDoes my enquiry reserve stock?|No. Adding to the bag or opening WhatsApp does not reserve stock or confirm an order.\nHow do shipping and payment work?|The seller will confirm shipping charges, payment details and any applicable policies before you decide.',reviews:'Customer reviews have not been supplied. This space is reserved for genuine feedback shared with permission.'}};
 };
 
 // Styling and occasion pairings are editorial suggestions, not performance claims.
@@ -86,10 +87,11 @@ export const sizeLabel = p => Number.isInteger(p.size)&&p.size>0?`${p.size} ml`:
 export const priceLabel = p => Number.isFinite(p.price)?money(p.price):'Ask for price';
 // Add the new catalogue once; preserve previous edits, archives and later deletions.
 export function migrateCatalogue(state){
- if((state.catalogueRevision||0)>=3)return state;
+ if((state.catalogueRevision||0)>=4)return state;
  const ids=new Set(state.products.map(p=>p.id));let products=(state.catalogueRevision||0)<2?[...state.products,...structuredClone(instagramProducts).filter(p=>!ids.has(p.id))]:state.products;
  products=products.map(p=>['hawas-bottle','khamrah-bottle','qahwa-bottle','yara-bottle'].includes(p.id)&&p.hotSeller===undefined?{...p,hotSeller:true}:p);
- return {...state,catalogueRevision:3,products,settings:{communityUrl:'',...state.settings}};
+ products=products.map(migrateFragranceFacts);
+ return {...state,catalogueRevision:4,products,settings:{communityUrl:'',...state.settings}};
 }
 export function referenceEnquiryMessage(p){
  if(!p||!p.enquiryOnly||p.hidden||p.archived)throw Error('This fragrance is unavailable for enquiry.');

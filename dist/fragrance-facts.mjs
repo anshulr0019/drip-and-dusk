@@ -1,0 +1,1069 @@
+import {processNotes} from './fragrance-notes.mjs';
+// Researched 28 October 2026. Published formats do not confirm merchant inventory.
+export const fragranceFacts = {
+  "hawas": {
+    "notePyramid": {
+      "top": [
+        "Apple",
+        "Bergamot",
+        "Lemon",
+        "Cinnamon"
+      ],
+      "heart": [
+        "Orange blossom",
+        "Cardamom",
+        "Plum"
+      ],
+      "base": [
+        "Patchouli",
+        "Grey amber",
+        "Driftwood",
+        "Musk"
+      ]
+    },
+    "description": "Fresh, aquatic and full of character. A bright opening with a warm, woody finish.",
+    "family": "Fresh & aquatic",
+    "scentEdit": "fresh",
+    "pairing": "Everyday · relaxed daytime occasions",
+    "concentration": "Eau de Parfum",
+    "publishedSizes": [
+      "100 ml"
+    ],
+    "source": "https://rasasistore.com/products/hawas-for-him",
+    "noteSources": [
+      {
+        "label": "Brand product information",
+        "url": "https://rasasistore.com/products/hawas-for-him",
+        "kind": "manufacturer"
+      }
+    ],
+    "notesQuality": "manufacturer",
+    "notesCaveat": "",
+    "factsCheckedAt": "2026-10-28",
+    "factsRevision": 1,
+    "finderVerified": true
+  },
+  "khamrah": {
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Cinnamon",
+        "Nutmeg"
+      ],
+      "heart": [
+        "Dates accord",
+        "Lily of the valley",
+        "Praline",
+        "Tuberose"
+      ],
+      "base": [
+        "Roasted tonka",
+        "Benzoin Laos",
+        "Myrrh",
+        "Akigalawood",
+        "Vanilla",
+        "Amber wood"
+      ]
+    },
+    "description": "Warm spice meets a rich, sweet heart. An invitation to slow down after dusk.",
+    "family": "Warm & gourmand",
+    "scentEdit": "warm",
+    "pairing": "Date night · cooler evenings",
+    "concentration": "Eau de Parfum",
+    "publishedSizes": [
+      "100 ml"
+    ],
+    "source": "https://lattafa.com/product/khamrah/",
+    "noteSources": [
+      {
+        "label": "Brand product information",
+        "url": "https://lattafa.com/product/khamrah/",
+        "kind": "manufacturer"
+      }
+    ],
+    "notesQuality": "manufacturer",
+    "notesCaveat": "Follows Lattafa’s main product page. Its US page names the lily-of-the-valley accord Mahonial.",
+    "factsCheckedAt": "2026-10-28",
+    "factsRevision": 1,
+    "finderVerified": true
+  },
+  "asad": {
+    "notePyramid": {
+      "top": [
+        "Black pepper",
+        "Pineapple",
+        "Tobacco"
+      ],
+      "heart": [
+        "Coffee",
+        "Iris",
+        "Patchouli"
+      ],
+      "base": [
+        "Amber",
+        "Vanilla",
+        "Dry woods",
+        "Benzoin",
+        "Labdanum"
+      ]
+    },
+    "description": "Peppery warmth, a coffee heart and a smooth amber base. Bold by nature.",
+    "family": "Spicy & amber",
+    "scentEdit": "dark",
+    "pairing": "Evening · dressed-up occasions",
+    "concentration": "Eau de Parfum",
+    "publishedSizes": [
+      "100 ml"
+    ],
+    "source": "https://lattafa.com/product/asad/",
+    "noteSources": [
+      {
+        "label": "Brand product information",
+        "url": "https://lattafa.com/product/asad/",
+        "kind": "manufacturer"
+      }
+    ],
+    "notesQuality": "manufacturer",
+    "notesCaveat": "",
+    "factsCheckedAt": "2026-10-28",
+    "factsRevision": 1,
+    "finderVerified": true
+  },
+  "yara": {
+    "notePyramid": {
+      "top": [
+        "Tangerine",
+        "Heliotrope",
+        "Orchid"
+      ],
+      "heart": [
+        "Tropical notes",
+        "Gourmand"
+      ],
+      "base": [
+        "Vanilla",
+        "Sandalwood",
+        "Musk"
+      ]
+    },
+    "description": "A soft, creamy floral with tropical sweetness and a comforting vanilla base.",
+    "family": "Soft & floral",
+    "scentEdit": "soft",
+    "pairing": "Daytime · unhurried weekends",
+    "concentration": "Eau de Parfum",
+    "publishedSizes": [
+      "100 ml"
+    ],
+    "source": "https://lattafa.com/product/yara/",
+    "noteSources": [
+      {
+        "label": "Brand product information",
+        "url": "https://lattafa.com/product/yara/",
+        "kind": "manufacturer"
+      }
+    ],
+    "notesQuality": "manufacturer",
+    "notesCaveat": "",
+    "factsCheckedAt": "2026-10-28",
+    "factsRevision": 1,
+    "finderVerified": true
+  },
+  "qahwa": {
+    "notePyramid": {
+      "top": [
+        "Ginger",
+        "Cinnamon",
+        "Cardamom"
+      ],
+      "heart": [
+        "Praline",
+        "Candied fruits",
+        "White flowers"
+      ],
+      "base": [
+        "Coffee arabica",
+        "Tonka beans",
+        "Musk",
+        "Benzoin",
+        "Vanilla"
+      ]
+    },
+    "description": "A coffee-inflected take on warm spice and gourmand sweetness. Made for a slower evening.",
+    "family": "Coffee & gourmand",
+    "scentEdit": "warm",
+    "pairing": "Date night · cooler evenings",
+    "concentration": "Eau de Parfum",
+    "publishedSizes": [
+      "100 ml"
+    ],
+    "source": "https://lattafa.com/product/khamrah-qahwa/",
+    "noteSources": [
+      {
+        "label": "Brand product information",
+        "url": "https://lattafa.com/product/khamrah-qahwa/",
+        "kind": "manufacturer"
+      }
+    ],
+    "notesQuality": "manufacturer",
+    "notesCaveat": "",
+    "factsCheckedAt": "2026-10-28",
+    "factsRevision": 1,
+    "finderVerified": true
+  },
+  "qaed": {
+    "notePyramid": {
+      "top": [
+        "Saffron",
+        "Pineapple"
+      ],
+      "heart": [
+        "Jasmine",
+        "Fir balsam"
+      ],
+      "base": [
+        "Oud wood",
+        "Cedarwood",
+        "Amber"
+      ]
+    },
+    "description": "Pineapple and saffron open into an aromatic heart and a warm, woody base.",
+    "family": "Fruity & woody",
+    "scentEdit": "fresh",
+    "pairing": "Everyday · relaxed daytime occasions",
+    "concentration": "Eau de Parfum",
+    "publishedSizes": [
+      "90 ml"
+    ],
+    "source": "https://lattafa.com/product/qaed-al-fursan/",
+    "noteSources": [
+      {
+        "label": "Brand product information",
+        "url": "https://lattafa.com/product/qaed-al-fursan/",
+        "kind": "manufacturer"
+      }
+    ],
+    "notesQuality": "manufacturer",
+    "notesCaveat": "",
+    "factsCheckedAt": "2026-10-28",
+    "factsRevision": 1,
+    "finderVerified": true
+  },
+  "oud-for-glory": {
+    "notePyramid": {
+      "top": [
+        "Saffron",
+        "Nutmeg",
+        "Lavender"
+      ],
+      "heart": [
+        "Agarwood (oud)",
+        "Patchouli"
+      ],
+      "base": [
+        "Agarwood (oud)",
+        "Patchouli",
+        "Musk"
+      ]
+    },
+    "description": "Saffron, nutmeg and lavender open into earthy oud and patchouli, with a musky, woody finish.",
+    "family": "Woody & amber",
+    "scentEdit": "dark",
+    "pairing": "Evening · dressed-up occasions",
+    "concentration": "Eau de Parfum",
+    "publishedSizes": [
+      "100 ml"
+    ],
+    "source": "https://www.lattafa-usa.com/products/badee-al-oud-glory",
+    "noteSources": [
+      {
+        "label": "Brand product information",
+        "url": "https://www.lattafa-usa.com/products/badee-al-oud-glory",
+        "kind": "manufacturer"
+      }
+    ],
+    "notesQuality": "manufacturer",
+    "notesCaveat": "Follows Lattafa’s US pyramid and the description on its main site; a conflicting table on the main site is excluded.",
+    "factsCheckedAt": "2026-10-28",
+    "factsRevision": 1,
+    "finderVerified": true
+  },
+  "rasasi-hawas-lava-gold": {
+    "notePyramid": {
+      "top": [
+        "Lemon",
+        "Apple",
+        "Grapefruit",
+        "Pineapple"
+      ],
+      "heart": [
+        "Raspberry",
+        "Leather",
+        "Oud",
+        "Saffron"
+      ],
+      "base": [
+        "White moss",
+        "Patchouli",
+        "Amber",
+        "Caramel"
+      ]
+    },
+    "description": "Bright citrus and pineapple meet raspberry, leather and saffron over oud, amber and a caramel-touched base.",
+    "family": "Fruity, leathery & amber",
+    "scentEdit": "dark",
+    "pairing": "Evening · dressed-up occasions",
+    "concentration": "Eau de Parfum",
+    "publishedSizes": [
+      "100 ml"
+    ],
+    "source": "https://www.rasasiexclusive.com/products/rasasi-hawas-lava-gold",
+    "noteSources": [
+      {
+        "label": "Rasasi · note pyramid",
+        "url": "https://www.rasasiexclusive.com/products/rasasi-hawas-lava-gold",
+        "kind": "manufacturer"
+      },
+      {
+        "label": "Belvish · bottle format",
+        "url": "https://belvish.com/products/rasasi-hawas-lava-gold-edp-for-men",
+        "kind": "retailer"
+      }
+    ],
+    "notesQuality": "manufacturer",
+    "notesCaveat": "Brand-published note pyramid. The 100 ml EDP format is corroborated by retailers.",
+    "factsCheckedAt": "2026-10-28",
+    "factsRevision": 1,
+    "finderVerified": true
+  },
+  "mykonos-inception": {
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Ginger",
+        "Orange",
+        "Lemon"
+      ],
+      "heart": [
+        "Neroli",
+        "Cinnamon",
+        "Black tea",
+        "Biga flower"
+      ],
+      "base": [
+        "Guaiac",
+        "Musk",
+        "Cedarwood",
+        "Lorenox™"
+      ]
+    },
+    "description": "Citrus and ginger unfold into neroli, black tea and cinnamon, settling into musky woods.",
+    "family": "Citrus, tea & woody",
+    "scentEdit": "fresh",
+    "pairing": "Everyday · relaxed daytime occasions",
+    "concentration": "Extrait de Parfum",
+    "publishedSizes": [
+      "50 ml",
+      "100 ml"
+    ],
+    "source": "https://officialmykonos.com/products/mykonos-inception-extrait-de-parfum-50ml",
+    "noteSources": [
+      {
+        "label": "Brand product information",
+        "url": "https://officialmykonos.com/products/mykonos-inception-extrait-de-parfum-50ml",
+        "kind": "manufacturer"
+      }
+    ],
+    "notesQuality": "manufacturer",
+    "notesCaveat": "",
+    "factsCheckedAt": "2026-10-28",
+    "factsRevision": 1,
+    "finderVerified": true
+  },
+  "riiffs-momento": {
+    "notePyramid": {
+      "top": [
+        "Saffron",
+        "Mandarin",
+        "Sugar"
+      ],
+      "heart": [
+        "Tonka beans",
+        "Damask rose",
+        "Oud"
+      ],
+      "base": [
+        "Cedarwood",
+        "Amber wood",
+        "Caramel"
+      ]
+    },
+    "description": "Saffron and sugared mandarin introduce rose, tonka and oud, followed by caramel and warm woods.",
+    "family": "Sweet, woody & amber",
+    "scentEdit": "warm",
+    "pairing": "Date night · cooler evenings",
+    "concentration": "Extrait de Parfum",
+    "publishedSizes": [
+      "100 ml"
+    ],
+    "source": "https://nl.riiffsperfumes.com/product/momento/",
+    "noteSources": [
+      {
+        "label": "RiiFFS · note pyramid",
+        "url": "https://nl.riiffsperfumes.com/product/momento/",
+        "kind": "manufacturer"
+      },
+      {
+        "label": "RiiFFS India · format",
+        "url": "https://in.riiffsperfumes.com/products/momento",
+        "kind": "manufacturer"
+      }
+    ],
+    "notesQuality": "manufacturer",
+    "notesCaveat": "Notes follow the brand’s Netherlands page; concentration follows its India listing and catalogue. Its UK page calls it EDP.",
+    "factsCheckedAt": "2026-10-28",
+    "factsRevision": 1,
+    "finderVerified": true
+  },
+  "arabiyat-prestige-aristo": {
+    "notePyramid": {
+      "top": [
+        "Lemon",
+        "Ginger blossoms",
+        "Mandarin",
+        "Orange"
+      ],
+      "heart": [
+        "Magnolia",
+        "Jasmine",
+        "Patchouli"
+      ],
+      "base": [
+        "Sandalwood",
+        "Musk",
+        "Vanilla"
+      ]
+    },
+    "description": "Lemon, orange and ginger blossoms lead into magnolia and jasmine, with patchouli, creamy sandalwood, musk and vanilla.",
+    "family": "Citrus, floral & woody",
+    "scentEdit": "fresh",
+    "pairing": "Everyday · relaxed daytime occasions",
+    "concentration": "Eau de Parfum",
+    "publishedSizes": [
+      "100 ml"
+    ],
+    "source": "https://myperfumes.ae/products/arabiyat-prestige-aristo-edp-100ml-unisex",
+    "noteSources": [
+      {
+        "label": "Brand product information",
+        "url": "https://myperfumes.ae/products/arabiyat-prestige-aristo-edp-100ml-unisex",
+        "kind": "manufacturer"
+      }
+    ],
+    "notesQuality": "manufacturer",
+    "notesCaveat": "",
+    "factsCheckedAt": "2026-10-28",
+    "factsRevision": 1,
+    "finderVerified": true
+  },
+  "khadlaj-karus-gold-absolu": {
+    "notePyramid": {
+      "top": [
+        "Blackcurrant",
+        "Candied lemon",
+        "Bergamot"
+      ],
+      "heart": [
+        "Praline",
+        "Magnolia",
+        "Violet"
+      ],
+      "base": [
+        "Musk",
+        "Vetiver"
+      ]
+    },
+    "description": "Blackcurrant and candied citrus meet praline, magnolia and violet over a musky vetiver base.",
+    "family": "Fruity, floral & gourmand",
+    "scentEdit": "soft",
+    "pairing": "Daytime · unhurried weekends",
+    "concentration": "Eau de Parfum",
+    "publishedSizes": [
+      "100 ml"
+    ],
+    "source": "https://khadlaj-perfumes.com/products/karus-gold-absolu-100-ml-edp-spray",
+    "noteSources": [
+      {
+        "label": "Brand product information",
+        "url": "https://khadlaj-perfumes.com/products/karus-gold-absolu-100-ml-edp-spray",
+        "kind": "manufacturer"
+      }
+    ],
+    "notesQuality": "manufacturer",
+    "notesCaveat": "",
+    "factsCheckedAt": "2026-10-28",
+    "factsRevision": 1,
+    "finderVerified": true
+  },
+  "armani-stronger-with-you-parfum": {
+    "notePyramid": {
+      "top": [
+        "Mandarin",
+        "Pink pepper"
+      ],
+      "heart": [
+        "Lavender",
+        "Sage"
+      ],
+      "base": [
+        "Leathery vanilla",
+        "Chestnut accord"
+      ]
+    },
+    "description": "Mandarin and pink pepper brighten lavender and sage, before a warm finish of leathery vanilla and chestnut.",
+    "family": "Warm, aromatic & leathery",
+    "scentEdit": "warm",
+    "pairing": "Date night · cooler evenings",
+    "concentration": "Parfum",
+    "publishedSizes": [
+      "50 ml",
+      "100 ml"
+    ],
+    "source": "https://www.armani-beauty.at/dufte/herrenduft/stronger-with-you/emporio-armani-stronger-with-you-parfum/ww-00911-arm.html",
+    "noteSources": [
+      {
+        "label": "Brand product information",
+        "url": "https://www.armani-beauty.at/dufte/herrenduft/stronger-with-you/emporio-armani-stronger-with-you-parfum/ww-00911-arm.html",
+        "kind": "manufacturer"
+      }
+    ],
+    "notesQuality": "manufacturer",
+    "notesCaveat": "The Parfum version; this pyramid is distinct from Stronger With You EDT and Intensely.",
+    "factsCheckedAt": "2026-10-28",
+    "factsRevision": 1,
+    "finderVerified": true
+  },
+  "armaf-club-de-nuit-intense-overdose": {
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Tangerine",
+        "Pineapple",
+        "Blue crystals"
+      ],
+      "heart": [
+        "Vanilla flower",
+        "Oakmoss",
+        "Plum"
+      ],
+      "base": [
+        "Patchouli",
+        "Tonka bean",
+        "White powder"
+      ]
+    },
+    "description": "Citrus and pineapple lead into plum, vanilla flower and oakmoss, finishing with patchouli and tonka.",
+    "family": "Citrus & amber",
+    "scentEdit": "fresh",
+    "pairing": "Everyday · relaxed daytime occasions",
+    "concentration": "Extrait de Parfum",
+    "publishedSizes": [
+      "3.6 oz"
+    ],
+    "source": "https://armaf.com/products/club-de-nuit-intense-overdose",
+    "noteSources": [
+      {
+        "label": "Brand product information",
+        "url": "https://armaf.com/products/club-de-nuit-intense-overdose",
+        "kind": "manufacturer"
+      }
+    ],
+    "notesQuality": "manufacturer",
+    "notesCaveat": "Blue crystals and white powder are the brand’s named scent accords, not ingredient declarations.",
+    "factsCheckedAt": "2026-10-28",
+    "factsRevision": 1,
+    "finderVerified": true
+  },
+  "rayhaan-elixir": {
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Armoise"
+      ],
+      "heart": [
+        "Lavender",
+        "Benzoin"
+      ],
+      "base": [
+        "Vanilla",
+        "Tonka"
+      ]
+    },
+    "description": "Bergamot and herbal armoise lead into lavender and benzoin, with a sweet vanilla and tonka finish.",
+    "family": "Amber, aromatic & sweet",
+    "scentEdit": "warm",
+    "pairing": "Date night · cooler evenings",
+    "concentration": "Eau de Parfum",
+    "publishedSizes": [
+      "100 ml"
+    ],
+    "source": "https://rayhaanperfumes.me/products/elixir",
+    "noteSources": [
+      {
+        "label": "Brand product information",
+        "url": "https://rayhaanperfumes.me/products/elixir",
+        "kind": "manufacturer"
+      }
+    ],
+    "notesQuality": "manufacturer",
+    "notesCaveat": "Follows Rayhaan’s formal note list. Some retailer lists differ; those notes have not been merged.",
+    "factsCheckedAt": "2026-10-28",
+    "factsRevision": 1,
+    "finderVerified": true
+  },
+  "rayhaan-nocturno-elixir": {
+    "notePyramid": {
+      "top": [
+        "Sandalwood"
+      ],
+      "heart": [
+        "Amber"
+      ],
+      "base": [
+        "Woody notes",
+        "Labdanum"
+      ]
+    },
+    "description": "Sandalwood opens a woody amber composition, with resinous labdanum in the base.",
+    "family": "Woody, resinous & amber",
+    "scentEdit": "dark",
+    "pairing": "Evening · dressed-up occasions",
+    "concentration": "Eau de Parfum",
+    "publishedSizes": [
+      "100 ml"
+    ],
+    "source": "https://rayhaanperfumes.me/products/nocturno-elixir",
+    "noteSources": [
+      {
+        "label": "Brand product information",
+        "url": "https://rayhaanperfumes.me/products/nocturno-elixir",
+        "kind": "manufacturer"
+      }
+    ],
+    "notesQuality": "manufacturer",
+    "notesCaveat": "Follows Rayhaan’s published stages, which differ from some fragrance databases.",
+    "factsCheckedAt": "2026-10-28",
+    "factsRevision": 1,
+    "finderVerified": true
+  },
+  "rasasi-hawas-la-mer": {
+    "notePyramid": {
+      "top": [
+        "Peppermint",
+        "Mandarin",
+        "Bergamot"
+      ],
+      "heart": [
+        "Blackcurrant",
+        "Carrot",
+        "Jasmine"
+      ],
+      "base": [
+        "Fig",
+        "Woody notes",
+        "Amber"
+      ]
+    },
+    "description": "Peppermint and citrus introduce blackcurrant and jasmine, followed by a fig, amber and woody finish.",
+    "family": "Fresh, fruity & woody",
+    "scentEdit": "fresh",
+    "pairing": "Everyday · relaxed daytime occasions",
+    "concentration": "Eau de Parfum",
+    "publishedSizes": [
+      "100 ml"
+    ],
+    "source": "https://www.parfumerie-de-dubai.com/en/product-2/hawas-la-mer-rasasi-perfume/",
+    "noteSources": [
+      {
+        "label": "Retailer product information",
+        "url": "https://www.parfumerie-de-dubai.com/en/product-2/hawas-la-mer-rasasi-perfume/",
+        "kind": "retailer"
+      },
+      {
+        "label": "Retailer product information",
+        "url": "https://www.wangiworld.com/perfumes/rasasi/hawas-for-him-la-mer-rasasi-100ml-edp/",
+        "kind": "retailer"
+      }
+    ],
+    "notesQuality": "retailer_corroborated",
+    "notesCaveat": "Retailer-published pyramid; fig staging differs in some secondary listings.",
+    "factsCheckedAt": "2026-10-28",
+    "factsRevision": 1,
+    "finderVerified": true
+  },
+  "rasasi-hawas-nautilus": {
+    "notePyramid": {
+      "top": [
+        "Ambergris",
+        "Sea water"
+      ],
+      "heart": [
+        "Cedar",
+        "Cypress"
+      ],
+      "base": [
+        "Driftwood",
+        "Sand"
+      ]
+    },
+    "description": "Ambergris and sea-water accords lead into cedar and cypress, settling on a dry driftwood-and-sand base.",
+    "family": "Marine & woody",
+    "scentEdit": "fresh",
+    "pairing": "Everyday · relaxed daytime occasions",
+    "concentration": "Eau de Parfum",
+    "publishedSizes": [
+      "100 ml"
+    ],
+    "source": "https://beautyhouse.com/products/rasasi-hawas-nautilus-eau-de-parfum-for-men",
+    "noteSources": [
+      {
+        "label": "Retailer product information",
+        "url": "https://beautyhouse.com/products/rasasi-hawas-nautilus-eau-de-parfum-for-men",
+        "kind": "retailer"
+      },
+      {
+        "label": "Retailer product information",
+        "url": "https://www.jalilaperfumes.com/product-details.php?id=3374",
+        "kind": "retailer"
+      }
+    ],
+    "notesQuality": "retailer_corroborated",
+    "notesCaveat": "Pyramid corroborated by two retailers; manufacturer product page not located.",
+    "factsCheckedAt": "2026-10-28",
+    "factsRevision": 1,
+    "finderVerified": true
+  },
+  "rasasi-hawas-malibu": {
+    "notePyramid": {
+      "top": [
+        "Pineapple",
+        "Orange",
+        "Grapefruit"
+      ],
+      "heart": [
+        "Amber",
+        "Iris",
+        "Lavender"
+      ],
+      "base": [
+        "Tonka bean",
+        "Musk",
+        "Cashmeran",
+        "Patchouli"
+      ]
+    },
+    "description": "Pineapple and bright citrus meet iris, lavender and amber, with tonka, musk, cashmeran and patchouli underneath.",
+    "family": "Fruity, aromatic & musky",
+    "scentEdit": "fresh",
+    "pairing": "Everyday · relaxed daytime occasions",
+    "concentration": "Eau de Parfum",
+    "publishedSizes": [
+      "100 ml"
+    ],
+    "source": "https://store.rasasi.com.sa/en/bpzlndr/p533992836",
+    "noteSources": [
+      {
+        "label": "Rasasi product information",
+        "url": "https://store.rasasi.com.sa/en/bpzlndr/p533992836",
+        "kind": "manufacturer"
+      },
+      {
+        "label": "Retailer product information",
+        "url": "https://belvish.com/products/rasasi-hawas-malibu-edp-for-him",
+        "kind": "retailer"
+      }
+    ],
+    "notesQuality": "manufacturer",
+    "notesCaveat": "Official Rasasi Saudi note pyramid. EDP concentration corroborated by retailer.",
+    "factsCheckedAt": "2026-10-28",
+    "factsRevision": 1,
+    "finderVerified": true
+  },
+  "rasasi-hawas-viper": {
+    "notePyramid": {
+      "top": [
+        "Cannabis",
+        "Green notes",
+        "Davana",
+        "Saffron",
+        "Thyme"
+      ],
+      "heart": [
+        "Tobacco",
+        "Coffee",
+        "Cinnamon",
+        "Violet",
+        "Raspberry"
+      ],
+      "base": [
+        "Tonka",
+        "Musk",
+        "Gurjan balsam"
+      ]
+    },
+    "description": "Green herbs and saffron open into tobacco, coffee and warm spice, finishing with tonka, musk and resinous balsam.",
+    "family": "Herbal, smoky & spicy",
+    "scentEdit": "dark",
+    "pairing": "Evening · dressed-up occasions",
+    "concentration": "Eau de Parfum",
+    "publishedSizes": [
+      "100 ml"
+    ],
+    "source": "https://rasasistore.com/products/hawas-viper-for-him",
+    "noteSources": [
+      {
+        "label": "Rasasi product information",
+        "url": "https://rasasistore.com/products/hawas-viper-for-him",
+        "kind": "manufacturer"
+      }
+    ],
+    "notesQuality": "manufacturer",
+    "notesCaveat": "Notes describe olfactory accords, not a verified ingredient list. The manufacturer spells the base note Gurjan balsam.",
+    "factsCheckedAt": "2026-10-28",
+    "factsRevision": 1,
+    "finderVerified": true
+  },
+  "assaf-glitch": {
+    "notePyramid": {
+      "top": [
+        "Grapefruit",
+        "Raspberry"
+      ],
+      "heart": [
+        "Vetiver",
+        "Orange blossom"
+      ],
+      "base": [
+        "Vanilla",
+        "Ambroxan"
+      ]
+    },
+    "description": "A citrus and raspberry opening develops into orange blossom and vetiver, finishing with vanilla and ambroxan.",
+    "family": "Fruity, woody & vanilla",
+    "scentEdit": "dark",
+    "pairing": "Evening · dressed-up occasions",
+    "concentration": "Not specified by brand",
+    "publishedSizes": [
+      "125 ml"
+    ],
+    "source": "https://3saf.com/en/first-night-the-new-era-collection/p1436733170",
+    "noteSources": [
+      {
+        "label": "Brand product information",
+        "url": "https://3saf.com/en/first-night-the-new-era-collection/p1436733170",
+        "kind": "manufacturer"
+      },
+      {
+        "label": "Brand product information",
+        "url": "https://3saf.com/en/glitch/p975628514",
+        "kind": "manufacturer"
+      }
+    ],
+    "notesQuality": "manufacturer",
+    "notesCaveat": "Current brand format: 125 ml. Retailers also list 150 ml EDP; confirm the actual bottle version with the seller.",
+    "factsCheckedAt": "2026-10-28",
+    "factsRevision": 1,
+    "finderVerified": true
+  },
+  "assaf-attacks": {
+    "notePyramid": {
+      "top": [
+        "Thai basil",
+        "Timut pepper",
+        "Haitian vetiver",
+        "Freesia"
+      ],
+      "heart": [
+        "Akigalawood",
+        "Georgywood",
+        "Petalia"
+      ],
+      "base": [
+        "Indonesian patchouli",
+        "Ambrofix"
+      ]
+    },
+    "description": "Basil, pepper, freesia and vetiver lead into modern woody and floral accords, with patchouli and ambrofix at the base.",
+    "family": "Herbal, woody & spicy",
+    "scentEdit": "fresh",
+    "pairing": "Everyday · relaxed daytime occasions",
+    "concentration": "Not specified by brand",
+    "publishedSizes": [
+      "125 ml"
+    ],
+    "source": "https://3saf.com/en/attacks-assaf/p646394479",
+    "noteSources": [
+      {
+        "label": "Brand product information",
+        "url": "https://3saf.com/en/attacks-assaf/p646394479",
+        "kind": "manufacturer"
+      }
+    ],
+    "notesQuality": "manufacturer",
+    "notesCaveat": "Current brand format: 125 ml. Retailers also list 150 ml EDP; confirm the actual bottle version with the seller.",
+    "factsCheckedAt": "2026-10-28",
+    "factsRevision": 1,
+    "finderVerified": true
+  },
+  "al-majed-oud-boisee": {
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Incense",
+        "Violet flower"
+      ],
+      "heart": [
+        "Rose",
+        "Leather",
+        "Cypress"
+      ],
+      "base": [
+        "Musk",
+        "Patchouli",
+        "Cedarwood"
+      ]
+    },
+    "description": "Bergamot, incense and violet introduce a rose, leather and cypress heart, followed by musk, patchouli and cedarwood.",
+    "family": "Woody & leathery",
+    "scentEdit": "dark",
+    "pairing": "Evening · dressed-up occasions",
+    "concentration": "Extrait de Parfum",
+    "publishedSizes": [
+      "150 ml"
+    ],
+    "source": "https://global.almajed4oud.com/en/boisee-from-classic-collection-150ml-extrait-de-parfum/p1796071982",
+    "noteSources": [
+      {
+        "label": "Brand product information",
+        "url": "https://global.almajed4oud.com/en/boisee-from-classic-collection-150ml-extrait-de-parfum/p1796071982",
+        "kind": "manufacturer"
+      },
+      {
+        "label": "Brand product information",
+        "url": "https://kw.almajed4oud.com/en/boisee-from-classic-collection-150ml-extrait-de-parfum/p1796071982",
+        "kind": "manufacturer"
+      }
+    ],
+    "notesQuality": "manufacturer",
+    "notesCaveat": "",
+    "factsCheckedAt": "2026-10-28",
+    "factsRevision": 1,
+    "finderVerified": true
+  },
+  "al-majed-oud-cuir": {
+    "notePyramid": {
+      "top": [
+        "Pineapple",
+        "Bergamot",
+        "Black pepper"
+      ],
+      "heart": [
+        "Incense",
+        "Geranium",
+        "Labdanum"
+      ],
+      "base": [
+        "Patchouli",
+        "Oud Onyx Delair Base",
+        "Vetiver"
+      ]
+    },
+    "description": "Pineapple, bergamot and pepper brighten an incense, geranium and labdanum heart, over patchouli, an oud accord and vetiver.",
+    "family": "Smoky, woody & leathery",
+    "scentEdit": "dark",
+    "pairing": "Evening · dressed-up occasions",
+    "concentration": "Parfum",
+    "publishedSizes": [
+      "150 ml"
+    ],
+    "source": "https://global.almajed4oud.com/en/cuir-150ml-luxurious-leather-dark-wood-notes/p265859112",
+    "noteSources": [
+      {
+        "label": "Brand product information",
+        "url": "https://global.almajed4oud.com/en/cuir-150ml-luxurious-leather-dark-wood-notes/p265859112",
+        "kind": "manufacturer"
+      },
+      {
+        "label": "Brand product information",
+        "url": "https://om.almajed4oud.com/en/cuir-150ml-luxurious-leather-dark-wood-notes/p265859112",
+        "kind": "manufacturer"
+      }
+    ],
+    "notesQuality": "manufacturer",
+    "notesCaveat": "",
+    "factsCheckedAt": "2026-10-28",
+    "factsRevision": 1,
+    "finderVerified": true
+  },
+  "al-majed-oud-noir": {
+    "notePyramid": {
+      "top": [
+        "Plum",
+        "Raspberry",
+        "Bergamot"
+      ],
+      "heart": [
+        "Orris",
+        "Rose",
+        "Olibanum"
+      ],
+      "base": [
+        "Leather",
+        "Guaiac wood",
+        "Tobacco"
+      ]
+    },
+    "description": "Plum, raspberry and bergamot open into orris, rose and frankincense, with a leather, guaiac wood and tobacco finish.",
+    "family": "Fruity, woody & leathery",
+    "scentEdit": "dark",
+    "pairing": "Evening · dressed-up occasions",
+    "concentration": "Parfum",
+    "publishedSizes": [
+      "150 ml"
+    ],
+    "source": "https://global.almajed4oud.com/en/noir-perfume-150ml-oud-dark-wood-musk-notes/p272736735",
+    "noteSources": [
+      {
+        "label": "Brand product information",
+        "url": "https://global.almajed4oud.com/en/noir-perfume-150ml-oud-dark-wood-musk-notes/p272736735",
+        "kind": "manufacturer"
+      },
+      {
+        "label": "Brand product information",
+        "url": "https://qa.almajed4oud.com/en/noir-perfume-150ml-oud-dark-wood-musk-notes/p272736735",
+        "kind": "manufacturer"
+      }
+    ],
+    "notesQuality": "manufacturer",
+    "notesCaveat": "Follows the current global and Qatar brand pyramid; a regional listing uses a different, simplified pyramid.",
+    "factsCheckedAt": "2026-10-28",
+    "factsRevision": 1,
+    "finderVerified": true
+  }
+};
+const legacyNotes = {"hawas": "Apple · Bergamot · Lemon · Cinnamon / Orange blossom · Cardamom · Plum / Patchouli · Grey amber · Driftwood · Musk", "khamrah": "Bergamot · Cinnamon · Nutmeg / Dates accord · Lily of the valley · Praline · Tuberose / Tonka · Benzoin · Myrrh · Akigalawood · Vanilla · Amberwood", "asad": "Black pepper · Pineapple · Tobacco / Coffee · Iris · Patchouli / Amber · Vanilla · Dry woods · Benzoin · Labdanum", "yara": "Tangerine · Heliotrope · Orchid / Tropical notes · Gourmand / Vanilla · Sandalwood · Musk", "qahwa": "Ginger · Cinnamon · Cardamom / Praline · Candied fruits · White flowers / Coffee · Tonka · Musk · Benzoin · Vanilla", "oud-for-glory": "Note pyramid pending verification: the brand page contains conflicting note lists.", "qaed": "Saffron · Pineapple / Jasmine · Fir balsam / Oud wood · Cedarwood · Amber", "rasasi-hawas-lava-gold": "Fragrance notes pending verification with the seller.", "mykonos-inception": "Fragrance notes pending verification with the seller.", "riiffs-momento": "Fragrance notes pending verification with the seller.", "rasasi-hawas-la-mer": "Fragrance notes pending verification with the seller.", "arabiyat-prestige-aristo": "Fragrance notes pending verification with the seller.", "khadlaj-karus-gold-absolu": "Fragrance notes pending verification with the seller.", "rasasi-hawas-nautilus": "Fragrance notes pending verification with the seller.", "armani-stronger-with-you-parfum": "Fragrance notes pending verification with the seller.", "assaf-glitch": "Fragrance notes pending verification with the seller.", "al-majed-oud-boisee": "Fragrance notes pending verification with the seller.", "al-majed-oud-cuir": "Fragrance notes pending verification with the seller.", "al-majed-oud-noir": "Fragrance notes pending verification with the seller.", "rayhaan-elixir": "Fragrance notes pending verification with the seller.", "armaf-club-de-nuit-intense-overdose": "Fragrance notes pending verification with the seller.", "rasasi-hawas-malibu": "Fragrance notes pending verification with the seller.", "assaf-attacks": "Fragrance notes pending verification with the seller.", "rayhaan-nocturno-elixir": "Fragrance notes pending verification with the seller.", "rasasi-hawas-viper": "Fragrance notes pending verification with the seller."};
+export function enrichFragrance(p){
+ const facts=fragranceFacts[p.group];
+ return facts?{...p,...processNotes(facts),...structuredClone(facts)}:p;
+}
+// Upgrade supplied seed facts only. Owner-edited pyramids and commercial fields are preserved.
+export function migrateFragranceFacts(p){
+ if(p.factsRevision>=1||!fragranceFacts[p.group])return p;
+ if(p.notePyramid||p.notes!==legacyNotes[p.group])return p;
+ const updated=enrichFragrance(p);
+ return {...updated,...(p.description&&!/from the Drip & Dusk Instagram edit|Ask the seller to confirm the scent profile/.test(p.description)&&p.instagramSource?{description:p.description}:{})};
+}
+export function researchMetadata(p){
+ const facts=fragranceFacts[p.group];
+ if(!facts||(p.notes&&p.notes!==processNotes(p).notes)||processNotes(p).notes!==processNotes(facts).notes)return {};
+ return Object.fromEntries(['publishedSizes','noteSources','notesQuality','notesCaveat','factsCheckedAt','factsRevision'].map(k=>[k,structuredClone(facts[k])]));
+}

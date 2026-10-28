@@ -29,7 +29,7 @@ Open `http://127.0.0.1:4173`. No build step is needed for the static frontend.
 node --test tests/*.test.mjs
 ```
 
-The 86 automated checks cover catalogue logic, media controls, recommendations, checkout and authentication behavior. Provider responses are mocked in tests; real account configuration requires separate verification by the store operator.
+The 91 automated checks cover catalogue logic, media controls, recommendations, checkout and authentication behavior. Provider responses are mocked in tests; real account configuration requires separate verification by the store operator.
 
 ## Backend
 
@@ -58,3 +58,11 @@ Run the bounded, read-only first-visit check with `node scripts/traffic-check.mj
 The `critical` profile measures the shopping page without waiting for a full background-video download. Omit `critical` to include the film. HTTP/2 mode uses four established TLS connections with multiplexed requests; it does not simulate 150 separate TLS handshakes. Slow mobile connections and stalled playback retain the poster image.
 
 On 28 October 2026, the critical-page HTTP/2 check completed 3,900 requests from 150 simulated guests with zero errors, including 600 public API requests. The 95th-percentile time to first byte was 559 ms overall. This is a single-generator browsing result with the optional full-film transfer excluded; earlier full-media and connection tests recorded timeouts, so it is not a blanket reliability or video-playback guarantee. Local reports retain those limitations.
+
+## Researched fragrance information
+
+All 25 fragrances (32 bottle/decant entries) have complete top, heart and base notes, original descriptions, source links and a research date. See `research/catalogue-facts.json` for the catalogue audit and the two supporting research files for source discrepancies. Twenty-three pyramids use manufacturer publications; Hawas La Mer and Nautilus use corroborated retailer listings. Manufacturer and retailer bottle formats are reference information, separate from merchant stock. Assaf’s current 125 ml listings and retailers’ 150 ml listings are not treated as interchangeable inventory.
+
+Families and occasions are editorial suggestions. Notes describe olfactory accords, not ingredient declarations. The finder includes tea, marine, leather and spicy/herbal directions. Unknown-price references appear separately as discovery suggestions only with no set budget and a full-bottle/either-format request. They cannot enter checkout or satisfy a price cap.
+
+Migration `0004_fragrance_facts.sql` updates seed metadata while preserving prices, quantities, reservations, images and visibility. It skips owner-written pyramids. Browser catalogue revision 4 similarly upgrades the old seed notes without recreating deleted listings. Changing the saved pyramid removes research provenance if it no longer matches the sourced facts.

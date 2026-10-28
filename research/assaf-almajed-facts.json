@@ -1,0 +1,145 @@
+{
+  "researchedAt": "2026-10-28",
+  "scope": "Manufacturer facts about fragrance identity; these are not confirmations of Drip & Dusk's stock, size, price or condition.",
+  "products": [
+    {
+      "brand": "Assaf",
+      "name": "Glitch",
+      "notes": {
+        "top": ["Grapefruit", "Raspberry"],
+        "heart": ["Vetiver", "Orange blossom"],
+        "base": ["Vanilla", "Ambroxan"]
+      },
+      "notesEvidence": "manufacturer",
+      "description": "A citrus and raspberry opening develops into orange blossom and vetiver, finishing with vanilla and ambroxan.",
+      "manufacturerSizesMl": [125],
+      "manufacturerConcentration": null,
+      "retailerConcentration": "Eau de Parfum",
+      "retailerSizesMl": [150],
+      "sources": [
+        {"url": "https://3saf.com/en/glitch/p975628514", "type": "manufacturer", "supports": ["identity", "125ml current format"], "sku": "GLT-125-SF-10058"},
+        {"url": "https://3saf.com/en/first-night-the-new-era-collection/p1436733170", "type": "manufacturer", "supports": ["complete pyramid for Glitch", "25ml miniature included in this set"]},
+        {"url": "https://3saf.com/en/strike-black-the-new-era-collection/p2075831998", "type": "manufacturer", "supports": ["same complete Glitch pyramid"]},
+        {"url": "https://askarperfumes.com/products/assaf-glitch-eau-de-parfum-150ml-5-07-oz-unisex-amber-grapefruit-vetiver-vanilla", "type": "retailer", "supports": ["150ml Eau de Parfum retail format"]}
+      ],
+      "discrepancies": [
+        "Current manufacturer standalone page is 125ml; many retailers list 150ml. This may reflect formats or packaging changes, but that explanation is not verified. Do not assign a stocked size without seller confirmation.",
+        "Fragrantica's launch article claims 100ml and links to an unrelated Wild Colt product. Prefer the actual manufacturer listing.",
+        "Source Beauty lists a different lemon/mint/lavender/nutmeg/amber/cedarwood pyramid; rejected in favor of Assaf's own Glitch pyramid."
+      ]
+    },
+    {
+      "brand": "Assaf",
+      "name": "Attacks",
+      "variant": "Original Attacks, not Attacks Blue",
+      "notes": {
+        "top": ["Thai basil", "Timut pepper", "Haitian vetiver", "Freesia"],
+        "heart": ["Akigalawood", "Georgywood", "Petalia"],
+        "base": ["Indonesian patchouli", "Ambrofix"]
+      },
+      "manufacturerHeartWording": ["Akigalawood Patchouli", "Georgian Wood", "Petalia flowers"],
+      "normalizationNote": "The official English page translates its woody heart as 'Akigalawood Patchouli' and 'Georgian Wood'. Retailers use the established aromatic-material names Akigalawood and Georgywood; the normalized display names retain that identity and do not add separate heart patchouli.",
+      "notesEvidence": "manufacturer, with retailer normalization of two translated material names",
+      "description": "Basil, pepper, freesia and vetiver lead into modern woody and floral accords, with patchouli and ambrofix at the base.",
+      "gender": "Men",
+      "manufacturerSizesMl": [125],
+      "manufacturerConcentration": null,
+      "manufacturerConcentrationWording": "High Concentration; no standard EDP/Parfum concentration stated",
+      "retailerConcentration": "Eau de Parfum",
+      "retailerSizesMl": [150],
+      "sources": [
+        {"url": "https://3saf.com/en/attacks-assaf/p646394479", "type": "manufacturer", "supports": ["complete stage-specific pyramid", "125ml current format", "men's classification"], "sku": "ATK-125-SF-05600"},
+        {"url": "https://waw.beauty/shop/category/him-310/assaf-attacks-10742", "type": "retailer", "supports": ["Georgywood and Akigalawood naming", "150ml Eau de Parfum retail format"], "sku": "ATK-150-05200"}
+      ],
+      "discrepancies": [
+        "Current manufacturer page is 125ml, whereas a retailer lists 150ml with a different SKU. Confirm the store's actual bottle format.",
+        "The official FAQ loosely mentions bergamot, saffron and oud although those do not appear in its explicit Aromatic Composition. The structured composition is preferred over the generic FAQ copy.",
+        "Do not substitute the distinct Attacks Blue pyramid."
+      ]
+    },
+    {
+      "brand": "Al Majed Oud",
+      "name": "Boisée",
+      "variant": "Classic Collection",
+      "notes": {
+        "top": ["Bergamot", "Incense", "Violet flower"],
+        "heart": ["Rose", "Leather", "Cypress"],
+        "base": ["Musk", "Patchouli", "Cedarwood"]
+      },
+      "notesEvidence": "manufacturer",
+      "description": "Bergamot, incense and violet introduce a rose, leather and cypress heart, followed by musk, patchouli and cedarwood.",
+      "fragranceFamilies": ["Woody", "Leather"],
+      "gender": "Unisex",
+      "manufacturerSizesMl": [150],
+      "manufacturerConcentration": "Extrait de Parfum",
+      "manufacturerOccasions": ["Formal events", "Evening"],
+      "manufacturerSeasons": ["Autumn", "Winter"],
+      "sources": [
+        {"url": "https://global.almajed4oud.com/en/boisee-from-classic-collection-150ml-extrait-de-parfum/p1796071982", "type": "manufacturer", "supports": ["complete pyramid", "150ml", "Extrait de Parfum", "family", "unisex", "occasions", "seasons"], "sku": "02772"},
+        {"url": "https://kw.almajed4oud.com/en/boisee-from-classic-collection-150ml-extrait-de-parfum/p1796071982", "type": "manufacturer", "supports": ["same complete product facts"]}
+      ],
+      "discrepancies": [
+        "Some retailers call Boisée Eau de Parfum. The manufacturer explicitly calls the classic 150ml bottle Extrait de Parfum.",
+        "The separate official gift-set listing has a 100ml title but a 150ml description. Use the unambiguous standalone 150ml listing for this product."
+      ]
+    },
+    {
+      "brand": "Al Majed Oud",
+      "name": "Cuir",
+      "variant": "Classic Collection",
+      "notes": {
+        "top": ["Pineapple", "Bergamot", "Black pepper"],
+        "heart": ["Incense", "Geranium", "Labdanum"],
+        "base": ["Patchouli", "Oud Onyx Delair Base", "Vetiver"]
+      },
+      "notesEvidence": "manufacturer",
+      "description": "Pineapple, bergamot and pepper brighten an incense, geranium and labdanum heart, over patchouli, an oud accord and vetiver.",
+      "fragranceFamilies": ["Woody", "Leather"],
+      "gender": "Unisex",
+      "manufacturerSizesMl": [150],
+      "manufacturerConcentration": "Parfum",
+      "manufacturerConcentrationWording": "Perfum in English title; بارفيوم in the official Arabic URL",
+      "manufacturerOccasions": ["Formal events", "Evening"],
+      "manufacturerSeasons": ["Autumn", "Winter"],
+      "sources": [
+        {"url": "https://global.almajed4oud.com/en/cuir-150ml-luxurious-leather-dark-wood-notes/p265859112", "type": "manufacturer", "supports": ["complete pyramid", "150ml", "Perfum title", "family", "unisex", "occasions", "seasons"], "sku": "02762"},
+        {"url": "https://om.almajed4oud.com/en/cuir-150ml-luxurious-leather-dark-wood-notes/p265859112", "type": "manufacturer", "supports": ["same complete product facts"]}
+      ],
+      "discrepancies": [
+        "Several retailers show only pineapple/bergamot, incense, patchouli/oud. The manufacturer's full structured pyramid additionally lists black pepper, geranium, labdanum and vetiver.",
+        "Some retailers call it Eau de Parfum. Manufacturer title calls it Perfum/Parfum.",
+        "The manufacturer narrative loosely places patchouli in the heart; its explicit structured pyramid places patchouli in the base. Use the structured pyramid.",
+        "Retain the manufacturer's named accord Oud Onyx Delair Base, or display it as Oud accord with the exact label in provenance; do not interpret it as a separate concentration or ingredient claim."
+      ]
+    },
+    {
+      "brand": "Al Majed Oud",
+      "name": "Noir",
+      "variant": "Classic Collection",
+      "notes": {
+        "top": ["Plum", "Raspberry", "Bergamot"],
+        "heart": ["Orris", "Rose", "Olibanum"],
+        "base": ["Leather", "Guaiac wood", "Tobacco"]
+      },
+      "notesEvidence": "manufacturer",
+      "description": "Plum, raspberry and bergamot open into orris, rose and frankincense, with a leather, guaiac wood and tobacco finish.",
+      "fragranceFamilies": ["Woody", "Fruity"],
+      "gender": "Unisex",
+      "manufacturerSizesMl": [150],
+      "manufacturerConcentration": "Parfum",
+      "manufacturerConcentrationWording": "Perfum in English title",
+      "manufacturerOccasions": ["Formal events", "Evening"],
+      "manufacturerSeasons": ["Autumn", "Winter"],
+      "sources": [
+        {"url": "https://global.almajed4oud.com/en/noir-perfume-150ml-oud-dark-wood-musk-notes/p272736735", "type": "manufacturer", "supports": ["complete pyramid", "150ml", "Perfum title", "family", "unisex", "occasions", "seasons"], "sku": "02756"},
+        {"url": "https://qa.almajed4oud.com/en/noir-perfume-150ml-oud-dark-wood-musk-notes/p272736735", "type": "manufacturer", "supports": ["same complete product facts"]},
+        {"url": "https://bh.almajed4oud.com/en/jgoyzDR", "type": "manufacturer", "supports": ["alternate simplified pyramid"], "note": "This older/simplified official page says top berries, heart iris, base tobacco/oud/leather."}
+      ],
+      "discrepancies": [
+        "Another official Bahrain URL gives a simplified berries/iris/tobacco-oud-leather pyramid. Prefer the complete, consistent current global and Qatar structured listing; record the discrepancy rather than merging oud into the current base.",
+        "Olibanum is frankincense; either label is appropriate for display.",
+        "The SEO URL says oud/dark wood/musk, but the actual structured product pyramid does not list musk. Do not derive extra notes from the URL."
+      ]
+    }
+  ]
+}

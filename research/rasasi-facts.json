@@ -1,0 +1,234 @@
+{
+  "researchedAt": "2026-10-28",
+  "scope": "Fragrance facts only. No merchant prices, inventory, conditions, shipping promises or performance-duration claims.",
+  "products": [
+    {
+      "id": "rasasi-hawas-la-mer-bottle",
+      "group": "rasasi-hawas-la-mer",
+      "brand": "Rasasi",
+      "name": "Hawas La Mer",
+      "notePyramid": {
+        "top": [
+          "Peppermint",
+          "Mandarin",
+          "Bergamot"
+        ],
+        "heart": [
+          "Blackcurrant",
+          "Carrot",
+          "Jasmine"
+        ],
+        "base": [
+          "Fig",
+          "Woody notes",
+          "Amber"
+        ]
+      },
+      "family": "Fresh, fruity & woody",
+      "description": "Peppermint and citrus introduce blackcurrant and jasmine, followed by a fig, amber and woody finish.",
+      "concentration": "Eau de Parfum",
+      "publishedBottleSizesMl": [
+        100
+      ],
+      "manufacturerSizesMl": null,
+      "sourceQuality": "retailer_corroborated",
+      "source": "https://www.parfumerie-de-dubai.com/en/product-2/hawas-la-mer-rasasi-perfume/",
+      "sources": [
+        {
+          "url": "https://www.parfumerie-de-dubai.com/en/product-2/hawas-la-mer-rasasi-perfume/",
+          "type": "retailer",
+          "fields": [
+            "notePyramid",
+            "concentration",
+            "publishedBottleSizesMl"
+          ]
+        },
+        {
+          "url": "https://www.wangiworld.com/perfumes/rasasi/hawas-for-him-la-mer-rasasi-100ml-edp/",
+          "type": "retailer",
+          "fields": [
+            "notePyramid",
+            "concentration",
+            "publishedBottleSizesMl"
+          ],
+          "retrieval": "Search index contained full notes/specifications; direct web open returned cache miss."
+        },
+        {
+          "url": "https://www.fragrantica.com/news/Two-New-Fragrances-From-Rasasi-Hawas-La-Mer-and-Hawas-Gold-Digger-25843.html",
+          "type": "fragrance_press",
+          "fields": [
+            "notePyramid"
+          ],
+          "note": "Launch coverage also places fig in the base."
+        }
+      ],
+      "conflicts": [
+        "Some secondary databases, including ScentAdvice and AUROME, place fig in the heart rather than the base. The displayed pyramid follows the two listed retailers and launch coverage. No manufacturer product listing was found in the official UAE or Rasasi Exclusive catalogues checked."
+      ],
+      "notesCaveat": "Retailer-published pyramid; fig staging differs in some secondary listings."
+    },
+    {
+      "id": "rasasi-hawas-nautilus-bottle",
+      "group": "rasasi-hawas-nautilus",
+      "brand": "Rasasi",
+      "name": "Hawas Nautilus",
+      "notePyramid": {
+        "top": [
+          "Ambergris",
+          "Sea water"
+        ],
+        "heart": [
+          "Cedar",
+          "Cypress"
+        ],
+        "base": [
+          "Driftwood",
+          "Sand"
+        ]
+      },
+      "family": "Marine & woody",
+      "description": "Ambergris and sea-water accords lead into cedar and cypress, settling on a dry driftwood-and-sand base.",
+      "concentration": "Eau de Parfum",
+      "publishedBottleSizesMl": [
+        100
+      ],
+      "manufacturerSizesMl": null,
+      "sourceQuality": "retailer_corroborated",
+      "source": "https://beautyhouse.com/products/rasasi-hawas-nautilus-eau-de-parfum-for-men",
+      "sources": [
+        {
+          "url": "https://beautyhouse.com/products/rasasi-hawas-nautilus-eau-de-parfum-for-men",
+          "type": "retailer",
+          "fields": [
+            "notePyramid",
+            "concentration",
+            "publishedBottleSizesMl"
+          ]
+        },
+        {
+          "url": "https://www.jalilaperfumes.com/product-details.php?id=3374",
+          "type": "retailer",
+          "fields": [
+            "notePyramid",
+            "concentration",
+            "publishedBottleSizesMl"
+          ]
+        }
+      ],
+      "conflicts": [
+        "No manufacturer product listing was found in the official UAE or Rasasi Exclusive catalogues checked. Retailer sources agree on all six notes; heart-note ordering differs only."
+      ],
+      "notesCaveat": "Pyramid corroborated by two retailers; manufacturer product page not located."
+    },
+    {
+      "id": "rasasi-hawas-malibu-bottle",
+      "group": "rasasi-hawas-malibu",
+      "brand": "Rasasi",
+      "name": "Hawas Malibu",
+      "notePyramid": {
+        "top": [
+          "Pineapple",
+          "Orange",
+          "Grapefruit"
+        ],
+        "heart": [
+          "Amber",
+          "Iris",
+          "Lavender"
+        ],
+        "base": [
+          "Tonka bean",
+          "Musk",
+          "Cashmeran",
+          "Patchouli"
+        ]
+      },
+      "family": "Fruity, aromatic & musky",
+      "description": "Pineapple and bright citrus meet iris, lavender and amber, with tonka, musk, cashmeran and patchouli underneath.",
+      "concentration": "Eau de Parfum",
+      "publishedBottleSizesMl": [
+        100
+      ],
+      "manufacturerSizesMl": [
+        100
+      ],
+      "sourceQuality": "manufacturer",
+      "concentrationSourceQuality": "retailer_corroborated",
+      "source": "https://store.rasasi.com.sa/en/bpzlndr/p533992836",
+      "sources": [
+        {
+          "url": "https://store.rasasi.com.sa/en/bpzlndr/p533992836",
+          "type": "manufacturer",
+          "fields": [
+            "notePyramid",
+            "publishedBottleSizesMl"
+          ]
+        },
+        {
+          "url": "https://belvish.com/products/rasasi-hawas-malibu-edp-for-him",
+          "type": "retailer",
+          "fields": [
+            "concentration",
+            "notePyramid"
+          ],
+          "note": "Retailer calls the iris note orris; manufacturer spelling is retained."
+        }
+      ],
+      "conflicts": [
+        "Official Saudi page has an unrelated bottle-description phrase referring to a modern woman, despite its title and gender field stating for him. That boilerplate is excluded. Retailer Belvish labels the iris-family heart note Orris; manufacturer lists Iris."
+      ],
+      "notesCaveat": "Official Rasasi Saudi note pyramid. EDP concentration corroborated by retailer."
+    },
+    {
+      "id": "rasasi-hawas-viper-bottle",
+      "group": "rasasi-hawas-viper",
+      "brand": "Rasasi",
+      "name": "Hawas Viper",
+      "notePyramid": {
+        "top": [
+          "Cannabis",
+          "Green notes",
+          "Davana",
+          "Saffron",
+          "Thyme"
+        ],
+        "heart": [
+          "Tobacco",
+          "Coffee",
+          "Cinnamon",
+          "Violet",
+          "Raspberry"
+        ],
+        "base": [
+          "Tonka",
+          "Musk",
+          "Gurjan balsam"
+        ]
+      },
+      "family": "Herbal, smoky & spicy",
+      "description": "Green herbs and saffron open into tobacco, coffee and warm spice, finishing with tonka, musk and resinous balsam.",
+      "concentration": "Eau de Parfum",
+      "publishedBottleSizesMl": [
+        100
+      ],
+      "manufacturerSizesMl": [
+        100
+      ],
+      "sourceQuality": "manufacturer",
+      "source": "https://rasasistore.com/products/hawas-viper-for-him",
+      "sources": [
+        {
+          "url": "https://rasasistore.com/products/hawas-viper-for-him",
+          "type": "manufacturer",
+          "fields": [
+            "notePyramid",
+            "concentration",
+            "publishedBottleSizesMl"
+          ]
+        }
+      ],
+      "conflicts": [],
+      "notesCaveat": "Notes describe olfactory accords, not a verified ingredient list. The manufacturer spells the base note Gurjan balsam."
+    }
+  ]
+}
