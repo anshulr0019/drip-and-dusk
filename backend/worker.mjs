@@ -1,3 +1,4 @@
+import {paymentOptions,choosePaymentMethod,razorpayTestReady} from './payment-options.mjs';
 import {visitorId,backendIP} from './traffic.mjs';
 import {prepareProduct,prepareSettings} from './catalogue.mjs';
 import {recommendScents} from '../dist/scent-matching.mjs';
@@ -35,7 +36,7 @@ async function limit(env,request,scope,max,now){
 async function requireTracking(env,request,id){const token=request.headers.get('Authorization')?.replace(/^Bearer /,'');if(!env.TRACKING_SECRET||!equalSecret(token,await tokenFor(env,id)))fail('This tracking link is unavailable.',404);const order=await first(env,'SELECT * FROM orders WHERE id=?',id);if(!order)fail('This tracking link is unavailable.',404);return order;}
 async function isAdmin(env,request,now){if((env.ADMIN_SECRET?.length||0)<32)return false;const bearer=request.headers.get('Authorization')?.replace(/^Bearer /,'');if(bearer&&equalSecret(bearer,env.ADMIN_SECRET))return true;const cookie=request.headers.get('Cookie')?.match(/(?:^|;\s*)dd_owner=([^;]+)/)?.[1];if(!cookie)return false;const [expiry,mac]=cookie.split('.');return /^\d+$/.test(expiry)&&Number(expiry)>now&&Number(expiry)<=now+3600000&&equalSecret(mac,await hmac(env.ADMIN_SECRET,'owner:'+expiry));}
 async function requireAdmin(env,request,now){if(!await isAdmin(env,request,now))fail('Owner sign-in is required.',401)}
-async function publicOrder(env,o){const n=await first(env,"SELECT status FROM notifications WHERE order_id=? AND kind='confirmation'",o.id);return {id:o.id,ref:o.ref,mode:o.mode,status:o.status,paymentStatus:o.payment_status,paymentMethod:o.payment_method,expiresAt:new Date(o.expires_at).toISOString(),payment:manual(env)?samplePayment:undefined,notificationStatus:o.payment_method==='manual_upi'?'manual':!o.consent?'not_requested':o.mode==='preview'?'preview':n?.status||'pending',lines:JSON.parse(o.lines),subtotalPaise:o.subtotal_paise,feePaise:o.shipping_paise,totalPaise:o.total_paise,deliveryLabel:o.delivery_label,events:(await all(env,'SELECT status,at FROM order_events WHERE order_id=? ORDER BY at',o.id)).map(e=>({...e,at:new Date(e.at).toISOString()})),createdAt:new Date(o.created_at).toISOString()};}
+async function publicOrder(env,o){const n=await first(env,"SELECT status FROM notifications WHERE order_id=? AND kind='confirmation'",o.id);return {id:o.id,ref:o.ref,mode:o.mode,status:o.status,paymentStatus:o.payment_status,paymentMethod:o.payment_method,expiresAt:new Date(o.expires_at).toISOString(),payment:o.payment_method==='manual_upi'?samplePayment:undefined,notificationStatus:o.payment_method==='manual_upi'?'manual':!o.consent?'not_requested':o.mode==='preview'?'preview':n?.status||'pending',lines:JSON.parse(o.lines),subtotalPaise:o.subtotal_paise,feePaise:o.shipping_paise,totalPaise:o.total_paise,deliveryLabel:o.delivery_label,events:(await all(env,'SELECT status,at FROM order_events WHERE order_id=? ORDER BY at',o.id)).map(e=>({...e,at:new Date(e.at).toISOString()})),createdAt:new Date(o.created_at).toISOString()};}
 async function sessionFor(env,o){
  const result={id:o.id,ref:o.ref,token:await tokenFor(env,o.id),provider:o.payment_method==='manual_upi'?'manual_upi':o.mode==='preview'?'preview':'razorpay',status:o.status,amount:o.total_paise};
  if(o.payment_method==='manual_upi')return {...result,payment:samplePayment};
@@ -46,6 +47,7 @@ async function sessionFor(env,o){
 async function gateway(env,path,init,fetchExternal){const r=await fetchExternal('https://api.razorpay.com/v1/'+path,{...init,signal:AbortSignal.timeout(20000),headers:{Authorization:'Basic '+btoa(env.RAZORPAY_KEY_ID+':'+env.RAZORPAY_KEY_SECRET),'Content-Type':'application/json',...init?.headers}});let data;try{data=await r.json()}catch{fail('The payment provider is unavailable. Your payment has not been confirmed.',502)}if(!r.ok)fail('The payment provider could not complete this request. Your payment has not been confirmed.',502);return data;}
 // The conditional transition and SQL trigger make repeated callbacks harmless.
 async function capture(env,o,payment,now){
+ if(o.payment_method!=='razorpay')fail('This order does not use Razorpay.',409);
  if(payment.order_id!==o.gateway_order_id||payment.amount!==o.total_paise||payment.currency!=='INR'||payment.status!=='captured')fail('Payment has not been verified as captured for this order.',409);
  await expire(env,now);
  const current=await first(env,'SELECT * FROM orders WHERE id=?',o.id);
@@ -80,7 +82,7 @@ export function createHandler({fetchExternal=(...a)=>fetch(...a),now=()=>Date.no
    if(!['sandbox','preview','manual_demo'].includes(mode(env)))fail('Live payments are not enabled in this release.',503);
    const authResponse=await auth.handle(request,env);if(authResponse)return authResponse;
    if(path==='/api/account/orders'&&request.method==='GET'){const user=await auth.session(request,env);if(!user)fail('Sign in to view your orders.',401);const rows=await all(env,'SELECT * FROM orders WHERE customer_user_id=? ORDER BY created_at DESC LIMIT 100',user.id);return json({orders:await Promise.all(rows.map(async o=>({...await publicOrder(env,o),trackingPath:'#track/'+o.id+'/'+await tokenFor(env,o.id)})))});}
-   if(path==='/api/config'&&request.method==='GET')return json({mode:mode(env),provider:manual(env)?'manual_upi':mode(env)==='preview'?'preview':'razorpay',payment:manual(env)?samplePayment:undefined,ready:readiness(env),shippingConfigured:!!env.SHIPPING_RULES_JSON||mode(env)==='preview'||manual(env),courierConnected:!!env.COURIER_WEBHOOK_SECRET,whatsappConnected:!!(env.WHATSAPP_ACCESS_TOKEN&&env.ALLOW_SANDBOX_MESSAGES==='true')});
+   if(path==='/api/config'&&request.method==='GET')return json({mode:mode(env),provider:manual(env)?'manual_upi':mode(env)==='preview'?'preview':'razorpay',payment:manual(env)?samplePayment:undefined,ready:readiness(env),paymentOptions:paymentOptions(env),customerFeePaise:0,shippingConfigured:!!env.SHIPPING_RULES_JSON||mode(env)==='preview'||manual(env),courierConnected:!!env.COURIER_WEBHOOK_SECRET,whatsappConnected:!!(env.WHATSAPP_ACCESS_TOKEN&&env.ALLOW_SANDBOX_MESSAGES==='true')});
    if(path==='/api/catalogue'&&request.method==='GET')return json(await publicSnapshot(env,time));
    if(path==='/api/scent-matches'&&request.method==='POST'){await limit(env,request,'finder',120,time);const b=await body(request);return json({matches:recommendScents((await publicSnapshot(env,time)).products,b.answers)});}
    if(path==='/api/admin/products'&&request.method==='GET'){await requireOwner(env,request,time);await expire(env,time);return json({products:await catalogue(env,true)});}
@@ -112,32 +114,37 @@ export function createHandler({fetchExternal=(...a)=>fetch(...a),now=()=>Date.no
    }
    if(path==='/api/orders'&&request.method==='POST'){
     if(!readiness(env))fail('Merchant test keys and delivery setup are not connected yet.',503);
-    await limit(env,request,'order',20,time);await expire(env,time);const b=await body(request),a=validateAddress(b.address),account=await auth.session(request,env);
+    await limit(env,request,'order',20,time);await expire(env,time);const b=await body(request),paymentMethod=choosePaymentMethod(env,b.paymentMethod),a=validateAddress(b.address),account=await auth.session(request,env);
     if(!/^[a-zA-Z0-9-]{20,80}$/.test(b.requestId||'')||typeof b.whatsappConsent!=='boolean')fail('Restart checkout and try again.');
-    const requestHash=await digest(JSON.stringify({quoteId:b.quoteId,basket:b.basket,address:a,consent:b.whatsappConsent,customerUserId:account?.id||null}));
+    const requestHash=await digest(JSON.stringify({quoteId:b.quoteId,basket:b.basket,address:a,consent:b.whatsappConsent,customerUserId:account?.id||null,paymentMethod}));
     const existing=await first(env,'SELECT * FROM orders WHERE request_id=?',b.requestId);if(existing){if(!equalSecret(requestHash,existing.request_hash))fail('This checkout request has changed. Restart checkout.',409);return json(await sessionFor(env,existing));}
     const saved=await first(env,'SELECT * FROM quotes WHERE id=?',b.quoteId||'');if(!saved||saved.expires_at<=time)fail('Delivery quote expired. Review your address and total again.',409);
     const quoted=JSON.parse(saved.data);let q;try{q=quoteCheckout(await catalogue(env),b.basket,a.postcode,shipping(env))}catch(e){fail(e.message,409)}if(quoteFingerprint(q)!==quoteFingerprint(quoted))fail('Prices, delivery or your bag changed. Review your total again.',409);
-    const id=crypto.randomUUID(),ref=(manual(env)?'DD-DEMO-':'DD-TEST-')+id.replace(/-/g,'').slice(0,12).toUpperCase();
+    const orderMode=paymentMethod==='manual_upi'?'manual_demo':mode(env)==='preview'?'preview':'sandbox';
+    const id=crypto.randomUUID(),ref=(paymentMethod==='manual_upi'?'DD-DEMO-':'DD-TEST-')+id.replace(/-/g,'').slice(0,12).toUpperCase();
     try{await env.DB.batch([
-     stmt(env,'INSERT INTO orders(id,ref,request_id,request_hash,quote_id,customer,consent,lines,subtotal_paise,shipping_paise,total_paise,delivery_label,mode,created_at,expires_at,updated_at,customer_user_id,payment_method) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',id,ref,b.requestId,requestHash,b.quoteId,JSON.stringify(mode(env)==='preview'||manual(env)?{name:'Demo Customer',phone:'919999999999',line1:'12 Example Avenue',line2:'',city:'Pune',state:'Maharashtra',postcode:'411001',country:'IN'}:a),b.whatsappConsent?1:0,JSON.stringify(q.lines),q.subtotalPaise,q.feePaise,q.totalPaise,q.deliveryLabel||'Delivery',mode(env),time,time+(manual(env)?1800000:900000),time,account?.id||null,manual(env)?'manual_upi':'razorpay'),
+     stmt(env,'INSERT INTO orders(id,ref,request_id,request_hash,quote_id,customer,consent,lines,subtotal_paise,shipping_paise,total_paise,delivery_label,mode,created_at,expires_at,updated_at,customer_user_id,payment_method) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',id,ref,b.requestId,requestHash,b.quoteId,JSON.stringify(mode(env)==='preview'||manual(env)?{name:'Demo Customer',phone:'919999999999',line1:'12 Example Avenue',line2:'',city:'Pune',state:'Maharashtra',postcode:'411001',country:'IN'}:a),b.whatsappConsent?1:0,JSON.stringify(q.lines),q.subtotalPaise,q.feePaise,q.totalPaise,q.deliveryLabel||'Delivery',orderMode,time,time+(paymentMethod==='manual_upi'?1800000:900000),time,account?.id||null,paymentMethod),
      ...q.lines.map(l=>stmt(env,'INSERT INTO order_lines(order_id,product_id,qty,unit_paise) VALUES(?,?,?,?)',id,l.id,l.qty,l.unitPaise))
     ])}catch{
      const repeated=await first(env,'SELECT * FROM orders WHERE request_id=?',b.requestId);if(repeated&&equalSecret(repeated.request_hash,requestHash))return json(await sessionFor(env,repeated));
      fail('Stock or checkout changed. Refresh your bag and review the order again.',409);
     }
     invalidate(env);
-    if(mode(env)==='sandbox'){
+    if(paymentMethod==='razorpay'&&orderMode==='sandbox'){
      // Never create another gateway order on an ambiguous network timeout. The hold expires safely.
      let created;try{created=await gateway(env,'orders',{method:'POST',body:JSON.stringify({amount:q.totalPaise,currency:'INR',receipt:ref})},fetchExternal)}catch(e){throw e}
-     if(!created.id||created.amount!==q.totalPaise||created.currency!=='INR')fail('Payment provider returned an unexpected order. No order is confirmed.',502);
+     if(!/^order_[A-Za-z0-9]+$/.test(created.id||'')||created.amount!==q.totalPaise||created.currency!=='INR')fail('Payment provider returned an unexpected order. No order is confirmed.',502);
      await stmt(env,'UPDATE orders SET gateway_order_id=?,updated_at=? WHERE id=?',created.id,time,id).run();
     }
     return json(await sessionFor(env,await first(env,'SELECT * FROM orders WHERE id=?',id)),201);
    }
-   const match=path.match(/^\/api\/orders\/([a-zA-Z0-9-]+)(?:\/(verify|preview-payment|payment-submission))?$/);
+   const match=path.match(/^\/api\/orders\/([a-zA-Z0-9-]+)(?:\/(verify|preview-payment|payment-submission|payment-session))?$/);
    if(match){await limit(env,request,'track',120,time);await expire(env,time);const o=await requireTracking(env,request,match[1]);
     if(request.method==='GET'&&!match[2])return json(await publicOrder(env,o));
+    if(request.method==='GET'&&match[2]==='payment-session'){
+     if(o.payment_method!=='razorpay'||o.mode!=='sandbox'||!razorpayTestReady(env))fail('Razorpay test checkout is not connected for this order.',503);
+     return json(await sessionFor(env,o));
+    }
     if(request.method==='POST'&&match[2]==='payment-submission'){
      if(o.payment_method!=='manual_upi')fail('This order does not use manual UPI.',409);
      const b=await body(request),reference=String(b.reference||'').trim();if(!/^[a-zA-Z0-9-]{6,40}$/.test(reference))fail('Enter the sample transaction reference (6–40 letters or digits).');
@@ -151,18 +158,18 @@ export function createHandler({fetchExternal=(...a)=>fetch(...a),now=()=>Date.no
      const simulated={...o,gateway_order_id:'preview-'+o.id};await capture(env,simulated,{id:'preview-payment-'+o.id,order_id:simulated.gateway_order_id,amount:o.total_paise,currency:'INR',status:'captured'},time);return json({status:(await first(env,'SELECT status FROM orders WHERE id=?',o.id)).status});
     }
     if(request.method==='POST'&&match[2]==='verify'){
-     if(mode(env)!=='sandbox'||!env.RAZORPAY_KEY_SECRET)fail('Razorpay verification is not configured.',503);const b=await body(request);
+     if(!razorpayTestReady(env)||o.payment_method!=='razorpay'||o.mode!=='sandbox')fail('Razorpay verification is not configured for this order.',503);const b=await body(request);
      if(!/^pay_[a-zA-Z0-9]+$/.test(b.razorpay_payment_id||'')||b.razorpay_order_id!==o.gateway_order_id||!equalSecret(b.razorpay_signature,await hmac(env.RAZORPAY_KEY_SECRET,o.gateway_order_id+'|'+b.razorpay_payment_id)))fail('Payment signature could not be verified.',400);
      const p=await gateway(env,'payments/'+b.razorpay_payment_id,{method:'GET'},fetchExternal);if(p.id!==b.razorpay_payment_id)fail('Payment ID mismatch.',409);await capture(env,o,p,time);ctx.waitUntil(dispatchNotifications(env,{fetchExternal,now:time}));return json({status:(await first(env,'SELECT status FROM orders WHERE id=?',o.id)).status});
     }
    }
    if(path==='/api/webhooks/razorpay'&&request.method==='POST'){
-    if(mode(env)!=='sandbox'||!env.RAZORPAY_WEBHOOK_SECRET)fail('Webhook is not configured.',503);const raw=await request.text();if(raw.length>200000)fail('Webhook is too large.',413);
+    if(!razorpayTestReady(env))fail('Webhook is not configured.',503);const raw=await request.text();if(raw.length>200000)fail('Webhook is too large.',413);
     if(!equalSecret(request.headers.get('X-Razorpay-Signature'),await hmac(env.RAZORPAY_WEBHOOK_SECRET,raw)))fail('Invalid webhook signature.',401);
     const eventId=request.headers.get('x-razorpay-event-id');if(!eventId||eventId.length>200)fail('Missing webhook event ID.');if(await first(env,"SELECT event_id FROM webhook_receipts WHERE provider='razorpay' AND event_id=?",eventId))return json({received:true});
     let b;try{b=JSON.parse(raw)}catch{fail('Invalid webhook JSON.')};if(b.event==='payment.captured'||b.event==='order.paid'){
      const p=b.payload?.payment?.entity;if(!p?.id||!p.order_id)fail('Missing payment entity.');const o=await first(env,'SELECT * FROM orders WHERE gateway_order_id=?',p.order_id);
-     if(!o)fail('Order is not available yet. Retry this callback.',409);await capture(env,o,p,time);
+     if(!o)fail('Order is not available yet. Retry this callback.',409);if(o.payment_method!=='razorpay'||o.mode!=='sandbox')fail('This order does not accept Razorpay callbacks.',409);await capture(env,o,p,time);
     }
     await stmt(env,"INSERT OR IGNORE INTO webhook_receipts(provider,event_id,at) VALUES('razorpay',?,?)",eventId,time).run();ctx.waitUntil(dispatchNotifications(env,{fetchExternal,now:time}));return json({received:true});
    }
@@ -202,7 +209,7 @@ export function createHandler({fetchExternal=(...a)=>fetch(...a),now=()=>Date.no
    const admin=path.match(/^\/api\/admin\/orders\/([a-zA-Z0-9-]+)\/status$/);
    if(admin&&request.method==='POST'){
     await requireOwner(env,request,time);const b=await body(request),o=await first(env,'SELECT * FROM orders WHERE id=?',admin[1]);
-    const allowed=o?.payment_method==='manual_upi'?{confirmed:'packed',packed:'shipped',shipped:'delivered'}:{confirmed:'packed'};
+    const allowed={confirmed:'packed',packed:'shipped',shipped:'delivered'};
     if(!o||o.payment_status!=='captured'||allowed[o.status]!==b.status)fail('Advance a paid order one fulfilment stage at a time.',409);
     if(b.shipmentId&&!/^[a-zA-Z0-9_-]{1,100}$/.test(b.shipmentId))fail('Invalid shipment ID.');
     await env.DB.batch([stmt(env,'UPDATE orders SET status=?,shipment_id=COALESCE(?,shipment_id),updated_at=? WHERE id=? AND status=?',b.status,b.shipmentId||null,time,o.id,o.status),stmt(env,'INSERT OR IGNORE INTO order_events(order_id,status,at) SELECT id,?,? FROM orders WHERE id=? AND status=?',b.status,time,o.id,b.status)]);return json({status:b.status});

@@ -7,7 +7,7 @@ A mobile-first fragrance storefront demo with a lightweight static frontend and 
 - Fragrance films, product discovery, filters and favourites.
 - Full-bottle and decant variants, plus enquiry-only reference listings.
 - A guided scent finder using verified top, heart and base notes processed by the backend.
-- A sample merchant UPI checkout with delivery totals, manual owner approval and private tracking.
+- A sample merchant UPI checkout plus a prepared Razorpay test option, with delivery totals, private tracking and no added customer payment fee.
 - Customer account screens for Google and email-code sign-in, with guest checkout retained.
 - Authenticated shared catalogue, community settings and order management; a separate browser-local studio in the standalone preview.
 - Catalogue pagination, recently viewed fragrances and a labelled owner-selected Hot sellers edit.
@@ -29,7 +29,7 @@ Open `http://127.0.0.1:4173`. No build step is needed for the static frontend.
 node --test tests/*.test.mjs
 ```
 
-The 91 automated checks cover catalogue logic, media controls, recommendations, checkout and authentication behavior. Provider responses are mocked in tests; real account configuration requires separate verification by the store operator.
+The 106 automated checks cover catalogue logic, media controls, recommendations, checkout and authentication behavior. Provider responses are mocked in tests; real account configuration requires separate verification by the store operator.
 
 ## Backend
 
@@ -66,3 +66,7 @@ All 25 fragrances (32 bottle/decant entries) have complete top, heart and base n
 Families and occasions are editorial suggestions. Notes describe olfactory accords, not ingredient declarations. The finder includes tea, marine, leather and spicy/herbal directions. Unknown-price references appear separately as discovery suggestions only with no set budget and a full-bottle/either-format request. They cannot enter checkout or satisfy a price cap.
 
 Migration `0004_fragrance_facts.sql` updates seed metadata while preserving prices, quantities, reservations, images and visibility. It skips owner-written pyramids. Browser catalogue revision 4 similarly upgrades the old seed notes without recreating deleted listings. Changing the saved pyramid removes research provenance if it no longer matches the sourced facts.
+
+## Two payment choices
+
+The payment selector preserves Direct UPI as the sample default and displays Razorpay as Setup pending until test API keys and a separate webhook secret are configured. In the hosted manual-demo profile, both methods can coexist; each order stores its chosen method. The backend verifies captured payments, exact amounts and callback signatures. Signed webhooks are idempotent, and the private order page can resume the existing Razorpay gateway order after dismissal. Test keys only; customer surcharges and live payments are disabled. See `backend/RAZORPAY.md` for the merchant-account setup and test verification still required.

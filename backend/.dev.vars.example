@@ -1,11 +1,13 @@
 # Copy to .dev.vars locally. Never put these values in dist/ or commit real keys.
-COMMERCE_MODE=sandbox
+COMMERCE_MODE=manual_demo
 PUBLIC_ORIGIN=http://127.0.0.1:4173
 TRACKING_SECRET=replace-with-at-least-32-random-characters
 ADMIN_SECRET=replace-with-a-different-32-character-random-secret
-RAZORPAY_KEY_ID=rzp_test_replace
-RAZORPAY_KEY_SECRET=replace
-RAZORPAY_WEBHOOK_SECRET=replace-with-a-separate-32-character-random-secret
+# Optional: connect merchant-owned TEST credentials to enable Razorpay alongside the manual sample.
+# Leave empty to keep Razorpay visibly awaiting setup. Never use live keys.
+RAZORPAY_KEY_ID=
+RAZORPAY_KEY_SECRET=
+RAZORPAY_WEBHOOK_SECRET=
 # Explicit, merchant-approved test rates in paise; no implicit pan-India promise.
 SHIPPING_RULES_JSON={"zones":[{"prefixes":["411"],"feePaise":9900,"label":"Test Pune delivery"}],"freeAbovePaise":300000}
 # Optional courier bridge, configured only after choosing a provider.
