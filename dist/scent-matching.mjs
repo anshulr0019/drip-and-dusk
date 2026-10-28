@@ -1,3 +1,4 @@
+import {notePyramid,processNotes,notesError,noteTerms} from './fragrance-notes.mjs';
 import {catalogue,defaults,inStock,fragranceProfile} from './core.mjs';
 
 export const occasions = [
@@ -26,24 +27,20 @@ export const formats = [
  {id:'either',label:'Either format'}
 ];
 const knownNotes=new Map(defaults().products.filter(p=>!p.instagramSource&&p.group!=='oud-for-glory').map(p=>[p.group,p.notes]));
-const terms={
- fresh:['bergamot','lemon','tangerine','apple','pineapple','aquatic','citrus'],
- sweet:['vanilla','praline','tonka','dates','candied','gourmand','tropical'],
- woody:['wood','patchouli','cedar','sandalwood','oud','fir balsam'],
- floral:['flower','jasmine','orchid','heliotrope','iris','tuberose','lily','peony'],
- coffee:['coffee']
-};
+const terms=noteTerms;
 const directions={fresh:/fresh|aquatic|citrus|fruity/,sweet:/sweet|gourmand|vanilla/,floral:/floral/,woody:/wood|oud|earth/,coffee:/coffee/};
 const clean=s=>String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
 export function verifiedForFinder(p){
- const notes=String(p.notes||'');
+ const notes=p.notePyramid?processNotes(p).notes:String(p.notes||'');
+ if(p.notePyramid&&notesError(notePyramid(p)))return false;
  if(p.finderVerified===false||notes.split('/').length!==3||notes.split('/').some(s=>!s.trim())||/pending|conflict|unverified|unknown|confirm|verification/i.test(notes))return false;
  return p.finderVerified===true||knownNotes.get(p.group)===notes;
 }
 function evidence(p,style){
- return p.notes.split('/').flatMap((stage,i)=>stage.split(/[·,;]/).map(n=>n.trim()).filter(n=>n&&terms[style].some(t=>clean(n).includes(t))).map(note=>({note,weight:[2,3,2][i]})));
+ return [notePyramid(p).top.join(' · '),notePyramid(p).heart.join(' · '),notePyramid(p).base.join(' · ')].flatMap((stage,i)=>stage.split(/[·,;]/).map(n=>n.trim()).filter(n=>n&&terms[style].some(t=>clean(n).includes(t))).map(note=>({note,weight:[2,3,2][i]})));
 }
 function affinity(p,occasion){
+ if(p.finderVerified===true)return processNotes(p).scentProfile.occasions.includes(occasion)?4:1;
  const profile=fragranceProfile(p),family=clean(profile.family),warm=/warm|spic|coffee|gourmand|amber/.test(family),fresh=/fresh|aquatic|floral|fruity/.test(family);
  if(['date','evening'].includes(occasion))return warm?4:2;
  if(['office','daily','cafe'].includes(occasion))return fresh?4:1;

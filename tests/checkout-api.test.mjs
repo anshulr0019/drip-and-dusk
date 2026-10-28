@@ -4,7 +4,7 @@ import {readFile} from 'node:fs/promises';
 import {LocalD1} from '../backend/local-db.mjs';
 import {seedSQL} from '../backend/seed.mjs';
 import {createHandler,hmac,dispatchNotifications} from '../backend/worker.mjs';
-const schema=await readFile(new URL('../backend/migrations/0001_orders.sql',import.meta.url),'utf8')+await readFile(new URL('../backend/migrations/0002_accounts.sql',import.meta.url),'utf8');
+const schema=await readFile(new URL('../backend/migrations/0001_orders.sql',import.meta.url),'utf8')+await readFile(new URL('../backend/migrations/0002_accounts.sql',import.meta.url),'utf8')+await readFile(new URL('../backend/migrations/0003_manual_upi_catalogue.sql',import.meta.url),'utf8');
 const origin='http://127.0.0.1:4173',customer={name:'Test Customer',phone:'9999999999',line1:'12 Example Avenue',city:'Pune',state:'Maharashtra',postcode:'411001'};
 function setup(t,{sandbox=false}={}){const DB=new LocalD1();DB.exec(schema);DB.exec(seedSQL());t.after(()=>DB.close());let clock=1800000000000,gatewayCalls=0,sendCalls=0;
  const env={DB,COMMERCE_MODE:sandbox?'sandbox':'preview',PUBLIC_ORIGIN:origin,TRACKING_SECRET:'tracking-secret-with-at-least-thirty-two-characters',ADMIN_SECRET:'different-owner-secret-at-least-thirty-two-characters',RAZORPAY_KEY_ID:'rzp_test_example',RAZORPAY_KEY_SECRET:'gateway-secret',RAZORPAY_WEBHOOK_SECRET:'webhook-secret-with-thirty-two-characters',SHIPPING_RULES_JSON:JSON.stringify({zones:[{prefixes:['411'],feePaise:9900,label:'Test delivery'}]}),COURIER_WEBHOOK_SECRET:'courier-bridge-with-thirty-two-characters'};

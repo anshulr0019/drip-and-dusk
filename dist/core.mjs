@@ -1,3 +1,4 @@
+import {processNotes} from './fragrance-notes.mjs';
 import {instagramProducts} from './instagram-products.mjs';
 export const KEY = 'drip-dusk-demo-v1';
 export const money = value => new Intl.NumberFormat('en-IN',{style:'currency',currency:'INR',maximumFractionDigits:0}).format(value);
@@ -47,7 +48,8 @@ export const defaults = () => {
  const products=seeds.map((s,i)=>({id:s[0]+'-bottle',group:s[0],image:`assets/${s[0]}.jpg`,brand:s[1],name:s[2],size:s[3],price:s[4],reference:s[5],quantity:s[6],description:s[7],notes:s[8],source:s[9],deal:s[10],featured:s[11],format:'Full bottle',condition:'Sealed retail bottle (demo)',available:s[6]>0,order:i,featureOrder:i,hidden:false,archived:false}));
  seeds.forEach((s,i)=>products.push({...products[i],id:s[0]+'-10ml',size:10,format:'Decant',condition:'Seller-filled atomiser (demo)',price:[499,349,299,279,399,329,229][i],reference:null,quantity:i===5?0:12-i,available:i!==5,deal:false,featured:false,order:7+i}));
  products.push(...structuredClone(instagramProducts));
- return {version:1,catalogueRevision:2,products,settings:{whatsapp:'',instagram:'',about:'Drip & Dusk is a multi-brand fragrance retailer. Explore full bottles and smaller decants, compare your options, and talk directly with the seller before deciding.',ordering:'Send your shortlist through WhatsApp. The store confirms current availability and answers your questions before you decide.',shipping:'Shipping locations, charges and delivery estimates will be confirmed by the seller. Owner-approved shipping information is pending.',payment:'Payment methods, returns and cancellation terms are pending owner approval. No payment is collected on this demo.',faq:'Are these live prices?|No. Every price, offer, quantity and condition in this concept is sample data. Ask the seller for current details.\nWhat is a decant?|A smaller amount transferred into a separate atomiser. In this demo, the original bottle photo identifies the fragrance; it does not show the decant packaging.\nDoes my enquiry reserve stock?|No. Adding to the bag or opening WhatsApp does not reserve stock or confirm an order.\nHow do shipping and payment work?|The seller will confirm shipping charges, payment details and any applicable policies before you decide.',reviews:'Customer reviews have not been supplied. This space is reserved for genuine feedback shared with permission.'}};
+ products.forEach(p=>{if(['hawas','khamrah','qahwa','yara'].includes(p.group)&&p.format==='Full bottle')p.hotSeller=true;});
+ return {version:1,catalogueRevision:3,products,settings:{communityUrl:'',whatsapp:'',instagram:'',about:'Drip & Dusk is a multi-brand fragrance retailer. Explore full bottles and smaller decants, compare your options, and talk directly with the seller before deciding.',ordering:'Choose your fragrance, enter delivery details and review the total. Try the sample UPI flow; orders stay awaiting verification until the owner approves payment.',shipping:'Shipping locations, charges and delivery estimates will be confirmed by the seller. Owner-approved shipping information is pending.',payment:'Sample merchant UPI checkout is available for demonstration. No real payment should be made. The owner checks the bank receipt before confirming an order; returns and cancellation terms need owner approval.',faq:'Are these live prices?|No. Every price, offer, quantity and condition in this concept is sample data. Ask the seller for current details.\nWhat is a decant?|A smaller amount transferred into a separate atomiser. In this demo, the original bottle photo identifies the fragrance; it does not show the decant packaging.\nDoes my enquiry reserve stock?|No. Adding to the bag or opening WhatsApp does not reserve stock or confirm an order.\nHow do shipping and payment work?|The seller will confirm shipping charges, payment details and any applicable policies before you decide.',reviews:'Customer reviews have not been supplied. This space is reserved for genuine feedback shared with permission.'}};
 };
 
 // Styling and occasion pairings are editorial suggestions, not performance claims.
@@ -60,7 +62,7 @@ const PROFILES = {
  'oud-for-glory': {family:'Woody & amber', pairing:'Ask us for a personal recommendation', edit:'dark', scale:'1.55', position:'50% 50%'},
  qaed: {family:'Fruity & woody', pairing:'Everyday · relaxed occasions', edit:'fresh', scale:'1.55', position:'50% 50%'}
 };
-export const fragranceProfile = p => ({family:'Discover the scent',pairing:'Ask us for a personal recommendation',edit:'',scale:'1',position:'50% 50%',...PROFILES[p.group],...(p.family?{family:p.family}:{}),...(p.pairing?{pairing:p.pairing}:{}),...(['fresh','warm','dark','soft'].includes(p.scentEdit)?{edit:p.scentEdit}:{}),concentration:p.concentration||'Confirm with seller'});
+export const fragranceProfile = p => ({family:'Discover the scent',pairing:'Ask us for a personal recommendation',edit:'',scale:'1',position:'50% 50%',...PROFILES[p.group],...(p.finderVerified===true?{family:processNotes(p).scentProfile.family,edit:processNotes(p).scentProfile.edit}:{}),...(p.family?{family:p.family}:{}),...(p.pairing?{pairing:p.pairing}:{}),...(['fresh','warm','dark','soft'].includes(p.scentEdit)?{edit:p.scentEdit}:{}),concentration:p.concentration||'Confirm with seller'});
 export const edits = [
  {id:'dark',name:'After dark',line:'Depth, warmth & a little intrigue.',number:'01',image:'asad'},
  {id:'fresh',name:'Fresh daily',line:'Bright openings. Easy company.',number:'02',image:'hawas'},
@@ -84,9 +86,10 @@ export const sizeLabel = p => Number.isInteger(p.size)&&p.size>0?`${p.size} ml`:
 export const priceLabel = p => Number.isFinite(p.price)?money(p.price):'Ask for price';
 // Add the new catalogue once; preserve previous edits, archives and later deletions.
 export function migrateCatalogue(state){
- if((state.catalogueRevision||0)>=2)return state;
- const ids=new Set(state.products.map(p=>p.id));
- return {...state,catalogueRevision:2,products:[...state.products,...structuredClone(instagramProducts).filter(p=>!ids.has(p.id))]};
+ if((state.catalogueRevision||0)>=3)return state;
+ const ids=new Set(state.products.map(p=>p.id));let products=(state.catalogueRevision||0)<2?[...state.products,...structuredClone(instagramProducts).filter(p=>!ids.has(p.id))]:state.products;
+ products=products.map(p=>['hawas-bottle','khamrah-bottle','qahwa-bottle','yara-bottle'].includes(p.id)&&p.hotSeller===undefined?{...p,hotSeller:true}:p);
+ return {...state,catalogueRevision:3,products,settings:{communityUrl:'',...state.settings}};
 }
 export function referenceEnquiryMessage(p){
  if(!p||!p.enquiryOnly||p.hidden||p.archived)throw Error('This fragrance is unavailable for enquiry.');

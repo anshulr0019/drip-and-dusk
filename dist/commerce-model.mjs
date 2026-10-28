@@ -1,6 +1,6 @@
 import {inStock} from './core.mjs';
 export const stages=['confirmed','packed','shipped','delivered'];
-export const stageLabels={confirmed:'Confirmed',packed:'Packed',shipped:'Shipped',delivered:'Delivered',pending:'Awaiting payment',expired:'Payment window expired',cancelled:'Cancelled',payment_review:'Payment needs review'};
+export const stageLabels={confirmed:'Confirmed',packed:'Packed',shipped:'Shipped',delivered:'Delivered',pending:'Awaiting payment',awaiting_verification:'Awaiting verification',expired:'Payment window expired',cancelled:'Cancelled',payment_review:'Payment needs review'};
 export const previewShipping={preview:true,zones:[{prefixes:[''],feePaise:9900,label:'Sample standard delivery'}],freeAbovePaise:300000};
 export function validateAddress(a){
  if(!a||typeof a!=='object')throw Error('Enter a delivery address.');
@@ -37,3 +37,20 @@ export function advancePreviewOrder(state,id,status,now=new Date().toISOString()
  o.status=status;o.events.push({status,at:now});return next;
 }
 export function previewTracking(state,id,token){const o=state.demoOrders?.find(o=>o.id===id&&o.token===token);if(!o)throw Error('Tracking link not found in this browser. Demo links work only on the device that created them.');return o;}
+
+// Local sample UPI journey. Payment submission never deducts stock or confirms an order.
+export function createManualPreviewOrder(state,basket,quote,options){
+ const existing=(state.demoOrders||[]).find(o=>o.requestId===options.requestId);if(existing)return {state,order:existing};
+ const result=completePreviewOrder(state,basket,quote,options);result.state.products=structuredClone(state.products);
+ Object.assign(result.order,{mode:'manual_demo',status:'pending',paymentMethod:'manual_upi',paymentStatus:'pending',notificationStatus:'manual',events:[],payment:{sample:true,upiId:'dripanddusk@example',payeeName:'Drip & Dusk (sample)'}});return result;
+}
+export function submitManualPreview(state,id,reference){
+ const next=structuredClone(state),o=next.demoOrders?.find(o=>o.id===id);if(!o||o.status!=='pending')throw Error('This order is no longer awaiting payment.');
+ if(!/^[a-zA-Z0-9-]{6,40}$/.test(reference))throw Error('Enter a sample transaction reference.');o.paymentReference=reference;o.status='awaiting_verification';o.events.push({status:o.status,at:new Date().toISOString()});return next;
+}
+export function approveManualPreview(state,id,reference){
+ const next=structuredClone(state),o=next.demoOrders?.find(o=>o.id===id);if(!o)throw Error('Order not found.');if(o.paymentStatus==='captured')return next;
+ if(!['pending','awaiting_verification'].includes(o.status))throw Error('This order cannot be approved.');
+ for(const l of o.lines){const p=next.products.find(p=>p.id===l.id);if(!p||p.quantity<l.qty)throw Error('Stock changed. Review this order before approval.');p.quantity-=l.qty;p.available=p.quantity>0;}
+ o.paymentStatus='captured';o.paymentReference=reference;o.status='confirmed';o.events.push({status:'confirmed',at:new Date().toISOString()});return next;
+}
