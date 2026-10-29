@@ -32,7 +32,7 @@ The owner studio is opened at `/#admin`; it is no longer linked from the storefr
 - **Today** is the studio's first screen: payments to verify, orders to pack and ship, unpaid UPI orders, payments needing review, open returns, low stock and today's sales. Each card opens the matching filtered list.
 - **Bulk edit prices & stock** (Catalogue tab) edits price, reference price, stock and on-sale for many variants, then saves them together. If any row is invalid or was changed elsewhere, nothing is saved.
 - **Order cards** have one-tap WhatsApp messages for the order's stage (payment reminder, verifying, confirmed, shipped, delivered) and a printable packing slip for paid orders.
-- **Direct UPI holds**: an unpaid order holds stock for 30 minutes; once the customer submits a UPI reference, the hold extends to 24 hours so there is time to check the bank.
+- **Direct UPI holds**: an unpaid order holds stock for 30 minutes; once the customer submits a UPI reference, on live orders the hold extends to 24 hours so there is time to check the bank (test orders keep the 30-minute hold).
 
 ### Telegram order alerts
 
@@ -57,7 +57,7 @@ Uploaded product photos are stored in a Cloudflare R2 bucket (binding `MEDIA`) a
 npx wrangler@4.153.0 r2 bucket create drip-and-dusk-media
 ```
 
-Until the bucket exists, new photos are saved inline as before.
+The `MEDIA` binding requires the bucket: `wrangler deploy` fails if `drip-and-dusk-media` does not exist. Create the bucket first, or remove the `r2_buckets` entry from `backend/wrangler.production.jsonc` to deploy without photo storage. New photos are saved inline only while the binding is absent; existing inline photos keep working either way.
 
 ## Policy pages
 

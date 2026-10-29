@@ -22,8 +22,11 @@ const manual=env=>mode(env)==='manual_demo';
 // Test profiles replace personal details with a fixed sample before persisting; live stores what the customer entered.
 const samplesCustomer=env=>mode(env)==='preview'||manual(env);
 const gatewayOrder=o=>['sandbox','live'].includes(o.mode);
-// Once a customer submits a UPI reference, the stock stays held long enough for the owner to check the bank.
+// Once a customer submits a UPI reference on a live order, the stock stays held long enough for the owner to check the bank. Test orders keep their 30-minute hold.
 const VERIFICATION_HOLD_MS=24*3600000;
+// The mode stored on a new order; the summary uses it to show only the current mode's orders.
+const orderModeFor=(env,method)=>isLive(env)?'live':method==='manual_upi'?'manual_demo':mode(env)==='preview'?'preview':'sandbox';
+const currentOrderModes=env=>[...new Set(['manual_upi','razorpay'].map(m=>orderModeFor(env,m)))];
 const ownerAuthReady=env=>env.AUTH_PROVIDER==='supabase'?(authReady(env)&&!!env.AUTH_OWNER_IDS?.trim()):env.ADMIN_SECRET?.length>=32;
 function readiness(env){const preview=mode(env)==='preview';if(manual(env))return env.TRACKING_SECRET?.length>=32;if(isLive(env))return !!(env.TRACKING_SECRET?.length>=32&&ownerAuthReady(env)&&paymentOptions(env).some(p=>p.available));if(!['preview','sandbox'].includes(mode(env)))return false;return !!(env.TRACKING_SECRET?.length>=32&&ownerAuthReady(env)&&(preview||(env.RAZORPAY_KEY_ID?.startsWith('rzp_test_')&&env.RAZORPAY_KEY_SECRET&&env.RAZORPAY_WEBHOOK_SECRET?.length>=32&&env.SHIPPING_RULES_JSON)))}
 async function shipping(env){const business=await settings(env);if(business?.delivery)return deliveryRules(business,samplesCustomer(env));if(samplesCustomer(env))return previewShipping;if(isLive(env)&&!env.SHIPPING_RULES_JSON)return deliveryRules({},false);let rules;try{rules=JSON.parse(env.SHIPPING_RULES_JSON)}catch{fail('Delivery rates are not configured.',503)}return {...rules,preview:false}}
@@ -84,7 +87,7 @@ export function createHandler({fetchExternal=(...a)=>fetch(...a),now=()=>Date.no
    if(path==='/commerce-config.mjs')return new Response("export const commerceConfig={mode:'api',apiBase:''};",{headers:{'Content-Type':'text/javascript','Cache-Control':'no-store'}});
    // Clean policy URLs map to their static pages, matching the Vercel routes.
    const policy=path.match(/^\/(privacy|terms|refunds|shipping|contact)\/?$/);
-   if(path.startsWith('/media/')&&request.method==='GET')return serveImage(env,path);
+   if(path.startsWith('/media/')&&request.method==='GET')return await serveImage(env,path);
    if(!path.startsWith('/api/'))return env.ASSETS.fetch(policy?new Request(new URL('/policies/'+policy[1]+'.html',url),request):request);
    if(!env.DB)fail('Checkout storage is not configured.',503);
    // Browser writes must originate on the storefront. A configured backend origin
@@ -105,9 +108,11 @@ export function createHandler({fetchExternal=(...a)=>fetch(...a),now=()=>Date.no
     await requireOwner(env,request,time);await expire(env,time);
     // "Today" starts at midnight India time.
     const today=Math.floor((time+19800000)/86400000)*86400000-19800000;
-    const counts=await first(env,"SELECT COALESCE(SUM(status='awaiting_verification'),0) verify,COALESCE(SUM(status='pending' AND payment_method='manual_upi'),0) unpaid,COALESCE(SUM(status='confirmed'),0) toPack,COALESCE(SUM(status='packed'),0) toShip,COALESCE(SUM(status='payment_review'),0) review,COALESCE(SUM(return_status IN('requested','approved','returned')),0) returnsOpen FROM orders");
-    const sales=await first(env,"SELECT COUNT(*) paidToday,COALESCE(SUM(o.total_paise),0) salesTodayPaise FROM orders o JOIN order_events e ON e.order_id=o.id AND e.status='confirmed' WHERE e.at>=? AND o.payment_status='captured'",today);
-    const shipped=await first(env,"SELECT COUNT(*) shippedToday FROM order_events WHERE status='shipped' AND at>=?",today);
+    // Only the current mode's orders count, so test orders never inflate live figures (or the reverse).
+    const modes=currentOrderModes(env),marks=modes.map(()=>'?').join(',');
+    const counts=await first(env,"SELECT COALESCE(SUM(status='awaiting_verification'),0) verify,COALESCE(SUM(status='pending' AND payment_method='manual_upi'),0) unpaid,COALESCE(SUM(status='confirmed'),0) toPack,COALESCE(SUM(status='packed'),0) toShip,COALESCE(SUM(status='payment_review'),0) review,COALESCE(SUM(return_status='requested'),0) returnsOpen FROM orders WHERE mode IN("+marks+")",...modes);
+    const sales=await first(env,"SELECT COUNT(*) paidToday,COALESCE(SUM(o.total_paise),0) salesTodayPaise FROM orders o JOIN order_events e ON e.order_id=o.id AND e.status='confirmed' WHERE e.at>=? AND o.payment_status='captured' AND o.mode IN("+marks+")",today,...modes);
+    const shipped=await first(env,"SELECT COUNT(*) shippedToday FROM order_events e JOIN orders o ON o.id=e.order_id WHERE e.status='shipped' AND e.at>=? AND o.mode IN("+marks+")",today,...modes);
     return json({...counts,...sales,...shipped,alertsConfigured:alertsConfigured(env),photoStorage:!!env.MEDIA});
    }
    if(path==='/api/admin/alerts/test'&&request.method==='POST'){
@@ -120,27 +125,33 @@ export function createHandler({fetchExternal=(...a)=>fetch(...a),now=()=>Date.no
    }
    if(path==='/api/admin/products'&&request.method==='PUT'){
     // Bulk price and stock edits from the owner's spreadsheet view. Every row is validated before any is saved.
-    await requireOwner(env,request,time);const b=await body(request,200000);
+    await requireOwner(env,request,time);await expire(env,time);const b=await body(request,200000);
     if(!Array.isArray(b.changes)||!b.changes.length||b.changes.length>300)fail('Send between 1 and 300 changes.');
+    const ids=b.changes.map(c=>String(c?.id||''));if(new Set(ids).size!==ids.length)fail('Each fragrance can appear only once in a bulk edit.');
+    const stored=new Map((await all(env,'SELECT * FROM products WHERE id IN (SELECT value FROM json_each(?))',JSON.stringify(ids))).map(r=>[r.id,r]));
     const statements=[],conflicts=[];
     for(const change of b.changes){
-     const old=await first(env,'SELECT * FROM products WHERE id=?',String(change?.id||''));if(!old)fail('A fragrance in this edit no longer exists. Reload the catalogue.',409);
+     const old=stored.get(String(change?.id||''));if(!old)fail('A fragrance in this edit no longer exists. Reload the catalogue.',409);
      if(change.expectedRevision!==old.revision){conflicts.push(old.id);continue;}
      const data=JSON.parse(old.data),merged={...data,price:change.price,reference:change.reference,quantity:change.quantity,available:change.available===true};
      let p;try{p=prepareProduct(merged,{inlineImages:true})}catch(e){fail(`${data.brand} ${data.name} (${data.size??'?'} ml): ${e.message}`)}
      if(p.quantity<old.held)fail(`${data.name}: keep at least ${old.held} units while orders hold them.`,409);
      statements.push(stmt(env,'UPDATE products SET data=?,price_paise=?,quantity=?,enabled=?,revision=revision+1 WHERE id=? AND revision=? AND held<=?',JSON.stringify(p),Math.round((p.price||0)*100),p.quantity,p.available&&!p.enquiryOnly&&!p.hidden&&!p.archived?1:0,p.id,old.revision,p.quantity));
+     // A reserve/capture/release trigger can bump the revision between the read above and this batch. If the guarded update then matches nothing, this write violates CHECK(held>=0), which makes D1 roll back the whole batch instead of saving some rows.
+     statements.push(stmt(env,'UPDATE products SET held=-1 WHERE id=? AND changes()=0',p.id));
     }
     if(conflicts.length)fail(`${conflicts.length} fragrance${conflicts.length>1?'s':''} changed since you opened this view. Reload and try again; nothing was saved.`,409);
-    const results=await env.DB.batch(statements);invalidate(env);
-    const saved=results.filter(r=>r.meta.changes).length;
-    return json({saved,skipped:statements.length-saved,products:await catalogue(env,true)});
+    let results;try{results=await env.DB.batch(statements)}catch(e){if(/CHECK constraint failed/i.test(String(e?.message)))fail('A fragrance changed while saving (an order may have reserved stock). Reload and try again; nothing was saved.',409);throw e}
+    invalidate(env);const saved=results.filter((r,i)=>i%2===0&&r.meta.changes).length;
+    return json({saved,skipped:b.changes.length-saved,products:await catalogue(env,true)});
    }
    if(path==='/api/admin/products'&&request.method==='GET'){await requireOwner(env,request,time);await expire(env,time);return json({products:await catalogue(env,true)});}
    const productPath=path.match(/^\/api\/admin\/products\/([a-zA-Z0-9-]+)$/);
    if(productPath&&request.method==='PUT'){
-    await requireOwner(env,request,time);const b=await body(request,1600000),p=prepareProduct(b.product,{inlineImages:!env.MEDIA});if(p.id!==productPath[1])fail('Product identifier changed.');
-    const old=await first(env,'SELECT * FROM products WHERE id=?',p.id);
+    await requireOwner(env,request,time);const b=await body(request,1600000),old=await first(env,'SELECT * FROM products WHERE id=?',productPath[1]);
+    // Legacy inline photos stay valid when saved unchanged, so quick edits keep working once R2 is bound; any new inline photo is still refused.
+    let storedImage=null;try{storedImage=old?JSON.parse(old.data).image:null}catch{}
+    const p=prepareProduct(b.product,{inlineImages:!env.MEDIA||(!!storedImage&&String(b.product?.image||'')===storedImage)});if(p.id!==productPath[1])fail('Product identifier changed.');
     if(old){
      if(b.expectedRevision!==old.revision)fail('This fragrance changed. Reload the catalogue before editing again.',409);
      if(p.quantity<old.held)fail('Stock is reserved by an order. Keep at least '+old.held+' units until those orders are resolved.',409);
@@ -171,7 +182,7 @@ export function createHandler({fetchExternal=(...a)=>fetch(...a),now=()=>Date.no
     const existing=await first(env,'SELECT * FROM orders WHERE request_id=?',b.requestId);if(existing){if(!equalSecret(requestHash,existing.request_hash))fail('This checkout request has changed. Restart checkout.',409);return json(await sessionFor(env,existing));}
     const saved=await first(env,'SELECT * FROM quotes WHERE id=?',b.quoteId||'');if(!saved||saved.expires_at<=time)fail('Delivery quote expired. Review your address and total again.',409);
     const quoted=JSON.parse(saved.data);let q;try{q=quoteCheckout(await catalogue(env),b.basket,a.postcode,await shipping(env))}catch(e){fail(e.message,409)}if(quoteFingerprint(q)!==quoteFingerprint(quoted))fail('Prices, delivery or your bag changed. Review your total again.',409);
-    const orderMode=isLive(env)?'live':paymentMethod==='manual_upi'?'manual_demo':mode(env)==='preview'?'preview':'sandbox';
+    const orderMode=orderModeFor(env,paymentMethod);
     const id=crypto.randomUUID(),ref=(orderMode==='live'?'DD-':paymentMethod==='manual_upi'?'DD-DEMO-':'DD-TEST-')+id.replace(/-/g,'').slice(0,12).toUpperCase();
     try{await env.DB.batch([
      stmt(env,'INSERT INTO orders(id,ref,request_id,request_hash,quote_id,customer,consent,lines,subtotal_paise,shipping_paise,total_paise,delivery_label,mode,created_at,expires_at,updated_at,customer_user_id,payment_method) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',id,ref,b.requestId,requestHash,b.quoteId,JSON.stringify(samplesCustomer(env)?{name:'Demo Customer',phone:'919999999999',line1:'12 Example Avenue',line2:'',city:'Pune',state:'Maharashtra',postcode:'411001',country:'IN'}:a),b.whatsappConsent?1:0,JSON.stringify(q.lines),q.subtotalPaise,q.feePaise,q.totalPaise,q.deliveryLabel||'Delivery',orderMode,time,time+(paymentMethod==='manual_upi'?1800000:900000),time,account?.id||null,paymentMethod),
@@ -202,7 +213,9 @@ export function createHandler({fetchExternal=(...a)=>fetch(...a),now=()=>Date.no
      const b=await body(request),reference=String(b.reference||'').trim();if(!/^[a-zA-Z0-9-]{6,40}$/.test(reference))fail(o.mode==='manual_demo'?'Enter the sample transaction reference (6–40 letters or digits).':'Enter the UPI transaction reference (UTR) from your payment app.');
      if(o.status==='awaiting_verification')return json({status:o.status});
      if(o.status!=='pending'||o.payment_status!=='pending')fail('This payment window has ended. Contact the seller before paying.',409);
-     await env.DB.batch([stmt(env,"UPDATE orders SET status='awaiting_verification',payment_reference=?,updated_at=?,expires_at=MAX(expires_at,?) WHERE id=? AND status='pending'",reference,time,time+VERIFICATION_HOLD_MS,o.id),stmt(env,"INSERT OR IGNORE INTO order_events(order_id,status,at) SELECT id,'awaiting_verification',? FROM orders WHERE id=? AND status='awaiting_verification'",time,o.id)]);
+     const r=await env.DB.batch([stmt(env,"UPDATE orders SET status='awaiting_verification',payment_reference=?,updated_at=?,expires_at=MAX(expires_at,?) WHERE id=? AND status='pending'",reference,time,o.mode==='live'?time+VERIFICATION_HOLD_MS:o.expires_at,o.id),stmt(env,"INSERT OR IGNORE INTO order_events(order_id,status,at) SELECT id,'awaiting_verification',? FROM orders WHERE id=? AND status='awaiting_verification'",time,o.id)]);
+     // A concurrent submission may have won; alert once, and report an ended window if the order expired meanwhile.
+     if(!r[0].meta.changes){const cur=await first(env,'SELECT status FROM orders WHERE id=?',o.id);if(cur?.status!=='awaiting_verification')fail('This payment window has ended. Contact the seller before paying.',409);return json({status:cur.status});}
      queueOwnerAlert(ctx,env,'upi_submitted',await first(env,'SELECT * FROM orders WHERE id=?',o.id),fetchExternal);
      return json({status:'awaiting_verification'});
     }
@@ -295,7 +308,7 @@ export function createHandler({fetchExternal=(...a)=>fetch(...a),now=()=>Date.no
     for(const entry of b.entry||[])for(const change of entry.changes||[])for(const s of change.value?.statuses||[]){if(['delivered','read'].includes(s.status))await stmt(env,"UPDATE notifications SET status='delivered' WHERE message_id=?",s.id).run();else if(s.status==='failed')await stmt(env,"UPDATE notifications SET status='failed',last_error='Delivery failed' WHERE message_id=? AND status!='delivered'",s.id).run();}return json({received:true});
    }
    return json({error:'Endpoint not found.'},404);
-  }catch(e){const status=e.status||(/D1|SQLITE|constraint|no such|database/i.test(String(e.message))?500:400);return json({error:status>=500?'Checkout service is unavailable or not configured. Please try again later.':e.message},status)}
+  }catch(e){const status=e.status||(/D1|SQLITE|constraint|no such|database/i.test(String(e.message))?500:400);return json({error:status>=500&&!e.expose?'Checkout service is unavailable or not configured. Please try again later.':e.message,...(e.expose&&e.code?{code:e.code}:{})},status)}
  };
 }
 export async function dispatchNotifications(env,{fetchExternal=(...a)=>fetch(...a),now=Date.now()}={}){

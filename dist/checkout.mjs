@@ -13,7 +13,7 @@ export function createCheckout({getAccount=()=>null,openModal,hideModalForPaymen
  const live=()=>info.mode==='live';
  const ownerOrders=createOwnerOrders({api,isAPI,getState,commit,esc,toast,icon});
  const base=commerceConfig.apiBase.replace(/\/$/,'');
- async function api(path,{method='GET',body,token}={}){const r=await fetch(base+path,{method,signal:AbortSignal.timeout(15000),credentials:'same-origin',headers:{...(body?{'Content-Type':'application/json'}:{}),...(token?{Authorization:'Bearer '+token}:{})},body:body?JSON.stringify(body):undefined});let data;try{data=await r.json()}catch{throw Error('Checkout service is unavailable. Please try again later.')}if(!r.ok)throw Object.assign(Error(data.error||'The request could not be completed.'),{status:r.status});return data;}
+ async function api(path,{method='GET',body,token}={}){const r=await fetch(base+path,{method,signal:AbortSignal.timeout(15000),credentials:'same-origin',headers:{...(body?{'Content-Type':'application/json'}:{}),...(token?{Authorization:'Bearer '+token}:{})},body:body?JSON.stringify(body):undefined});let data;try{data=await r.json()}catch{throw Error('Checkout service is unavailable. Please try again later.')}if(!r.ok)throw Object.assign(Error(data.error||'The request could not be completed.'),{status:r.status,code:data.code});return data;}
  function selectedPayment(){return checkoutPaymentOptions(info).find(p=>p.id===draft?.paymentMethod)||checkoutPaymentOptions(info).find(p=>p.available);}
  // Only non-live (staging) checkouts carry a banner; live checkout shows none.
  function notice(){return live()||info.mode==='loading'?'':`<div class="checkout-mode"><b>Test checkout</b><span>No real money is collected on this test checkout.</span></div>`}

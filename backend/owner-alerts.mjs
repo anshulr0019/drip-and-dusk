@@ -13,9 +13,9 @@ const headlines={
 export function alertText(kind,order,env){
  if(kind==='test')return `✅ Drip & Dusk alerts are connected.\nYou will get a message here for new orders and payments to verify.\n${env.PUBLIC_ORIGIN}/#admin`;
  let items=[];try{items=JSON.parse(order.lines||'[]')}catch{}
- const lines=[`${kind==='review'||kind==='upi_submitted'?'⚠️':'🛍️'} ${headlines[kind]}`,`${order.ref} · ${rupees(order.total_paise)}`,...items.slice(0,6).map(l=>`• ${l.name}${l.size?' '+l.size+' ml':''}${l.format==='Decant'?' decant':''} × ${l.qty}`)];
+ const lines=[`${kind==='review'||kind==='upi_submitted'?'⚠️':'🛍️'} ${headlines[kind]}`,...(order.mode!=='live'?['TEST ORDER · no money collected']:[]),`${order.ref} · ${rupees(order.total_paise)}`,...items.slice(0,6).map(l=>`• ${l.name}${l.size?' '+l.size+' ml':''}${l.format==='Decant'?' decant':''} × ${l.qty}`)];
  if(items.length>6)lines.push(`• and ${items.length-6} more`);
- if(kind==='upi_submitted')lines.push(`UTR: ${order.payment_reference}`,'Check that this exact amount reached your bank, then approve it in Orders. The bottles are held for 24 hours.');
+ if(kind==='upi_submitted')lines.push(`UTR: ${order.payment_reference}`,'Check that this exact amount reached your bank, then approve it in Orders. '+(order.mode==='live'?'The bottles are held for 24 hours.':'Test order: the 30-minute hold is not extended.'));
  if(kind==='upi_order')lines.push('The customer has 30 minutes to pay and submit their UPI reference.');
  if(kind==='review')lines.push('A Razorpay payment arrived after the order had expired. Check stock, then fulfil or refund it.');
  lines.push(`${env.PUBLIC_ORIGIN}/#admin`);

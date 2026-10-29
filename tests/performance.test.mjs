@@ -17,7 +17,7 @@ test('only the public catalogue and config are edge-cacheable; private and write
  const origin='http://127.0.0.1:4177',env={DB,COMMERCE_MODE:'manual_demo',PUBLIC_ORIGIN:origin,TRACKING_SECRET:crypto.randomUUID()+crypto.randomUUID(),ADMIN_SECRET:crypto.randomUUID()+crypto.randomUUID()},handler=createHandler();
  const get=async path=>(await handler(new Request(origin+path),env,{waitUntil:()=>{}})).headers;
  for(const path of ['/api/catalogue','/api/config']){const h=await get(path);assert.match(h.get('CDN-Cache-Control'),/max-age=\d+/);assert.equal(h.get('Set-Cookie'),null);}
- for(const path of ['/api/auth/config','/api/admin/products','/api/account/orders'])assert.equal((await get(path)).get('Cache-Control'),'no-store');
+ for(const path of ['/api/auth/config','/api/admin/products','/api/admin/summary','/api/account/orders'])assert.equal((await get(path)).get('Cache-Control'),'no-store');
  const routes=JSON.parse(await read('vercel.json')).routes,cached=routes.find(r=>r.src.includes('catalogue')),rest=routes.find(r=>r.src==='/api/(.*)');
  assert(routes.indexOf(cached)<routes.indexOf(rest));assert.equal(cached.headers,undefined);assert.equal(rest.headers['CDN-Cache-Control'],'no-store');
 });

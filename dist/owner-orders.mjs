@@ -1,6 +1,6 @@
 import {stageLabels,stages} from './commerce-model.mjs';
 import {orderRows,filterOrders,orderReport,ordersCSV,downloadCSV,returnLabels} from './owner-model.mjs';
-const money=p=>new Intl.NumberFormat('en-IN',{style:'currency',currency:'INR',minimumFractionDigits:0,maximumFractionDigits:2}).format((p||0)/100);
+const money=p=>{const v=(p||0)/100,d=Number.isInteger(v)?0:2;return new Intl.NumberFormat('en-IN',{style:'currency',currency:'INR',minimumFractionDigits:d,maximumFractionDigits:d}).format(v)};
 // One-tap WhatsApp messages: wa.me opens the owner's WhatsApp with the customer and text filled in.
 const firstName=name=>String(name||'').trim().split(/\s+/)[0]||'there';
 export function whatsappMessages(o,trackUrl,storeName='Drip & Dusk'){
@@ -12,6 +12,8 @@ export function whatsappMessages(o,trackUrl,storeName='Drip & Dusk'){
  if(o.status==='delivered')out.push(['Delivered',`${hi} Your order shows as delivered. We hope you love it! If anything isn't right, reply here within 48 hours.`]);
  return out;
 }
+// Test profiles save a fixed sample phone number, so a WhatsApp link would message a stranger.
+export const whatsappEnabled=o=>o.mode==='live';
 export const whatsappLink=(phone,text)=>/^[1-9]\d{7,14}$/.test(String(phone||''))?`https://wa.me/${phone}?text=${encodeURIComponent(text)}`:'';
 // A printable slip to pack with or tape onto the parcel. Prices are left off so it suits gifts.
 export function packingSlip(o,settings={},esc){
@@ -57,9 +59,10 @@ export function createOwnerOrders({api,isAPI,getState,commit,esc,toast,icon=()=>
   }catch(e){throw e}finally{loading=false;container.removeAttribute('aria-busy');}
  }
  function quickActions(o,track){
-  const url=location.origin+'/'+track,messages=whatsappMessages(o,url,getState().settings?.storeName||'Drip & Dusk'),links=messages.map(([label,text])=>{const href=whatsappLink(o.customer?.phone,text);return href?`<a class="small-btn whatsapp-btn" href="${esc(href)}" target="_blank" rel="noopener noreferrer">${icon('chat')} ${esc(label)}</a>`:''}).join('');
+  const url=location.origin+'/'+track,messages=whatsappEnabled(o)?whatsappMessages(o,url,getState().settings?.storeName||'Drip & Dusk'):[],links=messages.map(([label,text])=>{const href=whatsappLink(o.customer?.phone,text);return href?`<a class="small-btn whatsapp-btn" href="${esc(href)}" target="_blank" rel="noopener noreferrer">${icon('chat')} ${esc(label)}</a>`:''}).join('');
   const slip=o.payment_status==='captured'?`<button class="small-btn" type="button" data-slip="${esc(o.id)}">Print packing slip</button>`:'';
-  return links||slip?`<div class="order-quick" aria-label="Quick actions">${links}${slip}</div>`:'';
+  const off=whatsappEnabled(o)?'':'<small class="fineprint">Test order · sample customer, WhatsApp off</small>';
+  return links||slip||off?`<div class="order-quick" aria-label="Quick actions">${links}${off}${slip}</div>`:'';
  }
  function card(o){const paid=o.payment_status==='captured',next={confirmed:'packed',packed:'shipped',shipped:'delivered'}[o.status],track=o.trackingPath||'#track/'+o.id+'/'+o.token;
   const form=(action,title,body)=>`<details class="owner-operation"><summary>${title}</summary><form data-operation="${action}" data-id="${esc(o.id)}" data-revision="${o.ops_revision}" data-total="${o.totalPaise}">${body}<p class="form-error" role="alert"></p><button class="btn" type="submit">Save ${title.toLowerCase()}</button></form></details>`;

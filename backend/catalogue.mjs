@@ -3,7 +3,7 @@ import {researchMetadata} from '../dist/fragrance-facts.mjs';
 import {validateProduct,defaults} from '../dist/core.mjs';
 import {processNotes,notesError,validNoteList} from '../dist/fragrance-notes.mjs';
 const fail=(message,status=400)=>{throw Object.assign(Error(message),{status})};
-// Inline data: images are accepted only while R2 photo storage is not configured.
+// Inline data: images are accepted only while R2 photo storage is not configured, or when the caller re-saves a photo already stored inline.
 export function prepareProduct(input,{inlineImages=true}={}){
  if(!input||typeof input!=='object')fail('Enter a fragrance.');
  const p={};
