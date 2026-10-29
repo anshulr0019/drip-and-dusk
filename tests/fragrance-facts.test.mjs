@@ -7,10 +7,10 @@ import {fragranceFacts,researchMetadata} from '../dist/fragrance-facts.mjs';
 import {processNotes,notesError} from '../dist/fragrance-notes.mjs';
 import {discoverScents,verifiedForFinder,recommendScents} from '../dist/scent-matching.mjs';
 import {prepareProduct} from '../backend/catalogue.mjs';
-const all=defaults().products.filter(p=>fragranceFacts[p.group]),answer={occasion:'date',style:'leather',budget:'any',format:'Full bottle'};
+const all=defaults().products.filter(p=>fragranceFacts[p.group]?.factsRevision===1),answer={occasion:'date',style:'leather',budget:'any',format:'Full bottle'};
 test('every fragrance has complete sourced stages, a description and explicit evidence quality',()=>{
- assert.equal(Object.keys(fragranceFacts).length,25);
- assert.equal(Object.values(fragranceFacts).filter(f=>f.notesQuality==='manufacturer').length,23);
+ assert.equal(Object.keys(fragranceFacts).length,67);
+ assert.equal(Object.values(fragranceFacts).filter(f=>f.notesQuality==='manufacturer').length,64);
  for(const p of all){assert.equal(notesError(p.notePyramid),'',p.name);assert(verifiedForFinder(p),p.name);assert(!/pending verification|from the Drip & Dusk Instagram edit/.test(p.description));assert(p.description.length>45);assert(p.noteSources.length);for(const s of p.noteSources)assert.equal(new URL(s.url).protocol,'https:');assert.equal(p.factsCheckedAt,'2026-10-28');}
  const lava=all.find(p=>p.group==='rasasi-hawas-lava-gold');assert(lava.notePyramid.heart.includes('Leather'));assert(lava.notePyramid.base.includes('Caramel'));
  const tea=all.find(p=>p.group==='mykonos-inception');assert(tea.notePyramid.heart.includes('Black tea'));

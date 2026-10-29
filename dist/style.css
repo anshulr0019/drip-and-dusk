@@ -178,3 +178,6 @@ body{padding-bottom:64px}.community-launcher{left:auto;right:22px;bottom:20px;wi
  .policy-contact b{display:block;min-width:0}
  .policy-header .text-link{font-size:11px}
 }
+
+/* Published accords stay readable without inventing a note pyramid. */
+.signature-notes{margin:20px 0}.note-chips{display:flex;flex-wrap:wrap;gap:9px}.note-chips span{padding:8px 12px;border:1px solid #d8d0c3;font-size:12px;line-height:1.5;color:#625e53}.edition-profiles{margin-top:25px;border-top:1px solid #d8d0c3;padding-top:20px}.edition-profiles h5{font:23px/1.3 Georgia,serif;margin:12px 0}.edition-profiles p{font-size:12px;line-height:1.8}.gallery-notes .note-chips{gap:7px}.gallery-notes .note-chips span{font-size:12px}.gallery-notes .signature-notes .fineprint{font-size:11px}

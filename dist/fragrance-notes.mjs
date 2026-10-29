@@ -14,16 +14,20 @@ export const noteTerms={
 };
 const split=s=>(Array.isArray(s)?s:String(s||'').split(/[·,;\n]/)).map(n=>String(n).trim()).filter(Boolean);
 export function notePyramid(p){
+ if(p.signatureNotes&&!p.notePyramid)return {top:[],heart:[],base:[]};
  if(p.notePyramid&&typeof p.notePyramid==='object')return Object.fromEntries(['top','heart','base'].map(k=>[k,split(p.notePyramid[k])]));
  const stages=String(p.notes||'').split('/');return {top:split(stages[0]),heart:split(stages[1]),base:split(stages[2])};
 }
+export const invalidNoteText=/pending|conflict|unverified|unknown|confirm|verification|no account yet|sign in|log in|add to cart|checkout|subscribe|cookie|password|privacy policy/i;
+export function validNoteList(value){const list=split(value);return list.length>0&&list.length<=24&&list.every(n=>n.length<=80&&!invalidNoteText.test(n));}
 export function notesError(pyramid){
  if(!pyramid||typeof pyramid!=='object')return 'Add top, heart and base notes.';
- for(const key of ['top','heart','base']){const list=split(pyramid[key]);if(!list.length||list.length>24||list.some(n=>n.length>80)||/pending|conflict|unverified|unknown|confirm|verification/i.test(list.join(' ')))return 'Enter verified notes for all three stages (up to 24 notes per stage).';}
+ for(const key of ['top','heart','base']){const list=split(pyramid[key]);if(!validNoteList(list))return 'Enter verified notes for all three stages (up to 24 notes per stage).';}
  return '';
 }
 export function processNotes(p){
- const pyramid=notePyramid(p),notes=['top','heart','base'].map(k=>pyramid[k].join(' · ')).join(' / ');
+ const signature=!p.notePyramid&&p.signatureNotes?split(p.signatureNotes):null;
+ const pyramid=signature?{top:[],heart:signature,base:[]}:notePyramid(p),notes=signature?'Signature notes: '+signature.join(' · '):['top','heart','base'].map(k=>pyramid[k].join(' · ')).join(' / ');
  const scores=Object.fromEntries(Object.entries(noteTerms).map(([style,terms])=>[style,['top','heart','base'].reduce((sum,k,i)=>sum+pyramid[k].filter(n=>terms.some(t=>matchesNoteTerm(n,t))).length*[2,3,2][i],0)]));
  // One bright top note must not turn a vanilla/amber fragrance into a fresh scent.
  const spices=(clean(notes).match(/cinnamon|nutmeg|tobacco|pepper|myrrh/g)||[]).length;
@@ -33,5 +37,5 @@ export function processNotes(p){
  const directions=Object.keys(scores).filter(k=>scores[k]>0&&(!['fresh','floral'].includes(k)||main===k));
  const family={coffee:'Coffee & gourmand',sweet:'Warm & spiced',fresh:'Fresh & bright',floral:'Soft & floral',woody:'Woody & textured'}[main]||'A personal discovery';
  const occasions=warm?['date','evening','gift']:['daily','office','cafe','gift'];
- return {notePyramid:pyramid,notes,scentProfile:{directions,occasions,family,edit:main==='fresh'?'fresh':main==='floral'?'soft':warm?'warm':main==='woody'?'dark':'',scores}};
+ return {...(signature?{signatureNotes:signature}:{notePyramid:pyramid}),notes,scentProfile:{directions,occasions,family,edit:main==='fresh'?'fresh':main==='floral'?'soft':warm?'warm':main==='woody'?'dark':'',scores}};
 }

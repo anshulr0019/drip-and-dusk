@@ -1,4 +1,5 @@
 // Merchant community quotes supplied by the user; not current stock or checkout inventory.
+import {completedFactsPatch} from './fragrance-completion.mjs';
 import {processNotes} from './fragrance-notes.mjs';
 export const communityProducts =[
   {
@@ -2313,7 +2314,7 @@ export const communityProducts =[
     "order": 66,
     "featureOrder": 76
   }
-].map(p=>p.notePyramid?{...p,...processNotes(p)}:p);
+].map(p=>{const facts=completedFactsPatch(p.group);return facts?{...p,...facts}:p.notePyramid?{...p,...processNotes(p)}:p;});
 
 export function mergeCommunityOffers(products){
  const incoming=new Map(communityProducts.map(p=>[p.id,p]));
