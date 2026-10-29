@@ -39,7 +39,7 @@ test('new data backfill repairs old seed notes without changing commerce, images
  const p={...get('nishane-tempfluo'),factsRevision:0,notePyramid:{top:['Bergamot','Mandarin','Saffron'],heart:['Jasmine sambac absolute','Orange flower','Praline'],base:['No account yet?']},notes:'Bergamot · Mandarin · Saffron / Jasmine sambac absolute · Orange flower · Praline / No account yet?',description:'Owner description',image:'assets/custom-owner.webp',price:1234,size:70,hidden:true};
  const custom={...get('nishane-hacivat'),factsRevision:0,notePyramid:{top:['Lemon'],heart:['Rose'],base:['Musk']},notes:'Lemon / Rose / Musk'};
  const put=db.prepare('INSERT INTO products VALUES(?,?,5,123400,8,2,1)');put.run(p.id,JSON.stringify(p));put.run(custom.id,JSON.stringify(custom));
- const sql=readFileSync(new URL('../backend/migrations/0008_complete_fragrance_profiles.sql',import.meta.url),'utf8');db.exec(sql);
+ const sql=readFileSync(new URL('../backend/migrations/0009_complete_fragrance_profiles.sql',import.meta.url),'utf8');db.exec(sql);
  const row=db.prepare('SELECT * FROM products WHERE id=?').get(p.id),data=JSON.parse(row.data);assert.deepEqual(data.notePyramid,completedFactsPatch(p.group).notePyramid);assert.equal(data.description,'Owner description');assert.equal(data.image,p.image);assert.equal(data.price,p.price);assert.equal(data.size,p.size);assert.equal(data.hidden,true);assert.equal(row.price_paise,123400);assert.equal(row.quantity,8);assert.equal(row.held,2);assert.equal(row.enabled,1);assert.equal(row.revision,6);
  assert.deepEqual(JSON.parse(db.prepare('SELECT data FROM products WHERE id=?').get(custom.id).data),custom);db.exec(sql);assert.equal(db.prepare('SELECT revision FROM products WHERE id=?').get(p.id).revision,6);db.close();
 });
