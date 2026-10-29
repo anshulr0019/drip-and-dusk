@@ -34,3 +34,6 @@ SUPABASE_PUBLISHABLE_KEY=sb_publishable_replace
 AUTH_SESSION_SECRET=replace-with-a-separate-random-secret-of-at-least-32-characters
 # Verified Supabase user UUIDs, set by the store operator. Never read roles from user metadata.
 AUTH_OWNER_IDS=
+# Optional owner alerts on Telegram (see README → Telegram order alerts).
+TELEGRAM_BOT_TOKEN=
+TELEGRAM_CHAT_ID=

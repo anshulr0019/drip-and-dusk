@@ -8,3 +8,9 @@ export class LocalD1 {
  async batch(statements){this.sqlite.exec('BEGIN IMMEDIATE');try{const results=statements.map(s=>{const r=this.sqlite.prepare(s.sql).run(...s.args);return {success:true,meta:{changes:Number(r.changes)}}});this.sqlite.exec('COMMIT');return results}catch(e){this.sqlite.exec('ROLLBACK');throw e}}
  close(){this.sqlite.close()}
 }
+// In-memory stand-in for an R2 bucket (binding MEDIA) in local development and tests.
+export class LocalR2 {
+ constructor(){this.objects=new Map();}
+ async put(key,bytes,options={}){this.objects.set(key,{body:new Uint8Array(bytes),httpMetadata:options.httpMetadata||{}});}
+ async get(key){return this.objects.get(key)||null;}
+}

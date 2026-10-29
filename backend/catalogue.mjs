@@ -3,7 +3,8 @@ import {researchMetadata} from '../dist/fragrance-facts.mjs';
 import {validateProduct,defaults} from '../dist/core.mjs';
 import {processNotes,notesError,validNoteList} from '../dist/fragrance-notes.mjs';
 const fail=(message,status=400)=>{throw Object.assign(Error(message),{status})};
-export function prepareProduct(input){
+// Inline data: images are accepted only while R2 photo storage is not configured.
+export function prepareProduct(input,{inlineImages=true}={}){
  if(!input||typeof input!=='object')fail('Enter a fragrance.');
  const p={};
  for(const [key,max] of Object.entries({id:100,group:100,brand:80,name:160,format:30,condition:160,description:1200,notes:1500,source:500,family:120,pairing:160,concentration:100,scentEdit:30})){
@@ -14,7 +15,8 @@ export function prepareProduct(input){
  for(const key of ['quantity','order','featureOrder'])p[key]=input[key];
  for(const key of ['enquiryOnly','available','deal','featured','hidden','archived','finderVerified','hotSeller'])p[key]=input[key]===true;
  p.image=String(input.image||'');
- if(!/^(assets\/[a-zA-Z0-9._-]+|data:image\/(jpeg|png|webp);base64,[A-Za-z0-9+/=]+)$/.test(p.image)||p.image.length>1500000)fail('Choose a valid product image under 1 MB after resizing.');
+ if(!/^(assets\/[a-zA-Z0-9._-]+|media\/[a-f0-9]{64}\.(jpg|webp)|data:image\/(jpeg|png|webp);base64,[A-Za-z0-9+/=]+)$/.test(p.image)||p.image.length>1500000)fail('Choose a valid product image under 1 MB after resizing.');
+ if(!inlineImages&&p.image.startsWith('data:'))fail('Upload the photo again so it is saved to photo storage.');
  if(p.source){try{if(new URL(p.source).protocol!=='https:')fail('Use an HTTPS source link.')}catch{fail('Use a valid HTTPS source link.')}}
  const error=validateProduct(p);if(error)fail(error);
  if(p.finderVerified){const processed=processNotes(input),error=processed.signatureNotes?(validNoteList(processed.signatureNotes)?'':'Enter valid signature notes.'):notesError(processed.notePyramid);if(error)fail(error);Object.assign(p,processed);p.family=p.family||processed.scentProfile.family;p.scentEdit=p.scentEdit||processed.scentProfile.edit;}

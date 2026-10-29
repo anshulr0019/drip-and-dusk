@@ -181,3 +181,30 @@ body{padding-bottom:64px}.community-launcher{left:auto;right:22px;bottom:20px;wi
 
 /* Published accords stay readable without inventing a note pyramid. */
 .signature-notes{margin:20px 0}.note-chips{display:flex;flex-wrap:wrap;gap:9px}.note-chips span{padding:8px 12px;border:1px solid #d8d0c3;font-size:12px;line-height:1.5;color:#625e53}.edition-profiles{margin-top:25px;border-top:1px solid #d8d0c3;padding-top:20px}.edition-profiles h5{font:23px/1.3 Georgia,serif;margin:12px 0}.edition-profiles p{font-size:12px;line-height:1.8}.gallery-notes .note-chips{gap:7px}.gallery-notes .note-chips span{font-size:12px}.gallery-notes .signature-notes .fineprint{font-size:11px}
+
+/* Owner studio: Today dashboard, bulk editor and order quick actions. */
+.today-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin-bottom:18px}
+.today-card{display:flex;flex-direction:column;align-items:flex-start;gap:4px;text-align:left;background:#fff;border:1px solid var(--line);padding:18px;min-height:118px;cursor:pointer;transition:border-color .2s,transform .2s}
+.today-card:hover{border-color:var(--accent);transform:translateY(-2px)}
+.today-card b{font:400 34px/1 var(--serif);color:var(--ink)}
+.today-card span{font-size:13px;font-weight:600;color:var(--ink)}
+.today-card small{font-size:11px;color:var(--muted);line-height:1.5}
+.today-card.urgent{border-color:#b9894a;background:#fbf5ea}.today-card.urgent b{color:#8a5a1c}
+.today-sales{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:18px}
+.today-sales div{background:var(--cream);padding:16px 18px;display:flex;flex-direction:column;gap:2px}
+.today-sales b{font:400 24px/1.2 var(--serif)}.today-sales span{font-size:11px;color:var(--muted)}
+.today-setup{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.today-setup>div{border:1px dashed var(--line);padding:16px 18px}.today-setup h3{font-size:14px;margin-bottom:6px}.today-setup p{font-size:12px;color:var(--muted);margin-bottom:10px}
+/* The save bar stays under the site header while scrolling a long table. */
+.bulk-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:8px;position:sticky;top:94px;z-index:5;background:var(--paper);padding:10px 0;border-bottom:1px solid var(--line)}
+.bulk-scroll{overflow-x:auto}
+.bulk-table{min-width:640px}.bulk-table td{vertical-align:middle}
+.bulk-table td small{display:block;color:var(--muted);font-size:11px}
+.bulk-table input[type=number]{width:96px;padding:7px 8px;border:1px solid var(--line);background:#fff;font:inherit}
+.bulk-table input[type=checkbox]{width:18px;height:18px;accent-color:var(--green)}
+.bulk-table tr.bulk-changed{background:#fbf5ea}
+.bulk-label{display:none}.bulk-check{display:inline-flex;align-items:center}
+.order-quick{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.order-quick .small-btn{display:inline-flex;align-items:center;gap:6px;text-decoration:none}
+.whatsapp-btn svg{width:14px;height:14px;stroke:currentColor;fill:none}
+@media(max-width:760px){.bulk-head{top:76px}.bulk-scroll{overflow:visible}.bulk-table{min-width:0}.bulk-table tr{grid-template-columns:1fr 1fr}.bulk-table td:last-child{grid-column:auto;margin-top:0;align-self:end}.bulk-table input[type=number]{width:100%;box-sizing:border-box}.bulk-label{display:block;font-size:10px;letter-spacing:.6px;color:var(--muted);margin-bottom:4px}.bulk-check .bulk-label{display:inline;margin:0 0 0 8px}.bulk-check{display:flex;align-items:center;min-height:38px}.today-grid{grid-template-columns:1fr 1fr}.today-card{min-height:104px;padding:14px}.today-card b{font-size:28px}.today-sales,.today-setup{grid-template-columns:1fr}}

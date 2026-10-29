@@ -27,6 +27,38 @@ A mobile-first fragrance storefront with a static frontend and a Cloudflare Work
 
 The owner studio is opened at `/#admin`; it is no longer linked from the storefront.
 
+## Owner studio tools
+
+- **Today** is the studio's first screen: payments to verify, orders to pack and ship, unpaid UPI orders, payments needing review, open returns, low stock and today's sales. Each card opens the matching filtered list.
+- **Bulk edit prices & stock** (Catalogue tab) edits price, reference price, stock and on-sale for many variants, then saves them together. If any row is invalid or was changed elsewhere, nothing is saved.
+- **Order cards** have one-tap WhatsApp messages for the order's stage (payment reminder, verifying, confirmed, shipped, delivered) and a printable packing slip for paid orders.
+- **Direct UPI holds**: an unpaid order holds stock for 30 minutes; once the customer submits a UPI reference, the hold extends to 24 hours so there is time to check the bank.
+
+### Telegram order alerts
+
+The owner gets a Telegram message for every new Direct UPI order, every submitted UPI reference and every Razorpay payment. Alerts contain the order reference, amount, items and UTR only, never the customer's name, phone or address.
+
+1. In Telegram, message **@BotFather**, send `/newbot`, and copy the bot token it gives you.
+2. Open a chat with your new bot and send it any message.
+3. Visit `https://api.telegram.org/bot<TOKEN>/getUpdates` and copy the `chat.id` number from the reply.
+4. Store both as Worker secrets:
+
+   ```sh
+   npx wrangler@4.153.0 secret put TELEGRAM_BOT_TOKEN --config backend/wrangler.production.jsonc
+   npx wrangler@4.153.0 secret put TELEGRAM_CHAT_ID --config backend/wrangler.production.jsonc
+   ```
+5. In Owner studio → Today, press **Send a test alert**.
+
+### Photo storage
+
+Uploaded product photos are stored in a Cloudflare R2 bucket (binding `MEDIA`) and served from `/media/…` with long-lived caching, instead of being embedded in the catalogue. Create the bucket once before deploying the Worker:
+
+```sh
+npx wrangler@4.153.0 r2 bucket create drip-and-dusk-media
+```
+
+Until the bucket exists, new photos are saved inline as before.
+
 ## Policy pages
 
 `/privacy`, `/terms`, `/refunds`, `/shipping` and `/contact` are static pages generated from `scripts/policy-pages.mjs`; run `node scripts/policy-pages.mjs` after editing their wording. Business details are not written into the pages: `dist/policy.mjs` fills in the store name, legal name, support email and phone, address, Instagram link, grievance officer and delivery charges from Owner studio → Business & ordering, and hides any detail that is still blank. Razorpay reviews these pages before activating live payments, so complete those fields first.
