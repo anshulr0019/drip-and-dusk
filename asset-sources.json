@@ -168,5 +168,30 @@
       "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/1.1_Hawas_Viper.jpg?v=1762593169",
       "identification": "Identified from packaging in the Instagram feed. Confirm the exact bottle version with the seller."
     }
-  ]
+  ],
+  "communityImagePresentation": {
+    "method": "Display-only crop and framing for imported backgrounds; original transparent manufacturer assets restored where available.",
+    "assets": [
+      {
+        "asset": "dist/assets/community-chopard-transparent.webp",
+        "source": "https://www.chopard.com/en-us/perfume-for-men/95201-0442.html",
+        "processing": "Original manufacturer alpha retained; WebP encoding."
+      },
+      {
+        "asset": "dist/assets/community-vetiver-transparent.webp",
+        "source": "https://www.guerlain.com/us/en-us/p/vetiver-eau-de-toilette-G030486.html",
+        "processing": "Original manufacturer alpha retained; WebP encoding."
+      },
+      {
+        "asset": "dist/assets/community-thunder-transparent.webp",
+        "source": "https://www.rasasiexclusive.com/products/rasasi-hawas-thunder",
+        "processing": "Original manufacturer alpha retained; WebP encoding."
+      },
+      {
+        "asset": "dist/assets/community-liquid-gold-transparent.webp",
+        "source": "https://nl.riiffsperfumes.com/product/momento-liquid-gold/",
+        "processing": "AI-assisted background removal from the brand promotional image; bottle and lettering visually checked; WebP encoding."
+      }
+    ]
+  }
 }

@@ -106,3 +106,9 @@ body{padding-bottom:64px}.community-launcher{left:auto;right:22px;bottom:20px;wi
 
 /* The expanded catalogue must not push numbered pages beyond a small screen. */
 @media(max-width:600px){#catalogue-pagination{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}#catalogue-pagination>div{grid-column:1/-1;grid-row:1;display:flex;flex-wrap:wrap;justify-content:center;min-width:0;gap:4px}#catalogue-pagination>button{min-width:0;justify-self:center}}
+
+/* Crop only the imported canvas at render time; keep the photographed product intact. */
+.edit-bottle,.feature-bottle{position:relative}
+:is(.product-photo,.detail-image,.edit-bottle,.feature-bottle,.finder-result-photo) img[src^="assets/community-"]:not([src*="photo-pending"]){position:absolute;inset:auto;left:50%;top:50%;width:100%;height:auto;aspect-ratio:1;max-width:none;max-height:none;object-fit:contain;clip-path:var(--photo-clip,inset(0));filter:brightness(var(--photo-brightness,1));transform:translate(-50%,-50%) scale(var(--bottle-scale,1)) translate(var(--photo-x,0%),var(--photo-y,0%))!important}
+:is(.product-photo,.edit-bottle,.feature-bottle,.finder-result-photo):hover img[src^="assets/community-"]:not([src*="photo-pending"]){transform:translate(-50%,-50%) scale(calc(var(--bottle-scale,1)*1.035)) translate(var(--photo-x,0%),var(--photo-y,0%))!important}
+@media(prefers-reduced-motion:reduce){:is(.product-photo,.edit-bottle,.feature-bottle,.finder-result-photo):hover img[src^="assets/community-"]:not([src*="photo-pending"]){transform:translate(-50%,-50%) scale(var(--bottle-scale,1)) translate(var(--photo-x,0%),var(--photo-y,0%))!important}}
