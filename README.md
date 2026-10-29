@@ -27,6 +27,10 @@ A mobile-first fragrance storefront with a static frontend and a Cloudflare Work
 
 The owner studio is opened at `/#admin`; it is no longer linked from the storefront.
 
+## Policy pages
+
+`/privacy`, `/terms`, `/refunds`, `/shipping` and `/contact` are static pages generated from `scripts/policy-pages.mjs`; run `node scripts/policy-pages.mjs` after editing their wording. Business details are not written into the pages: `dist/policy.mjs` fills in the store name, legal name, support email and phone, address, Instagram link, grievance officer and delivery charges from Owner studio → Business & ordering, and hides any detail that is still blank. Razorpay reviews these pages before activating live payments, so complete those fields first.
+
 ## Run locally
 
 ```sh

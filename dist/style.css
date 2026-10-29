@@ -142,3 +142,39 @@ body{padding-bottom:64px}.community-launcher{left:auto;right:22px;bottom:20px;wi
 .reveal-ready .reveal-item.is-revealed{animation:reveal-up .8s cubic-bezier(.2,.7,.2,1) var(--reveal-delay,0ms) backwards!important;animation-play-state:running!important}
 @keyframes reveal-up{from{opacity:0;transform:translate3d(0,28px,0)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.hero-light::after,.hero-dust i,.hero .hero-image,.hero-content>*{animation:none!important}.reveal-ready .reveal-item{opacity:1!important;transform:none!important}}
+
+/* Policy pages (/privacy, /terms, /refunds, /shipping, /contact): a calm reading layout. */
+.policy-body{background:var(--paper)}
+.policy-header .text-link{font-size:12px}
+.policy-page{max-width:1080px;margin:0 auto;padding:56px 5.2% 80px;display:grid;grid-template-columns:220px minmax(0,1fr);gap:64px;align-items:start}
+.policy-nav{position:sticky;top:120px;display:flex;flex-direction:column;border-left:1px solid var(--line)}
+.policy-nav a{padding:9px 0 9px 18px;margin-left:-1px;border-left:1px solid transparent;color:var(--muted);font-size:13px}
+.policy-nav a:hover{color:var(--ink)}
+.policy-nav a[aria-current="page"]{color:var(--ink);border-left-color:var(--accent);font-weight:600}
+.policy-article{max-width:680px}
+.policy-article .eyebrow{color:var(--accent);font-size:9px;margin-bottom:16px}
+.policy-article h1{font:400 clamp(36px,5vw,54px)/1.08 var(--serif);letter-spacing:-1px;margin-bottom:18px}
+.policy-intro{font-size:16px;line-height:1.75;color:#55574e;margin-bottom:10px}
+.policy-updated{font-size:11px;letter-spacing:.6px;color:var(--muted);padding-bottom:30px;margin-bottom:34px;border-bottom:1px solid var(--line)}
+.policy-article h2{font:400 24px/1.25 var(--serif);margin:40px 0 14px}
+.policy-article p,.policy-article li{font-size:14.5px;line-height:1.85;color:#3d3f37}
+.policy-article ul{padding-left:20px;margin:0 0 18px}
+.policy-article li{margin-bottom:8px}
+.policy-article li::marker{color:var(--accent)}
+.policy-article a{color:var(--green);text-decoration:underline;text-underline-offset:3px}
+.policy-contact{background:var(--cream);border:1px solid var(--line);padding:22px 24px;margin:6px 0 18px}
+.policy-contact p{margin:0 0 6px;overflow-wrap:anywhere}.policy-contact p:last-child{margin:0}
+.policy-contact b{display:inline-block;min-width:140px;font-weight:600;color:var(--ink)}
+.policy-footer{border-top:1px solid var(--line);padding:26px 5.2%;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:12px;color:var(--muted)}
+.policy-footer a{color:var(--muted)}.policy-footer a:hover{color:var(--ink)}
+.footer-policies{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:inherit;letter-spacing:.3px}
+.footer-policies a{color:inherit;opacity:.85}.footer-policies a:hover{opacity:1;text-decoration:underline}
+.checkout-terms a{text-decoration:underline;text-underline-offset:2px}
+@media(max-width:760px){
+ .policy-page{grid-template-columns:1fr;gap:28px;padding-top:28px}
+ .policy-nav{position:static;flex-direction:row;flex-wrap:wrap;gap:8px;border:0}
+ .policy-nav a{border:1px solid var(--line);padding:7px 12px;margin:0;font-size:12px;background:#fff}
+ .policy-nav a[aria-current="page"]{border-color:var(--accent);background:var(--cream)}
+ .policy-contact b{display:block;min-width:0}
+ .policy-header .text-link{font-size:11px}
+}

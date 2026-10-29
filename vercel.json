@@ -8,7 +8,11 @@
     {
       "src": "/commerce-config\\.mjs",
       "dest": "https://drip-and-dusk-checkout.drip-and-dusk.workers.dev/commerce-config.mjs",
-      "headers": { "Cache-Control": "no-store", "CDN-Cache-Control": "no-store", "Vercel-CDN-Cache-Control": "no-store" }
+      "headers": {
+        "Cache-Control": "no-store",
+        "CDN-Cache-Control": "no-store",
+        "Vercel-CDN-Cache-Control": "no-store"
+      }
     },
     {
       "src": "/api/(catalogue|config)",
@@ -17,13 +21,25 @@
     {
       "src": "/api/(.*)",
       "dest": "https://drip-and-dusk-checkout.drip-and-dusk.workers.dev/api/$1",
-      "headers": { "Cache-Control": "no-store", "CDN-Cache-Control": "no-store", "Vercel-CDN-Cache-Control": "no-store" }
+      "headers": {
+        "Cache-Control": "no-store",
+        "CDN-Cache-Control": "no-store",
+        "Vercel-CDN-Cache-Control": "no-store"
+      }
     },
     {
       "src": "/assets/(.*)",
-      "headers": { "Cache-Control": "public, max-age=86400, stale-while-revalidate=604800" },
+      "headers": {
+        "Cache-Control": "public, max-age=86400, stale-while-revalidate=604800"
+      },
       "continue": true
     },
-    { "handle": "filesystem" }
+    {
+      "src": "/(privacy|terms|refunds|shipping|contact)/?",
+      "dest": "/policies/$1.html"
+    },
+    {
+      "handle": "filesystem"
+    }
   ]
 }

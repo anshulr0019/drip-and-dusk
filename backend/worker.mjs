@@ -77,7 +77,9 @@ export function createHandler({fetchExternal=(...a)=>fetch(...a),now=()=>Date.no
   const url=new URL(request.url),path=url.pathname,time=now();
   try{
    if(path==='/commerce-config.mjs')return new Response("export const commerceConfig={mode:'api',apiBase:''};",{headers:{'Content-Type':'text/javascript','Cache-Control':'no-store'}});
-   if(!path.startsWith('/api/'))return env.ASSETS.fetch(request);
+   // Clean policy URLs map to their static pages, matching the Vercel routes.
+   const policy=path.match(/^\/(privacy|terms|refunds|shipping|contact)\/?$/);
+   if(!path.startsWith('/api/'))return env.ASSETS.fetch(policy?new Request(new URL('/policies/'+policy[1]+'.html',url),request):request);
    if(!env.DB)fail('Checkout storage is not configured.',503);
    // Browser writes must originate on the storefront. A configured backend origin
    // supports same-origin reverse proxies without trusting forwarded host headers.
