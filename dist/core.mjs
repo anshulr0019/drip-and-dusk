@@ -1,3 +1,4 @@
+import {applyCommunityPhotoUpdates} from './community-photo-updates.mjs';
 import {communityProducts,mergeCommunityOffers} from './community-products.mjs';
 import {enrichFragrance,migrateFragranceFacts} from './fragrance-facts.mjs';
 import {processNotes} from './fragrance-notes.mjs';
@@ -52,7 +53,7 @@ export const defaults = () => {
  products.push(...structuredClone(instagramProducts));
  products.splice(0,products.length,...mergeCommunityOffers(products));
  products.forEach(p=>{if(['hawas','khamrah','qahwa','yara'].includes(p.group)&&p.format==='Full bottle')p.hotSeller=true;});
- return {version:1,catalogueRevision:5,products,settings:{communityUrl:'',whatsapp:'',instagram:'',about:'Drip & Dusk is a multi-brand fragrance retailer. Explore full bottles and smaller decants, compare your options, and talk directly with the seller before deciding.',ordering:'Choose your fragrance, enter delivery details and review the total. Try the sample UPI flow; orders stay awaiting verification until the owner approves payment.',shipping:'Shipping locations, charges and delivery estimates will be confirmed by the seller. Owner-approved shipping information is pending.',payment:'Sample merchant UPI checkout is available for demonstration. No real payment should be made. The owner checks the bank receipt before confirming an order; returns and cancellation terms need owner approval.',faq:'Are these live prices?|No. Original demo items use sample prices and stock. Community offers show dated seller quotes; confirm current price, availability and terms before buying.\nWhat is a decant?|A smaller amount transferred into a separate atomiser. In this demo, the original bottle photo identifies the fragrance; it does not show the decant packaging.\nDoes my enquiry reserve stock?|No. Adding to the bag or opening WhatsApp does not reserve stock or confirm an order.\nHow do shipping and payment work?|The seller will confirm shipping charges, payment details and any applicable policies before you decide.',reviews:'Customer reviews have not been supplied. This space is reserved for genuine feedback shared with permission.'}};
+ return {version:1,catalogueRevision:6,products,settings:{communityUrl:'',whatsapp:'',instagram:'',about:'Drip & Dusk is a multi-brand fragrance retailer. Explore full bottles and smaller decants, compare your options, and talk directly with the seller before deciding.',ordering:'Choose your fragrance, enter delivery details and review the total. Try the sample UPI flow; orders stay awaiting verification until the owner approves payment.',shipping:'Shipping locations, charges and delivery estimates will be confirmed by the seller. Owner-approved shipping information is pending.',payment:'Sample merchant UPI checkout is available for demonstration. No real payment should be made. The owner checks the bank receipt before confirming an order; returns and cancellation terms need owner approval.',faq:'Are these live prices?|No. Original demo items use sample prices and stock. Community offers show dated seller quotes; confirm current price, availability and terms before buying.\nWhat is a decant?|A smaller amount transferred into a separate atomiser. In this demo, the original bottle photo identifies the fragrance; it does not show the decant packaging.\nDoes my enquiry reserve stock?|No. Adding to the bag or opening WhatsApp does not reserve stock or confirm an order.\nHow do shipping and payment work?|The seller will confirm shipping charges, payment details and any applicable policies before you decide.',reviews:'Customer reviews have not been supplied. This space is reserved for genuine feedback shared with permission.'}};
 };
 
 // Styling and occasion pairings are editorial suggestions, not performance claims.
@@ -89,12 +90,13 @@ export const sizeLabel = p => Number.isInteger(p.size)&&p.size>0?`${p.size} ml`:
 export const priceLabel = p => Number.isFinite(p.price)?money(p.price)+(p.communityOffer?.pricePlus?' +':''):'Ask for price';
 // Add the new catalogue once; preserve previous edits, archives and later deletions.
 export function migrateCatalogue(state){
- if((state.catalogueRevision||0)>=5)return state;
+ if((state.catalogueRevision||0)>=6)return state;
  const ids=new Set(state.products.map(p=>p.id));let products=(state.catalogueRevision||0)<2?[...state.products,...structuredClone(instagramProducts).filter(p=>!ids.has(p.id))]:state.products;
  products=products.map(p=>['hawas-bottle','khamrah-bottle','qahwa-bottle','yara-bottle'].includes(p.id)&&p.hotSeller===undefined?{...p,hotSeller:true}:p);
  products=products.map(migrateFragranceFacts);
- products=mergeCommunityOffers(products);
- return {...state,catalogueRevision:5,products,settings:{communityUrl:'',...state.settings}};
+ if((state.catalogueRevision||0)<5)products=mergeCommunityOffers(products);
+ products=applyCommunityPhotoUpdates(products);
+ return {...state,catalogueRevision:6,products,settings:{communityUrl:'',...state.settings}};
 }
 export function referenceEnquiryMessage(p){
  if(!p||!p.enquiryOnly||p.hidden||p.archived)throw Error('This fragrance is unavailable for enquiry.');

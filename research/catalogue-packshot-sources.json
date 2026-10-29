@@ -1,0 +1,96 @@
+{
+  "checkedAt": "2026-10-29",
+  "purpose": "Public source references for the 18 bottle-and-box catalogue photos. Retail packaging is illustrative; seller confirms supplied condition.",
+  "images": [
+    {
+      "asset": "dist/assets/community-box-chanel-bleu-edt.webp",
+      "imageUrl": "https://fragrancefocus.com/cdn/shop/files/Bleu_de_Chanel_Eau_de_Toilette_Spray_for_Men_1.7_Oz_grande.png?v=1781687699",
+      "sourcePage": "https://fragrancefocus.com/products/chanel-bleu-de-chanel-eau-de-toilette-1-7-oz-50-ml-for-men"
+    },
+    {
+      "asset": "dist/assets/community-box-chanel-bleu-edp.webp",
+      "imageUrl": "https://i.makeup.kz/k/kz/kzfzljefalgw.webp",
+      "sourcePage": "https://makeup.kz/product/133103/"
+    },
+    {
+      "asset": "dist/assets/community-box-chanel-bleu-parfum.webp",
+      "imageUrl": "https://perfumedaddy.pk/cdn/shop/files/Chanel_Bleu_De_Chanel_Pour_Homme_Parfum.jpg?v=1775420753&width=1000",
+      "sourcePage": "https://perfumedaddy.pk/products/chanel-bleu-de-chanel-pour-homme-parfum-100ml"
+    },
+    {
+      "asset": "dist/assets/community-box-chanel-allure-homme-sport-eau-extreme.webp",
+      "imageUrl": "https://microperfumes.com/cdn/shop/files/mp-2306-1000px.jpg?v=1771617082&width=1000",
+      "sourcePage": "Chanel Allure Homme Sport Eau Extreme EDP 0.75ml Sample Vial Decant Men"
+    },
+    {
+      "asset": "dist/assets/community-box-chanel-allure-homme-edition-blanche.webp",
+      "imageUrl": "https://content2.rozetka.com.ua/goods/images/big/622354187.png",
+      "sourcePage": "https://rozetka.com.ua/ua/mugskaya-parfyumeriya-chanel-155869539/p559379814/"
+    },
+    {
+      "asset": "dist/assets/community-box-chanel-chance-edp.webp",
+      "imageUrl": "https://swish.qa/cdn/shop/products/CHNLCHANCECHANNELEDP50ML.jpg?v=1652254539",
+      "sourcePage": "https://swish.qa/products/chanel-chance-edp-for-women-100ml"
+    },
+    {
+      "asset": "dist/assets/community-box-chanel-chance-eau-tendre-edp.webp",
+      "imageUrl": "https://www.perfumenz.co.nz/cdn/shop/products/chanel-chance-tendre-100ml-edp_dadeb510-9e08-4ad3-bd7a-dae5272340ab_1200x1200.png?v=1593914835",
+      "sourcePage": "https://www.perfumenz.co.nz/products/chance-eau-tendre-by-chanel-50ml-edp"
+    },
+    {
+      "asset": "dist/assets/community-box-chanel-chance-eau-fraiche.webp",
+      "imageUrl": "https://c.cdnmp.net/276449694/p/l/6/chanel-chance-eau-fraiche-femei-apa-de-toaleta~73006.jpg",
+      "sourcePage": "https://www.hiris.ro/parfumuri-pentru-femei/chanel/chanel-chance-eau-fraiche-femei-apa-de-toaleta"
+    },
+    {
+      "asset": "dist/assets/community-box-chanel-coco-edp.webp",
+      "imageUrl": "https://img.fragrancex.com/images/products/sku/large/AWCOCO34PS.jpg",
+      "sourcePage": "https://www.fragrancex.com/products/chanel/coco-perfume"
+    },
+    {
+      "asset": "dist/assets/community-box-chanel-coco-mademoiselle-edp.webp",
+      "imageUrl": "https://img.vivantiscdn.net/photos/-/p/_orig/CA/chanel-coco-mademoiselle-edp_14083563100923.jpg",
+      "sourcePage": "https://www.vivantis.ro/parfumuri/chanel-coco-mademoiselle-edp.html"
+    },
+    {
+      "asset": "dist/assets/community-box-chanel-coco-mademoiselle-intense.webp",
+      "imageUrl": "https://c.scdn.gr/images/sku_images/081060/81060154/20230807151454_65e01bbd.jpeg",
+      "sourcePage": "https://www.skroutz.gr/s/14500756/Chanel-Coco-Mademoiselle-Intense-Eau-de-Parfum-100ml.html"
+    },
+    {
+      "asset": "dist/assets/community-box-chanel-coco-noir.webp",
+      "imageUrl": "https://a.cdnsbn.com/images/products/xl/14452780206-1.jpg",
+      "sourcePage": "https://www.strawberrynet.com/es-CL/chanel-coco-noir-eau-de-parfum-spray-50ml-1-7oz/144527"
+    },
+    {
+      "asset": "dist/assets/community-box-chanel-no5-edp.webp",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0659/2249/8691/files/chanel-edp.jpg?v=1776493694",
+      "sourcePage": "https://alhimyan.com/products/chanel-n-5-for-women-edp-100ml"
+    },
+    {
+      "asset": "dist/assets/community-box-chanel-platinum-egoiste.webp",
+      "imageUrl": "https://beirutfreezone.com/cdn/shop/files/chanel-platinum-egoiste-edt-100ml-homme.png?v=1724671758&width=990",
+      "sourcePage": "https://beirutfreezone.com/products/chanel-platinum-egoiste-eau-de-toilette-pour-homme-100ml"
+    },
+    {
+      "asset": "dist/assets/community-box-chanel-chance-eau-splendide.webp",
+      "imageUrl": "https://perfume-bg.eu/images/chanel-hance-eau-splendide-eau-de-parfum.webp",
+      "sourcePage": "https://perfume-bg.eu/chanel-chance-eau-splendide-damski-parfyum-c-126_243_7741/"
+    },
+    {
+      "asset": "dist/assets/community-box-paris-corner-rifaaqat.webp",
+      "imageUrl": "https://madavi.lt/cdn/shop/files/E3D974A1-D8AF-40B7-B189-72CBA31C86CC.png?v=1744105521",
+      "sourcePage": "https://madavi.lt/products/paris-corner-rifaaqat-85ml-unisex-kvepalai"
+    },
+    {
+      "asset": "dist/assets/community-box-mykonos-sorrento.webp",
+      "imageUrl": "https://mykonosperfumes.eu/cdn/shop/files/mykonos-sorrento-extrait-de-parfum-3422587.jpg?v=1789984692&width=1000",
+      "sourcePage": "https://mykonosperfumes.eu/products/mykonos-sorrento"
+    },
+    {
+      "asset": "dist/assets/community-box-mykonos-imperium.webp",
+      "imageUrl": "https://scentverse.in/cdn/shop/files/Screenshot2026-10-14235631.png?v=1792002933&width=1000",
+      "sourcePage": "https://scentverse.in/products/mykonos-imperium-extrait-de-parfum-100ml"
+    }
+  ]
+}

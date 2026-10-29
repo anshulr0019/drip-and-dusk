@@ -104,8 +104,9 @@
           "Cedar"
         ]
       },
-      "photoPending": true,
-      "image": "assets/community-photo-pending.webp"
+      "photoPending": false,
+      "image": "assets/community-box-paris-corner-rifaaqat.webp",
+      "imageSource": "https://madavi.lt/cdn/shop/files/E3D974A1-D8AF-40B7-B189-72CBA31C86CC.png?v=1744105521"
     },
     {
       "id": "riiffs-momento-liquid-gold-bottle",
@@ -837,8 +838,9 @@
       "source": "https://www.chanel.com/us/fragrance/p/107460/bleu-de-chanel-eau-de-toilette-spray/",
       "concentration": "Eau de Toilette",
       "publishedAccords": "Citrus, aromatic accords, cedar and New Caledonian sandalwood.",
-      "photoPending": true,
-      "image": "assets/community-photo-pending.webp"
+      "photoPending": false,
+      "image": "assets/community-box-chanel-bleu-edt.webp",
+      "imageSource": "https://fragrancefocus.com/cdn/shop/files/Bleu_de_Chanel_Eau_de_Toilette_Spray_for_Men_1.7_Oz_grande.png?v=1781687699"
     },
     {
       "id": "chanel-bleu-edp-bottle",
@@ -854,8 +856,9 @@
       "source": "https://www.chanel.com/us/fragrance/p/107360/bleu-de-chanel-eau-de-parfum-spray/",
       "concentration": "Eau de Parfum",
       "publishedAccords": "Aromatic woods, musky notes and ambery cedar.",
-      "photoPending": true,
-      "image": "assets/community-photo-pending.webp"
+      "photoPending": false,
+      "image": "assets/community-box-chanel-bleu-edp.webp",
+      "imageSource": "https://i.makeup.kz/k/kz/kzfzljefalgw.webp"
     },
     {
       "id": "chanel-bleu-parfum-bottle",
@@ -871,8 +874,9 @@
       "source": "https://www.chanel.com/us/fragrance/p/107180/bleu-de-chanel-parfum-spray/",
       "concentration": "Parfum",
       "publishedAccords": "Cedarwood and New Caledonian sandalwood.",
-      "photoPending": true,
-      "image": "assets/community-photo-pending.webp"
+      "photoPending": false,
+      "image": "assets/community-box-chanel-bleu-parfum.webp",
+      "imageSource": "https://perfumedaddy.pk/cdn/shop/files/Chanel_Bleu_De_Chanel_Pour_Homme_Parfum.jpg?v=1775420753&width=1000"
     },
     {
       "id": "chanel-allure-homme-sport-eau-extreme-bottle",
@@ -888,8 +892,9 @@
       "source": "https://www.chanel.com/us/fragrance/p/123580/allure-homme-sport-eau-extreme-eau-de-parfum-spray/",
       "concentration": "Eau de Parfum",
       "publishedAccords": "Mandarin, cypress, white musk and an almond-like tonka bean accord.",
-      "photoPending": true,
-      "image": "assets/community-photo-pending.webp"
+      "photoPending": false,
+      "image": "assets/community-box-chanel-allure-homme-sport-eau-extreme.webp",
+      "imageSource": "https://microperfumes.com/cdn/shop/files/mp-2306-1000px.jpg?v=1771617082&width=1000"
     },
     {
       "id": "chanel-allure-homme-edition-blanche-bottle",
@@ -905,8 +910,9 @@
       "source": "https://www.chanel.com/us/fragrance/p/127460/allure-homme-edition-blanche-eau-de-parfum-spray/",
       "concentration": "Eau de Parfum",
       "publishedAccords": "Lemon, New Caledonian sandalwood, Haitian vetiver and Madagascan vanilla.",
-      "photoPending": true,
-      "image": "assets/community-photo-pending.webp"
+      "photoPending": false,
+      "image": "assets/community-box-chanel-allure-homme-edition-blanche.webp",
+      "imageSource": "https://content2.rozetka.com.ua/goods/images/big/622354187.png"
     },
     {
       "id": "chanel-chance-edp-bottle",
@@ -922,8 +928,9 @@
       "source": "https://www.chanel.com/us/fragrance/p/126520/chance-eau-de-parfum-spray/",
       "concentration": "Eau de Parfum",
       "publishedAccords": "Pink pepper, jasmine and patchouli, with white musk and vanilla.",
-      "photoPending": true,
-      "image": "assets/community-photo-pending.webp"
+      "photoPending": false,
+      "image": "assets/community-box-chanel-chance-edp.webp",
+      "imageSource": "https://swish.qa/cdn/shop/products/CHNLCHANCECHANNELEDP50ML.jpg?v=1652254539"
     },
     {
       "id": "chanel-chance-eau-tendre-edp-bottle",
@@ -939,8 +946,9 @@
       "source": "https://www.chanel.com/us/fragrance/p/126260/chance-eau-tendre-eau-de-parfum-spray/",
       "concentration": "Eau de Parfum",
       "publishedAccords": "Rose and jasmine in a floral-fruity composition.",
-      "photoPending": true,
-      "image": "assets/community-photo-pending.webp"
+      "photoPending": false,
+      "image": "assets/community-box-chanel-chance-eau-tendre-edp.webp",
+      "imageSource": "https://www.perfumenz.co.nz/cdn/shop/products/chanel-chance-tendre-100ml-edp_dadeb510-9e08-4ad3-bd7a-dae5272340ab_1200x1200.png?v=1593914835"
     },
     {
       "id": "chanel-chance-eau-splendide-bottle",
@@ -956,8 +964,9 @@
       "source": "https://www.chanel.com/us/fragrance/p/136210/chance-eau-splendide-eau-de-parfum-spray/",
       "concentration": "Eau de Parfum",
       "publishedAccords": "Raspberry accord, rose geranium, cedar and white musk.",
-      "photoPending": true,
-      "image": "assets/community-photo-pending.webp"
+      "photoPending": false,
+      "image": "assets/community-box-chanel-chance-eau-splendide.webp",
+      "imageSource": "https://perfume-bg.eu/images/chanel-hance-eau-splendide-eau-de-parfum.webp"
     },
     {
       "id": "chanel-chance-eau-fraiche-bottle",
@@ -972,8 +981,9 @@
       "status": "Confirm current availability.",
       "source": "https://www.chanel.com/us/fragrance/p/136420/chance-eau-fraiche-eau-de-parfum-spray/",
       "concentration": "Confirm EDT or EDP with seller",
-      "photoPending": true,
-      "image": "assets/community-photo-pending.webp"
+      "photoPending": false,
+      "image": "assets/community-box-chanel-chance-eau-fraiche.webp",
+      "imageSource": "https://c.cdnmp.net/276449694/p/l/6/chanel-chance-eau-fraiche-femei-apa-de-toaleta~73006.jpg"
     },
     {
       "id": "chanel-coco-edp-bottle",
@@ -988,8 +998,9 @@
       "status": "Confirm current availability.",
       "source": "https://www.chanel.com/us/fragrance/p/113530/coco-eau-de-parfum-spray/",
       "concentration": "Eau de Parfum",
-      "photoPending": true,
-      "image": "assets/community-photo-pending.webp"
+      "photoPending": false,
+      "image": "assets/community-box-chanel-coco-edp.webp",
+      "imageSource": "https://img.fragrancex.com/images/products/sku/large/AWCOCO34PS.jpg"
     },
     {
       "id": "chanel-coco-mademoiselle-edp-bottle",
@@ -1004,8 +1015,9 @@
       "status": "Confirm current availability.",
       "source": "https://www.chanel.com/us/fragrance/p/116520/coco-mademoiselle-eau-de-parfum-spray/",
       "concentration": "Eau de Parfum",
-      "photoPending": true,
-      "image": "assets/community-photo-pending.webp"
+      "photoPending": false,
+      "image": "assets/community-box-chanel-coco-mademoiselle-edp.webp",
+      "imageSource": "https://img.vivantiscdn.net/photos/-/p/_orig/CA/chanel-coco-mademoiselle-edp_14083563100923.jpg"
     },
     {
       "id": "chanel-coco-mademoiselle-intense-bottle",
@@ -1020,8 +1032,9 @@
       "status": "Confirm current availability.",
       "source": "https://www.chanel.com/us/fragrance/p/116650/coco-mademoiselle-eau-de-parfum-intense-spray/",
       "concentration": "Eau de Parfum",
-      "photoPending": true,
-      "image": "assets/community-photo-pending.webp"
+      "photoPending": false,
+      "image": "assets/community-box-chanel-coco-mademoiselle-intense.webp",
+      "imageSource": "https://c.scdn.gr/images/sku_images/081060/81060154/20230807151454_65e01bbd.jpeg"
     },
     {
       "id": "chanel-coco-noir-bottle",
@@ -1036,8 +1049,9 @@
       "status": "Confirm current availability.",
       "source": "https://www.chanel.com/us/fragrance/p/113660/coco-noir-eau-de-parfum-spray/",
       "concentration": "Eau de Parfum",
-      "photoPending": true,
-      "image": "assets/community-photo-pending.webp"
+      "photoPending": false,
+      "image": "assets/community-box-chanel-coco-noir.webp",
+      "imageSource": "https://a.cdnsbn.com/images/products/xl/14452780206-1.jpg"
     },
     {
       "id": "chanel-no5-edp-bottle",
@@ -1052,8 +1066,9 @@
       "status": "Confirm current availability.",
       "source": "https://www.chanel.com/us/fragrance/p/125530/n5-eau-de-parfum-spray/",
       "concentration": "Eau de Parfum",
-      "photoPending": true,
-      "image": "assets/community-photo-pending.webp"
+      "photoPending": false,
+      "image": "assets/community-box-chanel-no5-edp.webp",
+      "imageSource": "https://cdn.shopify.com/s/files/1/0659/2249/8691/files/chanel-edp.jpg?v=1776493694"
     },
     {
       "id": "chanel-platinum-egoiste-bottle",
@@ -1068,8 +1083,9 @@
       "status": "Confirm current availability.",
       "source": "https://www.chanel.com/us/fragrance/p/124460/platinum-egoiste-eau-de-toilette-spray/",
       "concentration": "Eau de Toilette",
-      "photoPending": true,
-      "image": "assets/community-photo-pending.webp"
+      "photoPending": false,
+      "image": "assets/community-box-chanel-platinum-egoiste.webp",
+      "imageSource": "https://beirutfreezone.com/cdn/shop/files/chanel-platinum-egoiste-edt-100ml-homme.png?v=1724671758&width=990"
     },
     {
       "id": "chopard-black-incense-malaki-bottle",
@@ -1101,8 +1117,9 @@
       "status": "Confirm current availability.",
       "source": "https://officialmykonos.com/products/mykonos-sorrento-extrait-de-parfum-50ml",
       "concentration": "",
-      "photoPending": true,
-      "image": "assets/community-photo-pending.webp"
+      "photoPending": false,
+      "image": "assets/community-box-mykonos-sorrento.webp",
+      "imageSource": "https://mykonosperfumes.eu/cdn/shop/files/mykonos-sorrento-extrait-de-parfum-3422587.jpg?v=1789984692&width=1000"
     },
     {
       "id": "mykonos-inception-bottle",
@@ -1168,8 +1185,9 @@
       "status": "Confirm current availability.",
       "source": "https://officialmykonos.com/products/mykonos-imperium-extrait-de-parfum-50ml",
       "concentration": "",
-      "photoPending": true,
-      "image": "assets/community-photo-pending.webp"
+      "photoPending": false,
+      "image": "assets/community-box-mykonos-imperium.webp",
+      "imageSource": "https://scentverse.in/cdn/shop/files/Screenshot2026-10-14235631.png?v=1792002933&width=1000"
     },
     {
       "id": "arabiyat-prestige-marwa-extrait-bottle",
