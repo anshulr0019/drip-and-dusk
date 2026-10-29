@@ -11,9 +11,18 @@
       "headers": { "Cache-Control": "no-store", "CDN-Cache-Control": "no-store", "Vercel-CDN-Cache-Control": "no-store" }
     },
     {
+      "src": "/api/(catalogue|config)",
+      "dest": "https://drip-and-dusk-checkout.drip-and-dusk.workers.dev/api/$1"
+    },
+    {
       "src": "/api/(.*)",
       "dest": "https://drip-and-dusk-checkout.drip-and-dusk.workers.dev/api/$1",
       "headers": { "Cache-Control": "no-store", "CDN-Cache-Control": "no-store", "Vercel-CDN-Cache-Control": "no-store" }
+    },
+    {
+      "src": "/assets/(.*)",
+      "headers": { "Cache-Control": "public, max-age=86400, stale-while-revalidate=604800" },
+      "continue": true
     },
     { "handle": "filesystem" }
   ]

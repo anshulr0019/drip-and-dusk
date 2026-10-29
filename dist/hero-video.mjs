@@ -31,7 +31,8 @@ export function initHeroVideo({document:doc=document,window:win=window}={}) {
   }
   if(!loaded){
    loaded=true;
-   video.src=video.dataset.src;
+   // Phones get the 480p encode: a quarter of the bytes for a film cropped to a narrow screen.
+   video.src=win.innerWidth<=760&&video.dataset.srcMobile||video.dataset.src;
    video.load();
   }
   if(!video.paused||playPending)return;

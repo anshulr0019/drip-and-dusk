@@ -29,11 +29,15 @@ cmd=['ffmpeg','-hide_banner','-loglevel','warning','-y']
 for p in inputs:cmd+=['-i',str(p)]
 cmd+=['-filter_complex',graph,'-map','[out]','-an','-c:v','libx264','-preset','medium','-crf','24','-profile:v','main','-level:v','3.1','-pix_fmt','yuv420p','-movflags','+faststart',str(assets/'fragrance-loop.mp4')]
 subprocess.run(cmd,check=True)
+# A 480p encode for phones, chosen by hero-video.mjs on narrow screens.
+subprocess.run(['ffmpeg','-hide_banner','-loglevel','error','-y','-i',str(assets/'fragrance-loop.mp4'),'-vf','scale=854:480:flags=lanczos,format=yuv420p','-an','-c:v','libx264','-preset','slow','-crf','28','-profile:v','main','-level:v','3.1','-movflags','+faststart',str(assets/'fragrance-loop-mobile.mp4')],check=True)
 subprocess.run(['ffmpeg','-hide_banner','-loglevel','error','-y','-i',str(assets/'fragrance-loop.mp4'),'-frames:v','1','-q:v','3',str(assets/'hero-poster.jpg')],check=True)
 probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(assets/'fragrance-loop.mp4')]))
 assert all(s['codec_type']!='audio' for s in probe['streams'])
 # Version both media URLs so browsers do not reuse a previous encoded film.
 revision=hashlib.sha256((assets/'fragrance-loop.mp4').read_bytes()).hexdigest()[:8]
 index=root/'dist/index.html'
-index.write_text(re.sub(r'assets/(fragrance-loop\.mp4|hero-poster\.jpg)(?:\?v=[A-Za-z0-9_-]+)?',lambda m:f'assets/{m.group(1)}?v={revision}',index.read_text()))
+mobile=hashlib.sha256((assets/'fragrance-loop-mobile.mp4').read_bytes()).hexdigest()[:8]
+html=re.sub(r'assets/(fragrance-loop\.mp4|hero-poster\.jpg)(?:\?v=[A-Za-z0-9_-]+)?',lambda m:f'assets/{m.group(1)}?v={revision}',index.read_text())
+index.write_text(re.sub(r'assets/fragrance-loop-mobile\.mp4(?:\?v=[A-Za-z0-9_-]+)?',f'assets/fragrance-loop-mobile.mp4?v={mobile}',html))
 print(json.dumps({'duration':probe['format']['duration'],'bytes':(assets/'fragrance-loop.mp4').stat().st_size,'audio':False,'codec':probe['streams'][0]['codec_name'],'width':probe['streams'][0]['width'],'height':probe['streams'][0]['height']}))

@@ -26,6 +26,8 @@ async function shipping(env){const business=await settings(env);if(business?.del
 async function body(request,max=24000){const raw=await request.text();if(raw.length>max)fail('Request is too large.',413);try{return JSON.parse(raw)}catch{fail('Enter valid request data.')}}
 async function catalogue(env,owner=false){return (await all(env,'SELECT * FROM products')).map(p=>{const data=JSON.parse(p.data),profile=data.finderVerified===true?processNotes(data):{};return {...data,...profile,revision:p.revision||1,price:p.price_paise>0?p.price_paise/100:null,quantity:owner?p.quantity:p.quantity-p.held,held:owner?p.held:undefined,available:owner?data.available===true:p.enabled===1&&p.quantity>p.held};}).filter(p=>owner||!p.hidden&&!p.archived);}
 async function settings(env){const row=await first(env,'SELECT * FROM store_settings WHERE id=1');return row?{...JSON.parse(row.data),revision:row.revision}:null;}
+// Public, cookie-free reads may be shared briefly by the Vercel edge. Checkout always revalidates stock and prices.
+const edgeCache=seconds=>({'Cache-Control':'public, max-age=0, must-revalidate','CDN-Cache-Control':`public, max-age=${seconds}, stale-while-revalidate=${seconds*5}`});
 const snapshots=new WeakMap();
 const invalidate=env=>snapshots.delete(env.DB);
 async function publicSnapshot(env,time){
@@ -88,8 +90,8 @@ export function createHandler({fetchExternal=(...a)=>fetch(...a),now=()=>Date.no
    if(!['sandbox','preview','manual_demo','live'].includes(mode(env)))fail('Checkout is not configured.',503);
    const authResponse=await auth.handle(request,env);if(authResponse)return authResponse;
    if(path==='/api/account/orders'&&request.method==='GET'){const user=await auth.session(request,env);if(!user)fail('Sign in to view your orders.',401);const rows=await all(env,'SELECT * FROM orders WHERE customer_user_id=? ORDER BY created_at DESC LIMIT 100',user.id);return json({orders:await Promise.all(rows.map(async o=>({...await publicOrder(env,o),trackingPath:'#track/'+o.id+'/'+await tokenFor(env,o.id)})))});}
-   if(path==='/api/config'&&request.method==='GET')return json({mode:mode(env),provider:mode(env)==='preview'?'preview':paymentOptions(env).find(p=>p.available)?.id||(manual(env)?'manual_upi':'razorpay'),payment:merchantUPI(env)||undefined,ready:readiness(env),paymentOptions:paymentOptions(env),customerFeePaise:0,shippingConfigured:!!env.SHIPPING_RULES_JSON||samplesCustomer(env),courierConnected:!!env.COURIER_WEBHOOK_SECRET,whatsappConnected:!!(env.WHATSAPP_ACCESS_TOKEN&&env.ALLOW_SANDBOX_MESSAGES==='true')});
-   if(path==='/api/catalogue'&&request.method==='GET')return json(await publicSnapshot(env,time));
+   if(path==='/api/config'&&request.method==='GET')return json({mode:mode(env),provider:mode(env)==='preview'?'preview':paymentOptions(env).find(p=>p.available)?.id||(manual(env)?'manual_upi':'razorpay'),payment:merchantUPI(env)||undefined,ready:readiness(env),paymentOptions:paymentOptions(env),customerFeePaise:0,shippingConfigured:!!env.SHIPPING_RULES_JSON||samplesCustomer(env),courierConnected:!!env.COURIER_WEBHOOK_SECRET,whatsappConnected:!!(env.WHATSAPP_ACCESS_TOKEN&&env.ALLOW_SANDBOX_MESSAGES==='true')},200,edgeCache(30));
+   if(path==='/api/catalogue'&&request.method==='GET')return json(await publicSnapshot(env,time),200,edgeCache(5));
    if(path==='/api/scent-matches'&&request.method==='POST'){await limit(env,request,'finder',120,time);const b=await body(request);return json({matches:recommendScents((await publicSnapshot(env,time)).products,b.answers)});}
    if(path==='/api/admin/products'&&request.method==='GET'){await requireOwner(env,request,time);await expire(env,time);return json({products:await catalogue(env,true)});}
    const productPath=path.match(/^\/api\/admin\/products\/([a-zA-Z0-9-]+)$/);
