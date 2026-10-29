@@ -6,8 +6,8 @@ test('SDK loads only once, from the official URL, and a failed script can be ret
  const h=harness(),a=loadRazorpay(h),b=loadRazorpay(h);assert.equal(h.script().src,'https://checkout.razorpay.com/v1/checkout.js');h.sdk();assert.equal(await a,await b);
  const other=harness(),first=loadRazorpay(other);other.script().onerror();await assert.rejects(first,/could not load/);const retry=loadRazorpay(other);other.sdk();assert.equal(await retry,other.window.Razorpay);
 });
-test('live keys or invalid amounts cannot open a payment window',async()=>{
- const h=harness();for(const patch of [{keyId:'rzp_live_'+crypto.randomUUID().replaceAll('-','')},{amount:1},{amount:1.5},{gatewayOrderId:'wrong'},{provider:'manual_upi'}])await assert.rejects(openRazorpayTest({...session,...patch},h),/valid Razorpay test order/);assert.equal(h.script(),undefined);assert.equal(h.opens(),0);
+test('malformed keys or invalid amounts cannot open a payment window',async()=>{
+ const h=harness();for(const patch of [{keyId:'rzp_fake_'+crypto.randomUUID().replaceAll('-','')},{keyId:'key_'+crypto.randomUUID().replaceAll('-','')},{amount:1},{amount:1.5},{gatewayOrderId:'wrong'},{provider:'manual_upi'}])await assert.rejects(openRazorpayTest({...session,...patch},h),/valid Razorpay order/);assert.equal(h.script(),undefined);assert.equal(h.opens(),0);
 });
 test('the native modal is hidden before SDK checkout and the response still requires server verification',async()=>{
  const h=harness(),result=openRazorpayTest(session,{...h,prefill:{name:'Demo',phone:'919999999999'}});h.sdk();await Promise.resolve();await Promise.resolve();

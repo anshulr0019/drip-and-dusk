@@ -1,7 +1,7 @@
 import {shipmentFields,aftercareFields,orderFilter} from './owner-operations.mjs';
 import {deliveryRules} from '../dist/store-settings.mjs';
 import {orderRows,ordersCSV} from '../dist/owner-model.mjs';
-import {paymentOptions,choosePaymentMethod,razorpayTestReady} from './payment-options.mjs';
+import {paymentOptions,choosePaymentMethod,razorpayReady,merchantUPI,isLive,samplePayment} from './payment-options.mjs';
 import {visitorId,backendIP} from './traffic.mjs';
 import {prepareProduct,prepareSettings} from './catalogue.mjs';
 import {recommendScents} from '../dist/scent-matching.mjs';
@@ -17,9 +17,12 @@ const stmt=(env,sql,...args)=>env.DB.prepare(sql).bind(...args),first=(env,sql,.
 const tokenFor=(env,id)=>hmac(env.TRACKING_SECRET,'tracking:'+id);
 const mode=env=>env.COMMERCE_MODE||'sandbox';
 const manual=env=>mode(env)==='manual_demo';
-const samplePayment={sample:true,upiId:'dripanddusk@example',payeeName:'Drip & Dusk (sample)',whatsapp:''};
-function readiness(env){const preview=mode(env)==='preview';if(manual(env))return env.TRACKING_SECRET?.length>=32;if(!['preview','sandbox'].includes(mode(env)))return false;return !!(env.TRACKING_SECRET?.length>=32&&(env.AUTH_PROVIDER==='supabase'?(authReady(env)&&!!env.AUTH_OWNER_IDS?.trim()):env.ADMIN_SECRET?.length>=32)&&(preview||(env.RAZORPAY_KEY_ID?.startsWith('rzp_test_')&&env.RAZORPAY_KEY_SECRET&&env.RAZORPAY_WEBHOOK_SECRET?.length>=32&&env.SHIPPING_RULES_JSON)))}
-async function shipping(env){const business=await settings(env);if(business?.delivery)return deliveryRules(business,mode(env)==='preview'||manual(env));if(mode(env)==='preview'||manual(env))return previewShipping;let rules;try{rules=JSON.parse(env.SHIPPING_RULES_JSON)}catch{fail('Delivery rates are not configured.',503)}return {...rules,preview:false}}
+// Test profiles replace personal details with a fixed sample before persisting; live stores what the customer entered.
+const samplesCustomer=env=>mode(env)==='preview'||manual(env);
+const gatewayOrder=o=>['sandbox','live'].includes(o.mode);
+const ownerAuthReady=env=>env.AUTH_PROVIDER==='supabase'?(authReady(env)&&!!env.AUTH_OWNER_IDS?.trim()):env.ADMIN_SECRET?.length>=32;
+function readiness(env){const preview=mode(env)==='preview';if(manual(env))return env.TRACKING_SECRET?.length>=32;if(isLive(env))return !!(env.TRACKING_SECRET?.length>=32&&ownerAuthReady(env)&&paymentOptions(env).some(p=>p.available));if(!['preview','sandbox'].includes(mode(env)))return false;return !!(env.TRACKING_SECRET?.length>=32&&ownerAuthReady(env)&&(preview||(env.RAZORPAY_KEY_ID?.startsWith('rzp_test_')&&env.RAZORPAY_KEY_SECRET&&env.RAZORPAY_WEBHOOK_SECRET?.length>=32&&env.SHIPPING_RULES_JSON)))}
+async function shipping(env){const business=await settings(env);if(business?.delivery)return deliveryRules(business,samplesCustomer(env));if(samplesCustomer(env))return previewShipping;if(isLive(env)&&!env.SHIPPING_RULES_JSON)return deliveryRules({},false);let rules;try{rules=JSON.parse(env.SHIPPING_RULES_JSON)}catch{fail('Delivery rates are not configured.',503)}return {...rules,preview:false}}
 async function body(request,max=24000){const raw=await request.text();if(raw.length>max)fail('Request is too large.',413);try{return JSON.parse(raw)}catch{fail('Enter valid request data.')}}
 async function catalogue(env,owner=false){return (await all(env,'SELECT * FROM products')).map(p=>{const data=JSON.parse(p.data),profile=data.finderVerified===true?processNotes(data):{};return {...data,...profile,revision:p.revision||1,price:p.price_paise>0?p.price_paise/100:null,quantity:owner?p.quantity:p.quantity-p.held,held:owner?p.held:undefined,available:owner?data.available===true:p.enabled===1&&p.quantity>p.held};}).filter(p=>owner||!p.hidden&&!p.archived);}
 async function settings(env){const row=await first(env,'SELECT * FROM store_settings WHERE id=1');return row?{...JSON.parse(row.data),revision:row.revision}:null;}
@@ -39,10 +42,10 @@ async function limit(env,request,scope,max,now){
 async function requireTracking(env,request,id){const token=request.headers.get('Authorization')?.replace(/^Bearer /,'');if(!env.TRACKING_SECRET||!equalSecret(token,await tokenFor(env,id)))fail('This tracking link is unavailable.',404);const order=await first(env,'SELECT * FROM orders WHERE id=?',id);if(!order)fail('This tracking link is unavailable.',404);return order;}
 async function isAdmin(env,request,now){if((env.ADMIN_SECRET?.length||0)<32)return false;const bearer=request.headers.get('Authorization')?.replace(/^Bearer /,'');if(bearer&&equalSecret(bearer,env.ADMIN_SECRET))return true;const cookie=request.headers.get('Cookie')?.match(/(?:^|;\s*)dd_owner=([^;]+)/)?.[1];if(!cookie)return false;const [expiry,mac]=cookie.split('.');return /^\d+$/.test(expiry)&&Number(expiry)>now&&Number(expiry)<=now+3600000&&equalSecret(mac,await hmac(env.ADMIN_SECRET,'owner:'+expiry));}
 async function requireAdmin(env,request,now){if(!await isAdmin(env,request,now))fail('Owner sign-in is required.',401)}
-async function publicOrder(env,o){const n=await first(env,"SELECT status FROM notifications WHERE order_id=? AND kind='confirmation'",o.id);return {id:o.id,ref:o.ref,mode:o.mode,status:o.status,paymentStatus:o.payment_status,paymentMethod:o.payment_method,shipment:{courier:o.courier_name||'',awb:o.shipment_id||'',trackingUrl:o.tracking_url||''},expiresAt:new Date(o.expires_at).toISOString(),payment:o.payment_method==='manual_upi'?samplePayment:undefined,notificationStatus:o.payment_method==='manual_upi'?'manual':!o.consent?'not_requested':o.mode==='preview'?'preview':n?.status||'pending',lines:JSON.parse(o.lines),subtotalPaise:o.subtotal_paise,feePaise:o.shipping_paise,totalPaise:o.total_paise,deliveryLabel:o.delivery_label,events:(await all(env,'SELECT status,at FROM order_events WHERE order_id=? ORDER BY at',o.id)).map(e=>({...e,at:new Date(e.at).toISOString()})),createdAt:new Date(o.created_at).toISOString()};}
+async function publicOrder(env,o){const n=await first(env,"SELECT status FROM notifications WHERE order_id=? AND kind='confirmation'",o.id);return {id:o.id,ref:o.ref,mode:o.mode,status:o.status,paymentStatus:o.payment_status,paymentMethod:o.payment_method,shipment:{courier:o.courier_name||'',awb:o.shipment_id||'',trackingUrl:o.tracking_url||''},expiresAt:new Date(o.expires_at).toISOString(),payment:o.payment_method==='manual_upi'?(o.mode==='manual_demo'?samplePayment:merchantUPI(env)||undefined):undefined,notificationStatus:o.payment_method==='manual_upi'?'manual':!o.consent?'not_requested':o.mode==='preview'?'preview':n?.status||'pending',lines:JSON.parse(o.lines),subtotalPaise:o.subtotal_paise,feePaise:o.shipping_paise,totalPaise:o.total_paise,deliveryLabel:o.delivery_label,events:(await all(env,'SELECT status,at FROM order_events WHERE order_id=? ORDER BY at',o.id)).map(e=>({...e,at:new Date(e.at).toISOString()})),createdAt:new Date(o.created_at).toISOString()};}
 async function sessionFor(env,o){
  const result={id:o.id,ref:o.ref,token:await tokenFor(env,o.id),provider:o.payment_method==='manual_upi'?'manual_upi':o.mode==='preview'?'preview':'razorpay',status:o.status,amount:o.total_paise};
- if(o.payment_method==='manual_upi')return {...result,payment:samplePayment};
+ if(o.payment_method==='manual_upi')return {...result,payment:o.mode==='manual_demo'?samplePayment:merchantUPI(env)||undefined};
  if(o.status!=='pending')return result;
  if(o.mode!=='preview'&&!o.gateway_order_id)fail('Payment setup is pending. Keep this bag and try again after the payment window expires.',409);
  return {...result,keyId:env.RAZORPAY_KEY_ID||null,gatewayOrderId:o.gateway_order_id};
@@ -71,7 +74,7 @@ export function createHandler({fetchExternal=(...a)=>fetch(...a),now=()=>Date.no
  return async function handle(request,env,ctx={waitUntil:()=>{}}){
   const url=new URL(request.url),path=url.pathname,time=now();
   try{
-   if(path==='/commerce-config.mjs')return new Response("export const commerceConfig={mode:typeof location!=='undefined'&&new URLSearchParams(location.search).get('demo')==='1'?'preview':'api',apiBase:''};",{headers:{'Content-Type':'text/javascript','Cache-Control':'no-store'}});
+   if(path==='/commerce-config.mjs')return new Response("export const commerceConfig={mode:'api',apiBase:''};",{headers:{'Content-Type':'text/javascript','Cache-Control':'no-store'}});
    if(!path.startsWith('/api/'))return env.ASSETS.fetch(request);
    if(!env.DB)fail('Checkout storage is not configured.',503);
    // Browser writes must originate on the storefront. A configured backend origin
@@ -82,10 +85,10 @@ export function createHandler({fetchExternal=(...a)=>fetch(...a),now=()=>Date.no
     if(!request.headers.get('Content-Type')?.startsWith('application/json'))fail('JSON requests are required.',415);
    }
    if(mode(env)==='preview'&&!['localhost','127.0.0.1','[::1]'].includes(url.hostname))fail('Server payment simulation is local-only.',503);
-   if(!['sandbox','preview','manual_demo'].includes(mode(env)))fail('Live payments are not enabled in this release.',503);
+   if(!['sandbox','preview','manual_demo','live'].includes(mode(env)))fail('Checkout is not configured.',503);
    const authResponse=await auth.handle(request,env);if(authResponse)return authResponse;
    if(path==='/api/account/orders'&&request.method==='GET'){const user=await auth.session(request,env);if(!user)fail('Sign in to view your orders.',401);const rows=await all(env,'SELECT * FROM orders WHERE customer_user_id=? ORDER BY created_at DESC LIMIT 100',user.id);return json({orders:await Promise.all(rows.map(async o=>({...await publicOrder(env,o),trackingPath:'#track/'+o.id+'/'+await tokenFor(env,o.id)})))});}
-   if(path==='/api/config'&&request.method==='GET')return json({mode:mode(env),provider:manual(env)?'manual_upi':mode(env)==='preview'?'preview':'razorpay',payment:manual(env)?samplePayment:undefined,ready:readiness(env),paymentOptions:paymentOptions(env),customerFeePaise:0,shippingConfigured:!!env.SHIPPING_RULES_JSON||mode(env)==='preview'||manual(env),courierConnected:!!env.COURIER_WEBHOOK_SECRET,whatsappConnected:!!(env.WHATSAPP_ACCESS_TOKEN&&env.ALLOW_SANDBOX_MESSAGES==='true')});
+   if(path==='/api/config'&&request.method==='GET')return json({mode:mode(env),provider:mode(env)==='preview'?'preview':paymentOptions(env).find(p=>p.available)?.id||(manual(env)?'manual_upi':'razorpay'),payment:merchantUPI(env)||undefined,ready:readiness(env),paymentOptions:paymentOptions(env),customerFeePaise:0,shippingConfigured:!!env.SHIPPING_RULES_JSON||samplesCustomer(env),courierConnected:!!env.COURIER_WEBHOOK_SECRET,whatsappConnected:!!(env.WHATSAPP_ACCESS_TOKEN&&env.ALLOW_SANDBOX_MESSAGES==='true')});
    if(path==='/api/catalogue'&&request.method==='GET')return json(await publicSnapshot(env,time));
    if(path==='/api/scent-matches'&&request.method==='POST'){await limit(env,request,'finder',120,time);const b=await body(request);return json({matches:recommendScents((await publicSnapshot(env,time)).products,b.answers)});}
    if(path==='/api/admin/products'&&request.method==='GET'){await requireOwner(env,request,time);await expire(env,time);return json({products:await catalogue(env,true)});}
@@ -111,29 +114,29 @@ export function createHandler({fetchExternal=(...a)=>fetch(...a),now=()=>Date.no
     if(!result.meta.changes)fail('Settings changed. Reload before saving.',409);invalidate(env);return json({settings:await settings(env)});
    }
    if(path==='/api/checkout/quote'&&request.method==='POST'){
-    if(!readiness(env))fail('Merchant test keys and delivery setup are not connected yet.',503);
+    if(!readiness(env))fail('Checkout is not available right now. Please try again shortly.',503);
     await limit(env,request,'quote',60,time);await expire(env,time);const b=await body(request),q=quoteCheckout(await catalogue(env),b.basket,String(b.postcode),await shipping(env)),id=crypto.randomUUID();
     await stmt(env,'INSERT INTO quotes(id,data,expires_at) VALUES(?,?,?)',id,JSON.stringify(q),time+600000).run();return json({...q,quoteId:id,expiresAt:new Date(time+600000).toISOString()});
    }
    if(path==='/api/orders'&&request.method==='POST'){
-    if(!readiness(env))fail('Merchant test keys and delivery setup are not connected yet.',503);
+    if(!readiness(env))fail('Checkout is not available right now. Please try again shortly.',503);
     await limit(env,request,'order',20,time);await expire(env,time);const b=await body(request),paymentMethod=choosePaymentMethod(env,b.paymentMethod),a=validateAddress(b.address),account=await auth.session(request,env);
     if(!/^[a-zA-Z0-9-]{20,80}$/.test(b.requestId||'')||typeof b.whatsappConsent!=='boolean')fail('Restart checkout and try again.');
     const requestHash=await digest(JSON.stringify({quoteId:b.quoteId,basket:b.basket,address:a,consent:b.whatsappConsent,customerUserId:account?.id||null,paymentMethod}));
     const existing=await first(env,'SELECT * FROM orders WHERE request_id=?',b.requestId);if(existing){if(!equalSecret(requestHash,existing.request_hash))fail('This checkout request has changed. Restart checkout.',409);return json(await sessionFor(env,existing));}
     const saved=await first(env,'SELECT * FROM quotes WHERE id=?',b.quoteId||'');if(!saved||saved.expires_at<=time)fail('Delivery quote expired. Review your address and total again.',409);
     const quoted=JSON.parse(saved.data);let q;try{q=quoteCheckout(await catalogue(env),b.basket,a.postcode,await shipping(env))}catch(e){fail(e.message,409)}if(quoteFingerprint(q)!==quoteFingerprint(quoted))fail('Prices, delivery or your bag changed. Review your total again.',409);
-    const orderMode=paymentMethod==='manual_upi'?'manual_demo':mode(env)==='preview'?'preview':'sandbox';
-    const id=crypto.randomUUID(),ref=(paymentMethod==='manual_upi'?'DD-DEMO-':'DD-TEST-')+id.replace(/-/g,'').slice(0,12).toUpperCase();
+    const orderMode=isLive(env)?'live':paymentMethod==='manual_upi'?'manual_demo':mode(env)==='preview'?'preview':'sandbox';
+    const id=crypto.randomUUID(),ref=(orderMode==='live'?'DD-':paymentMethod==='manual_upi'?'DD-DEMO-':'DD-TEST-')+id.replace(/-/g,'').slice(0,12).toUpperCase();
     try{await env.DB.batch([
-     stmt(env,'INSERT INTO orders(id,ref,request_id,request_hash,quote_id,customer,consent,lines,subtotal_paise,shipping_paise,total_paise,delivery_label,mode,created_at,expires_at,updated_at,customer_user_id,payment_method) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',id,ref,b.requestId,requestHash,b.quoteId,JSON.stringify(mode(env)==='preview'||manual(env)?{name:'Demo Customer',phone:'919999999999',line1:'12 Example Avenue',line2:'',city:'Pune',state:'Maharashtra',postcode:'411001',country:'IN'}:a),b.whatsappConsent?1:0,JSON.stringify(q.lines),q.subtotalPaise,q.feePaise,q.totalPaise,q.deliveryLabel||'Delivery',orderMode,time,time+(paymentMethod==='manual_upi'?1800000:900000),time,account?.id||null,paymentMethod),
+     stmt(env,'INSERT INTO orders(id,ref,request_id,request_hash,quote_id,customer,consent,lines,subtotal_paise,shipping_paise,total_paise,delivery_label,mode,created_at,expires_at,updated_at,customer_user_id,payment_method) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)',id,ref,b.requestId,requestHash,b.quoteId,JSON.stringify(samplesCustomer(env)?{name:'Demo Customer',phone:'919999999999',line1:'12 Example Avenue',line2:'',city:'Pune',state:'Maharashtra',postcode:'411001',country:'IN'}:a),b.whatsappConsent?1:0,JSON.stringify(q.lines),q.subtotalPaise,q.feePaise,q.totalPaise,q.deliveryLabel||'Delivery',orderMode,time,time+(paymentMethod==='manual_upi'?1800000:900000),time,account?.id||null,paymentMethod),
      ...q.lines.map(l=>stmt(env,'INSERT INTO order_lines(order_id,product_id,qty,unit_paise) VALUES(?,?,?,?)',id,l.id,l.qty,l.unitPaise))
     ])}catch{
      const repeated=await first(env,'SELECT * FROM orders WHERE request_id=?',b.requestId);if(repeated&&equalSecret(repeated.request_hash,requestHash))return json(await sessionFor(env,repeated));
      fail('Stock or checkout changed. Refresh your bag and review the order again.',409);
     }
     invalidate(env);
-    if(paymentMethod==='razorpay'&&orderMode==='sandbox'){
+    if(paymentMethod==='razorpay'&&gatewayOrder({mode:orderMode})){
      // Never create another gateway order on an ambiguous network timeout. The hold expires safely.
      let created;try{created=await gateway(env,'orders',{method:'POST',body:JSON.stringify({amount:q.totalPaise,currency:'INR',receipt:ref})},fetchExternal)}catch(e){throw e}
      if(!/^order_[A-Za-z0-9]+$/.test(created.id||'')||created.amount!==q.totalPaise||created.currency!=='INR')fail('Payment provider returned an unexpected order. No order is confirmed.',502);
@@ -145,12 +148,12 @@ export function createHandler({fetchExternal=(...a)=>fetch(...a),now=()=>Date.no
    if(match){await limit(env,request,'track',120,time);await expire(env,time);const o=await requireTracking(env,request,match[1]);
     if(request.method==='GET'&&!match[2])return json(await publicOrder(env,o));
     if(request.method==='GET'&&match[2]==='payment-session'){
-     if(o.payment_method!=='razorpay'||o.mode!=='sandbox'||!razorpayTestReady(env))fail('Razorpay test checkout is not connected for this order.',503);
+     if(o.payment_method!=='razorpay'||!gatewayOrder(o)||!razorpayReady(env))fail('Razorpay is not available for this order right now.',503);
      return json(await sessionFor(env,o));
     }
     if(request.method==='POST'&&match[2]==='payment-submission'){
      if(o.payment_method!=='manual_upi')fail('This order does not use manual UPI.',409);
-     const b=await body(request),reference=String(b.reference||'').trim();if(!/^[a-zA-Z0-9-]{6,40}$/.test(reference))fail('Enter the sample transaction reference (6–40 letters or digits).');
+     const b=await body(request),reference=String(b.reference||'').trim();if(!/^[a-zA-Z0-9-]{6,40}$/.test(reference))fail(o.mode==='manual_demo'?'Enter the sample transaction reference (6–40 letters or digits).':'Enter the UPI transaction reference (UTR) from your payment app.');
      if(o.status==='awaiting_verification')return json({status:o.status});
      if(o.status!=='pending'||o.payment_status!=='pending')fail('This payment window has ended. Contact the seller before paying.',409);
      await env.DB.batch([stmt(env,"UPDATE orders SET status='awaiting_verification',payment_reference=?,updated_at=? WHERE id=? AND status='pending'",reference,time,o.id),stmt(env,"INSERT OR IGNORE INTO order_events(order_id,status,at) SELECT id,'awaiting_verification',? FROM orders WHERE id=? AND status='awaiting_verification'",time,o.id)]);
@@ -161,18 +164,18 @@ export function createHandler({fetchExternal=(...a)=>fetch(...a),now=()=>Date.no
      const simulated={...o,gateway_order_id:'preview-'+o.id};await capture(env,simulated,{id:'preview-payment-'+o.id,order_id:simulated.gateway_order_id,amount:o.total_paise,currency:'INR',status:'captured'},time);return json({status:(await first(env,'SELECT status FROM orders WHERE id=?',o.id)).status});
     }
     if(request.method==='POST'&&match[2]==='verify'){
-     if(!razorpayTestReady(env)||o.payment_method!=='razorpay'||o.mode!=='sandbox')fail('Razorpay verification is not configured for this order.',503);const b=await body(request);
+     if(!razorpayReady(env)||o.payment_method!=='razorpay'||!gatewayOrder(o))fail('Razorpay verification is not configured for this order.',503);const b=await body(request);
      if(!/^pay_[a-zA-Z0-9]+$/.test(b.razorpay_payment_id||'')||b.razorpay_order_id!==o.gateway_order_id||!equalSecret(b.razorpay_signature,await hmac(env.RAZORPAY_KEY_SECRET,o.gateway_order_id+'|'+b.razorpay_payment_id)))fail('Payment signature could not be verified.',400);
      const p=await gateway(env,'payments/'+b.razorpay_payment_id,{method:'GET'},fetchExternal);if(p.id!==b.razorpay_payment_id)fail('Payment ID mismatch.',409);await capture(env,o,p,time);ctx.waitUntil(dispatchNotifications(env,{fetchExternal,now:time}));return json({status:(await first(env,'SELECT status FROM orders WHERE id=?',o.id)).status});
     }
    }
    if(path==='/api/webhooks/razorpay'&&request.method==='POST'){
-    if(!razorpayTestReady(env))fail('Webhook is not configured.',503);const raw=await request.text();if(raw.length>200000)fail('Webhook is too large.',413);
+    if(!razorpayReady(env))fail('Webhook is not configured.',503);const raw=await request.text();if(raw.length>200000)fail('Webhook is too large.',413);
     if(!equalSecret(request.headers.get('X-Razorpay-Signature'),await hmac(env.RAZORPAY_WEBHOOK_SECRET,raw)))fail('Invalid webhook signature.',401);
     const eventId=request.headers.get('x-razorpay-event-id');if(!eventId||eventId.length>200)fail('Missing webhook event ID.');if(await first(env,"SELECT event_id FROM webhook_receipts WHERE provider='razorpay' AND event_id=?",eventId))return json({received:true});
     let b;try{b=JSON.parse(raw)}catch{fail('Invalid webhook JSON.')};if(b.event==='payment.captured'||b.event==='order.paid'){
      const p=b.payload?.payment?.entity;if(!p?.id||!p.order_id)fail('Missing payment entity.');const o=await first(env,'SELECT * FROM orders WHERE gateway_order_id=?',p.order_id);
-     if(!o)fail('Order is not available yet. Retry this callback.',409);if(o.payment_method!=='razorpay'||o.mode!=='sandbox')fail('This order does not accept Razorpay callbacks.',409);await capture(env,o,p,time);
+     if(!o)fail('Order is not available yet. Retry this callback.',409);if(o.payment_method!=='razorpay'||!gatewayOrder(o))fail('This order does not accept Razorpay callbacks.',409);await capture(env,o,p,time);
     }
     await stmt(env,"INSERT OR IGNORE INTO webhook_receipts(provider,event_id,at) VALUES('razorpay',?,?)",eventId,time).run();ctx.waitUntil(dispatchNotifications(env,{fetchExternal,now:time}));return json({received:true});
    }

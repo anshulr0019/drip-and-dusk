@@ -3,8 +3,11 @@ COMMERCE_MODE=manual_demo
 PUBLIC_ORIGIN=http://127.0.0.1:4173
 TRACKING_SECRET=replace-with-at-least-32-random-characters
 ADMIN_SECRET=replace-with-a-different-32-character-random-secret
-# Optional: connect merchant-owned TEST credentials to enable Razorpay alongside the manual sample.
-# Leave empty to keep Razorpay visibly awaiting setup. Never use live keys.
+# COMMERCE_MODE=live accepts real money. Use it only in production, with the values below.
+# Live Direct UPI: the merchant's own UPI ID and the payee name customers should see.
+MERCHANT_UPI_ID=
+MERCHANT_PAYEE_NAME=
+# Razorpay: rzp_test_ keys in manual_demo/sandbox, rzp_live_ keys in live. Never commit real keys.
 RAZORPAY_KEY_ID=
 RAZORPAY_KEY_SECRET=
 RAZORPAY_WEBHOOK_SECRET=

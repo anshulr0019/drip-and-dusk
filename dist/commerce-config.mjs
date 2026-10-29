@@ -1,3 +1,2 @@
-// Switch to {mode:'api',apiBase:''} only on the configured checkout server.
-// Keep the public demo in preview mode until merchant services and prices are approved.
-export const commerceConfig={mode:'preview',apiBase:''};
+// The storefront always talks to the store server. On Vercel this file is served by the Worker.
+export const commerceConfig={mode:'api',apiBase:''};

@@ -1,8 +1,8 @@
-# Razorpay test checkout alongside manual UPI
+# Razorpay checkout alongside Direct UPI
 
-The storefront has two payment choices. In the hosted `manual_demo` profile, Direct UPI uses the existing sample merchant and owner approval. Razorpay is shown as **Setup pending** until a merchant's test credentials are connected. There is no customer surcharge. Live keys are rejected.
+The storefront offers two payment choices: Direct UPI to the merchant's own UPI ID, and Razorpay. There is no customer surcharge.
 
-No Razorpay merchant account is configured yet. Unit/API tests use mocked provider responses; a real Razorpay test payment and webhook delivery remain to be verified after account setup.
+The key type must match the commerce mode. `COMMERCE_MODE=live` accepts only `rzp_live_` keys; the test profiles (`sandbox`, `manual_demo`) accept only `rzp_test_` keys. A mismatch leaves Razorpay unavailable at checkout instead of failing mid-payment.
 
 ## Connect the merchant's account
 
@@ -22,7 +22,7 @@ No Razorpay merchant account is configured yet. Unit/API tests use mocked provid
    npm exec --yes --package=wrangler@4.153.0 -- wrangler secret put RAZORPAY_WEBHOOK_SECRET --config backend/wrangler.production.jsonc
    ```
 
-   Paste values only into their hidden terminal prompts. Keep `COMMERCE_MODE=manual_demo` to retain both payment choices and sample personal-data handling. No database migration is needed for this change.
+   Paste values only into their hidden terminal prompts. Use test keys while `COMMERCE_MODE` is `manual_demo` or `sandbox`.
 6. Reload checkout. Confirm that Razorpay is labelled **Test mode**, make a provider test payment, and verify the signed webhook reaches the endpoint. Check the pending, failed, dismissed, successful and expired-payment paths before considering a live release.
 
 ## Order flow
@@ -37,6 +37,11 @@ No Razorpay merchant account is configured yet. Unit/API tests use mocked provid
 - Manual UPI references cannot confirm a Razorpay order, and Razorpay callbacks cannot confirm a manual UPI order. Verified gateway orders support the same owner-operated packing, shipping and delivery flow.
 - WhatsApp automation remains disabled. Confirmation messages can be previewed/copied for manual sharing.
 
-## Live release remains separate
+## Switching to live
 
-This release cannot accept real Razorpay payments or collect real UPI payments. Merchant activation, approved prices/stock/delivery rules, owner assignment, policies and refund handling must be completed for a live release. Do not enable a convenience fee without checking the account's approval and applicable payment-method rules. Current Razorpay integration guidance: [Standard Checkout](https://razorpay.com/docs/payments/payment-gateway/web-integration/standard/integration-steps/).
+1. Complete Razorpay account activation (KYC) and generate **live** API keys in the dashboard's Live mode.
+2. Create a live webhook for `https://drip-and-dusk-nine.vercel.app/api/webhooks/razorpay` with `payment.captured` and `order.paid`, using a new random secret of at least 32 characters.
+3. Replace the three secrets with their live values using the `wrangler secret put` commands above, and set `COMMERCE_MODE` to `live`.
+4. Make one small real payment, confirm the order reaches **Confirmed**, check that the webhook was delivered, and refund it from the Razorpay dashboard.
+
+Do not enable a convenience fee without checking the account's approval and applicable payment-method rules. Current integration guidance: [Standard Checkout](https://razorpay.com/docs/payments/payment-gateway/web-integration/standard/integration-steps/).
