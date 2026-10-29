@@ -112,3 +112,33 @@ body{padding-bottom:64px}.community-launcher{left:auto;right:22px;bottom:20px;wi
 :is(.product-photo,.detail-image,.edit-bottle,.feature-bottle,.finder-result-photo) img[src^="assets/community-"]:not([src*="photo-pending"]){position:absolute;inset:auto;left:50%;top:50%;width:100%;height:auto;aspect-ratio:1;max-width:none;max-height:none;object-fit:contain;clip-path:var(--photo-clip,inset(0));filter:brightness(var(--photo-brightness,1));transform:translate(-50%,-50%) scale(var(--bottle-scale,1)) translate(var(--photo-x,0%),var(--photo-y,0%))!important}
 :is(.product-photo,.edit-bottle,.feature-bottle,.finder-result-photo):hover img[src^="assets/community-"]:not([src*="photo-pending"]){transform:translate(-50%,-50%) scale(calc(var(--bottle-scale,1)*1.035)) translate(var(--photo-x,0%),var(--photo-y,0%))!important}
 @media(prefers-reduced-motion:reduce){:is(.product-photo,.edit-bottle,.feature-bottle,.finder-result-photo):hover img[src^="assets/community-"]:not([src*="photo-pending"]){transform:translate(-50%,-50%) scale(var(--bottle-scale,1)) translate(var(--photo-x,0%),var(--photo-y,0%))!important}}
+
+/* Living hero: the still photograph gains depth on scroll, a pointer-led glow and slow ambient light.
+   hero-motion.mjs sets --hero-progress (0 at rest, 1 scrolled past) and --hero-x/--hero-y (-1…1). */
+.hero{--hero-progress:0;--hero-x:0;--hero-y:0;isolation:isolate}
+.hero-media{position:absolute;inset:-5% -3%;z-index:0;will-change:transform;transform:translate3d(calc(var(--hero-x)*-14px),calc(var(--hero-progress)*18% + var(--hero-y)*-9px),0) scale(calc(1.04 - var(--hero-progress)*.03))}
+.hero .hero-media .hero-image{position:absolute;inset:0;width:100%;height:100%;opacity:1;transform:none}
+.hero-light,.hero-dust{position:absolute;inset:0;z-index:0;pointer-events:none;opacity:0;transition:opacity 1.2s ease}
+.hero-light{background:radial-gradient(42vmax circle at calc(70% + var(--hero-x)*12%) calc(44% + var(--hero-y)*14%),rgba(255,190,110,.2),rgba(255,170,90,.06) 45%,transparent 70%);mix-blend-mode:screen}
+.hero-light::after{content:"";position:absolute;inset:-20% -40%;background:linear-gradient(105deg,transparent 42%,rgba(255,226,170,.13) 49%,rgba(255,240,205,.2) 50%,rgba(255,226,170,.13) 51%,transparent 58%);transform:translateX(-60%);animation:hero-sheen 9s cubic-bezier(.45,0,.25,1) 2.2s infinite}
+.hero-dust i{position:absolute;bottom:-8px;width:3px;height:3px;border-radius:50%;background:#f3d9a6;box-shadow:0 0 6px 1px #f3c98a88;opacity:0;animation:hero-mote 14s linear infinite}
+.hero-dust i:nth-child(1){left:52%;animation-delay:0s}.hero-dust i:nth-child(2){left:58%;animation-delay:-2s;animation-duration:17s}.hero-dust i:nth-child(3){left:63%;animation-delay:-5s}.hero-dust i:nth-child(4){left:67%;animation-delay:-8s;animation-duration:12s;width:2px;height:2px}.hero-dust i:nth-child(5){left:71%;animation-delay:-11s}.hero-dust i:nth-child(6){left:74%;animation-delay:-3s;animation-duration:19s;width:4px;height:4px}.hero-dust i:nth-child(7){left:78%;animation-delay:-6s;width:2px;height:2px}.hero-dust i:nth-child(8){left:81%;animation-delay:-9s;animation-duration:16s}.hero-dust i:nth-child(9){left:85%;animation-delay:-1s;animation-duration:13s}.hero-dust i:nth-child(10){left:88%;animation-delay:-12s;width:2px;height:2px}.hero-dust i:nth-child(11){left:92%;animation-delay:-7s;animation-duration:18s}.hero-dust i:nth-child(12){left:60%;animation-delay:-10s;animation-duration:15s;width:2px;height:2px}.hero-dust i:nth-child(13){left:76%;animation-delay:-4s;animation-duration:20s}.hero-dust i:nth-child(14){left:69%;animation-delay:-13s;animation-duration:11s;width:2px;height:2px}
+.hero-shade{z-index:0}
+.hero-content,.hero-bottom,.hero-index{z-index:1}
+.hero.is-alive .hero-light,.hero.is-alive .hero-dust{opacity:1}
+.hero.is-alive .hero-image{animation:hero-settle 2.2s cubic-bezier(.16,.8,.24,1) backwards}
+.hero.is-alive .hero-content{transform:translate3d(0,calc(var(--hero-progress)*-72px),0);opacity:calc(1 - var(--hero-progress)*1.5)}
+.hero.is-alive .hero-content>*{animation:hero-rise 1s cubic-bezier(.2,.7,.2,1) backwards}
+.hero.is-alive .hero-content>:nth-child(1){animation-delay:.25s}.hero.is-alive .hero-content>:nth-child(2){animation-delay:.4s}.hero.is-alive .hero-content>:nth-child(3){animation-delay:.6s}.hero.is-alive .hero-content>:nth-child(4){animation-delay:.75s}
+.hero.is-alive .hero-bottom,.hero.is-alive .hero-index{opacity:calc(1 - var(--hero-progress)*2.2)}
+@keyframes hero-settle{from{transform:scale(1.14);filter:brightness(.55) blur(6px)}to{transform:none;filter:none}}
+@keyframes hero-rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+@keyframes hero-sheen{0%{transform:translateX(-60%)}55%,100%{transform:translateX(60%)}}
+@keyframes hero-mote{0%{transform:translate3d(0,0,0);opacity:0}12%{opacity:.85}50%{transform:translate3d(18px,-46vh,0);opacity:.55}85%{opacity:.2}100%{transform:translate3d(-12px,-92vh,0);opacity:0}}
+
+/* Sections and cards rise into view once, as they scroll in. Hidden only when hero-motion.mjs is running. */
+/* A one-off animation, not a transition, so card hover effects keep their own timing afterwards. */
+.reveal-ready .reveal-item:not(.is-revealed){opacity:0}
+.reveal-ready .reveal-item.is-revealed{animation:reveal-up .8s cubic-bezier(.2,.7,.2,1) var(--reveal-delay,0ms) backwards!important;animation-play-state:running!important}
+@keyframes reveal-up{from{opacity:0;transform:translate3d(0,28px,0)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.hero-light::after,.hero-dust i,.hero .hero-image,.hero-content>*{animation:none!important}.reveal-ready .reveal-item{opacity:1!important;transform:none!important}}

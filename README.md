@@ -4,7 +4,7 @@ A mobile-first fragrance storefront with a static frontend and a Cloudflare Work
 
 ## Features
 
-- Fragrance films, product discovery, filters and favourites.
+- A living hero photograph (scroll depth, pointer-led glow, drifting light) and sections that rise into view, all off for reduced-motion visitors; product discovery, filters and favourites.
 - Full-bottle and decant variants, plus enquiry-only reference listings.
 - A guided scent finder using verified top, heart and base notes processed by the backend.
 - Two payment methods, Direct UPI and Razorpay, with delivery totals, private order tracking and no added payment fee.
@@ -63,11 +63,11 @@ Public catalogue reads share a five-second in-memory snapshot per Worker instanc
 
 A signed anonymous visitor cookie separates per-browser rate limits for customers behind the Vercel proxy. It grants no authentication or owner access. An additional shared-origin cap remains in place, and unverified cookies fall back to the backend IP bucket. Supabase and Google retain their own provider limits; this does not promise 150 simultaneous completed sign-ins.
 
-Run the bounded, read-only first-visit check with `node scripts/traffic-check.mjs https://drip-and-dusk-nine.vercel.app 150 300 h2 critical`. It requests public pages/APIs and media only, and creates no orders, sign-ins or messages. Reports are written under `output/performance/`. This measures HTTP traffic from one generator, not browser rendering or an uptime guarantee.
+Run the bounded, read-only first-visit check with `node scripts/traffic-check.mjs https://drip-and-dusk-nine.vercel.app 200 400 h2`. It requests public pages/APIs and media only, and creates no orders, sign-ins or messages. Reports are written under `output/performance/`. This measures HTTP traffic from one generator, not browser rendering or an uptime guarantee.
 
-The `critical` profile measures the shopping page without waiting for a full background-video download. Omit `critical` to include the film. HTTP/2 mode uses four established TLS connections with multiplexed requests; it does not simulate 150 separate TLS handshakes. Slow mobile connections and stalled playback retain the poster image.
+The hero is a still photograph, so there is no background film to download. Profiles: omit the last argument for a standard first visit, or pass `critical` to match earlier reports. HTTP/2 mode uses four established TLS connections with multiplexed requests and requests compressed responses like a browser.
 
-On 28 October 2026, the critical-page HTTP/2 check completed 3,900 requests from 150 simulated guests with zero errors, including 600 public API requests. The 95th-percentile time to first byte was 559 ms overall. This is a single-generator browsing result with the optional full-film transfer excluded; earlier full-media and connection tests recorded timeouts, so it is not a blanket reliability or video-playback guarantee. Local reports retain those limitations.
+On 29 October 2026, 200 simulated first visits against the live site completed 5,200 requests with zero errors (95th-percentile time to first byte 203 ms, APIs 399 ms), measured before the video was removed and the faster loading changes were deployed. Earlier 150-visitor runs requested uncompressed responses and overstated transfer sizes about eightfold. This is a single-generator browsing result, not an uptime guarantee.
 
 ## Researched fragrance information
 
@@ -83,7 +83,7 @@ Direct UPI and Razorpay can both be offered; each order stores its chosen method
 
 ## Owner operations
 
-Owner studio → Business & ordering now controls the store display name, support email, business/returns address, Instagram link, homepage announcement and hero copy, existing film versus still image, a flat India-wide checkout delivery charge, optional free-delivery threshold and low-stock threshold. Design, API secrets and owner permissions remain deployment settings. Custom video uploads and postcode-specific shipping zones are not provided by this form.
+Owner studio → Business & ordering now controls the store display name, support email, business/returns address, Instagram link, homepage announcement and hero copy, animated versus still hero photograph, a flat India-wide checkout delivery charge, optional free-delivery threshold and low-stock threshold. Design, API secrets and owner permissions remain deployment settings. Custom video uploads and postcode-specific shipping zones are not provided by this form.
 
 Orders supports search, stage/payment/method/return filters, India-time date ranges and 50-record pages. Recorded collections, delivery collected and externally recorded refunds cover all filtered records, including records beyond the current page. They are recorded payments, not profit or settlement reports. Order CSV exports apply the same filters (at most 10,000 records; narrow the dates above that); inventory CSV includes stock and reserved quantities. Low-stock indicators use stock remaining after reservations.
 

@@ -53,8 +53,9 @@ await Promise.all(Array.from({length:visitors},async()=>{
   const products=catalogue?.text?JSON.parse(catalogue.text).products:[];
   const images=[...new Set(products.slice(0,8).map(p=>p.image).filter(path=>path?.startsWith('assets/')))];
   const poster=page.text.match(/as="image" href="([^"]+)"/)?.[1]||'assets/hero-poster.jpg';
-  const video=(profile==='mobile'&&page.text.match(/data-src-mobile="([^"]+)"/)?.[1])||page.text.match(/data-src="([^"]+\.mp4[^"\s]*)"/)?.[1]||'assets/fragrance-loop.mp4';
-  await Promise.all([get('/api/auth/session',auth?.setCookie||''),...images.map(path=>get('/'+path)),get('/'+poster),...(includeFilm?[get('/'+video)]:[])]);
+  // Pages without a background film skip it; the hero is a still photograph since 29 October 2026.
+  const video=(profile==='mobile'&&page.text.match(/data-src-mobile="([^"]+)"/)?.[1])||page.text.match(/data-src="([^"]+\.mp4[^"\s]*)"/)?.[1]||null;
+  await Promise.all([get('/api/auth/session',auth?.setCookie||''),...images.map(path=>get('/'+path)),get('/'+poster),...(includeFilm&&video?[get('/'+video)]:[])]);
  }catch(e){failures.push({path:'visitor',status:0,error:e.message});}finally{activeVisitors--;journeys.push(performance.now()-start);}
 }));
 const round=n=>Math.round(n*10)/10,percentile=(values,p)=>{const a=[...values].sort((a,b)=>a-b);return round(a[Math.max(0,Math.ceil(a.length*p)-1)]||0)};
