@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {defaults,filterProducts,catalogueDisplay,fragranceProfile,matchesCollection} from '../dist/core.mjs';
-const products=defaults().products.filter(p=>!p.instagramSource);
+const products=defaults().products.filter(p=>!p.instagramSource&&!p.communitySource);
 test('the all-fragrance view keeps one bottle per scent while explicit formats and saved variants remain exact',()=>{
  const all=catalogueDisplay(products,'all');assert.equal(all.length,7);assert.ok(all.every(p=>p.format==='Full bottle'));
  const decants=filterProducts(products,{kind:'Decant'});assert.equal(catalogueDisplay(decants,'Decant').length,7);

@@ -1,3 +1,4 @@
+import {communityProducts} from './community-products.mjs';
 import {processNotes} from './fragrance-notes.mjs';
 // Researched 28 October 2026. Published formats do not confirm merchant inventory.
 export const fragranceFacts = {
@@ -1052,7 +1053,7 @@ export const fragranceFacts = {
 };
 const legacyNotes = {"hawas": "Apple · Bergamot · Lemon · Cinnamon / Orange blossom · Cardamom · Plum / Patchouli · Grey amber · Driftwood · Musk", "khamrah": "Bergamot · Cinnamon · Nutmeg / Dates accord · Lily of the valley · Praline · Tuberose / Tonka · Benzoin · Myrrh · Akigalawood · Vanilla · Amberwood", "asad": "Black pepper · Pineapple · Tobacco / Coffee · Iris · Patchouli / Amber · Vanilla · Dry woods · Benzoin · Labdanum", "yara": "Tangerine · Heliotrope · Orchid / Tropical notes · Gourmand / Vanilla · Sandalwood · Musk", "qahwa": "Ginger · Cinnamon · Cardamom / Praline · Candied fruits · White flowers / Coffee · Tonka · Musk · Benzoin · Vanilla", "oud-for-glory": "Note pyramid pending verification: the brand page contains conflicting note lists.", "qaed": "Saffron · Pineapple / Jasmine · Fir balsam / Oud wood · Cedarwood · Amber", "rasasi-hawas-lava-gold": "Fragrance notes pending verification with the seller.", "mykonos-inception": "Fragrance notes pending verification with the seller.", "riiffs-momento": "Fragrance notes pending verification with the seller.", "rasasi-hawas-la-mer": "Fragrance notes pending verification with the seller.", "arabiyat-prestige-aristo": "Fragrance notes pending verification with the seller.", "khadlaj-karus-gold-absolu": "Fragrance notes pending verification with the seller.", "rasasi-hawas-nautilus": "Fragrance notes pending verification with the seller.", "armani-stronger-with-you-parfum": "Fragrance notes pending verification with the seller.", "assaf-glitch": "Fragrance notes pending verification with the seller.", "al-majed-oud-boisee": "Fragrance notes pending verification with the seller.", "al-majed-oud-cuir": "Fragrance notes pending verification with the seller.", "al-majed-oud-noir": "Fragrance notes pending verification with the seller.", "rayhaan-elixir": "Fragrance notes pending verification with the seller.", "armaf-club-de-nuit-intense-overdose": "Fragrance notes pending verification with the seller.", "rasasi-hawas-malibu": "Fragrance notes pending verification with the seller.", "assaf-attacks": "Fragrance notes pending verification with the seller.", "rayhaan-nocturno-elixir": "Fragrance notes pending verification with the seller.", "rasasi-hawas-viper": "Fragrance notes pending verification with the seller."};
 export function enrichFragrance(p){
- const facts=fragranceFacts[p.group];
+ const facts=fragranceFacts[p.group]||communityProducts.find(q=>q.group===p.group&&q.notePyramid);
  return facts?{...p,...processNotes(facts),...structuredClone(facts)}:p;
 }
 // Upgrade supplied seed facts only. Owner-edited pyramids and commercial fields are preserved.
@@ -1063,7 +1064,7 @@ export function migrateFragranceFacts(p){
  return {...updated,...(p.description&&!/from the Drip & Dusk Instagram edit|Ask the seller to confirm the scent profile/.test(p.description)&&p.instagramSource?{description:p.description}:{})};
 }
 export function researchMetadata(p){
- const facts=fragranceFacts[p.group];
+ const facts=fragranceFacts[p.group]||communityProducts.find(q=>q.group===p.group&&q.notePyramid);
  if(!facts||(p.notes&&p.notes!==processNotes(p).notes)||processNotes(p).notes!==processNotes(facts).notes)return {};
  return Object.fromEntries(['publishedSizes','noteSources','notesQuality','notesCaveat','factsCheckedAt','factsRevision'].map(k=>[k,structuredClone(facts[k])]));
 }

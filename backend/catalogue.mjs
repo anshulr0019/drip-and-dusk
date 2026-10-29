@@ -19,6 +19,13 @@ export function prepareProduct(input){
  const error=validateProduct(p);if(error)fail(error);
  if(p.finderVerified){const processed=processNotes(input),error=notesError(processed.notePyramid);if(error)fail(error);Object.assign(p,processed);p.family=p.family||processed.scentProfile.family;p.scentEdit=p.scentEdit||processed.scentProfile.edit;}
  else if(input.notePyramid){p.notePyramid=processNotes(input).notePyramid;}
+ if(input.communityOffer){
+  const q=input.communityOffer;
+  if(!/^2026-10-(25|26|27|28|29)$/.test(q.postedAt)||q.contact!=='917021915706'||typeof q.shipping!=='string'||q.shipping.length>250||typeof q.status!=='string'||q.status.length>300)fail('Invalid community quote details.');
+  p.communitySource=true;p.communityOffer={postedAt:q.postedAt,contact:q.contact,shipping:q.shipping,status:q.status,pricePlus:q.pricePlus===true};
+ }
+ p.photoPending=input.photoPending===true&&p.image==='assets/community-photo-pending.webp';
+ if(input.publishedAccords){p.publishedAccords=String(input.publishedAccords).slice(0,500);}
  Object.assign(p,researchMetadata(p));
  return p;
 }

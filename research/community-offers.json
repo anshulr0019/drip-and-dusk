@@ -1,0 +1,1209 @@
+{
+  "source": "Owner WhatsApp community posts supplied by user, 25–29 October 2026; identities clarified by user on 29 October. Quotes are not current inventory.",
+  "offers": [
+    {
+      "id": "guerlain-vetiver-edt-bottle",
+      "group": "guerlain-vetiver-edt",
+      "brand": "Guerlain",
+      "name": "Vétiver EDT",
+      "price": 5699,
+      "size": null,
+      "condition": "Tester; size, box and cap to confirm.",
+      "date": "2026-10-25",
+      "shipping": "Shipping included in the community quote; confirm delivery coverage.",
+      "status": "Confirm current availability.",
+      "source": "https://www.guerlain.com/us/en-us/p/vetiver-eau-de-toilette-G030486.html",
+      "concentration": "Eau de Toilette",
+      "publishedAccords": "Vetiver, woods, spices and tobacco.",
+      "photoPending": false,
+      "image": "assets/community-guerlain-vetiver-edt.webp",
+      "imageSource": "https://www.guerlain.com/dw/image/v2/BDCZ_PRD/on/demandware.static/-/Sites-GSA_master_catalog/default/dw08f1a697/01-ProductsViewer/P030486/P030486_G030486_E01_hi-res.png?sh=900&sw=900"
+    },
+    {
+      "id": "french-avenue-jasmere-bottle",
+      "group": "french-avenue-jasmere",
+      "brand": "French Avenue",
+      "name": "Jasmere",
+      "price": 2999,
+      "size": null,
+      "condition": "Bottle condition to confirm.",
+      "date": "2026-10-25",
+      "shipping": "Shipping included in the community quote; confirm delivery coverage.",
+      "status": "Confirm current availability.",
+      "source": "https://usa.shopfrenchavenue.com/products/jasmere-edp-100ml-by-french-avenue",
+      "concentration": "Eau de Parfum",
+      "image": "assets/community-french-avenue-jasmere.webp",
+      "imageSource": "http://usa.shopfrenchavenue.com/cdn/shop/files/e-x-t-e-r-n-a-l_-i-m-a-g-e_-t-o_-i-m-a-g-e-e94514b6-4d58-43af-94fb-3c68238badaa.webp?v=1789754209",
+      "photoPending": false
+    },
+    {
+      "id": "rasasi-hawas-thunder-bottle",
+      "group": "rasasi-hawas-thunder",
+      "brand": "Rasasi",
+      "name": "Hawas Thunder",
+      "price": 3099,
+      "size": null,
+      "condition": "Bottle condition to confirm.",
+      "date": "2026-10-26",
+      "shipping": "Shipping included in the community quote; confirm delivery coverage.",
+      "status": "Seller reported 5 units on 26 October; reconfirm current stock.",
+      "source": "https://www.rasasiexclusive.com/products/rasasi-hawas-thunder",
+      "concentration": "Eau de Parfum",
+      "image": "assets/community-rasasi-hawas-thunder.webp",
+      "imageSource": "http://www.rasasiexclusive.com/cdn/shop/files/HAWAS_thunder_bottle.png?v=1776440391",
+      "notePyramid": {
+        "top": [
+          "Apple",
+          "Bergamot",
+          "Ginger",
+          "Cedarwood",
+          "Mandarin"
+        ],
+        "heart": [
+          "Mate",
+          "Peony",
+          "Orange blossom",
+          "Patchouli"
+        ],
+        "base": [
+          "Ambergris",
+          "Tonka",
+          "Cedarwood",
+          "Vanilla",
+          "Musk"
+        ]
+      },
+      "photoPending": false
+    },
+    {
+      "id": "paris-corner-rifaaqat-bottle",
+      "group": "paris-corner-rifaaqat",
+      "brand": "Paris Corner",
+      "name": "Rifaaqat",
+      "price": 1799,
+      "size": null,
+      "condition": "Bottle condition to confirm.",
+      "date": "2026-10-27",
+      "shipping": "Shipping included in the community quote; confirm delivery coverage.",
+      "status": "Restock announced on 27 October; reconfirm current stock.",
+      "source": "https://www.pariscornerperfumes.com/products/rifaaqat",
+      "concentration": "",
+      "notePyramid": {
+        "top": [
+          "Black pepper",
+          "Pink pepper",
+          "Elemi"
+        ],
+        "heart": [
+          "Olibanum",
+          "Saffron"
+        ],
+        "base": [
+          "Bourbon vanilla",
+          "Suede",
+          "Cedar"
+        ]
+      },
+      "photoPending": true,
+      "image": "assets/community-photo-pending.webp"
+    },
+    {
+      "id": "riiffs-momento-liquid-gold-bottle",
+      "group": "riiffs-momento-liquid-gold",
+      "brand": "RiiFFS",
+      "name": "Momento Liquid Gold",
+      "price": 2699,
+      "size": null,
+      "condition": "Bottle condition to confirm.",
+      "date": "2026-10-26",
+      "shipping": "Shipping included in the community quote; confirm delivery coverage.",
+      "status": "Restock announced on 26 October; reconfirm current stock.",
+      "source": "https://nl.riiffsperfumes.com/product/momento-liquid-gold/",
+      "concentration": "",
+      "image": "assets/community-riiffs-momento-liquid-gold.webp",
+      "imageSource": "https://nl.riiffsperfumes.com/wp-content/uploads/2026/10/mlg-pdt-1.webp",
+      "photoPending": false,
+      "notesCaveat": "The brand regional page and retailer pyramids conflict. Confirm the note pyramid and concentration for the supplied bottle."
+    },
+    {
+      "id": "lattafa-atlas-canyon-bottle",
+      "group": "lattafa-atlas-canyon",
+      "brand": "Lattafa",
+      "name": "Atlas Canyon",
+      "price": 2875,
+      "size": null,
+      "condition": "Bottle condition to confirm.",
+      "date": "2026-10-26",
+      "shipping": "Confirm delivery charges.",
+      "status": "Confirm current availability.",
+      "source": "https://www.lattafa-usa.com/products/lattafa-atlas-canyon-eau-de-parfum-55ml",
+      "concentration": "Eau de Parfum",
+      "image": "assets/community-lattafa-atlas-canyon.webp",
+      "imageSource": "http://www.lattafa-usa.com/cdn/shop/files/lattafa-atlas-canyon-edp-55ml-1.jpg?v=1791565640",
+      "notePyramid": {
+        "top": [
+          "Bergamot",
+          "Ginger",
+          "Lemon"
+        ],
+        "heart": [
+          "Lily of the valley",
+          "Marine notes"
+        ],
+        "base": [
+          "Patchouli",
+          "Oakmoss",
+          "Ambroxan",
+          "Musk"
+        ]
+      },
+      "photoPending": false
+    },
+    {
+      "id": "lattafa-atlas-canyon-5ml",
+      "group": "lattafa-atlas-canyon",
+      "brand": "Lattafa",
+      "name": "Atlas Canyon",
+      "price": 300,
+      "size": 5,
+      "condition": "Seller-filled decant; atomiser details to confirm.",
+      "date": "2026-10-29",
+      "shipping": "Quoted with “+”; extra charges and final total to confirm.",
+      "status": "Confirm current availability.",
+      "source": "https://www.lattafa-usa.com/products/lattafa-atlas-canyon-eau-de-parfum-55ml",
+      "concentration": "Eau de Parfum",
+      "format": "Decant",
+      "pricePlus": true,
+      "image": "assets/community-lattafa-atlas-canyon.webp",
+      "imageSource": "http://www.lattafa-usa.com/cdn/shop/files/lattafa-atlas-canyon-edp-55ml-1.jpg?v=1791565640",
+      "notePyramid": {
+        "top": [
+          "Bergamot",
+          "Ginger",
+          "Lemon"
+        ],
+        "heart": [
+          "Lily of the valley",
+          "Marine notes"
+        ],
+        "base": [
+          "Patchouli",
+          "Oakmoss",
+          "Ambroxan",
+          "Musk"
+        ]
+      },
+      "photoPending": false
+    },
+    {
+      "id": "lattafa-atlas-canyon-10ml",
+      "group": "lattafa-atlas-canyon",
+      "brand": "Lattafa",
+      "name": "Atlas Canyon",
+      "price": 575,
+      "size": 10,
+      "condition": "Seller-filled decant; atomiser details to confirm.",
+      "date": "2026-10-26",
+      "shipping": "Quoted with “+”; extra charges and final total to confirm.",
+      "status": "Confirm current availability.",
+      "source": "https://www.lattafa-usa.com/products/lattafa-atlas-canyon-eau-de-parfum-55ml",
+      "concentration": "Eau de Parfum",
+      "format": "Decant",
+      "pricePlus": true,
+      "image": "assets/community-lattafa-atlas-canyon.webp",
+      "imageSource": "http://www.lattafa-usa.com/cdn/shop/files/lattafa-atlas-canyon-edp-55ml-1.jpg?v=1791565640",
+      "notePyramid": {
+        "top": [
+          "Bergamot",
+          "Ginger",
+          "Lemon"
+        ],
+        "heart": [
+          "Lily of the valley",
+          "Marine notes"
+        ],
+        "base": [
+          "Patchouli",
+          "Oakmoss",
+          "Ambroxan",
+          "Musk"
+        ]
+      },
+      "photoPending": false
+    },
+    {
+      "id": "lattafa-atlas-glacial-valley-bottle",
+      "group": "lattafa-atlas-glacial-valley",
+      "brand": "Lattafa",
+      "name": "Atlas Glacial Valley",
+      "price": 2875,
+      "size": null,
+      "condition": "Bottle condition to confirm.",
+      "date": "2026-10-26",
+      "shipping": "Confirm delivery charges.",
+      "status": "Confirm current availability.",
+      "source": "https://www.lattafa-usa.com/products/lattafa-atlas-glacial-valley-eau-de-parfum-55ml",
+      "concentration": "Eau de Parfum",
+      "notePyramid": {
+        "top": [
+          "Fig",
+          "Pineapple",
+          "Mint"
+        ],
+        "heart": [
+          "Jasmine",
+          "Patchouli",
+          "Sea salt"
+        ],
+        "base": [
+          "Moss",
+          "Musk",
+          "Vanilla",
+          "Amber"
+        ]
+      },
+      "photoPending": false,
+      "image": "assets/community-lattafa-atlas-glacial-valley.webp",
+      "imageSource": "https://www.lattafa-usa.com/cdn/shop/files/lattafa-atlas-glacial-valley-edp-55ml-1.jpg?v=1791565701&width=900"
+    },
+    {
+      "id": "lattafa-atlas-glacial-valley-5ml",
+      "group": "lattafa-atlas-glacial-valley",
+      "brand": "Lattafa",
+      "name": "Atlas Glacial Valley",
+      "price": 300,
+      "size": 5,
+      "condition": "Seller-filled decant; atomiser details to confirm.",
+      "date": "2026-10-29",
+      "shipping": "Quoted with “+”; extra charges and final total to confirm.",
+      "status": "Confirm current availability.",
+      "source": "https://www.lattafa-usa.com/products/lattafa-atlas-glacial-valley-eau-de-parfum-55ml",
+      "concentration": "Eau de Parfum",
+      "format": "Decant",
+      "pricePlus": true,
+      "notePyramid": {
+        "top": [
+          "Fig",
+          "Pineapple",
+          "Mint"
+        ],
+        "heart": [
+          "Jasmine",
+          "Patchouli",
+          "Sea salt"
+        ],
+        "base": [
+          "Moss",
+          "Musk",
+          "Vanilla",
+          "Amber"
+        ]
+      },
+      "photoPending": false,
+      "image": "assets/community-lattafa-atlas-glacial-valley.webp",
+      "imageSource": "https://www.lattafa-usa.com/cdn/shop/files/lattafa-atlas-glacial-valley-edp-55ml-1.jpg?v=1791565701&width=900"
+    },
+    {
+      "id": "lattafa-atlas-glacial-valley-10ml",
+      "group": "lattafa-atlas-glacial-valley",
+      "brand": "Lattafa",
+      "name": "Atlas Glacial Valley",
+      "price": 575,
+      "size": 10,
+      "condition": "Seller-filled decant; atomiser details to confirm.",
+      "date": "2026-10-26",
+      "shipping": "Quoted with “+”; extra charges and final total to confirm.",
+      "status": "Confirm current availability.",
+      "source": "https://www.lattafa-usa.com/products/lattafa-atlas-glacial-valley-eau-de-parfum-55ml",
+      "concentration": "Eau de Parfum",
+      "format": "Decant",
+      "pricePlus": true,
+      "notePyramid": {
+        "top": [
+          "Fig",
+          "Pineapple",
+          "Mint"
+        ],
+        "heart": [
+          "Jasmine",
+          "Patchouli",
+          "Sea salt"
+        ],
+        "base": [
+          "Moss",
+          "Musk",
+          "Vanilla",
+          "Amber"
+        ]
+      },
+      "photoPending": false,
+      "image": "assets/community-lattafa-atlas-glacial-valley.webp",
+      "imageSource": "https://www.lattafa-usa.com/cdn/shop/files/lattafa-atlas-glacial-valley-edp-55ml-1.jpg?v=1791565701&width=900"
+    },
+    {
+      "id": "lattafa-atlas-5ml",
+      "group": "lattafa-atlas",
+      "brand": "Lattafa",
+      "name": "Atlas",
+      "price": 260,
+      "size": 5,
+      "condition": "Seller-filled decant; atomiser details to confirm.",
+      "date": "2026-10-29",
+      "shipping": "Quoted with “+”; extra charges and final total to confirm.",
+      "status": "Confirm current availability.",
+      "source": "https://lattafa.com/product/atlas/",
+      "concentration": "",
+      "format": "Decant",
+      "pricePlus": true,
+      "image": "assets/community-lattafa-atlas.webp",
+      "imageSource": "https://lattafa.com/wp-content/uploads/2024/09/Bottle.png",
+      "notePyramid": {
+        "top": [
+          "Sea notes",
+          "Salt",
+          "Lemon"
+        ],
+        "heart": [
+          "Davana",
+          "Iris"
+        ],
+        "base": [
+          "Ambergris",
+          "Oakmoss",
+          "Sandalwood"
+        ]
+      },
+      "photoPending": false
+    },
+    {
+      "id": "nishane-hundred-silent-ways-x-bottle",
+      "group": "nishane-hundred-silent-ways-x",
+      "brand": "Nishane",
+      "name": "Hundred Silent Ways X",
+      "price": 14500,
+      "size": 100,
+      "condition": "Tester with box and cap.",
+      "date": "2026-10-26",
+      "shipping": "Confirm delivery charges.",
+      "status": "Arranged on request; quoted ETA 1–2 weeks, subject to seller confirmation.",
+      "source": "https://nishane.com/product/hundred-silent-ways-x/",
+      "concentration": "Extrait de Parfum",
+      "image": "assets/community-nishane-hundred-silent-ways-x.webp",
+      "imageSource": "https://nishane.com/wp-content/uploads/2023/04/HSW-X-Collection-Packshot.jpg",
+      "notePyramid": {
+        "top": [
+          "No account yet?"
+        ],
+        "heart": [
+          "No account yet?"
+        ],
+        "base": [
+          "No account yet?"
+        ]
+      },
+      "photoPending": false
+    },
+    {
+      "id": "nishane-hundred-silent-ways-bottle",
+      "group": "nishane-hundred-silent-ways",
+      "brand": "Nishane",
+      "name": "Hundred Silent Ways",
+      "price": 14500,
+      "size": 100,
+      "condition": "Tester with box and cap.",
+      "date": "2026-10-26",
+      "shipping": "Confirm delivery charges.",
+      "status": "Arranged on request; quoted ETA 1–2 weeks, subject to seller confirmation.",
+      "source": "https://nishane.com/product/hundred-silent-ways/",
+      "concentration": "Extrait de Parfum",
+      "image": "assets/community-nishane-hundred-silent-ways.webp",
+      "imageSource": "https://nishane.com/wp-content/uploads/2022/09/a-50ml-18-HUNDRED-SILENT-WAYS.jpg",
+      "notePyramid": {
+        "top": [
+          "No account yet?"
+        ],
+        "heart": [
+          "No account yet?"
+        ],
+        "base": [
+          "No account yet?"
+        ]
+      },
+      "photoPending": false
+    },
+    {
+      "id": "nishane-hacivat-x-bottle",
+      "group": "nishane-hacivat-x",
+      "brand": "Nishane",
+      "name": "Hacivat X",
+      "price": 14500,
+      "size": 100,
+      "condition": "Tester with box and cap.",
+      "date": "2026-10-26",
+      "shipping": "Confirm delivery charges.",
+      "status": "Arranged on request; quoted ETA 1–2 weeks, subject to seller confirmation.",
+      "source": "https://nishane.com/product/hacivat-x/",
+      "concentration": "Extrait de Parfum",
+      "image": "assets/community-nishane-hacivat-x.webp",
+      "imageSource": "https://nishane.com/wp-content/uploads/2023/04/HACIVAT-X-Collection-Packshot.jpg",
+      "notePyramid": {
+        "top": [
+          "Patchouli",
+          "Cedarwood heart",
+          "Haitian vetiver"
+        ],
+        "heart": [
+          "Patchouli",
+          "Cedarwood heart",
+          "Haitian vetiver"
+        ],
+        "base": [
+          "Patchouli",
+          "Cedarwood heart",
+          "Haitian vetiver"
+        ]
+      },
+      "photoPending": false
+    },
+    {
+      "id": "nishane-hacivat-bottle",
+      "group": "nishane-hacivat",
+      "brand": "Nishane",
+      "name": "Hacivat",
+      "price": 14500,
+      "size": 100,
+      "condition": "Tester with box and cap.",
+      "date": "2026-10-26",
+      "shipping": "Confirm delivery charges.",
+      "status": "Arranged on request; quoted ETA 1–2 weeks, subject to seller confirmation.",
+      "source": "https://nishane.com/product/hacivat/",
+      "concentration": "Extrait de Parfum",
+      "image": "assets/community-nishane-hacivat.webp",
+      "imageSource": "https://nishane.com/wp-content/uploads/2022/09/a-50ml-19-HACIVAT.jpg",
+      "notePyramid": {
+        "top": [
+          "Clearwood",
+          "Oakmoss",
+          "Dry timberwood"
+        ],
+        "heart": [
+          "Clearwood",
+          "Oakmoss",
+          "Dry timberwood"
+        ],
+        "base": [
+          "Clearwood",
+          "Oakmoss",
+          "Dry timberwood"
+        ]
+      },
+      "photoPending": false
+    },
+    {
+      "id": "nishane-wulong-cha-x-bottle",
+      "group": "nishane-wulong-cha-x",
+      "brand": "Nishane",
+      "name": "Wulong Cha X",
+      "price": null,
+      "size": 100,
+      "condition": "Tester with box and cap.",
+      "date": "2026-10-26",
+      "shipping": "Confirm delivery charges.",
+      "status": "Tester reported unavailable later on 26 October. Retail may be arranged; ask for a fresh quote.",
+      "source": "https://nishane.com/product/wulong-cha-x/",
+      "concentration": "Extrait de Parfum",
+      "image": "assets/community-nishane-wulong-cha-x.webp",
+      "imageSource": "https://nishane.com/wp-content/uploads/2023/04/WULONG-CHA-X-Collection-Packshot.jpg",
+      "notePyramid": {
+        "top": [
+          "Bergamot",
+          "Yuzu",
+          "Litsea",
+          "Mandarin"
+        ],
+        "heart": [
+          "Musk",
+          "Fig"
+        ],
+        "base": [
+          "Musk",
+          "Fig"
+        ]
+      },
+      "photoPending": false
+    },
+    {
+      "id": "nishane-ani-bottle",
+      "group": "nishane-ani",
+      "brand": "Nishane",
+      "name": "Ani",
+      "price": 14000,
+      "size": null,
+      "condition": "Tester; size, box and cap to confirm.",
+      "date": "2026-10-26",
+      "shipping": "Confirm delivery charges.",
+      "status": "Arranged on request; quoted ETA 1–2 weeks, subject to seller confirmation.",
+      "source": "https://nishane.com/product/ani/",
+      "concentration": "Extrait de Parfum",
+      "image": "assets/community-nishane-ani.webp",
+      "imageSource": "https://nishane.com/wp-content/uploads/2022/09/a-50ml-24-ANI.jpg",
+      "notePyramid": {
+        "top": [
+          "Bergamot",
+          "Green notes",
+          "Blue ginger",
+          "Pink pepper"
+        ],
+        "heart": [
+          "Blackcurrant",
+          "Turkish rose",
+          "Cardamom"
+        ],
+        "base": [
+          "Patchouli",
+          "Cedarwood",
+          "Vanilla",
+          "Benzoin",
+          "Ambergris",
+          "Musk",
+          "Sandalwood"
+        ]
+      },
+      "photoPending": false
+    },
+    {
+      "id": "nishane-nefs-bottle",
+      "group": "nishane-nefs",
+      "brand": "Nishane",
+      "name": "Nefs",
+      "price": 20000,
+      "size": null,
+      "condition": "Tester; size, box and cap to confirm.",
+      "date": "2026-10-26",
+      "shipping": "Confirm delivery charges.",
+      "status": "Arranged on request; quoted ETA 1–2 weeks, subject to seller confirmation.",
+      "source": "https://nishane.com/product/nefs/",
+      "concentration": "Extrait de Parfum",
+      "image": "assets/community-nishane-nefs.webp",
+      "imageSource": "https://nishane.com/wp-content/uploads/2022/09/a-50ml-16-NEFS.jpg",
+      "notePyramid": {
+        "top": [
+          "Honey",
+          "Violet",
+          "Sage",
+          "Saffron",
+          "Fig"
+        ],
+        "heart": [
+          "Rose",
+          "Osmanthus",
+          "Geranium",
+          "Jasmine",
+          "Nutmeg"
+        ],
+        "base": [
+          "Amber",
+          "Whiskey",
+          "Oud",
+          "Cinnamon",
+          "Cedarwood",
+          "Gurjum",
+          "Leather",
+          "Vanilla"
+        ]
+      },
+      "photoPending": false
+    },
+    {
+      "id": "nishane-shem-bottle",
+      "group": "nishane-shem",
+      "brand": "Nishane",
+      "name": "Shem",
+      "price": 19000,
+      "size": null,
+      "condition": "Tester; size, box and cap to confirm.",
+      "date": "2026-10-26",
+      "shipping": "Confirm delivery charges.",
+      "status": "Arranged on request; quoted ETA 1–2 weeks, subject to seller confirmation.",
+      "source": "https://nishane.com/product/shem/",
+      "concentration": "Extrait de Parfum",
+      "image": "assets/community-nishane-shem.webp",
+      "imageSource": "https://nishane.com/wp-content/uploads/2022/09/1.jpg",
+      "notePyramid": {
+        "top": [
+          "Cardamom",
+          "Turkish rose",
+          "Geranium"
+        ],
+        "heart": [
+          "Osmanthus",
+          "Amber",
+          "Cypriol"
+        ],
+        "base": [
+          "Elemi",
+          "Vetiver",
+          "Leather"
+        ]
+      },
+      "photoPending": false
+    },
+    {
+      "id": "nishane-mana-bottle",
+      "group": "nishane-mana",
+      "brand": "Nishane",
+      "name": "Mana",
+      "price": 19000,
+      "size": null,
+      "condition": "Tester; size, box and cap to confirm.",
+      "date": "2026-10-26",
+      "shipping": "Confirm delivery charges.",
+      "status": "Arranged on request; quoted ETA 1–2 weeks, subject to seller confirmation.",
+      "source": "https://nishane.com/product/mana/",
+      "concentration": "Extrait de Parfum",
+      "image": "assets/community-nishane-mana.webp",
+      "imageSource": "https://nishane.com/wp-content/uploads/2022/09/2.jpg",
+      "notePyramid": {
+        "top": [
+          "Cardamom",
+          "Saffron",
+          "Geranium",
+          "Black pepper"
+        ],
+        "heart": [
+          "Turkish rose",
+          "Castoreum",
+          "Suede",
+          "Oud"
+        ],
+        "base": [
+          "Cistus labdanum",
+          "Patchouli",
+          "Sandalwood",
+          "Moss guaiacwood",
+          "Benzoin",
+          "Olibanum",
+          "Musk"
+        ]
+      },
+      "photoPending": false
+    },
+    {
+      "id": "nishane-tempfluo-bottle",
+      "group": "nishane-tempfluo",
+      "brand": "Nishane",
+      "name": "Tempfluo",
+      "price": 14000,
+      "size": null,
+      "condition": "Tester; size, box and cap to confirm.",
+      "date": "2026-10-26",
+      "shipping": "Confirm delivery charges.",
+      "status": "Arranged on request; quoted ETA 1–2 weeks, subject to seller confirmation.",
+      "source": "https://nishane.com/product/tempfluo/",
+      "concentration": "Extrait de Parfum",
+      "image": "assets/community-nishane-tempfluo.webp",
+      "imageSource": "https://nishane.com/wp-content/uploads/2022/08/Nisahane_Tmpfluo_50ml.jpg",
+      "notePyramid": {
+        "top": [
+          "Bergamot",
+          "Mandarin",
+          "Saffron"
+        ],
+        "heart": [
+          "Jasmine sambac absolute",
+          "Orange flower",
+          "Praline"
+        ],
+        "base": [
+          "No account yet?"
+        ]
+      },
+      "photoPending": false
+    },
+    {
+      "id": "nishane-safran-colognise-bottle",
+      "group": "nishane-safran-colognise",
+      "brand": "Nishane",
+      "name": "Safran Colognisé",
+      "price": 9500,
+      "size": null,
+      "condition": "Tester; size, box and cap to confirm.",
+      "date": "2026-10-26",
+      "shipping": "Confirm delivery charges.",
+      "status": "Arranged on request; quoted ETA 1–2 weeks, subject to seller confirmation.",
+      "source": "https://nishane.com/product/safran-colognise/",
+      "concentration": "Extrait de Cologne",
+      "image": "assets/community-nishane-safran-colognise.webp",
+      "imageSource": "https://nishane.com/wp-content/uploads/2022/09/a-100ml-C02-SAFRAN-COLOGNISE-1.jpg",
+      "notePyramid": {
+        "top": [
+          "Musk",
+          "Ambergris",
+          "Leather"
+        ],
+        "heart": [
+          "Musk",
+          "Ambergris",
+          "Leather"
+        ],
+        "base": [
+          "Musk",
+          "Ambergris",
+          "Leather"
+        ]
+      },
+      "photoPending": false
+    },
+    {
+      "id": "nishane-deziro-bottle",
+      "group": "nishane-deziro",
+      "brand": "Nishane",
+      "name": "Deziro",
+      "price": 14500,
+      "size": null,
+      "condition": "Tester; size, box and cap to confirm.",
+      "date": "2026-10-26",
+      "shipping": "Confirm delivery charges.",
+      "status": "Arranged on request; quoted ETA 1–2 weeks, subject to seller confirmation.",
+      "source": "https://nishane.com/product/deziro/",
+      "concentration": "Extrait de Parfum",
+      "image": "assets/community-nishane-deziro.webp",
+      "imageSource": "https://nishane.com/wp-content/uploads/2024/05/a-50ml-Dezro-copy-2.jpg",
+      "notePyramid": {
+        "top": [
+          "Star anise",
+          "Carrot",
+          "Mint",
+          "Cypriol",
+          "Geranium"
+        ],
+        "heart": [
+          "Star anise",
+          "Carrot",
+          "Mint",
+          "Cypriol",
+          "Geranium"
+        ],
+        "base": [
+          "No account yet?"
+        ]
+      },
+      "photoPending": false
+    },
+    {
+      "id": "nishane-wulong-cha-bottle",
+      "group": "nishane-wulong-cha",
+      "brand": "Nishane",
+      "name": "Wulong Cha",
+      "price": 14000,
+      "size": null,
+      "condition": "Tester; size, box and cap to confirm.",
+      "date": "2026-10-26",
+      "shipping": "Confirm delivery charges.",
+      "status": "Arranged on request; quoted ETA 1–2 weeks, subject to seller confirmation.",
+      "source": "https://nishane.com/product/wulong-cha/",
+      "concentration": "Extrait de Parfum",
+      "image": "assets/community-nishane-wulong-cha.webp",
+      "imageSource": "https://nishane.com/wp-content/uploads/2022/09/a-50ml-01-WULONG-CHA-1.jpg",
+      "notePyramid": {
+        "top": [
+          "Bergamot",
+          "Orange",
+          "Litsea",
+          "Mandarin"
+        ],
+        "heart": [
+          "Musk",
+          "Fig"
+        ],
+        "base": [
+          "Musk",
+          "Fig"
+        ]
+      },
+      "photoPending": false
+    },
+    {
+      "id": "chanel-bleu-edt-bottle",
+      "group": "chanel-bleu-edt",
+      "brand": "Chanel",
+      "name": "Bleu de Chanel EDT",
+      "price": 10300,
+      "size": null,
+      "condition": "Tester; size, box and cap to confirm.",
+      "date": "2026-10-27",
+      "shipping": "Confirm delivery charges.",
+      "status": "Confirm current availability.",
+      "source": "https://www.chanel.com/us/fragrance/p/107460/bleu-de-chanel-eau-de-toilette-spray/",
+      "concentration": "Eau de Toilette",
+      "publishedAccords": "Citrus, aromatic accords, cedar and New Caledonian sandalwood.",
+      "photoPending": true,
+      "image": "assets/community-photo-pending.webp"
+    },
+    {
+      "id": "chanel-bleu-edp-bottle",
+      "group": "chanel-bleu-edp",
+      "brand": "Chanel",
+      "name": "Bleu de Chanel EDP",
+      "price": 11300,
+      "size": null,
+      "condition": "Tester; size, box and cap to confirm.",
+      "date": "2026-10-27",
+      "shipping": "Confirm delivery charges.",
+      "status": "Confirm current availability.",
+      "source": "https://www.chanel.com/us/fragrance/p/107360/bleu-de-chanel-eau-de-parfum-spray/",
+      "concentration": "Eau de Parfum",
+      "publishedAccords": "Aromatic woods, musky notes and ambery cedar.",
+      "photoPending": true,
+      "image": "assets/community-photo-pending.webp"
+    },
+    {
+      "id": "chanel-bleu-parfum-bottle",
+      "group": "chanel-bleu-parfum",
+      "brand": "Chanel",
+      "name": "Bleu de Chanel Parfum",
+      "price": 12300,
+      "size": null,
+      "condition": "Tester; size, box and cap to confirm.",
+      "date": "2026-10-27",
+      "shipping": "Confirm delivery charges.",
+      "status": "Confirm current availability.",
+      "source": "https://www.chanel.com/us/fragrance/p/107180/bleu-de-chanel-parfum-spray/",
+      "concentration": "Parfum",
+      "publishedAccords": "Cedarwood and New Caledonian sandalwood.",
+      "photoPending": true,
+      "image": "assets/community-photo-pending.webp"
+    },
+    {
+      "id": "chanel-allure-homme-sport-eau-extreme-bottle",
+      "group": "chanel-allure-homme-sport-eau-extreme",
+      "brand": "Chanel",
+      "name": "Allure Homme Sport Eau Extrême",
+      "price": 11400,
+      "size": null,
+      "condition": "Tester; size, box and cap to confirm.",
+      "date": "2026-10-27",
+      "shipping": "Confirm delivery charges.",
+      "status": "Confirm current availability.",
+      "source": "https://www.chanel.com/us/fragrance/p/123580/allure-homme-sport-eau-extreme-eau-de-parfum-spray/",
+      "concentration": "Eau de Parfum",
+      "publishedAccords": "Mandarin, cypress, white musk and an almond-like tonka bean accord.",
+      "photoPending": true,
+      "image": "assets/community-photo-pending.webp"
+    },
+    {
+      "id": "chanel-allure-homme-edition-blanche-bottle",
+      "group": "chanel-allure-homme-edition-blanche",
+      "brand": "Chanel",
+      "name": "Allure Homme Édition Blanche",
+      "price": 11400,
+      "size": null,
+      "condition": "Tester; size, box and cap to confirm.",
+      "date": "2026-10-27",
+      "shipping": "Confirm delivery charges.",
+      "status": "Confirm current availability.",
+      "source": "https://www.chanel.com/us/fragrance/p/127460/allure-homme-edition-blanche-eau-de-parfum-spray/",
+      "concentration": "Eau de Parfum",
+      "publishedAccords": "Lemon, New Caledonian sandalwood, Haitian vetiver and Madagascan vanilla.",
+      "photoPending": true,
+      "image": "assets/community-photo-pending.webp"
+    },
+    {
+      "id": "chanel-chance-edp-bottle",
+      "group": "chanel-chance-edp",
+      "brand": "Chanel",
+      "name": "Chance EDP",
+      "price": 10200,
+      "size": null,
+      "condition": "Tester; size, box and cap to confirm.",
+      "date": "2026-10-27",
+      "shipping": "Confirm delivery charges.",
+      "status": "Confirm current availability.",
+      "source": "https://www.chanel.com/us/fragrance/p/126520/chance-eau-de-parfum-spray/",
+      "concentration": "Eau de Parfum",
+      "publishedAccords": "Pink pepper, jasmine and patchouli, with white musk and vanilla.",
+      "photoPending": true,
+      "image": "assets/community-photo-pending.webp"
+    },
+    {
+      "id": "chanel-chance-eau-tendre-edp-bottle",
+      "group": "chanel-chance-eau-tendre-edp",
+      "brand": "Chanel",
+      "name": "Chance Eau Tendre EDP",
+      "price": 10300,
+      "size": null,
+      "condition": "Tester; size, box and cap to confirm.",
+      "date": "2026-10-27",
+      "shipping": "Confirm delivery charges.",
+      "status": "Confirm current availability.",
+      "source": "https://www.chanel.com/us/fragrance/p/126260/chance-eau-tendre-eau-de-parfum-spray/",
+      "concentration": "Eau de Parfum",
+      "publishedAccords": "Rose and jasmine in a floral-fruity composition.",
+      "photoPending": true,
+      "image": "assets/community-photo-pending.webp"
+    },
+    {
+      "id": "chanel-chance-eau-splendide-bottle",
+      "group": "chanel-chance-eau-splendide",
+      "brand": "Chanel",
+      "name": "Chance Eau Splendide",
+      "price": 10800,
+      "size": null,
+      "condition": "Tester; size, box and cap to confirm.",
+      "date": "2026-10-27",
+      "shipping": "Confirm delivery charges.",
+      "status": "Confirm current availability.",
+      "source": "https://www.chanel.com/us/fragrance/p/136210/chance-eau-splendide-eau-de-parfum-spray/",
+      "concentration": "Eau de Parfum",
+      "publishedAccords": "Raspberry accord, rose geranium, cedar and white musk.",
+      "photoPending": true,
+      "image": "assets/community-photo-pending.webp"
+    },
+    {
+      "id": "chanel-chance-eau-fraiche-bottle",
+      "group": "chanel-chance-eau-fraiche",
+      "brand": "Chanel",
+      "name": "Chance Eau Fraîche",
+      "price": 10500,
+      "size": null,
+      "condition": "Tester; size, box and cap to confirm.",
+      "date": "2026-10-27",
+      "shipping": "Confirm delivery charges.",
+      "status": "Confirm current availability.",
+      "source": "https://www.chanel.com/us/fragrance/p/136420/chance-eau-fraiche-eau-de-parfum-spray/",
+      "concentration": "Confirm EDT or EDP with seller",
+      "photoPending": true,
+      "image": "assets/community-photo-pending.webp"
+    },
+    {
+      "id": "chanel-coco-edp-bottle",
+      "group": "chanel-coco-edp",
+      "brand": "Chanel",
+      "name": "Coco EDP",
+      "price": 10300,
+      "size": null,
+      "condition": "Tester; size, box and cap to confirm.",
+      "date": "2026-10-27",
+      "shipping": "Confirm delivery charges.",
+      "status": "Confirm current availability.",
+      "source": "https://www.chanel.com/us/fragrance/p/113530/coco-eau-de-parfum-spray/",
+      "concentration": "Eau de Parfum",
+      "photoPending": true,
+      "image": "assets/community-photo-pending.webp"
+    },
+    {
+      "id": "chanel-coco-mademoiselle-edp-bottle",
+      "group": "chanel-coco-mademoiselle-edp",
+      "brand": "Chanel",
+      "name": "Coco Mademoiselle EDP",
+      "price": 11300,
+      "size": null,
+      "condition": "Tester; size, box and cap to confirm.",
+      "date": "2026-10-27",
+      "shipping": "Confirm delivery charges.",
+      "status": "Confirm current availability.",
+      "source": "https://www.chanel.com/us/fragrance/p/116520/coco-mademoiselle-eau-de-parfum-spray/",
+      "concentration": "Eau de Parfum",
+      "photoPending": true,
+      "image": "assets/community-photo-pending.webp"
+    },
+    {
+      "id": "chanel-coco-mademoiselle-intense-bottle",
+      "group": "chanel-coco-mademoiselle-intense",
+      "brand": "Chanel",
+      "name": "Coco Mademoiselle EDP Intense",
+      "price": 11400,
+      "size": null,
+      "condition": "Tester; size, box and cap to confirm.",
+      "date": "2026-10-27",
+      "shipping": "Confirm delivery charges.",
+      "status": "Confirm current availability.",
+      "source": "https://www.chanel.com/us/fragrance/p/116650/coco-mademoiselle-eau-de-parfum-intense-spray/",
+      "concentration": "Eau de Parfum",
+      "photoPending": true,
+      "image": "assets/community-photo-pending.webp"
+    },
+    {
+      "id": "chanel-coco-noir-bottle",
+      "group": "chanel-coco-noir",
+      "brand": "Chanel",
+      "name": "Coco Noir",
+      "price": 10300,
+      "size": null,
+      "condition": "Tester; size, box and cap to confirm.",
+      "date": "2026-10-27",
+      "shipping": "Confirm delivery charges.",
+      "status": "Confirm current availability.",
+      "source": "https://www.chanel.com/us/fragrance/p/113660/coco-noir-eau-de-parfum-spray/",
+      "concentration": "Eau de Parfum",
+      "photoPending": true,
+      "image": "assets/community-photo-pending.webp"
+    },
+    {
+      "id": "chanel-no5-edp-bottle",
+      "group": "chanel-no5-edp",
+      "brand": "Chanel",
+      "name": "N°5 EDP",
+      "price": 11300,
+      "size": null,
+      "condition": "Tester; size, box and cap to confirm.",
+      "date": "2026-10-27",
+      "shipping": "Confirm delivery charges.",
+      "status": "Confirm current availability.",
+      "source": "https://www.chanel.com/us/fragrance/p/125530/n5-eau-de-parfum-spray/",
+      "concentration": "Eau de Parfum",
+      "photoPending": true,
+      "image": "assets/community-photo-pending.webp"
+    },
+    {
+      "id": "chanel-platinum-egoiste-bottle",
+      "group": "chanel-platinum-egoiste",
+      "brand": "Chanel",
+      "name": "Platinum Égoïste",
+      "price": 10400,
+      "size": null,
+      "condition": "Tester; size, box and cap to confirm.",
+      "date": "2026-10-27",
+      "shipping": "Confirm delivery charges.",
+      "status": "Confirm current availability.",
+      "source": "https://www.chanel.com/us/fragrance/p/124460/platinum-egoiste-eau-de-toilette-spray/",
+      "concentration": "Eau de Toilette",
+      "photoPending": true,
+      "image": "assets/community-photo-pending.webp"
+    },
+    {
+      "id": "chopard-black-incense-malaki-bottle",
+      "group": "chopard-black-incense-malaki",
+      "brand": "Chopard",
+      "name": "Black Incense Malaki",
+      "price": 4250,
+      "size": null,
+      "condition": "Tester; size, box and cap to confirm.",
+      "date": "2026-10-28",
+      "shipping": "Shipping included in the community quote; confirm delivery coverage.",
+      "status": "Seller reported 2 units on 28 October; reconfirm current stock.",
+      "source": "https://www.chopard.com/en-us/perfume-for-men/95201-0442.html",
+      "concentration": "Eau de Parfum",
+      "image": "assets/community-chopard-black-incense-malaki.webp",
+      "imageSource": "https://objects-prod.cdn.chopard.com/q_auto,f_auto,dpr_auto/e_trim/w_iw,h_ih,c_lpad,g_center/c_pad,ar_1:1,w_480,e_sharpen:60/ProductsAssets/Web/95201-0442_01.png",
+      "photoPending": false
+    },
+    {
+      "id": "mykonos-sorrento-bottle",
+      "group": "mykonos-sorrento",
+      "brand": "Mykonos",
+      "name": "Sorrento",
+      "price": 2899,
+      "size": 100,
+      "condition": "Bottle condition to confirm.",
+      "date": "2026-10-28",
+      "shipping": "Shipping included in the community quote; confirm delivery coverage.",
+      "status": "Confirm current availability.",
+      "source": "https://officialmykonos.com/products/mykonos-sorrento-extrait-de-parfum-50ml",
+      "concentration": "",
+      "photoPending": true,
+      "image": "assets/community-photo-pending.webp"
+    },
+    {
+      "id": "mykonos-inception-bottle",
+      "group": "mykonos-inception",
+      "brand": "Mykonos",
+      "name": "Inception",
+      "price": 2899,
+      "size": 100,
+      "condition": "Bottle condition to confirm.",
+      "date": "2026-10-28",
+      "shipping": "Shipping included in the community quote; confirm delivery coverage.",
+      "status": "Confirm current availability.",
+      "source": "https://officialmykonos.com/products/mykonos-inception-extrait-de-parfum-50ml",
+      "concentration": "",
+      "image": "assets/community-mykonos-inception.webp",
+      "imageSource": "http://officialmykonos.com/cdn/shop/files/inception_100ml_sku.jpg?v=1778043194",
+      "photoPending": false
+    },
+    {
+      "id": "mykonos-conquer-bottle",
+      "group": "mykonos-conquer",
+      "brand": "Mykonos",
+      "name": "Conquer",
+      "price": 2899,
+      "size": 100,
+      "condition": "Bottle condition to confirm.",
+      "date": "2026-10-28",
+      "shipping": "Shipping included in the community quote; confirm delivery coverage.",
+      "status": "Confirm current availability.",
+      "source": "https://officialmykonos.com/products/mykonos-conquer-extrait-de-parfum-100ml",
+      "concentration": "",
+      "image": "assets/community-mykonos-conquer.webp",
+      "imageSource": "http://officialmykonos.com/cdn/shop/files/conquer_50ml_sku-2.jpg?v=1781704527",
+      "photoPending": false
+    },
+    {
+      "id": "mykonos-california-blue-bottle",
+      "group": "mykonos-california-blue",
+      "brand": "Mykonos",
+      "name": "California Blue",
+      "price": 2850,
+      "size": 100,
+      "condition": "Bottle condition to confirm.",
+      "date": "2026-10-28",
+      "shipping": "Shipping included in the community quote; confirm delivery coverage.",
+      "status": "Confirm current availability.",
+      "source": "https://officialmykonos.com/products/mykonos-california-blue-extrait-de-parfum-50ml",
+      "concentration": "",
+      "photoPending": false,
+      "image": "assets/community-mykonos-california-blue.webp",
+      "imageSource": "https://officialmykonos.com/cdn/shop/files/california_blue_50ml_sku-2.jpg?v=1788852387&width=900"
+    },
+    {
+      "id": "mykonos-imperium-bottle",
+      "group": "mykonos-imperium",
+      "brand": "Mykonos",
+      "name": "Imperium",
+      "price": 3350,
+      "size": 100,
+      "condition": "Bottle condition to confirm.",
+      "date": "2026-10-28",
+      "shipping": "Shipping included in the community quote; confirm delivery coverage.",
+      "status": "Confirm current availability.",
+      "source": "https://officialmykonos.com/products/mykonos-imperium-extrait-de-parfum-50ml",
+      "concentration": "",
+      "photoPending": true,
+      "image": "assets/community-photo-pending.webp"
+    },
+    {
+      "id": "arabiyat-prestige-marwa-extrait-bottle",
+      "group": "arabiyat-prestige-marwa-extrait",
+      "brand": "Arabiyat Prestige",
+      "name": "Marwa Extrait",
+      "price": 3375,
+      "size": null,
+      "condition": "Bottle condition to confirm.",
+      "date": "2026-10-29",
+      "shipping": "Shipping included in the community quote; confirm delivery coverage.",
+      "status": "Seller reported 2 units on 29 October; reconfirm current stock.",
+      "source": "https://myperfumes.ae/collections/extrait-de-parfum/products/arabiyat-prestige-marwa-extrait-de-parfum-60ml-unisex",
+      "concentration": "Extrait de Parfum",
+      "notePyramid": {
+        "top": [
+          "Bergamot",
+          "Petitgrain",
+          "Ginger"
+        ],
+        "heart": [
+          "Florals",
+          "Tea",
+          "Incense"
+        ],
+        "base": [
+          "Guaiacwood",
+          "Ambroxan",
+          "Musk"
+        ]
+      },
+      "photoPending": false,
+      "image": "assets/community-arabiyat-prestige-marwa-extrait.webp",
+      "imageSource": "https://myperfumes.ae/cdn/shop/files/Marwa_Extrait-1_1100x.jpg?v=1788867498"
+    }
+  ]
+}
