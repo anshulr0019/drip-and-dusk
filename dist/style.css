@@ -404,7 +404,7 @@ dialog:not(.owner-dialog) .modal-head .icon-btn{min-width:44px;min-height:44px}
 #storefront .brand-row>.stock-dot,#storefront .stock-dot{font-size:var(--t-xs);font-weight:400;letter-spacing:0;text-transform:none;color:var(--c-muted)}
 #storefront .stock-dot:before{width:6px;height:6px;margin-right:var(--s-1);background:#6f7a58;vertical-align:1px}
 #storefront .stock-dot.out:before{background:#9a948a}
-#storefront .product-name{position:static;display:block;min-height:0;margin:-11px 0 -7px;padding:11px 0;color:var(--c-ink);font:400 var(--t-lg)/1.25 var(--f-serif);letter-spacing:-.01em}
+#storefront .product-name{position:static;display:block;min-height:0;margin:-12px 0 -8px;padding:12px 0;color:var(--c-ink);font:400 var(--t-lg)/1.25 var(--f-serif);letter-spacing:-.01em}
 #storefront .product-name::after{content:'';position:absolute;inset:0;z-index:1}
 #storefront .product-name:focus-visible{outline:none}
 #storefront .product-name:focus-visible::after{outline:2px solid var(--c-focus);outline-offset:-2px}
