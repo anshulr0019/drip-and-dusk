@@ -442,6 +442,8 @@ dialog:not(.owner-dialog) .modal-head .icon-btn{min-width:44px;min-height:44px}
 @media(max-width:760px){
  #storefront :is(.fineprint,.catalogue-foot p,.section-heading .text-link,.feature-copy .price small,.featured-heading>p,.approval-label,.footer-bottom,.footer-bottom span,.footer-policies a,.discovery-intro){font-size:var(--t-xs)}
  #storefront .feature-copy p{font-size:var(--t-xs)}
+ /* The featured edit sits on a dark panel, so its price and link keep light ink over the ink-on-paper defaults above. */
+ #storefront .feature-copy .price{color:#f0eddd}#storefront .feature-copy .price small{color:#c2bfae}#storefront .feature-copy .text-link{color:#ece7dc;text-decoration-color:#c9b78f}#storefront .feature-copy .text-link:hover{text-decoration-color:#ece7dc}
  #storefront .section-heading .text-link{white-space:normal;max-width:none}
 }
 
