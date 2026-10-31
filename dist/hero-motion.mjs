@@ -29,8 +29,14 @@ export function initHeroMotion({document:doc=document,window:win=window}={}){
   }
   request();
  }
- win.addEventListener('scroll',request,{passive:true});
- win.addEventListener('resize',request,{passive:true});
+ // The scroll/resize listeners only exist while the hero is on screen; the page below it costs nothing. Without IntersectionObserver they stay attached.
+ let listening=false;
+ function listen(on){if(on===listening)return;listening=on;const method=on?'addEventListener':'removeEventListener';win[method]?.('scroll',request,{passive:true});win[method]?.('resize',request,{passive:true});}
+ if(win.IntersectionObserver){
+  new win.IntersectionObserver(entries=>{const visible=entries[entries.length-1].isIntersecting;hero.classList.toggle('is-offscreen',!visible);listen(visible);
+   // One last frame on the way out settles the depth variables at their end value.
+   request();}).observe(hero);
+ }else listen(true);
  hero.addEventListener('pointermove',e=>{
   if(!finePointer.matches)return;const rect=hero.getBoundingClientRect();
   targetX=Math.max(-1,Math.min(1,((e.clientX-rect.left)/rect.width-.5)*2));targetY=Math.max(-1,Math.min(1,((e.clientY-rect.top)/rect.height-.5)*2));request();
@@ -42,7 +48,7 @@ export function initHeroMotion({document:doc=document,window:win=window}={}){
 }
 
 const REVEAL='.section-heading,.featured-heading,.scent-edit,.product-card,.feature-card,.order-step,.story-heading,.clarity-card,.faq-list details,.contact-section>div,.benefit-strip>span';
-/** Storefront sections and cards rise into place as they scroll into view, including cards
+/** Storefront sections and cards fade up a few pixels as they scroll into view, including cards
  * rendered later by filters and pagination. Without IntersectionObserver or with reduced motion,
  * nothing is hidden. */
 export function initReveal({document:doc=document,window:win=window,root=doc.querySelector('#storefront')}={}){
@@ -53,7 +59,7 @@ export function initReveal({document:doc=document,window:win=window,root=doc.que
    if(el.classList.contains('reveal-item'))continue;
    // Siblings arrive in a short cascade, capped so long grids never feel slow.
    const index=[...el.parentElement.children].indexOf(el);
-   el.style.setProperty('--reveal-delay',(index%4)*80+'ms');el.classList.add('reveal-item');observer.observe(el);
+   el.style.setProperty('--reveal-delay',(index%4)*40+'ms');el.classList.add('reveal-item');observer.observe(el);
   }
  }
  doc.documentElement.classList.add('reveal-ready');refresh();

@@ -16,8 +16,8 @@ export function createCartFeedback({document:doc=document,window:win=window}={})
   (doc.querySelector('dialog[open]')||doc.body).append(panel);if(typeof panel.showPopover==='function')panel.showPopover();
   panel.classList.add('is-visible');
   animate(panel,[{opacity:0,transform:'translateY(-9px) scale(.97)'},{opacity:1,transform:'translateY(2px) scale(1.005)',offset:.72},{opacity:1,transform:'translateY(0) scale(1)'}],{duration:360,easing:'cubic-bezier(.2,.7,.25,1)'});
-  const count=doc.querySelector('#bag-count'),bag=doc.querySelector('.bag-button');
-  animate(count,[{transform:'scale(1)'},{transform:'scale(1.4)',background:'#9b8252',offset:.4},{transform:'scale(.94)',offset:.74},{transform:'scale(1)'}],{duration:480,easing:'cubic-bezier(.2,.7,.3,1)'});
+  // The bag count's pulse is a CSS class set by renderCounters (app.mjs), so it also fires for changes made inside the bag.
+  const bag=doc.querySelector('.bag-button');
   animate(bag?.querySelector('svg'),[{transform:'rotate(0)'},{transform:'rotate(-12deg)',offset:.25},{transform:'rotate(9deg)',offset:.5},{transform:'rotate(-4deg)',offset:.75},{transform:'rotate(0)'}],{duration:500,easing:'ease-out'});
   animate(panel.querySelector('.cart-feedback-check'),[{transform:'scale(.65) rotate(-18deg)'},{transform:'scale(1.13) rotate(5deg)',offset:.65},{transform:'scale(1) rotate(0)'}],{duration:430,easing:'ease-out'});
   if(source?.isConnected)animate(source,[{transform:'scale(1)'},{transform:'scale(.96)',offset:.25},{transform:'scale(1.025)',offset:.65},{transform:'scale(1)'}],{duration:300,easing:'ease-out'});

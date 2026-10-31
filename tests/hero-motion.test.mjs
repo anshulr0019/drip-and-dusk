@@ -41,3 +41,13 @@ test('cards rendered later still reveal once in view; reduced motion hides nothi
  const late=make();late.parentElement=parent;cards.push(late);mutation();assert.equal(observed.length,3);
  const calm={documentElement:{classList:classes()}};initReveal({document:calm,window:{...win,matchMedia:()=>({matches:true})},root});assert.equal(calm.documentElement.classList.contains('reveal-ready'),false);
 });
+test('scroll and resize listeners exist only while the hero is on screen',()=>{
+ const live=new Set(),frames=[];let notify;
+ const classList=classes(),hero=Object.assign(new EventTarget(),{classList,style:{setProperty(){},removeProperty(){}},getBoundingClientRect:()=>({top:0,left:0,width:1000,height:500})});
+ const win={matchMedia:q=>Object.assign(new EventTarget(),{matches:!q.includes('reduce')}),addEventListener:n=>live.add(n),removeEventListener:n=>live.delete(n),requestAnimationFrame:f=>{frames.push(f);return frames.length},IntersectionObserver:class{constructor(cb){notify=cb}observe(){}}};
+ initHeroMotion({document:{querySelector:s=>s==='.hero'?hero:null},window:win});
+ assert.equal(live.size,0,'nothing listens before the first visibility report');
+ notify([{isIntersecting:true}]);assert.deepEqual([...live].sort(),['resize','scroll']);assert.equal(classList.contains('is-offscreen'),false);
+ notify([{isIntersecting:false}]);assert.equal(live.size,0);assert.equal(classList.contains('is-offscreen'),true);
+ notify([{isIntersecting:true}]);assert.equal(live.size,2);
+});

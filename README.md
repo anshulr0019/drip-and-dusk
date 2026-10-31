@@ -102,6 +102,8 @@ A signed anonymous visitor cookie separates per-browser rate limits for customer
 
 Run the bounded, read-only first-visit check with `node scripts/traffic-check.mjs https://drip-and-dusk-nine.vercel.app 200 400 h2`. It requests public pages/APIs and media only, and creates no orders, sign-ins or messages. Reports are written under `output/performance/`. This measures HTTP traffic from one generator, not browser rendering or an uptime guarantee.
 
+Run `node scripts/image-variants.mjs` (needs `cwebp` from libwebp) to write the ~480px WebP copies in `dist/assets/sm/` and the `dist/image-variants.mjs` list that product cards use for `srcset`. Rerun it whenever catalogue photos are added, or replaced under the same filename, then commit the regenerated files.
+
 The hero is a still photograph, so there is no background film to download. Profiles: omit the last argument for a standard first visit, or pass `critical` to match earlier reports. HTTP/2 mode uses four established TLS connections with multiplexed requests and requests compressed responses like a browser.
 
 On 29 October 2026, 200 simulated first visits against the live site completed 5,200 requests with zero errors (95th-percentile time to first byte 203 ms, APIs 399 ms), measured before the video was removed and the faster loading changes were deployed. Earlier 150-visitor runs requested uncompressed responses and overstated transfer sizes about eightfold. This is a single-generator browsing result, not an uptime guarantee.
