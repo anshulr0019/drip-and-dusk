@@ -7,5 +7,7 @@
   "r2_buckets": [{ "binding": "MEDIA", "bucket_name": "drip-and-dusk-media" }],
   "d1_databases": [{ "binding": "DB", "database_name": "drip-and-dusk-orders", "database_id": "REPLACE_WITH_YOUR_D1_DATABASE_ID", "migrations_dir": "migrations" }],
   "triggers": { "crons": ["*/5 * * * *"] },
-  "vars": { "COMMERCE_MODE": "sandbox", "PUBLIC_ORIGIN": "https://REPLACE_WITH_YOUR_CHECKOUT_DOMAIN", "ALLOW_SANDBOX_MESSAGES": "false" }
+  // Secrets (set with `wrangler secret put`, never as vars): TRACKING_SECRET, AUTH_SESSION_SECRET, PROXY_SIGNING_SECRET (32+ characters, the same value as the Vercel environment variable of that name), and the others listed in .dev.vars.example.
+  // REQUIRE_SIGNED_PROXY ("true" to enable) is a var, off by default; see README "Deployment order" before turning it on.
+  "vars": { "RAZORPAY_ENABLED": "false", "COMMERCE_MODE": "sandbox", "PUBLIC_ORIGIN": "https://REPLACE_WITH_YOUR_CHECKOUT_DOMAIN", "ALLOW_SANDBOX_MESSAGES": "false" }
 }

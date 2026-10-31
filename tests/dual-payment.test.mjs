@@ -10,7 +10,7 @@ const folder=new URL('../backend/migrations/',import.meta.url),schema=(await Pro
 const origin='http://127.0.0.1:4175',address={name:'Private Customer',phone:'9876543210',line1:'Private Address 12',city:'Pune',state:'Maharashtra',postcode:'411001'},owner=crypto.randomUUID()+crypto.randomUUID();
 function setup(t,{connected=true}={}){
  const DB=new LocalD1();DB.exec(schema);DB.exec(seedSQL());t.after(()=>DB.close());let clock=1800000000000,createCalls=0,failCreate=false,paymentPatch={};
- const env={DB,COMMERCE_MODE:'manual_demo',PUBLIC_ORIGIN:origin,TRACKING_SECRET:crypto.randomUUID()+crypto.randomUUID(),ADMIN_SECRET:owner,...(connected?{RAZORPAY_KEY_ID:'rzp_test_'+crypto.randomUUID().replaceAll('-',''),RAZORPAY_KEY_SECRET:crypto.randomUUID(),RAZORPAY_WEBHOOK_SECRET:crypto.randomUUID()+crypto.randomUUID()}:{})};
+ const env={DB,COMMERCE_MODE:'manual_demo',PUBLIC_ORIGIN:origin,TRACKING_SECRET:crypto.randomUUID()+crypto.randomUUID(),ADMIN_SECRET:owner,RAZORPAY_ENABLED:'true',...(connected?{RAZORPAY_KEY_ID:'rzp_test_'+crypto.randomUUID().replaceAll('-',''),RAZORPAY_KEY_SECRET:crypto.randomUUID(),RAZORPAY_WEBHOOK_SECRET:crypto.randomUUID()+crypto.randomUUID()}:{})};
  const handler=createHandler({now:()=>clock,fetchExternal:async(url,init)=>{
   if(url.endsWith('/orders')){createCalls++;if(failCreate)throw Error('Ambiguous network timeout');const b=JSON.parse(init.body);assert.equal(b.amount,229800);assert.equal(b.currency,'INR');return Response.json({id:'order_gateway'+createCalls,amount:b.amount,currency:b.currency});}
   if(url.includes('/payments/'))return Response.json({id:url.split('/').at(-1),order_id:'order_gateway1',amount:229800,currency:'INR',status:'captured',...paymentPatch});
@@ -81,8 +81,25 @@ test('ambiguous gateway creation errors do not create a second gateway order on 
  const s=setup(t),q=await s.quote(),patch={quoteId:q.quoteId,requestId:crypto.randomUUID()};s.failCreate();assert.equal((await s.submit('razorpay',patch)).status,400);assert.equal((await s.submit('razorpay',patch)).status,409);assert.equal(s.createCalls(),1);assert.equal((await s.stock()).held,1);
 });
 test('payment selector keeps test setup explicit and locks an already-created payment order',()=>{
- const options=checkoutPaymentOptions({provider:'manual_upi',ready:true});assert.equal(options[0].available,true);assert.equal(options[1].available,false);
+ const options=checkoutPaymentOptions({provider:'manual_upi',ready:true});assert.deepEqual(options.map(p=>p.id),['manual_upi']);assert.equal(options[0].available,true);assert.equal(checkoutPaymentOptions({provider:'razorpay',ready:true}).find(p=>p.id==='razorpay').available,true);
  const esc=s=>s.replaceAll('<','&lt;');const html=paymentSelector({paymentOptions:[{id:'manual_upi',available:true},{id:'razorpay',available:false,reason:'Connect <test> keys'}]},'manual_upi',false,esc);
  assert.match(html,/Setup pending/);assert.match(html,/Connect &lt;test> keys/);assert.match(html,/No added payment fee/);
  const locked=paymentSelector({paymentOptions:[{id:'manual_upi',available:true},{id:'razorpay',available:true}]},'razorpay',true,esc);assert.equal((locked.match(/ disabled/g)||[]).length,2);
+});
+test('UPI-only deployment hides Razorpay and rejects gateway orders without reserving stock',async t=>{
+ const s=setup(t);s.env.RAZORPAY_ENABLED='false';const config=(await s.request('/api/config')).data;
+ assert.equal(config.ready,true);assert.deepEqual(checkoutPaymentOptions(config).map(p=>p.id),['manual_upi']);
+ const html=paymentSelector(config,'manual_upi',false,s=>s);assert(!html.includes('Razorpay'));assert(!html.includes('both methods'));
+ assert.equal((await s.submit('razorpay')).status,400);assert.equal(s.createCalls(),0);assert.equal((await s.stock()).held,0);
+ const created=await s.submit('manual_upi');assert.equal(created.status,201);assert.equal((await s.stock()).held,1);assert.equal(s.createCalls(),0);
+ const order=await s.DB.prepare('SELECT status,payment_status FROM orders WHERE id=?').bind(created.data.id).first();assert.equal(order.status,'pending');assert.notEqual(order.payment_status,'captured');
+});
+test('switching off new Razorpay orders preserves existing captured-payment webhook verification',async t=>{
+ const s=setup(t),order=(await s.submit('razorpay')).data;s.env.RAZORPAY_ENABLED='false';
+ assert.equal((await s.webhook(order)).status,200);assert.equal((await s.request('/api/orders/'+order.id,{token:order.token})).data.status,'confirmed');
+ assert.equal((await s.submit('razorpay')).status,400);assert.equal(s.createCalls(),1);
+});
+test('gateway-only sandbox is not ready when new gateway orders are disabled',async t=>{
+ const s=setup(t);s.env.COMMERCE_MODE='sandbox';s.env.RAZORPAY_ENABLED='false';
+ assert.equal((await s.request('/api/config')).data.ready,false);assert.equal((await s.submit('razorpay')).status,503);assert.equal(s.createCalls(),0);
 });

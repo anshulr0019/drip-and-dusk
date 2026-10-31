@@ -8,6 +8,8 @@ ADMIN_SECRET=replace-with-a-different-32-character-random-secret
 MERCHANT_UPI_ID=
 MERCHANT_PAYEE_NAME=
 # Razorpay: rzp_test_ keys in manual_demo/sandbox, rzp_live_ keys in live. Never commit real keys.
+# New Razorpay checkouts are disabled; existing payment callbacks remain supported.
+RAZORPAY_ENABLED=false
 RAZORPAY_KEY_ID=
 RAZORPAY_KEY_SECRET=
 RAZORPAY_WEBHOOK_SECRET=
@@ -34,6 +36,10 @@ SUPABASE_PUBLISHABLE_KEY=sb_publishable_replace
 AUTH_SESSION_SECRET=replace-with-a-separate-random-secret-of-at-least-32-characters
 # Verified Supabase user UUIDs, set by the store operator. Never read roles from user metadata.
 AUTH_OWNER_IDS=
+# Shared with the Vercel middleware (same value in both places, 32+ characters). A secret, not a var. Lets the Worker trust the visitor IP Vercel signs; unset keeps the shared per-proxy limits.
+PROXY_SIGNING_SECRET=
+# Off unless exactly "true". Turn on only after Today reads "verified through the storefront": order creation and UTR submission then need the signed Vercel address and are refused (403) otherwise, or 503 if PROXY_SIGNING_SECRET is missing. Turn it off before rolling back the middleware.
+REQUIRE_SIGNED_PROXY=false
 # Optional owner alerts on Telegram (see README → Telegram order alerts).
 TELEGRAM_BOT_TOKEN=
 TELEGRAM_CHAT_ID=

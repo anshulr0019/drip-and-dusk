@@ -14,7 +14,7 @@ function setup(t,{upi=true,razorpay=true,keyPrefix='rzp_live_'}={}){
  const DB=new LocalD1();DB.exec(schema);DB.exec(seedSQL());DB.prepare('INSERT INTO store_settings(id,data) VALUES(1,?)').bind(JSON.stringify({delivery})).run();t.after(()=>DB.close());let createCalls=0;
  const env={DB,COMMERCE_MODE:'live',PUBLIC_ORIGIN:origin,TRACKING_SECRET:crypto.randomUUID()+crypto.randomUUID(),ADMIN_SECRET:owner,
   ...(upi?{MERCHANT_UPI_ID:'dripdusk.store@okaxis',MERCHANT_PAYEE_NAME:'Drip & Dusk'}:{}),
-  ...(razorpay?{RAZORPAY_KEY_ID:keyPrefix+crypto.randomUUID().replaceAll('-',''),RAZORPAY_KEY_SECRET:crypto.randomUUID(),RAZORPAY_WEBHOOK_SECRET:crypto.randomUUID()+crypto.randomUUID()}:{})};
+  ...(razorpay?{RAZORPAY_ENABLED:'true',RAZORPAY_KEY_ID:keyPrefix+crypto.randomUUID().replaceAll('-',''),RAZORPAY_KEY_SECRET:crypto.randomUUID(),RAZORPAY_WEBHOOK_SECRET:crypto.randomUUID()+crypto.randomUUID()}:{})};
  const handler=createHandler({now:()=>1800000000000,fetchExternal:async(url,init)=>{
   if(url.endsWith('/orders')){createCalls++;const b=JSON.parse(init.body);return Response.json({id:'order_live'+createCalls,amount:b.amount,currency:b.currency});}
   if(url.includes('/payments/'))return Response.json({id:url.split('/').at(-1),order_id:'order_live1',amount:229800,currency:'INR',status:'captured'});
@@ -61,4 +61,9 @@ test('launch migration strips demo wording only where the original defaults are 
  DB.exec(launch);DB.exec(launch);
  const condition=async id=>JSON.parse((await DB.prepare('SELECT data FROM products WHERE id=?').bind(id).first()).data).condition,settings=JSON.parse((await DB.prepare('SELECT data FROM store_settings').first()).data);
  assert.equal(await condition('a'),'Sealed retail bottle');assert.equal(await condition('b'),'Opened, 90% full');assert.doesNotMatch(settings.ordering,/sample/i);assert.equal(settings.payment,'Owner-written payment terms.');
+});
+test('live UPI-only checkout fails closed until merchant UPI is configured even if gateway keys exist',async t=>{
+ const s=setup(t,{upi:false});s.env.RAZORPAY_ENABLED='false';const config=(await s.request('/api/config')).data;
+ assert.equal(config.ready,false);assert.equal(checkoutPaymentOptions(config).length,1);assert.equal(checkoutPaymentOptions(config)[0].available,false);
+ assert.equal((await s.submit('razorpay')).status,503);assert.equal(s.createCalls(),0);
 });

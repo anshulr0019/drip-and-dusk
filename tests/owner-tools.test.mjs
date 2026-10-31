@@ -8,11 +8,13 @@ import {createHandler,hmac} from '../backend/worker.mjs';
 import {whatsappMessages,whatsappLink,whatsappEnabled,packingSlip} from '../dist/owner-orders.mjs';
 import {alertText} from '../backend/owner-alerts.mjs';
 const folder=new URL('../backend/migrations/',import.meta.url),schema=(await Promise.all((await readdir(folder)).filter(n=>n.endsWith('.sql')).sort().map(n=>readFile(new URL(n,folder),'utf8')))).join('\n');
+// Each order uses its own phone number because open unpaid orders are capped per phone.
+let phoneSeq=0;const nextPhone=()=>'98'+String(10000000+ ++phoneSeq);
 const origin='http://127.0.0.1:4178',owner=crypto.randomUUID()+crypto.randomUUID(),address={name:'Asha Rao',phone:'9876543210',line1:'22 Private Lane',city:'Pune',state:'Maharashtra',postcode:'411001'};
 const jpeg='data:image/jpeg;base64,'+Buffer.from([0xff,0xd8,0xff,0xe0,1,2,3,4]).toString('base64');
 function setup(t,{alerts=true,media=true,telegramDown=false,mode='manual_demo'}={}){
  const DB=new LocalD1();DB.exec(schema);DB.exec(seedSQL());t.after(()=>DB.close());let clock=1800000000000;const sent=[],background=[];
- const env={DB,COMMERCE_MODE:mode,PUBLIC_ORIGIN:origin,TRACKING_SECRET:crypto.randomUUID()+crypto.randomUUID(),ADMIN_SECRET:owner,RAZORPAY_KEY_ID:(mode==='live'?'rzp_live_':'rzp_test_')+crypto.randomUUID().replaceAll('-',''),RAZORPAY_KEY_SECRET:crypto.randomUUID(),RAZORPAY_WEBHOOK_SECRET:crypto.randomUUID()+crypto.randomUUID(),
+ const env={DB,COMMERCE_MODE:mode,PUBLIC_ORIGIN:origin,TRACKING_SECRET:crypto.randomUUID()+crypto.randomUUID(),ADMIN_SECRET:owner,RAZORPAY_ENABLED:'true',RAZORPAY_KEY_ID:(mode==='live'?'rzp_live_':'rzp_test_')+crypto.randomUUID().replaceAll('-',''),RAZORPAY_KEY_SECRET:crypto.randomUUID(),RAZORPAY_WEBHOOK_SECRET:crypto.randomUUID()+crypto.randomUUID(),
   ...(mode==='live'?{MERCHANT_UPI_ID:'dripdusk.store@okaxis',MERCHANT_PAYEE_NAME:'Drip & Dusk'}:{}),...(alerts?{TELEGRAM_BOT_TOKEN:'123456:'+'A'.repeat(30),TELEGRAM_CHAT_ID:'987654321'}:{}),...(media?{MEDIA:new LocalR2()}:{})};
  const handler=createHandler({now:()=>clock,fetchExternal:async(url,init)=>{
   if(url.startsWith('https://api.telegram.org/')){if(telegramDown)throw Error('Telegram outage');sent.push(JSON.parse(init.body));return Response.json({ok:true});}
@@ -21,7 +23,7 @@ function setup(t,{alerts=true,media=true,telegramDown=false,mode='manual_demo'}=
   throw Error('Unexpected external call '+url);
  }});
  const request=async(path,{method='GET',body,token,asOwner=false,raw,headers={}}={})=>{const r=await handler(new Request(origin+path,{method,headers:{Origin:origin,'Content-Type':'application/json',...(asOwner?{Authorization:'Bearer '+owner}:token?{Authorization:'Bearer '+token}:{}),...headers},...(method!=='GET'?{body:raw??JSON.stringify(body||{})}:{})}),env,{waitUntil:p=>background.push(p)});const type=r.headers.get('Content-Type')||'';return {status:r.status,headers:r.headers,data:type.includes('json')?await r.json():await r.arrayBuffer()};};
- const order=async(paymentMethod='manual_upi')=>{const q=(await request('/api/checkout/quote',{method:'POST',body:{basket:[{id:'khamrah-bottle',qty:1}],postcode:'411001'}})).data;return (await request('/api/orders',{method:'POST',body:{quoteId:q.quoteId,basket:[{id:'khamrah-bottle',qty:1}],address,whatsappConsent:false,requestId:crypto.randomUUID(),paymentMethod}})).data;};
+ const order=async(paymentMethod='manual_upi')=>{const q=(await request('/api/checkout/quote',{method:'POST',body:{basket:[{id:'khamrah-bottle',qty:1}],postcode:'411001'}})).data;return (await request('/api/orders',{method:'POST',body:{quoteId:q.quoteId,basket:[{id:'khamrah-bottle',qty:1}],address:{...address,phone:nextPhone()},whatsappConsent:false,requestId:crypto.randomUUID(),paymentMethod}})).data;};
  return {DB,env,request,order,sent,settle:()=>Promise.all(background),advance:ms=>clock+=ms};
 }
 test('Telegram alerts arrive for new UPI orders and submitted references, without customer details',async t=>{
@@ -151,10 +153,10 @@ test('paid-today resets at the next midnight in India',async t=>{
  const paid=async()=>(await s.request('/api/admin/summary',{asOwner:true})).data.paidToday,now=1800000000000,midnight=Math.floor((now+19800000)/86400000)*86400000-19800000+86400000;
  assert.equal(await paid(),1);s.advance(midnight-now-1000);assert.equal(await paid(),1);s.advance(2000);assert.equal(await paid(),0);
 });
-test('test alerts are labelled and only live alerts promise a 24-hour hold',()=>{
+test('test alerts are labelled and only live alerts promise a 4-hour hold',()=>{
  const env={PUBLIC_ORIGIN:origin},base={ref:'DD-X',total_paise:229800,lines:'[]',payment_reference:'UTR1'};
  for(const kind of ['upi_order','upi_submitted','paid','review']){assert.match(alertText(kind,{...base,mode:'manual_demo'},env),/TEST ORDER · no money collected/);assert.doesNotMatch(alertText(kind,{...base,mode:'live'},env),/TEST ORDER/);}
- assert.match(alertText('upi_submitted',{...base,mode:'live'},env),/held for 24 hours/);assert.doesNotMatch(alertText('upi_submitted',{...base,mode:'manual_demo'},env),/24 hours/);
+ assert.match(alertText('upi_submitted',{...base,mode:'live'},env),/held for 4 hours/);assert.doesNotMatch(alertText('upi_submitted',{...base,mode:'manual_demo'},env),/4 hours/);
  assert.doesNotMatch(alertText('test',{},env),/TEST ORDER/);
 });
 test('two simultaneous UTR submissions raise one verification alert',async t=>{
@@ -162,13 +164,14 @@ test('two simultaneous UTR submissions raise one verification alert',async t=>{
  const rs=await Promise.all(['UTRAAAA1111','UTRBBBB2222'].map(reference=>s.request('/api/orders/'+o.id+'/payment-submission',{method:'POST',token:o.token,body:{reference}})));await s.settle();
  assert.deepEqual(rs.map(r=>r.status),[200,200]);assert.equal(s.sent.filter(m=>/UPI payment to verify/.test(m.text)).length,1);
 });
-test('only live orders extend their hold to 24 hours once a UPI reference is submitted',async t=>{
+test('only live orders extend their hold to 4 hours once a UPI reference is submitted',async t=>{
  const live=setup(t,{mode:'live'}),demo=setup(t),status=(s,o)=>s.DB.prepare('SELECT status FROM orders WHERE id=?').bind(o.id).first().then(r=>r.status),held=s=>s.DB.prepare("SELECT held FROM products WHERE id='khamrah-bottle'").first().then(r=>r.held);
  const l=await live.order(),d=await demo.order();assert.match(l.ref,/^DD-[A-Z0-9]{12}$/);
  for(const [s,o] of [[live,l],[demo,d]])assert.equal((await s.request('/api/orders/'+o.id+'/payment-submission',{method:'POST',token:o.token,body:{reference:'UTR123456789'}})).status,200);
  live.advance(31*60000);demo.advance(31*60000);await live.request('/api/catalogue');await demo.request('/api/catalogue');
  assert.equal(await status(live,l),'awaiting_verification');assert.equal(await held(live),1);assert.equal(await status(demo,d),'expired');assert.equal(await held(demo),0);
- live.advance(24*3600000);await live.request('/api/catalogue');assert.equal(await status(live,l),'expired');assert.equal(await held(live),0);
+ live.advance(3*3600000+28*60000);await live.request('/api/catalogue');assert.equal(await status(live,l),'awaiting_verification');assert.equal(await held(live),1);
+ live.advance(60000);await live.request('/api/catalogue');assert.equal(await status(live,l),'expired');assert.equal(await held(live),0);
 });
 test('WhatsApp messages for every stage stay as before, and links are offered for live orders only',()=>{
  const base={ref:'DD-ABC',totalPaise:229800,customer:{name:'Asha Rao',phone:'919876543210'}},at=patch=>whatsappMessages({...base,...patch},'https://shop.test/#track/x/y').map(([label])=>label);

@@ -1,4 +1,5 @@
-import {visitorId,visitorCookie,backendIP} from './traffic.mjs';
+import {visitorId,visitorCookie,clientIP} from './traffic.mjs';
+import {readJSON} from './http.mjs';
 // Supabase verifies identity. Our cookie contains only a random, revocable session handle.
 const enc=new TextEncoder(),dec=new TextDecoder();
 const fail=(message,status=400)=>{throw Object.assign(Error(message),{status})};
@@ -15,10 +16,10 @@ async function decrypt(env,value){const [iv,data]=value.split('.'),key=await cry
 const cookieName=(env,name)=>new URL(env.PUBLIC_ORIGIN).protocol==='https:'?'__Host-'+name:name;
 const cookieValue=(request,name,env)=>request.headers.get('Cookie')?.split(';').map(c=>c.trim()).find(c=>c.startsWith(cookieName(env,name)+'='))?.slice(cookieName(env,name).length+1)||'';
 function cookie(env,name,value,seconds,path='/'){return `${cookieName(env,name)}=${value}; Path=/; HttpOnly; SameSite=Lax; Max-Age=${seconds}${new URL(env.PUBLIC_ORIGIN).protocol==='https:'?'; Secure':''}`}
-async function body(request){const text=await request.text();if(text.length>3000)fail('Sign-in request is too large.',413);try{return JSON.parse(text)}catch{fail('Invalid sign-in request.')}}
+const body=request=>readJSON(request,3000,'Sign-in request is too large.','Invalid sign-in request.');
 async function throttle(env,key,max,time){const window=Math.floor(time/600000),hash=await digest('auth:'+key+':'+window);const r=await query(env,'INSERT INTO rate_limits(key,window,count) VALUES(?,?,1) ON CONFLICT(key) DO UPDATE SET count=count+1 RETURNING count',hash,window).first();if(r.count>max)fail('Too many sign-in attempts. Try again in a few minutes.',429)}
 async function browserThrottle(env,request,scope,max,time){
- const visitor=await visitorId(request,env,time),ip=backendIP(request);
+ const visitor=await visitorId(request,env,time),{ip}=await clientIP(request,env,time);
  // Keep a shared origin guard as well; issuing fresh visitor cookies cannot remove it.
  await throttle(env,'origin:'+scope+':'+ip,300,time);
  await throttle(env,scope+':'+(visitor?'visitor:'+visitor:'ip:'+ip),max,time);

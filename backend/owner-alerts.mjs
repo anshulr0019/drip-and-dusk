@@ -15,9 +15,9 @@ export function alertText(kind,order,env){
  let items=[];try{items=JSON.parse(order.lines||'[]')}catch{}
  const lines=[`${kind==='review'||kind==='upi_submitted'?'⚠️':'🛍️'} ${headlines[kind]}`,...(order.mode!=='live'?['TEST ORDER · no money collected']:[]),`${order.ref} · ${rupees(order.total_paise)}`,...items.slice(0,6).map(l=>`• ${l.name}${l.size?' '+l.size+' ml':''}${l.format==='Decant'?' decant':''} × ${l.qty}`)];
  if(items.length>6)lines.push(`• and ${items.length-6} more`);
- if(kind==='upi_submitted')lines.push(`UTR: ${order.payment_reference}`,'Check that this exact amount reached your bank, then approve it in Orders. '+(order.mode==='live'?'The bottles are held for 24 hours.':'Test order: the 30-minute hold is not extended.'));
+ if(kind==='upi_submitted')lines.push(`UTR: ${order.payment_reference}`,'Check that this exact amount reached your bank, then approve it in Orders. '+(order.mode==='live'?'The bottles are held for 4 hours.':'Test order: the 30-minute hold is not extended.'));
  if(kind==='upi_order')lines.push('The customer has 30 minutes to pay and submit their UPI reference.');
- if(kind==='review')lines.push('A Razorpay payment arrived after the order had expired. Check stock, then fulfil or refund it.');
+ if(kind==='review')lines.push('A payment arrived after the order had expired. Check stock, then fulfil or refund it.');
  lines.push(`${env.PUBLIC_ORIGIN}/#admin`);
  return lines.join('\n');
 }

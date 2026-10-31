@@ -17,16 +17,17 @@ export function razorpayReady(env){
  return env.TRACKING_SECRET?.length>=32&&(live?/^rzp_live_[A-Za-z0-9]+$/:/^rzp_test_[A-Za-z0-9]+$/).test(env.RAZORPAY_KEY_ID||'')&&!!env.RAZORPAY_KEY_SECRET&&env.RAZORPAY_WEBHOOK_SECRET?.length>=32;
 }
 export const razorpayTestReady=razorpayReady;
+// Razorpay stays dark unless the owner opts in explicitly; anything but "true" (missing, blank, typo) disables it, so a misconfiguration can never expose it.
+export const razorpayEnabled=env=>String(env.RAZORPAY_ENABLED??'').trim().toLowerCase()==='true';
 export function paymentOptions(env){
- const live=isLive(env),upi=env.TRACKING_SECRET?.length>=32&&!!merchantUPI(env),razorpay=razorpayReady(env);
- return [
-  {id:'manual_upi',available:upi,status:live?'live':'sample',customerFeePaise:0,reason:upi?'':'Direct UPI is not available right now.'},
-  {id:'razorpay',available:razorpay,status:live?'live':'test',customerFeePaise:0,reason:razorpay?'':live?'Razorpay is not available right now. You can pay by direct UPI.':'Razorpay test checkout is being set up. You can use the manual UPI sample.'}
- ];
+ const live=isLive(env),upi=env.TRACKING_SECRET?.length>=32&&!!merchantUPI(env),razorpay=razorpayEnabled(env)&&razorpayReady(env);
+ const options=[{id:'manual_upi',available:upi,status:live?'live':'sample',customerFeePaise:0,reason:upi?'':'Direct UPI is not available right now.'}];
+ if(razorpayEnabled(env))options.push({id:'razorpay',enabled:true,available:razorpay,status:live?'live':'test',customerFeePaise:0,reason:razorpay?'':live?'Razorpay is not available right now. You can pay by direct UPI.':'Razorpay test checkout is being set up. You can use the manual UPI sample.'});
+ return options;
 }
 export function choosePaymentMethod(env,input){
- const options=paymentOptions(env),method=input??(options.find(p=>p.available)?.id||'razorpay');
- if(!['manual_upi','razorpay'].includes(method))throw Object.assign(Error('Choose a supported payment method.'),{status:400});
+ const options=paymentOptions(env),method=input??(options.find(p=>p.available)?.id||(razorpayEnabled(env)?'razorpay':'manual_upi'));
+ if(!['manual_upi','razorpay'].includes(method)||method==='razorpay'&&!razorpayEnabled(env))throw Object.assign(Error('Choose a supported payment method.'),{status:400});
  // The legacy local preview is intentionally simulated and never calls Razorpay.
  if(env.COMMERCE_MODE==='preview'&&method==='razorpay')return method;
  const option=options.find(p=>p.id===method);
