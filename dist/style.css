@@ -834,3 +834,13 @@ body.hero-in-view:not(.is-admin) .header #bag-count{background:#f7f4eb;color:#29
  body:not(.is-admin) .finder-launcher{left:14px;right:auto}
  body:not(.is-admin) .community-launcher{left:auto;right:14px}
 }
+
+/* Only opacity and transform animate. No layout animation or continuous work. */
+@media(prefers-reduced-motion:no-preference){
+ #modal[open]::backdrop{animation:dialog-shade-in 230ms ease-out both}
+ #modal[open].is-closing::backdrop{animation:dialog-shade-out 170ms ease-in both}
+ @keyframes dialog-shade-in{from{opacity:0}to{opacity:1}}
+ @keyframes dialog-shade-out{from{opacity:1}to{opacity:0}}
+}
+@media(prefers-reduced-motion:reduce){#modal::backdrop{animation:none}}
+html{scrollbar-gutter:stable}
