@@ -31,7 +31,7 @@ export function initHeroMotion({document:doc=document,window:win=window}={}){
   request();
  }
  // Off-screen, the dust and sheen animations pause (style.css .is-offscreen).
- if(win.IntersectionObserver)new win.IntersectionObserver(entries=>hero.classList.toggle('is-offscreen',!entries[entries.length-1].isIntersecting)).observe(hero);
+ if(win.IntersectionObserver)new win.IntersectionObserver(entries=>{const visible=entries[entries.length-1].isIntersecting;hero.classList.toggle('is-offscreen',!visible);doc.body?.classList.toggle('hero-in-view',visible)}).observe(hero);
  hero.addEventListener('pointermove',e=>{
   if(!finePointer.matches)return;const rect=hero.getBoundingClientRect();
   targetX=Math.max(-1,Math.min(1,((e.clientX-rect.left)/rect.width-.5)*2));targetY=Math.max(-1,Math.min(1,((e.clientY-rect.top)/rect.height-.5)*2));request();
