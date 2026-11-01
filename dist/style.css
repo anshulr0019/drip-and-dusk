@@ -211,7 +211,7 @@ body{padding-bottom:64px}.community-launcher{left:auto;right:22px;bottom:20px;wi
 /* Mobile pass: launchers yield over product grids, phone-sized checkout and bag dialogs, 44px touch targets, 10px minimum text, collapsed filters. Appended last so it wins the override layers above; storefront-scoped (the owner studio and its OWNER STUDIO dialogs, marked .owner-dialog, are untouched). */
 @media(max-width:760px){
 .finder-launcher,.community-launcher{min-height:44px;transition:opacity .2s ease,transform .2s ease,visibility .2s,background .2s}
-body.grid-in-view :is(.finder-launcher,.community-launcher){opacity:0;visibility:hidden;transform:translateY(12px);pointer-events:none}
+:is(body.grid-in-view,body:not(.grid-ready)) :is(.finder-launcher,.community-launcher){opacity:0;visibility:hidden;transform:translateY(12px);pointer-events:none}
 .store-banner{font-size:10px;letter-spacing:.3px;gap:6px}
 .header .wordmark{display:inline-block;line-height:44px}
 .header .wordmark span{display:none}
@@ -339,9 +339,9 @@ dialog:not(.owner-dialog) .modal-head .icon-btn{min-width:44px;min-height:44px}
 
 /* Compact 2x2 mood tiles on phones so all four show at once (the one-line blurb waits for wider screens). Rows are fixed, so tiles filling in after first paint do not push the collection down. */
 @media(max-width:760px){
- #storefront .scent-edits-grid{gap:12px;grid-auto-rows:164px;min-height:340px}
+ #storefront .scent-edits-grid{gap:12px;grid-auto-rows:196px;min-height:404px}
  #storefront .scent-edit{padding:var(--s-3)}
- #storefront .edit-bottle{height:52px;margin:2px 0}
+ #storefront .edit-bottle{height:88px;margin:2px 0}
  #storefront .edit-number{letter-spacing:.08em}
  #storefront .edit-copy strong{font-size:18px;margin-bottom:var(--s-1)}
  #storefront .edit-copy>span{display:none}
@@ -422,10 +422,6 @@ dialog:not(.owner-dialog) .modal-head .icon-btn{min-width:44px;min-height:44px}
 #storefront .product-grid{gap:var(--s-8) var(--s-4)}
 @media(max-width:760px){
  #storefront .product-photo{aspect-ratio:1}
- #storefront .product-copy{padding-top:8px}
- #storefront .product-name{font-size:17px}
- #storefront .product-meta{margin:2px 0 8px}
- #storefront .product-bottom{padding-top:8px}
  #storefront .price small.quiet{display:none}
 }
 
@@ -435,7 +431,6 @@ dialog:not(.owner-dialog) .modal-head .icon-btn{min-width:44px;min-height:44px}
  #storefront :is(#hot-sellers-grid,#deals-grid,#recently-viewed-grid)>.product-card{scroll-snap-align:start}
  #storefront :is(#hot-sellers-grid,#deals-grid,#recently-viewed-grid)>.empty-state{grid-column:auto;min-width:calc(100vw - 2 * var(--page-x))}
  #storefront :is(#hot-sellers-grid,#deals-grid,#recently-viewed-grid) .product-name:focus-visible::after{outline-offset:-4px}
- #storefront .product-grid{gap:var(--s-6) var(--s-3)}
 }
 
 @media(max-width:760px){
@@ -675,7 +670,7 @@ body:not(.is-admin) .header .icon-btn{min-width:var(--tap)}
 #modal .cart-feedback-link,.cart-feedback-link{min-height:var(--tap)}
 .cart-feedback-close{width:var(--tap);height:var(--tap)}
 @media(max-width:760px){
- #bag-count,.bag-button>span:last-child,#storefront .mini-count{font-size:12px}
+ #bag-count,.bag-button>span:last-child{font-size:11px}body:not(.is-admin) :is(#bag-count,.bag-button>span:last-child),#storefront .mini-count{font-size:12px}
  .store-banner,.store-banner .banner-divider{font-size:11px}
  #storefront .collection-note.finder-inline,#storefront .finder-inline span{font-size:var(--t-xs)}
  #storefront .hero-bottom,#storefront .hero-bottom>span:first-child{font-size:11px}
@@ -699,9 +694,8 @@ body:not(.is-admin) .header .icon-btn{min-width:var(--tap)}
 #modal.product-dialog :is(.quantity-row,.detail-sticky) .btn{white-space:nowrap}
 @media(max-width:360px){#modal.product-dialog .quantity-row .btn{padding:0 var(--s-3);gap:var(--s-2)}#modal.product-dialog .detail-sticky .btn{padding:0 var(--s-4)}}
 
-/* ==== Homepage: shop first, a steadier hero, calmer reveals ====
-   Above-the-fold geometry is fixed (hero, rail cards, mood tiles) so late data (owner text, live prices) never moves the page. Scoped to #storefront / .hero; the owner studio is untouched. */
-/* Hero: the clamps are only a safety net for over-long owner text. The h1 padding keeps descenders inside the clip, the margin gives that space back. On phones the description keeps its three-line height, so the fallback-to-web-font swap cannot move the button. */
+/* ==== Homepage: shop first. Above-the-fold geometry is fixed so late data (owner text, live prices) never moves the page. */
+/* Hero clamps are a safety net for long owner text; the h1 padding keeps descenders inside the clip. */
 #storefront .hero-content{height:100%}
 #storefront .hero-bottom{min-height:44px}
 #storefront .hero h1{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden;padding-bottom:.15em;margin-bottom:calc(25px - .15em)}
@@ -726,8 +720,9 @@ body:not(.is-admin) .header .icon-btn{min-width:var(--tap)}
  #hot-sellers .discovery-aside{min-width:0}
  #hot-sellers .discovery-intro{display:none}
  #storefront #hot-sellers-grid{grid-auto-columns:clamp(128px,38vw,200px)}
- #hot-sellers-grid .product-copy{height:196px}
- #hot-sellers-grid .product-name{font-size:17px}
+ #hot-sellers-grid .product-copy{height:192px}
+ #hot-sellers-grid .product-name{height:auto;font-size:16px;line-height:20px}
+ #hot-sellers-grid .product-meta{display:block;height:18px}
  #storefront .hero h1{margin-bottom:calc(var(--s-4) - .15em)}
  #storefront .hero-content>p:not(.eyebrow){min-height:67.2px}
  #storefront :is(.eyebrow,.edit-number,.brand-row,.brand-row>span){font-size:var(--t-xs)}
@@ -745,3 +740,22 @@ body:not(.is-admin) .header .icon-btn{min-width:var(--tap)}
 #storefront :is(.story-heading,.ordering,.info-section>div) .eyebrow,#storefront .order-step>span,#storefront .clarity-card>div>span{color:var(--c-brass-text)}
 #storefront :is(.order-step>span,.clarity-card>div>span){font-variant-numeric:lining-nums tabular-nums}
 #storefront .search-box kbd{color:var(--c-muted)}
+/* ==== Phones: lighter cards and icon launchers (owner feedback: cards felt crowded). Hidden phrases stay readable to screen readers and on the product page; hit areas stay 44px. */
+@media(max-width:760px){
+ #storefront .product-grid{gap:32px 16px}
+ #storefront :is(.brand-row,.brand-row>span){font-size:11px;letter-spacing:.08em}
+ #storefront .product-name{font-size:16px;line-height:1.25;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+ #storefront .scent-family{margin-top:4px;font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+ #storefront .product-meta{display:block;margin:2px 0 12px;font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+ #storefront :is(.product-meta .decant-note,.product-meta .meta-size.is-unknown){position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+ #storefront .product-bottom>.price{min-width:0}
+ #storefront :is(.price,.ask-price){font-size:14px}
+ #storefront .price small{font-size:12px;line-height:1.35}
+ #storefront .add-btn{border-radius:50%;border-color:rgba(41,38,34,.35)}
+ #storefront .save-btn{top:6px;right:6px;border-radius:50%;background:rgba(250,248,243,.82)}
+ #storefront :is(.photo-tag,.photo-format){left:6px;padding:2px 6px}
+ #storefront .photo-format{bottom:6px}
+ body:not(.is-admin) :is(.finder-launcher,.community-launcher){width:48px;height:48px;min-height:48px;max-width:none;padding:0;gap:0;justify-content:center;border-radius:50%}
+ body:not(.is-admin) .finder-launcher>span,body:not(.is-admin) .community-launcher>:not(.community-icon){display:none}
+ body:not(.is-admin) .finder-launcher>svg{width:20px;height:20px;margin:0}
+}
