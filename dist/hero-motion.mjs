@@ -1,6 +1,6 @@
-/** The hero still comes alive through scroll depth, a pointer-led glow and slow ambient light.
- * Only transform/opacity change, one animation frame at a time. Reduced-motion visitors and a
- * paused or owner-disabled hero keep the plain photograph. */
+/** The hero comes alive through a pointer-led glow and slow ambient light. The photo's scroll drift is pure CSS
+ * (a named view-timeline in style.css), so nothing here listens to scroll or resize. Only transform/opacity change,
+ * one animation frame at a time. Reduced-motion visitors and a paused or owner-disabled hero keep the plain photograph. */
 export function initHeroMotion({document:doc=document,window:win=window}={}){
  const hero=doc.querySelector('.hero'),button=doc.querySelector('[data-action="motion"]');
  if(!hero)return {toggle(){},setEnabled(){}};
@@ -10,18 +10,19 @@ export function initHeroMotion({document:doc=document,window:win=window}={}){
  const set=(name,value)=>hero.style.setProperty(name,value.toFixed(4));
  function render(){
   frame=0;if(!enabled())return;
-  const rect=hero.getBoundingClientRect(),progress=Math.min(1,Math.max(0,-rect.top/Math.max(1,rect.height)));
   // Ease the pointer so the bottle drifts after the cursor rather than snapping to it.
   x+=(targetX-x)*.1;y+=(targetY-y)*.1;
-  const state=progress.toFixed(3)+x.toFixed(3)+y.toFixed(3);
-  if(state!==last){last=state;set('--hero-progress',progress);set('--hero-x',x);set('--hero-y',y);}
+  const state=x.toFixed(3)+y.toFixed(3);
+  if(state!==last){last=state;set('--hero-x',x);set('--hero-y',y);}
   if(Math.abs(targetX-x)>.001||Math.abs(targetY-y)>.001)request();
  }
  function request(){if(!frame&&enabled())frame=win.requestAnimationFrame(render);}
  function sync(){
   const on=enabled();
   hero.classList.toggle('is-alive',on);
-  if(!on){targetX=targetY=x=y=0;last='';for(const name of ['--hero-progress','--hero-x','--hero-y'])hero.style.removeProperty(name);}
+  // The CSS drift runs from first paint, before this script, so stillness is its own class rather than the absence of is-alive.
+  hero.classList.toggle('is-still',!on);
+  if(!on){targetX=targetY=x=y=0;last='';for(const name of ['--hero-x','--hero-y'])hero.style.removeProperty(name);}
   if(button){
    button.hidden=!siteEnabled;
    button.innerHTML=`<svg class=ui-icon aria-hidden=true focusable=false><use href=#${on?'pause':'play'}-icon></use></svg>`;
@@ -29,14 +30,8 @@ export function initHeroMotion({document:doc=document,window:win=window}={}){
   }
   request();
  }
- // The scroll/resize listeners only exist while the hero is on screen; the page below it costs nothing. Without IntersectionObserver they stay attached.
- let listening=false;
- function listen(on){if(on===listening)return;listening=on;const method=on?'addEventListener':'removeEventListener';win[method]?.('scroll',request,{passive:true});win[method]?.('resize',request,{passive:true});}
- if(win.IntersectionObserver){
-  new win.IntersectionObserver(entries=>{const visible=entries[entries.length-1].isIntersecting;hero.classList.toggle('is-offscreen',!visible);listen(visible);
-   // One last frame on the way out settles the depth variables at their end value.
-   request();}).observe(hero);
- }else listen(true);
+ // Off-screen, the dust and sheen animations pause (style.css .is-offscreen).
+ if(win.IntersectionObserver)new win.IntersectionObserver(entries=>hero.classList.toggle('is-offscreen',!entries[entries.length-1].isIntersecting)).observe(hero);
  hero.addEventListener('pointermove',e=>{
   if(!finePointer.matches)return;const rect=hero.getBoundingClientRect();
   targetX=Math.max(-1,Math.min(1,((e.clientX-rect.left)/rect.width-.5)*2));targetY=Math.max(-1,Math.min(1,((e.clientY-rect.top)/rect.height-.5)*2));request();
@@ -47,24 +42,24 @@ export function initHeroMotion({document:doc=document,window:win=window}={}){
  return {toggle(){choice=!enabled();sync();},setEnabled(value){siteEnabled=!!value;sync();}};
 }
 
-const REVEAL='.section-heading,.featured-heading,.scent-edit,.product-card,.feature-card,.order-step,.story-heading,.clarity-card,.faq-list details,.contact-section>div,.benefit-strip>span';
-/** Storefront sections and cards fade up a few pixels as they scroll into view, including cards
- * rendered later by filters and pagination. Without IntersectionObserver or with reduced motion,
- * nothing is hidden. */
+// Static elements only: cards, mood tiles, the featured edit and the benefit strip are rebuilt by renders (filters, heart taps), so they never hide.
+const REVEAL='.section-heading,.story-heading,.order-step,.clarity-card,.contact-section>div';
+/** Section headings and panels fade up a few pixels, once, as they scroll into view. Whatever is already on screen
+ * the first time it is reported is never hidden, so nothing blinks after first paint. Without IntersectionObserver or
+ * with reduced motion nothing is hidden; printing is handled in CSS. */
 export function initReveal({document:doc=document,window:win=window,root=doc.querySelector('#storefront')}={}){
  if(!root||!win.IntersectionObserver||win.matchMedia('(prefers-reduced-motion: reduce)').matches)return {refresh(){}};
- const observer=new win.IntersectionObserver(entries=>{for(const entry of entries)if(entry.isIntersecting){entry.target.classList.add('is-revealed');observer.unobserve(entry.target);}},{rootMargin:'0px 0px -6% 0px',threshold:.08});
+ const registered=new WeakSet(),
+  show=new win.IntersectionObserver(entries=>{for(const entry of entries)if(entry.isIntersecting){entry.target.classList.add('is-revealed');show.unobserve(entry.target);}},{rootMargin:'0px 0px -6% 0px',threshold:.08}),
+  // The hidden state is only applied to elements that were off-screen at their first report, so it is never painted over visible content.
+  first=new win.IntersectionObserver(entries=>{for(const entry of entries){first.unobserve(entry.target);if(entry.isIntersecting)continue;entry.target.classList.add('reveal-item');show.observe(entry.target);}},{rootMargin:'0px',threshold:0});
  function refresh(scope=root){
   for(const el of scope.querySelectorAll(REVEAL)){
-   if(el.classList.contains('reveal-item'))continue;
-   // Siblings arrive in a short cascade, capped so long grids never feel slow.
-   const index=[...el.parentElement.children].indexOf(el);
-   el.style.setProperty('--reveal-delay',(index%4)*40+'ms');el.classList.add('reveal-item');observer.observe(el);
+   if(registered.has(el))continue;registered.add(el);
+   // Siblings arrive in a short cascade (at most 120 ms).
+   el.style.setProperty('--reveal-delay',([...el.parentElement.children].indexOf(el)%4)*40+'ms');first.observe(el);
   }
  }
  doc.documentElement.classList.add('reveal-ready');refresh();
- new win.MutationObserver(()=>refresh()).observe(root,{childList:true,subtree:true});
- // Printing or saving the page must never hide content waiting for a scroll.
- win.addEventListener('beforeprint',()=>root.querySelectorAll('.reveal-item').forEach(el=>el.classList.add('is-revealed')));
  return {refresh};
 }
