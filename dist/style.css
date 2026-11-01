@@ -208,10 +208,9 @@ body{padding-bottom:64px}.community-launcher{left:auto;right:22px;bottom:20px;wi
 .whatsapp-btn svg{width:14px;height:14px;stroke:currentColor;fill:none}
 @media(max-width:760px){.bulk-head{top:76px}.bulk-scroll{overflow:visible}.bulk-table{min-width:0}.bulk-table tr{grid-template-columns:1fr 1fr}.bulk-table td:last-child{grid-column:auto;margin-top:0;align-self:end}.bulk-table input[type=number]{width:100%;box-sizing:border-box}.bulk-label{display:block;font-size:10px;letter-spacing:.6px;color:var(--muted);margin-bottom:4px}.bulk-check .bulk-label{display:inline;margin:0 0 0 8px}.bulk-check{display:flex;align-items:center;min-height:38px}.today-grid{grid-template-columns:1fr 1fr}.today-card{min-height:104px;padding:14px}.today-card b{font-size:28px}.today-sales,.today-setup{grid-template-columns:1fr}}
 
-/* Mobile pass: launchers yield over product grids, phone-sized checkout and bag dialogs, 44px touch targets, 10px minimum text, collapsed filters. Appended last so it wins the override layers above; storefront-scoped (the owner studio and its OWNER STUDIO dialogs, marked .owner-dialog, are untouched). */
+/* Mobile pass: circular shortcuts, phone-sized checkout and bag dialogs, 44px touch targets, 10px minimum text, collapsed filters. Appended last so it wins the override layers above; storefront-scoped (the owner studio and its OWNER STUDIO dialogs, marked .owner-dialog, are untouched). */
 @media(max-width:760px){
 .finder-launcher,.community-launcher{min-height:44px;transition:opacity .2s ease,transform .2s ease,visibility .2s,background .2s}
-:is(body.grid-in-view,body:not(.grid-ready)) :is(.finder-launcher,.community-launcher){opacity:0;visibility:hidden;transform:translateY(12px);pointer-events:none}
 .store-banner{font-size:10px;letter-spacing:.3px;gap:6px}
 .header .wordmark{display:inline-block;line-height:44px}
 .header .wordmark span{display:none}
@@ -827,4 +826,11 @@ body.hero-in-view:not(.is-admin) .header #bag-count{background:#f7f4eb;color:#29
  #storefront .hero-content>p:not(.eyebrow){min-height:0;max-width:260px;font-size:13px}
 }
 @media(prefers-reduced-motion:reduce){#storefront .hero-content>*{animation:none!important}body:not(.is-admin) .header{transition:none}}
-body.hero-in-view:not(.is-admin) :is(.finder-launcher,.community-launcher){opacity:0;visibility:hidden;pointer-events:none}
+@media(min-width:761px){body.hero-in-view:not(.is-admin) :is(.finder-launcher,.community-launcher){opacity:0;visibility:hidden;pointer-events:none}}
+
+/* Mobile shortcuts stay available on the hero and collection. Native dialogs sit above them. */
+@media(max-width:760px){
+ body:not(.is-admin) :is(.finder-launcher,.community-launcher){position:fixed;bottom:max(14px,calc(env(safe-area-inset-bottom) + 10px));width:48px;height:48px;min-height:48px;max-width:none;padding:0;border-radius:50%;opacity:1;visibility:visible;transform:none;pointer-events:auto;justify-content:center}
+ body:not(.is-admin) .finder-launcher{left:14px;right:auto}
+ body:not(.is-admin) .community-launcher{left:auto;right:14px}
+}
