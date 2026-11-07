@@ -192,5 +192,651 @@
         "processing": "AI-assisted background removal from the brand promotional image; bottle and lettering visually checked; WebP encoding."
       }
     ]
-  }
+  },
+  "maison_alhambra_catalogue": [
+    {
+      "asset": "dist/assets/maison-01.webp",
+      "name": "Maison Alhambra Jean Lowe Fantasme",
+      "source": "https://fragra.de/products/maison-alhambra-jean-lowe-fantasme-eau-de-parfum-100-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Maison_Alhambra_Jean_Lowe_Fantasme_Eau_de_Parfum_100_ml_8.jpg?v=1777455761",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-02.webp",
+      "name": "Maison Alhambra Coeur Sunny",
+      "source": "https://scentsociety.co.za/products/coeur-sunny-100ml-by-maison-alhambra",
+      "image": "https://scentsociety.co.za/cdn/shop/files/Image34_6cfd0aa0-fab2-4326-809b-b6c8bf48e6f0.jpg?v=1786053536",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-03.webp",
+      "name": "Maison Alhambra IT",
+      "source": "https://fragra.de/products/maison-alhambra-it-eau-de-parfum-100-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Maison_Alhambra_IT_Eau_de_Parfum_100_ml.png?v=1788429571",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-04.webp",
+      "name": "Maison Alhambra Last Night in Miami",
+      "source": "https://fragra.de/products/maison-alhambra-last-night-in-miami-eau-de-parfum-100-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Maison_Alhambra_Last_Night_in_Miami_Eau_de_Parfum_100_ml_1.png?v=1788430274",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-05.webp",
+      "name": "Maison Alhambra Alpine Homme Sport",
+      "source": "https://fragra.de/products/maison-alhambra-perfume-alpine-homme-sport-eau-de-parfum-100-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Maison_Alhambra_Parfum_Alpine_Homme_Sport_Eau_de_Parfum_100_ml.jpg?v=1756122554",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-06.webp",
+      "name": "Maison Alhambra Amberley Amoroso",
+      "source": "https://fragra.de/products/maison-alhambra-perfume-amberly-amoroso-eau-de-parfum-100-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Maison_Alhambra_Parfum_Amberly_Amoroso_Eau_de_Parfum_100_ml.jpg?v=1756122674",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-07.webp",
+      "name": "Maison Alhambra Amber & Leather",
+      "source": "https://halaperfumes.com/product/maison-alhambra-amber-leather-edp-100ml/",
+      "image": "https://halaperfumes.com/wp-content/uploads/2023/04/6291108730041.png",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-08.webp",
+      "name": "Maison Alhambra Avant",
+      "source": "https://maisonalhambra-usa.com/products/maison-alhambra-avant-eau-de-parfum-for-everyone",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/01iqeholhm.png?v=1731453333",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-09.webp",
+      "name": "Maison Alhambra B.A.D Femme",
+      "source": "https://myperfumes.co.uk/products/maison-alhambra-perfume-b-a-d-femme-eau-de-parfum-100ml-bad-femme",
+      "image": "https://myperfumes.co.uk/cdn/shop/files/bad-femme-1.webp?v=1694514984&width=1200",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-10.webp",
+      "name": "Maison Alhambra Black Origami",
+      "source": "https://fragra.de/products/maison-alhambra-perfum-black-origami-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Maison_Alhambra_Parfum_Black_Origami_Eau_de_Parfum_100ml.jpg?v=1756122390",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-11.webp",
+      "name": "Maison Alhambra Bright Peach",
+      "source": "https://www.gadcet.com/products/maison-alhambra-bright-peach-80ml-eau-de-parfum-spray",
+      "image": "https://cdn.shopify.com/s/files/1/0650/9127/2952/files/6526b682e719a624d41b5e41_469652_1760177080878.jpg?v=1760196086",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-12.webp",
+      "name": "Maison Alhambra Camille",
+      "source": "https://fragra.de/products/maison-alhambra-parfum-camille-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Maison_Alhambra_Parfum_Camille_Eau_de_Parfum_100ml.webp?v=1756122198",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-13.webp",
+      "name": "Maison Alhambra Como Moiselle",
+      "source": "https://maisonalhambra-usa.com/products/maison-alhambra-como-moiselle-eau-de-parfum-for-women",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/010wwq7nlq.png?v=1738956944",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-14.webp",
+      "name": "Maison Alhambra Chants Tenderina",
+      "source": "https://fragra.de/products/maison-alhambra-perfume-chants-tenderina-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Maison_Alhambra_Perfume_Chants_Tenderina_Eau_de_Parfum_100ml.jpg?v=1756122425",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-15.webp",
+      "name": "Maison Alhambra Daring Blue For Life Pour Homme",
+      "source": "https://fragra.de/products/maison-alhambra-parfum-daring-blue-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Maison_Alhambra_Parfum_Daring_Blue.webp?v=1756122360",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-16.webp",
+      "name": "Maison Alhambra Dark Door Intense",
+      "source": "https://fragra.de/products/maison-alhambra-dark-door-intense-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Maison_Alhambra_Dark_Door_INTENSE_EDP_100ml.webp?v=1756122234",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-17.webp",
+      "name": "Maison Alhambra Dark Door Sport",
+      "source": "https://fragra.de/products/maison-alhambra-parfum-dark-door-sport-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Maison_Alhambra_Parfum_Dark_Door_SPORT_Eau_de_Parfum_100ml.jpg?v=1756122286",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-18.webp",
+      "name": "Maison Alhambra Delilah Pour Femme",
+      "source": "https://maisonalhambra-usa.com/products/maison-alhambra-delilah-eau-de-parfum-for-women",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/07xuwctsde.png?v=1751321708",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-19.webp",
+      "name": "Maison Alhambra Eclat De Lune",
+      "source": "https://fragra.de/products/maison-alhambra-parfum-eclat-de-lune-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Maison_Alhambra_Parfum_Eclat_de_Lune_Eau_de_Parfum_100ml.png?v=1756122199",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-20.webp",
+      "name": "Maison Alhambra Encode",
+      "source": "https://fragra.de/products/maison-alhambra-perfume-encode-eau-de-perfume-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Maison_Alhambra_Parfum_Encode_Eau_de_Perfume_100ml.webp?v=1756122559",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-21.webp",
+      "name": "Maison Alhambra Exclusif Oud",
+      "source": "https://fragra.de/products/maison-alhambra-perfume-exclusif-oud-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Maison_Alhambra_Parfum_Exclusif_Oud_Eau_de_Parfum_100ml.webp?v=1756122692",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-22.webp",
+      "name": "Maison Alhambra Exclusif Rose",
+      "source": "https://fragra.de/products/maison-alhambra-perfumes-exclusif-rose-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Maison_Alhambra_Parfum_Exclusif_Rose_Eau_de_Parfum_100ml.webp?v=1756122691",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-23.webp",
+      "name": "Maison Alhambra Exclusif Saffron",
+      "source": "https://fragra.de/products/maison-alhambra-perfumes-exclusif-saffron-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Maison_Alhambra_Parfum_Exclusif_Saffron_Eau_de_Parfum_100ml.webp?v=1756122687",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-24.webp",
+      "name": "Maison Alhambra Floral Profumo",
+      "source": "https://fragra.de/products/maison-alhambra-perfume-floral-profumo-eau-de-perfume-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Maison_Alhambra_Parfum_Floral_Profumo_Eau_de_Perfume_100ml.jpg?v=1756122568",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-25.webp",
+      "name": "Maison Alhambra Florence",
+      "source": "https://www.jomashop.com/maison-alhambra-ladies-florence-edp-spray-3-38-oz-fragrances-6291107459202.html",
+      "image": "https://cdn2.jomashop.com/media/catalog/product/cache/b3e31d40bbb1abcc90b26106659d5d3f/m/a/maison-alhambra-ladies-florence-edp-spray-338-oz-fragrances-6291107459202.jpg?width=800&height=800",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-26.webp",
+      "name": "Maison Alhambra Fortnight For Men",
+      "source": "https://privateblends.com.au/products/fortnight-for-men-100ml",
+      "image": "https://privateblends.com.au/cdn/shop/files/fortnight-maison-alhambra-lattafa-middle-eastern-perfumes-australia-private-blends_2.jpg?v=1696085307",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-27.webp",
+      "name": "Maison Alhambra Glacier Le Noir",
+      "source": "https://fragra.de/products/maison-alhambra-perfume-glacier-le-noir-eau-de-perfume-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Maison_Alhambra_Parfum_Glacier_Le_Noir_Eau_de_Perfume_100ml.webp?v=1756122786",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-28.webp",
+      "name": "Maison Alhambra Glacier Bella",
+      "source": "https://fragra.de/products/maison-alhambra-perfume-glacier-bella-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Maison_Alhambra_Parfum_Glacier_Bella_Eau_de_Parfum_100ml.webp?v=1756122675",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-29.webp",
+      "name": "Maison Alhambra Glacier Bold",
+      "source": "https://fragra.de/products/maison-alhambra-parfum-glacier-bold-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Maison_Alhambra_Parfum_Glacier_Bold_Eau_de_Parfum_100ml.webp?v=1756122279",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-30.webp",
+      "name": "Maison Alhambra Glacier Pour Homme",
+      "source": "https://fragra.de/products/maison-alhambra-perfume-glacier-pour-homme-eau-de-parfum-100-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Maison_Alhambra_Parfum_Glacier_Pour_Homme_Eau_de_Parfum_100_ml_1.webp?v=1756122675",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-31.webp",
+      "name": "Maison Alhambra Glacier Ultra",
+      "source": "https://fragra.de/products/maison-alhambra-perfume-glacier-ultra-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Maison_Alhambra_Parfum_Glacier_Ultra_Eau_de_Parfum_100ml.webp?v=1756122665",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-32.webp",
+      "name": "Maison Alhambra Infini Oud",
+      "source": "https://maisonalhambra-usa.com/products/maison-alhambra-infini-oud-eau-de-parfum-for-everyone",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/01xj49r5pw.png?v=1731453536",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-33.webp",
+      "name": "Maison Alhambra Infini Rose",
+      "source": "https://maisonalhambra-usa.com/products/maison-alhambra-infini-rose-eau-de-parfum-for-everyone",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/015ybhfktp.png?v=1731453358",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-34.webp",
+      "name": "Maison Alhambra Jardin De Paris",
+      "source": "https://safwaboutique.com/products/eau-de-parfum-jardin-de-paris-alhambra-100ml-maison-alhambra-perfumes-dubai",
+      "image": "https://cdn.shopify.com/s/files/1/0985/7577/8167/files/2017.jpg?v=1769718338",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-35.webp",
+      "name": "Maison Alhambra Jean Lowe Azure",
+      "source": "https://maisonalhambra-usa.com/products/maison-alhambra-jean-lowe-azure-eau-de-parfum-for-everyone",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/01tfzvgbzd.png?v=1753478107",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-36.webp",
+      "name": "Maison Alhambra Jean Lowe Nouveau",
+      "source": "https://www.bnperfumes.com/products/jean-lowe-nouveau-copy",
+      "image": "https://cdn.shopify.com/s/files/1/1598/1873/files/nouveau.jpg?v=1731454875",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-37.webp",
+      "name": "Maison Alhambra Jean Lowe Immortal",
+      "source": "https://maisonalhambra-usa.com/products/maison-alhambra-jean-lowe-immortal-eau-de-parfum-for-men",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/016h20dk7b.png?v=1731453560",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-38.webp",
+      "name": "Maison Alhambra Jean Lowe Matiere",
+      "source": "https://maisonalhambra-usa.com/products/maison-alhambra-jean-lowe-matiere-eau-de-parfum-for-everyone",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/03rxksbcvv.png?v=1731453568",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-39.webp",
+      "name": "Maison Alhambra Jean Lowe Ombre",
+      "source": "https://avsfragrances.com/products/maison-alhambra-jean-lowe-ombre-noir-edp-100ml-men",
+      "image": "https://cdn.shopify.com/s/files/1/0695/3625/2062/files/JeanLoweNoir_2.jpg?v=1743840790",
+      "identification": "Image is the retailer-identified Noir successor packaging, not guaranteed to match old Ombre stock."
+    },
+    {
+      "asset": "dist/assets/maison-40.webp",
+      "name": "Maison Alhambra Jean Lowe Vibe",
+      "source": "https://fragra.de/en/products/maison-alhambra-jean-lowe-vibe-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Maison_Alhambra_Jean_Lowe_Vibe_Eau_de_Parfum_100ml.webp?v=1758088736",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-41.webp",
+      "name": "Maison Alhambra Jorge Di Profumo",
+      "source": "https://maisonalhambra-usa.com/products/maison-alhambra-jorge-di-profumo-eau-de-parfum-for-men",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/03hr6cuw7i.jpg?v=1746206106",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-42.webp",
+      "name": "Maison Alhambra Jorge Di Aqua",
+      "source": "https://maisonalhambra-usa.com/products/maison-alhambra-jorge-di-aqua-eau-de-parfum-for-men",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/02gun35ckt.png?v=1733181312",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-43.webp",
+      "name": "Maison Alhambra Jorge Di Profondo",
+      "source": "https://maisonalhambra-usa.com/products/maison-alhambra-jorge-di-profondo-eau-de-parfum-for-men",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/01mdzpaynv.png?v=1731453589",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-44.webp",
+      "name": "Maison Alhambra Versencia Oro",
+      "source": "https://alharamperfumes.co.uk/products/versencia-oro-edp-spray-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8527/5424/products/vercenciaoro.jpg?v=1688240974",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-45.webp",
+      "name": "Maison Alhambra Jubilant Vitality",
+      "source": "https://maisonalhambra-usa.com/products/maison-alhambra-jubilant-vitality-eau-de-parfum-for-everyone",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/02r4xuffqi.png?v=1753208107",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-46.webp",
+      "name": "Maison Alhambra Versencia Essence",
+      "source": "https://perfumeoriginales.cl/products/perfume-maison-alhambra-versencia-essence-edp-100ml-mujer",
+      "image": "https://cdn.shopify.com/s/files/1/0581/9026/6425/files/versencia-essence.webp?v=1784581638",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-47.webp",
+      "name": "Maison Alhambra Versencia Crystal",
+      "source": "https://momperfume.in/products/maison-alhambra-versencia-crystal-edp",
+      "image": "https://cdn.shopify.com/s/files/1/0827/5548/6008/files/versencia-crystal_5000x_909b13f4-148a-459d-8b49-bf47ea18b127.jpg?v=1789931186",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-48.webp",
+      "name": "Maison Alhambra Kismet Angel",
+      "source": "https://www.sheikhdot.com/products/maison-alhambra-kismet-angel",
+      "image": "https://cdn.shopify.com/s/files/1/0694/7068/3439/files/kismetangel.jpg?v=1682493407",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-49.webp",
+      "name": "Maison Alhambra Kismet For Men",
+      "source": "https://maisonalhambra-usa.com/products/maison-alhambra-kismet-eau-de-parfum-for-men",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/011bsvbhgq.png?v=1732314086",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-50.webp",
+      "name": "Maison Alhambra La Rouge Baroque",
+      "source": "https://maisonalhambra-usa.com/products/maison-alhambra-la-rouge-baroque-eau-de-parfum-for-everyone",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/10uyu0apkg.png?v=1736802908",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-51.webp",
+      "name": "Maison Alhambra Baroque Rouge Extrait",
+      "source": "https://mapleprime.com/products/maison-alhambra-baroque-rouge-extrait-eau-de-parfum-for-unisex",
+      "image": "https://cdn.shopify.com/s/files/1/0756/2104/0436/files/3-4-oz-100-ml-maison-alhambra-baroque-rouge-extrait-eau-de-parfum-for-unisex-37737162506548.jpg?v=1787149054",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-52.webp",
+      "name": "Maison Alhambra La Vita Bella",
+      "source": "https://proud.ae/product/la-vita-bella-perfume/",
+      "image": "https://proud.ae/wp-content/uploads/2026/06/21_20260829_193147_0018-scaled.png",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-53.webp",
+      "name": "Maison Alhambra La Voie",
+      "source": "https://maisonalhambra-usa.com/products/maison-alhambra-la-voie-eau-de-parfum-for-women",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/01xljqzs9z.png?v=1731453385",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-54.webp",
+      "name": "Maison Alhambra Libbra Intense",
+      "source": "https://www.darussalam.com.au/products/libbra-intense-100-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0670/1563/9195/files/libbra-maison-alhambra-1-darussalam-australia-islamic-bookstore-dsbooks.jpg?v=1780678018",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-55.webp",
+      "name": "Maison Alhambra Lovely Cherie",
+      "source": "https://zashaura.com/products/maison-al-hambra-lovely-cherie-edp-80ml-for-women",
+      "image": "https://cdn.shopify.com/s/files/1/0884/2012/2913/files/IMG-3627.jpg?v=1732767644",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-56.webp",
+      "name": "Maison Alhambra Blue De Chance",
+      "source": "https://www.empireoudh.com/products/blue-de-chance-100ml-eau-de-parfum",
+      "image": "https://cdn.store-assets.com/s/1326863/i/66314663.png?width=720",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-57.webp",
+      "name": "Maison Alhambra Man Black Edition",
+      "source": "https://haramaineg.com/products/man-black-edition-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0596/8284/8873/files/947B4002-2F25-4971-B3E3-072100BC48CB.jpg?v=1787595617",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-58.webp",
+      "name": "Maison Alhambra Mia Dolcezza",
+      "source": "https://maisonalhambra-usa.com/products/maison-alhambra-mia-dolcezza-eau-de-parfum-for-women",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/04ul479ip3.png?v=1778256915",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-59.webp",
+      "name": "Maison Alhambra Minerale Gold",
+      "source": "https://maisonalhambra-usa.com/products/maison-alhambra-minerale-gold-eau-de-parfum-for-everyone",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/04htgqnuxy.png?v=1755702926",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-60.webp",
+      "name": "Maison Alhambra Narissa Rouge",
+      "source": "https://originalparfum.ma/product/narissa-rouge-maison-alhambra-100ml/",
+      "image": "https://originalparfum.ma/wp-content/uploads/2026/10/tinywow_6195e332-8b64-4fcd-9160-de3224c50887_92004834.jpg",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-61.webp",
+      "name": "Maison Alhambra Niche Royal Rouge",
+      "source": "https://fragra.de/en/products/maison-alhambra-perfume-niche-royal-rouge-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Maison_Alhambra_Parfum_Niche_Royal_Rouge.jpg?v=1756122655",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-62.webp",
+      "name": "Rave Nora",
+      "source": "https://sheikhscents.com/products/nora",
+      "image": "https://cdn.shopify.com/s/files/1/0739/7952/7426/files/nora-1.jpg?v=1790437767",
+      "identification": "Retail product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/maison-63.webp",
+      "name": "Maison Alhambra No. 2 Men",
+      "source": "https://allarabic.in/products/no-2-men",
+      "image": "https://cdn.shopify.com/s/files/1/0759/2112/9754/files/no2-men1.webp?v=1766411349",
+      "identification": "Retail product reference image. Packaging may vary; does not certify the seller’s actual stock condition."
+    },
+    {
+      "asset": "dist/assets/maison-64.webp",
+      "name": "Maison Alhambra Oasis",
+      "source": "https://maisonalhambra-usa.com/products/maison-alhambra-oasis-eau-de-parfum-for-everyone",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/01dm1etlzl.png?v=1731453422",
+      "identification": "Retail product reference image. Packaging may vary; does not certify the seller’s actual stock condition."
+    },
+    {
+      "asset": "dist/assets/maison-65.webp",
+      "name": "Maison Alhambra Olivia",
+      "source": "https://olvio.co.uk/products/olivia-perfume-maison-alhambra",
+      "image": "https://cdn.shopify.com/s/files/1/0849/5218/7206/files/Olivia_Perfume_100ml_EDP_Maison_Alhambra.png?v=1756102548",
+      "identification": "Retail product reference image. Packaging may vary; does not certify the seller’s actual stock condition."
+    },
+    {
+      "asset": "dist/assets/maison-66.webp",
+      "name": "Maison Alhambra Opera Noir",
+      "source": "https://allarabic.in/products/opera-noir",
+      "image": "https://cdn.shopify.com/s/files/1/0759/2112/9754/files/Maison_Alhambra_Opera_Noir.webp?v=1771336328",
+      "identification": "Retail product reference image. Packaging may vary; does not certify the seller’s actual stock condition."
+    },
+    {
+      "asset": "dist/assets/maison-67.webp",
+      "name": "Maison Alhambra Pink Eclipse",
+      "source": "https://maisonalhambra-usa.com/products/maison-alhambra-pink-eclipse-eau-de-parfum-for-women",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/014vnyr9m0.png?v=1778256936",
+      "identification": "Retail product reference image. Packaging may vary; does not certify the seller’s actual stock condition."
+    },
+    {
+      "asset": "dist/assets/maison-68.webp",
+      "name": "Maison Alhambra Porto Neroli",
+      "source": "https://allarabic.in/products/porto-neroli",
+      "image": "https://cdn.shopify.com/s/files/1/0759/2112/9754/files/Porto_Neroli.webp?v=1766661499",
+      "identification": "Retail product reference image. Packaging may vary; does not certify the seller’s actual stock condition."
+    },
+    {
+      "asset": "dist/assets/maison-69.webp",
+      "name": "Maison Alhambra Renee Carmine",
+      "source": "https://maisonalhambra-usa.com/products/maison-alhambra-renee-carmine-eau-de-parfum-for-everyone",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/03otp6atql.png?v=1752173472",
+      "identification": "Retail product reference image. Packaging may vary; does not certify the seller’s actual stock condition."
+    },
+    {
+      "asset": "dist/assets/maison-70.webp",
+      "name": "Maison Alhambra Rose Petals",
+      "source": "https://allarabic.in/products/rose-petals",
+      "image": "https://cdn.shopify.com/s/files/1/0759/2112/9754/files/rose-petals1.webp?v=1766919982",
+      "identification": "Retail product reference image. Packaging may vary; does not certify the seller’s actual stock condition."
+    },
+    {
+      "asset": "dist/assets/maison-71.webp",
+      "name": "Maison Alhambra Rose Seduction VIP Pour Femme",
+      "source": "https://oasisperfumesusa.com/products/rose-seduction-vip",
+      "image": "https://cdn.shopify.com/s/files/1/0745/8796/3670/files/MaisonAlhambraRoseSeductionVIPPourFemmeEaudeParfum3.4oz.png?v=1783021689",
+      "identification": "Retail product reference image. Packaging may vary; does not certify the seller’s actual stock condition."
+    },
+    {
+      "asset": "dist/assets/maison-72.webp",
+      "name": "Maison Alhambra Salvo",
+      "source": "https://maisonalhambra-usa.com/products/maison-alhambra-salvo-eau-de-parfum-for-men",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/02egvmjfuq.png?v=1751490910",
+      "identification": "Retail product reference image. Packaging may vary; does not certify the seller’s actual stock condition."
+    },
+    {
+      "asset": "dist/assets/maison-73.webp",
+      "name": "Maison Alhambra Salvo Elixir",
+      "source": "https://allarabic.in/products/salvo-elixir",
+      "image": "https://cdn.shopify.com/s/files/1/0759/2112/9754/files/Maison_Alhambra_Salvo_Elixir.webp?v=1776748565",
+      "identification": "Retail product reference image. Packaging may vary; does not certify the seller’s actual stock condition."
+    },
+    {
+      "asset": "dist/assets/maison-74.webp",
+      "name": "Maison Alhambra Salvo Intense",
+      "source": "https://maisonalhambra-usa.com/products/maison-alhambra-salvo-intense-eau-de-parfum-for-men",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/08iezdbeuz.png?v=1751394677",
+      "identification": "Retail product reference image. Packaging may vary; does not certify the seller’s actual stock condition."
+    },
+    {
+      "asset": "dist/assets/maison-75.webp",
+      "name": "Maison Alhambra Sceptre Bronzite",
+      "source": "https://maisonalhambra-usa.com/products/maison-alhambra-sceptre-bronzite-eau-de-parfum-for-everyone",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/01wzxml7pc.png?v=1731453697",
+      "identification": "Retail product reference image. Packaging may vary; does not certify the seller’s actual stock condition."
+    },
+    {
+      "asset": "dist/assets/maison-76.webp",
+      "name": "Maison Alhambra Sceptre Oceana",
+      "source": "https://maisonalhambra-usa.com/products/maison-alhambra-sceptre-oceana-eau-de-parfum-for-everyone",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/03bubixvpj.png?v=1731453714",
+      "identification": "Retail product reference image. Packaging may vary; does not certify the seller’s actual stock condition."
+    },
+    {
+      "asset": "dist/assets/maison-77.webp",
+      "name": "Maison Alhambra Smoked Oud & Vanilla",
+      "source": "https://maisonalhambra-usa.com/products/maison-alhambra-smoked-oud-vanilla-eau-de-parfum-for-everyone",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/01kbvq4mov.png?v=1777670128",
+      "identification": "Retail product reference image. Packaging may vary; does not certify the seller’s actual stock condition."
+    },
+    {
+      "asset": "dist/assets/maison-78.webp",
+      "name": "Maison Alhambra Smoky",
+      "source": "https://maisonalhambra-usa.com/products/maison-alhambra-smoky-eau-de-parfum-for-everyone",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/02doqlgitp.png?v=1788448511",
+      "identification": "Retail product reference image. Packaging may vary; does not certify the seller’s actual stock condition."
+    },
+    {
+      "asset": "dist/assets/maison-79.webp",
+      "name": "Maison Alhambra The Tux",
+      "source": "https://allarabic.in/products/maison-alhambra-the-tux",
+      "image": "https://cdn.shopify.com/s/files/1/0759/2112/9754/files/MaisonAlhambraTheTux.webp?v=1766577620",
+      "identification": "Retail product reference image. Packaging may vary; does not certify the seller’s actual stock condition."
+    },
+    {
+      "asset": "dist/assets/maison-80.webp",
+      "name": "Maison Alhambra Toro Pour Homme",
+      "source": "https://allarabic.in/products/toro-pour-homme",
+      "image": "https://cdn.shopify.com/s/files/1/0759/2112/9754/files/Maison_Alhambra_Toro_Pour_Homme.webp?v=1775565633",
+      "identification": "Retail product reference image. Packaging may vary; does not certify the seller’s actual stock condition."
+    },
+    {
+      "asset": "dist/assets/maison-81.webp",
+      "name": "Maison Alhambra Versencia Noir",
+      "source": "https://www.smarthouse.com.py/producto/maison-a-versencia-noir-edp-f-100-ml-13105",
+      "image": "https://admin.smarthouse.com.py/uploads/EDICION_DE_PRODUCTOS_2_0_2026_07_24_T122438_535_65bc886600.png",
+      "identification": "Shows the renamed Jubilant Noir packaging of the same fragrance."
+    },
+    {
+      "asset": "dist/assets/maison-82.webp",
+      "name": "Maison Alhambra Very Velvet Orchid",
+      "source": "https://www.dubaiperfumehub.com/products/very-velvet-orchid-edp-perfume-maison-alhambra-100ml-fragrance-perfume-scent",
+      "image": "https://cdn.shopify.com/s/files/1/0801/3522/5687/files/veryvelvetorchid.webp?v=1708176161",
+      "identification": "Retail product reference image. Packaging may vary; does not certify the seller’s actual stock condition."
+    },
+    {
+      "asset": "dist/assets/maison-83.webp",
+      "name": "Maison Alhambra Very Velvet Rouge",
+      "source": "https://tripletraders.com/products/very-velvet-rouge-by-maison-alhambra-eau-de-parfum-100ml-3-4-fl-oz",
+      "image": "https://cdn.shopify.com/s/files/1/0014/6590/9313/products/very-velvet-rouge-eau-de-parfum-by-maison-alhambra-100ml.jpg?v=1678477346",
+      "identification": "Retail product reference image. Packaging may vary; does not certify the seller’s actual stock condition."
+    },
+    {
+      "asset": "dist/assets/maison-84.webp",
+      "name": "Maison Alhambra Victorioso Myth",
+      "source": "https://maisonalhambra-usa.com/products/maison-alhambra-victorioso-myth-eau-de-parfum-for-men",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/015oc9fvbi.png?v=1731453569",
+      "identification": "Retail product reference image. Packaging may vary; does not certify the seller’s actual stock condition."
+    },
+    {
+      "asset": "dist/assets/maison-85.webp",
+      "name": "Maison Alhambra Victorioso Nero",
+      "source": "https://maisonalhambra-usa.com/products/maison-alhambra-victorioso-nero-eau-de-parfum-for-men",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/023yro2gj9.png?v=1731453577",
+      "identification": "Retail product reference image. Packaging may vary; does not certify the seller’s actual stock condition."
+    },
+    {
+      "asset": "dist/assets/maison-86.webp",
+      "name": "Maison Alhambra Victorioso",
+      "source": "https://ambientbeauty.uk/products/maison-alhambra-victorioso-edp-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0839/6321/6212/files/maison-alhambra-victorioso-edp-100ml-Photoroom.jpg?v=1776935136",
+      "identification": "Retail product reference image. Packaging may vary; does not certify the seller’s actual stock condition."
+    },
+    {
+      "asset": "dist/assets/maison-87.webp",
+      "name": "Maison Alhambra Yeah!",
+      "source": "https://maisonalhambra-usa.com/products/maison-alhambra-yeah-eau-de-parfum-for-men",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/03iom88ii6.png?v=1752620873",
+      "identification": "Retail product reference image. Packaging may vary; does not certify the seller’s actual stock condition."
+    },
+    {
+      "asset": "dist/assets/maison-88.webp",
+      "name": "Maison Alhambra Yeah! Parfum",
+      "source": "https://maisonalhambra-usa.com/products/maison-alhambra-yeah-man-parfum-eau-de-parfum-for-men",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/01vu5vpnkv.png?v=1744327306",
+      "identification": "Retail product reference image. Packaging may vary; does not certify the seller’s actual stock condition."
+    },
+    {
+      "asset": "dist/assets/maison-89.webp",
+      "name": "Maison Alhambra Your Touch for Men",
+      "source": "https://maisonalhambra-usa.com/products/maison-alhambra-your-touch-eau-de-parfum-for-men",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/010jexrfsh.png?v=1731453674",
+      "identification": "Retail product reference image. Packaging may vary; does not certify the seller’s actual stock condition."
+    },
+    {
+      "asset": "dist/assets/maison-90.webp",
+      "name": "Maison Alhambra Your Touch for Women",
+      "source": "https://maisonalhambra-usa.com/products/maison-alhambra-your-touch-eau-de-parfum-for-women",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/02351d0kn2.png?v=1731453685",
+      "identification": "Retail product reference image. Packaging may vary; does not certify the seller’s actual stock condition."
+    },
+    {
+      "asset": "dist/assets/maison-91.webp",
+      "name": "Maison Alhambra Your Touch Santal",
+      "source": "https://maisonalhambra-usa.com/products/maison-alhambra-your-touch-santal-eau-de-parfum-for-everyone",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/01fjzutvk8.png?v=1752681985",
+      "identification": "Retail product reference image. Packaging may vary; does not certify the seller’s actual stock condition."
+    },
+    {
+      "asset": "dist/assets/maison-92.webp",
+      "name": "Maison Alhambra Zaffiro Collection Regale",
+      "source": "https://filledwithbarakah.com/products/zaffiro-collection-regale-eau-de-parfum-100ml-by-maison-alhambra",
+      "image": "https://cdn.shopify.com/s/files/1/0288/5228/9622/products/image_c4176d8e-a924-42e7-8190-eaeb6ab18a7f.jpg?v=1673894574",
+      "identification": "Retail product reference image. Packaging may vary; does not certify the seller’s actual stock condition."
+    }
+  ]
 }

@@ -8,7 +8,7 @@ import {completedFactsPatch,completeSeedFragrance} from '../dist/fragrance-compl
 import {notesError,processNotes} from '../dist/fragrance-notes.mjs';
 import {verifiedForFinder,discoverScents} from '../dist/scent-matching.mjs';
 import {prepareProduct} from '../backend/catalogue.mjs';
-const all=defaults().products,get=g=>all.find(p=>p.group===g);
+const all=defaults().products.filter(p=>p.order<1000),get=g=>all.find(p=>p.group===g);
 test('all 67 fragrances and 78 variants have sourced notes and useful product facts',()=>{
  assert.equal(all.length,78);assert.equal(new Set(all.map(p=>p.group)).size,67);
  for(const p of all){assert(fragranceFacts[p.group],p.group);assert(p.description.length>40,p.group);assert(p.family&&p.pairing&&p.concentration,p.group);assert(p.publishedSizes.length,p.group);assert(p.publishedSizes.every(s=>/^\d+(?:\.\d+)? (?:ml|oz)(?: \(.*\))?$/.test(s)),p.group);assert(p.noteSources.length,p.group);assert(!/pending|no account yet|awaiting confirmation|unknown/i.test(p.notes),p.group);assert(p.notePyramid||p.signatureNotes?.length,p.group);assert.equal(prepareProduct(p).notes,p.notes,p.group);assert(researchMetadata(p).noteSources.length,p.group);}
@@ -31,7 +31,7 @@ test('official signature notes can be matched without invented stages, and owner
 });
 test('completion preserves deleted listings, owner copy and custom notes in browser migration',()=>{
  const current={...defaults(),catalogueRevision:6,products:[{...get('nishane-tempfluo'),factsRevision:0,notes:'Owner bespoke notes',notePyramid:{top:['Lemon'],heart:['Rose'],base:['Musk']}}]};
- const migrated=migrateCatalogue(current);assert.equal(migrated.products.length,1);assert.equal(migrated.products[0],current.products[0]);assert.equal(migrated.catalogueRevision,7);assert.equal(migrateCatalogue(migrated),migrated);
+ const migrated=migrateCatalogue(current);assert.equal(migrated.products.length,93);assert.equal(migrated.products[0],current.products[0]);assert.equal(migrated.catalogueRevision,8);assert.equal(migrateCatalogue(migrated),migrated);
  assert.equal(completeSeedFragrance(current.products[0]),current.products[0]);
 });
 test('new data backfill repairs old seed notes without changing commerce, images, reservations or owner notes',()=>{

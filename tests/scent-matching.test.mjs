@@ -11,7 +11,7 @@ test('returns up to three distinct, available fragrances within the selected bud
 });
 test('coffee means verified coffee notes, with Qahwa ranked first and no unrelated filler',()=>{
  const matches=recommendScents(products,{...answers,occasion:'cafe',style:'coffee'});
- assert.deepEqual(matches.map(m=>m.product.group),['qahwa','asad']);assert.ok(matches.every(m=>m.reason.toLowerCase().includes('coffee')));
+ assert.deepEqual(matches.map(m=>m.product.group),['qahwa','asad','maison-alhambra-kismet-for-men']);assert.ok(matches.every(m=>m.reason.toLowerCase().includes('coffee')));
  assert.ok(recommendScents(products,{...answers,occasion:'cafe',style:'fresh'}).every(m=>m.notes.length>0));
 });
 test('budget never silently swaps bottles for decants; either format prefers a bottle only when it fits',()=>{
@@ -42,6 +42,6 @@ test('invalid answers and empty catalogues never produce fabricated recommendati
 });
 
 test('a single citrus or flower note does not misclassify a rich gourmand as a fresh or floral fragrance',()=>{
- const fresh=recommendScents(products,{...answers,style:'fresh',budget:'any'});assert.deepEqual(new Set(fresh.map(m=>m.product.group)),new Set(['hawas','qaed']));
- const floral=recommendScents(products,{...answers,style:'floral'});assert.deepEqual(floral.map(m=>m.product.group),['yara']);
+ const seed=products.filter(p=>p.order<1000),fresh=recommendScents(seed,{...answers,style:'fresh',budget:'any'});assert.deepEqual(new Set(fresh.map(m=>m.product.group)),new Set(['hawas','qaed']));
+ const floral=recommendScents(seed,{...answers,style:'floral'});assert.deepEqual(floral.map(m=>m.product.group),['yara']);
 });

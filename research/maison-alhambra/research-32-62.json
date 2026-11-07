@@ -1,0 +1,1440 @@
+[
+  {
+    "number": 32,
+    "requestedName": "Infini Oud",
+    "canonicalName": "Infini Oud",
+    "canonicalBrand": "Maison Alhambra",
+    "concentration": "Eau de Parfum",
+    "size": 100,
+    "description": "A dry nutmeg and lavender opening develops into agarwood, earthy patchouli and musk.",
+    "family": "Spicy woody",
+    "verified": true,
+    "notesCaveat": "Published regional-store pyramid. Distributor listings vary on saffron and the position of patchouli; this is not a manufacturer-confirmed formula.",
+    "unresolved": "",
+    "notePyramid": {
+      "top": [
+        "Nutmeg",
+        "Lavender"
+      ],
+      "heart": [
+        "Agarwood",
+        "Patchouli"
+      ],
+      "base": [
+        "Agarwood",
+        "Musk",
+        "Patchouli"
+      ]
+    },
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/01xj49r5pw.png?v=1731453536",
+    "imageSourceUrl": "https://maisonalhambra-usa.com/products/maison-alhambra-infini-oud-eau-de-parfum-for-everyone",
+    "imageCandidates": [
+      "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/01xj49r5pw.png?v=1731453536",
+      "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/02hxi9ctn7.png?v=1731453539",
+      "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/03zlhpn8b6.jpg?v=1790370920",
+      "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/04c7km0k8l.jpg?v=1790370922"
+    ],
+    "source": "https://maisonalhambra-usa.com/products/maison-alhambra-infini-oud-eau-de-parfum-for-everyone",
+    "noteSources": [
+      {
+        "label": "maisonalhambra-usa.com",
+        "url": "https://maisonalhambra-usa.com/products/maison-alhambra-infini-oud-eau-de-parfum-for-everyone",
+        "kind": "regional-store"
+      }
+    ]
+  },
+  {
+    "number": 33,
+    "requestedName": "Infini Rose",
+    "canonicalName": "Infini Rose",
+    "canonicalBrand": "Maison Alhambra",
+    "concentration": "Eau de Parfum",
+    "size": 100,
+    "description": "Peppery bergamot gives way to a rose-led floral heart, softened by amber, vanilla and powdery notes.",
+    "family": "Amber floral",
+    "verified": true,
+    "notesCaveat": "Published retailer/distributor notes; note names describe the fragrance and are not a full ingredient declaration.",
+    "unresolved": "",
+    "notePyramid": {
+      "top": [
+        "Pink pepper",
+        "Hedione",
+        "Bergamot"
+      ],
+      "heart": [
+        "Bulgarian rose",
+        "Turkish rose",
+        "Egyptian jasmine"
+      ],
+      "base": [
+        "Madagascar vanilla",
+        "Amber",
+        "Powdery notes"
+      ]
+    },
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/015ybhfktp.png?v=1731453358",
+    "imageSourceUrl": "https://maisonalhambra-usa.com/products/maison-alhambra-infini-rose-eau-de-parfum-for-everyone",
+    "imageCandidates": [
+      "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/015ybhfktp.png?v=1731453358",
+      "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/04xu4rsdyl.png?v=1731453361"
+    ],
+    "source": "https://maisonalhambra-usa.com/products/maison-alhambra-infini-rose-eau-de-parfum-for-everyone",
+    "noteSources": [
+      {
+        "label": "maisonalhambra-usa.com",
+        "url": "https://maisonalhambra-usa.com/products/maison-alhambra-infini-rose-eau-de-parfum-for-everyone",
+        "kind": "regional-store"
+      }
+    ]
+  },
+  {
+    "number": 34,
+    "requestedName": "Jardin De Paris",
+    "canonicalName": "Jardin De Paris",
+    "canonicalBrand": "Maison Alhambra",
+    "concentration": "Eau de Parfum",
+    "size": 100,
+    "description": "A fruity floral profile pairing pear and citrus with jasmine, soft musk, vanilla and cedar.",
+    "family": "Fruity floral",
+    "verified": false,
+    "notesCaveat": "Retailers publish materially conflicting pyramids, including contradictory prose and tables on the same page. These are overlapping published notes only; exact top, heart and base stages await reliable confirmation.",
+    "unresolved": "Exact staged note pyramid needs manufacturer or bottle confirmation; published note list supplied without invented staging.",
+    "signatureNotes": [
+      "Pear",
+      "Bergamot",
+      "Jasmine",
+      "Vanilla",
+      "Musk",
+      "Cedar"
+    ],
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0985/7577/8167/files/2017.jpg?v=1769718338",
+    "imageCandidates": [
+      "https://cdn.shopify.com/s/files/1/0985/7577/8167/files/2017.jpg?v=1769718338",
+      "https://cdn.shopify.com/s/files/1/0985/7577/8167/files/2018.jpg?v=1769718340",
+      "https://cdn.shopify.com/s/files/1/0985/7577/8167/files/2019.jpg?v=1769718343"
+    ],
+    "imageSourceUrl": "https://safwaboutique.com/products/eau-de-parfum-jardin-de-paris-alhambra-100ml-maison-alhambra-perfumes-dubai",
+    "source": "https://safwaboutique.com/products/eau-de-parfum-jardin-de-paris-alhambra-100ml-maison-alhambra-perfumes-dubai",
+    "noteSources": [
+      {
+        "label": "safwaboutique.com",
+        "url": "https://safwaboutique.com/products/eau-de-parfum-jardin-de-paris-alhambra-100ml-maison-alhambra-perfumes-dubai",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "number": 35,
+    "requestedName": "Jean Low Azure",
+    "canonicalName": "Jean Lowe Azure",
+    "canonicalBrand": "Maison Alhambra",
+    "concentration": "Eau de Parfum",
+    "size": 100,
+    "description": "Mandarin and bergamot lead a bright orange accord, with ginger and an ambergris finish.",
+    "family": "Citrus aromatic",
+    "verified": true,
+    "notesCaveat": "Uses the citrus/ginger pyramid corroborated by Fragrance Outlet, Fragrance Hub and Fragra. The USA regional-store table conflicts and was not used for notes.",
+    "unresolved": "",
+    "notePyramid": {
+      "top": [
+        "Mandarin orange",
+        "Bergamot"
+      ],
+      "heart": [
+        "Orange"
+      ],
+      "base": [
+        "Ginger",
+        "Ambergris"
+      ]
+    },
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/01tfzvgbzd.png?v=1753478107",
+    "imageSourceUrl": "https://maisonalhambra-usa.com/products/maison-alhambra-jean-lowe-azure-eau-de-parfum-for-everyone",
+    "imageCandidates": [
+      "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/01tfzvgbzd.png?v=1753478107",
+      "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/02giuemv94.png?v=1753478112"
+    ],
+    "source": "https://www.fragranceoutlet.com/products/jean-lowe-azure-unisex-fragrance",
+    "noteSources": [
+      {
+        "label": "www.fragranceoutlet.com",
+        "url": "https://www.fragranceoutlet.com/products/jean-lowe-azure-unisex-fragrance",
+        "kind": "retailer"
+      },
+      {
+        "label": "Fragrance Hub",
+        "url": "https://www.fragrancehub.co.uk/products/jean-lowe-azure-100ml-edp-by-maison-alhambra",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "number": 36,
+    "requestedName": "Jean Lowe Nouveau",
+    "canonicalName": "Jean Lowe Nouveau",
+    "canonicalBrand": "Maison Alhambra",
+    "concentration": "Eau de Parfum",
+    "size": 100,
+    "description": "A dark woody gourmand profile combining oud and saffron with cacao, leather and warm resinous notes.",
+    "family": "Amber woody",
+    "verified": false,
+    "notesCaveat": "Original Nouveau record only. Retailers disagree sharply on its pyramid and some substitute the renamed Fraiche listing. Notes are kept as an unstaged published list pending exact-edition confirmation.",
+    "unresolved": "Exact staged note pyramid needs manufacturer or bottle confirmation; published note list supplied without invented staging.",
+    "signatureNotes": [
+      "Saffron",
+      "Vanilla",
+      "Agarwood",
+      "Cacao",
+      "Caramel",
+      "Leather",
+      "Rose",
+      "Amberwood",
+      "Olibanum"
+    ],
+    "imageUrl": "https://cdn.shopify.com/s/files/1/1598/1873/files/nouveau.jpg?v=1731454875",
+    "imageCandidates": [
+      "https://cdn.shopify.com/s/files/1/1598/1873/files/nouveau.jpg?v=1731454875"
+    ],
+    "imageSourceUrl": "https://www.bnperfumes.com/products/jean-lowe-nouveau-copy",
+    "source": "https://basenotes.com/fragrances/jean-lowe-nouveau-by-maison-alhambra.26281736",
+    "noteSources": [
+      {
+        "label": "basenotes.com",
+        "url": "https://basenotes.com/fragrances/jean-lowe-nouveau-by-maison-alhambra.26281736",
+        "kind": "fragrance-database"
+      }
+    ]
+  },
+  {
+    "number": 37,
+    "requestedName": "Jean Lowe Immortal",
+    "canonicalName": "Jean Lowe Immortal",
+    "canonicalBrand": "Maison Alhambra",
+    "concentration": "Eau de Parfum",
+    "size": 100,
+    "description": "Grapefruit and ginger open into watery herbs, followed by amber, ambroxan and labdanum.",
+    "family": "Citrus aromatic",
+    "verified": true,
+    "notesCaveat": "Immortal is also sold with the Immortel spelling. Requested edition name is retained; confirm packaging against seller stock.",
+    "unresolved": "",
+    "notePyramid": {
+      "top": [
+        "Grapefruit",
+        "Ginger",
+        "Bergamot"
+      ],
+      "heart": [
+        "Rosemary",
+        "Aquatic notes",
+        "Sage",
+        "Geranium"
+      ],
+      "base": [
+        "Ambroxan",
+        "Amber",
+        "Labdanum"
+      ]
+    },
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/016h20dk7b.png?v=1731453560",
+    "imageSourceUrl": "https://maisonalhambra-usa.com/products/maison-alhambra-jean-lowe-immortal-eau-de-parfum-for-men",
+    "imageCandidates": [
+      "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/016h20dk7b.png?v=1731453560",
+      "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/02lnzjn8qj.png?v=1731453563"
+    ],
+    "source": "https://maisonalhambra-usa.com/products/maison-alhambra-jean-lowe-immortal-eau-de-parfum-for-men",
+    "noteSources": [
+      {
+        "label": "maisonalhambra-usa.com",
+        "url": "https://maisonalhambra-usa.com/products/maison-alhambra-jean-lowe-immortal-eau-de-parfum-for-men",
+        "kind": "regional-store"
+      }
+    ]
+  },
+  {
+    "number": 38,
+    "requestedName": "Jean Lowe Matiere",
+    "canonicalName": "Jean Lowe Matiere",
+    "canonicalBrand": "Maison Alhambra",
+    "concentration": "Eau de Parfum",
+    "size": 100,
+    "description": "Jasmine and narcissus meet rose and cyclamen, grounded by agarwood, patchouli and incense.",
+    "family": "Floral woody",
+    "verified": true,
+    "notesCaveat": "Matiere is also sold under the Maitre name. Requested edition name is retained; confirm packaging against seller stock.",
+    "unresolved": "",
+    "notePyramid": {
+      "top": [
+        "Jasmine",
+        "Narcissus"
+      ],
+      "heart": [
+        "Rose",
+        "Cyclamen"
+      ],
+      "base": [
+        "Agarwood",
+        "Patchouli",
+        "Incense"
+      ]
+    },
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/03rxksbcvv.png?v=1731453568",
+    "imageSourceUrl": "https://maisonalhambra-usa.com/products/maison-alhambra-jean-lowe-matiere-eau-de-parfum-for-everyone",
+    "imageCandidates": [
+      "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/03rxksbcvv.png?v=1731453568",
+      "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/04bamksuuz.png?v=1731453571"
+    ],
+    "source": "https://maisonalhambra-usa.com/products/maison-alhambra-jean-lowe-matiere-eau-de-parfum-for-everyone",
+    "noteSources": [
+      {
+        "label": "maisonalhambra-usa.com",
+        "url": "https://maisonalhambra-usa.com/products/maison-alhambra-jean-lowe-matiere-eau-de-parfum-for-everyone",
+        "kind": "regional-store"
+      }
+    ]
+  },
+  {
+    "number": 39,
+    "requestedName": "Jean Lowe Ombre",
+    "canonicalName": "Jean Lowe Ombre",
+    "canonicalBrand": "Maison Alhambra",
+    "concentration": "Eau de Parfum",
+    "size": 100,
+    "description": "Smoky oud and incense frame rose, raspberry and saffron, with a warm benzoin and amberwood finish.",
+    "family": "Amber woody",
+    "verified": true,
+    "notesCaveat": "Retailer identifies Noir as the former Ombre. Original Ombre database record corroborates the pyramid; packaging must be matched to the owner’s edition.",
+    "unresolved": "",
+    "notePyramid": {
+      "top": [
+        "Agarwood",
+        "Incense"
+      ],
+      "heart": [
+        "Rose",
+        "Raspberry",
+        "Saffron",
+        "Birch"
+      ],
+      "base": [
+        "Amberwood",
+        "Benzoin",
+        "Geranium"
+      ]
+    },
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0695/3625/2062/files/JeanLoweNoir_2.jpg?v=1743840790",
+    "imageCandidates": [
+      "https://cdn.shopify.com/s/files/1/0695/3625/2062/files/JeanLoweNoir_2.jpg?v=1743840790",
+      "https://cdn.shopify.com/s/files/1/0695/3625/2062/files/JeanLoweNoir_1.jpg?v=1743840790",
+      "https://cdn.shopify.com/s/files/1/0695/3625/2062/files/JeanLoweNoir_3.jpg?v=1743840790",
+      "https://cdn.shopify.com/s/files/1/0695/3625/2062/files/JeanLoweNoir_4.jpg?v=1743840790",
+      "https://cdn.shopify.com/s/files/1/0695/3625/2062/files/JeanLoweNoir_5.jpg?v=1743840790"
+    ],
+    "imageSourceUrl": "https://avsfragrances.com/products/maison-alhambra-jean-lowe-ombre-noir-edp-100ml-men",
+    "source": "https://avsfragrances.com/products/maison-alhambra-jean-lowe-ombre-noir-edp-100ml-men",
+    "noteSources": [
+      {
+        "label": "avsfragrances.com",
+        "url": "https://avsfragrances.com/products/maison-alhambra-jean-lowe-ombre-noir-edp-100ml-men",
+        "kind": "retailer"
+      },
+      {
+        "label": "Fragrantica original Ombre record",
+        "url": "https://www.fragrantica.com/perfume/Maison-Alhambra/Jean-Lowe-Ombre-91352.html",
+        "kind": "fragrance-database"
+      }
+    ],
+    "imageCaveat": "Image is the retailer-identified Noir successor packaging, not guaranteed to match old Ombre stock."
+  },
+  {
+    "number": 40,
+    "requestedName": "Jean Lowe Vibe",
+    "canonicalName": "Jean Lowe Vibe",
+    "canonicalBrand": "Maison Alhambra",
+    "concentration": "Eau de Parfum",
+    "size": 100,
+    "description": "Minty citrus and blackcurrant move through basil, apricot and rose to a soft fig, date and ambrette base.",
+    "family": "Citrus fruity",
+    "verified": true,
+    "notesCaveat": "Published retailer/distributor notes; note names describe the fragrance and are not a full ingredient declaration.",
+    "unresolved": "",
+    "notePyramid": {
+      "top": [
+        "Blackcurrant",
+        "Mint",
+        "Coriander",
+        "Citron",
+        "Lemon",
+        "Orange"
+      ],
+      "heart": [
+        "Carrot seed",
+        "May rose",
+        "Apricot",
+        "Basil"
+      ],
+      "base": [
+        "Fig",
+        "Dates",
+        "Ambrette"
+      ]
+    },
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Maison_Alhambra_Jean_Lowe_Vibe_Eau_de_Parfum_100ml.webp?v=1758088736",
+    "imageSourceUrl": "https://fragra.de/en/products/maison-alhambra-jean-lowe-vibe-eau-de-parfum-100ml",
+    "imageCandidates": [
+      "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Maison_Alhambra_Jean_Lowe_Vibe_Eau_de_Parfum_100ml.webp?v=1758088736"
+    ],
+    "source": "https://fragra.de/en/products/maison-alhambra-jean-lowe-vibe-eau-de-parfum-100ml",
+    "noteSources": [
+      {
+        "label": "fragra.de",
+        "url": "https://fragra.de/en/products/maison-alhambra-jean-lowe-vibe-eau-de-parfum-100ml",
+        "kind": "regional-store"
+      }
+    ]
+  },
+  {
+    "number": 41,
+    "requestedName": "Jorge Di Profumo",
+    "canonicalName": "Jorge Di Profumo",
+    "canonicalBrand": "Maison Alhambra",
+    "concentration": "Eau de Parfum",
+    "size": 100,
+    "description": "Lemon and bergamot meet black pepper, aromatic lavender and tobacco over sandalwood, vetiver and musk.",
+    "family": "Citrus aromatic",
+    "verified": true,
+    "notesCaveat": "Exact Jorge di Profumo table is used; notes from its similarly named designer inspiration have not been substituted.",
+    "unresolved": "",
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Sicilian lemon",
+        "Black pepper"
+      ],
+      "heart": [
+        "Lavender",
+        "Tobacco",
+        "Geranium"
+      ],
+      "base": [
+        "Sandalwood",
+        "Vetiver",
+        "Musk"
+      ]
+    },
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/03hr6cuw7i.jpg?v=1746206106",
+    "imageSourceUrl": "https://maisonalhambra-usa.com/products/maison-alhambra-jorge-di-profumo-eau-de-parfum-for-men",
+    "imageCandidates": [
+      "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/03hr6cuw7i.jpg?v=1746206106",
+      "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/029e17qlhj.png?v=1746206109"
+    ],
+    "source": "https://maisonalhambra-usa.com/products/maison-alhambra-jorge-di-profumo-eau-de-parfum-for-men",
+    "noteSources": [
+      {
+        "label": "maisonalhambra-usa.com",
+        "url": "https://maisonalhambra-usa.com/products/maison-alhambra-jorge-di-profumo-eau-de-parfum-for-men",
+        "kind": "regional-store"
+      }
+    ]
+  },
+  {
+    "number": 42,
+    "requestedName": "Jorge Di Aqua",
+    "canonicalName": "Jorge Di Aqua",
+    "canonicalBrand": "Maison Alhambra",
+    "concentration": "Eau de Parfum",
+    "size": 100,
+    "description": "Layered citrus and neroli open into marine florals and herbs, finishing with woods, musk and earthy patchouli.",
+    "family": "Aquatic citrus",
+    "verified": true,
+    "notesCaveat": "Uses the distributor’s explicit table; the USA regional-store translation differs on several minor notes. Note names are accords, not an ingredient declaration.",
+    "unresolved": "",
+    "notePyramid": {
+      "top": [
+        "Lime",
+        "Lemon",
+        "Bergamot",
+        "Jasmine",
+        "Orange",
+        "Mandarin orange",
+        "Neroli"
+      ],
+      "heart": [
+        "Marine notes",
+        "Jasmine",
+        "Calone",
+        "Peach",
+        "Freesia",
+        "Rosemary",
+        "Coriander",
+        "Violet",
+        "Nutmeg",
+        "Rose",
+        "Reseda"
+      ],
+      "base": [
+        "White musk",
+        "Cedar",
+        "Oakmoss",
+        "Patchouli",
+        "Ambergris"
+      ]
+    },
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/02gun35ckt.png?v=1733181312",
+    "imageSourceUrl": "https://maisonalhambra-usa.com/products/maison-alhambra-jorge-di-aqua-eau-de-parfum-for-men",
+    "imageCandidates": [
+      "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/02gun35ckt.png?v=1733181312",
+      "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/01xka5hgsk.jpg?v=1733181314"
+    ],
+    "source": "https://fragra.de/en/products/maison-alhambra-parfum-jorge-di-aqua-eau-de-parfum-100ml",
+    "noteSources": [
+      {
+        "label": "fragra.de",
+        "url": "https://fragra.de/en/products/maison-alhambra-parfum-jorge-di-aqua-eau-de-parfum-100ml",
+        "kind": "regional-store"
+      }
+    ]
+  },
+  {
+    "number": 43,
+    "requestedName": "Jorge Di Profondo",
+    "canonicalName": "Jorge Di Profondo",
+    "canonicalBrand": "Maison Alhambra",
+    "concentration": "Eau de Parfum",
+    "size": 100,
+    "description": "Marine notes and green citrus give way to rosemary, lavender and cypress, over a mineral, musky amber base.",
+    "family": "Aquatic aromatic",
+    "verified": true,
+    "notesCaveat": "Aquatic pyramid is corroborated across fragrance databases. The USA retailer table instead lists berry and rose and is rejected as conflicting; manufacturer confirmation remains unavailable.",
+    "unresolved": "",
+    "notePyramid": {
+      "top": [
+        "Aquozone",
+        "Sea notes",
+        "Bergamot",
+        "Green mandarin"
+      ],
+      "heart": [
+        "Rosemary",
+        "Lavender",
+        "Cypress",
+        "Mastic"
+      ],
+      "base": [
+        "Mineral notes",
+        "Musk",
+        "Amber",
+        "Patchouli"
+      ]
+    },
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/01mdzpaynv.png?v=1731453589",
+    "imageSourceUrl": "https://maisonalhambra-usa.com/products/maison-alhambra-jorge-di-profondo-eau-de-parfum-for-men",
+    "imageCandidates": [
+      "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/01mdzpaynv.png?v=1731453589",
+      "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/02eimxfc96.png?v=1731453592"
+    ],
+    "source": "https://www.fragrantica.com/p/93815",
+    "noteSources": [
+      {
+        "label": "www.fragrantica.com",
+        "url": "https://www.fragrantica.com/p/93815",
+        "kind": "fragrance-database"
+      },
+      {
+        "label": "Nardinum",
+        "url": "https://nardinum.com/fragrance/jorge-di-profondo-maison-alhambra",
+        "kind": "fragrance-database"
+      }
+    ]
+  },
+  {
+    "number": 44,
+    "requestedName": "Versencia Oro",
+    "canonicalName": "Versencia Oro",
+    "canonicalBrand": "Maison Alhambra",
+    "concentration": "Eau de Parfum",
+    "size": 100,
+    "description": "Cool mint, green apple and lemon soften into tonka and vanilla over cedar, vetiver and oakmoss.",
+    "family": "Aromatic woody",
+    "verified": true,
+    "notesCaveat": "Published retailer/distributor notes; note names describe the fragrance and are not a full ingredient declaration.",
+    "unresolved": "",
+    "notePyramid": {
+      "top": [
+        "Mint",
+        "Green apple",
+        "Lemon"
+      ],
+      "heart": [
+        "Tonka bean",
+        "Ambroxan",
+        "Geranium"
+      ],
+      "base": [
+        "Madagascar vanilla",
+        "Virginia cedar",
+        "Atlas cedar",
+        "Vetiver",
+        "Oakmoss"
+      ]
+    },
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0782/8527/5424/products/vercenciaoro.jpg?v=1688240974",
+    "imageCandidates": [
+      "https://cdn.shopify.com/s/files/1/0782/8527/5424/products/vercenciaoro.jpg?v=1688240974"
+    ],
+    "imageSourceUrl": "https://alharamperfumes.co.uk/products/versencia-oro-edp-spray-100ml",
+    "source": "https://alharamperfumes.co.uk/products/versencia-oro-edp-spray-100ml",
+    "noteSources": [
+      {
+        "label": "alharamperfumes.co.uk",
+        "url": "https://alharamperfumes.co.uk/products/versencia-oro-edp-spray-100ml",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "number": 45,
+    "requestedName": "Jubilant Vitality",
+    "canonicalName": "Jubilant Vitality",
+    "canonicalBrand": "Maison Alhambra",
+    "concentration": "Eau de Parfum",
+    "size": 100,
+    "description": "A brisk citrus opening leads into pepper, cardamom and blackcurrant over amber, patchouli and moss.",
+    "family": "Citrus woody",
+    "verified": true,
+    "notesCaveat": "Retailer-published pyramid; other distributor tables add further citrus notes and omit cardamom. No manufacturer pyramid was located.",
+    "unresolved": "",
+    "notePyramid": {
+      "top": [
+        "Grapefruit",
+        "Lemon",
+        "Bergamot"
+      ],
+      "heart": [
+        "Pink pepper",
+        "Cardamom",
+        "Blackcurrant"
+      ],
+      "base": [
+        "Amber",
+        "Patchouli",
+        "Oakmoss",
+        "Musk"
+      ]
+    },
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/02r4xuffqi.png?v=1753208107",
+    "imageSourceUrl": "https://maisonalhambra-usa.com/products/maison-alhambra-jubilant-vitality-eau-de-parfum-for-everyone",
+    "imageCandidates": [
+      "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/02r4xuffqi.png?v=1753208107",
+      "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/01zbm3cfks.png?v=1753208109",
+      "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/04h2qtim69.png?v=1753208110"
+    ],
+    "source": "https://maisonalhambra-usa.com/products/maison-alhambra-jubilant-vitality-eau-de-parfum-for-everyone",
+    "noteSources": [
+      {
+        "label": "maisonalhambra-usa.com",
+        "url": "https://maisonalhambra-usa.com/products/maison-alhambra-jubilant-vitality-eau-de-parfum-for-everyone",
+        "kind": "regional-store"
+      }
+    ]
+  },
+  {
+    "number": 46,
+    "requestedName": "Versencia Essence",
+    "canonicalName": "Versencia Essence",
+    "canonicalBrand": "Maison Alhambra",
+    "concentration": "Eau de Parfum",
+    "size": 100,
+    "description": "Green mandarin, bergamot and fig brighten a floral heart, followed by olive wood, sandalwood and musk.",
+    "family": "Citrus floral woody",
+    "verified": true,
+    "notesCaveat": "Published retailer/distributor notes; note names describe the fragrance and are not a full ingredient declaration.",
+    "unresolved": "",
+    "notePyramid": {
+      "top": [
+        "Green mandarin",
+        "Bergamot",
+        "Fruit notes",
+        "Fig",
+        "Citrus",
+        "Pear"
+      ],
+      "heart": [
+        "Cardamom",
+        "Lily",
+        "Jasmine",
+        "Narcissus"
+      ],
+      "base": [
+        "Virginia cedar",
+        "Musk",
+        "Olive tree",
+        "Sandalwood"
+      ]
+    },
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0581/9026/6425/files/versencia-essence.webp?v=1784581638",
+    "imageCandidates": [
+      "https://cdn.shopify.com/s/files/1/0581/9026/6425/files/versencia-essence.webp?v=1784581638"
+    ],
+    "imageSourceUrl": "https://perfumeoriginales.cl/products/perfume-maison-alhambra-versencia-essence-edp-100ml-mujer",
+    "source": "https://theperfumespecialist.com/shop/versencia-essence-524",
+    "noteSources": [
+      {
+        "label": "theperfumespecialist.com",
+        "url": "https://theperfumespecialist.com/shop/versencia-essence-524",
+        "kind": "retailer"
+      },
+      {
+        "label": "Perfume Originales",
+        "url": "https://perfumeoriginales.cl/products/perfume-maison-alhambra-versencia-essence-edp-100ml-mujer",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "number": 47,
+    "requestedName": "Versencia Crystal",
+    "canonicalName": "Versencia Crystal",
+    "canonicalBrand": "Maison Alhambra",
+    "concentration": "Eau de Parfum",
+    "size": 100,
+    "description": "Yuzu and pomegranate give a cool fruity opening before peony, lotus and magnolia settle into musky woods and amber.",
+    "family": "Floral fruity",
+    "verified": true,
+    "notesCaveat": "Published retailer/distributor notes; note names describe the fragrance and are not a full ingredient declaration.",
+    "unresolved": "",
+    "notePyramid": {
+      "top": [
+        "Yuzu",
+        "Pomegranate",
+        "Ice accord"
+      ],
+      "heart": [
+        "Peony",
+        "Lotus",
+        "Magnolia"
+      ],
+      "base": [
+        "Musk",
+        "Mahogany",
+        "Amber"
+      ]
+    },
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0827/5548/6008/files/versencia-crystal_5000x_909b13f4-148a-459d-8b49-bf47ea18b127.jpg?v=1789931186",
+    "imageCandidates": [
+      "https://cdn.shopify.com/s/files/1/0827/5548/6008/files/versencia-crystal_5000x_909b13f4-148a-459d-8b49-bf47ea18b127.jpg?v=1789931186",
+      "https://cdn.shopify.com/s/files/1/0827/5548/6008/files/mom-perfumes-10ml-decant-studio_50bafd80-cdc1-4252-a077-554dcafcc195.png?v=1792936254"
+    ],
+    "imageSourceUrl": "https://momperfume.in/products/maison-alhambra-versencia-crystal-edp",
+    "source": "https://eclipseperfumes.cr/products/versencia-crystal",
+    "noteSources": [
+      {
+        "label": "eclipseperfumes.cr",
+        "url": "https://eclipseperfumes.cr/products/versencia-crystal",
+        "kind": "retailer"
+      },
+      {
+        "label": "Bella Roma",
+        "url": "https://www.bellaroma.mx/maison-alhambra-versencia-crystal-100-ml-edp/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "number": 48,
+    "requestedName": "Kismet Angel",
+    "canonicalName": "Kismet Angel",
+    "canonicalBrand": "Maison Alhambra",
+    "concentration": "Eau de Parfum",
+    "size": 100,
+    "description": "A rich sweet profile of honeyed vanilla, cognac and cinnamon, deepened by caramel, tonka and dark chocolate.",
+    "family": "Amber gourmand",
+    "verified": true,
+    "notesCaveat": "Original Kismet Angel published pyramid. Kismet Magic listings often show different staged notes; they were not substituted for this requested edition.",
+    "unresolved": "",
+    "notePyramid": {
+      "top": [
+        "Vanilla",
+        "Honeycomb",
+        "Amber"
+      ],
+      "heart": [
+        "Cognac",
+        "Cinnamon",
+        "Caramel",
+        "Tonka bean"
+      ],
+      "base": [
+        "Dark chocolate"
+      ]
+    },
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0694/7068/3439/files/kismetangel.jpg?v=1682493407",
+    "imageCandidates": [
+      "https://cdn.shopify.com/s/files/1/0694/7068/3439/files/kismetangel.jpg?v=1682493407"
+    ],
+    "imageSourceUrl": "https://www.sheikhdot.com/products/maison-alhambra-kismet-angel",
+    "source": "https://www.sheikhdot.com/products/maison-alhambra-kismet-angel",
+    "noteSources": [
+      {
+        "label": "www.sheikhdot.com",
+        "url": "https://www.sheikhdot.com/products/maison-alhambra-kismet-angel",
+        "kind": "retailer"
+      },
+      {
+        "label": "Fragrantica Kismet Angel",
+        "url": "https://www.fragrantica.com/perfume/Maison-Alhambra/Kismet-Angel-79015.html",
+        "kind": "fragrance-database"
+      }
+    ]
+  },
+  {
+    "number": 49,
+    "requestedName": "Kismet For Men",
+    "canonicalName": "Kismet For Men",
+    "canonicalBrand": "Maison Alhambra",
+    "concentration": "Eau de Parfum",
+    "size": 100,
+    "description": "Nutmeg and woods lead into coffee, cacao, patchouli and sandalwood, with vanilla and vetiver beneath.",
+    "family": "Woody gourmand",
+    "verified": true,
+    "notesCaveat": "Published retailer/distributor notes; note names describe the fragrance and are not a full ingredient declaration.",
+    "unresolved": "",
+    "notePyramid": {
+      "top": [
+        "Woody notes",
+        "Nutmeg"
+      ],
+      "heart": [
+        "Patchouli",
+        "Sandalwood",
+        "Cacao",
+        "Coffee"
+      ],
+      "base": [
+        "Vanilla",
+        "Vetiver"
+      ]
+    },
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/011bsvbhgq.png?v=1732314086",
+    "imageSourceUrl": "https://maisonalhambra-usa.com/products/maison-alhambra-kismet-eau-de-parfum-for-men",
+    "imageCandidates": [
+      "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/011bsvbhgq.png?v=1732314086",
+      "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/02najhhgvu.png?v=1732314092",
+      "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/05bjw7ykly.png?v=1732314097"
+    ],
+    "source": "https://maisonalhambra-usa.com/products/maison-alhambra-kismet-eau-de-parfum-for-men",
+    "noteSources": [
+      {
+        "label": "maisonalhambra-usa.com",
+        "url": "https://maisonalhambra-usa.com/products/maison-alhambra-kismet-eau-de-parfum-for-men",
+        "kind": "regional-store"
+      }
+    ]
+  },
+  {
+    "number": 50,
+    "requestedName": "La Rouge Baroque",
+    "canonicalName": "La Rouge Baroque",
+    "canonicalBrand": "Maison Alhambra",
+    "concentration": "Eau de Parfum",
+    "size": 100,
+    "description": "Saffron and jasmine sit above bitter almond and cedar, finishing with ambergris and a woody musk accord.",
+    "family": "Amber woody",
+    "verified": true,
+    "notesCaveat": "La Rouge Baroque is retained as a distinct requested listing; it is not merged with Baroque Rouge Extrait.",
+    "unresolved": "",
+    "notePyramid": {
+      "top": [
+        "Egyptian jasmine grandiflorum",
+        "Saffron"
+      ],
+      "heart": [
+        "Bitter almond",
+        "Cedarwood"
+      ],
+      "base": [
+        "Woody musk accord",
+        "Ambergris"
+      ]
+    },
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/10uyu0apkg.png?v=1736802908",
+    "imageSourceUrl": "https://maisonalhambra-usa.com/products/maison-alhambra-la-rouge-baroque-eau-de-parfum-for-everyone",
+    "imageCandidates": [
+      "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/10uyu0apkg.png?v=1736802908",
+      "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/09jbz4umo5.png?v=1736802911",
+      "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/081opwsxyx.png?v=1736802912"
+    ],
+    "source": "https://maisonalhambra-usa.com/products/maison-alhambra-la-rouge-baroque-eau-de-parfum-for-everyone",
+    "noteSources": [
+      {
+        "label": "maisonalhambra-usa.com",
+        "url": "https://maisonalhambra-usa.com/products/maison-alhambra-la-rouge-baroque-eau-de-parfum-for-everyone",
+        "kind": "regional-store"
+      }
+    ]
+  },
+  {
+    "number": 51,
+    "requestedName": "Baroque Rouge Extrait",
+    "canonicalName": "Baroque Rouge Extrait",
+    "canonicalBrand": "Maison Alhambra",
+    "concentration": "Eau de Parfum",
+    "size": 100,
+    "description": "Saffron and bitter almond frame jasmine, warm woody notes, amber and musk.",
+    "family": "Amber woody",
+    "verified": false,
+    "notesCaveat": "Retailers disagree on cedar versus cypress and the stage placement of woody/amber notes, so only an unstaged overlapping note list is used. Product name contains Extrait, while several retail specifications say Eau de Parfum; exact concentration needs bottle confirmation.",
+    "unresolved": "Confirm concentration and full staged pyramid from the exact bottle/brand; no inspired-fragrance pyramid has been substituted.",
+    "signatureNotes": [
+      "Saffron",
+      "Bitter almond",
+      "Jasmine",
+      "Woody notes",
+      "Amber",
+      "Musk"
+    ],
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0756/2104/0436/files/3-4-oz-100-ml-maison-alhambra-baroque-rouge-extrait-eau-de-parfum-for-unisex-37737162506548.jpg?v=1787149054",
+    "imageCandidates": [
+      "https://cdn.shopify.com/s/files/1/0756/2104/0436/files/3-4-oz-100-ml-maison-alhambra-baroque-rouge-extrait-eau-de-parfum-for-unisex-37737162506548.jpg?v=1787149054"
+    ],
+    "imageSourceUrl": "https://mapleprime.com/products/maison-alhambra-baroque-rouge-extrait-eau-de-parfum-for-unisex",
+    "source": "https://mapleprime.com/products/maison-alhambra-baroque-rouge-extrait-eau-de-parfum-for-unisex",
+    "noteSources": [
+      {
+        "label": "mapleprime.com",
+        "url": "https://mapleprime.com/products/maison-alhambra-baroque-rouge-extrait-eau-de-parfum-for-unisex",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "number": 52,
+    "requestedName": "La Vita Bella",
+    "canonicalName": "La Vita Bella",
+    "canonicalBrand": "Maison Alhambra",
+    "concentration": "Eau de Parfum",
+    "size": 100,
+    "description": "Pear and blackcurrant lift iris, jasmine and orange blossom, with a sweet praline, vanilla and tonka base.",
+    "family": "Floral gourmand",
+    "verified": true,
+    "notesCaveat": "Original La Vita Bella edition. Do not confuse with La Vita Bella Intensa or silently replace with La Vivacite packaging.",
+    "unresolved": "",
+    "notePyramid": {
+      "top": [
+        "Blackcurrant",
+        "Pear"
+      ],
+      "heart": [
+        "Iris",
+        "Jasmine",
+        "Orange blossom"
+      ],
+      "base": [
+        "Praline",
+        "Vanilla",
+        "Patchouli",
+        "Tonka bean"
+      ]
+    },
+    "imageUrl": "https://proud.ae/wp-content/uploads/2026/06/21_20260829_193147_0018-scaled.png",
+    "imageCandidates": [
+      "https://proud.ae/wp-content/uploads/2026/06/21_20260829_193147_0018-scaled.png"
+    ],
+    "imageSourceUrl": "https://proud.ae/product/la-vita-bella-perfume/",
+    "source": "https://www.fragrantica.com/perfume/Maison-Alhambra/La-Vita-Bella-79008.html",
+    "noteSources": [
+      {
+        "label": "www.fragrantica.com",
+        "url": "https://www.fragrantica.com/perfume/Maison-Alhambra/La-Vita-Bella-79008.html",
+        "kind": "fragrance-database"
+      }
+    ]
+  },
+  {
+    "number": 53,
+    "requestedName": "La Voie",
+    "canonicalName": "La Voie",
+    "canonicalBrand": "Maison Alhambra",
+    "concentration": "Eau de Parfum",
+    "size": 100,
+    "description": "Orange blossom and bergamot introduce a tuberose and jasmine heart, resting on vanilla, white musk and cedar.",
+    "family": "White floral",
+    "verified": true,
+    "notesCaveat": "Published retailer/distributor notes; note names describe the fragrance and are not a full ingredient declaration.",
+    "unresolved": "",
+    "notePyramid": {
+      "top": [
+        "Orange blossom",
+        "Bergamot"
+      ],
+      "heart": [
+        "Tuberose",
+        "Indian jasmine"
+      ],
+      "base": [
+        "Madagascar vanilla",
+        "White musk",
+        "Virginia cedar"
+      ]
+    },
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/01xljqzs9z.png?v=1731453385",
+    "imageSourceUrl": "https://maisonalhambra-usa.com/products/maison-alhambra-la-voie-eau-de-parfum-for-women",
+    "imageCandidates": [
+      "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/01xljqzs9z.png?v=1731453385",
+      "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/02zqcuvm4g.png?v=1731453388"
+    ],
+    "source": "https://maisonalhambra-usa.com/products/maison-alhambra-la-voie-eau-de-parfum-for-women",
+    "noteSources": [
+      {
+        "label": "maisonalhambra-usa.com",
+        "url": "https://maisonalhambra-usa.com/products/maison-alhambra-la-voie-eau-de-parfum-for-women",
+        "kind": "regional-store"
+      }
+    ]
+  },
+  {
+    "number": 54,
+    "requestedName": "Libbra Intense",
+    "canonicalName": "Libbra Intense",
+    "canonicalBrand": "Maison Alhambra",
+    "concentration": "Eau de Parfum",
+    "size": 100,
+    "description": "Citrus and lavender open into orange blossom, jasmine and orchid, with vanilla, tonka and vetiver underneath.",
+    "family": "Amber floral",
+    "verified": true,
+    "notesCaveat": "Libbra Intense, not regular Libbra. Some distributor tables list amber rather than ambergris; this exact Intense retailer table is used.",
+    "unresolved": "",
+    "notePyramid": {
+      "top": [
+        "Lavender",
+        "Mandarin orange",
+        "Bergamot"
+      ],
+      "heart": [
+        "Lavender",
+        "Moroccan orange blossom",
+        "Jasmine sambac",
+        "Orchid"
+      ],
+      "base": [
+        "Madagascar vanilla",
+        "Tonka bean",
+        "Ambergris",
+        "Vetiver"
+      ]
+    },
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/1563/9195/files/libbra-maison-alhambra-1-darussalam-australia-islamic-bookstore-dsbooks.jpg?v=1780678018",
+    "imageCandidates": [
+      "https://cdn.shopify.com/s/files/1/0670/1563/9195/files/libbra-maison-alhambra-1-darussalam-australia-islamic-bookstore-dsbooks.jpg?v=1780678018",
+      "https://cdn.shopify.com/s/files/1/0670/1563/9195/files/libbra-maison-alhambra-2-darussalam-australia-islamic-bookstore-dsbooks.jpg?v=1780678018",
+      "https://cdn.shopify.com/s/files/1/0670/1563/9195/files/libbra-maison-alhambra-3-darussalam-australia-islamic-bookstore-dsbooks.jpg?v=1780678018"
+    ],
+    "imageSourceUrl": "https://www.darussalam.com.au/products/libbra-intense-100-ml",
+    "source": "https://www.darussalam.com.au/products/libbra-intense-100-ml",
+    "noteSources": [
+      {
+        "label": "www.darussalam.com.au",
+        "url": "https://www.darussalam.com.au/products/libbra-intense-100-ml",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "number": 55,
+    "requestedName": "Lovely Cherie",
+    "canonicalName": "Lovely Cherie",
+    "canonicalBrand": "Maison Alhambra",
+    "concentration": "Eau de Parfum",
+    "size": 80,
+    "description": "Bitter almond and rose meet cherry and amber before a sweet tonka, toffee and balsamic finish.",
+    "family": "Fruity gourmand",
+    "verified": true,
+    "notesCaveat": "Uses the requested 80 ml Lovely Cherie edition. Renamed Forbidden Love tables were not used.",
+    "unresolved": "",
+    "notePyramid": {
+      "top": [
+        "Bitter almond",
+        "Rose"
+      ],
+      "heart": [
+        "Cherry",
+        "Black cherry",
+        "Amber"
+      ],
+      "base": [
+        "Tonka bean",
+        "Toffee",
+        "Peru balsam"
+      ]
+    },
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0884/2012/2913/files/IMG-3627.jpg?v=1732767644",
+    "imageCandidates": [
+      "https://cdn.shopify.com/s/files/1/0884/2012/2913/files/IMG-3627.jpg?v=1732767644",
+      "https://cdn.shopify.com/s/files/1/0884/2012/2913/files/FullSizeRender_356b6503-e0c1-417f-a124-14498ed22803.jpg?v=1732477390"
+    ],
+    "imageSourceUrl": "https://zashaura.com/products/maison-al-hambra-lovely-cherie-edp-80ml-for-women",
+    "source": "https://www.bigw.com.au/product/maison-alhambra-lovely-cherie-80ml-edp-unisex-/p/9903228223",
+    "noteSources": [
+      {
+        "label": "www.bigw.com.au",
+        "url": "https://www.bigw.com.au/product/maison-alhambra-lovely-cherie-80ml-edp-unisex-/p/9903228223",
+        "kind": "retailer"
+      },
+      {
+        "label": "Zash Aura",
+        "url": "https://zashaura.com/products/maison-al-hambra-lovely-cherie-edp-80ml-for-women",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "number": 56,
+    "requestedName": "Blue De Chance",
+    "canonicalName": "Blue De Chance",
+    "canonicalBrand": "Maison Alhambra",
+    "concentration": "Eau de Parfum",
+    "size": 100,
+    "description": "Grapefruit, mint and pepper give way to ginger and jasmine, settling into incense, woods, musk and vetiver.",
+    "family": "Citrus woody",
+    "verified": true,
+    "notesCaveat": "Published retailer/distributor notes; note names describe the fragrance and are not a full ingredient declaration.",
+    "unresolved": "",
+    "notePyramid": {
+      "top": [
+        "Grapefruit",
+        "Lemon",
+        "Mint",
+        "Pink pepper"
+      ],
+      "heart": [
+        "Ginger",
+        "Jasmine",
+        "Nutmeg"
+      ],
+      "base": [
+        "Cedarwood",
+        "Incense",
+        "Labdanum",
+        "Musk",
+        "Patchouli",
+        "Sandalwood",
+        "Vetiver"
+      ]
+    },
+    "imageUrl": "https://cdn.store-assets.com/s/1326863/i/66314663.png?width=720",
+    "imageCandidates": [
+      "https://cdn.store-assets.com/s/1326863/i/66314663.png?width=720",
+      "https://cdn.store-assets.com/s/1326863/i/66314661.webp?width=720"
+    ],
+    "imageSourceUrl": "https://www.empireoudh.com/products/blue-de-chance-100ml-eau-de-parfum",
+    "source": "https://fragplace.com/fragrances/73752/maison-alhambra/blue-de-chance",
+    "noteSources": [
+      {
+        "label": "fragplace.com",
+        "url": "https://fragplace.com/fragrances/73752/maison-alhambra/blue-de-chance",
+        "kind": "fragrance-database"
+      },
+      {
+        "label": "Fragrances Wiki",
+        "url": "https://fragrances.wiki/fragrances/maison-alhambra-blue-de-chance",
+        "kind": "fragrance-database"
+      }
+    ]
+  },
+  {
+    "number": 57,
+    "requestedName": "Man Black Edition",
+    "canonicalName": "Man Black Edition",
+    "canonicalBrand": "Maison Alhambra",
+    "concentration": "Eau de Parfum",
+    "size": 100,
+    "description": "Orange, violet and warm spice lead to jasmine and patchouli, with tobacco, tonka, cedar and musk in the base.",
+    "family": "Spicy woody",
+    "verified": true,
+    "notesCaveat": "Uses the exact Man Black Edition retailer’s staged note list; some databases list additional accords. Not the separately named Man Black fragrance.",
+    "unresolved": "",
+    "notePyramid": {
+      "top": [
+        "Orange",
+        "Violet",
+        "Pink pepper",
+        "Nutmeg"
+      ],
+      "heart": [
+        "Jasmine",
+        "Patchouli"
+      ],
+      "base": [
+        "Musk",
+        "Cedar",
+        "Tonka bean",
+        "Tobacco"
+      ]
+    },
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0596/8284/8873/files/947B4002-2F25-4971-B3E3-072100BC48CB.jpg?v=1787595617",
+    "imageCandidates": [
+      "https://cdn.shopify.com/s/files/1/0596/8284/8873/files/947B4002-2F25-4971-B3E3-072100BC48CB.jpg?v=1787595617"
+    ],
+    "imageSourceUrl": "https://haramaineg.com/products/man-black-edition-100ml",
+    "source": "https://haramaineg.com/products/man-black-edition-100ml",
+    "noteSources": [
+      {
+        "label": "haramaineg.com",
+        "url": "https://haramaineg.com/products/man-black-edition-100ml",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "number": 58,
+    "requestedName": "Mia Dolcezza",
+    "canonicalName": "Mia Dolcezza",
+    "canonicalBrand": "Maison Alhambra",
+    "concentration": "Eau de Parfum",
+    "size": 100,
+    "description": "Blackcurrant and pink pepper brighten lush white florals over vanilla, amber and smooth woods.",
+    "family": "Amber floral",
+    "verified": true,
+    "notesCaveat": "Uses the USA regional-store pyramid corroborated by the exact fragrance database record; conflicting caramel/pear distributor copy was not used.",
+    "unresolved": "",
+    "notePyramid": {
+      "top": [
+        "Blackcurrant",
+        "Pink pepper",
+        "Bergamot"
+      ],
+      "heart": [
+        "Jasmine",
+        "Ylang-ylang",
+        "Tuberose",
+        "Orange blossom"
+      ],
+      "base": [
+        "Vanilla",
+        "Cashmere wood",
+        "Guaiac wood",
+        "Amber"
+      ]
+    },
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/04ul479ip3.png?v=1778256915",
+    "imageSourceUrl": "https://maisonalhambra-usa.com/products/maison-alhambra-mia-dolcezza-eau-de-parfum-for-women",
+    "imageCandidates": [
+      "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/04ul479ip3.png?v=1778256915",
+      "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/02dlvugf8t.png?v=1734547574",
+      "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/056c6gouqu.png?v=1778256925"
+    ],
+    "source": "https://maisonalhambra-usa.com/products/maison-alhambra-mia-dolcezza-eau-de-parfum-for-women",
+    "noteSources": [
+      {
+        "label": "maisonalhambra-usa.com",
+        "url": "https://maisonalhambra-usa.com/products/maison-alhambra-mia-dolcezza-eau-de-parfum-for-women",
+        "kind": "regional-store"
+      },
+      {
+        "label": "Fragrantica Mia Dolcezza",
+        "url": "https://www.fragrantica.com/perfume/Maison-Alhambra/Mia-Dolcezza-116662.html",
+        "kind": "fragrance-database"
+      }
+    ]
+  },
+  {
+    "number": 59,
+    "requestedName": "Minerale Gold",
+    "canonicalName": "Minerale Gold",
+    "canonicalBrand": "Maison Alhambra",
+    "concentration": "Eau de Parfum",
+    "size": 100,
+    "description": "Violet, saffron and spice introduce a soft suede and osmanthus heart, resting on amber, moss and musk.",
+    "family": "Spicy leather",
+    "verified": true,
+    "notesCaveat": "Published retailer/distributor notes; note names describe the fragrance and are not a full ingredient declaration.",
+    "unresolved": "",
+    "notePyramid": {
+      "top": [
+        "Violet",
+        "Saffron",
+        "Cardamom",
+        "Cumin"
+      ],
+      "heart": [
+        "Suede",
+        "Osmanthus",
+        "Cloves",
+        "Nutmeg"
+      ],
+      "base": [
+        "Amber",
+        "Oakmoss",
+        "Musk"
+      ]
+    },
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/04htgqnuxy.png?v=1755702926",
+    "imageSourceUrl": "https://maisonalhambra-usa.com/products/maison-alhambra-minerale-gold-eau-de-parfum-for-everyone",
+    "imageCandidates": [
+      "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/04htgqnuxy.png?v=1755702926",
+      "https://cdn.shopify.com/s/files/1/0670/2311/0340/files/07cmqyam87.png?v=1755702928"
+    ],
+    "source": "https://maisonalhambra-usa.com/products/maison-alhambra-minerale-gold-eau-de-parfum-for-everyone",
+    "noteSources": [
+      {
+        "label": "maisonalhambra-usa.com",
+        "url": "https://maisonalhambra-usa.com/products/maison-alhambra-minerale-gold-eau-de-parfum-for-everyone",
+        "kind": "regional-store"
+      }
+    ]
+  },
+  {
+    "number": 60,
+    "requestedName": "Narissa Rouge",
+    "canonicalName": "Narissa Rouge",
+    "canonicalBrand": "Maison Alhambra",
+    "concentration": "Eau de Parfum",
+    "size": 100,
+    "description": "Powdery iris and rose unfold into musky white florals, followed by vanilla, tonka, cedar and vetiver.",
+    "family": "Floral woody musk",
+    "verified": true,
+    "notesCaveat": "Published retailer/distributor notes; note names describe the fragrance and are not a full ingredient declaration.",
+    "unresolved": "",
+    "notePyramid": {
+      "top": [
+        "Iris",
+        "Bulgarian rose"
+      ],
+      "heart": [
+        "Musk",
+        "Tuberose",
+        "Orange blossom"
+      ],
+      "base": [
+        "Tonka bean",
+        "Vanilla",
+        "White cedar",
+        "Sandalwood",
+        "Vetiver"
+      ]
+    },
+    "imageUrl": "https://originalparfum.ma/wp-content/uploads/2026/10/tinywow_6195e332-8b64-4fcd-9160-de3224c50887_92004834.jpg",
+    "imageCandidates": [
+      "https://originalparfum.ma/wp-content/uploads/2026/10/tinywow_6195e332-8b64-4fcd-9160-de3224c50887_92004834.jpg"
+    ],
+    "imageSourceUrl": "https://originalparfum.ma/product/narissa-rouge-maison-alhambra-100ml/",
+    "source": "https://maisonhkm.ma/produit/narissa-rouge-maison-alhambra-100ml/",
+    "noteSources": [
+      {
+        "label": "maisonhkm.ma",
+        "url": "https://maisonhkm.ma/produit/narissa-rouge-maison-alhambra-100ml/",
+        "kind": "retailer"
+      },
+      {
+        "label": "Vita Blanca",
+        "url": "https://vitablanca.ma/produit/narissa-rouge-eau-de-parfum-maison-alhambra-pour-femme-100ml/",
+        "kind": "retailer"
+      }
+    ]
+  },
+  {
+    "number": 61,
+    "requestedName": "Niche Royal Rouge",
+    "canonicalName": "Niche Royal Rouge",
+    "canonicalBrand": "Maison Alhambra",
+    "concentration": "Eau de Parfum",
+    "size": 100,
+    "description": "Bitter orange and pepper give a lively start to jasmine, ylang-ylang and rose over sandalwood, patchouli and vanilla.",
+    "family": "Amber floral",
+    "verified": true,
+    "notesCaveat": "Published retailer/distributor notes; note names describe the fragrance and are not a full ingredient declaration.",
+    "unresolved": "",
+    "notePyramid": {
+      "top": [
+        "Bitter orange",
+        "Bergamot",
+        "Pink pepper",
+        "Fruit notes"
+      ],
+      "heart": [
+        "Jasmine sambac",
+        "Ylang-ylang",
+        "Lily of the valley",
+        "Rose"
+      ],
+      "base": [
+        "Sandalwood",
+        "Patchouli",
+        "Amber",
+        "Vanilla"
+      ]
+    },
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Maison_Alhambra_Parfum_Niche_Royal_Rouge.jpg?v=1756122655",
+    "imageSourceUrl": "https://fragra.de/en/products/maison-alhambra-perfume-niche-royal-rouge-eau-de-parfum-100ml",
+    "imageCandidates": [
+      "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Maison_Alhambra_Parfum_Niche_Royal_Rouge.jpg?v=1756122655"
+    ],
+    "source": "https://fragra.de/en/products/maison-alhambra-perfume-niche-royal-rouge-eau-de-parfum-100ml",
+    "noteSources": [
+      {
+        "label": "fragra.de",
+        "url": "https://fragra.de/en/products/maison-alhambra-perfume-niche-royal-rouge-eau-de-parfum-100ml",
+        "kind": "regional-store"
+      },
+      {
+        "label": "Fragrantica Niche Royal Rouge",
+        "url": "https://www.fragrantica.com/perfume/Maison-Alhambra/Niche-Royal-Rouge-89032.html",
+        "kind": "fragrance-database"
+      }
+    ]
+  },
+  {
+    "number": 62,
+    "requestedName": "Nora",
+    "canonicalName": "Nora",
+    "canonicalBrand": "Rave",
+    "concentration": "Eau de Parfum",
+    "size": 100,
+    "description": "Citrus, ginger and saffron open into rose, jasmine and amber before settling into sandalwood and vanilla.",
+    "family": "Spicy amber floral",
+    "verified": true,
+    "notesCaveat": "Retailer-corroborated note pyramid; a manufacturer-published Nora pyramid was not located.",
+    "unresolved": "",
+    "notePyramid": {
+      "top": [
+        "Citrus",
+        "Ginger",
+        "Saffron"
+      ],
+      "heart": [
+        "Amber",
+        "Rose",
+        "Jasmine"
+      ],
+      "base": [
+        "Sandalwood",
+        "Vanilla"
+      ]
+    },
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0739/7952/7426/files/nora-1.jpg?v=1790437767",
+    "imageCandidates": [
+      "https://cdn.shopify.com/s/files/1/0739/7952/7426/files/nora-1.jpg?v=1790437767",
+      "https://cdn.shopify.com/s/files/1/0739/7952/7426/files/nora-2.jpg?v=1790437769",
+      "https://cdn.shopify.com/s/files/1/0739/7952/7426/files/nora-3.jpg?v=1790437768"
+    ],
+    "imageSourceUrl": "https://sheikhscents.com/products/nora",
+    "source": "https://sheikhscents.com/products/nora",
+    "noteSources": [
+      {
+        "label": "sheikhscents.com",
+        "url": "https://sheikhscents.com/products/nora",
+        "kind": "retailer"
+      },
+      {
+        "label": "Fragra Nora",
+        "url": "https://fragra.de/en/products/lattafa-nora-eau-de-parfum-100-ml",
+        "kind": "regional-store"
+      },
+      {
+        "label": "Mars Perfumes",
+        "url": "https://www.marsperfumes.co.uk/products/nora-rave",
+        "kind": "retailer"
+      }
+    ],
+    "identityCaveat": "Nora is RAVE, a Lattafa brand, rather than Maison Alhambra. Requested name preserved; brand corrected using retailer identity and product packaging. Barcode6290360599281."
+  }
+]

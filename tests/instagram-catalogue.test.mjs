@@ -5,16 +5,16 @@ import {defaults,migrateCatalogue,filterProducts,catalogueDisplay,inStock,valida
 test('all 18 identified Instagram fragrances have packaged images, distinct ids and honest unconfirmed trade data',()=>{
  assert.equal(instagramProducts.length,18);assert.equal(new Set(instagramProducts.map(p=>p.id)).size,18);
  for(const p of instagramProducts){assert.ok(existsSync(new URL('../dist/'+p.image,import.meta.url)));assert.equal(validateProduct(p),'');assert.equal(p.price,null);assert.equal(p.size,null);assert.equal(p.quantity,0);assert.equal(p.available,false);assert.equal(inStock({...p,available:true,quantity:5}),false);assert.equal(priceLabel(p),'Ask for price');assert.equal(sizeLabel(p),'Size to confirm');}
- const all=defaults().products;assert.equal(all.length,78);assert.equal(new Set(all.map(p=>p.id)).size,78);assert.equal(catalogueDisplay(all,'all').length,new Set(all.map(p=>p.group)).size);
+ const all=defaults().products;assert.equal(all.length,170);assert.equal(new Set(all.map(p=>p.id)).size,170);assert.equal(catalogueDisplay(all,'all').length,new Set(all.map(p=>p.group)).size);
 });
 test('returning browsers get additions once while preserving edits, uploads, hidden products and later deletions',()=>{
- const original=defaults();const old={...original,catalogueRevision:undefined,products:original.products.filter(p=>!p.instagramSource&&!p.communitySource)};old.products[0]={...old.products[0],price:1234,hidden:true,image:'data:image/jpeg;base64,eA=='};
- const next=migrateCatalogue(old);assert.equal(next.products.length,78);assert.equal(next.products[0].price,1234);assert.equal(next.products[0].hidden,true);assert.equal(next.products[0].image,old.products[0].image);assert.equal(old.products.length,14);assert.equal(migrateCatalogue(next),next);
- const deleted={...next,products:next.products.filter(p=>p.id!==instagramProducts[0].id)};assert.equal(migrateCatalogue(deleted).products.length,77);
- const existing={...old,products:[...old.products,{...instagramProducts[0],hidden:true}]};assert.equal(migrateCatalogue(existing).products.length,78);assert.equal(migrateCatalogue(existing).products.find(p=>p.id===instagramProducts[0].id).hidden,true);
+ const original=defaults();const old={...original,catalogueRevision:undefined,products:original.products.filter(p=>!p.instagramSource&&!p.communitySource&&p.order<1000)};old.products[0]={...old.products[0],price:1234,hidden:true,image:'data:image/jpeg;base64,eA=='};
+ const next=migrateCatalogue(old);assert.equal(next.products.length,170);assert.equal(next.products[0].price,1234);assert.equal(next.products[0].hidden,true);assert.equal(next.products[0].image,old.products[0].image);assert.equal(old.products.length,14);assert.equal(migrateCatalogue(next),next);
+ const deleted={...next,products:next.products.filter(p=>p.id!==instagramProducts[0].id)};assert.equal(migrateCatalogue(deleted).products.length,169);
+ const existing={...old,products:[...old.products,{...instagramProducts[0],hidden:true}]};assert.equal(migrateCatalogue(existing).products.length,170);assert.equal(migrateCatalogue(existing).products.find(p=>p.id===instagramProducts[0].id).hidden,true);
 });
 test('unknown prices are excluded from budget edits and unknown stock is distinct from sold out',()=>{
- const all=[...defaults().products.filter(p=>!p.instagramSource&&!p.communitySource),...instagramProducts];assert.equal(filterProducts(all,{collection:'instagram'}).length,18);assert.equal(filterProducts(all,{stock:'ask'}).length,18);assert.equal(filterProducts(all,{stock:'out'}).length,2);
+ const all=[...defaults().products.filter(p=>!p.instagramSource&&!p.communitySource&&p.order<1000),...instagramProducts];assert.equal(filterProducts(all,{collection:'instagram'}).length,18);assert.equal(filterProducts(all,{stock:'ask'}).length,18);assert.equal(filterProducts(all,{stock:'out'}).length,2);
  assert.equal(filterProducts(all,{brand:'Rasasi',collection:'instagram'}).length,5);
  for(const p of instagramProducts){assert.equal(matchesCollection(p,'under3000'),false);assert.ok(!filterProducts(all,{budget:'500'}).some(x=>x.id===p.id));}
  for(const sort of ['price-asc','price-desc']){const result=filterProducts(all,{sort});assert.ok(result.slice(0,14).every(p=>Number.isFinite(p.price)));assert.ok(result.slice(14).every(p=>p.price===null));}

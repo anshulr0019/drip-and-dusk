@@ -8,7 +8,7 @@ test('all 18 missing images now have local retail packshots and explicit packagi
 test('photo upgrade preserves owner uploads, trade data, saved visibility and deleted listings',()=>{
  const all=defaults().products;const id='chanel-bleu-edt-bottle',uploaded='chanel-bleu-edp-bottle';
  const products=all.filter(p=>p.id!=='nishane-nefs-bottle').map(p=>p.id===id?{...p,image:'assets/community-photo-pending.webp',photoPending:true,price:777,hidden:true}:p.id===uploaded?{...p,image:'data:image/webp;base64,eA=='}:p);
- const state={...defaults(),catalogueRevision:5,products};const next=migrateCatalogue(state);assert.equal(next.products.length,77);assert(!next.products.some(p=>p.id==='nishane-nefs-bottle'));
+ const state={...defaults(),catalogueRevision:5,products};const next=migrateCatalogue(state);assert.equal(next.products.length,169);assert(!next.products.some(p=>p.id==='nishane-nefs-bottle'));
  const p=next.products.find(p=>p.id===id);assert.equal(p.price,777);assert.equal(p.hidden,true);assert.equal(p.image,communityPhotoUpdates[id].image);assert.equal(p.photoPending,false);
  assert.equal(next.products.find(p=>p.id===uploaded).image,'data:image/webp;base64,eA==');assert.equal(migrateCatalogue(next),next);
 });
