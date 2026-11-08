@@ -1,6 +1,6 @@
 import {createOwnerOrders} from './owner-orders.mjs';
 import {deliveryRules,storeDefaults} from './store-settings.mjs';
-import {defaults} from './core.mjs';
+import {defaults,sizeLabel} from './core.mjs';
 import {checkoutPaymentOptions,paymentSelector} from './payment-options.mjs';
 import {openRazorpayTest} from './razorpay-checkout.mjs';
 import {commerceConfig} from './commerce-config.mjs';
@@ -9,7 +9,7 @@ import {stages,stageLabels,previewShipping,validateAddress,quoteCheckout,preview
 const upiLink=(p,o)=>'upi://pay?'+new URLSearchParams({pa:p.upiId,pn:p.payeeName,am:(o.totalPaise/100).toFixed(2),cu:'INR',tn:'Drip & Dusk '+o.ref});
 const rupees=p=>new Intl.NumberFormat('en-IN',{style:'currency',currency:'INR',minimumFractionDigits:0,maximumFractionDigits:2}).format(p/100),when=s=>new Date(s).toLocaleString('en-IN',{dateStyle:'medium',timeStyle:'short'});
 // Every interpolated string is escaped: the delivery label is owner-editable and orders keep the label they were quoted with, so older stored values are rendered safely too.
-export function summaryMarkup(q,esc,imageURL){return `<aside class="checkout-summary"><p class="eyebrow">YOUR SELECTION</p>${q.lines.map(l=>`<div class="checkout-line"><img src="${esc(imageURL(l.image))}" alt="${esc(l.name)}" width="54" height="65"><div><b>${esc(l.name)}</b><span>${esc(l.size)} ml · ${esc(l.format)} · Qty ${esc(l.qty)}</span></div><strong>${rupees(l.unitPaise*l.qty)}</strong></div>`).join('')}<dl class="checkout-totals"><div><dt>Subtotal</dt><dd>${rupees(q.subtotalPaise)}</dd></div><div><dt>Delivery</dt><dd>${q.feePaise===null?'Calculated next':q.feePaise===0?'Included':rupees(q.feePaise)}</dd></div><div class="checkout-total"><dt>${q.feePaise===null?'Subtotal':'Total'}</dt><dd>${rupees(q.totalPaise)}</dd></div></dl><p class="fineprint">${esc(q.deliveryLabel||'Delivery charges appear before payment.')}</p></aside>`}
+export function summaryMarkup(q,esc,imageURL){return `<aside class="checkout-summary"><p class="eyebrow">YOUR SELECTION</p>${q.lines.map(l=>`<div class="checkout-line"><img src="${esc(imageURL(l.image))}" alt="${esc(l.name)}" width="54" height="65"><div><b>${esc(l.name)}</b><span>${esc(sizeLabel(l))} · ${esc(l.format)} · Qty ${esc(l.qty)}</span></div><strong>${rupees(l.unitPaise*l.qty)}</strong></div>`).join('')}<dl class="checkout-totals"><div><dt>Subtotal</dt><dd>${rupees(q.subtotalPaise)}</dd></div><div><dt>Delivery</dt><dd>${q.feePaise===null?'Calculated next':q.feePaise===0?'Included':rupees(q.feePaise)}</dd></div><div class="checkout-total"><dt>${q.feePaise===null?'Subtotal':'Total'}</dt><dd>${rupees(q.totalPaise)}</dd></div></dl><p class="fineprint">${esc(q.deliveryLabel||'Delivery charges appear before payment.')}</p></aside>`}
 export function createCheckout({getAccount=()=>null,openModal,hideModalForPayment=()=>{},getState,getBasket,commit,saveBag,esc,imageURL,icon,toast,copy}){
  let draft=null,session=null,latest=null,busy=false,info={mode:'loading',provider:'none',ready:false},isAPI=commerceConfig.mode==='api';
  const live=()=>info.mode==='live';

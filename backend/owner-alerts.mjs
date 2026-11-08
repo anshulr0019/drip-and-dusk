@@ -1,6 +1,7 @@
 // Telegram messages to the owner when an order needs attention. Needs TELEGRAM_BOT_TOKEN and
 // TELEGRAM_CHAT_ID. Alerts carry the order reference, amount, items and UPI reference only, never
 // the customer's name, phone or address. A failed alert never affects the order itself.
+import {sizeLabel} from '../dist/core.mjs';
 const rupees=p=>new Intl.NumberFormat('en-IN',{style:'currency',currency:'INR',minimumFractionDigits:0,maximumFractionDigits:2}).format(p/100);
 export const alertsConfigured=env=>/^\d+:[A-Za-z0-9_-]{20,}$/.test(env.TELEGRAM_BOT_TOKEN||'')&&/^-?\d{1,20}$/.test(String(env.TELEGRAM_CHAT_ID||''));
 const headlines={
@@ -13,7 +14,7 @@ const headlines={
 export function alertText(kind,order,env){
  if(kind==='test')return `✅ Drip & Dusk alerts are connected.\nYou will get a message here for new orders and payments to verify.\n${env.PUBLIC_ORIGIN}/#admin`;
  let items=[];try{items=JSON.parse(order.lines||'[]')}catch{}
- const lines=[`${kind==='review'||kind==='upi_submitted'?'⚠️':'🛍️'} ${headlines[kind]}`,...(order.mode!=='live'?['TEST ORDER · no money collected']:[]),`${order.ref} · ${rupees(order.total_paise)}`,...items.slice(0,6).map(l=>`• ${l.name}${l.size?' '+l.size+' ml':''}${l.format==='Decant'?' decant':''} × ${l.qty}`)];
+ const lines=[`${kind==='review'||kind==='upi_submitted'?'⚠️':'🛍️'} ${headlines[kind]}`,...(order.mode!=='live'?['TEST ORDER · no money collected']:[]),`${order.ref} · ${rupees(order.total_paise)}`,...items.slice(0,6).map(l=>`• ${l.name}${l.packLabel||l.size?' '+sizeLabel(l):''}${l.format==='Decant'?' decant':l.format&&l.format!=='Full bottle'?' · '+l.format:''} × ${l.qty}`)];
  if(items.length>6)lines.push(`• and ${items.length-6} more`);
  if(kind==='upi_submitted')lines.push(`UTR: ${order.payment_reference}`,'Check that this exact amount reached your bank, then approve it in Orders. '+(order.mode==='live'?'The bottles are held for 4 hours.':'Test order: the 30-minute hold is not extended.'));
  if(kind==='upi_order')lines.push('The customer has 30 minutes to pay and submit their UPI reference.');

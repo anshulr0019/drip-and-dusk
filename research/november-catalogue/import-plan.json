@@ -1,0 +1,4642 @@
+[
+  {
+    "number": 1,
+    "brand": "Afnan",
+    "requestedName": "9PM Gift Set",
+    "price": 3000,
+    "quantity": 9,
+    "format": "Gift set",
+    "declaredSize": 100,
+    "section": "Gift Sets"
+  },
+  {
+    "number": 2,
+    "brand": "Afnan",
+    "requestedName": "9AM Dive Gift Set",
+    "price": 3000,
+    "quantity": 9,
+    "format": "Gift set",
+    "declaredSize": 100,
+    "section": "Gift Sets"
+  },
+  {
+    "number": 3,
+    "brand": "Afnan",
+    "requestedName": "Supremacy Silver Gift Set",
+    "price": 3000,
+    "quantity": 0,
+    "format": "Gift set",
+    "declaredSize": 100,
+    "section": "Gift Sets"
+  },
+  {
+    "number": 4,
+    "brand": "Afnan",
+    "requestedName": "Supremacy Not Only Intense Gift Set",
+    "price": 3800,
+    "quantity": 0,
+    "format": "Gift set",
+    "declaredSize": 100,
+    "section": "Gift Sets"
+  },
+  {
+    "number": 5,
+    "brand": "Afnan",
+    "requestedName": "Turathi Homme Blue Gift Set",
+    "price": 3000,
+    "quantity": 0,
+    "format": "Gift set",
+    "declaredSize": 100,
+    "section": "Gift Sets"
+  },
+  {
+    "number": 6,
+    "brand": "Afnan",
+    "requestedName": "Supremacy Pink Gift Set",
+    "price": 3000,
+    "quantity": 9,
+    "format": "Gift set",
+    "declaredSize": 100,
+    "section": "Gift Sets"
+  },
+  {
+    "number": 7,
+    "brand": "Afnan",
+    "requestedName": "9 Series Discovery Kit",
+    "price": 1000,
+    "quantity": 9,
+    "format": "Discovery kit",
+    "declaredSize": 10,
+    "section": "Discovery Kits (2ml × 5)",
+    "pack": {
+      "units": 5,
+      "unitMl": 2
+    }
+  },
+  {
+    "number": 8,
+    "brand": "Afnan",
+    "requestedName": "Supremacy Femme Series Discovery Kit",
+    "price": 1000,
+    "quantity": 9,
+    "format": "Discovery kit",
+    "declaredSize": 10,
+    "section": "Discovery Kits (2ml × 5)",
+    "pack": {
+      "units": 5,
+      "unitMl": 2
+    }
+  },
+  {
+    "number": 9,
+    "brand": "Afnan",
+    "requestedName": "Supremacy Homme Series Discovery Kit",
+    "price": 1000,
+    "quantity": 9,
+    "format": "Discovery kit",
+    "declaredSize": 10,
+    "section": "Discovery Kits (2ml × 5)",
+    "pack": {
+      "units": 5,
+      "unitMl": 2
+    }
+  },
+  {
+    "number": 10,
+    "brand": "Afnan",
+    "requestedName": "Men Series Discovery Kit",
+    "price": 1000,
+    "quantity": 9,
+    "format": "Discovery kit",
+    "declaredSize": 10,
+    "section": "Discovery Kits (2ml × 5)",
+    "pack": {
+      "units": 5,
+      "unitMl": 2
+    }
+  },
+  {
+    "number": 11,
+    "brand": "Afnan",
+    "requestedName": "Bouquet Series Discovery Kit",
+    "price": 1000,
+    "quantity": 9,
+    "format": "Discovery kit",
+    "declaredSize": 10,
+    "section": "Discovery Kits (2ml × 5)",
+    "pack": {
+      "units": 5,
+      "unitMl": 2
+    }
+  },
+  {
+    "number": 12,
+    "brand": "Afnan",
+    "requestedName": "Stardust",
+    "price": 3600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 13,
+    "brand": "Afnan",
+    "requestedName": "9AM",
+    "price": 2800,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 14,
+    "brand": "Afnan",
+    "requestedName": "9AM Dive",
+    "price": 2800,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 15,
+    "brand": "Afnan",
+    "requestedName": "9AM Pour Femme",
+    "price": 2800,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 16,
+    "brand": "Afnan",
+    "requestedName": "9PM",
+    "price": 2800,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 17,
+    "brand": "Afnan",
+    "requestedName": "9PM Elixir",
+    "price": 2800,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 18,
+    "brand": "Afnan",
+    "requestedName": "9PM Night Out",
+    "price": 3300,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 19,
+    "brand": "Afnan",
+    "requestedName": "9PM Pour Femme",
+    "price": 2800,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 20,
+    "brand": "Afnan",
+    "requestedName": "9PM Rebel",
+    "price": 2800,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 21,
+    "brand": "Afnan",
+    "requestedName": "Cherry Bouquet (80ml)",
+    "price": 3500,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 80,
+    "section": "Perfumes"
+  },
+  {
+    "number": 22,
+    "brand": "Afnan",
+    "requestedName": "Delicious Bouquet (80ml)",
+    "price": 3500,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 80,
+    "section": "Perfumes"
+  },
+  {
+    "number": 23,
+    "brand": "Afnan",
+    "requestedName": "Edict Musctique (80ml)",
+    "price": 4600,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 80,
+    "section": "Perfumes"
+  },
+  {
+    "number": 24,
+    "brand": "Afnan",
+    "requestedName": "Edict Ouddiction (80ml)",
+    "price": 4600,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 80,
+    "section": "Perfumes"
+  },
+  {
+    "number": 25,
+    "brand": "Afnan",
+    "requestedName": "Historic Doria",
+    "price": 2800,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 26,
+    "brand": "Afnan",
+    "requestedName": "Historic Olmeda",
+    "price": 2800,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 27,
+    "brand": "Afnan",
+    "requestedName": "Historic Sahara",
+    "price": 2800,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 28,
+    "brand": "Afnan",
+    "requestedName": "Highness Green III",
+    "price": 4600,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 29,
+    "brand": "Afnan",
+    "requestedName": "Highness Red IV",
+    "price": 4600,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 30,
+    "brand": "Afnan",
+    "requestedName": "Highness Maroon IX",
+    "price": 4600,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 31,
+    "brand": "Afnan",
+    "requestedName": "Highness Black V",
+    "price": 4600,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 32,
+    "brand": "Afnan",
+    "requestedName": "Highness Blue VI",
+    "price": 4600,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 33,
+    "brand": "Afnan",
+    "requestedName": "Highness Brown X",
+    "price": 4600,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 34,
+    "brand": "Afnan",
+    "requestedName": "Highness White VII",
+    "price": 4600,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 35,
+    "brand": "Afnan",
+    "requestedName": "Inara White",
+    "price": 1750,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 36,
+    "brand": "Afnan",
+    "requestedName": "Kiaana Angel",
+    "price": 2900,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 37,
+    "brand": "Afnan",
+    "requestedName": "Kiaana Crush",
+    "price": 2900,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 38,
+    "brand": "Afnan",
+    "requestedName": "Kiaana Vibes",
+    "price": 2900,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 39,
+    "brand": "Afnan",
+    "requestedName": "La Fleur Bouquet (80ml)",
+    "price": 3500,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 80,
+    "section": "Perfumes"
+  },
+  {
+    "number": 40,
+    "brand": "Afnan",
+    "requestedName": "Lynked Freedom Black",
+    "price": 3300,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 41,
+    "brand": "Afnan",
+    "requestedName": "Lynked Freedom Gold",
+    "price": 3300,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 42,
+    "brand": "Afnan",
+    "requestedName": "Modest Pour Homme Une",
+    "price": 2600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 43,
+    "brand": "Afnan",
+    "requestedName": "Mystique Bouquet (80ml)",
+    "price": 3500,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 80,
+    "section": "Perfumes"
+  },
+  {
+    "number": 44,
+    "brand": "Afnan",
+    "requestedName": "Portrait Abstract",
+    "price": 3600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 45,
+    "brand": "Afnan",
+    "requestedName": "Portrait Revival",
+    "price": 3600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 46,
+    "brand": "Afnan",
+    "requestedName": "Rare",
+    "price": 2650,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 47,
+    "brand": "Afnan",
+    "requestedName": "Rare Carbon",
+    "price": 2650,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 48,
+    "brand": "Afnan",
+    "requestedName": "Rare Passion",
+    "price": 2650,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 49,
+    "brand": "Afnan",
+    "requestedName": "Rare Reef",
+    "price": 2650,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 50,
+    "brand": "Afnan",
+    "requestedName": "Souvenir Blooming Bliss",
+    "price": 3300,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 51,
+    "brand": "Afnan",
+    "requestedName": "Supremacy Collector's Edition",
+    "price": 3600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 52,
+    "brand": "Afnan",
+    "requestedName": "Supremacy Gala",
+    "price": 3600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 53,
+    "brand": "Afnan",
+    "requestedName": "Supremacy Heaven",
+    "price": 2850,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 54,
+    "brand": "Afnan",
+    "requestedName": "Supremacy Incense",
+    "price": 2850,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 55,
+    "brand": "Afnan",
+    "requestedName": "Supremacy Pour Femme Pink",
+    "price": 2850,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 56,
+    "brand": "Afnan",
+    "requestedName": "Supremacy Pour Femme Purple",
+    "price": 2850,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 57,
+    "brand": "Afnan",
+    "requestedName": "Supremacy Tapis Rouge (90ml)",
+    "price": 3600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 90,
+    "section": "Perfumes"
+  },
+  {
+    "number": 58,
+    "brand": "Afnan",
+    "requestedName": "Supremacy In Oud",
+    "price": 3600,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 59,
+    "brand": "Afnan",
+    "requestedName": "Supremacy Noir",
+    "price": 2850,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 60,
+    "brand": "Afnan",
+    "requestedName": "Supremacy Not Only Intense (100ml)",
+    "price": 3600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 61,
+    "brand": "Afnan",
+    "requestedName": "Supremacy Not Only Intense (150ml)",
+    "price": 3800,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 150,
+    "section": "Perfumes"
+  },
+  {
+    "number": 62,
+    "brand": "Afnan",
+    "requestedName": "Supremacy Pour Homme Silver",
+    "price": 2850,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 63,
+    "brand": "Afnan",
+    "requestedName": "Tribute Blue",
+    "price": 3500,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 64,
+    "brand": "Afnan",
+    "requestedName": "Turathi Blue (90ml)",
+    "price": 2700,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 90,
+    "section": "Perfumes"
+  },
+  {
+    "number": 65,
+    "brand": "Afnan",
+    "requestedName": "Turathi Brown (90ml)",
+    "price": 2700,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 90,
+    "section": "Perfumes"
+  },
+  {
+    "number": 66,
+    "brand": "Afnan",
+    "requestedName": "Turathi Electric (90ml)",
+    "price": 2700,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 90,
+    "section": "Perfumes"
+  },
+  {
+    "number": 67,
+    "brand": "Afnan",
+    "requestedName": "Violet Bouquet (80ml)",
+    "price": 3500,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 80,
+    "section": "Perfumes"
+  },
+  {
+    "number": 68,
+    "brand": "Mykonos",
+    "requestedName": "Aphrodite",
+    "price": 1850,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 50,
+    "section": "Perfumes"
+  },
+  {
+    "number": 69,
+    "brand": "Mykonos",
+    "requestedName": "Bonfire Vanilla",
+    "price": 1850,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 50,
+    "section": "Perfumes"
+  },
+  {
+    "number": 70,
+    "brand": "Mykonos",
+    "requestedName": "Café Drops",
+    "price": 1850,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 50,
+    "section": "Perfumes"
+  },
+  {
+    "number": 71,
+    "brand": "Mykonos",
+    "requestedName": "California Blue",
+    "price": 1850,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 50,
+    "section": "Perfumes"
+  },
+  {
+    "number": 72,
+    "brand": "Mykonos",
+    "requestedName": "California Signature",
+    "price": 1850,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 50,
+    "section": "Perfumes"
+  },
+  {
+    "number": 73,
+    "brand": "Mykonos",
+    "requestedName": "Conquer",
+    "price": 1850,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 50,
+    "section": "Perfumes"
+  },
+  {
+    "number": 74,
+    "brand": "Mykonos",
+    "requestedName": "Dreamscape",
+    "price": 1850,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 50,
+    "section": "Perfumes"
+  },
+  {
+    "number": 75,
+    "brand": "Mykonos",
+    "requestedName": "Glitch",
+    "price": 1850,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 50,
+    "section": "Perfumes"
+  },
+  {
+    "number": 76,
+    "brand": "Mykonos",
+    "requestedName": "Inception",
+    "price": 1850,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 50,
+    "section": "Perfumes"
+  },
+  {
+    "number": 77,
+    "brand": "Mykonos",
+    "requestedName": "Luminos",
+    "price": 2150,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 50,
+    "section": "Perfumes"
+  },
+  {
+    "number": 78,
+    "brand": "Mykonos",
+    "requestedName": "Monaco Royale",
+    "price": 1850,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 50,
+    "section": "Perfumes"
+  },
+  {
+    "number": 79,
+    "brand": "Mykonos",
+    "requestedName": "Penthouse",
+    "price": 1850,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 50,
+    "section": "Perfumes"
+  },
+  {
+    "number": 80,
+    "brand": "Mykonos",
+    "requestedName": "Pink Beach",
+    "price": 1850,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 50,
+    "section": "Perfumes"
+  },
+  {
+    "number": 81,
+    "brand": "Mykonos",
+    "requestedName": "Pink Drops",
+    "price": 1850,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 50,
+    "section": "Perfumes"
+  },
+  {
+    "number": 82,
+    "brand": "Mykonos",
+    "requestedName": "Reflection",
+    "price": 1850,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 50,
+    "section": "Perfumes"
+  },
+  {
+    "number": 83,
+    "brand": "Mykonos",
+    "requestedName": "Reflection Elixir",
+    "price": 1850,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 50,
+    "section": "Perfumes"
+  },
+  {
+    "number": 84,
+    "brand": "Mykonos",
+    "requestedName": "Slow Living",
+    "price": 1850,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 50,
+    "section": "Perfumes"
+  },
+  {
+    "number": 85,
+    "brand": "Mykonos",
+    "requestedName": "Sorrento",
+    "price": 1850,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 50,
+    "section": "Perfumes"
+  },
+  {
+    "number": 86,
+    "brand": "Mykonos",
+    "requestedName": "Aphrodite",
+    "price": 2850,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 87,
+    "brand": "Mykonos",
+    "requestedName": "California Blue",
+    "price": 2850,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes",
+    "skipId": "mykonos-california-blue-bottle",
+    "skipReason": "Same fragrance, format and size already listed (or existing seller size awaiting confirmation)."
+  },
+  {
+    "number": 88,
+    "brand": "Mykonos",
+    "requestedName": "California Signature",
+    "price": 2850,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 89,
+    "brand": "Mykonos",
+    "requestedName": "Conquer",
+    "price": 2850,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes",
+    "skipId": "mykonos-conquer-bottle",
+    "skipReason": "Same fragrance, format and size already listed (or existing seller size awaiting confirmation)."
+  },
+  {
+    "number": 90,
+    "brand": "Mykonos",
+    "requestedName": "Dreamscape",
+    "price": 2850,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 91,
+    "brand": "Mykonos",
+    "requestedName": "Glitch",
+    "price": 2850,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 92,
+    "brand": "Mykonos",
+    "requestedName": "Imperium",
+    "price": 3350,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes",
+    "skipId": "mykonos-imperium-bottle",
+    "skipReason": "Same fragrance, format and size already listed (or existing seller size awaiting confirmation)."
+  },
+  {
+    "number": 93,
+    "brand": "Mykonos",
+    "requestedName": "Inception",
+    "price": 2850,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes",
+    "skipId": "mykonos-inception-bottle",
+    "skipReason": "Same fragrance, format and size already listed (or existing seller size awaiting confirmation)."
+  },
+  {
+    "number": 94,
+    "brand": "Mykonos",
+    "requestedName": "Inferno",
+    "price": 3550,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 95,
+    "brand": "Mykonos",
+    "requestedName": "Marbella",
+    "price": 3350,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 96,
+    "brand": "Mykonos",
+    "requestedName": "Monaco Royale",
+    "price": 2850,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 97,
+    "brand": "Mykonos",
+    "requestedName": "Penthouse",
+    "price": 2850,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 98,
+    "brand": "Mykonos",
+    "requestedName": "Reflection",
+    "price": 2850,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 99,
+    "brand": "Mykonos",
+    "requestedName": "Slow Living",
+    "price": 2850,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 100,
+    "brand": "Mykonos",
+    "requestedName": "Sorrento",
+    "price": 2850,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes",
+    "skipId": "mykonos-sorrento-bottle",
+    "skipReason": "Same fragrance, format and size already listed (or existing seller size awaiting confirmation)."
+  },
+  {
+    "number": 101,
+    "brand": "Mykonos",
+    "requestedName": "Untamed",
+    "price": 3350,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 102,
+    "brand": "Mykonos",
+    "requestedName": "Utopia",
+    "price": 2850,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 103,
+    "brand": "Rayhaan",
+    "requestedName": "Amazonica",
+    "price": 2500,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 104,
+    "brand": "Rayhaan",
+    "requestedName": "Divine",
+    "price": 2300,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 105,
+    "brand": "Rayhaan",
+    "requestedName": "Imperia For Men",
+    "price": 2200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 106,
+    "brand": "Rayhaan",
+    "requestedName": "Ocean Rush For Him",
+    "price": 2200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 107,
+    "brand": "Rayhaan",
+    "requestedName": "Equinox",
+    "price": 2500,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 108,
+    "brand": "Rayhaan",
+    "requestedName": "Vantage",
+    "price": 2500,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 109,
+    "brand": "Rayhaan",
+    "requestedName": "Crimson",
+    "price": 2200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 110,
+    "brand": "Rayhaan",
+    "requestedName": "Aquatica",
+    "price": 2200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 111,
+    "brand": "Rayhaan",
+    "requestedName": "Azul",
+    "price": 2200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 112,
+    "brand": "Rayhaan",
+    "requestedName": "Cedrus Blanc",
+    "price": 2300,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 113,
+    "brand": "Rayhaan",
+    "requestedName": "Elixir",
+    "price": 2200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes",
+    "skipId": "rayhaan-elixir-bottle",
+    "skipReason": "Same fragrance, format and size already listed (or existing seller size awaiting confirmation)."
+  },
+  {
+    "number": 114,
+    "brand": "Rayhaan",
+    "requestedName": "Italia",
+    "price": 2200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 115,
+    "brand": "Rayhaan",
+    "requestedName": "Jungle Vibe",
+    "price": 2200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 116,
+    "brand": "Rayhaan",
+    "requestedName": "Kiss",
+    "price": 2200,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 117,
+    "brand": "Rayhaan",
+    "requestedName": "Lion",
+    "price": 2200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 118,
+    "brand": "Rayhaan",
+    "requestedName": "Nava Sol",
+    "price": 2300,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 119,
+    "brand": "Rayhaan",
+    "requestedName": "Nocturnal Elixir",
+    "price": 2200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes",
+    "skipId": "rayhaan-nocturno-elixir-bottle",
+    "skipReason": "Same fragrance, format and size already listed (or existing seller size awaiting confirmation)."
+  },
+  {
+    "number": 120,
+    "brand": "Rayhaan",
+    "requestedName": "Obsidian",
+    "price": 2200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 121,
+    "brand": "Rayhaan",
+    "requestedName": "Pacific",
+    "price": 2200,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 122,
+    "brand": "Rayhaan",
+    "requestedName": "Pacific Aloha",
+    "price": 2200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 123,
+    "brand": "Rayhaan",
+    "requestedName": "Pacific Aura",
+    "price": 2200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 124,
+    "brand": "Rayhaan",
+    "requestedName": "Pharaoh",
+    "price": 2200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 125,
+    "brand": "Rayhaan",
+    "requestedName": "Terra",
+    "price": 2200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 126,
+    "brand": "Rayhaan",
+    "requestedName": "Tiger",
+    "price": 2200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 127,
+    "brand": "Rayhaan",
+    "requestedName": "Tropical Vibe",
+    "price": 2200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 128,
+    "brand": "Rayhaan",
+    "requestedName": "Wolf",
+    "price": 2200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 129,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Dirham Cloud",
+    "price": 1300,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 130,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Rafeef",
+    "price": 2100,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 131,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Fakhar Al Oud The White",
+    "price": 1900,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 132,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Jazzab Elixir",
+    "price": 1600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 133,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Al Dirgham Limited Edition",
+    "price": 1800,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 134,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Al Dirgham Special Edition",
+    "price": 1800,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 135,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Al Hur So Intense",
+    "price": 1675,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 136,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Alora",
+    "price": 1500,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 137,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Amiral",
+    "price": 1600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 138,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Anoud",
+    "price": 1500,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 139,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Bareq",
+    "price": 1950,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 140,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Bareq Mirage",
+    "price": 1950,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 141,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Barez",
+    "price": 1600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 142,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Bint Haroon",
+    "price": 1550,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 143,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Dirham EDP + Deo 50ml",
+    "price": 1300,
+    "quantity": 9,
+    "format": "Gift set",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 144,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Dirham Gold",
+    "price": 1300,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 145,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Dirham Oud",
+    "price": 1300,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 146,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Dirham Wardi",
+    "price": 1300,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 147,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Fakhar Al Oud",
+    "price": 1900,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 148,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Jazzab Gold",
+    "price": 1600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 149,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Jazzab Silver",
+    "price": 1600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 150,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Liwan",
+    "price": 1825,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 151,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Manaal",
+    "price": 2350,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 152,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Meethaq",
+    "price": 1950,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 153,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Midnight Oud",
+    "price": 1135,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 154,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Mithqal",
+    "price": 1800,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 155,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Mousuf",
+    "price": 1600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 156,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Mousuf Azure",
+    "price": 1600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 157,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Mousuf Daisy",
+    "price": 1600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 158,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Mousuf Ramadi",
+    "price": 1600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 159,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Mousuf Wardi",
+    "price": 1600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 160,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Oud 24 Hours Majestic Gold",
+    "price": 1600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 161,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Oud 24 Hours + Deo 50ml",
+    "price": 1600,
+    "quantity": 9,
+    "format": "Gift set",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 162,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Qidwah (85ml)",
+    "price": 2000,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 85,
+    "section": "Perfumes"
+  },
+  {
+    "number": 163,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Riqqa",
+    "price": 2300,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 164,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Safeer Al Hub Everlasting",
+    "price": 1600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 165,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Saheb (70ml)",
+    "price": 1725,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 70,
+    "section": "Perfumes"
+  },
+  {
+    "number": 166,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Sahebat Al Jamal (70ml)",
+    "price": 1725,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 70,
+    "section": "Perfumes"
+  },
+  {
+    "number": 167,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Saher Al Layali",
+    "price": 1925,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 168,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Shams Al Emarat Khususi Glaze & Glow",
+    "price": 1700,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 169,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Shams Al Emarat Khususi Iced Petals",
+    "price": 1700,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 170,
+    "brand": "Ard Al Zaafaran",
+    "requestedName": "Shams Al Emarat Khususi Pink Blush",
+    "price": 1700,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 171,
+    "brand": "Rasasi",
+    "requestedName": "Hawas Homme Gift Set",
+    "price": 3100,
+    "quantity": 0,
+    "format": "Gift set",
+    "declaredSize": 100,
+    "section": "Gift Sets"
+  },
+  {
+    "number": 172,
+    "brand": "Rasasi",
+    "requestedName": "Hawas Ice Gift Set",
+    "price": 3300,
+    "quantity": 0,
+    "format": "Gift set",
+    "declaredSize": 100,
+    "section": "Gift Sets"
+  },
+  {
+    "number": 173,
+    "brand": "Rasasi",
+    "requestedName": "Hawas Ice Travel Gift Set",
+    "price": 3100,
+    "quantity": 9,
+    "format": "Gift set",
+    "declaredSize": 100,
+    "section": "Gift Sets"
+  },
+  {
+    "number": 174,
+    "brand": "Rasasi",
+    "requestedName": "Hawas Rouge",
+    "price": 2700,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 175,
+    "brand": "Rasasi",
+    "requestedName": "Hawas Sapphire",
+    "price": 3500,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 176,
+    "brand": "Rasasi",
+    "requestedName": "Hawas Venom",
+    "price": 3500,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 177,
+    "brand": "Rasasi",
+    "requestedName": "Al Wisam Hasaas",
+    "price": 3200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 178,
+    "brand": "Rasasi",
+    "requestedName": "Nafaeis Al Shaghaf Maraya Pour Homme",
+    "price": 2600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 179,
+    "brand": "Rasasi",
+    "requestedName": "Nafaeis Al Shaghaf Maraya Pour Femme",
+    "price": 2600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 180,
+    "brand": "Rasasi",
+    "requestedName": "Hamasaat Musk Memoirs",
+    "price": 4400,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 181,
+    "brand": "Rasasi",
+    "requestedName": "Afshan",
+    "price": 1450,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 182,
+    "brand": "Rasasi",
+    "requestedName": "Al Rabin",
+    "price": 2950,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 183,
+    "brand": "Rasasi",
+    "requestedName": "Al Wisam Day",
+    "price": 2750,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 184,
+    "brand": "Rasasi",
+    "requestedName": "Al Wisam Habban",
+    "price": 2800,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 185,
+    "brand": "Rasasi",
+    "requestedName": "Al Wisam Hayaan",
+    "price": 2800,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 186,
+    "brand": "Rasasi",
+    "requestedName": "Amber Oud (14ml)",
+    "price": 1375,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 14,
+    "section": "Perfumes"
+  },
+  {
+    "number": 187,
+    "brand": "Rasasi",
+    "requestedName": "Arba Wardat (30ml)",
+    "price": 1750,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 30,
+    "section": "Perfumes"
+  },
+  {
+    "number": 188,
+    "brand": "Rasasi",
+    "requestedName": "Daarej Extrait",
+    "price": 2200,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 189,
+    "brand": "Rasasi",
+    "requestedName": "Dareez Pour Femme",
+    "price": 1550,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 190,
+    "brand": "Rasasi",
+    "requestedName": "Dareez Pour Homme",
+    "price": 1550,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 191,
+    "brand": "Rasasi",
+    "requestedName": "Daarej Pour Homme Verve",
+    "price": 2200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 192,
+    "brand": "Rasasi",
+    "requestedName": "Daarej Pour Femme Aurelia",
+    "price": 2200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 193,
+    "brand": "Rasasi",
+    "requestedName": "Fattan Pour Femme (50ml)",
+    "price": 1250,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 50,
+    "section": "Perfumes"
+  },
+  {
+    "number": 194,
+    "brand": "Rasasi",
+    "requestedName": "Fattan Pour Homme (50ml)",
+    "price": 1250,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 50,
+    "section": "Perfumes"
+  },
+  {
+    "number": 195,
+    "brand": "Rasasi",
+    "requestedName": "Fayiz",
+    "price": 4000,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 196,
+    "brand": "Rasasi",
+    "requestedName": "Fawar",
+    "price": 4000,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 197,
+    "brand": "Rasasi",
+    "requestedName": "Haroon",
+    "price": 2950,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 198,
+    "brand": "Rasasi",
+    "requestedName": "Hawas Atlantis",
+    "price": 3300,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 199,
+    "brand": "Rasasi",
+    "requestedName": "Hawas Black Pour Homme",
+    "price": 2500,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 200,
+    "brand": "Rasasi",
+    "requestedName": "Hawas Elixir",
+    "price": 2500,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 201,
+    "brand": "Rasasi",
+    "requestedName": "Hawas Fire Pour Homme",
+    "price": 3500,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 202,
+    "brand": "Rasasi",
+    "requestedName": "Hawas For Her Diva",
+    "price": 2500,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 203,
+    "brand": "Rasasi",
+    "requestedName": "Hawas For Her Eclat",
+    "price": 2500,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 204,
+    "brand": "Rasasi",
+    "requestedName": "Hawas For Him Kobra",
+    "price": 2500,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 205,
+    "brand": "Rasasi",
+    "requestedName": "Hawas For Him Malibu",
+    "price": 2500,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes",
+    "skipId": "rasasi-hawas-malibu-bottle",
+    "skipReason": "Same fragrance, format and size already listed (or existing seller size awaiting confirmation)."
+  },
+  {
+    "number": 206,
+    "brand": "Rasasi",
+    "requestedName": "Hawas Ice Pour Homme",
+    "price": 2700,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 207,
+    "brand": "Rasasi",
+    "requestedName": "Hawas London",
+    "price": 2700,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 208,
+    "brand": "Rasasi",
+    "requestedName": "Hawas Nautilus",
+    "price": 3300,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes",
+    "skipId": "rasasi-hawas-nautilus-bottle",
+    "skipReason": "Same fragrance, format and size already listed (or existing seller size awaiting confirmation)."
+  },
+  {
+    "number": 209,
+    "brand": "Rasasi",
+    "requestedName": "Hawas Pink Pour Femme",
+    "price": 3050,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 210,
+    "brand": "Rasasi",
+    "requestedName": "Hawas Pour Homme",
+    "price": 2500,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes",
+    "skipId": "hawas-bottle",
+    "skipReason": "Same fragrance, format and size already listed (or existing seller size awaiting confirmation)."
+  },
+  {
+    "number": 211,
+    "brand": "Rasasi",
+    "requestedName": "Hawas Pour Femme",
+    "price": 2500,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 212,
+    "brand": "Rasasi",
+    "requestedName": "Hawas Tropical",
+    "price": 2700,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 213,
+    "brand": "Rasasi",
+    "requestedName": "Hawas Viper For Him",
+    "price": 3300,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes",
+    "skipId": "rasasi-hawas-viper-bottle",
+    "skipReason": "Same fragrance, format and size already listed (or existing seller size awaiting confirmation)."
+  },
+  {
+    "number": 214,
+    "brand": "Rasasi",
+    "requestedName": "Ibreez Pour Homme",
+    "price": 1400,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 215,
+    "brand": "Rasasi",
+    "requestedName": "La Yugawam Jasmine Wisp (75ml)",
+    "price": 4600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 75,
+    "section": "Perfumes"
+  },
+  {
+    "number": 216,
+    "brand": "Rasasi",
+    "requestedName": "La Yugawam Orchid Prairie (75ml)",
+    "price": 4600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 75,
+    "section": "Perfumes"
+  },
+  {
+    "number": 217,
+    "brand": "Rasasi",
+    "requestedName": "La Yugawam Pour Femme (75ml)",
+    "price": 4600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 75,
+    "section": "Perfumes"
+  },
+  {
+    "number": 218,
+    "brand": "Rasasi",
+    "requestedName": "La Yugawam Pour Homme (75ml)",
+    "price": 4600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 75,
+    "section": "Perfumes"
+  },
+  {
+    "number": 219,
+    "brand": "Rasasi",
+    "requestedName": "La Yugawam Tobacco Blaze (75ml)",
+    "price": 4600,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 75,
+    "section": "Perfumes"
+  },
+  {
+    "number": 220,
+    "brand": "Rasasi",
+    "requestedName": "Mubhakar (20ml)",
+    "price": 1300,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 20,
+    "section": "Perfumes"
+  },
+  {
+    "number": 221,
+    "brand": "Rasasi",
+    "requestedName": "Mukhalat Al Oud (20ml)",
+    "price": 1300,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 20,
+    "section": "Perfumes"
+  },
+  {
+    "number": 222,
+    "brand": "Rasasi",
+    "requestedName": "Marha Pour Homme",
+    "price": 1400,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 223,
+    "brand": "Rasasi",
+    "requestedName": "Oud Al Methali (15ml)",
+    "price": 2100,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 15,
+    "section": "Perfumes"
+  },
+  {
+    "number": 224,
+    "brand": "Rasasi",
+    "requestedName": "Rafan Pour Homme",
+    "price": 2450,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 225,
+    "brand": "Rasasi",
+    "requestedName": "Rafan Pour Femme",
+    "price": 2450,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 226,
+    "brand": "Rasasi",
+    "requestedName": "Romance Women (15ml)",
+    "price": 1050,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 15,
+    "section": "Perfumes"
+  },
+  {
+    "number": 227,
+    "brand": "Rasasi",
+    "requestedName": "Sahar (18ml)",
+    "price": 1700,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 18,
+    "section": "Perfumes"
+  },
+  {
+    "number": 228,
+    "brand": "Rasasi",
+    "requestedName": "Shuhrah Pour Homme (90ml)",
+    "price": 2000,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 90,
+    "section": "Perfumes"
+  },
+  {
+    "number": 229,
+    "brand": "Rasasi",
+    "requestedName": "Shuhrah Pour Femme (90ml)",
+    "price": 2000,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 90,
+    "section": "Perfumes"
+  },
+  {
+    "number": 230,
+    "brand": "Rasasi",
+    "requestedName": "Shuhrah Pour Homme Avenoir (90ml)",
+    "price": 2500,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 90,
+    "section": "Perfumes"
+  },
+  {
+    "number": 231,
+    "brand": "Rasasi",
+    "requestedName": "Shuhrah Pour Femme Opulence (90ml)",
+    "price": 2500,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 90,
+    "section": "Perfumes"
+  },
+  {
+    "number": 232,
+    "brand": "Rasasi",
+    "requestedName": "Sonia (15ml)",
+    "price": 1250,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 15,
+    "section": "Perfumes"
+  },
+  {
+    "number": 233,
+    "brand": "Rasasi",
+    "requestedName": "Sotoor Pour Homme Raa",
+    "price": 2050,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 234,
+    "brand": "Rasasi",
+    "requestedName": "Yumn Pour Homme",
+    "price": 1450,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 235,
+    "brand": "Khadlaj",
+    "requestedName": "Muse",
+    "price": 2700,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 236,
+    "brand": "Khadlaj",
+    "requestedName": "Sawaar Vanille Blanc",
+    "price": 2400,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 237,
+    "brand": "Khadlaj",
+    "requestedName": "Ihthiraam (60ml)",
+    "price": 3200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 60,
+    "section": "Perfumes"
+  },
+  {
+    "number": 238,
+    "brand": "Khadlaj",
+    "requestedName": "Karus Gold Absolu",
+    "price": 2300,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes",
+    "skipId": "khadlaj-karus-gold-absolu-bottle",
+    "skipReason": "Same fragrance, format and size already listed (or existing seller size awaiting confirmation)."
+  },
+  {
+    "number": 239,
+    "brand": "Khadlaj",
+    "requestedName": "Qarar (60ml)",
+    "price": 3200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 60,
+    "section": "Perfumes"
+  },
+  {
+    "number": 240,
+    "brand": "Khadlaj",
+    "requestedName": "Saraya (60ml)",
+    "price": 3200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 60,
+    "section": "Perfumes"
+  },
+  {
+    "number": 241,
+    "brand": "Khadlaj",
+    "requestedName": "Zayaan Silver",
+    "price": 2200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 242,
+    "brand": "Khadlaj",
+    "requestedName": "Island Sun",
+    "price": 2500,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 243,
+    "brand": "Khadlaj",
+    "requestedName": "Shiyaaka Sky",
+    "price": 2400,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 244,
+    "brand": "Khadlaj",
+    "requestedName": "Azure Velvet",
+    "price": 2100,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 245,
+    "brand": "Khadlaj",
+    "requestedName": "Bleu Glace",
+    "price": 2100,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 246,
+    "brand": "Khadlaj",
+    "requestedName": "Caffe Latte",
+    "price": 2100,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 247,
+    "brand": "Khadlaj",
+    "requestedName": "Cloud Candy",
+    "price": 2000,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 248,
+    "brand": "Khadlaj",
+    "requestedName": "Cream Velvet",
+    "price": 2100,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 249,
+    "brand": "Khadlaj",
+    "requestedName": "Desert Rose",
+    "price": 2100,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 250,
+    "brand": "Khadlaj",
+    "requestedName": "Empire Crown",
+    "price": 2200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 251,
+    "brand": "Khadlaj",
+    "requestedName": "Fursan Brown",
+    "price": 1900,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 252,
+    "brand": "Khadlaj",
+    "requestedName": "Fursan White",
+    "price": 1900,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 253,
+    "brand": "Khadlaj",
+    "requestedName": "Hareem Sultan Gold (75ml)",
+    "price": 2300,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 75,
+    "section": "Perfumes"
+  },
+  {
+    "number": 254,
+    "brand": "Khadlaj",
+    "requestedName": "Icon",
+    "price": 2650,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 255,
+    "brand": "Khadlaj",
+    "requestedName": "Island",
+    "price": 2200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 256,
+    "brand": "Khadlaj",
+    "requestedName": "Island Dreams",
+    "price": 2200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 257,
+    "brand": "Khadlaj",
+    "requestedName": "Island Vanilla Dunes",
+    "price": 2200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 258,
+    "brand": "Khadlaj",
+    "requestedName": "Karus Secret Musk",
+    "price": 2300,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 259,
+    "brand": "Khadlaj",
+    "requestedName": "Karus Blu Spice",
+    "price": 2300,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 260,
+    "brand": "Khadlaj",
+    "requestedName": "25 Heritage",
+    "price": 2200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 261,
+    "brand": "Khadlaj",
+    "requestedName": "25 Loyalty",
+    "price": 2200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 262,
+    "brand": "Khadlaj",
+    "requestedName": "Le Prestige King",
+    "price": 2200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 263,
+    "brand": "Khadlaj",
+    "requestedName": "Mansion",
+    "price": 2200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 264,
+    "brand": "Khadlaj",
+    "requestedName": "Maison Epoque Artistique",
+    "price": 2200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 265,
+    "brand": "Khadlaj",
+    "requestedName": "Mocha Latta",
+    "price": 1900,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 266,
+    "brand": "Khadlaj",
+    "requestedName": "Musk Pure Musk Blend (60ml)",
+    "price": 4200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 60,
+    "section": "Perfumes"
+  },
+  {
+    "number": 267,
+    "brand": "Khadlaj",
+    "requestedName": "Musk Al Sabah",
+    "price": 1700,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 268,
+    "brand": "Khadlaj",
+    "requestedName": "Nafais Magrib",
+    "price": 2575,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 269,
+    "brand": "Khadlaj",
+    "requestedName": "Nafais Sharq",
+    "price": 2575,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 270,
+    "brand": "Khadlaj",
+    "requestedName": "Nuha (85ml)",
+    "price": 1800,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 85,
+    "section": "Perfumes"
+  },
+  {
+    "number": 271,
+    "brand": "Khadlaj",
+    "requestedName": "Nuha Vanilla Pearl (85ml)",
+    "price": 1800,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 85,
+    "section": "Perfumes"
+  },
+  {
+    "number": 272,
+    "brand": "Khadlaj",
+    "requestedName": "Oud Al Sabah",
+    "price": 1700,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 273,
+    "brand": "Khadlaj",
+    "requestedName": "Oud Pour Klassic",
+    "price": 3100,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 274,
+    "brand": "Khadlaj",
+    "requestedName": "Onyx Gold",
+    "price": 2100,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 275,
+    "brand": "Khadlaj",
+    "requestedName": "Onyx Silver",
+    "price": 2100,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 276,
+    "brand": "Khadlaj",
+    "requestedName": "Panache Angel Dust",
+    "price": 2500,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 277,
+    "brand": "Khadlaj",
+    "requestedName": "Peach Velvet",
+    "price": 2100,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 278,
+    "brand": "Khadlaj",
+    "requestedName": "Rasayel Shagaf",
+    "price": 1700,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 279,
+    "brand": "Khadlaj",
+    "requestedName": "Ria",
+    "price": 2375,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 280,
+    "brand": "Khadlaj",
+    "requestedName": "Sara",
+    "price": 2000,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 281,
+    "brand": "Khadlaj",
+    "requestedName": "Sensuos Night",
+    "price": 1300,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 282,
+    "brand": "Khadlaj",
+    "requestedName": "Shiyaaka Shadow",
+    "price": 2400,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 283,
+    "brand": "Khadlaj",
+    "requestedName": "Shiyaaka Snow",
+    "price": 2400,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 284,
+    "brand": "Khadlaj",
+    "requestedName": "Titan",
+    "price": 2300,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 285,
+    "brand": "Khadlaj",
+    "requestedName": "Valor Enigma",
+    "price": 2200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 286,
+    "brand": "Khadlaj",
+    "requestedName": "Zayaan Gold",
+    "price": 2200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 287,
+    "brand": "Lattafa",
+    "requestedName": "Asad Collection (5×5ml)",
+    "price": 2350,
+    "quantity": 9,
+    "format": "Gift set",
+    "declaredSize": 100,
+    "section": "Gift Sets"
+  },
+  {
+    "number": 288,
+    "brand": "Lattafa",
+    "requestedName": "Badee Al Oud (5×5ml)",
+    "price": 2350,
+    "quantity": 0,
+    "format": "Gift set",
+    "declaredSize": 100,
+    "section": "Gift Sets"
+  },
+  {
+    "number": 289,
+    "brand": "Lattafa",
+    "requestedName": "Yara Collection (4×5ml)",
+    "price": 2000,
+    "quantity": 0,
+    "format": "Gift set",
+    "declaredSize": 100,
+    "section": "Gift Sets"
+  },
+  {
+    "number": 290,
+    "brand": "Lattafa",
+    "requestedName": "My Yara Collection (25ml set)",
+    "price": 2900,
+    "quantity": 0,
+    "format": "Gift set",
+    "declaredSize": 100,
+    "section": "Gift Sets"
+  },
+  {
+    "number": 291,
+    "brand": "Lattafa",
+    "requestedName": "Asad Collection (25ml set)",
+    "price": 2900,
+    "quantity": 9,
+    "format": "Gift set",
+    "declaredSize": 100,
+    "section": "Gift Sets"
+  },
+  {
+    "number": 292,
+    "brand": "Lattafa",
+    "requestedName": "Badee Al Oud Collection (25ml set)",
+    "price": 2900,
+    "quantity": 9,
+    "format": "Gift set",
+    "declaredSize": 100,
+    "section": "Gift Sets"
+  },
+  {
+    "number": 293,
+    "brand": "Lattafa",
+    "requestedName": "Esraa",
+    "price": 1400,
+    "quantity": 0,
+    "format": "Attar",
+    "declaredSize": 20,
+    "section": "Attars (20ml)"
+  },
+  {
+    "number": 294,
+    "brand": "Lattafa",
+    "requestedName": "Mashmoom",
+    "price": 1400,
+    "quantity": 0,
+    "format": "Attar",
+    "declaredSize": 20,
+    "section": "Attars (20ml)"
+  },
+  {
+    "number": 295,
+    "brand": "Lattafa",
+    "requestedName": "Yara",
+    "price": 1375,
+    "quantity": 9,
+    "format": "Attar",
+    "declaredSize": 20,
+    "section": "Attars (20ml)"
+  },
+  {
+    "number": 296,
+    "brand": "Lattafa",
+    "requestedName": "Yara Candy",
+    "price": 1375,
+    "quantity": 9,
+    "format": "Attar",
+    "declaredSize": 20,
+    "section": "Attars (20ml)"
+  },
+  {
+    "number": 297,
+    "brand": "Lattafa",
+    "requestedName": "Yara Moi",
+    "price": 1375,
+    "quantity": 9,
+    "format": "Attar",
+    "declaredSize": 20,
+    "section": "Attars (20ml)"
+  },
+  {
+    "number": 298,
+    "brand": "Lattafa",
+    "requestedName": "Yara Tous",
+    "price": 1375,
+    "quantity": 9,
+    "format": "Attar",
+    "declaredSize": 20,
+    "section": "Attars (20ml)"
+  },
+  {
+    "number": 299,
+    "brand": "Lattafa",
+    "requestedName": "Beyond Precious (55ml)",
+    "price": 3150,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 55,
+    "section": "Perfumes"
+  },
+  {
+    "number": 300,
+    "brand": "Lattafa",
+    "requestedName": "Atlas Glacial Valley (55ml)",
+    "price": 2840,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 55,
+    "section": "Perfumes",
+    "skipId": "lattafa-atlas-glacial-valley-bottle",
+    "skipReason": "Same fragrance, format and size already listed (or existing seller size awaiting confirmation)."
+  },
+  {
+    "number": 301,
+    "brand": "Lattafa",
+    "requestedName": "Atlas Canyon (55ml)",
+    "price": 2840,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 55,
+    "section": "Perfumes",
+    "skipId": "lattafa-atlas-canyon-bottle",
+    "skipReason": "Same fragrance, format and size already listed (or existing seller size awaiting confirmation)."
+  },
+  {
+    "number": 302,
+    "brand": "Lattafa",
+    "requestedName": "Ajwad Pink to Pink Creamy Elixir (60ml)",
+    "price": 2300,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 60,
+    "section": "Perfumes"
+  },
+  {
+    "number": 303,
+    "brand": "Lattafa",
+    "requestedName": "Badee Al Oud Exposed",
+    "price": 2600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 304,
+    "brand": "Lattafa",
+    "requestedName": "Farfasha",
+    "price": 1700,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 305,
+    "brand": "Lattafa",
+    "requestedName": "Salwa",
+    "price": 1900,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 306,
+    "brand": "Lattafa",
+    "requestedName": "Afeef",
+    "price": 3200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 307,
+    "brand": "Lattafa",
+    "requestedName": "Ajayab Dubai",
+    "price": 1875,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 308,
+    "brand": "Lattafa",
+    "requestedName": "Ajayab Dubai Portrait",
+    "price": 1875,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 309,
+    "brand": "Lattafa",
+    "requestedName": "Ajwad (60ml)",
+    "price": 2300,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 60,
+    "section": "Perfumes"
+  },
+  {
+    "number": 310,
+    "brand": "Lattafa",
+    "requestedName": "Ajwad Pink (60ml)",
+    "price": 2300,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 60,
+    "section": "Perfumes"
+  },
+  {
+    "number": 311,
+    "brand": "Lattafa",
+    "requestedName": "Al Dur Maknoon Gold",
+    "price": 1250,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 312,
+    "brand": "Lattafa",
+    "requestedName": "Al Nashama",
+    "price": 2515,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 313,
+    "brand": "Lattafa",
+    "requestedName": "Al Nashama Caprice",
+    "price": 2515,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 314,
+    "brand": "Lattafa",
+    "requestedName": "Ameer Al Arab Imperium",
+    "price": 1660,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 315,
+    "brand": "Lattafa",
+    "requestedName": "Ameer Al Oudh",
+    "price": 1690,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 316,
+    "brand": "Lattafa",
+    "requestedName": "Ameer Al Oudh Intense",
+    "price": 1820,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 317,
+    "brand": "Lattafa",
+    "requestedName": "Ana Abiyedh (60ml)",
+    "price": 1960,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 60,
+    "section": "Perfumes"
+  },
+  {
+    "number": 318,
+    "brand": "Lattafa",
+    "requestedName": "Ana Abiyedh Coral (60ml)",
+    "price": 1960,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 60,
+    "section": "Perfumes"
+  },
+  {
+    "number": 319,
+    "brand": "Lattafa",
+    "requestedName": "Ana Abiyedh Leather (60ml)",
+    "price": 1960,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 60,
+    "section": "Perfumes"
+  },
+  {
+    "number": 320,
+    "brand": "Lattafa",
+    "requestedName": "Ana Abiyedh Poudree (60ml)",
+    "price": 1960,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 60,
+    "section": "Perfumes"
+  },
+  {
+    "number": 321,
+    "brand": "Lattafa",
+    "requestedName": "Ana Abiyedh Rouge (60ml)",
+    "price": 1960,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 60,
+    "section": "Perfumes"
+  },
+  {
+    "number": 322,
+    "brand": "Lattafa",
+    "requestedName": "Ana Abiyedh Scarat (60ml)",
+    "price": 1960,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 60,
+    "section": "Perfumes"
+  },
+  {
+    "number": 323,
+    "brand": "Lattafa",
+    "requestedName": "Angham",
+    "price": 2500,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 324,
+    "brand": "Lattafa",
+    "requestedName": "Angham Second Song",
+    "price": 2500,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 325,
+    "brand": "Lattafa",
+    "requestedName": "Asad",
+    "price": 2395,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes",
+    "skipId": "asad-bottle",
+    "skipReason": "Same fragrance, format and size already listed (or existing seller size awaiting confirmation)."
+  },
+  {
+    "number": 326,
+    "brand": "Lattafa",
+    "requestedName": "Asad Bourbon",
+    "price": 2395,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 327,
+    "brand": "Lattafa",
+    "requestedName": "Asad Elixir",
+    "price": 2395,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 328,
+    "brand": "Lattafa",
+    "requestedName": "Asad Zanzibar",
+    "price": 2395,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 329,
+    "brand": "Lattafa",
+    "requestedName": "Asal Teeb Men",
+    "price": 1300,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 330,
+    "brand": "Lattafa",
+    "requestedName": "Asal Teeb Women",
+    "price": 1300,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 331,
+    "brand": "Lattafa",
+    "requestedName": "Atheeri",
+    "price": 2950,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 332,
+    "brand": "Lattafa",
+    "requestedName": "Atlas (55ml)",
+    "price": 2840,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 55,
+    "section": "Perfumes"
+  },
+  {
+    "number": 333,
+    "brand": "Lattafa",
+    "requestedName": "Atyab Al Musk",
+    "price": 1425,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 334,
+    "brand": "Lattafa",
+    "requestedName": "Awraq Al Oud",
+    "price": 1560,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 335,
+    "brand": "Lattafa",
+    "requestedName": "Azeezah",
+    "price": 1560,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 336,
+    "brand": "Lattafa",
+    "requestedName": "Badee Al Oud",
+    "price": 2600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes",
+    "skipId": "oud-for-glory-bottle",
+    "skipReason": "Same fragrance, format and size already listed (or existing seller size awaiting confirmation)."
+  },
+  {
+    "number": 337,
+    "brand": "Lattafa",
+    "requestedName": "Badee Al Oud Amethyst",
+    "price": 2600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 338,
+    "brand": "Lattafa",
+    "requestedName": "Badee Al Oud Amethyst Fusion",
+    "price": 2600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 339,
+    "brand": "Lattafa",
+    "requestedName": "Badee Al Oud Honor",
+    "price": 2600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 340,
+    "brand": "Lattafa",
+    "requestedName": "Badee Al Oud Noble Blush",
+    "price": 2600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 341,
+    "brand": "Lattafa",
+    "requestedName": "Badee Al Oud Sublime",
+    "price": 2600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 342,
+    "brand": "Lattafa",
+    "requestedName": "Bayaan",
+    "price": 2475,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 343,
+    "brand": "Lattafa",
+    "requestedName": "Blue Oud",
+    "price": 1600,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 344,
+    "brand": "Lattafa",
+    "requestedName": "Confidential Silver",
+    "price": 1280,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 345,
+    "brand": "Lattafa",
+    "requestedName": "Dalal",
+    "price": 2500,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 346,
+    "brand": "Lattafa",
+    "requestedName": "Divine Oud (50ml)",
+    "price": 1250,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 50,
+    "section": "Perfumes"
+  },
+  {
+    "number": 347,
+    "brand": "Lattafa",
+    "requestedName": "Dynasty",
+    "price": 2525,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 348,
+    "brand": "Lattafa",
+    "requestedName": "Eclaire",
+    "price": 2600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 349,
+    "brand": "Lattafa",
+    "requestedName": "Eclaire Banoffi",
+    "price": 2600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 350,
+    "brand": "Lattafa",
+    "requestedName": "Eclaire Pistache",
+    "price": 2600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 351,
+    "brand": "Lattafa",
+    "requestedName": "Ejaazi",
+    "price": 1600,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 352,
+    "brand": "Lattafa",
+    "requestedName": "Ekhtiari",
+    "price": 1550,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 353,
+    "brand": "Lattafa",
+    "requestedName": "Emaan",
+    "price": 2400,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 354,
+    "brand": "Lattafa",
+    "requestedName": "Emeer",
+    "price": 3600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 355,
+    "brand": "Lattafa",
+    "requestedName": "Emta Taud Silver",
+    "price": 1425,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 356,
+    "brand": "Lattafa",
+    "requestedName": "Ente Faqat",
+    "price": 1210,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 357,
+    "brand": "Lattafa",
+    "requestedName": "Fahad (80ml)",
+    "price": 2780,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 80,
+    "section": "Perfumes"
+  },
+  {
+    "number": 358,
+    "brand": "Lattafa",
+    "requestedName": "Fakhar Extrait",
+    "price": 2370,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 359,
+    "brand": "Lattafa",
+    "requestedName": "Fakhar Man",
+    "price": 2370,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 360,
+    "brand": "Lattafa",
+    "requestedName": "Fakhar Woman",
+    "price": 2370,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 361,
+    "brand": "Lattafa",
+    "requestedName": "Fakhar Platin",
+    "price": 2370,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 362,
+    "brand": "Lattafa",
+    "requestedName": "Fire On Ice (110ml)",
+    "price": 2600,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 110,
+    "section": "Perfumes"
+  },
+  {
+    "number": 363,
+    "brand": "Lattafa",
+    "requestedName": "Give Me Gourmand Choco Berry On Top (75ml)",
+    "price": 2450,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 75,
+    "section": "Perfumes"
+  },
+  {
+    "number": 364,
+    "brand": "Lattafa",
+    "requestedName": "Give Me Gourmand Choco Overdose (75ml)",
+    "price": 2450,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 75,
+    "section": "Perfumes"
+  },
+  {
+    "number": 365,
+    "brand": "Lattafa",
+    "requestedName": "Give Me Gourmand Cookie Crave (75ml)",
+    "price": 2450,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 75,
+    "section": "Perfumes"
+  },
+  {
+    "number": 366,
+    "brand": "Lattafa",
+    "requestedName": "Give Me Gourmand Mallow Madness (75ml)",
+    "price": 2450,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 75,
+    "section": "Perfumes"
+  },
+  {
+    "number": 367,
+    "brand": "Lattafa",
+    "requestedName": "Give Me Gourmand Vanilla Freak (75ml)",
+    "price": 2450,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 75,
+    "section": "Perfumes"
+  },
+  {
+    "number": 368,
+    "brand": "Lattafa",
+    "requestedName": "Give Me Gourmand Whipped Pleasure (75ml)",
+    "price": 2450,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 75,
+    "section": "Perfumes"
+  },
+  {
+    "number": 369,
+    "brand": "Lattafa",
+    "requestedName": "Habik Men",
+    "price": 2350,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 370,
+    "brand": "Lattafa",
+    "requestedName": "Habik Women",
+    "price": 2350,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 371,
+    "brand": "Lattafa",
+    "requestedName": "Haya",
+    "price": 2700,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 372,
+    "brand": "Lattafa",
+    "requestedName": "Hayati Black",
+    "price": 1940,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 373,
+    "brand": "Lattafa",
+    "requestedName": "Hayati Blue",
+    "price": 1940,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 374,
+    "brand": "Lattafa",
+    "requestedName": "Hayaati Florence",
+    "price": 1940,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 375,
+    "brand": "Lattafa",
+    "requestedName": "Hayaati Gold Elixir",
+    "price": 1940,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 376,
+    "brand": "Lattafa",
+    "requestedName": "Hayaatim",
+    "price": 1790,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 377,
+    "brand": "Lattafa",
+    "requestedName": "His Confession For Men",
+    "price": 3100,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 378,
+    "brand": "Lattafa",
+    "requestedName": "Her Confession For Women",
+    "price": 3100,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 379,
+    "brand": "Lattafa",
+    "requestedName": "Jasoor",
+    "price": 2465,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 380,
+    "brand": "Lattafa",
+    "requestedName": "Khamrah",
+    "price": 2980,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes",
+    "skipId": "khamrah-bottle",
+    "skipReason": "Same fragrance, format and size already listed (or existing seller size awaiting confirmation)."
+  },
+  {
+    "number": 381,
+    "brand": "Lattafa",
+    "requestedName": "Khamrah Qahwa",
+    "price": 2980,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes",
+    "skipId": "qahwa-bottle",
+    "skipReason": "Same fragrance, format and size already listed (or existing seller size awaiting confirmation)."
+  },
+  {
+    "number": 382,
+    "brand": "Lattafa",
+    "requestedName": "Khamrah Dukhan",
+    "price": 2980,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 383,
+    "brand": "Lattafa",
+    "requestedName": "Khamrah Waha",
+    "price": 2980,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 384,
+    "brand": "Lattafa",
+    "requestedName": "Khas Lil Rijal",
+    "price": 1330,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 385,
+    "brand": "Lattafa",
+    "requestedName": "Lail Maleki",
+    "price": 1590,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 386,
+    "brand": "Lattafa",
+    "requestedName": "Lail Maleki Oud Edition",
+    "price": 1590,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 387,
+    "brand": "Lattafa",
+    "requestedName": "Lail Maleki Moroccan Blue",
+    "price": 1590,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 388,
+    "brand": "Lattafa",
+    "requestedName": "Layaan (75ml)",
+    "price": 2450,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 75,
+    "section": "Perfumes"
+  },
+  {
+    "number": 389,
+    "brand": "Lattafa",
+    "requestedName": "Liam Grey",
+    "price": 2120,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 390,
+    "brand": "Lattafa",
+    "requestedName": "Maahir Black",
+    "price": 2675,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 391,
+    "brand": "Lattafa",
+    "requestedName": "Maahir Gold",
+    "price": 2675,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 392,
+    "brand": "Lattafa",
+    "requestedName": "Maahir Legacy",
+    "price": 2675,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 393,
+    "brand": "Lattafa",
+    "requestedName": "Maahir Honor",
+    "price": 2675,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 394,
+    "brand": "Lattafa",
+    "requestedName": "Mafatin Musk Al Hareer",
+    "price": 1300,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 395,
+    "brand": "Lattafa",
+    "requestedName": "Mafatin Musk Oud",
+    "price": 1300,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 396,
+    "brand": "Lattafa",
+    "requestedName": "Mashrabya",
+    "price": 2300,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 397,
+    "brand": "Lattafa",
+    "requestedName": "Mayar",
+    "price": 2215,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 398,
+    "brand": "Lattafa",
+    "requestedName": "Mayar Natural Intense",
+    "price": 2215,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 399,
+    "brand": "Lattafa",
+    "requestedName": "Mohra",
+    "price": 1890,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 400,
+    "brand": "Lattafa",
+    "requestedName": "Mohra Silky Rose",
+    "price": 1890,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 401,
+    "brand": "Lattafa",
+    "requestedName": "Mukhallat Kashmiri",
+    "price": 1300,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 402,
+    "brand": "Lattafa",
+    "requestedName": "Musamam",
+    "price": 3480,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 403,
+    "brand": "Lattafa",
+    "requestedName": "Musamam White",
+    "price": 3480,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 404,
+    "brand": "Lattafa",
+    "requestedName": "Musamam Black Intense",
+    "price": 3480,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 405,
+    "brand": "Lattafa",
+    "requestedName": "Najdia + Deo",
+    "price": 1880,
+    "quantity": 0,
+    "format": "Gift set",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 406,
+    "brand": "Lattafa",
+    "requestedName": "Najdia Gold",
+    "price": 1880,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 407,
+    "brand": "Lattafa",
+    "requestedName": "Najdia Tribute",
+    "price": 1880,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 408,
+    "brand": "Lattafa",
+    "requestedName": "Najdia Intense",
+    "price": 1880,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 409,
+    "brand": "Lattafa",
+    "requestedName": "Nasamaat",
+    "price": 2250,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 410,
+    "brand": "Lattafa",
+    "requestedName": "Opulent Dubai",
+    "price": 1840,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 411,
+    "brand": "Lattafa",
+    "requestedName": "Opulent Musk",
+    "price": 1740,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 412,
+    "brand": "Lattafa",
+    "requestedName": "Opulent Oud",
+    "price": 1740,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 413,
+    "brand": "Lattafa",
+    "requestedName": "Opulent Red",
+    "price": 1740,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 414,
+    "brand": "Lattafa",
+    "requestedName": "Oud Mood",
+    "price": 1940,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 415,
+    "brand": "Lattafa",
+    "requestedName": "Oud Mood Elixir",
+    "price": 1940,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 416,
+    "brand": "Lattafa",
+    "requestedName": "Oud Mood Reminiscence",
+    "price": 1940,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 417,
+    "brand": "Lattafa",
+    "requestedName": "Oud Mood Musk",
+    "price": 1940,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 418,
+    "brand": "Lattafa",
+    "requestedName": "Oud Najdia",
+    "price": 1880,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 419,
+    "brand": "Lattafa",
+    "requestedName": "Oud Salma",
+    "price": 1325,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 420,
+    "brand": "Lattafa",
+    "requestedName": "Petra",
+    "price": 3100,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 421,
+    "brand": "Lattafa",
+    "requestedName": "Pure Crystal",
+    "price": 3525,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 422,
+    "brand": "Lattafa",
+    "requestedName": "Pure Musk + Deo",
+    "price": 1680,
+    "quantity": 0,
+    "format": "Gift set",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 423,
+    "brand": "Lattafa",
+    "requestedName": "Pure Oudi + Deo",
+    "price": 1680,
+    "quantity": 0,
+    "format": "Gift set",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 424,
+    "brand": "Lattafa",
+    "requestedName": "Qaa'ed",
+    "price": 1925,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 425,
+    "brand": "Lattafa",
+    "requestedName": "Qaed Al Fursan Black (90ml)",
+    "price": 1800,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 90,
+    "section": "Perfumes",
+    "skipId": "qaed-bottle",
+    "skipReason": "Same fragrance, format and size already listed (or existing seller size awaiting confirmation)."
+  },
+  {
+    "number": 426,
+    "brand": "Lattafa",
+    "requestedName": "Qaed Al Fursan Unlimited White (90ml)",
+    "price": 1800,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 90,
+    "section": "Perfumes"
+  },
+  {
+    "number": 427,
+    "brand": "Lattafa",
+    "requestedName": "Qaed Al Fursan Untamed (90ml)",
+    "price": 1800,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 90,
+    "section": "Perfumes"
+  },
+  {
+    "number": 428,
+    "brand": "Lattafa",
+    "requestedName": "Qaeed Intense",
+    "price": 1925,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 429,
+    "brand": "Lattafa",
+    "requestedName": "Raeed Absolu",
+    "price": 2200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 430,
+    "brand": "Lattafa",
+    "requestedName": "Raeed Intensely",
+    "price": 2200,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 431,
+    "brand": "Lattafa",
+    "requestedName": "Rooh Al Rooh Silver",
+    "price": 1300,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 432,
+    "brand": "Lattafa",
+    "requestedName": "Rose Kashmiri",
+    "price": 1300,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 433,
+    "brand": "Lattafa",
+    "requestedName": "Rouat Al Ajial",
+    "price": 1340,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 434,
+    "brand": "Lattafa",
+    "requestedName": "Raghba + Deo",
+    "price": 1510,
+    "quantity": 0,
+    "format": "Gift set",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 435,
+    "brand": "Lattafa",
+    "requestedName": "Raghba Wood Intense",
+    "price": 1510,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 436,
+    "brand": "Lattafa",
+    "requestedName": "Ramz Gold",
+    "price": 1820,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 437,
+    "brand": "Lattafa",
+    "requestedName": "Ramz Silver",
+    "price": 1820,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 438,
+    "brand": "Lattafa",
+    "requestedName": "Sakeena",
+    "price": 2575,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 439,
+    "brand": "Lattafa",
+    "requestedName": "Sehr",
+    "price": 3240,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 440,
+    "brand": "Lattafa",
+    "requestedName": "Sheikh Al Shuyukh Khuskhusi",
+    "price": 1500,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 441,
+    "brand": "Lattafa",
+    "requestedName": "Sheriff",
+    "price": 2250,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 442,
+    "brand": "Lattafa",
+    "requestedName": "Sing (75ml)",
+    "price": 1430,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 75,
+    "section": "Perfumes"
+  },
+  {
+    "number": 443,
+    "brand": "Lattafa",
+    "requestedName": "Stop Wait Go (75ml)",
+    "price": 1430,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 75,
+    "section": "Perfumes"
+  },
+  {
+    "number": 444,
+    "brand": "Lattafa",
+    "requestedName": "Sumou",
+    "price": 1480,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 445,
+    "brand": "Lattafa",
+    "requestedName": "Suqraat",
+    "price": 1700,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 446,
+    "brand": "Lattafa",
+    "requestedName": "Teriaq",
+    "price": 3100,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 447,
+    "brand": "Lattafa",
+    "requestedName": "Teriaq Intense",
+    "price": 3100,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 448,
+    "brand": "Lattafa",
+    "requestedName": "The Kingdom Man",
+    "price": 2650,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 449,
+    "brand": "Lattafa",
+    "requestedName": "The Kingdom Women",
+    "price": 2650,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 450,
+    "brand": "Lattafa",
+    "requestedName": "Victoria",
+    "price": 2600,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 451,
+    "brand": "Lattafa",
+    "requestedName": "Velvet Musk",
+    "price": 1935,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 452,
+    "brand": "Lattafa",
+    "requestedName": "Velvet Oud",
+    "price": 1935,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 453,
+    "brand": "Lattafa",
+    "requestedName": "Velvet Rose",
+    "price": 1935,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 454,
+    "brand": "Lattafa",
+    "requestedName": "Yara",
+    "price": 2355,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes",
+    "skipId": "yara-bottle",
+    "skipReason": "Same fragrance, format and size already listed (or existing seller size awaiting confirmation)."
+  },
+  {
+    "number": 455,
+    "brand": "Lattafa",
+    "requestedName": "Yara Candy",
+    "price": 2355,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 456,
+    "brand": "Lattafa",
+    "requestedName": "Yara Elixir",
+    "price": 2355,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 457,
+    "brand": "Lattafa",
+    "requestedName": "Yara Moi",
+    "price": 2355,
+    "quantity": 0,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  },
+  {
+    "number": 458,
+    "brand": "Lattafa",
+    "requestedName": "Yara Tous",
+    "price": 2355,
+    "quantity": 9,
+    "format": "Full bottle",
+    "declaredSize": 100,
+    "section": "Perfumes"
+  }
+]

@@ -1,10 +1,12 @@
 import {applyCommunityPhotoUpdates} from './community-photo-updates.mjs';
 import {maisonProducts,mergeMaisonProducts} from './maison-products.mjs';
+import {novemberProducts,mergeNovemberProducts} from './november-products.mjs';
 import {communityProducts,mergeCommunityOffers} from './community-products.mjs';
 import {enrichFragrance,migrateFragranceFacts} from './fragrance-facts.mjs';
 import {processNotes} from './fragrance-notes.mjs';
 import {instagramProducts} from './instagram-products.mjs';
 export const KEY = 'drip-dusk-demo-v1';
+export const PRODUCT_FORMATS = Object.freeze(['Full bottle','Decant','Gift set','Discovery kit','Attar']);
 export const money = value => new Intl.NumberFormat('en-IN',{style:'currency',currency:'INR',maximumFractionDigits:0}).format(value);
 export const inStock = p => !!p && !p.enquiryOnly && Number.isFinite(p.price) && Number.isInteger(p.size) && p.size>0 && !p.hidden && !p.archived && p.available && p.quantity > 0;
 export const discount = p => Number.isFinite(p.reference) && p.reference > p.price ? Math.round((p.reference-p.price)/p.reference*100) : null;
@@ -25,7 +27,9 @@ export function validateProduct(p) {
  if(!Number.isInteger(p.quantity)||p.quantity<0||p.quantity>10000)return 'Quantity must be a whole number from 0 to 10,000.';
  if(p.available&&p.quantity===0)return 'Add stock or mark this product sold out.';
  if(!Number.isFinite(p.order)||!Number.isFinite(p.featureOrder))return 'Display order must be a number.';
- if(!['Full bottle','Decant'].includes(p.format))return 'Choose a valid format.';
+ if(!PRODUCT_FORMATS.includes(p.format))return 'Choose a valid format.';
+ if(p.packLabel!==undefined&&(typeof p.packLabel!=='string'||p.packLabel.length>120||/[<>\u0000-\u001f\u007f]/.test(p.packLabel)))return 'Pack label must be plain text up to 120 characters.';
+ if(p.packContents!==undefined&&(!Array.isArray(p.packContents)||p.packContents.length>12||p.packContents.some(item=>typeof item!=='string'||!item.trim()||item.length>160||/[<>\u0000-\u001f\u007f]/.test(item))))return 'Pack contents must contain up to 12 plain-text items of 160 characters each.';
  return '';
 }
 export function saleProduct(p, qty) {
@@ -39,7 +43,7 @@ export function basketSummary(products,basket) {
 }
 export function enquiryMessage(products,basket) {
  const s=basketSummary(products,basket);if(!s.valid)throw Error('Please remove unavailable items or adjust quantities before enquiring.');
- return `Hello Drip & Dusk! I’d like to enquire about:\n\n${s.lines.map((l,i)=>`${i+1}. ${l.p.brand} ${l.p.name}\n${l.p.size} ml · ${l.p.format} · ${l.p.condition}\nQuantity: ${l.qty} × ${money(l.p.price)} = ${money(l.subtotal)}`).join('\n\n')}\n\nEstimated total: ${money(s.total)}\n\nPlease confirm availability, shipping charges and payment details. This enquiry is not an order or stock reservation.`;
+ return `Hello Drip & Dusk! I’d like to enquire about:\n\n${s.lines.map((l,i)=>`${i+1}. ${l.p.brand} ${l.p.name}\n${sizeLabel(l.p)} · ${l.p.format} · ${l.p.condition}\nQuantity: ${l.qty} × ${money(l.p.price)} = ${money(l.subtotal)}`).join('\n\n')}\n\nEstimated total: ${money(s.total)}\n\nPlease confirm availability, shipping charges and payment details. This enquiry is not an order or stock reservation.`;
 }
 export const defaults = () => {
  const seeds=[
@@ -55,9 +59,9 @@ export const defaults = () => {
  seeds.forEach((s,i)=>products.push({...products[i],id:s[0]+'-10ml',size:10,format:'Decant',condition:'Seller-filled atomiser',price:[499,349,299,279,399,329,229][i],reference:null,quantity:i===5?0:12-i,available:i!==5,deal:false,featured:false,order:7+i}));
  products.push(...structuredClone(instagramProducts));
  products.splice(0,products.length,...mergeCommunityOffers(products));
- products.push(...structuredClone(maisonProducts));
+ products.push(...structuredClone(maisonProducts),...structuredClone(novemberProducts));
  products.forEach(p=>{if(['hawas','khamrah','qahwa','yara'].includes(p.group)&&p.format==='Full bottle')p.hotSeller=true;});
- return {version:1,catalogueRevision:8,products,settings:{communityUrl:'',whatsapp:'',instagram:'',about:'Drip & Dusk is a multi-brand fragrance retailer. Explore full bottles and smaller decants, compare your options, and talk directly with the seller before deciding.',ordering:'Choose your fragrance, enter your delivery details and review the total. Pay by direct UPI. Your order is confirmed as soon as the payment is verified.',shipping:'Delivery charges are shown at checkout before you pay. Once your order ships, its courier and tracking details appear on your private order page.',payment:'Pay by direct UPI, with no added payment fee. Direct UPI orders are confirmed once we verify the payment. For cancellations or returns, contact us with your order reference.',faq:'Are prices and stock up to date?|Yes for anything you can add to your bag; checkout rechecks the price and stock before you pay. Community offers show dated seller quotes, so confirm the current price, availability and terms with us.\nWhat is a decant?|A smaller amount transferred from the original bottle into a separate atomiser. The photo shows the original bottle for reference, not the decant packaging.\nDoes adding to my bag reserve stock?|No. Your bottles are held once you place an order at checkout, and released if payment is not completed in time.\nHow do delivery and payment work?|Delivery charges are shown at checkout before you pay. Pay by direct UPI; there is no added payment fee.',reviews:'Customer reviews have not been supplied. This space is reserved for genuine feedback shared with permission.'}};
+ return {version:1,catalogueRevision:9,products,settings:{communityUrl:'',whatsapp:'',instagram:'',about:'Drip & Dusk is a multi-brand fragrance retailer. Explore full bottles and smaller decants, compare your options, and talk directly with the seller before deciding.',ordering:'Choose your fragrance, enter your delivery details and review the total. Pay by direct UPI. Your order is confirmed as soon as the payment is verified.',shipping:'Delivery charges are shown at checkout before you pay. Once your order ships, its courier and tracking details appear on your private order page.',payment:'Pay by direct UPI, with no added payment fee. Direct UPI orders are confirmed once we verify the payment. For cancellations or returns, contact us with your order reference.',faq:'Are prices and stock up to date?|Yes for anything you can add to your bag; checkout rechecks the price and stock before you pay. Community offers show dated seller quotes, so confirm the current price, availability and terms with us.\nWhat is a decant?|A smaller amount transferred from the original bottle into a separate atomiser. The photo shows the original bottle for reference, not the decant packaging.\nDoes adding to my bag reserve stock?|No. Your bottles are held once you place an order at checkout, and released if payment is not completed in time.\nHow do delivery and payment work?|Delivery charges are shown at checkout before you pay. Pay by direct UPI; there is no added payment fee.',reviews:'Customer reviews have not been supplied. This space is reserved for genuine feedback shared with permission.'}};
 };
 
 // Styling and occasion pairings are editorial suggestions, not performance claims.
@@ -70,7 +74,7 @@ const PROFILES = {
  'oud-for-glory': {family:'Woody & amber', pairing:'Ask us for a personal recommendation', edit:'dark', scale:'1.55', position:'50% 50%'},
  qaed: {family:'Fruity & woody', pairing:'Everyday · relaxed occasions', edit:'fresh', scale:'1.55', position:'50% 50%'}
 };
-export const fragranceProfile = p => ({family:'Discover the scent',pairing:'Ask us for a personal recommendation',edit:'',scale:'1',position:'50% 50%',...PROFILES[p.group],...(p.finderVerified===true?{family:processNotes(p).scentProfile.family,edit:processNotes(p).scentProfile.edit}:{}),...(p.family?{family:p.family}:{}),...(p.pairing?{pairing:p.pairing}:{}),...(['fresh','warm','dark','soft'].includes(p.scentEdit)?{edit:p.scentEdit}:{}),concentration:p.concentration||'Confirm with seller'});
+export const fragranceProfile = p => ({family:'Discover the scent',pairing:'Ask us for a personal recommendation',edit:'',scale:'1',position:'50% 50%',...PROFILES[p.group],...(p.finderVerified===true?(({family,edit})=>({family,edit}))(processNotes(p).scentProfile):{}),...(p.family?{family:p.family}:{}),...(p.pairing?{pairing:p.pairing}:{}),...(['fresh','warm','dark','soft'].includes(p.scentEdit)?{edit:p.scentEdit}:{}),concentration:p.concentration||'Confirm with seller'});
 export const edits = [
  {id:'dark',name:'After dark',line:'Depth, warmth & a little intrigue.',number:'01',image:'asad'},
  {id:'fresh',name:'Fresh daily',line:'Bright openings. Easy company.',number:'02',image:'hawas'},
@@ -84,24 +88,25 @@ export function matchesCollection(p,id){
  return fragranceProfile(p).edit===id;
 }
 export function catalogueDisplay(products,kind){
- if(kind==='Decant'||kind==='Full bottle'||kind==='saved')return products;
+ if(PRODUCT_FORMATS.includes(kind)||kind==='saved')return products;
  const groups=new Map();
  for(const p of products){const key=p.group||p.id;const old=groups.get(key);if(!old||p.format==='Full bottle'&&old.format!=='Full bottle')groups.set(key,p)}
  return [...groups.values()];
 }
 
-export const sizeLabel = p => Number.isInteger(p.size)&&p.size>0?`${p.size} ml`:'Size to confirm';
+export const sizeLabel = p => typeof p.packLabel==='string'&&p.packLabel.trim()?p.packLabel.trim():Number.isInteger(p.size)&&p.size>0?`${p.size} ml`:'Size to confirm';
 export const priceLabel = p => Number.isFinite(p.price)?money(p.price)+(p.communityOffer?.pricePlus?' +':''):'Ask for price';
 // Add the new catalogue once; preserve previous edits, archives and later deletions.
 export function migrateCatalogue(state){
- if((state.catalogueRevision||0)>=8)return state;
+ if((state.catalogueRevision||0)>=9)return state;
  const ids=new Set(state.products.map(p=>p.id));let products=(state.catalogueRevision||0)<2?[...state.products,...structuredClone(instagramProducts).filter(p=>!ids.has(p.id))]:state.products;
  products=products.map(p=>['hawas-bottle','khamrah-bottle','qahwa-bottle','yara-bottle'].includes(p.id)&&p.hotSeller===undefined?{...p,hotSeller:true}:p);
  products=products.map(migrateFragranceFacts);
  if((state.catalogueRevision||0)<5)products=mergeCommunityOffers(products);
  products=applyCommunityPhotoUpdates(products);
- products=mergeMaisonProducts(products);
- return {...state,catalogueRevision:8,products,settings:{communityUrl:'',...state.settings}};
+ if((state.catalogueRevision||0)<8)products=mergeMaisonProducts(products);
+ products=mergeNovemberProducts(products);
+ return {...state,catalogueRevision:9,products,settings:{communityUrl:'',...state.settings}};
 }
 export function referenceEnquiryMessage(p){
  if(!p||!p.enquiryOnly||p.hidden||p.archived)throw Error('This fragrance is unavailable for enquiry.');

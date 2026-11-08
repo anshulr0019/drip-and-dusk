@@ -844,3 +844,7 @@ body.hero-in-view:not(.is-admin) .header #bag-count{background:#f7f4eb;color:#29
 }
 @media(prefers-reduced-motion:reduce){#modal::backdrop{animation:none}}
 html{scrollbar-gutter:stable}
+
+/* Large catalogue navigation and clearly separated set contents. */
+.catalogue-pagination .page-gap{display:inline-flex;align-items:center;justify-content:center;min-width:12px;color:var(--muted)}.pack-contents{margin:18px 0;padding:16px;border:1px solid var(--line)}.pack-contents ul{padding-left:18px;margin:8px 0}.kit-profile{border-bottom:1px solid var(--line);padding:8px 0}.kit-profile summary{cursor:pointer}.kit-profile p{font-size:12px;line-height:1.6}
+@media(max-width:760px){#storefront .catalogue-subbar .tabs{display:flex;flex-wrap:nowrap;overflow-x:auto;max-width:100%;scrollbar-width:thin}#storefront .catalogue-subbar .tabs button{white-space:nowrap;flex:0 0 auto}#storefront .catalogue-pagination>div{gap:3px}#storefront .catalogue-pagination>div button{min-width:32px;padding-inline:6px}}

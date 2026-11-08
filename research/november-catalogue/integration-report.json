@@ -1,0 +1,24 @@
+{
+  "requested": 458,
+  "skipped": 20,
+  "added": 438,
+  "missing": [],
+  "issues": [
+    {
+      "number": 287,
+      "issue": "Photo unresolved"
+    },
+    {
+      "number": 329,
+      "issue": "Photo unresolved"
+    }
+  ],
+  "available": 339,
+  "soldOut": 99,
+  "formats": {
+    "Gift set": 21,
+    "Discovery kit": 5,
+    "Full bottle": 398,
+    "Attar": 14
+  }
+}

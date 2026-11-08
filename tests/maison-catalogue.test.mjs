@@ -1,3 +1,4 @@
+import {novemberProducts} from '../dist/november-products.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,existsSync} from 'node:fs';
@@ -22,13 +23,13 @@ test('all 92 requested bottles preserve the exact prices, nine-bottle stock and 
   for(const source of p.noteSources)assert.equal(new URL(source.url).protocol,'https:');
   if(!p.finderVerified){assert(p.notesCaveat,p.name);assert.equal(verifiedForFinder(p),false,p.name);}
  }
- assert.equal(defaults().products.length,170);
+ assert.equal(defaults().products.length,170+novemberProducts.length);
 });
 test('the one-time browser addition preserves existing owner changes and later deletions',()=>{
  const owned={...maisonProducts[0],price:777,quantity:3,available:false,hidden:true,image:'data:image/jpeg;base64,eA=='};
  const merged=mergeMaisonProducts([owned]);assert.equal(merged.length,92);assert.equal(merged[0],owned);
  const before={...defaults(),catalogueRevision:7,products:[owned]};const after=migrateCatalogue(before);
- assert.equal(after.products.length,92);assert.equal(after.products[0],owned);assert.equal(after.catalogueRevision,8);
+ assert.equal(after.products.length,92+novemberProducts.length);assert.equal(after.products[0],owned);assert.equal(after.catalogueRevision,defaults().catalogueRevision);
  const removed={...after,products:after.products.slice(1)};assert.equal(migrateCatalogue(removed),removed);
 });
 test('production insert is additive and replay-safe, preserving reservations and existing stock',()=>{

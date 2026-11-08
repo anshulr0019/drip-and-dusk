@@ -200,3 +200,11 @@ UPDATE orders SET customer_user_id=NULL WHERE customer_user_id='<supabase user i
 ```
 
 Tracking links have no automatic expiry; they are revoked only by a reset or by removing customer details.
+
+## November 2026 catalogue expansion
+
+The 8 November merchant list contains 458 entries. Migration `0013_november_catalogue.sql` inserts 438 new exact-size/format variants and leaves 20 existing listings unchanged, including their prices and stock. New available entries have nine units; 99 N/A entries have zero. Total seeded catalogue: 608 variants.
+
+Gift sets, discovery kits and attars are separate formats. Pack labels and contents are validated, saved with products and snapshotted on orders/packing slips. Multi-fragrance kits show component profiles rather than a fabricated shared pyramid, and sets/attars are excluded from the bottle/decant finder. Disputed references are labelled and excluded from automatic recommendations. Exact Asad 5×5ml contents/photo remain unconfirmed; its supplier-stated listing uses an honest placeholder.
+
+Research and duplicate mapping are in `research/november-catalogue/`. Run `node scripts/build-november-catalogue.mjs` to regenerate the product module and insert-only migration after reviewing data. `scripts/fetch-november-images.py` fetches verified reference photos and computes display framing; `node scripts/image-variants.mjs` generates responsive card copies. Public photo sources are retained for traceability. Pagination uses a bounded page window for the larger collection. Payments and owner access configuration are unchanged.

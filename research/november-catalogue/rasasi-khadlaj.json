@@ -1,0 +1,5244 @@
+[
+  {
+    "number": 171,
+    "requestedName": "Hawas Homme Gift Set",
+    "canonicalName": "Hawas Homme Gift Set",
+    "canonicalBrand": "Rasasi",
+    "source": "https://store.rasasi.com.sa/en/jgbjpxy/p511280757",
+    "noteSources": [
+      {
+        "label": "Rasasi Saudi product listing",
+        "url": "https://store.rasasi.com.sa/en/jgbjpxy/p511280757",
+        "kind": "regional-store"
+      },
+      {
+        "label": "Rasasi Hawas fragrance listing",
+        "url": "https://rasasistore.com/products/hawas-for-him",
+        "kind": "regional-store"
+      },
+      {
+        "label": "Gift-set contents and barcode 614514333297",
+        "url": "https://www.jomashop.com/rasasi-mens-hawas-gift-set-fragrances-614514333297.html",
+        "kind": "retailer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Apple",
+        "Bergamot",
+        "Lemon",
+        "Cinnamon"
+      ],
+      "heart": [
+        "Orange blossom",
+        "Cardamom",
+        "Plum"
+      ],
+      "base": [
+        "Patchouli",
+        "Grey amber",
+        "Driftwood",
+        "Musk"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.salla.sa/lGDEen/1d37338f-e51a-4487-9932-6d330a80410e-500x500-MhPBpAChOTnrvQhe4XXCT6PE06pSWrt0paIhStmT.jpg",
+    "imageSourceUrl": "https://store.rasasi.com.sa/en/jgbjpxy/p511280757",
+    "size": 100,
+    "confirmedSize": 100,
+    "notesCaveat": "The Saudi gift-box page reverses top/base labels; the fragrance pyramid here follows the original Hawas product listing. Confirm the supplied gift-set contents against the box.",
+    "packLabel": "100 ml EDP + 10 ml travel spray + 60 ml shower gel",
+    "packContents": [
+      {
+        "name": "Hawas Eau de Parfum",
+        "sizeMl": 100,
+        "quantity": 1
+      },
+      {
+        "name": "Hawas travel spray",
+        "sizeMl": 10,
+        "quantity": 1
+      },
+      {
+        "name": "Hawas shower gel",
+        "sizeMl": 60,
+        "quantity": 1
+      }
+    ],
+    "sizeConfirmed": true,
+    "description": "Apple, bergamot, lemon open the fragrance, followed by orange blossom, cardamom, plum. The base brings patchouli, grey amber, driftwood. A coordinated three-piece gift set pairs the fragrance with a travel spray and shower gel."
+  },
+  {
+    "number": 172,
+    "requestedName": "Hawas Ice Gift Set",
+    "canonicalName": "Hawas Ice Gift Set",
+    "canonicalBrand": "Rasasi",
+    "source": "https://www.intenseoud.com/products/hawas-ice-3-piece-perfume-gift-set-by-rasasi-gift-set",
+    "noteSources": [
+      {
+        "label": "Rasasi Saudi product listing",
+        "url": "https://store.rasasi.com.sa/en/rvxzexz/p666775809",
+        "kind": "regional-store"
+      },
+      {
+        "label": "Three-piece gift-set contents and fragrance pyramid",
+        "url": "https://www.intenseoud.com/products/hawas-ice-3-piece-perfume-gift-set-by-rasasi-gift-set",
+        "kind": "retailer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Frozen apple",
+        "Italian bergamot",
+        "Italian lemon",
+        "Star anise"
+      ],
+      "heart": [
+        "Orange blossom",
+        "Plum",
+        "Cardamom"
+      ],
+      "base": [
+        "Moss",
+        "Driftwood",
+        "Amber",
+        "Musk"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0127/7840/5947/files/rasasi-hawas-ice-gift-set-eau-de-parfum-100ml-bottles.webp?v=1793380528",
+    "imageSourceUrl": "https://www.intenseoud.com/products/hawas-ice-3-piece-perfume-gift-set-by-rasasi-gift-set",
+    "size": 100,
+    "confirmedSize": 100,
+    "notesCaveat": "",
+    "packLabel": "100 ml EDP + 10 ml travel spray + 60 ml shower gel",
+    "packContents": [
+      {
+        "name": "Hawas Ice Eau de Parfum",
+        "sizeMl": 100,
+        "quantity": 1
+      },
+      {
+        "name": "Hawas Ice travel spray",
+        "sizeMl": 10,
+        "quantity": 1
+      },
+      {
+        "name": "Hawas Ice shower gel",
+        "sizeMl": 60,
+        "quantity": 1
+      }
+    ],
+    "sizeConfirmed": true,
+    "description": "Frozen apple, italian bergamot, italian lemon open the fragrance, followed by orange blossom, plum, cardamom. The base brings moss, driftwood, amber. A coordinated three-piece gift set pairs the fragrance with a travel spray and shower gel."
+  },
+  {
+    "number": 173,
+    "requestedName": "Hawas Ice Travel Gift Set",
+    "canonicalName": "Hawas Ice Travel Gift Set",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/hawas-ice-travel-gift-set",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/hawas-ice-travel-gift-set",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": null,
+    "signatureNotes": [
+      "Frozen apple",
+      "Italian citrus",
+      "Iced plum",
+      "Driftwood",
+      "Amber"
+    ],
+    "verified": true,
+    "description": "Hawas Ice in a full-size bottle and a matching travel spray, pairing crisp fruit and citrus with driftwood and amber.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/2_ccef4bb7-6788-4621-a68f-1a7f315f30ed.jpg?v=1783054515",
+    "imageSourceUrl": "https://rasasistore.com/products/hawas-ice-travel-gift-set",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "Hawas Ice Travel Gift Set",
+    "sourceVariants": [
+      "100ml + 8ml"
+    ],
+    "packLabel": "100 ml + 8 ml travel spray",
+    "packContents": [
+      {
+        "name": "Hawas Ice Eau de Parfum",
+        "sizeMl": 100,
+        "quantity": 1
+      },
+      {
+        "name": "Hawas Ice travel spray",
+        "sizeMl": 8,
+        "quantity": 1
+      }
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 174,
+    "requestedName": "Hawas Rouge",
+    "canonicalName": "Hawas Rouge",
+    "canonicalBrand": "Rasasi",
+    "source": "https://imrasasi.com/products/hawas-rouge",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://imrasasi.com/products/hawas-rouge",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Tangerine",
+        "Raspberry",
+        "Chocolate"
+      ],
+      "heart": [
+        "Rose",
+        "Orange Blossom",
+        "Tuberose",
+        "Iris"
+      ],
+      "base": [
+        "Vanilla",
+        "Musk",
+        "Coffee",
+        "Dry Woods"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Tangerine, raspberry, chocolate open the fragrance, followed by rose, orange blossom, tuberose. The base brings vanilla, musk, coffee.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0764/1441/9159/files/1_1b849b3e-2a72-42e0-9110-27a56921f97f.png?v=1785743883",
+    "imageSourceUrl": "https://imrasasi.com/products/hawas-rouge",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "HAWAS ROUGE",
+    "sourceVariants": [
+      "Default Title"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 175,
+    "requestedName": "Hawas Sapphire",
+    "canonicalName": "Hawas Sapphire",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/hawas-sapphire",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/hawas-sapphire",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Blackcurrant",
+        "Guava"
+      ],
+      "heart": [
+        "Orange Blossom",
+        "Sandalwood"
+      ],
+      "base": [
+        "Musk",
+        "Tonka Bean",
+        "Ambergris"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Bergamot, blackcurrant, guava open the fragrance, followed by orange blossom, sandalwood. The base brings musk, tonka bean, ambergris.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/Angle_1_5423a1e6-e2ca-4bec-acc4-c5112d4ad287.png?v=1793179098",
+    "imageSourceUrl": "https://rasasistore.com/products/hawas-sapphire",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "Hawas Sapphire",
+    "sourceVariants": [
+      "100ml"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 176,
+    "requestedName": "Hawas Venom",
+    "canonicalName": "Hawas Venom",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/hawas-venom",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/hawas-venom",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Incense",
+        "Labdanum"
+      ],
+      "heart": [
+        "Leather"
+      ],
+      "base": [
+        "Labdanum",
+        "Patchouli",
+        "Vanilla"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Incense, labdanum open the fragrance, followed by leather. The base brings labdanum, patchouli, vanilla.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/Angle_1.png?v=1792920877",
+    "imageSourceUrl": "https://rasasistore.com/products/hawas-venom",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "Hawas Venom",
+    "sourceVariants": [
+      "100ml"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 177,
+    "requestedName": "Al Wisam Hasaas",
+    "canonicalName": "Al Wisam Hasaas",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/al-wisam-hasaas",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/al-wisam-hasaas",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Black cherry",
+        "Bitter Almonds",
+        "Cherry Liqueur"
+      ],
+      "heart": [
+        "Turkish Rose",
+        "Jasmine Sambac"
+      ],
+      "base": [
+        "Sandalwood",
+        "Tonka Bourbon",
+        "Vanilla"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Black cherry, bitter almonds, cherry liqueur open the fragrance, followed by turkish rose, jasmine sambac. The base brings sandalwood, tonka bourbon, vanilla.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/1.1Hasaas.jpg?v=1789471532",
+    "imageSourceUrl": "https://rasasistore.com/products/al-wisam-hasaas",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "Al Wisam Hasaas",
+    "sourceVariants": [
+      "100ml"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 178,
+    "requestedName": "Nafaeis Al Shaghaf Maraya Pour Homme",
+    "canonicalName": "Nafaeis Al Shaghaf Maraya Pour Homme",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/nafaeis-al-shaghaf-maraya-pour-homme",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/nafaeis-al-shaghaf-maraya-pour-homme",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Pear",
+        "Apple",
+        "Ginger",
+        "Black Pepper"
+      ],
+      "heart": [
+        "Leather",
+        "Cedar",
+        "Amber"
+      ],
+      "base": [
+        "Musk",
+        "Jasmine",
+        "Moss",
+        "Oud"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Pear, apple, ginger open the fragrance, followed by leather, cedar, amber. The base brings musk, jasmine, moss.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/6_b605470e-2670-49af-b609-1250e8750977.jpg?v=1784698254",
+    "imageSourceUrl": "https://rasasistore.com/products/nafaeis-al-shaghaf-maraya-pour-homme",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "Nafaeis Al Shaghaf Maraya - Pour Homme",
+    "sourceVariants": [
+      "100ml"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 179,
+    "requestedName": "Nafaeis Al Shaghaf Maraya Pour Femme",
+    "canonicalName": "Nafaeis Al Shaghaf Maraya Pour Femme",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/nafaeis-al-shaghaf-maraya-pour-femme",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/nafaeis-al-shaghaf-maraya-pour-femme",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Coffee",
+        "Amaretto"
+      ],
+      "heart": [
+        "Incense",
+        "Patchouli",
+        "Cypriol"
+      ],
+      "base": [
+        "Sandalwood",
+        "Vetiver",
+        "Leather"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Coffee, amaretto open the fragrance, followed by incense, patchouli, cypriol. The base brings sandalwood, vetiver, leather.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/2_4b095379-889e-4eb7-ba50-a838ecc043eb.jpg?v=1784698292",
+    "imageSourceUrl": "https://rasasistore.com/products/nafaeis-al-shaghaf-maraya-pour-femme",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "Nafaeis Al Shaghaf Maraya - Pour Femme",
+    "sourceVariants": [
+      "100ml"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 180,
+    "requestedName": "Hamasaat Musk Memoirs",
+    "canonicalName": "Hamasaat Musk Memoirs",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/hamasaat-musk-memoirs",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/hamasaat-musk-memoirs",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Pinkberries",
+        "Bergamot"
+      ],
+      "heart": [
+        "Incense",
+        "Chilli pepper"
+      ],
+      "base": [
+        "Vanilla",
+        "Musk",
+        "Cedarwood"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Pinkberries, bergamot open the fragrance, followed by incense, chilli pepper. The base brings vanilla, musk, cedarwood.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/1_1794b577-6144-4abd-aad6-2e871fa5f6e4.jpg?v=1777485566",
+    "imageSourceUrl": "https://rasasistore.com/products/hamasaat-musk-memoirs",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "Hamasaat Musk",
+    "sourceVariants": [
+      "100ml"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 181,
+    "requestedName": "Afshan",
+    "canonicalName": "Afshan",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/afshan",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/afshan",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Floral"
+      ],
+      "heart": [
+        "Spices"
+      ],
+      "base": [
+        "Amber",
+        "Woods"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Floral open the fragrance, followed by spices. The base brings amber, woods.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/Afsan_1.jpg?v=1709143373",
+    "imageSourceUrl": "https://rasasistore.com/products/afshan",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "Afshan",
+    "sourceVariants": [
+      "Default Title"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 182,
+    "requestedName": "Al Rabin",
+    "canonicalName": "Al Rabih",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/al-rabih",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/al-rabih",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Cardamom",
+        "Citrus",
+        "Saffron"
+      ],
+      "heart": [
+        "Rose",
+        "Plum",
+        "Pepper"
+      ],
+      "base": [
+        "Incense",
+        "Leather",
+        "Musk",
+        "Amber"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": false,
+    "description": "Bergamot, cardamom, citrus open the fragrance, followed by rose, plum, pepper. The base brings incense, leather, musk.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/NewProject_17.jpg?v=1765177919",
+    "imageSourceUrl": "https://rasasistore.com/products/al-rabih",
+    "size": 100,
+    "notesCaveat": "The merchant list spells this Al Rabin; the matching product reference is Al Rabih. Confirm the actual label.",
+    "sourceProductTitle": "Al Rabih",
+    "sourceVariants": [
+      "Default Title"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": false
+  },
+  {
+    "number": 183,
+    "requestedName": "Al Wisam Day",
+    "canonicalName": "Al Wisam Day",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/al-wisam-day",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/al-wisam-day",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Geranium",
+        "Lavender"
+      ],
+      "heart": [
+        "Rose",
+        "Clary Sage",
+        "Sandalwood",
+        "Cedar"
+      ],
+      "base": [
+        "Amber",
+        "Musk",
+        "Oakmoss",
+        "Oud"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Bergamot, geranium, lavender open the fragrance, followed by rose, clary sage, sandalwood. The base brings amber, musk, oakmoss.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/AlWisam_1.jpg?v=1708708827",
+    "imageSourceUrl": "https://rasasistore.com/products/al-wisam-day",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "Al Wisam",
+    "sourceVariants": [
+      "Default Title"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 184,
+    "requestedName": "Al Wisam Habban",
+    "canonicalName": "Al Wisam Habban",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/habban",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/habban",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Bulgarian Roses"
+      ],
+      "heart": [
+        "Patchouli",
+        "Oakmoss"
+      ],
+      "base": [
+        "Amber"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Bulgarian roses open the fragrance, followed by patchouli, oakmoss. The base brings amber.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/1.1Habban.jpg?v=1762925569",
+    "imageSourceUrl": "https://rasasistore.com/products/habban",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "Al Wisam Habban",
+    "sourceVariants": [
+      "100ml"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 185,
+    "requestedName": "Al Wisam Hayaan",
+    "canonicalName": "Al Wisam Hayan",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/hayan",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/hayan",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Saffron",
+        "Cinnamon",
+        "Apple"
+      ],
+      "heart": [
+        "Rose",
+        "Leather"
+      ],
+      "base": [
+        "Papyrus",
+        "Patchouli",
+        "Moss",
+        "Musk"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Saffron, cinnamon, apple open the fragrance, followed by rose, leather. The base brings papyrus, patchouli, moss.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/1.1Hayan.jpg?v=1762925540",
+    "imageSourceUrl": "https://rasasistore.com/products/hayan",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "Al Wisam Hayan",
+    "sourceVariants": [
+      "100ml"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 186,
+    "requestedName": "Amber Oud (14ml)",
+    "canonicalName": "Amber Oud",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/amber-oud",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/amber-oud",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Rose"
+      ],
+      "heart": [
+        "Amber"
+      ],
+      "base": [
+        "Oudh",
+        "Musk"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Rose open the fragrance, followed by amber. The base brings oudh, musk. Presented as a concentrated perfume oil.",
+    "concentration": "Concentrated Perfume Oil",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/AmberOud_1.jpg?v=1709216859",
+    "imageSourceUrl": "https://rasasistore.com/products/amber-oud",
+    "size": 14,
+    "notesCaveat": "",
+    "sourceProductTitle": "Amber Oud",
+    "sourceVariants": [
+      "Default Title"
+    ],
+    "format": "Attar",
+    "confirmedSize": 14,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 187,
+    "requestedName": "Arba Wardat (30ml)",
+    "canonicalName": "Arba Wardat",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/arba-wardat",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/arba-wardat",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Bergamot"
+      ],
+      "heart": [
+        "Jasmine",
+        "Rose"
+      ],
+      "base": [
+        "Sandalwood",
+        "Amber",
+        "Oakmoss",
+        "Musk"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Bergamot open the fragrance, followed by jasmine, rose. The base brings sandalwood, amber, oakmoss. Presented as a concentrated perfume oil.",
+    "concentration": "Concentrated Perfume Oil",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/ArhaWardat_1.jpg?v=1708590183",
+    "imageSourceUrl": "https://rasasistore.com/products/arba-wardat",
+    "size": 30,
+    "notesCaveat": "",
+    "sourceProductTitle": "Arba Wardat",
+    "sourceVariants": [
+      "Default Title"
+    ],
+    "format": "Attar",
+    "confirmedSize": 30,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 188,
+    "requestedName": "Daarej Extrait",
+    "canonicalName": "Daarej Extrait",
+    "canonicalBrand": "Rasasi",
+    "source": "https://store.rasasi.com.sa/en/eqgadpy/p760381976",
+    "noteSources": [
+      {
+        "label": "Rasasi Saudi product listing",
+        "url": "https://store.rasasi.com.sa/en/eqgadpy/p760381976",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Mandarin",
+        "Saffron"
+      ],
+      "heart": [
+        "Green apple",
+        "Jasmine",
+        "Orange blossom"
+      ],
+      "base": [
+        "Sandalwood",
+        "Moss",
+        "Caramel",
+        "Ambergris"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.salla.sa/lGDEen/50117138-731c-4177-a5d6-302c1e1cdd94-500x500-wejcnDzmfPaH87S1n0sXU4gPSZ7WYdaX21V5C4k1.png",
+    "imageSourceUrl": "https://store.rasasi.com.sa/en/eqgadpy/p760381976",
+    "size": 100,
+    "confirmedSize": 100,
+    "notesCaveat": "Extrait is the variant name. The Rasasi Saudi title explicitly labels the product EDP, so it has not been assigned Extrait de Parfum concentration.",
+    "sizeConfirmed": true,
+    "description": "Bergamot, mandarin, saffron open the fragrance, followed by green apple, jasmine, orange blossom. The base brings sandalwood, moss, caramel."
+  },
+  {
+    "number": 189,
+    "requestedName": "Dareez Pour Femme",
+    "canonicalName": "Daarej Pour Femme",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/daarej",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/daarej",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Peach",
+        "Orange",
+        "Green Notes",
+        "Bergamot"
+      ],
+      "heart": [
+        "Heliotrope",
+        "Orchid",
+        "Tuberose",
+        "Jasmine",
+        "Lily-of-the-Valley"
+      ],
+      "base": [
+        "Caramel",
+        "Vetiver",
+        "Musk",
+        "Sandalwood",
+        "Amber",
+        "Patchouli"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Peach, orange, green notes open the fragrance, followed by heliotrope, orchid, tuberose. The base brings caramel, vetiver, musk.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/Daarej_PourFemme_1.jpg?v=1709142718",
+    "imageSourceUrl": "https://rasasistore.com/products/daarej",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "Daarej Pour Femme",
+    "sourceVariants": [
+      "Default Title"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 190,
+    "requestedName": "Dareez Pour Homme",
+    "canonicalName": "Daarej Pour Homme",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/daarej-pour-homme",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/daarej-pour-homme",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Cardamom",
+        "Mugwort",
+        "Cumin"
+      ],
+      "heart": [
+        "Rose",
+        "Orris"
+      ],
+      "base": [
+        "Sandalwood",
+        "Patchouli",
+        "Amber",
+        "Musk",
+        "Vanilla",
+        "Tonka"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Cardamom, mugwort, cumin open the fragrance, followed by rose, orris. The base brings sandalwood, patchouli, amber.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/Daarej_PourHomme_1.jpg?v=1708590931",
+    "imageSourceUrl": "https://rasasistore.com/products/daarej-pour-homme",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "Daarej Pour Homme",
+    "sourceVariants": [
+      "Default Title"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 191,
+    "requestedName": "Daarej Pour Homme Verve",
+    "canonicalName": "Daarej Pour Homme Verve",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/dareej-verve",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/dareej-verve",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Mandarin",
+        "Pink Pepper"
+      ],
+      "heart": [
+        "Cedar",
+        "Iris"
+      ],
+      "base": [
+        "Patchouli",
+        "Amber",
+        "Vanilla"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Bergamot, mandarin, pink pepper open the fragrance, followed by cedar, iris. The base brings patchouli, amber, vanilla.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/NewProject_22.jpg?v=1768748748",
+    "imageSourceUrl": "https://rasasistore.com/products/dareej-verve",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "Daarej Verve",
+    "sourceVariants": [
+      "Default Title"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 192,
+    "requestedName": "Daarej Pour Femme Aurelia",
+    "canonicalName": "Daarej Pour Femme Aurelia",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/dareej-aurelia",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/dareej-aurelia",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Peach",
+        "Blackcurrant",
+        "Mandarin",
+        "Bergamot"
+      ],
+      "heart": [
+        "Bulgarian Rose",
+        "Rose",
+        "Lily of the Valley",
+        "Cherry Blossom"
+      ],
+      "base": [
+        "Ambroxan",
+        "Musk",
+        "Cashmere Wood",
+        "Vanilla"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Peach, blackcurrant, mandarin open the fragrance, followed by bulgarian rose, rose, lily of the valley. The base brings ambroxan, musk, cashmere wood.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/NewProject_27.jpg?v=1768749442",
+    "imageSourceUrl": "https://rasasistore.com/products/dareej-aurelia",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "Daarej Aurelia",
+    "sourceVariants": [
+      "Default Title"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 193,
+    "requestedName": "Fattan Pour Femme (50ml)",
+    "canonicalName": "Fattan Pour Femme",
+    "canonicalBrand": "Rasasi",
+    "source": "https://samaperfumes.co.uk/products/rasasi-fattan-pour-femme",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://samaperfumes.co.uk/products/rasasi-fattan-pour-femme",
+        "kind": "authorised-distributor"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Tangerine",
+        "Pink Pepper"
+      ],
+      "heart": [
+        "Iris",
+        "Rose",
+        "Jasmine",
+        "Neroli",
+        "Patchouli"
+      ],
+      "base": [
+        "Musk",
+        "Amber",
+        "Leather"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Bergamot, tangerine, pink pepper open the fragrance, followed by iris, rose, jasmine. The base brings musk, amber, leather.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0857/9969/8763/files/fattanwomen-1.jpg?v=1723909929",
+    "imageSourceUrl": "https://samaperfumes.co.uk/products/rasasi-fattan-pour-femme",
+    "size": 50,
+    "notesCaveat": "",
+    "sourceProductTitle": "Rasasi Fattan Pour Femme",
+    "sourceVariants": [
+      "50ML",
+      "5ML SAMPLE"
+    ],
+    "confirmedSize": 50,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 194,
+    "requestedName": "Fattan Pour Homme (50ml)",
+    "canonicalName": "Fattan Pour Homme",
+    "canonicalBrand": "Rasasi",
+    "source": "https://samaperfumes.co.uk/products/fattan-eau-de-parfum-pour-homme-50ml-by-rasasi",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://samaperfumes.co.uk/products/fattan-eau-de-parfum-pour-homme-50ml-by-rasasi",
+        "kind": "authorised-distributor"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Pink Pepper",
+        "Grapefruit"
+      ],
+      "heart": [
+        "Cedar Wood",
+        "Patchouli",
+        "Vetiver",
+        "Lily Of The Valley"
+      ],
+      "base": [
+        "Amber",
+        "Oakmoss",
+        "Benzoin"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Bergamot, pink pepper, grapefruit open the fragrance, followed by cedar wood, patchouli, vetiver. The base brings amber, oakmoss, benzoin.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0857/9969/8763/files/Fattan1_a4e27cf5-6b91-4ce2-9946-050af2a3b498.jpg?v=1720892985",
+    "imageSourceUrl": "https://samaperfumes.co.uk/products/fattan-eau-de-parfum-pour-homme-50ml-by-rasasi",
+    "size": 50,
+    "notesCaveat": "",
+    "sourceProductTitle": "Rasasi Fattan Pour Homme",
+    "sourceVariants": [
+      "50ML",
+      "5ML SAMPLE"
+    ],
+    "confirmedSize": 50,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 195,
+    "requestedName": "Fayiz",
+    "canonicalName": "Fayiz",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/fayiz",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/fayiz",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Pear",
+        "Bergamot",
+        "Mandarin Orange",
+        "Ginger"
+      ],
+      "heart": [
+        "Orange Blossom",
+        "Georgywood"
+      ],
+      "base": [
+        "Musk",
+        "Ambrofix",
+        "Akigalawood",
+        "Cedar"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Pear, bergamot, mandarin orange open the fragrance, followed by orange blossom, georgywood. The base brings musk, ambrofix, akigalawood.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/9_8f7e00c8-4796-4d9c-bd6c-3dbe7d77cc37.jpg?v=1780466502",
+    "imageSourceUrl": "https://rasasistore.com/products/fayiz",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "Fayiz",
+    "sourceVariants": [
+      "100ml"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 196,
+    "requestedName": "Fawar",
+    "canonicalName": "Fawar",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/fawar",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/fawar",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Mango",
+        "Lemon",
+        "Red berries"
+      ],
+      "heart": [
+        "Aquatic Oud",
+        "Amber"
+      ],
+      "base": [
+        "Oud",
+        "Amber"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Mango, lemon, red berries open the fragrance, followed by aquatic oud, amber. The base brings oud, amber.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/4_1e4c4276-2a5f-4f4c-b451-11facb4171bb.jpg?v=1780466096",
+    "imageSourceUrl": "https://rasasistore.com/products/fawar",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "Fawar",
+    "sourceVariants": [
+      "100ml"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 197,
+    "requestedName": "Haroon",
+    "canonicalName": "Haroon",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/haroon",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/haroon",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Vanilla",
+        "Smoky incense"
+      ],
+      "heart": [
+        "Jasmine",
+        "Ylang ylang",
+        "Benzoin"
+      ],
+      "base": [
+        "Rum",
+        "Cognac",
+        "Smoky oud",
+        "Leather",
+        "Cedar"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Vanilla, smoky incense open the fragrance, followed by jasmine, ylang ylang, benzoin. The base brings rum, cognac, smoky oud.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/New_Project_21.jpg?v=1765180300",
+    "imageSourceUrl": "https://rasasistore.com/products/haroon",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "Haroon",
+    "sourceVariants": [
+      "Default Title"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 198,
+    "requestedName": "Hawas Atlantis",
+    "canonicalName": "Hawas Atlantis",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/hawas-atlantis-for-him",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/hawas-atlantis-for-him",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Galbanum"
+      ],
+      "heart": [
+        "Ginger",
+        "Mineral Notes",
+        "Salty notes"
+      ],
+      "base": [
+        "Sandalwood",
+        "Cedarwood"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Bergamot, galbanum open the fragrance, followed by ginger, mineral notes, salty notes. The base brings sandalwood, cedarwood.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/Angle_1_73901f3b-95b5-404a-b158-47642e0cc3b5.png?v=1793179157",
+    "imageSourceUrl": "https://rasasistore.com/products/hawas-atlantis-for-him",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "Hawas Atlantis",
+    "sourceVariants": [
+      "Default Title"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 199,
+    "requestedName": "Hawas Black Pour Homme",
+    "canonicalName": "Hawas Black Pour Homme",
+    "canonicalBrand": "Rasasi",
+    "source": "https://imrasasi.com/products/hawas-black-edp-100-ml",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://imrasasi.com/products/hawas-black-edp-100-ml",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Pineapple",
+        "Grapefruit",
+        "Bergamot"
+      ],
+      "heart": [
+        "Cedarwood",
+        "Patchouli",
+        "Jasmine"
+      ],
+      "base": [
+        "Oakmoss",
+        "Woody",
+        "Amber"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Pineapple, grapefruit, bergamot open the fragrance, followed by cedarwood, patchouli, jasmine. The base brings oakmoss, woody, amber.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0764/1441/9159/files/1.jpg?v=1785745869",
+    "imageSourceUrl": "https://imrasasi.com/products/hawas-black-edp-100-ml",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "HAWAS BLACK",
+    "sourceVariants": [
+      "100ml"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 200,
+    "requestedName": "Hawas Elixir",
+    "canonicalName": "Hawas Elixir",
+    "canonicalBrand": "Rasasi",
+    "source": "https://imrasasi.com/products/hawas-elixir-unisex-100-ml",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://imrasasi.com/products/hawas-elixir-unisex-100-ml",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Mugwort",
+        "Bergamot",
+        "Spearmint"
+      ],
+      "heart": [
+        "Dark Chocolate",
+        "Lavender",
+        "Benzoin"
+      ],
+      "base": [
+        "White Musk",
+        "Tonka Beans",
+        "Vanilla"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Mugwort, bergamot, spearmint open the fragrance, followed by dark chocolate, lavender, benzoin. The base brings white musk, tonka beans, vanilla.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0764/1441/9159/files/magnific_create-a-luxury-diorstyle_eIXWNP7dqL.png?v=1785747069",
+    "imageSourceUrl": "https://imrasasi.com/products/hawas-elixir-unisex-100-ml",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "HAWAS ELIXIR",
+    "sourceVariants": [
+      "100ml"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 201,
+    "requestedName": "Hawas Fire Pour Homme",
+    "canonicalName": "Hawas Fire Pour Homme",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/hawas-fire",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/hawas-fire",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Clary sage French"
+      ],
+      "heart": [
+        "Jasmin Egyptian",
+        "Marine"
+      ],
+      "base": [
+        "Ambergris",
+        "Mineral amber"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Clary sage french open the fragrance, followed by jasmin egyptian, marine. The base brings ambergris, mineral amber.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/Angle_1_053daaa2-9a8e-4986-812a-a944fa5e08f9.png?v=1793179206",
+    "imageSourceUrl": "https://rasasistore.com/products/hawas-fire",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "Hawas Fire",
+    "sourceVariants": [
+      "100ml"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 202,
+    "requestedName": "Hawas For Her Diva",
+    "canonicalName": "Hawas For Her Diva",
+    "canonicalBrand": "Rasasi",
+    "source": "https://beautyhouse.com/products/rasasi-hawas-diva-eau-de-parfum-for-women",
+    "noteSources": [
+      {
+        "label": "Retailer product information",
+        "url": "https://beautyhouse.com/products/rasasi-hawas-diva-eau-de-parfum-for-women",
+        "kind": "retailer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Red fruits",
+        "Rhubarb",
+        "Lychee"
+      ],
+      "heart": [
+        "Rose",
+        "Frankincense",
+        "Cedar"
+      ],
+      "base": [
+        "Vanilla",
+        "Musk",
+        "Ambergris"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "http://beautyhouse.com/cdn/shop/files/03w3eqfuuj.jpg?v=1789675500&width=2048",
+    "imageSourceUrl": "https://beautyhouse.com/products/rasasi-hawas-diva-eau-de-parfum-for-women",
+    "size": 100,
+    "confirmedSize": 100,
+    "notesCaveat": "",
+    "sizeConfirmed": true,
+    "description": "Red fruits, rhubarb, lychee open the fragrance, followed by rose, frankincense, cedar. The base brings vanilla, musk, ambergris."
+  },
+  {
+    "number": 203,
+    "requestedName": "Hawas For Her Eclat",
+    "canonicalName": "Hawas For Her Eclat",
+    "canonicalBrand": "Rasasi",
+    "source": "https://imrasasi.com/products/hawas-elixir-unisex-100-ml-copy",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://imrasasi.com/products/hawas-elixir-unisex-100-ml-copy",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Litchi",
+        "Pear",
+        "Bergamot",
+        "Pistachio"
+      ],
+      "heart": [
+        "Rose",
+        "Incense"
+      ],
+      "base": [
+        "Vanilla",
+        "Musk",
+        "Amber",
+        "Woodsy Notes"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Litchi, pear, bergamot open the fragrance, followed by rose, incense. The base brings vanilla, musk, amber.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0764/1441/9159/files/1_d1a721df-5082-481c-8cd4-355cb48ab3d0.jpg?v=1785745792",
+    "imageSourceUrl": "https://imrasasi.com/products/hawas-elixir-unisex-100-ml-copy",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "Rasasi Hawas Eclat For Women",
+    "sourceVariants": [
+      "100ml"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 204,
+    "requestedName": "Hawas For Him Kobra",
+    "canonicalName": "Hawas For Him Kobra",
+    "canonicalBrand": "Rasasi",
+    "source": "https://www.fragrantica.com/perfume/Rasasi/Hawas-Kobra-112706.html",
+    "noteSources": [
+      {
+        "label": "Rasasi Saudi product listing",
+        "url": "https://store.rasasi.com.sa/en/vaxrnqz/p1320082477",
+        "kind": "regional-store"
+      },
+      {
+        "label": "Kobra-specific fragrance reference",
+        "url": "https://www.fragrantica.com/perfume/Rasasi/Hawas-Kobra-112706.html",
+        "kind": "fragrance-reference"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Ginger",
+        "Bergamot",
+        "Tangerine"
+      ],
+      "heart": [
+        "Green tea",
+        "Cinnamon",
+        "Neroli"
+      ],
+      "base": [
+        "Musk",
+        "Woody notes",
+        "Amber"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": false,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.salla.sa/lGDEen/fab1fc37-6fb2-4032-8b1a-86b750e17702-500x500-7nor3Br5wBnfJq8dyG71JIfzATtkLqFaXkkDiclE.png",
+    "imageSourceUrl": "https://store.rasasi.com.sa/en/vaxrnqz/p1320082477",
+    "size": 100,
+    "confirmedSize": 100,
+    "notesCaveat": "Disputed source: Rasasi Saudi repeats the Malibu pyramid for Kobra. The ginger/green-tea pyramid shown here is the separately published Kobra reference and needs supplier confirmation.",
+    "sizeConfirmed": true,
+    "description": "Ginger, bergamot, tangerine open the fragrance, followed by green tea, cinnamon, neroli. The base brings musk, woody notes, amber."
+  },
+  {
+    "number": 205,
+    "requestedName": "Hawas For Him Malibu",
+    "canonicalName": "Hawas For Him Malibu",
+    "canonicalBrand": "Rasasi",
+    "source": "https://store.rasasi.com.sa/en/bpzlndr/p533992836",
+    "noteSources": [
+      {
+        "label": "Rasasi Saudi product listing",
+        "url": "https://store.rasasi.com.sa/en/bpzlndr/p533992836",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Pineapple",
+        "Orange",
+        "Grapefruit"
+      ],
+      "heart": [
+        "Amber",
+        "Iris",
+        "Lavender"
+      ],
+      "base": [
+        "Tonka bean",
+        "Musk",
+        "Cashmeran",
+        "Patchouli"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.salla.sa/lGDEen/154878ca-4f76-47ab-84b8-e2e198f0e11d-500x500-JLLo13pSxcMuLSzcdLLGQPcdSMYD5E5ea5n5XZk9.jpg",
+    "imageSourceUrl": "https://store.rasasi.com.sa/en/bpzlndr/p533992836",
+    "size": 100,
+    "confirmedSize": 100,
+    "notesCaveat": "",
+    "sizeConfirmed": true,
+    "description": "Pineapple, orange, grapefruit open the fragrance, followed by amber, iris, lavender. The base brings tonka bean, musk, cashmeran."
+  },
+  {
+    "number": 206,
+    "requestedName": "Hawas Ice Pour Homme",
+    "canonicalName": "Hawas Ice Pour Homme",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/hawas-ice",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/hawas-ice",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Frozen Apple",
+        "Bergamot Italy",
+        "Lemon Italy",
+        "Star Anise China"
+      ],
+      "heart": [
+        "Orange Blossom",
+        "Marine Accord Iced",
+        "Plum",
+        "Cardamom Ceylan"
+      ],
+      "base": [
+        "Crystal moss",
+        "Drift Wood",
+        "Amber",
+        "Musk"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Frozen apple, bergamot italy, lemon italy open the fragrance, followed by orange blossom, marine accord iced, plum. The base brings crystral moss, drift wood, ambar.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/Angle_1_11db0a52-cc5c-4a66-a9e8-607d4753451d.png?v=1793179229",
+    "imageSourceUrl": "https://rasasistore.com/products/hawas-ice",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "Hawas Ice",
+    "sourceVariants": [
+      "Default Title"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 207,
+    "requestedName": "Hawas London",
+    "canonicalName": "Hawas London",
+    "canonicalBrand": "Rasasi",
+    "source": "https://beautyhouse.com/products/rasasi-hawas-london-eau-de-parfum-for-men",
+    "noteSources": [
+      {
+        "label": "Retailer product information",
+        "url": "https://beautyhouse.com/products/rasasi-hawas-london-eau-de-parfum-for-men",
+        "kind": "retailer"
+      },
+      {
+        "label": "London fragrance reference corroboration",
+        "url": "https://www.fragrantica.com/perfume/Rasasi/Hawas-London-123217.html",
+        "kind": "fragrance-reference"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Saffron",
+        "Pink pepper",
+        "Pear"
+      ],
+      "heart": [
+        "Rose",
+        "Frankincense",
+        "White flowers"
+      ],
+      "base": [
+        "Blonde woods",
+        "Amber",
+        "Musk",
+        "Vanilla"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "http://beautyhouse.com/cdn/shop/files/02dhzn0q0k.png?v=1768946743&width=2048",
+    "imageSourceUrl": "https://beautyhouse.com/products/rasasi-hawas-london-eau-de-parfum-for-men",
+    "size": 100,
+    "confirmedSize": 100,
+    "notesCaveat": "",
+    "sizeConfirmed": true,
+    "description": "Saffron, pink pepper, pear open the fragrance, followed by rose, frankincense, white flowers. The base brings blonde woods, amber, musk."
+  },
+  {
+    "number": 208,
+    "requestedName": "Hawas Nautilus",
+    "canonicalName": "Hawas Nautilus",
+    "canonicalBrand": "Rasasi",
+    "source": "https://beautyhouse.com/products/rasasi-hawas-nautilus-eau-de-parfum-for-men",
+    "noteSources": [
+      {
+        "label": "Retailer product information",
+        "url": "https://beautyhouse.com/products/rasasi-hawas-nautilus-eau-de-parfum-for-men",
+        "kind": "retailer"
+      },
+      {
+        "label": "Independent retailer corroboration",
+        "url": "https://www.jalilaperfumes.com/product-details.php?id=3374",
+        "kind": "retailer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Ambergris",
+        "Sea water"
+      ],
+      "heart": [
+        "Cedar",
+        "Cypress"
+      ],
+      "base": [
+        "Driftwood",
+        "Sand"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "http://beautyhouse.com/cdn/shop/files/015tecoxqu.png?v=1784237410&width=2048",
+    "imageSourceUrl": "https://beautyhouse.com/products/rasasi-hawas-nautilus-eau-de-parfum-for-men",
+    "size": 100,
+    "confirmedSize": 100,
+    "notesCaveat": "",
+    "sizeConfirmed": true,
+    "description": "Ambergris, sea water open the fragrance, followed by cedar, cypress. The base brings driftwood, sand."
+  },
+  {
+    "number": 209,
+    "requestedName": "Hawas Pink Pour Femme",
+    "canonicalName": "Hawas Pink Pour Femme",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/hawas-pink",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/hawas-pink",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Neroli Essential Egyptian",
+        "Cinnamon",
+        "Nutmeg"
+      ],
+      "heart": [
+        "Orange Flower",
+        "Tuberose",
+        "Golden Marshmallow"
+      ],
+      "base": [
+        "Cotton Candy",
+        "Vanilla",
+        "Tonka Bean Abs"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Neroli essential egyptian, cinnamon, nutmeg open the fragrance, followed by orange flower, tuberose, golden marshmallow. The base brings cotton candy, vanilla, tonka bean abs.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/Angle_1_4f6a573f-f078-480e-b390-55cbe3208fc1.png?v=1793179180",
+    "imageSourceUrl": "https://rasasistore.com/products/hawas-pink",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "Hawas Pink",
+    "sourceVariants": [
+      "Default Title"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 210,
+    "requestedName": "Hawas Pour Homme",
+    "canonicalName": "Hawas Pour Homme",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/hawas-for-him",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/hawas-for-him",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Apple",
+        "Bergamot",
+        "Lemon",
+        "Cinnamon"
+      ],
+      "heart": [
+        "Orange Blossom",
+        "Cardamom",
+        "Plum"
+      ],
+      "base": [
+        "Patchouli",
+        "Grey Amber",
+        "Driftwood",
+        "Musk"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Apple, bergamot, lemon open the fragrance, followed by orange blossom, cardamom, plum. The base brings patchouli, grey amber, dift wood.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/Angle_1_d40af1a6-4235-4566-977e-e7acae8a51f5.png?v=1793179254",
+    "imageSourceUrl": "https://rasasistore.com/products/hawas-for-him",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "Hawas For Him",
+    "sourceVariants": [
+      "Default Title"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 211,
+    "requestedName": "Hawas Pour Femme",
+    "canonicalName": "Hawas Pour Femme",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/hawas-for-her",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/hawas-for-her",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Apple",
+        "Grapefruit",
+        "Pomegranate"
+      ],
+      "heart": [
+        "Jasmine",
+        "Sambac",
+        "Iris Natural",
+        "Citrus"
+      ],
+      "base": [
+        "Patchouli",
+        "Vetiver",
+        "Praline"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Apple, grapefruit, pomegranate open the fragrance, followed by jasmine, sambac, iris natural. The base brings patchouli, vetiver, praline.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/Angle_1_9b1d0ee8-6f63-4263-9719-5fd3ed3abf5b.png?v=1793179280",
+    "imageSourceUrl": "https://rasasistore.com/products/hawas-for-her",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "Hawas For Her",
+    "sourceVariants": [
+      "Default Title"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 212,
+    "requestedName": "Hawas Tropical",
+    "canonicalName": "Hawas Tropical",
+    "canonicalBrand": "Rasasi",
+    "source": "https://beautyhouse.com/products/rasasi-hawas-tropical-eau-de-parfum-for-men",
+    "noteSources": [
+      {
+        "label": "Retailer product information",
+        "url": "https://beautyhouse.com/products/rasasi-hawas-tropical-eau-de-parfum-for-men",
+        "kind": "retailer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Fig leaf",
+        "Coconut water",
+        "Ginger"
+      ],
+      "heart": [
+        "Coconut",
+        "Fig",
+        "Mint"
+      ],
+      "base": [
+        "Tonka bean",
+        "Musk",
+        "Sandalwood"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "http://beautyhouse.com/cdn/shop/files/02a5ddvjrn.png?v=1749054734&width=2048",
+    "imageSourceUrl": "https://beautyhouse.com/products/rasasi-hawas-tropical-eau-de-parfum-for-men",
+    "size": 100,
+    "confirmedSize": 100,
+    "notesCaveat": "",
+    "sizeConfirmed": true,
+    "description": "Fig leaf, coconut water, ginger open the fragrance, followed by coconut, fig, mint. The base brings tonka bean, musk, sandalwood."
+  },
+  {
+    "number": 213,
+    "requestedName": "Hawas Viper For Him",
+    "canonicalName": "Hawas Viper For Him",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/hawas-viper-for-him",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/hawas-viper-for-him",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Cannabis",
+        "Green Notes",
+        "Davana",
+        "Saffron",
+        "Thyme"
+      ],
+      "heart": [
+        "Tobacco",
+        "Coffee",
+        "Cinnamon",
+        "Violet",
+        "Raspberry"
+      ],
+      "base": [
+        "Tonka",
+        "Musk",
+        "Gurjan balsam"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Cannabis, green notes, davana open the fragrance, followed by tobacco, coffee, cinnamon. The base brings tonka, musk, gurjan balsam.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/Angle_1_d3229f0f-5a96-4ba1-a134-d4957998bb63.png?v=1793179131",
+    "imageSourceUrl": "https://rasasistore.com/products/hawas-viper-for-him",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "Hawas Viper",
+    "sourceVariants": [
+      "100ml"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 214,
+    "requestedName": "Ibreez Pour Homme",
+    "canonicalName": "Ibreez Pour Homme",
+    "canonicalBrand": "Rasasi",
+    "source": "https://imrasasi.com/products/ibreez-pour-homme-100-ml",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://imrasasi.com/products/ibreez-pour-homme-100-ml",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Aquatic Notes"
+      ],
+      "heart": [
+        "Bergamot",
+        "Ginger"
+      ],
+      "base": [
+        "Neroli",
+        "Lavender"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Aquatic notes open the fragrance, followed by bergamot, ginger. The base brings neroli, lavender.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0764/1441/9159/files/1_0a808025-0028-465b-a898-12bbc27e4aeb.jpg?v=1785757538",
+    "imageSourceUrl": "https://imrasasi.com/products/ibreez-pour-homme-100-ml",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "IBREEZ - POUR HOMME",
+    "sourceVariants": [
+      "100ml"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 215,
+    "requestedName": "La Yugawam Jasmine Wisp (75ml)",
+    "canonicalName": "La Yuqawam Jasmine Wisp",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/la-yuqawam-jasmine-wisp",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/la-yuqawam-jasmine-wisp",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Lemon",
+        "Mandarin",
+        "Grapefruit"
+      ],
+      "heart": [
+        "Coconut",
+        "Peach",
+        "Passion fruit",
+        "Starkrimson pear",
+        "Anjou"
+      ],
+      "base": [
+        "Vanilla",
+        "Tonka beans",
+        "Amber"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Lemon, mandarin, grapefruit open the fragrance, followed by coconut, peach, passion fruit. The base brings vanilla, tonka beans, amber.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/LaYuqawam_JasmineWisp_1.jpg?v=1708626493",
+    "imageSourceUrl": "https://rasasistore.com/products/la-yuqawam-jasmine-wisp",
+    "size": 75,
+    "notesCaveat": "",
+    "sourceProductTitle": "La Yuqawam Jasmine Wisp",
+    "sourceVariants": [
+      "Default Title"
+    ],
+    "confirmedSize": 75,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 216,
+    "requestedName": "La Yugawam Orchid Prairie (75ml)",
+    "canonicalName": "La Yuqawam Orchid Prairie",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/la-yuqawam-orchid-prairie",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/la-yuqawam-orchid-prairie",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Rose",
+        "Geranium",
+        "Floral notes"
+      ],
+      "heart": [
+        "Cashmeran",
+        "Coumarin",
+        "Jakarta oud"
+      ],
+      "base": [
+        "Vanilla",
+        "Musk",
+        "Amber",
+        "Indian oud"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": false,
+    "description": "Rose, geranium, floral notes open the fragrance, followed by cashmeran, coumarin, jakarta oud. The base brings vanilla, musk, amber.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/LaYuqawam_OrchidPrairie_1.jpg?v=1709144431",
+    "imageSourceUrl": "https://rasasistore.com/products/la-yuqawam-orchid-prairie",
+    "size": 75,
+    "notesCaveat": "The regional listing has contradictory prose and note-table stages. This pyramid follows its explicit scent-development prose; confirm with the supplier before enabling recommendations.",
+    "sourceProductTitle": "La Yuqawam Orchid Prairie",
+    "sourceVariants": [
+      "Default Title"
+    ],
+    "confirmedSize": 75,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 217,
+    "requestedName": "La Yugawam Pour Femme (75ml)",
+    "canonicalName": "La Yuqawam Pour Femme",
+    "canonicalBrand": "Rasasi",
+    "source": "https://samaperfumes.co.uk/products/rasasi-la-yuqawam-pour-femme",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://samaperfumes.co.uk/products/rasasi-la-yuqawam-pour-femme",
+        "kind": "authorised-distributor"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Iranian Saffron",
+        "Raspberry",
+        "Egyptian Thyme"
+      ],
+      "heart": [
+        "Cinnamon",
+        "Ylang-Ylang",
+        "Brazilian Pink Pepper"
+      ],
+      "base": [
+        "Indian Sandalwood",
+        "Amber",
+        "French Black Truffle",
+        "Patchouli"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Iranian saffron, raspberry, egyptian thyme open the fragrance, followed by cinnamon, ylang-ylang, brazilian pink pepper. The base brings indian sandalwood, amber, french black truffle.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0857/9969/8763/files/la_yuqawam_pour_femme_jpeg.jpg?v=1723910979",
+    "imageSourceUrl": "https://samaperfumes.co.uk/products/rasasi-la-yuqawam-pour-femme",
+    "size": 75,
+    "notesCaveat": "",
+    "sourceProductTitle": "Rasasi La Yuqawam Pour Femme",
+    "sourceVariants": [
+      "75ML",
+      "5ML SAMPLE"
+    ],
+    "confirmedSize": 75,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 218,
+    "requestedName": "La Yugawam Pour Homme (75ml)",
+    "canonicalName": "La Yuqawam Pour Homme",
+    "canonicalBrand": "Rasasi",
+    "source": "https://samaperfumes.co.uk/products/la-yuqawam-pour-homme-edp-75ml-rasasi",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://samaperfumes.co.uk/products/la-yuqawam-pour-homme-edp-75ml-rasasi",
+        "kind": "authorised-distributor"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Thyme",
+        "Saffron",
+        "Raspberry"
+      ],
+      "heart": [
+        "Jasmine",
+        "Artemisia",
+        "Olibanum"
+      ],
+      "base": [
+        "Leather",
+        "Suede",
+        "Amber",
+        "Woody Notes"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Thyme, saffron, raspberry open the fragrance, followed by jasmine, artemisia, olibanum. The base brings leather, suede, amber.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0857/9969/8763/files/LaYuqawamPourHomme4_834b626d-580a-4233-a72b-ae440cd14681.jpg?v=1720892463",
+    "imageSourceUrl": "https://samaperfumes.co.uk/products/la-yuqawam-pour-homme-edp-75ml-rasasi",
+    "size": 75,
+    "notesCaveat": "",
+    "sourceProductTitle": "Rasasi La Yuqawam Pour Homme",
+    "sourceVariants": [
+      "75ML",
+      "5ML SAMPLE"
+    ],
+    "confirmedSize": 75,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 219,
+    "requestedName": "La Yugawam Tobacco Blaze (75ml)",
+    "canonicalName": "La Yuqawam Tobacco Blaze",
+    "canonicalBrand": "Rasasi",
+    "source": "https://samaperfumes.co.uk/products/la-yuqawam-tobacco-blaze-for-him-edp-75ml-rasasi",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://samaperfumes.co.uk/products/la-yuqawam-tobacco-blaze-for-him-edp-75ml-rasasi",
+        "kind": "authorised-distributor"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Neroli",
+        "Lily Of The Valley",
+        "Saffron"
+      ],
+      "heart": [
+        "Amber",
+        "Apricot",
+        "Coumarin",
+        "Violet",
+        "Cedar"
+      ],
+      "base": [
+        "Leather",
+        "Patchouli",
+        "Agar Wood"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Neroli, lily of the valley, saffron open the fragrance, followed by amber, apricot, coumarin. The base brings leather, patchouli, agar wood.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0857/9969/8763/files/LaYuqawamTobaccoBlaze3_7755c513-077d-44d9-a0e5-40edafc4e88b.jpg?v=1720892808",
+    "imageSourceUrl": "https://samaperfumes.co.uk/products/la-yuqawam-tobacco-blaze-for-him-edp-75ml-rasasi",
+    "size": 75,
+    "notesCaveat": "",
+    "sourceProductTitle": "Rasasi La Yuqawam Tobacco Blaze",
+    "sourceVariants": [
+      "75ML",
+      "5ML SAMPLE"
+    ],
+    "confirmedSize": 75,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 220,
+    "requestedName": "Mubhakar (20ml)",
+    "canonicalName": "Attar Mubakhar",
+    "canonicalBrand": "Rasasi",
+    "source": "https://store.rasasi.com.sa/en/zvngdep/p903273235",
+    "noteSources": [
+      {
+        "label": "Rasasi Saudi product listing",
+        "url": "https://store.rasasi.com.sa/en/zvngdep/p903273235",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Floral notes",
+        "Woody notes"
+      ],
+      "heart": [
+        "Rose"
+      ],
+      "base": [
+        "Sandalwood",
+        "Vanilla",
+        "Musk"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "concentration": "Concentrated Perfume Oil",
+    "imageUrl": "https://cdn.salla.sa/lGDEen/43ac4857-8ae8-494f-b2b9-02805658d29f-500x500-rJ7lQzoCQioGwEWLTuGkaSynAYMXvTKJrBQsfT6V.jpg",
+    "imageSourceUrl": "https://store.rasasi.com.sa/en/zvngdep/p903273235",
+    "size": 20,
+    "confirmedSize": 20,
+    "notesCaveat": "Merchant spelling Mubhakar normalised to the matching Attar Mubakhar 20 ml oil.",
+    "format": "Attar",
+    "sizeConfirmed": true,
+    "description": "Floral notes, woody notes open the fragrance, followed by rose. The base brings sandalwood, vanilla, musk. Presented as a concentrated perfume oil."
+  },
+  {
+    "number": 221,
+    "requestedName": "Mukhalat Al Oud (20ml)",
+    "canonicalName": "Mukhalat Al Oud",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/mukhalat-al-oudh",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/mukhalat-al-oudh",
+        "kind": "regional-store"
+      },
+      {
+        "label": "Matching 20 ml concentrated oil listing",
+        "url": "https://om.rasasistore.com/products/mukhalat-al-oudh",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Geranium",
+        "Marine accords"
+      ],
+      "heart": [
+        "Rose",
+        "White flower",
+        "Violet"
+      ],
+      "base": [
+        "Amber",
+        "Musk"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Bergamot, fresh germanium, marine accords open the fragrance, followed by rose, white flower, violet. The base brings amber, musk. Presented as a concentrated perfume oil.",
+    "concentration": "Concentrated Perfume Oil",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/MukhallatAloudh_1.jpg?v=1709144665",
+    "imageSourceUrl": "https://rasasistore.com/products/mukhalat-al-oudh",
+    "size": 20,
+    "notesCaveat": "UAE listing body incorrectly describes another 100 ml spray. The product collection, category and matching Oman listing identify this as 20 ml concentrated perfume oil; notes follow the matching oil table.",
+    "sourceProductTitle": "Mukhalat Al Oudh",
+    "sourceVariants": [
+      "Default Title"
+    ],
+    "format": "Attar",
+    "confirmedSize": 20,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 222,
+    "requestedName": "Marha Pour Homme",
+    "canonicalName": "Marha Pour Homme",
+    "canonicalBrand": "Rasasi",
+    "source": "https://store.rasasi.com.sa/en/ydmyylp/p229476447",
+    "noteSources": [
+      {
+        "label": "Rasasi Saudi product listing",
+        "url": "https://store.rasasi.com.sa/en/ydmyylp/p229476447",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Tangerine",
+        "Grapefruit"
+      ],
+      "heart": [
+        "Cardamom",
+        "Sage",
+        "Geranium",
+        "Violet leaves"
+      ],
+      "base": [
+        "Patchouli",
+        "Styrax",
+        "Amber",
+        "Vanilla"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.salla.sa/lGDEen/59674dc1-f689-4fa8-9b37-a4d96e000d0c-500x500-WgTANP2kV8hXK9wUNHFr5TUqkSfRfqvh2qNq5LIc.jpg",
+    "imageSourceUrl": "https://store.rasasi.com.sa/en/ydmyylp/p229476447",
+    "size": 100,
+    "confirmedSize": 100,
+    "notesCaveat": "",
+    "sizeConfirmed": true,
+    "description": "Bergamot, tangerine, grapefruit open the fragrance, followed by cardamom, sage, geranium. The base brings patchouli, styrax, amber."
+  },
+  {
+    "number": 223,
+    "requestedName": "Oud Al Methali (15ml)",
+    "canonicalName": "Oudh Al Methali",
+    "canonicalBrand": "Rasasi",
+    "source": "https://samaperfumes.co.uk/products/oudh-al-methali-15ml-perfume-oil-attar-by-rasasi",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://samaperfumes.co.uk/products/oudh-al-methali-15ml-perfume-oil-attar-by-rasasi",
+        "kind": "authorised-distributor"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Floral",
+        "Fruity Accord"
+      ],
+      "heart": [
+        "Sandalwood",
+        "Amber Spices"
+      ],
+      "base": [
+        "Oudh",
+        "Woods"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Floral, fruity accord open the fragrance, followed by sandalwood, amber spices. The base brings oudh, woods. Presented as a concentrated perfume oil.",
+    "concentration": "Concentrated Perfume Oil",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0857/9969/8763/files/OudAlMethali1_3b0b0656-270e-4fed-a207-e30a414b9c94.jpg?v=1723729716",
+    "imageSourceUrl": "https://samaperfumes.co.uk/products/oudh-al-methali-15ml-perfume-oil-attar-by-rasasi",
+    "size": 15,
+    "notesCaveat": "",
+    "sourceProductTitle": "Rasasi Oudh Al Methali",
+    "sourceVariants": [
+      "Default Title"
+    ],
+    "format": "Attar",
+    "confirmedSize": 15,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 224,
+    "requestedName": "Rafan Pour Homme",
+    "canonicalName": "Rafan Pour Homme",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/rafan-for-him",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/rafan-for-him",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Sea Salt",
+        "Ginger"
+      ],
+      "heart": [
+        "Seaweed",
+        "Vetiver"
+      ],
+      "base": [
+        "Cedarwood",
+        "Oakmoss"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Sea salt, ginger open the fragrance, followed by seaweed, vetiver. The base brings cedarwood, oakmoss.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/NewProject_12.jpg?v=1763904765",
+    "imageSourceUrl": "https://rasasistore.com/products/rafan-for-him",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "Rafan for Him",
+    "sourceVariants": [
+      "Default Title"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 225,
+    "requestedName": "Rafan Pour Femme",
+    "canonicalName": "Rafan Pour Femme",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/rafan-for-her",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/rafan-for-her",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Mango",
+        "Bergamot",
+        "Orange Blossom"
+      ],
+      "heart": [
+        "Ylang Ylang",
+        "Tuberose",
+        "Green Tea"
+      ],
+      "base": [
+        "Vanilla",
+        "White Musk",
+        "Sandalwood"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Mango, bergamot, orange blossom open the fragrance, followed by ylang ylang, tuberose, green tea. The base brings vanilla, white musk, sandalwood.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/NewProject_8.jpg?v=1763904444",
+    "imageSourceUrl": "https://rasasistore.com/products/rafan-for-her",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "Rafan for Her",
+    "sourceVariants": [
+      "Default Title"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 226,
+    "requestedName": "Romance Women (15ml)",
+    "canonicalName": "Romance Women",
+    "canonicalBrand": "Rasasi",
+    "source": "https://samaperfumes.co.uk/products/romance-concentrated-perfume-oil-15ml-by-rasasi",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://samaperfumes.co.uk/products/romance-concentrated-perfume-oil-15ml-by-rasasi",
+        "kind": "authorised-distributor"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Rose",
+        "Jasmine"
+      ],
+      "heart": [
+        "Apricot",
+        "Raspberry",
+        "Peach"
+      ],
+      "base": [
+        "Cedarwood",
+        "Musk",
+        "Sandalwood"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Rose, jasmine open the fragrance, followed by apricot, raspberry, peach. The base brings cedarwood, musk, sandalwood. Presented as a concentrated perfume oil.",
+    "concentration": "Concentrated Perfume Oil",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0857/9969/8763/files/RomanceOil.jpg?v=1724082279",
+    "imageSourceUrl": "https://samaperfumes.co.uk/products/romance-concentrated-perfume-oil-15ml-by-rasasi",
+    "size": 15,
+    "notesCaveat": "",
+    "sourceProductTitle": "Rasasi Romance Oil",
+    "sourceVariants": [
+      "Default Title"
+    ],
+    "format": "Attar",
+    "confirmedSize": 15,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 227,
+    "requestedName": "Sahar (18ml)",
+    "canonicalName": "Sahar",
+    "canonicalBrand": "Rasasi",
+    "source": "https://samaperfumes.co.uk/products/sahar-18ml-perfume-oil-attar-by-rasasi",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://samaperfumes.co.uk/products/sahar-18ml-perfume-oil-attar-by-rasasi",
+        "kind": "authorised-distributor"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Oriental",
+        "Floral",
+        "Jasmine"
+      ],
+      "heart": [
+        "Woody",
+        "Spicy",
+        "Rose",
+        "Amber"
+      ],
+      "base": [
+        "Balsamic",
+        "Musky",
+        "Mossy",
+        "Animalic"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Oriental, floral, jasmine open the fragrance, followed by woody, spicy, rose. The base brings balsamic, musky, mossy. Presented as a concentrated perfume oil.",
+    "concentration": "Concentrated Perfume Oil",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0857/9969/8763/files/Sahar1_5ca37030-377b-4653-9894-b018134bb002.jpg?v=1720892771",
+    "imageSourceUrl": "https://samaperfumes.co.uk/products/sahar-18ml-perfume-oil-attar-by-rasasi",
+    "size": 18,
+    "notesCaveat": "",
+    "sourceProductTitle": "Rasasi Sahar",
+    "sourceVariants": [
+      "Default Title"
+    ],
+    "format": "Attar",
+    "confirmedSize": 18,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 228,
+    "requestedName": "Shuhrah Pour Homme (90ml)",
+    "canonicalName": "Shuhrah Pour Homme",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/shuhrah-men-edp",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/shuhrah-men-edp",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Rose",
+        "Tomato leaves",
+        "Freesia"
+      ],
+      "heart": [
+        "Rose",
+        "Sandalwood",
+        "Cedarwood",
+        "Jasmine"
+      ],
+      "base": [
+        "Amber",
+        "Musk",
+        "Oakmoss",
+        "Oudh",
+        "Leather"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Rose, tomato leaves, freesia open the fragrance, followed by rose, sandalwood, cedarwood. The base brings amber, musk, oakmoss.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/Shurah_PourHomme_1.jpg?v=1708591053",
+    "imageSourceUrl": "https://rasasistore.com/products/shuhrah-men-edp",
+    "size": 90,
+    "notesCaveat": "",
+    "sourceProductTitle": "Shuhrah Pour Homme",
+    "sourceVariants": [
+      "Default Title"
+    ],
+    "confirmedSize": 90,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 229,
+    "requestedName": "Shuhrah Pour Femme (90ml)",
+    "canonicalName": "Shuhrah Pour Femme",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/shuhrah-pour-femme",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/shuhrah-pour-femme",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Lemon",
+        "Sage"
+      ],
+      "heart": [
+        "Iris",
+        "Jasmine",
+        "Lily-of-the-valley"
+      ],
+      "base": [
+        "Oudh",
+        "Patchouli",
+        "Grey amber",
+        "Musk"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Lemon, sage open the fragrance, followed by iris, jasmine, lily-of-the-valley. The base brings oudh, patchouli, grey amber.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/Shurah_PourFemme_1.jpg?v=1708591016",
+    "imageSourceUrl": "https://rasasistore.com/products/shuhrah-pour-femme",
+    "size": 90,
+    "notesCaveat": "",
+    "sourceProductTitle": "Shuhrah Pour Femme",
+    "sourceVariants": [
+      "Default Title"
+    ],
+    "confirmedSize": 90,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 230,
+    "requestedName": "Shuhrah Pour Homme Avenoir (90ml)",
+    "canonicalName": "Shuhrah Pour Homme Avenoir",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/shuhrah-avenoir",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/shuhrah-avenoir",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Ginger",
+        "Bergamot",
+        "Pink Pepper",
+        "Green Notes"
+      ],
+      "heart": [
+        "Cardamom",
+        "Black Currant",
+        "Turkish Rose"
+      ],
+      "base": [
+        "Peru balsam",
+        "Bourbon vanilla",
+        "Candied Almond"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Ginger, bergamot, pink pepper open the fragrance, followed by cardamom, black currant, turkish rose. The base brings peru balsam, bourbon vanilla, candied almond.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/New_Project_32.jpg?v=1768751239",
+    "imageSourceUrl": "https://rasasistore.com/products/shuhrah-avenoir",
+    "size": 90,
+    "notesCaveat": "",
+    "sourceProductTitle": "Shuhrah Avenoir",
+    "sourceVariants": [
+      "Default Title"
+    ],
+    "confirmedSize": 90,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 231,
+    "requestedName": "Shuhrah Pour Femme Opulence (90ml)",
+    "canonicalName": "Shuhrah Pour Femme Opulence",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/shuhrah-opulence",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/shuhrah-opulence",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Guava",
+        "Mango",
+        "Neroli"
+      ],
+      "heart": [
+        "Osmanthus",
+        "Ylang ylang",
+        "Tropical Coconut"
+      ],
+      "base": [
+        "Vanilla"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Guava, mango, neroli open the fragrance, followed by osmanthus, ylang ylang, tropical coconut. The base brings vanilla.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/NewProject_36.jpg?v=1768750562",
+    "imageSourceUrl": "https://rasasistore.com/products/shuhrah-opulence",
+    "size": 90,
+    "notesCaveat": "",
+    "sourceProductTitle": "Shuhrah Opulence",
+    "sourceVariants": [
+      "Default Title"
+    ],
+    "confirmedSize": 90,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 232,
+    "requestedName": "Sonia (15ml)",
+    "canonicalName": "Sonia",
+    "canonicalBrand": "Rasasi",
+    "source": "https://store.rasasi.com.sa/en/azobxla/p962431745",
+    "noteSources": [
+      {
+        "label": "Rasasi Saudi product listing",
+        "url": "https://store.rasasi.com.sa/en/azobxla/p962431745",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Floral notes",
+        "Woods"
+      ],
+      "heart": [
+        "Vanilla",
+        "Jasmine"
+      ],
+      "base": [
+        "Sandalwood",
+        "Musk",
+        "Amber"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "concentration": "Concentrated Perfume Oil",
+    "imageUrl": "https://cdn.salla.sa/lGDEen/0c53d618-9140-4395-80ce-acb460ad3100-500x500-781dXyVImvxB57noj58dOYfIGg6TV81E6tRRXuL5.jpg",
+    "imageSourceUrl": "https://store.rasasi.com.sa/en/azobxla/p962431745",
+    "size": 15,
+    "confirmedSize": 15,
+    "notesCaveat": "",
+    "format": "Attar",
+    "sizeConfirmed": true,
+    "description": "Floral notes, woods open the fragrance, followed by vanilla, jasmine. The base brings sandalwood, musk, amber. Presented as a concentrated perfume oil."
+  },
+  {
+    "number": 233,
+    "requestedName": "Sotoor Pour Homme Raa",
+    "canonicalName": "Sotoor Raa",
+    "canonicalBrand": "Rasasi",
+    "source": "https://samaperfumes.co.uk/products/rasasi-sotoor-raa",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://samaperfumes.co.uk/products/rasasi-sotoor-raa",
+        "kind": "authorised-distributor"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Lemon"
+      ],
+      "heart": [
+        "Jasmine",
+        "Nutmeg",
+        "Lily of the Valley"
+      ],
+      "base": [
+        "Musk",
+        "Patchouli"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Bergamot, lemon open the fragrance, followed by jasmine, nutmeg, lily of the valley. The base brings musk, patchouli.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0857/9969/8763/files/rasasi-sotoor-raa-eau-de-parfum-unisex___170912.jpg?v=1724081716",
+    "imageSourceUrl": "https://samaperfumes.co.uk/products/rasasi-sotoor-raa",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "Rasasi Sotoor Raa",
+    "sourceVariants": [
+      "100ML",
+      "5ML SAMPLE"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 234,
+    "requestedName": "Yumn Pour Homme",
+    "canonicalName": "Yumn Pour Homme",
+    "canonicalBrand": "Rasasi",
+    "source": "https://rasasistore.com/products/yumn-pour-homme",
+    "noteSources": [
+      {
+        "label": "Rasasi regional product listing",
+        "url": "https://rasasistore.com/products/yumn-pour-homme",
+        "kind": "regional-store"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "VIRGINIA CEDAR",
+        "AMBER"
+      ],
+      "heart": [
+        "BERGAMOT",
+        "Cardamom"
+      ],
+      "base": [
+        "LAVENDER"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Virginia cedar, amber open the fragrance, followed by bergamot, cardamon. The base brings lavender.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/Yumn_PourHomme_1.jpg?v=1708590216",
+    "imageSourceUrl": "https://rasasistore.com/products/yumn-pour-homme",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "Yumn Pour Homme",
+    "sourceVariants": [
+      "Default Title"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 235,
+    "requestedName": "Muse",
+    "canonicalName": "Muse",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/khadlaj-muse-100-ml-eau-de-parfum-spray-for-women",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/khadlaj-muse-100-ml-eau-de-parfum-spray-for-women",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Orange Blossom",
+        "Bergamot",
+        "Almond"
+      ],
+      "heart": [
+        "Orris",
+        "Jasmine",
+        "Cream Accord"
+      ],
+      "base": [
+        "Vanilla",
+        "Tonka Bean",
+        "Amber",
+        "White Musk"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Orange blossom, bergamot, almond open the fragrance, followed by orris, jasmine, cream accord. The base brings vanilla, tonka bean, amber.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/KHADLAJ_MUSE_100_ML_EAU_DE_PARFUM_SPRAY_FOR_WOMEN.jpg?v=1787392792",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/khadlaj-muse-100-ml-eau-de-parfum-spray-for-women",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "MUSE",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 236,
+    "requestedName": "Sawaar Vanille Blanc",
+    "canonicalName": "Sawaar Vanille Blanc",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/sawaar-vanille-blanc-100-ml-eau-de-parfum-spray-for-women",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/sawaar-vanille-blanc-100-ml-eau-de-parfum-spray-for-women",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Vanilla",
+        "Powdered Sugar",
+        "Apple"
+      ],
+      "heart": [
+        "Amber",
+        "White Florals",
+        "Cashmere"
+      ],
+      "base": [
+        "Sandalwood",
+        "Benzoin",
+        "Vanilla"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Vanilla, powdered sugar, apple open the fragrance, followed by amber, white florals, cashmere. The base brings sandalwood, benzoin, vanilla.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/SAWAAR-03.jpg?v=1783939807",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/sawaar-vanille-blanc-100-ml-eau-de-parfum-spray-for-women",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "SAWAAR VANILLE BLANC",
+    "sourceVariants": [
+      "Default Title"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 237,
+    "requestedName": "Ihthiraam (60ml)",
+    "canonicalName": "Ihthiraam",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/ihthraam-extrait-de-parfum-spray-oriental-unisex-fragrance",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/ihthraam-extrait-de-parfum-spray-oriental-unisex-fragrance",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Pink Pepper",
+        "Honey"
+      ],
+      "heart": [
+        "Aromatic Accord",
+        "Jasmine",
+        "Orange Blossom",
+        "African Oud",
+        "Rosemary",
+        "Cashmere Oud"
+      ],
+      "base": [
+        "Raspberry",
+        "Ambroxan",
+        "Sandalwood",
+        "Vetiver",
+        "Musk",
+        "Amber"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Bergamot, pink pepper, honey open the fragrance, followed by aromatic accord, jasmine, orange blossom. The base brings raspberry, ambroxan, sandalwood.",
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Ihthiraam-3.jpg?v=1783939279",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/ihthraam-extrait-de-parfum-spray-oriental-unisex-fragrance",
+    "size": 60,
+    "notesCaveat": "",
+    "sourceProductTitle": "IHTHIRAAM",
+    "sourceVariants": [
+      "60 ML"
+    ],
+    "confirmedSize": 60,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 238,
+    "requestedName": "Karus Gold Absolu",
+    "canonicalName": "Karus Gold Absolu",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/karus-gold-absolu-100-ml-edp-spray",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/karus-gold-absolu-100-ml-edp-spray",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Blackcurrant",
+        "Candied Lemon",
+        "Bergamot"
+      ],
+      "heart": [
+        "Praline",
+        "Magnolia",
+        "Violet"
+      ],
+      "base": [
+        "Musk",
+        "Vetiver"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Blackcurrant, candied lemon, bergamot open the fragrance, followed by praline, magnolia, violet. The base brings musk, vetiver.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Karus_Gold_Absolu.png?v=1786349760",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/karus-gold-absolu-100-ml-edp-spray",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "KARUS GOLD ABSOLU",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 239,
+    "requestedName": "Qarar (60ml)",
+    "canonicalName": "Qarar",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/khadlaj-qarar-unisex-bold-oriental-extrait-de-parfum",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/khadlaj-qarar-unisex-bold-oriental-extrait-de-parfum",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Pink Pepper",
+        "Honey"
+      ],
+      "heart": [
+        "Aromatic Accords",
+        "Jasmine",
+        "Orange Blossom",
+        "Oud",
+        "African Rosemary",
+        "Cashmere Wood"
+      ],
+      "base": [
+        "Raspberry",
+        "Ambroxan",
+        "Sandalwood",
+        "Vetiver",
+        "Musk",
+        "Amber"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Bergamot, pink pepper, honey open the fragrance, followed by aromatic accords, jasmine, orange blossom. The base brings raspberry, ambroxan, sandalwood.",
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Qarar-3.jpg?v=1783939057",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/khadlaj-qarar-unisex-bold-oriental-extrait-de-parfum",
+    "size": 60,
+    "notesCaveat": "",
+    "sourceProductTitle": "QARAR",
+    "sourceVariants": [
+      "60 ML"
+    ],
+    "confirmedSize": 60,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 240,
+    "requestedName": "Saraya (60ml)",
+    "canonicalName": "Saraya",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/khadlaj-saraya-60-ml-extrait-de-parfum-spray-for-men-women",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/khadlaj-saraya-60-ml-extrait-de-parfum-spray-for-men-women",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Thai Basil",
+        "Pink Pepper"
+      ],
+      "heart": [
+        "Georgywood",
+        "Clary Sage"
+      ],
+      "base": [
+        "Mineral Amber",
+        "Vetiver Haiti",
+        "Soft Patchouli"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Thai basil, pink pepper open the fragrance, followed by georgywood, clary sage. The base brings mineral amber, vetiver haiti, soft patchouli.",
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/saraya_3.png?v=1783938953",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/khadlaj-saraya-60-ml-extrait-de-parfum-spray-for-men-women",
+    "size": 60,
+    "notesCaveat": "",
+    "sourceProductTitle": "SARAYA",
+    "sourceVariants": [
+      "60 ML"
+    ],
+    "confirmedSize": 60,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 241,
+    "requestedName": "Zayaan Silver",
+    "canonicalName": "Zayaan Silver",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/zayaan-silver-fresh-aquatic-spicy-woody-eau-de-parfum-for-men",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/zayaan-silver-fresh-aquatic-spicy-woody-eau-de-parfum-for-men",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Grapefruit",
+        "Marine Accord",
+        "Mint",
+        "Pink Pepper"
+      ],
+      "heart": [
+        "Lavender",
+        "Bay leaf",
+        "Orange Blossom",
+        "Cinnamon"
+      ],
+      "base": [
+        "Vanilla",
+        "Tonka Bean",
+        "Sandalwood",
+        "Patchouli"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Grapefruit, marine accord, mint open the fragrance, followed by lavender, bay leaf, orange blossom. The base brings vanilla, tonka bean, sandalwood.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Zayan_Silver-3.jpg?v=1783936580",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/zayaan-silver-fresh-aquatic-spicy-woody-eau-de-parfum-for-men",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "ZAYAAN SILVER",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 242,
+    "requestedName": "Island Sun",
+    "canonicalName": "Island Sun",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/khadlaj-island-sun-100-ml-extrait-de-parfum",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/khadlaj-island-sun-100-ml-extrait-de-parfum",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Mango",
+        "Coconut",
+        "Lime",
+        "Lemon"
+      ],
+      "heart": [
+        "Pink Pepper",
+        "Jasmine",
+        "Orange Blossom"
+      ],
+      "base": [
+        "Musk",
+        "Tonka Bean",
+        "Precious Woods"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Mango, coconut, lime open the fragrance, followed by pink pepper, jasmine, orange blossom. The base brings musk, tonka bean, precious woods.",
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/KHADLAJ_ISLAND_SUN_100_ML_EXTRAIT_DE_PARFUM.png?v=1787209397",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/khadlaj-island-sun-100-ml-extrait-de-parfum",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "ISLAND SUN",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 243,
+    "requestedName": "Shiyaaka Sky",
+    "canonicalName": "Shiyaaka Sky",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/special-edition-shiyaaka-sky-100-ml",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/special-edition-shiyaaka-sky-100-ml",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Mandarin",
+        "Verbena"
+      ],
+      "heart": [
+        "Neroli",
+        "Geranium",
+        "Orange Blossom",
+        "Green Notes"
+      ],
+      "base": [
+        "Ambroxan",
+        "Vetiver",
+        "Musk",
+        "Sandalwood"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Bergamot, mandarin, verbena open the fragrance, followed by neroli, geranium, orange blossom. The base brings ambroxan, vetiver, musk.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/SPECIAL_EDITION_SHIYAAKA_SKY.png?v=1783938999",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/special-edition-shiyaaka-sky-100-ml",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "SPECIAL EDITION SHIYAAKA SKY",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 244,
+    "requestedName": "Azure Velvet",
+    "canonicalName": "Azure Velvet",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/azure-velvet-100-ml-extrait-de-parfum-unisex-fragrance-to-buy-online-dubai-uae",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/azure-velvet-100-ml-extrait-de-parfum-unisex-fragrance-to-buy-online-dubai-uae",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Lavender",
+        "Mint"
+      ],
+      "base": [
+        "Woody",
+        "Powdery",
+        "Incense"
+      ],
+      "heart": [
+        "Floral",
+        "Fruity",
+        "Fresh"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Bergamot, lavender, mint open the fragrance, followed by floral, fruity, fresh. The base brings woody, powdery, incense.",
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Azure_Velvet_03.jpg?v=1783946944",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/azure-velvet-100-ml-extrait-de-parfum-unisex-fragrance-to-buy-online-dubai-uae",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "AZURE VELVET",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 245,
+    "requestedName": "Bleu Glace",
+    "canonicalName": "Bleu Glace",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/bleu-glace-100-ml-extrait-de-parfum-for-men-fresh-fragrance-online-dubai-uae",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/bleu-glace-100-ml-extrait-de-parfum-for-men-fresh-fragrance-online-dubai-uae",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Lemon",
+        "Apple"
+      ],
+      "heart": [
+        "Lavender",
+        "Marine notes",
+        "Incense"
+      ],
+      "base": [
+        "Oakmoss",
+        "Sandalwood",
+        "Tonka Beans"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Bergamot, lemon, apple open the fragrance, followed by lavender, marina notes, incense. The base brings oakmoss, sandalwood, tonka beans.",
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Bleu_Glace_02.jpg?v=1784382935",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/bleu-glace-100-ml-extrait-de-parfum-for-men-fresh-fragrance-online-dubai-uae",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "BLEU GLACE",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 246,
+    "requestedName": "Caffe Latte",
+    "canonicalName": "Caffe Latte",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/caffe-latte-100-ml-extrait-de-parfum-spray",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/caffe-latte-100-ml-extrait-de-parfum-spray",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Sweet Almond",
+        "Coffee",
+        "Milk"
+      ],
+      "heart": [
+        "Amber",
+        "Vanilla",
+        "Ice Cream Accord"
+      ],
+      "base": [
+        "Caramel",
+        "Vanilla",
+        "Almond Cream"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Sweet almond, coffee, milk open the fragrance, followed by amber, vanilla, ice cream accord. The base brings caramel, vanilla, almond cream.",
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Cafe_Latte_03.jpg?v=1783947469",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/caffe-latte-100-ml-extrait-de-parfum-spray",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "CAFFE LATTE",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 247,
+    "requestedName": "Cloud Candy",
+    "canonicalName": "Cloud Candy",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/cloud-candy-100-ml-extrait-de-parfum-fruity-marshmallow-fragrance-for-women-to-shop-online-in-dubai-uae",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/cloud-candy-100-ml-extrait-de-parfum-fruity-marshmallow-fragrance-for-women-to-shop-online-in-dubai-uae",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Strawberry",
+        "Green Tangerine",
+        "Freesia"
+      ],
+      "heart": [
+        "Fluffy Marshmallow",
+        "Coconut",
+        "Whipped Cream"
+      ],
+      "base": [
+        "White Musk",
+        "Vanilla",
+        "Sugar",
+        "Raspberry",
+        "Ambroxan"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Strawberry, green tangerine, freesia open the fragrance, followed by fluffy marshmallow, coconut, whipped cream. The base brings white musk, vanilla, sugar.",
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Cloud_Candy-3.jpg?v=1783945979",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/cloud-candy-100-ml-extrait-de-parfum-fruity-marshmallow-fragrance-for-women-to-shop-online-in-dubai-uae",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "CLOUD CANDY",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 248,
+    "requestedName": "Cream Velvet",
+    "canonicalName": "Cream Velvet",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/cream-velvet-100-ml-extrait-de-parfum-for-women-best-perfumes",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/cream-velvet-100-ml-extrait-de-parfum-for-women-best-perfumes",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "base": [
+        "Amber",
+        "Musk",
+        "Vanilla"
+      ],
+      "top": [
+        "Buttery",
+        "Caramel"
+      ],
+      "heart": [
+        "Honey",
+        "Jasmine",
+        "Tonka"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Buttery, caramel open the fragrance, followed by honey, jasmine, tonka. The base brings amber, musk, vanila.",
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Cream_Velvet_03.jpg?v=1783947094",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/cream-velvet-100-ml-extrait-de-parfum-for-women-best-perfumes",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "CREAM VELVET",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 249,
+    "requestedName": "Desert Rose",
+    "canonicalName": "Desert Rose",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/desert-rose-100-ml-extrait-de-parfum-for-women-fragrance-to-shop-online-dubai-uae",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/desert-rose-100-ml-extrait-de-parfum-for-women-fragrance-to-shop-online-dubai-uae",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Blackcurrant",
+        "Lychee",
+        "Orange"
+      ],
+      "heart": [
+        "Freesia",
+        "Peach",
+        "Rose"
+      ],
+      "base": [
+        "Caramel",
+        "Musk",
+        "Patchouli"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Blackcurrant, lychee, orange open the fragrance, followed by freesia, peach, rose. The base brings caramel, musk, patchouli.",
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Desert_Rose_02.jpg?v=1784383039",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/desert-rose-100-ml-extrait-de-parfum-for-women-fragrance-to-shop-online-dubai-uae",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "DESERT ROSE",
+    "sourceVariants": [
+      "85 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 250,
+    "requestedName": "Empire Crown",
+    "canonicalName": "Empire Crown",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/empire-crown-100-ml-edp-spray-best-perfume-spray-for-men-online-dubai-uae",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/empire-crown-100-ml-edp-spray-best-perfume-spray-for-men-online-dubai-uae",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Grapefruit"
+      ],
+      "heart": [
+        "Ginger",
+        "Amber"
+      ],
+      "base": [
+        "Musk",
+        "Vetiver",
+        "Patchouli"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Bergamot, grapefruit open the fragrance, followed by ginger, amber. The base brings musk, vetiver, patchouli.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/EMPIRE_CROWN_100_ML_EDP_SPRAY_-_Khadlaj_Perfumes-1964329.jpg?v=1783950456",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/empire-crown-100-ml-edp-spray-best-perfume-spray-for-men-online-dubai-uae",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "EMPIRE CROWN",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 251,
+    "requestedName": "Fursan Brown",
+    "canonicalName": "Fursan Brown",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/khadlaj-fursan-brown-100-ml-edp-spray-perfume-for-him-and-her",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/khadlaj-fursan-brown-100-ml-edp-spray-perfume-for-him-and-her",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Cade"
+      ],
+      "heart": [
+        "Nutmeg",
+        "Sandalwood"
+      ],
+      "base": [
+        "Cedarwood",
+        "Amber",
+        "Patchouli"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Bergomot, cade open the fragrance, followed by nutmeg, sandalwood. The base brings cedarwood, amber, patchouli.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/3_651eba7e-7275-416f-b294-45ea01b0149a.jpg?v=1783947945",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/khadlaj-fursan-brown-100-ml-edp-spray-perfume-for-him-and-her",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "FURSAN BROWN",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 252,
+    "requestedName": "Fursan White",
+    "canonicalName": "Fursan White",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/khadlaj-fursan-white-100-ml-edp-spray-perfume-for-women-best-price-in-dubai-uae",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/khadlaj-fursan-white-100-ml-edp-spray-perfume-for-women-best-price-in-dubai-uae",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "base": [
+        "Vanilla",
+        "Cedarwood",
+        "Nutmeg"
+      ],
+      "top": [
+        "Bergamot",
+        "Jasmine"
+      ],
+      "heart": [
+        "Musk",
+        "Coconut",
+        "Almond"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Bergomot, jasmine open the fragrance, followed by musk, coconut, almond. The base brings vanilla, cedarwood, nutmeg.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/3_e7287acf-841a-4e28-a898-549b1e89d2a2.jpg?v=1783948020",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/khadlaj-fursan-white-100-ml-edp-spray-perfume-for-women-best-price-in-dubai-uae",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "FURSAN WHITE",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 253,
+    "requestedName": "Hareem Sultan Gold (75ml)",
+    "canonicalName": "Hareem Al Sultan Gold",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/tiktk-viral-hareem-al-sultan-perfume-in-75-ml-edp-spray-by-khadlaj-dubai",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/tiktk-viral-hareem-al-sultan-perfume-in-75-ml-edp-spray-by-khadlaj-dubai",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Jasmine",
+        "Peony"
+      ],
+      "heart": [
+        "Pineapple",
+        "Plum",
+        "Peach"
+      ],
+      "base": [
+        "Musk",
+        "Sandalwood",
+        "Patchouli"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Bergamot, jasmine, peony open the fragrance, followed by pineapple, plum, peach. The base brings musk, sandalwood, patchouli.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/HAREEM_AL_SULTAN_Bottle.jpg?v=1783946128",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/tiktk-viral-hareem-al-sultan-perfume-in-75-ml-edp-spray-by-khadlaj-dubai",
+    "size": 75,
+    "notesCaveat": "This listing is the 75 ml Eau de Parfum spray; it is not the separate 35 ml concentrated perfume oil.",
+    "sourceProductTitle": "HAREEM AL SULTAN",
+    "sourceVariants": [
+      "75 ML"
+    ],
+    "confirmedSize": 75,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 254,
+    "requestedName": "Icon",
+    "canonicalName": "Icon",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/khadlaj-icon-100-ml-eau-de-parfum-spray-for-men",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/khadlaj-icon-100-ml-eau-de-parfum-spray-for-men",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Bergamot"
+      ],
+      "heart": [
+        "Lavender",
+        "Incense",
+        "Labdanum"
+      ],
+      "base": [
+        "Amber",
+        "Suede",
+        "Sandalwood"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Bergamot open the fragrance, followed by lavender, incense, labdanum. The base brings amber, suede, sandalwood.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Icon.1.jpg?v=1783939329",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/khadlaj-icon-100-ml-eau-de-parfum-spray-for-men",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "ICON",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 255,
+    "requestedName": "Island",
+    "canonicalName": "Island",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/island-100-ml-extrait-de-parfum-spray-for-men-and-women",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/island-100-ml-extrait-de-parfum-spray-for-men-and-women",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Pineapple",
+        "Iris",
+        "Ginger",
+        "Cypress"
+      ],
+      "heart": [
+        "Coconut",
+        "Woody Notes"
+      ],
+      "base": [
+        "Amber",
+        "Tonka Beans",
+        "Sandalwood"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Pineapple, iris, ginger open the fragrance, followed by coconut, woody notes. The base brings amber, tonka beans, sandalwood.",
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/KHADLAJ_ISLAND_100_ML.jpg?v=1783946296",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/island-100-ml-extrait-de-parfum-spray-for-men-and-women",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "KHADLAJ ISLAND",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 256,
+    "requestedName": "Island Dreams",
+    "canonicalName": "Island Dreams",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/island-dreams-100-ml-extrait-de-parfum",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/island-dreams-100-ml-extrait-de-parfum",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Ginger"
+      ],
+      "heart": [
+        "Grapefruit Accord"
+      ],
+      "base": [
+        "Ambroxan",
+        "Musk"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Bergamot, ginger open the fragrance, followed by grapefruit accord. The base brings ambroxan, musk.",
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Island_Dreams-3.jpg?v=1783940088",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/island-dreams-100-ml-extrait-de-parfum",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "KHADLAJ ISLAND DREAMS",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 257,
+    "requestedName": "Island Vanilla Dunes",
+    "canonicalName": "Island Vanilla Dunes",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/khadlaj-island-vanilla-dunes-100-ml-extrait-de-parfum-spray-for-men",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/khadlaj-island-vanilla-dunes-100-ml-extrait-de-parfum-spray-for-men",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Lavender",
+        "Bergamot",
+        "Cardamom"
+      ],
+      "heart": [
+        "Orange Blossom",
+        "Guaiac Wood",
+        "Dry Amber"
+      ],
+      "base": [
+        "Vanilla",
+        "Praline",
+        "Amber Notes"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Lavender, bergamot, cardamom open the fragrance, followed by orange blossom, guaiac wood, dry amber. The base brings vanilla, praline, amber notes.",
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Island_Vanilla-3.jpg?v=1783945707",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/khadlaj-island-vanilla-dunes-100-ml-extrait-de-parfum-spray-for-men",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "KHADLAJ ISLAND VANILLA DUNES",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 258,
+    "requestedName": "Karus Secret Musk",
+    "canonicalName": "Karus Secret Musk",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/karus-secret-musk-100-ml-edp-spray",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/karus-secret-musk-100-ml-edp-spray",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Musk",
+        "Sugary"
+      ],
+      "heart": [
+        "Tonka",
+        "Chocolate",
+        "Rose"
+      ],
+      "base": [
+        "Red fruits",
+        "Saffron"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Musk, sugary open the fragrance, followed by tonka, chocolate, rose. The base brings red fruits, saffron.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/KARUS_SECRET_MUSK_100_ML_EDP_SPRAY_-_Khadlaj_Perfumes-1964854.jpg?v=1783949701",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/karus-secret-musk-100-ml-edp-spray",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "KARUS SECRET MUSK",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 259,
+    "requestedName": "Karus Blu Spice",
+    "canonicalName": "Karus Blu Spice",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/karus-blu-spice-100-ml-edp-spray",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/karus-blu-spice-100-ml-edp-spray",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Tea"
+      ],
+      "heart": [
+        "Neroli",
+        "Ginger"
+      ],
+      "base": [
+        "Cinnamon",
+        "Guaiacwood"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Bergamot, tea open the fragrance, followed by neroli, ginger. The base brings cinnamon, guaiacwood.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/KARUS_BLU_SPICE_100_ML_EDP_SPRAY_-_Khadlaj_Perfumes-1964834.jpg?v=1783949739",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/karus-blu-spice-100-ml-edp-spray",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "KARUS BLU SPICE",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 260,
+    "requestedName": "25 Heritage",
+    "canonicalName": "25 Heritage",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/khadlaj-25-heritage-100-ml-edp-spray",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/khadlaj-25-heritage-100-ml-edp-spray",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "bergamot",
+        "geranium"
+      ],
+      "heart": [
+        "Cypriol",
+        "nutmeg",
+        "cardamom"
+      ],
+      "base": [
+        "cedarwood",
+        "oud",
+        "musk"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Bergamot, geranium open the fragrance, followed by cypriol, nutmeg, cardamom. The base brings cedarwood, oud, musk.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/KHADLAJ_25_HERITAGE_100_ML_EDP_SPRAY_-_Khadlaj_Perfumes-1964913.jpg?v=1783949209",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/khadlaj-25-heritage-100-ml-edp-spray",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "KHADLAJ 25 HERITAGE",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 261,
+    "requestedName": "25 Loyalty",
+    "canonicalName": "25 Loyalty",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/khadlaj-25-loyalty-100-ml-edp-spray-best-women-perfume-to-shop-online-dubai-uae",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/khadlaj-25-loyalty-100-ml-edp-spray-best-women-perfume-to-shop-online-dubai-uae",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Cherry"
+      ],
+      "heart": [
+        "Rose",
+        "Jasmine",
+        "Saffron",
+        "Raspberry"
+      ],
+      "base": [
+        "Amber",
+        "Sandalwood",
+        "Musk"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Bergamot, cherry open the fragrance, followed by rose, jasmine, saffron. The base brings amber, sandalwood, musk.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/KHADLAJ_25_LOYALTY_100_ML_EDP_SPRAY_-_Khadlaj_Perfumes-1964940.jpg?v=1783949037",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/khadlaj-25-loyalty-100-ml-edp-spray-best-women-perfume-to-shop-online-dubai-uae",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "KHADLAJ 25 LOYALTY",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 262,
+    "requestedName": "Le Prestige King",
+    "canonicalName": "Le Prestige King",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/le-prestige-king-100-ml-edp-spray",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/le-prestige-king-100-ml-edp-spray",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Bergamot"
+      ],
+      "heart": [
+        "Geranium",
+        "Leather"
+      ],
+      "base": [
+        "Orris",
+        "Patchouli"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Bergamot open the fragrance, followed by geranium, leather. The base brings orris, patchouli.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/LE_PRESTIGE_KING_100_ML_EDP_SPRAY_-_Khadlaj_Perfumes-1965257.jpg?v=1783948286",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/le-prestige-king-100-ml-edp-spray",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "LÉ PRESTIGE KING",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 263,
+    "requestedName": "Mansion",
+    "canonicalName": "Mansion",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/mansion-eau-de-parfum-spray-for-unisex-scents-by-khadlaj-dubai-uae",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/mansion-eau-de-parfum-spray-for-unisex-scents-by-khadlaj-dubai-uae",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Cognac",
+        "Raspberry",
+        "Nutty"
+      ],
+      "heart": [
+        "Tonka Bean",
+        "Rose",
+        "Myrrh",
+        "Violet"
+      ],
+      "base": [
+        "Sandalwood",
+        "Oakmoss",
+        "Praline",
+        "Caramel"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Cognac, raspberry, nutty open the fragrance, followed by tonka bean, rose, myrrh. The base brings sandalwood, oakmoss, praline.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/mansion_2.jpg?v=1783942858",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/mansion-eau-de-parfum-spray-for-unisex-scents-by-khadlaj-dubai-uae",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "KHADLAJ MANSION",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 264,
+    "requestedName": "Maison Epoque Artistique",
+    "canonicalName": "Maison Epoque Artistique",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/maison-epoque-artistique-100ml-edp-spray",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/maison-epoque-artistique-100ml-edp-spray",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Cardamom",
+        "Lavandin",
+        "Pepper"
+      ],
+      "heart": [
+        "Musk",
+        "Geranium"
+      ],
+      "base": [
+        "Vanilla",
+        "Tonka Beans",
+        "Cedarwood",
+        "Amber"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Bergamot, cardamom, lavandin open the fragrance, followed by musk, geranium. The base brings vanilla, tonka beans, cedarwood.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/MAISON_EPOQUE_ARTISTIQUE_100ML_EDP_SPRAY_-_Khadlaj_Perfumes-1965317.jpg?v=1783950732",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/maison-epoque-artistique-100ml-edp-spray",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "MAISON EPOQUE ARTISTIQUE",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 265,
+    "requestedName": "Mocha Latta",
+    "canonicalName": "Mocha Latte",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/mocha-latte-100-ml-extrait-de-parfum-spray-for-unisex-coffee-fragrance-dubai-uae",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/mocha-latte-100-ml-extrait-de-parfum-spray-for-unisex-coffee-fragrance-dubai-uae",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Cinnamon",
+        "Cardamom",
+        "Orange"
+      ],
+      "heart": [
+        "Coffee",
+        "Chocolate",
+        "Liquorice"
+      ],
+      "base": [
+        "Benzoin",
+        "Vanilla",
+        "Tonka Bean"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Cinnamon, cardamom, orange open the fragrance, followed by coffee, chocolate, liquorace. The base brings benzoin, vanilla, tonka bean.",
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Mocha_Latte_03.jpg?v=1784382482",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/mocha-latte-100-ml-extrait-de-parfum-spray-for-unisex-coffee-fragrance-dubai-uae",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "MOCHA LATTE",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 266,
+    "requestedName": "Musk Pure Musk Blend (60ml)",
+    "canonicalName": "Musk Pure Musk Blend",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/musk-pure-musk-blend-creation-of-iqbal-65-ml-edp-spray-perfume-for-men-and-women-online-dubai-uae",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/musk-pure-musk-blend-creation-of-iqbal-65-ml-edp-spray-perfume-for-men-and-women-online-dubai-uae",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Musk",
+        "White Musk"
+      ],
+      "heart": [
+        "Pure Soul Of Rose",
+        "Pure Orange Blossom"
+      ],
+      "base": [
+        "Pure Musk Blend",
+        "Hint Of Cashmeran"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Musk, white musk open the fragrance, followed by pure soul of rose, pure orange blossom. The base brings pure musk blend, hint of cashmeran.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/MUSK_PURE_MUSK_BLEND_CREATION_OF_IQBAL_60_ML_EDP_SPRAY_-_Khadlaj_Perfumes-1965450.jpg?v=1783948198",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/musk-pure-musk-blend-creation-of-iqbal-65-ml-edp-spray-perfume-for-men-and-women-online-dubai-uae",
+    "size": 60,
+    "notesCaveat": "The manufacturer currently labels this Creation of Iqbal product 65 ml; the merchant list specifies 60 ml. Confirm the supplied bottle size.",
+    "sourceProductTitle": "MUSK PURE MUSK BLEND CREATION OF IQBAL",
+    "sourceVariants": [
+      "60 ML"
+    ],
+    "confirmedSize": 65,
+    "sizeConfirmed": false
+  },
+  {
+    "number": 267,
+    "requestedName": "Musk Al Sabah",
+    "canonicalName": "Musk Al Sabah",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/musk-al-sabah-100-ml-edp-spray-buy-online-best-price-dubai-uae",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/musk-al-sabah-100-ml-edp-spray-buy-online-best-price-dubai-uae",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Amber"
+      ],
+      "heart": [
+        "Toffee",
+        "Apple",
+        "Coconut"
+      ],
+      "base": [
+        "Musk",
+        "Amber"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Bergamot, amber open the fragrance, followed by toffee, apple, coconut. The base brings musk, amber.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/2_19.jpg?v=1784368941",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/musk-al-sabah-100-ml-edp-spray-buy-online-best-price-dubai-uae",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "MUSK AL SABAH",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 268,
+    "requestedName": "Nafais Magrib",
+    "canonicalName": "Nafais Magrib",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/khadlaj-nafais-magrib-100-ml-eau-de-parfum-for-men-women",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/khadlaj-nafais-magrib-100-ml-eau-de-parfum-for-men-women",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Yuzu",
+        "Grapefruit",
+        "Mandarin"
+      ],
+      "heart": [
+        "Tropical Fruits",
+        "Galbanum"
+      ],
+      "base": [
+        "Ozonic",
+        "Aldehydes",
+        "Musk"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Yuzu, grapefruit, mandarin open the fragrance, followed by tropical fruits, galbanum. The base brings ozonic, aldehydes, musk.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Nafais_Magrib-3.jpg?v=1783940515",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/khadlaj-nafais-magrib-100-ml-eau-de-parfum-for-men-women",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "KHADLAJ NAFAIS MAGRIB",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 269,
+    "requestedName": "Nafais Sharq",
+    "canonicalName": "Nafais Sharq",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/khadlaj-nafais-sharq-edp-designer-fragrance-for-women-dubai-uae",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/khadlaj-nafais-sharq-edp-designer-fragrance-for-women-dubai-uae",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Gardenia",
+        "Vanilla",
+        "Apricot",
+        "Tree Blossoms"
+      ],
+      "heart": [
+        "White Wood",
+        "Pear",
+        "Freesia"
+      ],
+      "base": [
+        "Musk",
+        "Amber",
+        "Bourbon Vanilla"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Gardenia, vanilla, apricot open the fragrance, followed by white wood, pear, freesia. The base brings musk, amber, bourbon vanilla.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/NAFAIS-3.jpg?v=1783943403",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/khadlaj-nafais-sharq-edp-designer-fragrance-for-women-dubai-uae",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "KHADLAJ NAFAIS SHARQ",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 270,
+    "requestedName": "Nuha (85ml)",
+    "canonicalName": "Nuha",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/nuha-85-ml-edp-spray-perfume-for-women-dubai-uae",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/nuha-85-ml-edp-spray-perfume-for-women-dubai-uae",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Apple",
+        "Coconut"
+      ],
+      "heart": [
+        "Jasmine",
+        "Cashmeran",
+        "Rose"
+      ],
+      "base": [
+        "Sandalwood",
+        "Vanilla"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Bergomot, apple, coconut open the fragrance, followed by jasmine, cashmeran, rose. The base brings sandalwood, vanilla.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/NUHA_100_ML_EDP_SPRAY_-_Khadlaj_Perfumes-1965514.jpg?v=1784382712",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/nuha-85-ml-edp-spray-perfume-for-women-dubai-uae",
+    "size": 85,
+    "notesCaveat": "",
+    "sourceProductTitle": "NUHA",
+    "sourceVariants": [
+      "85 ML"
+    ],
+    "confirmedSize": 85,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 271,
+    "requestedName": "Nuha Vanilla Pearl (85ml)",
+    "canonicalName": "Nuha Vanilla Pearl",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/nuha-vanilla-pearl-85-ml-edp-spray-for-women-online-dubai-uae",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/nuha-vanilla-pearl-85-ml-edp-spray-for-women-online-dubai-uae",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Freesia",
+        "Strawberry"
+      ],
+      "heart": [
+        "Cashmere"
+      ],
+      "base": [
+        "Vanilla",
+        "Moss",
+        "Caramel"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Fressia, strawberry open the fragrance, followed by cashmere. The base brings vanilla, moss, caramel.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Nuha_Vanilla_Pearl_03.jpg?v=1783946810",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/nuha-vanilla-pearl-85-ml-edp-spray-for-women-online-dubai-uae",
+    "size": 85,
+    "notesCaveat": "",
+    "sourceProductTitle": "NUHA VANILLA PEARL",
+    "sourceVariants": [
+      "85 ML"
+    ],
+    "confirmedSize": 85,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 272,
+    "requestedName": "Oud Al Sabah",
+    "canonicalName": "Oud Al Sabah",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/oud-al-sabah-100-ml-edp-spray-dubai-uae-amber-oud-fragrance",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/oud-al-sabah-100-ml-edp-spray-dubai-uae-amber-oud-fragrance",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Bergamot"
+      ],
+      "heart": [
+        "Vanilla"
+      ],
+      "base": [
+        "Lavender",
+        "Cedarwood"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Bergamot open the fragrance, followed by vanilla. The base brings lavender, cedarwood.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/3_21.jpg?v=1784368894",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/oud-al-sabah-100-ml-edp-spray-dubai-uae-amber-oud-fragrance",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "OUD AL SABAH",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 273,
+    "requestedName": "Oud Pour Klassic",
+    "canonicalName": "Oud Pour Klassik",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/oud-pour-klassik-spray-shop-online-best-price-in-dubai-uae",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/oud-pour-klassik-spray-shop-online-best-price-in-dubai-uae",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Musk"
+      ],
+      "heart": [
+        "Patchouli",
+        "Geranium"
+      ],
+      "base": [
+        "Oudh",
+        "Cedarwood"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Bergamot, musk open the fragrance, followed by patchouli, geranium. The base brings oudh, cedarwood.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Copy_of_Untitled-1.jpg?v=1784007738",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/oud-pour-klassik-spray-shop-online-best-price-in-dubai-uae",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "OUD POUR KLASSIK",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 274,
+    "requestedName": "Onyx Gold",
+    "canonicalName": "Onyx Gold",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/khadlaj-onyx-gold-100-ml-eau-de-parfum-for-men-luxury-perfume-online-dubai-uae",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/khadlaj-onyx-gold-100-ml-eau-de-parfum-for-men-luxury-perfume-online-dubai-uae",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Cardamom",
+        "Bitter orange",
+        "Ginger"
+      ],
+      "heart": [
+        "Dried fruits",
+        "White florals",
+        "Sandalwood",
+        "Osmanthus"
+      ],
+      "base": [
+        "Tonka bean",
+        "Myrrh",
+        "Vanilla",
+        "Patchouli",
+        "Labdanum"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Cardamom, bitter orange, ginger open the fragrance, followed by dried fruits, white florals, sandalwood. The base brings tonka bean, myrrh, vanilla.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/ONYX-03.jpg?v=1783939937",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/khadlaj-onyx-gold-100-ml-eau-de-parfum-for-men-luxury-perfume-online-dubai-uae",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "ONYX GOLD",
+    "sourceVariants": [
+      "Default Title"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 275,
+    "requestedName": "Onyx Silver",
+    "canonicalName": "Onyx Silver",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/khadlaj-onyx-silver-100-ml-eau-de-parfum-for-men-and-women-online-dubai-uae",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/khadlaj-onyx-silver-100-ml-eau-de-parfum-for-men-and-women-online-dubai-uae",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Ginger",
+        "Black Pepper"
+      ],
+      "heart": [
+        "Petitgrain",
+        "Cardamom"
+      ],
+      "base": [
+        "Patchouli",
+        "Labdanum",
+        "Benzoin",
+        "Tonka Beans"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Bergamot, ginger, black pepper open the fragrance, followed by petitgrain, cardamom. The base brings patchouli, labdanum, benzoin.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/OnyxSilver3.jpg?v=1783939577",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/khadlaj-onyx-silver-100-ml-eau-de-parfum-for-men-and-women-online-dubai-uae",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "ONYX SILVER",
+    "sourceVariants": [
+      "Default Title"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 276,
+    "requestedName": "Panache Angel Dust",
+    "canonicalName": "Panache Angel Dust",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/panache-angel-dust-100-ml-extrait-de-parfum-spray-for-women-shop-online-dubai-uae",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/panache-angel-dust-100-ml-extrait-de-parfum-spray-for-women-shop-online-dubai-uae",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Mandarin",
+        "Vanilla",
+        "Redcurrant"
+      ],
+      "heart": [
+        "Tuberose",
+        "Sandalwood",
+        "Rum"
+      ],
+      "base": [
+        "Vanilla",
+        "Whipped Cream",
+        "Benzoin",
+        "Musk"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Mandarin, vanilla, redcurrant open the fragrance, followed by tuberose, sandalwood, rum. The base brings vanilla, whipped cream, benzoin.",
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Panache_1_jpg_c97c705a-aebf-4bf9-a621-f11b565e765d.jpg?v=1783939496",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/panache-angel-dust-100-ml-extrait-de-parfum-spray-for-women-shop-online-dubai-uae",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "PANACHE ANGEL DUST",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 277,
+    "requestedName": "Peach Velvet",
+    "canonicalName": "Peach Velvet",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/peach-velvet-100-ml-extrait-de-parfum-for-women-top-women-fragrance-brand-uae",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/peach-velvet-100-ml-extrait-de-parfum-for-women-top-women-fragrance-brand-uae",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Peach",
+        "Cream Accord",
+        "Nectarine",
+        "Guava"
+      ],
+      "heart": [
+        "Vanilla",
+        "Amber",
+        "Ginger",
+        "Cinnamon"
+      ],
+      "base": [
+        "Caramel",
+        "Musk",
+        "Sandalwood"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Peach, cream accord, nectarine open the fragrance, followed by vanilla, amber, ginger. The base brings caramel, musk, sandalwood.",
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/PeachVelvet-03.jpg?v=1783942044",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/peach-velvet-100-ml-extrait-de-parfum-for-women-top-women-fragrance-brand-uae",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "PEACH VELVET",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 278,
+    "requestedName": "Rasayel Shagaf",
+    "canonicalName": "Rasayel Shagaf",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/rasayel-shagaf-100-ml-edp-de-parfum-spray-for-men",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/rasayel-shagaf-100-ml-edp-de-parfum-spray-for-men",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Apple",
+        "Aldehydes",
+        "Grapefruit",
+        "Ginger"
+      ],
+      "heart": [
+        "Lavender",
+        "Sage",
+        "Geranium"
+      ],
+      "base": [
+        "Tonka bean",
+        "Cedar",
+        "Olibanum",
+        "Patchouli"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Apple, aldehydes, grapefruit open the fragrance, followed by lavender, sage, geranium. The base brings tonka bean, cedar, olibanum.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/2_ab0ed6b5-ec07-4047-93e1-f6fa159c44df.jpg?v=1776230769",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/rasayel-shagaf-100-ml-edp-de-parfum-spray-for-men",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "RASAYEL SHAGAF",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 279,
+    "requestedName": "Ria",
+    "canonicalName": "Ria",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/khadlaj-ria-100-ml-eau-de-parfum-spray-for-women-fruity-sweet-fragrance-for-women",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/khadlaj-ria-100-ml-eau-de-parfum-spray-for-women-fruity-sweet-fragrance-for-women",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Cherry",
+        "Mandarin orange",
+        "Raspberry",
+        "Strawberry"
+      ],
+      "heart": [
+        "Grapefruit",
+        "Musk"
+      ],
+      "base": [
+        "Patchouli",
+        "Blackcurrant"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Cherry, mandarin orange, raspberry open the fragrance, followed by grapefruit, musk. The base brings patchouli, blackcurrant.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Ria-3.jpg?v=1783941881",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/khadlaj-ria-100-ml-eau-de-parfum-spray-for-women-fruity-sweet-fragrance-for-women",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "KHADLAJ RIA",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 280,
+    "requestedName": "Sara",
+    "canonicalName": "Sara",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/khadlaj-sara-100-ml-extrait-de-parfum-spray-for-women-best-price-dubai-uae",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/khadlaj-sara-100-ml-extrait-de-parfum-spray-for-women-best-price-dubai-uae",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Jasmine",
+        "Berries"
+      ],
+      "heart": [
+        "Rose",
+        "Geranium"
+      ],
+      "base": [
+        "Musk",
+        "Amber"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Bergamot, jasmine, berries open the fragrance, followed by rose, geranium. The base brings musk, amber.",
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/3_34647ca0-413e-49af-a7d4-042b6d78a207.jpg?v=1783948104",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/khadlaj-sara-100-ml-extrait-de-parfum-spray-for-women-best-price-dubai-uae",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "SARA",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 281,
+    "requestedName": "Sensuos Night",
+    "canonicalName": "Sensuos Night",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/sensous-night-edp-spray-shop-online-best-price-in-dubai-uae",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/sensous-night-edp-spray-shop-online-best-price-in-dubai-uae",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Lemon",
+        "Pineapple",
+        "Green Apple"
+      ],
+      "heart": [
+        "Blackcurrant",
+        "Rose",
+        "Jasmine",
+        "Violet"
+      ],
+      "base": [
+        "Cedarwood",
+        "Patchouli",
+        "Amber",
+        "Vanilla"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Lemon, pineapple, green apple open the fragrance, followed by blackcurrant, rose, jasmine. The base brings cedarwood, patchouli, amber.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/SENSUOS_NIGHT_EDP_SPRAY_100_ML_-_Khadlaj_Perfumes-1965914.jpg?v=1784368457",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/sensous-night-edp-spray-shop-online-best-price-in-dubai-uae",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "SENSUOS NIGHT",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 282,
+    "requestedName": "Shiyaaka Shadow",
+    "canonicalName": "Shiyaaka Shadow",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/khadlaj-special-edition-shiyaaka-shadow-edp-men-fresh-fragrance-dubai-uae",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/khadlaj-special-edition-shiyaaka-shadow-edp-men-fresh-fragrance-dubai-uae",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Pink Pepper",
+        "Grapefruit",
+        "Lavender"
+      ],
+      "heart": [
+        "Dry Amber",
+        "Cedarwood",
+        "Cashmere Wood"
+      ],
+      "base": [
+        "Musk",
+        "Patchouli",
+        "Moss"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Pink pepper, grapefruit, lavender open the fragrance, followed by dry amber, cedarwood, cashmere wood. The base brings musk, patchouli, moss.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Shiyaaka_Shadow-3.jpg?v=1783943040",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/khadlaj-special-edition-shiyaaka-shadow-edp-men-fresh-fragrance-dubai-uae",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "SPECIAL EDITION SHIYAAKA SHADOW",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 283,
+    "requestedName": "Shiyaaka Snow",
+    "canonicalName": "Shiyaaka Snow",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/special-edition-shiyaaka-snow-100-ml-eau-de-parfum-for-men",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/special-edition-shiyaaka-snow-100-ml-eau-de-parfum-for-men",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Mandarin Orange",
+        "Citrus Notes",
+        "Bergamot"
+      ],
+      "heart": [
+        "Neroli",
+        "Nutmeg",
+        "Pink Pepper"
+      ],
+      "base": [
+        "Indonesian Vetivar Oil",
+        "Cardamom"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Mandarin orange, citrus notes, bergamot open the fragrance, followed by neroli, nutmeg, pink pepper. The base brings indonesian vetivar oil, cardamom.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Shiyaaka_Shadow-3_bef3b7fa-b2c9-4ec5-adcc-0b3f9ac42034.jpg?v=1783941783",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/special-edition-shiyaaka-snow-100-ml-eau-de-parfum-for-men",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "SHIYAAKA SNOW",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 284,
+    "requestedName": "Titan",
+    "canonicalName": "Titan",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/khadlaj-titan-100-ml-eau-de-parfum-spray-for-men-refreshing-scents-to-buy-online-dubai-uae",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/khadlaj-titan-100-ml-eau-de-parfum-spray-for-men-refreshing-scents-to-buy-online-dubai-uae",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Mandarin",
+        "Pink Peppercorns",
+        "Grapefruit"
+      ],
+      "heart": [
+        "Lavender",
+        "Incense",
+        "Suede"
+      ],
+      "base": [
+        "Amber",
+        "Vanilla",
+        "Tonka Bean"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Mandarin, pink peppercorns, grapefruit open the fragrance, followed by lavender, incense, suede. The base brings amber, vanilla, tonka bean.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/TITAN-3.jpg?v=1783942163",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/khadlaj-titan-100-ml-eau-de-parfum-spray-for-men-refreshing-scents-to-buy-online-dubai-uae",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "KHADLAJ TITAN",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 285,
+    "requestedName": "Valor Enigma",
+    "canonicalName": "Valor Enigma",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/valor-enigma-100-ml-edp-spray",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/valor-enigma-100-ml-edp-spray",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Oregano"
+      ],
+      "heart": [
+        "Musk",
+        "Nutmeg"
+      ],
+      "base": [
+        "Patchouli",
+        "Cedarwood"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Bergamot, oregano open the fragrance, followed by musk, nutmeg. The base brings patchouli, cedarwood.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/VALOR_ENIGMA_100_ML_EDP_SPRAY_-_Khadlaj_Perfumes-1966082.jpg?v=1783950074",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/valor-enigma-100-ml-edp-spray",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "VALOR ENIGMA",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  },
+  {
+    "number": 286,
+    "requestedName": "Zayaan Gold",
+    "canonicalName": "Zayaan Gold",
+    "canonicalBrand": "Khadlaj",
+    "source": "https://khadlaj-perfumes.com/products/zayaan-gold-100-ml-eau-de-parfum-for-men",
+    "noteSources": [
+      {
+        "label": "Khadlaj official product information",
+        "url": "https://khadlaj-perfumes.com/products/zayaan-gold-100-ml-eau-de-parfum-for-men",
+        "kind": "manufacturer"
+      }
+    ],
+    "notePyramid": {
+      "top": [
+        "Plum",
+        "Cinnamon",
+        "Cardamom",
+        "Bergamot"
+      ],
+      "heart": [
+        "Lavender",
+        "Davana",
+        "Artemisia"
+      ],
+      "base": [
+        "Tonka Bean",
+        "Benzoin",
+        "Patchouli",
+        "Labdanum"
+      ]
+    },
+    "signatureNotes": [],
+    "verified": true,
+    "description": "Plum, cinnamon, cardamom open the fragrance, followed by lavender, davana, artemisia. The base brings tonka bean, benzoin, patchouli.",
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Zayan_Gold-3_RESIZE.jpg?v=1783936479",
+    "imageSourceUrl": "https://khadlaj-perfumes.com/products/zayaan-gold-100-ml-eau-de-parfum-for-men",
+    "size": 100,
+    "notesCaveat": "",
+    "sourceProductTitle": "ZAYAAN GOLD",
+    "sourceVariants": [
+      "100 ML"
+    ],
+    "confirmedSize": 100,
+    "sizeConfirmed": true
+  }
+]

@@ -14,6 +14,8 @@ export function prepareProduct(input,{inlineImages=true}={}){
  for(const key of ['size','price','reference'])p[key]=input[key]===null||input[key]===''?null:input[key];
  for(const key of ['quantity','order','featureOrder'])p[key]=input[key];
  for(const key of ['enquiryOnly','available','deal','featured','hidden','archived','finderVerified','hotSeller'])p[key]=input[key]===true;
+ if(input.packLabel!==undefined){if(typeof input.packLabel!=='string')fail('Pack label must be plain text.');p.packLabel=input.packLabel.trim();}
+ if(input.packContents!==undefined){if(!Array.isArray(input.packContents)||input.packContents.some(item=>typeof item!=='string'))fail('Enter valid pack contents.');p.packContents=input.packContents.map(item=>item.trim());}
  p.image=String(input.image||'');
  if(!/^(assets\/[a-zA-Z0-9._-]+|media\/[a-f0-9]{64}\.(jpg|webp)|data:image\/(jpeg|png|webp);base64,[A-Za-z0-9+/=]+)$/.test(p.image)||p.image.length>1500000)fail('Choose a valid product image under 1 MB after resizing.');
  if(!inlineImages&&p.image.startsWith('data:'))fail('Upload the photo again so it is saved to photo storage.');

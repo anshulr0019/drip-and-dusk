@@ -1,0 +1,2887 @@
+[
+  {
+    "number": 68,
+    "requestedName": "Aphrodite",
+    "canonicalName": "Aphrodite",
+    "canonicalBrand": "Mykonos",
+    "source": "https://officialmykonos.com/products/mykonos-aphrodite-extrait-de-parfum-50ml-100ml",
+    "noteSources": [
+      {
+        "label": "Mykonos official product page",
+        "url": "https://officialmykonos.com/products/mykonos-aphrodite-extrait-de-parfum-50ml-100ml",
+        "kind": "official"
+      }
+    ],
+    "verified": true,
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/aphrodite50mlsku-2.jpg?v=1788493327",
+    "imageSourceUrl": "https://officialmykonos.com/products/mykonos-aphrodite-extrait-de-parfum-50ml-100ml",
+    "notePyramid": {
+      "top": [
+        "Jasmine",
+        "Burnt Cinnamon",
+        "Myrrh"
+      ],
+      "heart": [
+        "Cedarwood",
+        "Tonka Bean",
+        "Sandalwood"
+      ],
+      "base": [
+        "White Musk",
+        "Tobacco",
+        "Vanilla",
+        "Mineral Amber"
+      ]
+    },
+    "description": "Aphrodite opens with jasmine, burnt cinnamon, myrrh, followed by cedarwood, tonka bean, sandalwood, over a base of white musk, tobacco, vanilla."
+  },
+  {
+    "number": 69,
+    "requestedName": "Bonfire Vanilla",
+    "canonicalName": "Bonfire Vanilla",
+    "canonicalBrand": "Mykonos",
+    "source": "https://officialmykonos.com/products/mykonos-bonfire-vanilla-extrait-de-parfum-50ml",
+    "noteSources": [
+      {
+        "label": "Mykonos official product page",
+        "url": "https://officialmykonos.com/products/mykonos-bonfire-vanilla-extrait-de-parfum-50ml",
+        "kind": "official"
+      }
+    ],
+    "verified": true,
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/bonfire_vanilla_50ml_sku_1.jpg?v=1778043194",
+    "imageSourceUrl": "https://officialmykonos.com/products/mykonos-bonfire-vanilla-extrait-de-parfum-50ml",
+    "notePyramid": {
+      "top": [
+        "Cloves",
+        "Nutmeg",
+        "Pink Pepper",
+        "Orange Zest",
+        "Vanilla"
+      ],
+      "heart": [
+        "Smoked Wood",
+        "Pepper",
+        "Guaiac Wood",
+        "Burnt Brown Sugar"
+      ],
+      "base": [
+        "Smoked Wood",
+        "Vanilla",
+        "Marshmallow",
+        "Caramel"
+      ]
+    },
+    "description": "Bonfire Vanilla opens with cloves, nutmeg, pink pepper, followed by smoked wood, pepper, guaiac wood, over a base of smoked wood, vanilla, marshmallow."
+  },
+  {
+    "number": 70,
+    "requestedName": "Café Drops",
+    "canonicalName": "Café Drops",
+    "canonicalBrand": "Mykonos",
+    "source": "https://officialmykonos.com/products/mykonos-cafe-drops-extrait-de-parfum-50ml",
+    "noteSources": [
+      {
+        "label": "Mykonos official product page",
+        "url": "https://officialmykonos.com/products/mykonos-cafe-drops-extrait-de-parfum-50ml",
+        "kind": "official"
+      }
+    ],
+    "verified": true,
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/cafedrops50mlsku-2_8dd91905-d169-4d91-9c33-6ea4ac4e1953.jpg?v=1788493583",
+    "imageSourceUrl": "https://officialmykonos.com/products/mykonos-cafe-drops-extrait-de-parfum-50ml",
+    "notePyramid": {
+      "top": [
+        "Orchid",
+        "Jasmine",
+        "Coffee"
+      ],
+      "heart": [
+        "Vanilla",
+        "Caramel",
+        "Tonka Bean",
+        "Milk"
+      ],
+      "base": [
+        "Amber",
+        "Musk",
+        "Wood",
+        "Patchouli"
+      ]
+    },
+    "description": "Café Drops opens with orchid, jasmine, coffee, followed by vanilla, caramel, tonka bean, over a base of amber, musk, wood."
+  },
+  {
+    "number": 71,
+    "requestedName": "California Blue",
+    "canonicalName": "California Blue",
+    "canonicalBrand": "Mykonos",
+    "source": "https://officialmykonos.com/products/mykonos-california-blue-extrait-de-parfum-50ml",
+    "noteSources": [
+      {
+        "label": "Mykonos official product page",
+        "url": "https://officialmykonos.com/products/mykonos-california-blue-extrait-de-parfum-50ml",
+        "kind": "official"
+      }
+    ],
+    "verified": true,
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/california_blue_50ml_sku-2.jpg?v=1788852387",
+    "imageSourceUrl": "https://officialmykonos.com/products/mykonos-california-blue-extrait-de-parfum-50ml",
+    "notePyramid": {
+      "top": [
+        "Lavender",
+        "Pear",
+        "Grapefruit",
+        "Pink Salt"
+      ],
+      "heart": [
+        "Rhubarb",
+        "Water Blossoms",
+        "Marine Notes"
+      ],
+      "base": [
+        "Moss",
+        "Softwood",
+        "Caramel"
+      ]
+    },
+    "description": "California Blue opens with lavender, pear, grapefruit, followed by rhubarb, water blossoms, marine notes, over a base of moss, softwood, caramel."
+  },
+  {
+    "number": 72,
+    "requestedName": "California Signature",
+    "canonicalName": "California",
+    "canonicalBrand": "Mykonos",
+    "source": "https://officialmykonos.com/products/mykonos-california-signature-50ml",
+    "noteSources": [
+      {
+        "label": "Mykonos official product page",
+        "url": "https://officialmykonos.com/products/mykonos-california-signature-50ml",
+        "kind": "official"
+      }
+    ],
+    "verified": true,
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/california_og_50ml_sku-2_1.jpg?v=1790273586",
+    "imageSourceUrl": "https://officialmykonos.com/products/mykonos-california-signature-50ml",
+    "notePyramid": {
+      "top": [
+        "Mandarin Orange",
+        "Lemon"
+      ],
+      "heart": [
+        "Lychee",
+        "Rosemary",
+        "Cardamom",
+        "Lavender",
+        "Geranium",
+        "Aquatic Notes"
+      ],
+      "base": [
+        "Tonka Bean",
+        "Teak Wood",
+        "Vetiver"
+      ]
+    },
+    "description": "California Signature opens with mandarin orange, lemon, followed by lychee, rosemary, cardamom, over a base of tonka bean, teak wood, vetiver.",
+    "researchCaveat": "Merchant calls this California Signature; official catalogue lists the original California. Confirm exact packaging before fulfilment."
+  },
+  {
+    "number": 73,
+    "requestedName": "Conquer",
+    "canonicalName": "Conquer",
+    "canonicalBrand": "Mykonos",
+    "source": "https://officialmykonos.com/products/mykonos-conquer-extrait-de-parfum-100ml",
+    "noteSources": [
+      {
+        "label": "Mykonos official product page",
+        "url": "https://officialmykonos.com/products/mykonos-conquer-extrait-de-parfum-100ml",
+        "kind": "official"
+      }
+    ],
+    "verified": true,
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/conquer_50ml_sku-2.jpg?v=1781704527",
+    "imageSourceUrl": "https://officialmykonos.com/products/mykonos-conquer-extrait-de-parfum-100ml",
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Ginger",
+        "Cardamom"
+      ],
+      "heart": [
+        "Orris",
+        "Orange Blossom"
+      ],
+      "base": [
+        "Patchouli",
+        "Musk",
+        "Modern Amber",
+        "Vanilla"
+      ]
+    },
+    "description": "Conquer opens with bergamot, ginger, cardamom, followed by orris, orange blossom, over a base of patchouli, musk, modern amber."
+  },
+  {
+    "number": 74,
+    "requestedName": "Dreamscape",
+    "canonicalName": "Dreamscape",
+    "canonicalBrand": "Mykonos",
+    "source": "https://officialmykonos.com/products/mykonos-dreamscape-extrait-de-parfum-50ml-100ml",
+    "noteSources": [
+      {
+        "label": "Mykonos official product page",
+        "url": "https://officialmykonos.com/products/mykonos-dreamscape-extrait-de-parfum-50ml-100ml",
+        "kind": "official"
+      }
+    ],
+    "verified": true,
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/dreamscape_100ml_sku_1.jpg?v=1778043195",
+    "imageSourceUrl": "https://officialmykonos.com/products/mykonos-dreamscape-extrait-de-parfum-50ml-100ml",
+    "notePyramid": {
+      "top": [
+        "Mango",
+        "Italian Lemon",
+        "Rhubarb"
+      ],
+      "heart": [
+        "Ginger",
+        "Jasmine",
+        "Violet",
+        "Praline",
+        "Pink Pepper"
+      ],
+      "base": [
+        "Cedar",
+        "Grey Amber",
+        "Tonka Beans",
+        "Moss"
+      ]
+    },
+    "description": "Dreamscape opens with mango, italian lemon, rhubarb, followed by ginger, jasmine, violet, over a base of cedar, grey amber, tonka beans."
+  },
+  {
+    "number": 75,
+    "requestedName": "Glitch",
+    "canonicalName": "Glitch",
+    "canonicalBrand": "Mykonos",
+    "source": "https://officialmykonos.com/products/mykonos-x-setiawanade-glitch-extrait-de-parfum-50ml",
+    "noteSources": [
+      {
+        "label": "Mykonos official product page",
+        "url": "https://officialmykonos.com/products/mykonos-x-setiawanade-glitch-extrait-de-parfum-50ml",
+        "kind": "official"
+      }
+    ],
+    "verified": true,
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/Glitch_Image_square.png?v=1791170784",
+    "imageSourceUrl": "https://officialmykonos.com/products/mykonos-x-setiawanade-glitch-extrait-de-parfum-50ml",
+    "notePyramid": {
+      "top": [
+        "Sicilian Bergamot",
+        "Apple",
+        "Grapefruit",
+        "Charred Pineapple"
+      ],
+      "heart": [
+        "Lavender",
+        "Artemisia",
+        "Lily of the Valley",
+        "Pink Pepper",
+        "Vanilla",
+        "Dried Jasmine"
+      ],
+      "base": [
+        "Patchouli",
+        "Vanilla",
+        "Musk"
+      ]
+    },
+    "description": "Glitch opens with sicilian bergamot, apple, grapefruit, followed by lavender, artemisia, lily of the valley, over a base of patchouli, vanilla, musk."
+  },
+  {
+    "number": 76,
+    "requestedName": "Inception",
+    "canonicalName": "Inception",
+    "canonicalBrand": "Mykonos",
+    "source": "https://officialmykonos.com/products/mykonos-inception-extrait-de-parfum-50ml",
+    "noteSources": [
+      {
+        "label": "Mykonos official product page",
+        "url": "https://officialmykonos.com/products/mykonos-inception-extrait-de-parfum-50ml",
+        "kind": "official"
+      }
+    ],
+    "verified": true,
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/inception_100ml_sku.jpg?v=1778043194",
+    "imageSourceUrl": "https://officialmykonos.com/products/mykonos-inception-extrait-de-parfum-50ml",
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Ginger",
+        "Orange",
+        "Lemon"
+      ],
+      "heart": [
+        "Neroli",
+        "Cinnamon",
+        "Black Tea",
+        "Biga Flower"
+      ],
+      "base": [
+        "Guaiac",
+        "Musk",
+        "Cedarwood",
+        "LorenoxTM"
+      ]
+    },
+    "description": "Inception opens with bergamot, ginger, orange, followed by neroli, cinnamon, black tea, over a base of guaiac, musk, cedarwood."
+  },
+  {
+    "number": 77,
+    "requestedName": "Luminos",
+    "canonicalName": "Luminos",
+    "canonicalBrand": "Mykonos",
+    "source": "https://officialmykonos.com/products/mykonos-luminos-extrait-de-parfum-50ml",
+    "noteSources": [
+      {
+        "label": "Mykonos official product page",
+        "url": "https://officialmykonos.com/products/mykonos-luminos-extrait-de-parfum-50ml",
+        "kind": "official"
+      }
+    ],
+    "verified": true,
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/luminos50mlsku_1_2.jpg?v=1783073874",
+    "imageSourceUrl": "https://officialmykonos.com/products/mykonos-luminos-extrait-de-parfum-50ml",
+    "notePyramid": {
+      "top": [
+        "Apple",
+        "Banana (Part of The Blue Java Banana Accord)"
+      ],
+      "heart": [
+        "White Florals",
+        "Rose",
+        "Tuberose",
+        "Lily of The Valley",
+        "Orange Blossom",
+        "Vanilla (Part of The Blue Java Banana Accord)"
+      ],
+      "base": [
+        "Amber",
+        "Edible Notes",
+        "Solar Accord",
+        "Amberwood",
+        "Cashmere",
+        "Ice Cream (Part of The Blue Java Banana)"
+      ]
+    },
+    "description": "Luminos opens with apple, banana (part of the blue java banana accord), followed by white florals, rose, tuberose, over a base of amber, edible notes, solar accord."
+  },
+  {
+    "number": 78,
+    "requestedName": "Monaco Royale",
+    "canonicalName": "Monaco Royale",
+    "canonicalBrand": "Mykonos",
+    "source": "https://officialmykonos.com/products/mykonos-monaco-royale-extrait-de-parfum-50ml-100ml",
+    "noteSources": [
+      {
+        "label": "Mykonos official product page",
+        "url": "https://officialmykonos.com/products/mykonos-monaco-royale-extrait-de-parfum-50ml-100ml",
+        "kind": "official"
+      }
+    ],
+    "verified": true,
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/monaco_royale_100ml_sku_2.jpg?v=1791442836",
+    "imageSourceUrl": "https://officialmykonos.com/products/mykonos-monaco-royale-extrait-de-parfum-50ml-100ml",
+    "notePyramid": {
+      "top": [
+        "Pear",
+        "Melon",
+        "Green Notes"
+      ],
+      "heart": [
+        "Soft Wood",
+        "Cedarwood"
+      ],
+      "base": [
+        "Moss",
+        "Caramel",
+        "Musk"
+      ]
+    },
+    "description": "Monaco Royale opens with pear, melon, green notes, followed by soft wood, cedarwood, over a base of moss, caramel, musk."
+  },
+  {
+    "number": 79,
+    "requestedName": "Penthouse",
+    "canonicalName": "Penthouse",
+    "canonicalBrand": "Mykonos",
+    "source": "https://officialmykonos.com/products/mykonos-penthouse-extrait-de-parfum-100ml",
+    "noteSources": [
+      {
+        "label": "Mykonos official product page",
+        "url": "https://officialmykonos.com/products/mykonos-penthouse-extrait-de-parfum-100ml",
+        "kind": "official"
+      }
+    ],
+    "verified": true,
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/penthouse_100ml_sku-2.jpg?v=1785312305",
+    "imageSourceUrl": "https://officialmykonos.com/products/mykonos-penthouse-extrait-de-parfum-100ml",
+    "notePyramid": {
+      "top": [
+        "Sparkling Blackcurrant",
+        "Aldehydes",
+        "Mandarin Zest",
+        "Rose Mist"
+      ],
+      "heart": [
+        "Velvety White Floral",
+        "White Tea Vapor",
+        "White Soap Accord",
+        "Cashmere Wood. Cedarwood"
+      ],
+      "base": [
+        "Tonka Foam",
+        "Iso E Super",
+        "Amber",
+        "Clean Musks",
+        "Cashmeran"
+      ]
+    },
+    "description": "Penthouse opens with sparkling blackcurrant, aldehydes, mandarin zest, followed by velvety white floral, white tea vapor, white soap accord, over a base of tonka foam, iso e super, amber."
+  },
+  {
+    "number": 80,
+    "requestedName": "Pink Beach",
+    "canonicalName": "Pink Beach",
+    "canonicalBrand": "Mykonos",
+    "source": "https://officialmykonos.com/products/mykonos-pink-beach-edp-50ml",
+    "noteSources": [
+      {
+        "label": "Mykonos official product page",
+        "url": "https://officialmykonos.com/products/mykonos-pink-beach-edp-50ml",
+        "kind": "official"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/pinkbeach50mlsku-2_ad3fb979-faa2-4067-ad9b-5ef3ae76d76c.jpg?v=1788493472",
+    "imageSourceUrl": "https://officialmykonos.com/products/mykonos-pink-beach-edp-50ml",
+    "notePyramid": {
+      "top": [
+        "Kiwi",
+        "Rhubarb",
+        "Pink Pepper"
+      ],
+      "heart": [
+        "Jasmine",
+        "Watermelon",
+        "Cyclamen"
+      ],
+      "base": [
+        "Powdery Notes",
+        "Sandalwood",
+        "Tonka Bean",
+        "Cedar",
+        "Musk",
+        "Juniper Berries"
+      ]
+    },
+    "description": "Pink Beach opens with kiwi, rhubarb, pink pepper, followed by jasmine, watermelon, cyclamen, over a base of powdery notes, sandalwood, tonka bean."
+  },
+  {
+    "number": 81,
+    "requestedName": "Pink Drops",
+    "canonicalName": "Pink Drops",
+    "canonicalBrand": "Mykonos",
+    "source": "https://officialmykonos.com/products/mykonos-pink-drops-extrait-de-parfum-50ml",
+    "noteSources": [
+      {
+        "label": "Mykonos official product page",
+        "url": "https://officialmykonos.com/products/mykonos-pink-drops-extrait-de-parfum-50ml",
+        "kind": "official"
+      }
+    ],
+    "verified": true,
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/pinkdrops50mlsku-2.jpg?v=1788493515",
+    "imageSourceUrl": "https://officialmykonos.com/products/mykonos-pink-drops-extrait-de-parfum-50ml",
+    "notePyramid": {
+      "top": [
+        "Strawberry Preserve",
+        "Almond",
+        "Caramel"
+      ],
+      "heart": [
+        "Milk",
+        "Heliotrope"
+      ],
+      "base": [
+        "Vanilla",
+        "White Musk"
+      ]
+    },
+    "description": "Pink Drops opens with strawberry preserve, almond, caramel, followed by milk, heliotrope, over a base of vanilla, white musk."
+  },
+  {
+    "number": 82,
+    "requestedName": "Reflection",
+    "canonicalName": "Reflection",
+    "canonicalBrand": "Mykonos",
+    "source": "https://officialmykonos.com/products/mykonos-reflection-extrait-de-parfum-50ml-100ml",
+    "noteSources": [
+      {
+        "label": "Mykonos official product page",
+        "url": "https://officialmykonos.com/products/mykonos-reflection-extrait-de-parfum-50ml-100ml",
+        "kind": "official"
+      }
+    ],
+    "verified": true,
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/reflection_100ml_sku_1.jpg?v=1778043195",
+    "imageSourceUrl": "https://officialmykonos.com/products/mykonos-reflection-extrait-de-parfum-50ml-100ml",
+    "notePyramid": {
+      "top": [
+        "Grapefruit",
+        "Ginger",
+        "Bergamot"
+      ],
+      "heart": [
+        "Marine Notes",
+        "Cardamom",
+        "Lily of the Valley"
+      ],
+      "base": [
+        "Musk",
+        "Patchouli",
+        "Amber",
+        "Ambroxan"
+      ]
+    },
+    "description": "Reflection opens with grapefruit, ginger, bergamot, followed by marine notes, cardamom, lily of the valley, over a base of musk, patchouli, amber."
+  },
+  {
+    "number": 83,
+    "requestedName": "Reflection Elixir",
+    "canonicalName": "Reflection Elixir",
+    "canonicalBrand": "Mykonos",
+    "source": "https://officialmykonos.com/products/mykonos-reflection-elixir-extrait-de-parfum-50ml",
+    "noteSources": [
+      {
+        "label": "Mykonos official product page",
+        "url": "https://officialmykonos.com/products/mykonos-reflection-elixir-extrait-de-parfum-50ml",
+        "kind": "official"
+      }
+    ],
+    "verified": true,
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/reflectionelixir50mlsku-2.jpg?v=1788873423",
+    "imageSourceUrl": "https://officialmykonos.com/products/mykonos-reflection-elixir-extrait-de-parfum-50ml",
+    "notePyramid": {
+      "top": [
+        "Grapefruit",
+        "Bergamot",
+        "Ginger",
+        "Rhubarb Leaves"
+      ],
+      "heart": [
+        "Ylang-Ylang",
+        "Peach",
+        "Magnolia"
+      ],
+      "base": [
+        "Ambroxan",
+        "Musk",
+        "Chypre Accord"
+      ]
+    },
+    "description": "Reflection Elixir opens with grapefruit, bergamot, ginger, followed by ylang-ylang, peach, magnolia, over a base of ambroxan, musk, chypre accord."
+  },
+  {
+    "number": 84,
+    "requestedName": "Slow Living",
+    "canonicalName": "Slow Living",
+    "canonicalBrand": "Mykonos",
+    "source": "https://officialmykonos.com/products/mykonos-slow-living-edp-50ml",
+    "noteSources": [
+      {
+        "label": "Mykonos official product page",
+        "url": "https://officialmykonos.com/products/mykonos-slow-living-edp-50ml",
+        "kind": "official"
+      }
+    ],
+    "verified": true,
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/slow_living_50ml_sku-2.jpg?v=1788870118",
+    "imageSourceUrl": "https://officialmykonos.com/products/mykonos-slow-living-edp-50ml",
+    "notePyramid": {
+      "top": [
+        "Amalfi Lemon",
+        "Lemon Blossom"
+      ],
+      "heart": [
+        "Neroli",
+        "Lavender"
+      ],
+      "base": [
+        "Orcanox"
+      ]
+    },
+    "description": "Slow Living opens with amalfi lemon, lemon blossom, followed by neroli, lavender, over a base of orcanox."
+  },
+  {
+    "number": 85,
+    "requestedName": "Sorrento",
+    "canonicalName": "Sorrento",
+    "canonicalBrand": "Mykonos",
+    "source": "https://officialmykonos.com/products/mykonos-sorrento-extrait-de-parfum-50ml-100ml",
+    "noteSources": [
+      {
+        "label": "Mykonos official product page",
+        "url": "https://officialmykonos.com/products/mykonos-sorrento-extrait-de-parfum-50ml-100ml",
+        "kind": "official"
+      }
+    ],
+    "verified": true,
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/sorrento_50ml_sku-2.jpg?v=1785993961",
+    "imageSourceUrl": "https://officialmykonos.com/products/mykonos-sorrento-extrait-de-parfum-50ml-100ml",
+    "notePyramid": {
+      "top": [
+        "Fizzy Grapefruit",
+        "Bergamot",
+        "Mandarin Orange",
+        "Magnolia",
+        "Ginger"
+      ],
+      "heart": [
+        "Fizzy Grapefruit",
+        "Neroli",
+        "Ginger",
+        "Powdery Notes",
+        "Water Notes"
+      ],
+      "base": [
+        "Fizzy Grapefruit",
+        "Amber",
+        "Musk",
+        "Cedar",
+        "Patchouli",
+        "Orris Root"
+      ]
+    },
+    "description": "Sorrento opens with fizzy grapefruit, bergamot, mandarin orange, followed by fizzy grapefruit, neroli, ginger, over a base of fizzy grapefruit, amber, musk."
+  },
+  {
+    "number": 86,
+    "requestedName": "Aphrodite",
+    "canonicalName": "Aphrodite",
+    "canonicalBrand": "Mykonos",
+    "source": "https://officialmykonos.com/products/mykonos-aphrodite-extrait-de-parfum-50ml-100ml",
+    "noteSources": [
+      {
+        "label": "Mykonos official product page",
+        "url": "https://officialmykonos.com/products/mykonos-aphrodite-extrait-de-parfum-50ml-100ml",
+        "kind": "official"
+      }
+    ],
+    "verified": true,
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/aphrodite50mlsku-2.jpg?v=1788493327",
+    "imageSourceUrl": "https://officialmykonos.com/products/mykonos-aphrodite-extrait-de-parfum-50ml-100ml",
+    "notePyramid": {
+      "top": [
+        "Jasmine",
+        "Burnt Cinnamon",
+        "Myrrh"
+      ],
+      "heart": [
+        "Cedarwood",
+        "Tonka Bean",
+        "Sandalwood"
+      ],
+      "base": [
+        "White Musk",
+        "Tobacco",
+        "Vanilla",
+        "Mineral Amber"
+      ]
+    },
+    "description": "Aphrodite opens with jasmine, burnt cinnamon, myrrh, followed by cedarwood, tonka bean, sandalwood, over a base of white musk, tobacco, vanilla."
+  },
+  {
+    "number": 87,
+    "requestedName": "California Blue",
+    "canonicalName": "California Blue",
+    "canonicalBrand": "Mykonos",
+    "source": "https://officialmykonos.com/products/mykonos-california-blue-extrait-de-parfum-50ml",
+    "noteSources": [
+      {
+        "label": "Mykonos official product page",
+        "url": "https://officialmykonos.com/products/mykonos-california-blue-extrait-de-parfum-50ml",
+        "kind": "official"
+      }
+    ],
+    "verified": true,
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/california_blue_50ml_sku-2.jpg?v=1788852387",
+    "imageSourceUrl": "https://officialmykonos.com/products/mykonos-california-blue-extrait-de-parfum-50ml",
+    "notePyramid": {
+      "top": [
+        "Lavender",
+        "Pear",
+        "Grapefruit",
+        "Pink Salt"
+      ],
+      "heart": [
+        "Rhubarb",
+        "Water Blossoms",
+        "Marine Notes"
+      ],
+      "base": [
+        "Moss",
+        "Softwood",
+        "Caramel"
+      ]
+    },
+    "description": "California Blue opens with lavender, pear, grapefruit, followed by rhubarb, water blossoms, marine notes, over a base of moss, softwood, caramel."
+  },
+  {
+    "number": 88,
+    "requestedName": "California Signature",
+    "canonicalName": "California",
+    "canonicalBrand": "Mykonos",
+    "source": "https://officialmykonos.com/products/mykonos-california-signature-50ml",
+    "noteSources": [
+      {
+        "label": "Mykonos official product page",
+        "url": "https://officialmykonos.com/products/mykonos-california-signature-50ml",
+        "kind": "official"
+      }
+    ],
+    "verified": true,
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/california_og_50ml_sku-2_1.jpg?v=1790273586",
+    "imageSourceUrl": "https://officialmykonos.com/products/mykonos-california-signature-50ml",
+    "notePyramid": {
+      "top": [
+        "Mandarin Orange",
+        "Lemon"
+      ],
+      "heart": [
+        "Lychee",
+        "Rosemary",
+        "Cardamom",
+        "Lavender",
+        "Geranium",
+        "Aquatic Notes"
+      ],
+      "base": [
+        "Tonka Bean",
+        "Teak Wood",
+        "Vetiver"
+      ]
+    },
+    "description": "California Signature opens with mandarin orange, lemon, followed by lychee, rosemary, cardamom, over a base of tonka bean, teak wood, vetiver.",
+    "researchCaveat": "Merchant calls this California Signature; official catalogue lists the original California. Confirm exact packaging before fulfilment."
+  },
+  {
+    "number": 89,
+    "requestedName": "Conquer",
+    "canonicalName": "Conquer",
+    "canonicalBrand": "Mykonos",
+    "source": "https://officialmykonos.com/products/mykonos-conquer-extrait-de-parfum-100ml",
+    "noteSources": [
+      {
+        "label": "Mykonos official product page",
+        "url": "https://officialmykonos.com/products/mykonos-conquer-extrait-de-parfum-100ml",
+        "kind": "official"
+      }
+    ],
+    "verified": true,
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/conquer_50ml_sku-2.jpg?v=1781704527",
+    "imageSourceUrl": "https://officialmykonos.com/products/mykonos-conquer-extrait-de-parfum-100ml",
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Ginger",
+        "Cardamom"
+      ],
+      "heart": [
+        "Orris",
+        "Orange Blossom"
+      ],
+      "base": [
+        "Patchouli",
+        "Musk",
+        "Modern Amber",
+        "Vanilla"
+      ]
+    },
+    "description": "Conquer opens with bergamot, ginger, cardamom, followed by orris, orange blossom, over a base of patchouli, musk, modern amber."
+  },
+  {
+    "number": 90,
+    "requestedName": "Dreamscape",
+    "canonicalName": "Dreamscape",
+    "canonicalBrand": "Mykonos",
+    "source": "https://officialmykonos.com/products/mykonos-dreamscape-extrait-de-parfum-50ml-100ml",
+    "noteSources": [
+      {
+        "label": "Mykonos official product page",
+        "url": "https://officialmykonos.com/products/mykonos-dreamscape-extrait-de-parfum-50ml-100ml",
+        "kind": "official"
+      }
+    ],
+    "verified": true,
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/dreamscape_100ml_sku_1.jpg?v=1778043195",
+    "imageSourceUrl": "https://officialmykonos.com/products/mykonos-dreamscape-extrait-de-parfum-50ml-100ml",
+    "notePyramid": {
+      "top": [
+        "Mango",
+        "Italian Lemon",
+        "Rhubarb"
+      ],
+      "heart": [
+        "Ginger",
+        "Jasmine",
+        "Violet",
+        "Praline",
+        "Pink Pepper"
+      ],
+      "base": [
+        "Cedar",
+        "Grey Amber",
+        "Tonka Beans",
+        "Moss"
+      ]
+    },
+    "description": "Dreamscape opens with mango, italian lemon, rhubarb, followed by ginger, jasmine, violet, over a base of cedar, grey amber, tonka beans."
+  },
+  {
+    "number": 91,
+    "requestedName": "Glitch",
+    "canonicalName": "Glitch",
+    "canonicalBrand": "Mykonos",
+    "source": "https://officialmykonos.com/products/mykonos-x-setiawanade-glitch-extrait-de-parfum-50ml",
+    "noteSources": [
+      {
+        "label": "Mykonos official product page",
+        "url": "https://officialmykonos.com/products/mykonos-x-setiawanade-glitch-extrait-de-parfum-50ml",
+        "kind": "official"
+      }
+    ],
+    "verified": true,
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/Glitch_Image_square.png?v=1791170784",
+    "imageSourceUrl": "https://officialmykonos.com/products/mykonos-x-setiawanade-glitch-extrait-de-parfum-50ml",
+    "notePyramid": {
+      "top": [
+        "Sicilian Bergamot",
+        "Apple",
+        "Grapefruit",
+        "Charred Pineapple"
+      ],
+      "heart": [
+        "Lavender",
+        "Artemisia",
+        "Lily of the Valley",
+        "Pink Pepper",
+        "Vanilla",
+        "Dried Jasmine"
+      ],
+      "base": [
+        "Patchouli",
+        "Vanilla",
+        "Musk"
+      ]
+    },
+    "description": "Glitch opens with sicilian bergamot, apple, grapefruit, followed by lavender, artemisia, lily of the valley, over a base of patchouli, vanilla, musk."
+  },
+  {
+    "number": 92,
+    "requestedName": "Imperium",
+    "canonicalName": "Imperium",
+    "canonicalBrand": "Mykonos",
+    "source": "https://officialmykonos.com/products/mykonos-imperium-extrait-de-parfum-100ml",
+    "noteSources": [
+      {
+        "label": "Mykonos official product page",
+        "url": "https://officialmykonos.com/products/mykonos-imperium-extrait-de-parfum-100ml",
+        "kind": "official"
+      }
+    ],
+    "verified": true,
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/imperium100mlsku-2.jpg?v=1785855065",
+    "imageSourceUrl": "https://officialmykonos.com/products/mykonos-imperium-extrait-de-parfum-100ml",
+    "notePyramid": {
+      "top": [
+        "Lime",
+        "Bergamot",
+        "Mandarin Orange",
+        "Tropical Fruits"
+      ],
+      "heart": [
+        "Sicilian Orange",
+        "Ginger",
+        "Jasmine",
+        "Coconut Water"
+      ],
+      "base": [
+        "Patchouli",
+        "White Musk",
+        "Tonka Bean"
+      ]
+    },
+    "description": "Imperium opens with lime, bergamot, mandarin orange, followed by sicilian orange, ginger, jasmine, over a base of patchouli, white musk, tonka bean."
+  },
+  {
+    "number": 93,
+    "requestedName": "Inception",
+    "canonicalName": "Inception",
+    "canonicalBrand": "Mykonos",
+    "source": "https://officialmykonos.com/products/mykonos-inception-extrait-de-parfum-50ml",
+    "noteSources": [
+      {
+        "label": "Mykonos official product page",
+        "url": "https://officialmykonos.com/products/mykonos-inception-extrait-de-parfum-50ml",
+        "kind": "official"
+      }
+    ],
+    "verified": true,
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/inception_100ml_sku.jpg?v=1778043194",
+    "imageSourceUrl": "https://officialmykonos.com/products/mykonos-inception-extrait-de-parfum-50ml",
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Ginger",
+        "Orange",
+        "Lemon"
+      ],
+      "heart": [
+        "Neroli",
+        "Cinnamon",
+        "Black Tea",
+        "Biga Flower"
+      ],
+      "base": [
+        "Guaiac",
+        "Musk",
+        "Cedarwood",
+        "LorenoxTM"
+      ]
+    },
+    "description": "Inception opens with bergamot, ginger, orange, followed by neroli, cinnamon, black tea, over a base of guaiac, musk, cedarwood."
+  },
+  {
+    "number": 94,
+    "requestedName": "Inferno",
+    "canonicalName": "Inferno",
+    "canonicalBrand": "Mykonos",
+    "source": "https://officialmykonos.com/products/mykonos-inferno-extrait-de-parfum-100ml",
+    "noteSources": [
+      {
+        "label": "Mykonos official product page",
+        "url": "https://officialmykonos.com/products/mykonos-inferno-extrait-de-parfum-100ml",
+        "kind": "official"
+      }
+    ],
+    "verified": true,
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/inferno_50ml_sku-2.jpg?v=1791457398",
+    "imageSourceUrl": "https://officialmykonos.com/products/mykonos-inferno-extrait-de-parfum-100ml",
+    "notePyramid": {
+      "top": [
+        "Blackcurrant",
+        "Bergamot",
+        "Grapefruit",
+        "Caramelized Pineapple"
+      ],
+      "heart": [
+        "Clove",
+        "Nutmeg",
+        "Ginger",
+        "Cardamom",
+        "Rose"
+      ],
+      "base": [
+        "Patchouli",
+        "Oakmoss",
+        "Amber",
+        "Musk",
+        "Vetiver",
+        "Tonka",
+        "Ambroxan"
+      ]
+    },
+    "description": "Inferno opens with blackcurrant, bergamot, grapefruit, followed by clove, nutmeg, ginger, over a base of patchouli, oakmoss, amber."
+  },
+  {
+    "number": 95,
+    "requestedName": "Marbella",
+    "canonicalName": "Marbella",
+    "canonicalBrand": "Mykonos",
+    "source": "https://officialmykonos.com/products/mykonos-marbella-extrait-de-parfum-100ml",
+    "noteSources": [
+      {
+        "label": "Mykonos official product page",
+        "url": "https://officialmykonos.com/products/mykonos-marbella-extrait-de-parfum-100ml",
+        "kind": "official"
+      }
+    ],
+    "verified": true,
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/marbella_50ml_sku-2.jpg?v=1791457398",
+    "imageSourceUrl": "https://officialmykonos.com/products/mykonos-marbella-extrait-de-parfum-100ml",
+    "notePyramid": {
+      "top": [
+        "Orange",
+        "Lemon",
+        "Passionfruit",
+        "Mango"
+      ],
+      "heart": [
+        "Frangipani",
+        "Solar Notes",
+        "Blackcurrant"
+      ],
+      "base": [
+        "Vanilla",
+        "Benzoin",
+        "Musk",
+        "Labdanum"
+      ]
+    },
+    "description": "Marbella opens with orange, lemon, passionfruit, followed by frangipani, solar notes, blackcurrant, over a base of vanilla, benzoin, musk."
+  },
+  {
+    "number": 96,
+    "requestedName": "Monaco Royale",
+    "canonicalName": "Monaco Royale",
+    "canonicalBrand": "Mykonos",
+    "source": "https://officialmykonos.com/products/mykonos-monaco-royale-extrait-de-parfum-50ml-100ml",
+    "noteSources": [
+      {
+        "label": "Mykonos official product page",
+        "url": "https://officialmykonos.com/products/mykonos-monaco-royale-extrait-de-parfum-50ml-100ml",
+        "kind": "official"
+      }
+    ],
+    "verified": true,
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/monaco_royale_100ml_sku_2.jpg?v=1791442836",
+    "imageSourceUrl": "https://officialmykonos.com/products/mykonos-monaco-royale-extrait-de-parfum-50ml-100ml",
+    "notePyramid": {
+      "top": [
+        "Pear",
+        "Melon",
+        "Green Notes"
+      ],
+      "heart": [
+        "Soft Wood",
+        "Cedarwood"
+      ],
+      "base": [
+        "Moss",
+        "Caramel",
+        "Musk"
+      ]
+    },
+    "description": "Monaco Royale opens with pear, melon, green notes, followed by soft wood, cedarwood, over a base of moss, caramel, musk."
+  },
+  {
+    "number": 97,
+    "requestedName": "Penthouse",
+    "canonicalName": "Penthouse",
+    "canonicalBrand": "Mykonos",
+    "source": "https://officialmykonos.com/products/mykonos-penthouse-extrait-de-parfum-100ml",
+    "noteSources": [
+      {
+        "label": "Mykonos official product page",
+        "url": "https://officialmykonos.com/products/mykonos-penthouse-extrait-de-parfum-100ml",
+        "kind": "official"
+      }
+    ],
+    "verified": true,
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/penthouse_100ml_sku-2.jpg?v=1785312305",
+    "imageSourceUrl": "https://officialmykonos.com/products/mykonos-penthouse-extrait-de-parfum-100ml",
+    "notePyramid": {
+      "top": [
+        "Sparkling Blackcurrant",
+        "Aldehydes",
+        "Mandarin Zest",
+        "Rose Mist"
+      ],
+      "heart": [
+        "Velvety White Floral",
+        "White Tea Vapor",
+        "White Soap Accord",
+        "Cashmere Wood. Cedarwood"
+      ],
+      "base": [
+        "Tonka Foam",
+        "Iso E Super",
+        "Amber",
+        "Clean Musks",
+        "Cashmeran"
+      ]
+    },
+    "description": "Penthouse opens with sparkling blackcurrant, aldehydes, mandarin zest, followed by velvety white floral, white tea vapor, white soap accord, over a base of tonka foam, iso e super, amber."
+  },
+  {
+    "number": 98,
+    "requestedName": "Reflection",
+    "canonicalName": "Reflection",
+    "canonicalBrand": "Mykonos",
+    "source": "https://officialmykonos.com/products/mykonos-reflection-extrait-de-parfum-50ml-100ml",
+    "noteSources": [
+      {
+        "label": "Mykonos official product page",
+        "url": "https://officialmykonos.com/products/mykonos-reflection-extrait-de-parfum-50ml-100ml",
+        "kind": "official"
+      }
+    ],
+    "verified": true,
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/reflection_100ml_sku_1.jpg?v=1778043195",
+    "imageSourceUrl": "https://officialmykonos.com/products/mykonos-reflection-extrait-de-parfum-50ml-100ml",
+    "notePyramid": {
+      "top": [
+        "Grapefruit",
+        "Ginger",
+        "Bergamot"
+      ],
+      "heart": [
+        "Marine Notes",
+        "Cardamom",
+        "Lily of the Valley"
+      ],
+      "base": [
+        "Musk",
+        "Patchouli",
+        "Amber",
+        "Ambroxan"
+      ]
+    },
+    "description": "Reflection opens with grapefruit, ginger, bergamot, followed by marine notes, cardamom, lily of the valley, over a base of musk, patchouli, amber."
+  },
+  {
+    "number": 99,
+    "requestedName": "Slow Living",
+    "canonicalName": "Slow Living",
+    "canonicalBrand": "Mykonos",
+    "source": "https://officialmykonos.com/products/mykonos-slow-living-edp-50ml",
+    "noteSources": [
+      {
+        "label": "Mykonos official product page",
+        "url": "https://officialmykonos.com/products/mykonos-slow-living-edp-50ml",
+        "kind": "official"
+      }
+    ],
+    "verified": true,
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/slow_living_50ml_sku-2.jpg?v=1788870118",
+    "imageSourceUrl": "https://officialmykonos.com/products/mykonos-slow-living-edp-50ml",
+    "notePyramid": {
+      "top": [
+        "Amalfi Lemon",
+        "Lemon Blossom"
+      ],
+      "heart": [
+        "Neroli",
+        "Lavender"
+      ],
+      "base": [
+        "Orcanox"
+      ]
+    },
+    "description": "Slow Living opens with amalfi lemon, lemon blossom, followed by neroli, lavender, over a base of orcanox."
+  },
+  {
+    "number": 100,
+    "requestedName": "Sorrento",
+    "canonicalName": "Sorrento",
+    "canonicalBrand": "Mykonos",
+    "source": "https://officialmykonos.com/products/mykonos-sorrento-extrait-de-parfum-50ml-100ml",
+    "noteSources": [
+      {
+        "label": "Mykonos official product page",
+        "url": "https://officialmykonos.com/products/mykonos-sorrento-extrait-de-parfum-50ml-100ml",
+        "kind": "official"
+      }
+    ],
+    "verified": true,
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/sorrento_50ml_sku-2.jpg?v=1785993961",
+    "imageSourceUrl": "https://officialmykonos.com/products/mykonos-sorrento-extrait-de-parfum-50ml-100ml",
+    "notePyramid": {
+      "top": [
+        "Fizzy Grapefruit",
+        "Bergamot",
+        "Mandarin Orange",
+        "Magnolia",
+        "Ginger"
+      ],
+      "heart": [
+        "Fizzy Grapefruit",
+        "Neroli",
+        "Ginger",
+        "Powdery Notes",
+        "Water Notes"
+      ],
+      "base": [
+        "Fizzy Grapefruit",
+        "Amber",
+        "Musk",
+        "Cedar",
+        "Patchouli",
+        "Orris Root"
+      ]
+    },
+    "description": "Sorrento opens with fizzy grapefruit, bergamot, mandarin orange, followed by fizzy grapefruit, neroli, ginger, over a base of fizzy grapefruit, amber, musk."
+  },
+  {
+    "number": 101,
+    "requestedName": "Untamed",
+    "canonicalName": "Untamed",
+    "canonicalBrand": "Mykonos",
+    "source": "https://officialmykonos.com/products/mykonos-untamed-extrait-de-parfum-100ml",
+    "noteSources": [
+      {
+        "label": "Mykonos official product page",
+        "url": "https://officialmykonos.com/products/mykonos-untamed-extrait-de-parfum-100ml",
+        "kind": "official"
+      }
+    ],
+    "verified": true,
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/untamed100mlsku-2_918c80ba-1ec4-4c6a-aab3-bd64d5f70d00.jpg?v=1785855552",
+    "imageSourceUrl": "https://officialmykonos.com/products/mykonos-untamed-extrait-de-parfum-100ml",
+    "notePyramid": {
+      "top": [
+        "Blackcurrant",
+        "Bergamot",
+        "Lemon",
+        "Aldehydes",
+        "Crisp Linen Accord"
+      ],
+      "heart": [
+        "Praline",
+        "Musk",
+        "Jasmine",
+        "Violet",
+        "Coconut Soap Accord"
+      ],
+      "base": [
+        "Black Amber",
+        "Cedarwood",
+        "Vetiver",
+        "Musk",
+        "Vanilla",
+        "Cashmeran"
+      ]
+    },
+    "description": "Untamed opens with blackcurrant, bergamot, lemon, followed by praline, musk, jasmine, over a base of black amber, cedarwood, vetiver."
+  },
+  {
+    "number": 102,
+    "requestedName": "Utopia",
+    "canonicalName": "Utopia",
+    "canonicalBrand": "Mykonos",
+    "source": "https://officialmykonos.com/products/mykonos-utopia-extrait-de-parfum-100ml",
+    "noteSources": [
+      {
+        "label": "Mykonos official product page",
+        "url": "https://officialmykonos.com/products/mykonos-utopia-extrait-de-parfum-100ml",
+        "kind": "official"
+      }
+    ],
+    "verified": true,
+    "concentration": "Extrait de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/utopia100mlsku_2.jpg?v=1792226588",
+    "imageSourceUrl": "https://officialmykonos.com/products/mykonos-utopia-extrait-de-parfum-100ml",
+    "notePyramid": {
+      "top": [
+        "Calabrian Bergamot",
+        "White Tea",
+        "Fruits",
+        "Citrus"
+      ],
+      "heart": [
+        "Iris",
+        "Jasmine Sambac",
+        "Ylang-ylang"
+      ],
+      "base": [
+        "Cedarwood",
+        "White Musk"
+      ]
+    },
+    "description": "Utopia opens with calabrian bergamot, white tea, fruits, followed by iris, jasmine sambac, ylang-ylang, over a base of cedarwood, white musk."
+  },
+  {
+    "number": 129,
+    "requestedName": "Dirham Cloud",
+    "canonicalName": "Dirham Cloud",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/dirham-cloud-100ml",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/dirham-cloud-100ml",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/5_a0a25bdc-6de8-4b45-bf77-3653eb620874.png?v=1782304655",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/dirham-cloud-100ml",
+    "notePyramid": {
+      "top": [
+        "Fig",
+        "Pear",
+        "Cloudberry"
+      ],
+      "heart": [
+        "Lily of the Valley",
+        "Coconut",
+        "Violet Leaf"
+      ],
+      "base": [
+        "Vanilla",
+        "Sandalwood"
+      ]
+    },
+    "description": "Dirham Cloud opens with fig, pear, cloudberry, followed by lily of the valley, coconut, violet leaf, over a base of vanilla, sandalwood."
+  },
+  {
+    "number": 130,
+    "requestedName": "Rafeef",
+    "canonicalName": "Rafeef",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/rafeef-100ml",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/rafeef-100ml",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/8_41e1543e-90ca-4799-b0fe-bac6be5b72a1.png?v=1786449444",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/rafeef-100ml",
+    "notePyramid": {
+      "top": [
+        "Blackcurrant",
+        "Mandarin"
+      ],
+      "heart": [
+        "Orange Blossom",
+        "Lavender"
+      ],
+      "base": [
+        "Vanilla",
+        "Rum",
+        "Amber"
+      ]
+    },
+    "description": "Rafeef opens with blackcurrant, mandarin, followed by orange blossom, lavender, over a base of vanilla, rum, amber."
+  },
+  {
+    "number": 131,
+    "requestedName": "Fakhar Al Oud The White",
+    "canonicalName": "Fakhar Al Oud The White",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/fakhar-al-oud-the-white-oud-100ml",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/fakhar-al-oud-the-white-oud-100ml",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/Ard_Product_Images_10.png?v=1734405526",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/fakhar-al-oud-the-white-oud-100ml",
+    "notePyramid": {
+      "top": [
+        "Cinnamon",
+        "Lavender"
+      ],
+      "heart": [
+        "Cedarwood",
+        "Caramel"
+      ],
+      "base": [
+        "Tonka bean",
+        "Vanilla",
+        "Amber",
+        "Oud"
+      ]
+    },
+    "description": "Fakhar Al Oud The White opens with cinnamon, lavender, followed by cedarwood, caramel, over a base of tonka bean, vanilla, amber."
+  },
+  {
+    "number": 132,
+    "requestedName": "Jazzab Elixir",
+    "canonicalName": "Jazzab Elixir",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/jazzab-elixir-100ml",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/jazzab-elixir-100ml",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/25_63f0d59a-6f74-4f49-b82a-f062a891ec69.png?v=1792483812",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/jazzab-elixir-100ml",
+    "notePyramid": {
+      "top": [
+        "Almond",
+        "Milk",
+        "Hazelnut",
+        "Mandarin"
+      ],
+      "heart": [
+        "Vanilla",
+        "Toka Bean",
+        "jasmine"
+      ],
+      "base": [
+        "Caramel",
+        "Woody",
+        "Amber",
+        "Musk"
+      ]
+    },
+    "description": "Jazzab Elixir opens with almond, milk, hazelnut, followed by vanilla, toka bean, jasmine, over a base of caramel, woody, amber."
+  },
+  {
+    "number": 133,
+    "requestedName": "Al Dirgham Limited Edition",
+    "canonicalName": "Al Dirgham Limited Edition",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/al-dirgham-limited-edition-100-ml",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/al-dirgham-limited-edition-100-ml",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/ArdProductImages_17.png?v=1734354129",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/al-dirgham-limited-edition-100-ml",
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Lemon",
+        "Juniperberry"
+      ],
+      "heart": [
+        "Sea Accord",
+        "Ginger",
+        "Apple"
+      ],
+      "base": [
+        "Musk",
+        "Cashmeran",
+        "Amber Gris",
+        "Tonka Beans",
+        "Sandalwood",
+        "Patchouli",
+        "Cedarwood"
+      ]
+    },
+    "description": "Al Dirgham Limited Edition opens with bergamot, lemon, juniperberry, followed by sea accord, ginger, apple, over a base of musk, cashmeran, amber gris."
+  },
+  {
+    "number": 134,
+    "requestedName": "Al Dirgham Special Edition",
+    "canonicalName": "Al Dirgham Special Edition",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/al-dirgham-special-edition",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/al-dirgham-special-edition",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/Ard_Product_Images.png?v=1734348156",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/al-dirgham-special-edition",
+    "description": "Al Dirgham Special Edition opens with apple, clove, cardamom, followed by cinnamon, geranium, lavender, over vanilla, amber, cedarwood.",
+    "notePyramid": {
+      "top": [
+        "Apple",
+        "Clove",
+        "Cardamom"
+      ],
+      "heart": [
+        "Cinnamon",
+        "Geranium",
+        "Lavender"
+      ],
+      "base": [
+        "Vanilla",
+        "Amber",
+        "Cedarwood"
+      ]
+    },
+    "researchCaveat": "Stages follow the product store’s explicitly described opening, heart and base."
+  },
+  {
+    "number": 135,
+    "requestedName": "Al Hur So Intense",
+    "canonicalName": "Al Hur So Intense",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/al-hur-so-intense-100-ml",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/al-hur-so-intense-100-ml",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/Ard_Product_Images_22.png?v=1734355090",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/al-hur-so-intense-100-ml",
+    "notePyramid": {
+      "top": [
+        "Black Pepper",
+        "Pineapple",
+        "Tobacco"
+      ],
+      "heart": [
+        "Coffee",
+        "Iris",
+        "Patchouli"
+      ],
+      "base": [
+        "Amber",
+        "Vanilla",
+        "Benzoin",
+        "Labdanum"
+      ]
+    },
+    "description": "Al Hur So Intense opens with black pepper, pineapple, tobacco, followed by coffee, iris, patchouli, over a base of amber, vanilla, benzoin."
+  },
+  {
+    "number": 136,
+    "requestedName": "Alora",
+    "canonicalName": "Alora",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/alora-100-ml",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/alora-100-ml",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/ArdProductImages_25.png?v=1734356059",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/alora-100-ml",
+    "notePyramid": {
+      "top": [
+        "Plum",
+        "Peach",
+        "Orange",
+        "Lavender"
+      ],
+      "heart": [
+        "Orange Blossom",
+        "Raspberry",
+        "Lily of the Valley",
+        "Patchouli",
+        "Jasmine"
+      ],
+      "base": [
+        "Musk",
+        "Vanilla",
+        "Vetiver",
+        "Oakmoss",
+        "Caramel"
+      ]
+    },
+    "description": "Alora opens with plum, peach, orange, followed by orange blossom, raspberry, lily of the valley, over a base of musk, vanilla, vetiver."
+  },
+  {
+    "number": 137,
+    "requestedName": "Amiral",
+    "canonicalName": "Amiral",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://perfumeheaven.co.uk/products/amiral-100ml-eau-de-parfum-ard-al-zaafaran",
+    "noteSources": [
+      {
+        "label": "Perfume Heaven product reference",
+        "url": "https://perfumeheaven.co.uk/products/amiral-100ml-eau-de-parfum-ard-al-zaafaran",
+        "kind": "retailer"
+      },
+      {
+        "label": "Beautyhouse product reference",
+        "url": "https://beautyhouse.com/products/ard-al-zaafaran-amiral-eau-de-parfum-for-everyone",
+        "kind": "retailer"
+      }
+    ],
+    "verified": false,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0580/7420/2293/files/01blllfz9o.png?v=1723882982",
+    "imageSourceUrl": "https://beautyhouse.com/products/ard-al-zaafaran-amiral-eau-de-parfum-for-everyone",
+    "notePyramid": {
+      "top": [
+        "Lemon",
+        "Apple",
+        "Pink pepper",
+        "Grapefruit"
+      ],
+      "heart": [
+        "Cinnamon",
+        "Violet",
+        "Orchid"
+      ],
+      "base": [
+        "Musk",
+        "Tonka bean",
+        "Sandalwood",
+        "Amber",
+        "Moss"
+      ]
+    },
+    "description": "Citrus and apple lead into a spicy floral heart, with a musky, woody and amber base.",
+    "researchCaveat": "Pyramid follows Perfume Heaven. Retail sources differ on the dry-down; not manufacturer-confirmed, so excluded from automatic recommendations."
+  },
+  {
+    "number": 138,
+    "requestedName": "Anoud",
+    "canonicalName": "Anoud",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/anoud-100-ml",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/anoud-100-ml",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/Ard_Product_Images_21.png?v=1734530885",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/anoud-100-ml",
+    "notePyramid": {
+      "top": [
+        "Marine",
+        "Neroli",
+        "Cactus"
+      ],
+      "heart": [
+        "Jasmine",
+        "Tuberose",
+        "Magnolia"
+      ],
+      "base": [
+        "Patchouli",
+        "Amber",
+        "Cashmeran",
+        "Brown Sugar"
+      ]
+    },
+    "description": "Anoud opens with marine, neroli, cactus, followed by jasmine, tuberose, magnolia, over a base of patchouli, amber, cashmeran."
+  },
+  {
+    "number": 139,
+    "requestedName": "Bareq",
+    "canonicalName": "Bareq",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/bareq",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/bareq",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/ArdProductImages_1.png?v=1734348897",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/bareq",
+    "description": "Bareq opens with grapefruit, bergamot, mandarin, followed by sage, praline, tea, over oakmoss, ambergris.",
+    "notePyramid": {
+      "top": [
+        "Grapefruit",
+        "Bergamot",
+        "Mandarin",
+        "Lemon"
+      ],
+      "heart": [
+        "Sage",
+        "Praline",
+        "Tea"
+      ],
+      "base": [
+        "Oakmoss",
+        "Ambergris"
+      ]
+    },
+    "researchCaveat": "Stages follow the product store’s explicitly described opening, heart and base."
+  },
+  {
+    "number": 140,
+    "requestedName": "Bareq Mirage",
+    "canonicalName": "Bareq Mirage",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/bareq-mirage",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/bareq-mirage",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/Ard_Product_Images_2.png?v=1734349278",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/bareq-mirage",
+    "description": "Bareq Mirage opens with bergamot, followed by orris, clary sage, over tonka bean, cedarwood.",
+    "notePyramid": {
+      "top": [
+        "Bergamot"
+      ],
+      "heart": [
+        "Orris",
+        "Clary sage"
+      ],
+      "base": [
+        "Tonka bean",
+        "Cedarwood"
+      ]
+    },
+    "researchCaveat": "Stages follow the product store’s explicitly described opening, heart and base."
+  },
+  {
+    "number": 141,
+    "requestedName": "Barez",
+    "canonicalName": "Barez",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/barez-100ml",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/barez-100ml",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/Ard_Product_Images_36.png?v=1734358825",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/barez-100ml",
+    "notePyramid": {
+      "top": [
+        "Pear",
+        "Apple",
+        "Cassis"
+      ],
+      "heart": [
+        "Rose",
+        "Tuberose",
+        "Orange"
+      ],
+      "base": [
+        "Sandalwood",
+        "Vanilla",
+        "Musk"
+      ]
+    },
+    "description": "Barez opens with pear, apple, cassis, followed by rose, tuberose, orange, over a base of sandalwood, vanilla, musk."
+  },
+  {
+    "number": 142,
+    "requestedName": "Bint Haroon",
+    "canonicalName": "Bint Haroon",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/bint-hooran-100-ml",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/bint-hooran-100-ml",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/ArdProductImages_38.png?v=1734402372",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/bint-hooran-100-ml",
+    "notePyramid": {
+      "top": [
+        "Almond",
+        "Coffee",
+        "Ylang Ylang"
+      ],
+      "heart": [
+        "Jasmine",
+        "Rose"
+      ],
+      "base": [
+        "Vanilla",
+        "Praline",
+        "Musk",
+        "Amber"
+      ]
+    },
+    "description": "Bint Haroon opens with almond, coffee, ylang ylang, followed by jasmine, rose, over a base of vanilla, praline, musk."
+  },
+  {
+    "number": 143,
+    "requestedName": "Dirham EDP + Deo 50ml",
+    "canonicalName": "Dirham EDP + Deo 50ml",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/dirham-new-100-ml",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/dirham-new-100-ml",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/Ard_Product_Images_6_8fc56bee-4811-460b-8d45-86d285cfd8c6.png?v=1734404452",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/dirham-new-100-ml",
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Mandarin"
+      ],
+      "heart": [
+        "Jasmine",
+        "Orris"
+      ],
+      "base": [
+        "Sandalwood",
+        "Amber",
+        "Musk"
+      ]
+    },
+    "description": "Dirham EDP + Deo 50ml opens with bergamot, mandarin, followed by jasmine, orris, over a base of sandalwood, amber, musk.",
+    "packLabel": "Perfume & deodorant set",
+    "packContents": [
+      "100ml perfume",
+      "50ml deodorant"
+    ],
+    "researchCaveat": "Merchant specifies deodorant bundle; product photograph shows the perfume reference, not necessarily both supplied pieces."
+  },
+  {
+    "number": 144,
+    "requestedName": "Dirham Gold",
+    "canonicalName": "Dirham Gold",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/dirham-gold-100-ml",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/dirham-gold-100-ml",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/Ard_Product_Images_5_902eb6fe-fb80-46c6-aef2-7def624375f6.png?v=1734404633",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/dirham-gold-100-ml",
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Black Pepper",
+        "Orange Blossom",
+        "Lavender"
+      ],
+      "heart": [
+        "Amber",
+        "Marine"
+      ],
+      "base": [
+        "Amber",
+        "Vanilla"
+      ]
+    },
+    "description": "Dirham Gold opens with bergamot, black pepper, orange blossom, followed by amber, marine, over a base of amber, vanilla."
+  },
+  {
+    "number": 145,
+    "requestedName": "Dirham Oud",
+    "canonicalName": "Dirham Oud",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/dirham-oud-100-ml",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/dirham-oud-100-ml",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/IMP-Don_tdeleteArdProductImages.png?v=1737631056",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/dirham-oud-100-ml",
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Pepper",
+        "Orange Blossom",
+        "Lavender"
+      ],
+      "heart": [
+        "Amber",
+        "Marine",
+        "Musk"
+      ],
+      "base": [
+        "Amber",
+        "Vanilla",
+        "Labdanum",
+        "Sandalwood",
+        "Oud"
+      ]
+    },
+    "description": "Dirham Oud opens with bergamot, pepper, orange blossom, followed by amber, marine, musk, over a base of amber, vanilla, labdanum."
+  },
+  {
+    "number": 146,
+    "requestedName": "Dirham Wardi",
+    "canonicalName": "Dirham Wardi",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/dirham-wardi-100-ml",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/dirham-wardi-100-ml",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/ArdProductImages_8_2d680f28-7f27-47f1-8411-5f3bc19eb3f5.png?v=1734405634",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/dirham-wardi-100-ml",
+    "notePyramid": {
+      "top": [
+        "Almond",
+        "Mandarin",
+        "Grapefruit",
+        "Blackcurrant"
+      ],
+      "heart": [
+        "Jasmine",
+        "Rose",
+        "Tuberose",
+        "Ylang Ylang",
+        "Jasmine",
+        "Orange Blossom"
+      ],
+      "base": [
+        "Sandalwood",
+        "Musk",
+        "Amber"
+      ]
+    },
+    "description": "Dirham Wardi opens with almond, mandarin, grapefruit, followed by jasmine, rose, tuberose, over a base of sandalwood, musk, amber."
+  },
+  {
+    "number": 147,
+    "requestedName": "Fakhar Al Oud",
+    "canonicalName": "Fakhar Al Oud",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/fakhar-al-oud-100ml",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/fakhar-al-oud-100ml",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/IMP_-_Don_t_delete_Ard_Product_Images.png?v=1750252904",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/fakhar-al-oud-100ml",
+    "notePyramid": {
+      "top": [
+        "Saffron"
+      ],
+      "heart": [
+        "Caramel",
+        "Rose"
+      ],
+      "base": [
+        "Oud",
+        "Oakmoss",
+        "Labdanum"
+      ]
+    },
+    "description": "Fakhar Al Oud opens with saffron, followed by caramel, rose, over a base of oud, oakmoss, labdanum."
+  },
+  {
+    "number": 148,
+    "requestedName": "Jazzab Gold",
+    "canonicalName": "Jazzab Gold",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/jazzab-gold-100-ml",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/jazzab-gold-100-ml",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/61.png?v=1734443580",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/jazzab-gold-100-ml",
+    "notePyramid": {
+      "top": [
+        "Apple",
+        "Peach",
+        "Plum",
+        "Pineapple"
+      ],
+      "heart": [
+        "Rose",
+        "Lily Of The Valley",
+        "Jasmine"
+      ],
+      "base": [
+        "Vanilla",
+        "Tonka Bean",
+        "Cedarwood",
+        "Patchouli"
+      ]
+    },
+    "description": "Jazzab Gold opens with apple, peach, plum, followed by rose, lily of the valley, jasmine, over a base of vanilla, tonka bean, cedarwood."
+  },
+  {
+    "number": 149,
+    "requestedName": "Jazzab Silver",
+    "canonicalName": "Jazzab Silver",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/jazzab-silver-100-ml",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/jazzab-silver-100-ml",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/62_6059db3f-85b9-4bee-99b0-40b6e929c480.png?v=1734443630",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/jazzab-silver-100-ml",
+    "notePyramid": {
+      "top": [
+        "Lemon",
+        "Calone",
+        "Sage"
+      ],
+      "heart": [
+        "Incense",
+        "Freesia"
+      ],
+      "base": [
+        "Cedarwood",
+        "Musk"
+      ]
+    },
+    "description": "Jazzab Silver opens with lemon, calone, sage, followed by incense, freesia, over a base of cedarwood, musk."
+  },
+  {
+    "number": 150,
+    "requestedName": "Liwan",
+    "canonicalName": "Liwan",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/liwan-100-ml",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/liwan-100-ml",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/64.png?v=1734443580",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/liwan-100-ml",
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Pink Pepper",
+        "Pineapple",
+        "Grapefruit"
+      ],
+      "heart": [
+        "Rosemary",
+        "Ylang Ylang",
+        "Osmanthus",
+        "Caramel"
+      ],
+      "base": [
+        "Vetiver",
+        "Patchouli",
+        "Leather",
+        "Musk",
+        "Amber"
+      ]
+    },
+    "description": "Liwan opens with bergamot, pink pepper, pineapple, followed by rosemary, ylang ylang, osmanthus, over a base of vetiver, patchouli, leather."
+  },
+  {
+    "number": 151,
+    "requestedName": "Manaal",
+    "canonicalName": "Manaal",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/manaal",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/manaal",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/ArdProductImages_11.png?v=1734352288",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/manaal",
+    "notePyramid": {
+      "top": [
+        "Lavender",
+        "Bergamot"
+      ],
+      "heart": [
+        "Pistachio",
+        "Almond",
+        "White Flowers"
+      ],
+      "base": [
+        "Vanilla",
+        "Cacao",
+        "Sandalwood"
+      ]
+    },
+    "description": "Manaal opens with lavender, bergamot, followed by pistachio, almond, white flowers, over a base of vanilla, cacao, sandalwood."
+  },
+  {
+    "number": 152,
+    "requestedName": "Meethaq",
+    "canonicalName": "Meethaq",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/meethaq",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/meethaq",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/71_4b1aa064-8dc9-42fe-bf18-b2ed44b4e8bb.png?v=1734446881",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/meethaq",
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Lavender"
+      ],
+      "heart": [
+        "Lily Of The Valley",
+        "Geranium",
+        "Jasmine"
+      ],
+      "base": [
+        "Tonka Bean",
+        "Vanilla",
+        "Patchouli",
+        "Amber"
+      ]
+    },
+    "description": "Meethaq opens with bergamot, lavender, followed by lily of the valley, geranium, jasmine, over a base of tonka bean, vanilla, patchouli."
+  },
+  {
+    "number": 153,
+    "requestedName": "Midnight Oud",
+    "canonicalName": "Midnight Oud",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/midnight-oud-100-ml",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/midnight-oud-100-ml",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/73.png?v=1734446630",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/midnight-oud-100-ml",
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Thyme",
+        "Incense"
+      ],
+      "heart": [
+        "Opoponax",
+        "Leather",
+        "Patchouli"
+      ],
+      "base": [
+        "Labdanum",
+        "Vanilla",
+        "Amber"
+      ]
+    },
+    "description": "Midnight Oud opens with bergamot, thyme, incense, followed by opoponax, leather, patchouli, over a base of labdanum, vanilla, amber."
+  },
+  {
+    "number": 154,
+    "requestedName": "Mithqal",
+    "canonicalName": "Mithqal",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/mithqal-100-ml",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/mithqal-100-ml",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/74_abfc24fe-e1bd-4c84-b084-163fbeda4933.png?v=1734446984",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/mithqal-100-ml",
+    "notePyramid": {
+      "top": [
+        "Aldehydic",
+        "Blueberry"
+      ],
+      "heart": [
+        "Rose",
+        "Saffron"
+      ],
+      "base": [
+        "Incense",
+        "Sandalwood"
+      ]
+    },
+    "description": "Mithqal opens with aldehydic, blueberry, followed by rose, saffron, over a base of incense, sandalwood."
+  },
+  {
+    "number": 155,
+    "requestedName": "Mousuf",
+    "canonicalName": "Mousuf",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/mousuf-100-ml",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/mousuf-100-ml",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/132.png?v=1735039910",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/mousuf-100-ml",
+    "notePyramid": {
+      "top": [
+        "Pineapple",
+        "Lemon",
+        "Bergamot"
+      ],
+      "heart": [
+        "Hazelnut",
+        "Black Pepper"
+      ],
+      "base": [
+        "Amberwood Accord",
+        "Patchouli",
+        "Cedarwood"
+      ]
+    },
+    "description": "Mousuf opens with pineapple, lemon, bergamot, followed by hazelnut, black pepper, over a base of amberwood accord, patchouli, cedarwood."
+  },
+  {
+    "number": 156,
+    "requestedName": "Mousuf Azure",
+    "canonicalName": "Mousuf Azure",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/mousuf-azuree",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/mousuf-azuree",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/130.png?v=1735039953",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/mousuf-azuree",
+    "notePyramid": {
+      "top": [
+        "bergamot",
+        "juniper",
+        "a touch of pepper"
+      ],
+      "heart": [
+        "cashmeran",
+        "amber cardamom",
+        "aromatic"
+      ],
+      "base": [
+        "Musk",
+        "sandalwood",
+        "cedarwood",
+        "oakmoss"
+      ]
+    },
+    "description": "Mousuf Azure opens with bergamot, juniper, a touch of pepper, followed by cashmeran, amber cardamom, aromatic, over a base of musk, sandalwood, cedarwood."
+  },
+  {
+    "number": 157,
+    "requestedName": "Mousuf Daisy",
+    "canonicalName": "Mousuf Daisy",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/mousuf-daisy",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/mousuf-daisy",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/192.png?v=1768211932",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/mousuf-daisy",
+    "notePyramid": {
+      "top": [
+        "pink pepper",
+        "the sweet burst of blueberry"
+      ],
+      "heart": [
+        "jasmine",
+        "daisy",
+        "offering a fresh",
+        "floral"
+      ],
+      "base": [
+        "Amber",
+        "cedarwood",
+        "musk",
+        "vanilla"
+      ]
+    },
+    "description": "Mousuf Daisy opens with pink pepper, the sweet burst of blueberry, followed by jasmine, daisy, offering a fresh, over a base of amber, cedarwood, musk."
+  },
+  {
+    "number": 158,
+    "requestedName": "Mousuf Ramadi",
+    "canonicalName": "Mousuf Ramadi",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/mousuf-ramadi-100-ml",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/mousuf-ramadi-100-ml",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/191.png?v=1768211869",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/mousuf-ramadi-100-ml",
+    "notePyramid": {
+      "top": [
+        "Lavender",
+        "Marine"
+      ],
+      "heart": [
+        "Jasmine",
+        "Lily of Valley",
+        "Orris"
+      ],
+      "base": [
+        "Amber",
+        "Oakmoss",
+        "Musk"
+      ]
+    },
+    "description": "Mousuf Ramadi opens with lavender, marine, followed by jasmine, lily of valley, orris, over a base of amber, oakmoss, musk."
+  },
+  {
+    "number": 159,
+    "requestedName": "Mousuf Wardi",
+    "canonicalName": "Mousuf Wardi",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/mousuf-wardi-100ml",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/mousuf-wardi-100ml",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/131.png?v=1735039979",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/mousuf-wardi-100ml",
+    "notePyramid": {
+      "top": [
+        "Lychee",
+        "Raspberry",
+        "Black Currant"
+      ],
+      "heart": [
+        "Rose"
+      ],
+      "base": [
+        "Patchouli",
+        "Benzoin",
+        "Amber",
+        "Musk"
+      ]
+    },
+    "description": "Mousuf Wardi opens with lychee, raspberry, black currant, followed by rose, over a base of patchouli, benzoin, amber."
+  },
+  {
+    "number": 160,
+    "requestedName": "Oud 24 Hours Majestic Gold",
+    "canonicalName": "Oud 24 Hours Majestic Gold",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/oud-24-hours-majestic-gold-100-ml",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/oud-24-hours-majestic-gold-100-ml",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/80.png?v=1734447128",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/oud-24-hours-majestic-gold-100-ml",
+    "notePyramid": {
+      "top": [
+        "Lemon",
+        "Cinnamon"
+      ],
+      "heart": [
+        "Cedarwood",
+        "Jasmine",
+        "Apple"
+      ],
+      "base": [
+        "Vanilla",
+        "Tonka Bean",
+        "Leather"
+      ]
+    },
+    "description": "Oud 24 Hours Majestic Gold opens with lemon, cinnamon, followed by cedarwood, jasmine, apple, over a base of vanilla, tonka bean, leather."
+  },
+  {
+    "number": 161,
+    "requestedName": "Oud 24 Hours + Deo 50ml",
+    "canonicalName": "Oud 24 Hours + Deo 50ml",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/oud-24-hours-100ml",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/oud-24-hours-100ml",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/79.png?v=1734447127",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/oud-24-hours-100ml",
+    "notePyramid": {
+      "top": [
+        "Ylang Ylang",
+        "Pink Pepper",
+        "Incense",
+        "Bergamot"
+      ],
+      "heart": [
+        "Plum",
+        "Lily of the Valley",
+        "Patchouli",
+        "Coconut"
+      ],
+      "base": [
+        "Musk",
+        "Tonka Bean",
+        "Vanilla",
+        "Vetiver",
+        "Patchouli",
+        "Oakmoss"
+      ]
+    },
+    "description": "Oud 24 Hours + Deo 50ml opens with ylang ylang, pink pepper, incense, followed by plum, lily of the valley, patchouli, over a base of musk, tonka bean, vanilla.",
+    "packLabel": "Perfume & deodorant set",
+    "packContents": [
+      "100ml perfume",
+      "50ml deodorant"
+    ],
+    "researchCaveat": "Merchant specifies deodorant bundle; product photograph shows the perfume reference, not necessarily both supplied pieces."
+  },
+  {
+    "number": 162,
+    "requestedName": "Qidwah (85ml)",
+    "canonicalName": "Qidwah",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/qidwah-85ml",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/qidwah-85ml",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/88.png?v=1734449544",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/qidwah-85ml",
+    "notePyramid": {
+      "top": [
+        "Green",
+        "Pepper",
+        "Bergamot"
+      ],
+      "heart": [
+        "Rose",
+        "Jasmine"
+      ],
+      "base": [
+        "Vanilla",
+        "Amber",
+        "Honey",
+        "Musk"
+      ]
+    },
+    "description": "Qidwah opens with green, pepper, bergamot, followed by rose, jasmine, over a base of vanilla, amber, honey."
+  },
+  {
+    "number": 163,
+    "requestedName": "Riqqa",
+    "canonicalName": "Riqqa",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/riqqa-100-ml-ard",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/riqqa-100-ml-ard",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/91_fa3f0361-ee5e-489f-bd8c-6b20d469c29f.png?v=1734455166",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/riqqa-100-ml-ard",
+    "notePyramid": {
+      "top": [
+        "Bergamot",
+        "Cinnamon",
+        "Nutmeg"
+      ],
+      "heart": [
+        "Dates",
+        "Lily of the Valley",
+        "Praline",
+        "Tuberose"
+      ],
+      "base": [
+        "Tonka bean",
+        "Benzoin",
+        "Myrrh",
+        "Akigalawood",
+        "Vanilla",
+        "Amber"
+      ]
+    },
+    "description": "Riqqa opens with bergamot, cinnamon, nutmeg, followed by dates, lily of the valley, praline, over a base of tonka bean, benzoin, myrrh."
+  },
+  {
+    "number": 164,
+    "requestedName": "Safeer Al Hub Everlasting",
+    "canonicalName": "Safeer Al Hub Everlasting",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/safeer-al-hub-everlasting",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/safeer-al-hub-everlasting",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/Ard_Product_Images_5.png?v=1734350268",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/safeer-al-hub-everlasting",
+    "description": "Safeer Al Hub Everlasting opens with saffron, grapefruit, pineapple, followed by jasmine, cassis, amberwood, over ambergris, caramel.",
+    "notePyramid": {
+      "top": [
+        "Saffron",
+        "Grapefruit",
+        "Pineapple"
+      ],
+      "heart": [
+        "Jasmine",
+        "Cassis",
+        "Amberwood"
+      ],
+      "base": [
+        "Ambergris",
+        "Caramel"
+      ]
+    },
+    "researchCaveat": "Stages follow the product store’s explicitly described opening, heart and base."
+  },
+  {
+    "number": 165,
+    "requestedName": "Saheb (70ml)",
+    "canonicalName": "Saheb",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/saheb-70ml",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/saheb-70ml",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/94.png?v=1734455377",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/saheb-70ml",
+    "notePyramid": {
+      "top": [
+        "Cassis",
+        "Orange",
+        "Juniper Berries"
+      ],
+      "heart": [
+        "Cardamom",
+        "Jasmine"
+      ],
+      "base": [
+        "Cedarwood",
+        "Vetiver"
+      ]
+    },
+    "description": "Saheb opens with cassis, orange, juniper berries, followed by cardamom, jasmine, over a base of cedarwood, vetiver."
+  },
+  {
+    "number": 166,
+    "requestedName": "Sahebat Al Jamal (70ml)",
+    "canonicalName": "Sahebat Al Jamal",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/sahebat-al-jamal",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/sahebat-al-jamal",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/Ard_Product_Images_6.png?v=1734350470",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/sahebat-al-jamal",
+    "description": "Sahebat Al Jamal opens with pink pepper, angelica root, red fruits, followed by iris, orange blossom, over musk, ambroxan, tonka bean.",
+    "notePyramid": {
+      "top": [
+        "Pink pepper",
+        "Angelica root",
+        "Red fruits"
+      ],
+      "heart": [
+        "Iris",
+        "Orange blossom"
+      ],
+      "base": [
+        "Musk",
+        "Ambroxan",
+        "Tonka bean"
+      ]
+    },
+    "researchCaveat": "Stages follow the product store’s explicitly described opening, heart and base."
+  },
+  {
+    "number": 167,
+    "requestedName": "Saher Al Layali",
+    "canonicalName": "Saher Al Layali",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/saher-al-layali",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/saher-al-layali",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/95.png?v=1734455377",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/saher-al-layali",
+    "notePyramid": {
+      "top": [
+        "Apple",
+        "Pink Pepper"
+      ],
+      "heart": [
+        "Lavender",
+        "Pineapple",
+        "Tonka bean"
+      ],
+      "base": [
+        "Amber",
+        "Leather",
+        "Patchouli",
+        "Vanilla"
+      ]
+    },
+    "description": "Saher Al Layali opens with apple, pink pepper, followed by lavender, pineapple, tonka bean, over a base of amber, leather, patchouli."
+  },
+  {
+    "number": 168,
+    "requestedName": "Shams Al Emarat Khususi Glaze & Glow",
+    "canonicalName": "Shams Al Emarat Khususi Glaze & Glow",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/shams-al-emarat-khususi-glaze-glow-100-ml",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/shams-al-emarat-khususi-glaze-glow-100-ml",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/196_7cb63b24-2ecc-40f5-82e4-3003d2aa986f.png?v=1776944292",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/shams-al-emarat-khususi-glaze-glow-100-ml",
+    "notePyramid": {
+      "top": [
+        "Cinnamon",
+        "Apple"
+      ],
+      "heart": [
+        "Poached Pear",
+        "Vanilla Bear",
+        "Sugar"
+      ],
+      "base": [
+        "Caramel",
+        "Cedarwood",
+        "Tonka Bean"
+      ]
+    },
+    "description": "Shams Al Emarat Khususi Glaze & Glow opens with cinnamon, apple, followed by poached pear, vanilla bear, sugar, over a base of caramel, cedarwood, tonka bean."
+  },
+  {
+    "number": 169,
+    "requestedName": "Shams Al Emarat Khususi Iced Petals",
+    "canonicalName": "Shams Al Emarat Khususi Iced Petals",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/shams-al-emarat-khususi-iced-petal-100-ml",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/shams-al-emarat-khususi-iced-petal-100-ml",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/196.png?v=1776514045",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/shams-al-emarat-khususi-iced-petal-100-ml",
+    "notePyramid": {
+      "top": [
+        "Ginger",
+        "Lavender",
+        "Saffron",
+        "Apple"
+      ],
+      "heart": [
+        "Orange Blossom",
+        "Sugar"
+      ],
+      "base": [
+        "Cashmeran",
+        "Musk",
+        "Vanilla",
+        "Amber",
+        "Benzoin",
+        "Caramel"
+      ]
+    },
+    "description": "Shams Al Emarat Khususi Iced Petals opens with ginger, lavender, saffron, followed by orange blossom, sugar, over a base of cashmeran, musk, vanilla."
+  },
+  {
+    "number": 170,
+    "requestedName": "Shams Al Emarat Khususi Pink Blush",
+    "canonicalName": "Shams Al Emarat Khususi Pink Blush",
+    "canonicalBrand": "Ard Al Zaafaran",
+    "source": "https://ardalzaafaranshop.com/products/shams-al-emarat-pink-blush-100ml",
+    "noteSources": [
+      {
+        "label": "Ard Al Zaafaran product store",
+        "url": "https://ardalzaafaranshop.com/products/shams-al-emarat-pink-blush-100ml",
+        "kind": "brand_store"
+      }
+    ],
+    "verified": true,
+    "concentration": "Eau de Parfum",
+    "imageUrl": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/IMP-Don_tdeleteArdProductImages_875bc919-1ef6-4903-bdbd-04db19c943ed.png?v=1747056072",
+    "imageSourceUrl": "https://ardalzaafaranshop.com/products/shams-al-emarat-pink-blush-100ml",
+    "notePyramid": {
+      "top": [
+        "Raspberry",
+        "Nectarine",
+        "Apple"
+      ],
+      "heart": [
+        "Marshmallow",
+        "Strawberry",
+        "Coconut",
+        "Orange Blossom"
+      ],
+      "base": [
+        "Cream",
+        "Sugar",
+        "Vanilla"
+      ]
+    },
+    "description": "Shams Al Emarat Khususi Pink Blush opens with raspberry, nectarine, apple, followed by marshmallow, strawberry, coconut, over a base of cream, sugar, vanilla."
+  }
+]

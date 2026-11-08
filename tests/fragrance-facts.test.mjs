@@ -1,3 +1,4 @@
+import {novemberProducts,novemberFragranceFacts} from '../dist/november-products.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -7,10 +8,10 @@ import {fragranceFacts,researchMetadata} from '../dist/fragrance-facts.mjs';
 import {processNotes,notesError} from '../dist/fragrance-notes.mjs';
 import {discoverScents,verifiedForFinder,recommendScents} from '../dist/scent-matching.mjs';
 import {prepareProduct} from '../backend/catalogue.mjs';
-const all=defaults().products.filter(p=>fragranceFacts[p.group]?.factsRevision===1),answer={occasion:'date',style:'leather',budget:'any',format:'Full bottle'};
+const all=defaults().products.filter(p=>p.order<2000&&fragranceFacts[p.group]?.factsRevision===1),answer={occasion:'date',style:'leather',budget:'any',format:'Full bottle'};
 test('every fragrance has complete sourced stages, a description and explicit evidence quality',()=>{
- assert.equal(Object.keys(fragranceFacts).length,159);
- assert.equal(Object.values(fragranceFacts).filter(f=>f.notesQuality==='manufacturer'&&f.factsRevision<3).length,64);
+ const legacyGroups=new Set(defaults().products.filter(p=>p.order<2000).map(p=>p.group));assert.equal(legacyGroups.size,159);assert.equal(Object.keys(fragranceFacts).length,new Set([...legacyGroups,...Object.keys(novemberFragranceFacts)]).size);
+ assert.equal(Object.entries(fragranceFacts).filter(([group,f])=>legacyGroups.has(group)&&f.notesQuality==='manufacturer'&&f.factsRevision<3).length,64);
  for(const p of all){assert.equal(notesError(p.notePyramid),'',p.name);assert(verifiedForFinder(p),p.name);assert(!/pending verification|from the Drip & Dusk Instagram edit/.test(p.description));assert(p.description.length>45);assert(p.noteSources.length);for(const s of p.noteSources)assert.equal(new URL(s.url).protocol,'https:');assert.equal(p.factsCheckedAt,'2026-10-28');}
  const lava=all.find(p=>p.group==='rasasi-hawas-lava-gold');assert(lava.notePyramid.heart.includes('Leather'));assert(lava.notePyramid.base.includes('Caramel'));
  const tea=all.find(p=>p.group==='mykonos-inception');assert(tea.notePyramid.heart.includes('Black tea'));
@@ -20,7 +21,7 @@ test('browser revision upgrades pending seed data, preserving commerce, media, a
  for(const k of ['notePyramid','factsRevision','finderVerified'])delete pending[k];
  const custom={...all[0],notePyramid:{top:['Lemon'],heart:['Rose'],base:['Musk']},notes:'Lemon / Rose / Musk'};delete custom.factsRevision;
  const state={...defaults(),catalogueRevision:3,products:[pending,custom]};const next=migrateCatalogue(state);
- assert.equal(next.products.length,141);assert.equal(next.products[0].price,4567);assert.equal(next.products[0].size,150);assert.equal(next.products[0].quantity,9);assert.equal(next.products[0].hidden,true);assert.equal(next.products[0].image,pending.image);assert(next.products[0].notePyramid.heart.includes('Leather'));assert.equal(next.products[1],custom);assert.equal(migrateCatalogue(next),next);assert(!pending.notePyramid);
+ assert.equal(next.products.length,141+novemberProducts.length);assert.equal(next.products[0].price,4567);assert.equal(next.products[0].size,150);assert.equal(next.products[0].quantity,9);assert.equal(next.products[0].hidden,true);assert.equal(next.products[0].image,pending.image);assert(next.products[0].notePyramid.heart.includes('Leather'));assert.equal(next.products[1],custom);assert.equal(migrateCatalogue(next),next);assert(!pending.notePyramid);
 });
 test('discovery suggestions support tea, marine and leather without implying available stock or satisfying an unknown price cap',()=>{
  for(const style of ['tea','marine','leather','spicy']){const results=discoverScents(all,{...answer,style});assert(results.length,style);assert(results.every(m=>m.product.enquiryOnly&&!inStock(m.product)&&m.notes.length));assert(results.every(m=>m.tradeOff.includes('seller confirmation')));}

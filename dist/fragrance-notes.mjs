@@ -1,5 +1,6 @@
 // Shared by the owner form, server catalogue and scent finder.
-const clean=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+// Note names repeat across hundreds of products; cache the accent-folding so home-page edits stay cheap on phones.
+const cleaned=new Map(),clean=s=>{s=String(s||'');let v=cleaned.get(s);if(v===undefined){if(cleaned.size>5000)cleaned.clear();v=s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();cleaned.set(s,v)}return v};
 export const matchesNoteTerm=(note,term)=>term==='sand'?/\bsand\b/.test(clean(note)):clean(note).includes(term);
 export const noteTerms={
  fresh:['bergamot','lemon','lime','orange','mandarin','tangerine','grapefruit','apple','pineapple','aquatic','marine','citrus','mint','green','pear','sea water','ambergris'],
@@ -18,7 +19,7 @@ export function notePyramid(p){
  if(p.notePyramid&&typeof p.notePyramid==='object')return Object.fromEntries(['top','heart','base'].map(k=>[k,split(p.notePyramid[k])]));
  const stages=String(p.notes||'').split('/');return {top:split(stages[0]),heart:split(stages[1]),base:split(stages[2])};
 }
-export const invalidNoteText=/pending|conflict|unverified|unknown|confirm|verification|no account yet|sign in|log in|add to cart|checkout|subscribe|cookie|password|privacy policy/i;
+export const invalidNoteText=/pending|conflict|unverified|unknown|confirm|verification|no account yet|sign in|log in|add to cart|checkout|subscribe|cookies?\s*(?:policy|consent|settings|preferences|banner)|password|privacy policy/i;
 export function validNoteList(value){const list=split(value);return list.length>0&&list.length<=24&&list.every(n=>n.length<=80&&!invalidNoteText.test(n));}
 export function notesError(pyramid){
  if(!pyramid||typeof pyramid!=='object')return 'Add top, heart and base notes.';

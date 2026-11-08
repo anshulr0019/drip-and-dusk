@@ -62,7 +62,7 @@ function rankScents(products,answers,references){
  if(!occasions.some(o=>o.id===answers?.occasion)||!styles.some(s=>s.id===answers?.style)||!budgets.some(b=>b.id===String(answers?.budget))||!formats.some(f=>f.id===answers?.format))return [];
  const limit=answers.budget==='any'?Infinity:Number(answers.budget),byGroup=new Map();
  for(const p of catalogue(products)){
-  if(!(references?p.enquiryOnly:inStock(p))||!verifiedForFinder(p)||(!references&&p.price>limit)||(answers.format!=='either'&&p.format!==answers.format))continue;
+  if(!['Full bottle','Decant'].includes(p.format)||!(references?p.enquiryOnly:inStock(p))||!verifiedForFinder(p)||(!references&&p.price>limit)||(answers.format!=='either'&&p.format!==answers.format))continue;
   const found=answers.style==='unsure'?[]:evidence(p,answers.style);
   if(answers.style!=='unsure'&&!found.length)continue;
   const primary=answers.style!=='unsure'&&(directions[answers.style]?.test(clean(fragranceProfile(p).family))||(answers.style==='sweet'&&/creamy|sweet|gourmand/.test(clean(p.description))));

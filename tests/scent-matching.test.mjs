@@ -9,9 +9,9 @@ test('returns up to three distinct, available fragrances within the selected bud
  for(const m of matches){assert.ok(m.product.available);assert.ok(m.product.price<=3000);assert.equal(m.product.format,'Full bottle');assert.ok(m.reason);assert.ok(m.tradeOff);}
  assert.equal(JSON.stringify(products),before);
 });
-test('coffee means verified coffee notes, with Qahwa ranked first and no unrelated filler',()=>{
+test('coffee recommendations require verified coffee evidence without unrelated filler as the catalogue expands',()=>{
  const matches=recommendScents(products,{...answers,occasion:'cafe',style:'coffee'});
- assert.deepEqual(matches.map(m=>m.product.group),['qahwa','asad','maison-alhambra-kismet-for-men']);assert.ok(matches.every(m=>m.reason.toLowerCase().includes('coffee')));
+ assert.equal(matches.length,3);assert.equal(new Set(matches.map(m=>m.product.group)).size,3);for(const m of matches){assert.ok(verifiedForFinder(m.product));assert.ok(m.notes.some(note=>/coffee/i.test(note)));assert.ok(m.reason.toLowerCase().includes('coffee'));assert.ok(m.product.available&&m.product.quantity>0&&m.product.price<=3000);assert.equal(m.product.format,'Full bottle');}assert.equal(recommendScents(products.filter(p=>p.group==='qahwa'),{...answers,occasion:'cafe',style:'coffee'}).length,1);
  assert.ok(recommendScents(products,{...answers,occasion:'cafe',style:'fresh'}).every(m=>m.notes.length>0));
 });
 test('budget never silently swaps bottles for decants; either format prefers a bottle only when it fits',()=>{

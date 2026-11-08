@@ -1,4 +1,5 @@
 // Display-only framing; uploaded owner images and established catalogue photos are untouched.
+import {novemberPhotoLayouts} from './november-photo-layouts.mjs';
 import {maisonPhotoLayouts} from './maison-photo-layouts.mjs';
 export const photoLayouts ={
   "assets/community-guerlain-vetiver-edt.webp": {
@@ -536,6 +537,6 @@ export const photoLayouts ={
     "brightness": 1
   }
 };
-Object.assign(photoLayouts,maisonPhotoLayouts);
+Object.assign(photoLayouts,maisonPhotoLayouts,novemberPhotoLayouts);
 export const photoSource = image => photoLayouts[image]?.source || image;
 export function photoLayoutStyle(image){const f=photoLayouts[image];return f?`--bottle-scale:${f.scale};--photo-x:${f.x}%;--photo-y:${f.y}%;--photo-clip:inset(${f.clip.map(n=>n+'%').join(' ')});--photo-brightness:${f.brightness||(/lattafa-atlas-(canyon|glacial-valley)/.test(image)?1.037:1)};`:'';}

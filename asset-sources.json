@@ -838,5 +838,3059 @@
       "image": "https://cdn.shopify.com/s/files/1/0288/5228/9622/products/image_c4176d8e-a924-42e7-8190-eaeb6ab18a7f.jpg?v=1673894574",
       "identification": "Retail product reference image. Packaging may vary; does not certify the seller’s actual stock condition."
     }
+  ],
+  "november_catalogue": [
+    {
+      "asset": "dist/assets/nov-001.webp",
+      "name": "Afnan 9PM Gift Set",
+      "source": "https://india.afnan.com/products/gift-set-9pm-homme",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/9PMfront_0f7ea5b3-2265-4c9c-b4c4-084c2fec5879_1.png?v=1775463227",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-002.webp",
+      "name": "Afnan 9AM Dive Gift Set",
+      "source": "https://india.afnan.com/products/gift-set-9am-dive",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/9AMDivefront_287f6066-9291-40be-b6e0-7b1eb011b73a_1.png?v=1775463218",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-003.webp",
+      "name": "Afnan Supremacy Silver Gift Set",
+      "source": "https://india.afnan.com/products/gift-supremacy-silver",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/Untitled_design_28_2.png?v=1779112924",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-004.webp",
+      "name": "Afnan Supremacy Not Only Intense Gift Set",
+      "source": "https://india.afnan.com/products/gift-set-supremacy-not-only-intense",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/Intensefront_1.png?v=1775463223",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-005.webp",
+      "name": "Afnan Turathi Homme Blue Gift Set",
+      "source": "https://india.afnan.com/products/gift-set-turathi-blue",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/Untitled_design_29.png?v=1775225986",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-006.webp",
+      "name": "Afnan Supremacy Pink Gift Set",
+      "source": "https://india.afnan.com/products/gift-set-supremacy-pour-femme",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/Afnan_Product_Image.png?v=1775225993",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-007.webp",
+      "name": "Afnan 9 Series Discovery Kit",
+      "source": "https://india.afnan.com/products/9-series-discovery-kit",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/9series.png?v=1775225617",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-008.webp",
+      "name": "Afnan Supremacy Femme Series Discovery Kit",
+      "source": "https://india.afnan.com/products/supremacy-femme-series-discovery-kit",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/SupremacyFemme.png?v=1775225614",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-009.webp",
+      "name": "Afnan Supremacy Homme Series Discovery Kit",
+      "source": "https://india.afnan.com/products/supremacy-homme-series-discovery-kit",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/SupremacyHomme.png?v=1775225613",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-010.webp",
+      "name": "Afnan Men Series Discovery Kit",
+      "source": "https://india.afnan.com/products/afnan-men-series-discovery-kit",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/MensSeriesDiscoveryKit_2.png?v=1775225514",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-011.webp",
+      "name": "Afnan Bouquet Series Discovery Kit",
+      "source": "https://india.afnan.com/products/bouquet-femme-series-discovery-kit",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/BouquetSeriesDiscoveryKit_2.png?v=1775225508",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-012.webp",
+      "name": "Afnan Stardust",
+      "source": "https://india.afnan.com/products/stardust",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/Stardust_-_1_Co_3.png?v=1789997591",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-013.webp",
+      "name": "Afnan 9AM",
+      "source": "https://india.afnan.com/products/9-am",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/9AM-Product-01_1705e829-06de-41a2-9e8d-559bdacd86f4.jpg?v=1775463205",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-014.webp",
+      "name": "Afnan 9AM Dive",
+      "source": "https://india.afnan.com/products/9-am-dive",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/9AM-Dive-01_d4bc61ac-c620-48b5-984b-c18d267d8e82.jpg?v=1775463202",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-015.webp",
+      "name": "Afnan 9AM Pour Femme",
+      "source": "https://india.afnan.com/products/9-am-pour-femme",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/9AM-01_1.jpg?v=1775463232",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-016.webp",
+      "name": "Afnan 9PM",
+      "source": "https://india.afnan.com/products/9-pm",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/9PM-Product-01_ac1d61da-68bc-4cf8-8086-8cdc3accfbdf.jpg?v=1775463199",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-017.webp",
+      "name": "Afnan 9PM Elixir",
+      "source": "https://india.afnan.com/products/9-pm-elixir",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/9PM_ELIXIR-1.png?v=1775225603",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-018.webp",
+      "name": "Afnan 9PM Night Out",
+      "source": "https://india.afnan.com/products/9pm-night-out",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/72.png?v=1775225492",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-019.webp",
+      "name": "Afnan 9PM Pour Femme",
+      "source": "https://india.afnan.com/products/9-pm-pour-femme",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/9PM-01_1.jpg?v=1775463235",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-020.webp",
+      "name": "Afnan 9PM Rebel",
+      "source": "https://india.afnan.com/products/9-pm-rebel",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/Untitled_design_51.png?v=1775225902",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-021.webp",
+      "name": "Afnan Cherry Bouquet (80ml)",
+      "source": "https://india.afnan.com/products/cherry-bouquet",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/CherryBouquetFront.png?v=1775226024",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-022.webp",
+      "name": "Afnan Delicious Bouquet (80ml)",
+      "source": "https://india.afnan.com/products/delicious-bouquet",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/DELICIOUSBOUQUET.png?v=1775225849",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-023.webp",
+      "name": "Afnan Edict Musctique (80ml)",
+      "source": "https://india.afnan.com/products/edict-musctique",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/Edict-Musctique-01.jpg?v=1775463242",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-024.webp",
+      "name": "Afnan Edict Ouddiction (80ml)",
+      "source": "https://india.afnan.com/products/edict-ouddiction",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/Edict-Ouddiction-01.jpg?v=1775463239",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-025.webp",
+      "name": "Afnan Historic Doria",
+      "source": "https://india.afnan.com/products/historic-doria",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/Historic_Doria_aef6d88c-fe01-4782-8817-79890e92d525.png?v=1775226258",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-026.webp",
+      "name": "Afnan Historic Olmeda",
+      "source": "https://india.afnan.com/products/historic-olmeda",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/Historic-Olmeda-01.png?v=1775226250",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-027.webp",
+      "name": "Afnan Historic Sahara",
+      "source": "https://india.afnan.com/products/historic-sahara",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/HistoricSahara.png?v=1775225653",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-028.webp",
+      "name": "Afnan Highness Green III",
+      "source": "https://india.afnan.com/products/highness-iii",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/Highness-III-Product-01_e64054da-74ee-4315-97f5-77ba75d85d68.jpg?v=1775463363",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-029.webp",
+      "name": "Afnan Highness Red IV",
+      "source": "https://india.afnan.com/products/highness-iv",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/Highness-IV-Product-01_af675196-772a-4d56-959d-4e18dcaaa207.jpg?v=1775463365",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-030.webp",
+      "name": "Afnan Highness Maroon IX",
+      "source": "https://uae.afnan.com/products/highness-ix-perfume",
+      "image": "https://cdn.shopify.com/s/files/1/0444/6194/9090/products/Highness-IX-Product-01.jpg?v=1775567057",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-031.webp",
+      "name": "Afnan Highness Black V",
+      "source": "https://india.afnan.com/products/highness-v",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/Highness-V-Product-01_990d0021-df72-4381-921c-845c77c282bd.jpg?v=1775463367",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-032.webp",
+      "name": "Afnan Highness Blue VI",
+      "source": "https://india.afnan.com/products/highness-vi",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/Highness-VI-Product-01.jpg?v=1775463275",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-033.webp",
+      "name": "Afnan Highness Brown X",
+      "source": "https://india.afnan.com/products/highness-x",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/Highness-X-Product-01.jpg?v=1775463273",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-034.webp",
+      "name": "Afnan Highness White VII",
+      "source": "https://india.afnan.com/products/his-highness-white",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/HH-White-Product-01.jpg?v=1775463361",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-035.webp",
+      "name": "Afnan Inara White",
+      "source": "https://india.afnan.com/products/inara-white",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/Inara-White-Product-01.jpg?v=1775463289",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-036.webp",
+      "name": "Afnan Kiaana Angel",
+      "source": "https://india.afnan.com/products/kiaana-angel",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/KiaanaAngelFrontGray.png?v=1775225886",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-037.webp",
+      "name": "Afnan Kiaana Crush",
+      "source": "https://india.afnan.com/products/kiaana-crush",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/KiaanaCrushFront_1.png?v=1775225865",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-038.webp",
+      "name": "Afnan Kiaana Vibes",
+      "source": "https://uae.afnan.com/products/kiaana-vibes-perfume",
+      "image": "https://cdn.shopify.com/s/files/1/0444/6194/9090/files/84.png?v=1775211660",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-039.webp",
+      "name": "Afnan La Fleur Bouquet (80ml)",
+      "source": "https://india.afnan.com/products/la-fleur-bouquet",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/FloralBouquetefront.png?v=1775226336",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-040.webp",
+      "name": "Afnan Lynked Freedom Black",
+      "source": "https://india.afnan.com/products/lynked-freedom",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/Lynke-freedom-1.png?v=1775225569",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-041.webp",
+      "name": "Afnan Lynked Freedom Gold",
+      "source": "https://india.afnan.com/products/lynked-forever",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/Lynked-forever-2.png?v=1775225549",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-042.webp",
+      "name": "Afnan Modest Pour Homme Une",
+      "source": "https://india.afnan.com/products/modest-une",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/Modest-Black-01.jpg?v=1775463291",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-043.webp",
+      "name": "Afnan Mystique Bouquet (80ml)",
+      "source": "https://india.afnan.com/products/mystique-bouquet",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/MystiqueBouquetfront.png?v=1775226088",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-044.webp",
+      "name": "Afnan Portrait Abstract",
+      "source": "https://india.afnan.com/products/portrait-abstract",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/AbstractFront_dfa9f596-1f77-4bfb-8d5a-c4eb2c342827.png?v=1775226129",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-045.webp",
+      "name": "Afnan Portrait Revival",
+      "source": "https://india.afnan.com/products/portrait-revival",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/RevivalFront_1d9bd3a1-0ae0-4bcd-b9a5-73697febb2c2.png?v=1775226116",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-046.webp",
+      "name": "Afnan Rare",
+      "source": "https://india.afnan.com/products/rare",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/Rare_c145d177-8442-49f8-9651-18f8eaa54569.png?v=1775226442",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-047.webp",
+      "name": "Afnan Rare Carbon",
+      "source": "https://india.afnan.com/products/rare-carbon",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/Rare_Carbon.png?v=1775226450",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-048.webp",
+      "name": "Afnan Rare Passion",
+      "source": "https://india.afnan.com/products/rare-passion",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/Rare_Passion.png?v=1775226221",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-049.webp",
+      "name": "Afnan Rare Reef",
+      "source": "https://india.afnan.com/products/rare-reef",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/Rare_Reef_1.png?v=1775225815",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-050.webp",
+      "name": "Afnan Souvenir Blooming Bliss",
+      "source": "https://india.afnan.com/products/souvenir-blooming-bliss",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/BloomingBlissfront.png?v=1775226011",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-051.webp",
+      "name": "Afnan Supremacy Collector's Edition",
+      "source": "https://india.afnan.com/products/supremacy-collectors-edition",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/Supremacy_Collections_Edition_Front_1.png?v=1783343903",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-052.webp",
+      "name": "Afnan Supremacy Gala",
+      "source": "https://india.afnan.com/products/supremacy-gala-luxury-collection",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/GalaFront_01fc3a98-96df-436c-b05c-4a839869e238.png?v=1775226063",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-053.webp",
+      "name": "Afnan Supremacy Heaven",
+      "source": "https://india.afnan.com/products/supremacy-in-heaven",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/SupremacyHeaven-Product-01.jpg?v=1775463328",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-054.webp",
+      "name": "Afnan Supremacy Incense",
+      "source": "https://india.afnan.com/products/supremacy-incense",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/SupremacyIncense-Product-01_7fe9df00-71bb-4edd-84c3-20ade057be51.jpg?v=1775463324",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-055.webp",
+      "name": "Afnan Supremacy Pour Femme Pink",
+      "source": "https://india.afnan.com/products/supremacy-pink",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/SupremacyPink-Product-01.jpg?v=1775463316",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-056.webp",
+      "name": "Afnan Supremacy Pour Femme Purple",
+      "source": "https://india.afnan.com/products/supremacy-purple",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/SupremacyPurple-Product-01.jpg?v=1775463312",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-057.webp",
+      "name": "Afnan Supremacy Tapis Rouge (90ml)",
+      "source": "https://india.afnan.com/products/supremacy-tapis-rouge",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/TapisRogueFront_e3fc4b34-b3c0-4911-99e3-df8ebec88313.png?v=1775226076",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-058.webp",
+      "name": "Afnan Supremacy In Oud",
+      "source": "https://india.afnan.com/products/supremacy-oud",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/SupremacyOud-Product-01.jpg?v=1775463283",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-059.webp",
+      "name": "Afnan Supremacy Noir",
+      "source": "https://uae.afnan.com/products/supremacy-noir-perfume",
+      "image": "https://cdn.shopify.com/s/files/1/0444/6194/9090/products/SupremacyNoir-Product-01.jpg?v=1775567146",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-060.webp",
+      "name": "Afnan Supremacy Not Only Intense (100ml)",
+      "source": "https://india.afnan.com/products/supremacy-not-only-intense",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/SupremacyIntense-Product-01.jpg?v=1775463285",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-061.webp",
+      "name": "Afnan Supremacy Not Only Intense (150ml)",
+      "source": "https://india.afnan.com/products/supremacy-not-only-intense-luxury-collection-150-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/SupremacyIntenseFront_915b8ec0-5095-4040-8544-18547c50ed2a.png?v=1775226043",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-062.webp",
+      "name": "Afnan Supremacy Pour Homme Silver",
+      "source": "https://india.afnan.com/products/supremacy-silver",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/SupremacySilver-Product-01.jpg?v=1775463308",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-063.webp",
+      "name": "Afnan Tribute Blue",
+      "source": "https://india.afnan.com/products/tribute-blue",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/TributeBlue-Product-01.jpg?v=1775463305",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-064.webp",
+      "name": "Afnan Turathi Blue (90ml)",
+      "source": "https://india.afnan.com/products/turathi-blue-homme",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/Turathi_Blue-1.png?v=1775226305",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-065.webp",
+      "name": "Afnan Turathi Brown (90ml)",
+      "source": "https://india.afnan.com/products/turathi-brown-homme",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/Turathi_Brown-1.png?v=1775226280",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-066.webp",
+      "name": "Afnan Turathi Electric (90ml)",
+      "source": "https://india.afnan.com/products/turathi-electric",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/TurathiElectric.png?v=1775225732",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-067.webp",
+      "name": "Afnan Violet Bouquet (80ml)",
+      "source": "https://india.afnan.com/products/violet-bouquet",
+      "image": "https://cdn.shopify.com/s/files/1/0718/0265/0857/files/VioletBouquetefront.png?v=1775226380",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-068.webp",
+      "name": "Mykonos Aphrodite",
+      "source": "https://officialmykonos.com/products/mykonos-aphrodite-extrait-de-parfum-50ml-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/aphrodite50mlsku-2.jpg?v=1788493327",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-069.webp",
+      "name": "Mykonos Bonfire Vanilla",
+      "source": "https://officialmykonos.com/products/mykonos-bonfire-vanilla-extrait-de-parfum-50ml",
+      "image": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/bonfire_vanilla_50ml_sku_1.jpg?v=1778043194",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-070.webp",
+      "name": "Mykonos Café Drops",
+      "source": "https://officialmykonos.com/products/mykonos-cafe-drops-extrait-de-parfum-50ml",
+      "image": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/cafedrops50mlsku-2_8dd91905-d169-4d91-9c33-6ea4ac4e1953.jpg?v=1788493583",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-071.webp",
+      "name": "Mykonos California Blue",
+      "source": "https://officialmykonos.com/products/mykonos-california-blue-extrait-de-parfum-50ml",
+      "image": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/california_blue_50ml_sku-2.jpg?v=1788852387",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-072.webp",
+      "name": "Mykonos California Signature",
+      "source": "https://officialmykonos.com/products/mykonos-california-signature-50ml",
+      "image": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/california_og_50ml_sku-2_1.jpg?v=1790273586",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-073.webp",
+      "name": "Mykonos Conquer",
+      "source": "https://officialmykonos.com/products/mykonos-conquer-extrait-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/conquer_50ml_sku-2.jpg?v=1781704527",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-074.webp",
+      "name": "Mykonos Dreamscape",
+      "source": "https://officialmykonos.com/products/mykonos-dreamscape-extrait-de-parfum-50ml-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/dreamscape_100ml_sku_1.jpg?v=1778043195",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-075.webp",
+      "name": "Mykonos Glitch",
+      "source": "https://officialmykonos.com/products/mykonos-x-setiawanade-glitch-extrait-de-parfum-50ml",
+      "image": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/Glitch_Image_square.png?v=1791170784",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-076.webp",
+      "name": "Mykonos Inception",
+      "source": "https://officialmykonos.com/products/mykonos-inception-extrait-de-parfum-50ml",
+      "image": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/inception_100ml_sku.jpg?v=1778043194",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-077.webp",
+      "name": "Mykonos Luminos",
+      "source": "https://officialmykonos.com/products/mykonos-luminos-extrait-de-parfum-50ml",
+      "image": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/luminos50mlsku_1_2.jpg?v=1783073874",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-078.webp",
+      "name": "Mykonos Monaco Royale",
+      "source": "https://officialmykonos.com/products/mykonos-monaco-royale-extrait-de-parfum-50ml-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/monaco_royale_100ml_sku_2.jpg?v=1791442836",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-079.webp",
+      "name": "Mykonos Penthouse",
+      "source": "https://officialmykonos.com/products/mykonos-penthouse-extrait-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/penthouse_100ml_sku-2.jpg?v=1785312305",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-080.webp",
+      "name": "Mykonos Pink Beach",
+      "source": "https://officialmykonos.com/products/mykonos-pink-beach-edp-50ml",
+      "image": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/pinkbeach50mlsku-2_ad3fb979-faa2-4067-ad9b-5ef3ae76d76c.jpg?v=1788493472",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-081.webp",
+      "name": "Mykonos Pink Drops",
+      "source": "https://officialmykonos.com/products/mykonos-pink-drops-extrait-de-parfum-50ml",
+      "image": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/pinkdrops50mlsku-2.jpg?v=1788493515",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-082.webp",
+      "name": "Mykonos Reflection",
+      "source": "https://officialmykonos.com/products/mykonos-reflection-extrait-de-parfum-50ml-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/reflection_100ml_sku_1.jpg?v=1778043195",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-083.webp",
+      "name": "Mykonos Reflection Elixir",
+      "source": "https://officialmykonos.com/products/mykonos-reflection-elixir-extrait-de-parfum-50ml",
+      "image": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/reflectionelixir50mlsku-2.jpg?v=1788873423",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-084.webp",
+      "name": "Mykonos Slow Living",
+      "source": "https://officialmykonos.com/products/mykonos-slow-living-edp-50ml",
+      "image": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/slow_living_50ml_sku-2.jpg?v=1788870118",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-085.webp",
+      "name": "Mykonos Sorrento",
+      "source": "https://officialmykonos.com/products/mykonos-sorrento-extrait-de-parfum-50ml-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/sorrento_50ml_sku-2.jpg?v=1785993961",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-086.webp",
+      "name": "Mykonos Aphrodite",
+      "source": "https://officialmykonos.com/products/mykonos-aphrodite-extrait-de-parfum-50ml-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/aphrodite50mlsku-2.jpg?v=1788493327",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-088.webp",
+      "name": "Mykonos California Signature",
+      "source": "https://officialmykonos.com/products/mykonos-california-signature-50ml",
+      "image": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/california_og_50ml_sku-2_1.jpg?v=1790273586",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-090.webp",
+      "name": "Mykonos Dreamscape",
+      "source": "https://officialmykonos.com/products/mykonos-dreamscape-extrait-de-parfum-50ml-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/dreamscape_100ml_sku_1.jpg?v=1778043195",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-091.webp",
+      "name": "Mykonos Glitch",
+      "source": "https://officialmykonos.com/products/mykonos-x-setiawanade-glitch-extrait-de-parfum-50ml",
+      "image": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/Glitch_Image_square.png?v=1791170784",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-094.webp",
+      "name": "Mykonos Inferno",
+      "source": "https://officialmykonos.com/products/mykonos-inferno-extrait-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/inferno_50ml_sku-2.jpg?v=1791457398",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-095.webp",
+      "name": "Mykonos Marbella",
+      "source": "https://officialmykonos.com/products/mykonos-marbella-extrait-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/marbella_50ml_sku-2.jpg?v=1791457398",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-096.webp",
+      "name": "Mykonos Monaco Royale",
+      "source": "https://officialmykonos.com/products/mykonos-monaco-royale-extrait-de-parfum-50ml-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/monaco_royale_100ml_sku_2.jpg?v=1791442836",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-097.webp",
+      "name": "Mykonos Penthouse",
+      "source": "https://officialmykonos.com/products/mykonos-penthouse-extrait-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/penthouse_100ml_sku-2.jpg?v=1785312305",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-098.webp",
+      "name": "Mykonos Reflection",
+      "source": "https://officialmykonos.com/products/mykonos-reflection-extrait-de-parfum-50ml-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/reflection_100ml_sku_1.jpg?v=1778043195",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-099.webp",
+      "name": "Mykonos Slow Living",
+      "source": "https://officialmykonos.com/products/mykonos-slow-living-edp-50ml",
+      "image": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/slow_living_50ml_sku-2.jpg?v=1788870118",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-101.webp",
+      "name": "Mykonos Untamed",
+      "source": "https://officialmykonos.com/products/mykonos-untamed-extrait-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/untamed100mlsku-2_918c80ba-1ec4-4c6a-aab3-bd64d5f70d00.jpg?v=1785855552",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-102.webp",
+      "name": "Mykonos Utopia",
+      "source": "https://officialmykonos.com/products/mykonos-utopia-extrait-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0637/6325/1275/files/utopia100mlsku_2.jpg?v=1792226588",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-103.webp",
+      "name": "Rayhaan Amazonica",
+      "source": "https://oudiscent.com/products/rayhaan-amazonica-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/1084/7256/6092/files/rayhaan-amazonica-eau-de-parfum-100ml-1.png?v=1792008680",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-104.webp",
+      "name": "Rayhaan Divine",
+      "source": "https://rayhaanperfumes.com/products/divine",
+      "image": "https://cdn.shopify.com/s/files/1/0589/3849/0927/files/1Divine.jpg?v=1783500211",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-105.webp",
+      "name": "Rayhaan Imperia For Men",
+      "source": "https://rayhaanperfumes.com/products/imperia",
+      "image": "https://cdn.shopify.com/s/files/1/0589/3849/0927/files/5.2_16e821f8-60d5-4f8c-a960-8f7e90ab4f78.png?v=1723893674",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-106.webp",
+      "name": "Rayhaan Ocean Rush For Him",
+      "source": "https://rayhaanperfumes.com/products/ocean-rush",
+      "image": "https://cdn.shopify.com/s/files/1/0589/3849/0927/files/4.2.png?v=1723893667",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-107.webp",
+      "name": "Rayhaan Equinox",
+      "source": "https://rayhaanperfumes.com/products/equinox",
+      "image": "https://cdn.shopify.com/s/files/1/0589/3849/0927/files/01_1.jpg?v=1793013041",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-108.webp",
+      "name": "Rayhaan Vantage",
+      "source": "https://rayhaanperfumes.com/products/vantage",
+      "image": "https://cdn.shopify.com/s/files/1/0589/3849/0927/files/front.jpg?v=1789920880",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-109.webp",
+      "name": "Rayhaan Crimson",
+      "source": "https://rayhaanperfumes.com/products/crimson",
+      "image": "https://cdn.shopify.com/s/files/1/0589/3849/0927/files/1Crimson.jpg?v=1780998273",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-110.webp",
+      "name": "Rayhaan Aquatica",
+      "source": "https://rayhaanperfumes.com/products/rayhaan-aquatica",
+      "image": "https://cdn.shopify.com/s/files/1/0589/3849/0927/files/Aquatica11BGWHITE_jpg.jpg?v=1783143509",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-111.webp",
+      "name": "Rayhaan Azul",
+      "source": "https://rayhaanperfumes.com/products/azul",
+      "image": "https://cdn.shopify.com/s/files/1/0589/3849/0927/files/azul.jpg?v=1783149506",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-112.webp",
+      "name": "Rayhaan Cedrus Blanc",
+      "source": "https://rayhaanperfumes.com/products/cedrus-blanc",
+      "image": "https://cdn.shopify.com/s/files/1/0589/3849/0927/files/01_927c929b-7019-47cc-9c08-10d6ef05ec94.png?v=1785131491",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-114.webp",
+      "name": "Rayhaan Italia",
+      "source": "https://rayhaanperfumes.com/products/rayhaan-italia",
+      "image": "https://cdn.shopify.com/s/files/1/0589/3849/0927/files/1Italia.jpg?v=1780927299",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-115.webp",
+      "name": "Rayhaan Jungle Vibe",
+      "source": "https://rayhaanperfumes.com/products/rayhaan-jungle-vibe",
+      "image": "https://cdn.shopify.com/s/files/1/0589/3849/0927/files/1JungleVibe.jpg?v=1780927335",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-116.webp",
+      "name": "Rayhaan Kiss",
+      "source": "https://rayhaanperfumes.com/products/rayhaan-kiss",
+      "image": "https://cdn.shopify.com/s/files/1/0589/3849/0927/files/1Kiss.jpg?v=1780927255",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-117.webp",
+      "name": "Rayhaan Lion",
+      "source": "https://rayhaanperfumes.com/products/rayhaan-lion",
+      "image": "https://cdn.shopify.com/s/files/1/0589/3849/0927/files/1Lion.jpg?v=1780998383",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-118.webp",
+      "name": "Rayhaan Nava Sol",
+      "source": "https://rayhaanperfumes.com/products/nava-sol",
+      "image": "https://cdn.shopify.com/s/files/1/0589/3849/0927/files/1_6e1e4839-fd50-4d79-adaa-37ec2b72ab24.png?v=1785130736",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-120.webp",
+      "name": "Rayhaan Obsidian",
+      "source": "https://rayhaanperfumes.com/products/rayhaan-obsidian",
+      "image": "https://cdn.shopify.com/s/files/1/0589/3849/0927/files/1Obsidian.jpg?v=1780927397",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-121.webp",
+      "name": "Rayhaan Pacific",
+      "source": "https://rayhaanperfumes.com/products/pacific",
+      "image": "https://cdn.shopify.com/s/files/1/0589/3849/0927/files/4.6.png?v=1723893700",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-122.webp",
+      "name": "Rayhaan Pacific Aloha",
+      "source": "https://rayhaanperfumes.com/products/pacific-aloha",
+      "image": "https://cdn.shopify.com/s/files/1/0589/3849/0927/files/1PacificAloha.png?v=1784958376",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-123.webp",
+      "name": "Rayhaan Pacific Aura",
+      "source": "https://rayhaanperfumes.com/products/pacific-aura",
+      "image": "https://cdn.shopify.com/s/files/1/0589/3849/0927/files/1PacificAura.jpg?v=1780998246",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-124.webp",
+      "name": "Rayhaan Pharaoh",
+      "source": "https://rayhaanperfumes.com/products/wolf-copy",
+      "image": "https://cdn.shopify.com/s/files/1/0589/3849/0927/files/1Pharaoh.jpg?v=1780915757",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-125.webp",
+      "name": "Rayhaan Terra",
+      "source": "https://rayhaanperfumes.com/products/rayhaan-terra",
+      "image": "https://cdn.shopify.com/s/files/1/0589/3849/0927/files/1Terra.jpg?v=1780998096",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-126.webp",
+      "name": "Rayhaan Tiger",
+      "source": "https://rayhaanperfumes.com/products/rayhaan-tiger",
+      "image": "https://cdn.shopify.com/s/files/1/0589/3849/0927/files/1Tiger.jpg?v=1780998332",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-127.webp",
+      "name": "Rayhaan Tropical Vibe",
+      "source": "https://rayhaanperfumes.com/products/tropical-vibe",
+      "image": "https://cdn.shopify.com/s/files/1/0589/3849/0927/files/1TropicalVibe.jpg?v=1780998020",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-128.webp",
+      "name": "Rayhaan Wolf",
+      "source": "https://rayhaanperfumes.com/products/wolf",
+      "image": "https://cdn.shopify.com/s/files/1/0589/3849/0927/files/1Wolf.jpg?v=1780926735",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-129.webp",
+      "name": "Ard Al Zaafaran Dirham Cloud",
+      "source": "https://ardalzaafaranshop.com/products/dirham-cloud-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/5_a0a25bdc-6de8-4b45-bf77-3653eb620874.png?v=1782304655",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-130.webp",
+      "name": "Ard Al Zaafaran Rafeef",
+      "source": "https://ardalzaafaranshop.com/products/rafeef-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/8_41e1543e-90ca-4799-b0fe-bac6be5b72a1.png?v=1786449444",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-131.webp",
+      "name": "Ard Al Zaafaran Fakhar Al Oud The White",
+      "source": "https://ardalzaafaranshop.com/products/fakhar-al-oud-the-white-oud-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/Ard_Product_Images_10.png?v=1734405526",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-132.webp",
+      "name": "Ard Al Zaafaran Jazzab Elixir",
+      "source": "https://ardalzaafaranshop.com/products/jazzab-elixir-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/25_63f0d59a-6f74-4f49-b82a-f062a891ec69.png?v=1792483812",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-133.webp",
+      "name": "Ard Al Zaafaran Al Dirgham Limited Edition",
+      "source": "https://ardalzaafaranshop.com/products/al-dirgham-limited-edition-100-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/ArdProductImages_17.png?v=1734354129",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-134.webp",
+      "name": "Ard Al Zaafaran Al Dirgham Special Edition",
+      "source": "https://ardalzaafaranshop.com/products/al-dirgham-special-edition",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/Ard_Product_Images.png?v=1734348156",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-135.webp",
+      "name": "Ard Al Zaafaran Al Hur So Intense",
+      "source": "https://ardalzaafaranshop.com/products/al-hur-so-intense-100-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/Ard_Product_Images_22.png?v=1734355090",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-136.webp",
+      "name": "Ard Al Zaafaran Alora",
+      "source": "https://ardalzaafaranshop.com/products/alora-100-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/ArdProductImages_25.png?v=1734356059",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-137.webp",
+      "name": "Ard Al Zaafaran Amiral",
+      "source": "https://beautyhouse.com/products/ard-al-zaafaran-amiral-eau-de-parfum-for-everyone",
+      "image": "https://cdn.shopify.com/s/files/1/0580/7420/2293/files/01blllfz9o.png?v=1723882982",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-138.webp",
+      "name": "Ard Al Zaafaran Anoud",
+      "source": "https://ardalzaafaranshop.com/products/anoud-100-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/Ard_Product_Images_21.png?v=1734530885",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-139.webp",
+      "name": "Ard Al Zaafaran Bareq",
+      "source": "https://ardalzaafaranshop.com/products/bareq",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/ArdProductImages_1.png?v=1734348897",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-140.webp",
+      "name": "Ard Al Zaafaran Bareq Mirage",
+      "source": "https://ardalzaafaranshop.com/products/bareq-mirage",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/Ard_Product_Images_2.png?v=1734349278",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-141.webp",
+      "name": "Ard Al Zaafaran Barez",
+      "source": "https://ardalzaafaranshop.com/products/barez-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/Ard_Product_Images_36.png?v=1734358825",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-142.webp",
+      "name": "Ard Al Zaafaran Bint Haroon",
+      "source": "https://ardalzaafaranshop.com/products/bint-hooran-100-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/ArdProductImages_38.png?v=1734402372",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-143.webp",
+      "name": "Ard Al Zaafaran Dirham EDP + Deo 50ml",
+      "source": "https://ardalzaafaranshop.com/products/dirham-new-100-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/Ard_Product_Images_6_8fc56bee-4811-460b-8d45-86d285cfd8c6.png?v=1734404452",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-144.webp",
+      "name": "Ard Al Zaafaran Dirham Gold",
+      "source": "https://ardalzaafaranshop.com/products/dirham-gold-100-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/Ard_Product_Images_5_902eb6fe-fb80-46c6-aef2-7def624375f6.png?v=1734404633",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-145.webp",
+      "name": "Ard Al Zaafaran Dirham Oud",
+      "source": "https://ardalzaafaranshop.com/products/dirham-oud-100-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/IMP-Don_tdeleteArdProductImages.png?v=1737631056",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-146.webp",
+      "name": "Ard Al Zaafaran Dirham Wardi",
+      "source": "https://ardalzaafaranshop.com/products/dirham-wardi-100-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/ArdProductImages_8_2d680f28-7f27-47f1-8411-5f3bc19eb3f5.png?v=1734405634",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-147.webp",
+      "name": "Ard Al Zaafaran Fakhar Al Oud",
+      "source": "https://ardalzaafaranshop.com/products/fakhar-al-oud-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/IMP_-_Don_t_delete_Ard_Product_Images.png?v=1750252904",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-148.webp",
+      "name": "Ard Al Zaafaran Jazzab Gold",
+      "source": "https://ardalzaafaranshop.com/products/jazzab-gold-100-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/61.png?v=1734443580",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-149.webp",
+      "name": "Ard Al Zaafaran Jazzab Silver",
+      "source": "https://ardalzaafaranshop.com/products/jazzab-silver-100-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/62_6059db3f-85b9-4bee-99b0-40b6e929c480.png?v=1734443630",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-150.webp",
+      "name": "Ard Al Zaafaran Liwan",
+      "source": "https://ardalzaafaranshop.com/products/liwan-100-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/64.png?v=1734443580",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-151.webp",
+      "name": "Ard Al Zaafaran Manaal",
+      "source": "https://ardalzaafaranshop.com/products/manaal",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/ArdProductImages_11.png?v=1734352288",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-152.webp",
+      "name": "Ard Al Zaafaran Meethaq",
+      "source": "https://ardalzaafaranshop.com/products/meethaq",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/71_4b1aa064-8dc9-42fe-bf18-b2ed44b4e8bb.png?v=1734446881",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-153.webp",
+      "name": "Ard Al Zaafaran Midnight Oud",
+      "source": "https://ardalzaafaranshop.com/products/midnight-oud-100-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/73.png?v=1734446630",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-154.webp",
+      "name": "Ard Al Zaafaran Mithqal",
+      "source": "https://ardalzaafaranshop.com/products/mithqal-100-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/74_abfc24fe-e1bd-4c84-b084-163fbeda4933.png?v=1734446984",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-155.webp",
+      "name": "Ard Al Zaafaran Mousuf",
+      "source": "https://ardalzaafaranshop.com/products/mousuf-100-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/132.png?v=1735039910",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-156.webp",
+      "name": "Ard Al Zaafaran Mousuf Azure",
+      "source": "https://ardalzaafaranshop.com/products/mousuf-azuree",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/130.png?v=1735039953",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-157.webp",
+      "name": "Ard Al Zaafaran Mousuf Daisy",
+      "source": "https://ardalzaafaranshop.com/products/mousuf-daisy",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/192.png?v=1768211932",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-158.webp",
+      "name": "Ard Al Zaafaran Mousuf Ramadi",
+      "source": "https://ardalzaafaranshop.com/products/mousuf-ramadi-100-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/191.png?v=1768211869",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-159.webp",
+      "name": "Ard Al Zaafaran Mousuf Wardi",
+      "source": "https://ardalzaafaranshop.com/products/mousuf-wardi-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/131.png?v=1735039979",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-160.webp",
+      "name": "Ard Al Zaafaran Oud 24 Hours Majestic Gold",
+      "source": "https://ardalzaafaranshop.com/products/oud-24-hours-majestic-gold-100-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/80.png?v=1734447128",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-161.webp",
+      "name": "Ard Al Zaafaran Oud 24 Hours + Deo 50ml",
+      "source": "https://ardalzaafaranshop.com/products/oud-24-hours-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/79.png?v=1734447127",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-162.webp",
+      "name": "Ard Al Zaafaran Qidwah (85ml)",
+      "source": "https://ardalzaafaranshop.com/products/qidwah-85ml",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/88.png?v=1734449544",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-163.webp",
+      "name": "Ard Al Zaafaran Riqqa",
+      "source": "https://ardalzaafaranshop.com/products/riqqa-100-ml-ard",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/91_fa3f0361-ee5e-489f-bd8c-6b20d469c29f.png?v=1734455166",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-164.webp",
+      "name": "Ard Al Zaafaran Safeer Al Hub Everlasting",
+      "source": "https://ardalzaafaranshop.com/products/safeer-al-hub-everlasting",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/Ard_Product_Images_5.png?v=1734350268",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-165.webp",
+      "name": "Ard Al Zaafaran Saheb (70ml)",
+      "source": "https://ardalzaafaranshop.com/products/saheb-70ml",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/94.png?v=1734455377",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-166.webp",
+      "name": "Ard Al Zaafaran Sahebat Al Jamal (70ml)",
+      "source": "https://ardalzaafaranshop.com/products/sahebat-al-jamal",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/Ard_Product_Images_6.png?v=1734350470",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-167.webp",
+      "name": "Ard Al Zaafaran Saher Al Layali",
+      "source": "https://ardalzaafaranshop.com/products/saher-al-layali",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/95.png?v=1734455377",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-168.webp",
+      "name": "Ard Al Zaafaran Shams Al Emarat Khususi Glaze & Glow",
+      "source": "https://ardalzaafaranshop.com/products/shams-al-emarat-khususi-glaze-glow-100-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/196_7cb63b24-2ecc-40f5-82e4-3003d2aa986f.png?v=1776944292",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-169.webp",
+      "name": "Ard Al Zaafaran Shams Al Emarat Khususi Iced Petals",
+      "source": "https://ardalzaafaranshop.com/products/shams-al-emarat-khususi-iced-petal-100-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/196.png?v=1776514045",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-170.webp",
+      "name": "Ard Al Zaafaran Shams Al Emarat Khususi Pink Blush",
+      "source": "https://ardalzaafaranshop.com/products/shams-al-emarat-pink-blush-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0715/8713/5746/files/IMP-Don_tdeleteArdProductImages_875bc919-1ef6-4903-bdbd-04db19c943ed.png?v=1747056072",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-171.webp",
+      "name": "Rasasi Hawas Homme Gift Set",
+      "source": "https://store.rasasi.com.sa/en/jgbjpxy/p511280757",
+      "image": "https://cdn.salla.sa/lGDEen/1d37338f-e51a-4487-9932-6d330a80410e-500x500-MhPBpAChOTnrvQhe4XXCT6PE06pSWrt0paIhStmT.jpg",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-172.webp",
+      "name": "Rasasi Hawas Ice Gift Set",
+      "source": "https://www.intenseoud.com/products/hawas-ice-3-piece-perfume-gift-set-by-rasasi-gift-set",
+      "image": "https://cdn.shopify.com/s/files/1/0127/7840/5947/files/rasasi-hawas-ice-gift-set-eau-de-parfum-100ml-bottles.webp?v=1793380528",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-173.webp",
+      "name": "Rasasi Hawas Ice Travel Gift Set",
+      "source": "https://rasasistore.com/products/hawas-ice-travel-gift-set",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/2_ccef4bb7-6788-4621-a68f-1a7f315f30ed.jpg?v=1783054515",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-174.webp",
+      "name": "Rasasi Hawas Rouge",
+      "source": "https://imrasasi.com/products/hawas-rouge",
+      "image": "https://cdn.shopify.com/s/files/1/0764/1441/9159/files/1_1b849b3e-2a72-42e0-9110-27a56921f97f.png?v=1785743883",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-175.webp",
+      "name": "Rasasi Hawas Sapphire",
+      "source": "https://rasasistore.com/products/hawas-sapphire",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/Angle_1_5423a1e6-e2ca-4bec-acc4-c5112d4ad287.png?v=1793179098",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-176.webp",
+      "name": "Rasasi Hawas Venom",
+      "source": "https://rasasistore.com/products/hawas-venom",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/Angle_1.png?v=1792920877",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-177.webp",
+      "name": "Rasasi Al Wisam Hasaas",
+      "source": "https://rasasistore.com/products/al-wisam-hasaas",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/1.1Hasaas.jpg?v=1789471532",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-178.webp",
+      "name": "Rasasi Nafaeis Al Shaghaf Maraya Pour Homme",
+      "source": "https://rasasistore.com/products/nafaeis-al-shaghaf-maraya-pour-homme",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/6_b605470e-2670-49af-b609-1250e8750977.jpg?v=1784698254",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-179.webp",
+      "name": "Rasasi Nafaeis Al Shaghaf Maraya Pour Femme",
+      "source": "https://rasasistore.com/products/nafaeis-al-shaghaf-maraya-pour-femme",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/2_4b095379-889e-4eb7-ba50-a838ecc043eb.jpg?v=1784698292",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-180.webp",
+      "name": "Rasasi Hamasaat Musk Memoirs",
+      "source": "https://rasasistore.com/products/hamasaat-musk-memoirs",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/1_1794b577-6144-4abd-aad6-2e871fa5f6e4.jpg?v=1777485566",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-181.webp",
+      "name": "Rasasi Afshan",
+      "source": "https://rasasistore.com/products/afshan",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/Afsan_1.jpg?v=1709143373",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-182.webp",
+      "name": "Rasasi Al Rabin",
+      "source": "https://rasasistore.com/products/al-rabih",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/NewProject_17.jpg?v=1765177919",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-183.webp",
+      "name": "Rasasi Al Wisam Day",
+      "source": "https://rasasistore.com/products/al-wisam-day",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/AlWisam_1.jpg?v=1708708827",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-184.webp",
+      "name": "Rasasi Al Wisam Habban",
+      "source": "https://rasasistore.com/products/habban",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/1.1Habban.jpg?v=1762925569",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-185.webp",
+      "name": "Rasasi Al Wisam Hayaan",
+      "source": "https://rasasistore.com/products/hayan",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/1.1Hayan.jpg?v=1762925540",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-186.webp",
+      "name": "Rasasi Amber Oud (14ml)",
+      "source": "https://rasasistore.com/products/amber-oud",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/AmberOud_1.jpg?v=1709216859",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-187.webp",
+      "name": "Rasasi Arba Wardat (30ml)",
+      "source": "https://rasasistore.com/products/arba-wardat",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/ArhaWardat_1.jpg?v=1708590183",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-188.webp",
+      "name": "Rasasi Daarej Extrait",
+      "source": "https://store.rasasi.com.sa/en/eqgadpy/p760381976",
+      "image": "https://cdn.salla.sa/lGDEen/50117138-731c-4177-a5d6-302c1e1cdd94-500x500-wejcnDzmfPaH87S1n0sXU4gPSZ7WYdaX21V5C4k1.png",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-189.webp",
+      "name": "Rasasi Dareez Pour Femme",
+      "source": "https://rasasistore.com/products/daarej",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/Daarej_PourFemme_1.jpg?v=1709142718",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-190.webp",
+      "name": "Rasasi Dareez Pour Homme",
+      "source": "https://rasasistore.com/products/daarej-pour-homme",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/Daarej_PourHomme_1.jpg?v=1708590931",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-191.webp",
+      "name": "Rasasi Daarej Pour Homme Verve",
+      "source": "https://rasasistore.com/products/dareej-verve",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/NewProject_22.jpg?v=1768748748",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-192.webp",
+      "name": "Rasasi Daarej Pour Femme Aurelia",
+      "source": "https://rasasistore.com/products/dareej-aurelia",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/NewProject_27.jpg?v=1768749442",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-193.webp",
+      "name": "Rasasi Fattan Pour Femme (50ml)",
+      "source": "https://samaperfumes.co.uk/products/rasasi-fattan-pour-femme",
+      "image": "https://cdn.shopify.com/s/files/1/0857/9969/8763/files/fattanwomen-1.jpg?v=1723909929",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-194.webp",
+      "name": "Rasasi Fattan Pour Homme (50ml)",
+      "source": "https://samaperfumes.co.uk/products/fattan-eau-de-parfum-pour-homme-50ml-by-rasasi",
+      "image": "https://cdn.shopify.com/s/files/1/0857/9969/8763/files/Fattan1_a4e27cf5-6b91-4ce2-9946-050af2a3b498.jpg?v=1720892985",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-195.webp",
+      "name": "Rasasi Fayiz",
+      "source": "https://rasasistore.com/products/fayiz",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/9_8f7e00c8-4796-4d9c-bd6c-3dbe7d77cc37.jpg?v=1780466502",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-196.webp",
+      "name": "Rasasi Fawar",
+      "source": "https://rasasistore.com/products/fawar",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/4_1e4c4276-2a5f-4f4c-b451-11facb4171bb.jpg?v=1780466096",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-197.webp",
+      "name": "Rasasi Haroon",
+      "source": "https://rasasistore.com/products/haroon",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/New_Project_21.jpg?v=1765180300",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-198.webp",
+      "name": "Rasasi Hawas Atlantis",
+      "source": "https://rasasistore.com/products/hawas-atlantis-for-him",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/Angle_1_73901f3b-95b5-404a-b158-47642e0cc3b5.png?v=1793179157",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-199.webp",
+      "name": "Rasasi Hawas Black Pour Homme",
+      "source": "https://imrasasi.com/products/hawas-black-edp-100-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0764/1441/9159/files/1.jpg?v=1785745869",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-200.webp",
+      "name": "Rasasi Hawas Elixir",
+      "source": "https://imrasasi.com/products/hawas-elixir-unisex-100-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0764/1441/9159/files/magnific_create-a-luxury-diorstyle_eIXWNP7dqL.png?v=1785747069",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-201.webp",
+      "name": "Rasasi Hawas Fire Pour Homme",
+      "source": "https://rasasistore.com/products/hawas-fire",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/Angle_1_053daaa2-9a8e-4986-812a-a944fa5e08f9.png?v=1793179206",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-202.webp",
+      "name": "Rasasi Hawas For Her Diva",
+      "source": "https://beautyhouse.com/products/rasasi-hawas-diva-eau-de-parfum-for-women",
+      "image": "https://beautyhouse.com/cdn/shop/files/03w3eqfuuj.jpg?v=1789675500&width=2048",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-203.webp",
+      "name": "Rasasi Hawas For Her Eclat",
+      "source": "https://imrasasi.com/products/hawas-elixir-unisex-100-ml-copy",
+      "image": "https://cdn.shopify.com/s/files/1/0764/1441/9159/files/1_d1a721df-5082-481c-8cd4-355cb48ab3d0.jpg?v=1785745792",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-204.webp",
+      "name": "Rasasi Hawas For Him Kobra",
+      "source": "https://store.rasasi.com.sa/en/vaxrnqz/p1320082477",
+      "image": "https://cdn.salla.sa/lGDEen/fab1fc37-6fb2-4032-8b1a-86b750e17702-500x500-7nor3Br5wBnfJq8dyG71JIfzATtkLqFaXkkDiclE.png",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-206.webp",
+      "name": "Rasasi Hawas Ice Pour Homme",
+      "source": "https://rasasistore.com/products/hawas-ice",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/Angle_1_11db0a52-cc5c-4a66-a9e8-607d4753451d.png?v=1793179229",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-207.webp",
+      "name": "Rasasi Hawas London",
+      "source": "https://beautyhouse.com/products/rasasi-hawas-london-eau-de-parfum-for-men",
+      "image": "https://beautyhouse.com/cdn/shop/files/02dhzn0q0k.png?v=1768946743&width=2048",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-209.webp",
+      "name": "Rasasi Hawas Pink Pour Femme",
+      "source": "https://rasasistore.com/products/hawas-pink",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/Angle_1_4f6a573f-f078-480e-b390-55cbe3208fc1.png?v=1793179180",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-211.webp",
+      "name": "Rasasi Hawas Pour Femme",
+      "source": "https://rasasistore.com/products/hawas-for-her",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/Angle_1_9b1d0ee8-6f63-4263-9719-5fd3ed3abf5b.png?v=1793179280",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-212.webp",
+      "name": "Rasasi Hawas Tropical",
+      "source": "https://beautyhouse.com/products/rasasi-hawas-tropical-eau-de-parfum-for-men",
+      "image": "https://beautyhouse.com/cdn/shop/files/02a5ddvjrn.png?v=1749054734&width=2048",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-214.webp",
+      "name": "Rasasi Ibreez Pour Homme",
+      "source": "https://imrasasi.com/products/ibreez-pour-homme-100-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0764/1441/9159/files/1_0a808025-0028-465b-a898-12bbc27e4aeb.jpg?v=1785757538",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-215.webp",
+      "name": "Rasasi La Yugawam Jasmine Wisp (75ml)",
+      "source": "https://rasasistore.com/products/la-yuqawam-jasmine-wisp",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/LaYuqawam_JasmineWisp_1.jpg?v=1708626493",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-216.webp",
+      "name": "Rasasi La Yugawam Orchid Prairie (75ml)",
+      "source": "https://rasasistore.com/products/la-yuqawam-orchid-prairie",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/LaYuqawam_OrchidPrairie_1.jpg?v=1709144431",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-217.webp",
+      "name": "Rasasi La Yugawam Pour Femme (75ml)",
+      "source": "https://samaperfumes.co.uk/products/rasasi-la-yuqawam-pour-femme",
+      "image": "https://cdn.shopify.com/s/files/1/0857/9969/8763/files/la_yuqawam_pour_femme_jpeg.jpg?v=1723910979",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-218.webp",
+      "name": "Rasasi La Yugawam Pour Homme (75ml)",
+      "source": "https://samaperfumes.co.uk/products/la-yuqawam-pour-homme-edp-75ml-rasasi",
+      "image": "https://cdn.shopify.com/s/files/1/0857/9969/8763/files/LaYuqawamPourHomme4_834b626d-580a-4233-a72b-ae440cd14681.jpg?v=1720892463",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-219.webp",
+      "name": "Rasasi La Yugawam Tobacco Blaze (75ml)",
+      "source": "https://samaperfumes.co.uk/products/la-yuqawam-tobacco-blaze-for-him-edp-75ml-rasasi",
+      "image": "https://cdn.shopify.com/s/files/1/0857/9969/8763/files/LaYuqawamTobaccoBlaze3_7755c513-077d-44d9-a0e5-40edafc4e88b.jpg?v=1720892808",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-220.webp",
+      "name": "Rasasi Mubhakar (20ml)",
+      "source": "https://store.rasasi.com.sa/en/zvngdep/p903273235",
+      "image": "https://cdn.salla.sa/lGDEen/43ac4857-8ae8-494f-b2b9-02805658d29f-500x500-rJ7lQzoCQioGwEWLTuGkaSynAYMXvTKJrBQsfT6V.jpg",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-221.webp",
+      "name": "Rasasi Mukhalat Al Oud (20ml)",
+      "source": "https://rasasistore.com/products/mukhalat-al-oudh",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/MukhallatAloudh_1.jpg?v=1709144665",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-222.webp",
+      "name": "Rasasi Marha Pour Homme",
+      "source": "https://store.rasasi.com.sa/en/ydmyylp/p229476447",
+      "image": "https://cdn.salla.sa/lGDEen/59674dc1-f689-4fa8-9b37-a4d96e000d0c-500x500-WgTANP2kV8hXK9wUNHFr5TUqkSfRfqvh2qNq5LIc.jpg",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-223.webp",
+      "name": "Rasasi Oud Al Methali (15ml)",
+      "source": "https://samaperfumes.co.uk/products/oudh-al-methali-15ml-perfume-oil-attar-by-rasasi",
+      "image": "https://cdn.shopify.com/s/files/1/0857/9969/8763/files/OudAlMethali1_3b0b0656-270e-4fed-a207-e30a414b9c94.jpg?v=1723729716",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-224.webp",
+      "name": "Rasasi Rafan Pour Homme",
+      "source": "https://rasasistore.com/products/rafan-for-him",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/NewProject_12.jpg?v=1763904765",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-225.webp",
+      "name": "Rasasi Rafan Pour Femme",
+      "source": "https://rasasistore.com/products/rafan-for-her",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/NewProject_8.jpg?v=1763904444",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-226.webp",
+      "name": "Rasasi Romance Women (15ml)",
+      "source": "https://samaperfumes.co.uk/products/romance-concentrated-perfume-oil-15ml-by-rasasi",
+      "image": "https://cdn.shopify.com/s/files/1/0857/9969/8763/files/RomanceOil.jpg?v=1724082279",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-227.webp",
+      "name": "Rasasi Sahar (18ml)",
+      "source": "https://samaperfumes.co.uk/products/sahar-18ml-perfume-oil-attar-by-rasasi",
+      "image": "https://cdn.shopify.com/s/files/1/0857/9969/8763/files/Sahar1_5ca37030-377b-4653-9894-b018134bb002.jpg?v=1720892771",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-228.webp",
+      "name": "Rasasi Shuhrah Pour Homme (90ml)",
+      "source": "https://rasasistore.com/products/shuhrah-men-edp",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/Shurah_PourHomme_1.jpg?v=1708591053",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-229.webp",
+      "name": "Rasasi Shuhrah Pour Femme (90ml)",
+      "source": "https://rasasistore.com/products/shuhrah-pour-femme",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/Shurah_PourFemme_1.jpg?v=1708591016",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-230.webp",
+      "name": "Rasasi Shuhrah Pour Homme Avenoir (90ml)",
+      "source": "https://rasasistore.com/products/shuhrah-avenoir",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/New_Project_32.jpg?v=1768751239",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-231.webp",
+      "name": "Rasasi Shuhrah Pour Femme Opulence (90ml)",
+      "source": "https://rasasistore.com/products/shuhrah-opulence",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/NewProject_36.jpg?v=1768750562",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-232.webp",
+      "name": "Rasasi Sonia (15ml)",
+      "source": "https://store.rasasi.com.sa/en/azobxla/p962431745",
+      "image": "https://cdn.salla.sa/lGDEen/0c53d618-9140-4395-80ce-acb460ad3100-500x500-781dXyVImvxB57noj58dOYfIGg6TV81E6tRRXuL5.jpg",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-233.webp",
+      "name": "Rasasi Sotoor Pour Homme Raa",
+      "source": "https://samaperfumes.co.uk/products/rasasi-sotoor-raa",
+      "image": "https://cdn.shopify.com/s/files/1/0857/9969/8763/files/rasasi-sotoor-raa-eau-de-parfum-unisex___170912.jpg?v=1724081716",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-234.webp",
+      "name": "Rasasi Yumn Pour Homme",
+      "source": "https://rasasistore.com/products/yumn-pour-homme",
+      "image": "https://cdn.shopify.com/s/files/1/0670/2940/1841/files/Yumn_PourHomme_1.jpg?v=1708590216",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-235.webp",
+      "name": "Khadlaj Muse",
+      "source": "https://khadlaj-perfumes.com/products/khadlaj-muse-100-ml-eau-de-parfum-spray-for-women",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/KHADLAJ_MUSE_100_ML_EAU_DE_PARFUM_SPRAY_FOR_WOMEN.jpg?v=1787392792",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-236.webp",
+      "name": "Khadlaj Sawaar Vanille Blanc",
+      "source": "https://khadlaj-perfumes.com/products/sawaar-vanille-blanc-100-ml-eau-de-parfum-spray-for-women",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/SAWAAR-03.jpg?v=1783939807",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-237.webp",
+      "name": "Khadlaj Ihthiraam (60ml)",
+      "source": "https://khadlaj-perfumes.com/products/ihthraam-extrait-de-parfum-spray-oriental-unisex-fragrance",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Ihthiraam-3.jpg?v=1783939279",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-239.webp",
+      "name": "Khadlaj Qarar (60ml)",
+      "source": "https://khadlaj-perfumes.com/products/khadlaj-qarar-unisex-bold-oriental-extrait-de-parfum",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Qarar-3.jpg?v=1783939057",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-240.webp",
+      "name": "Khadlaj Saraya (60ml)",
+      "source": "https://khadlaj-perfumes.com/products/khadlaj-saraya-60-ml-extrait-de-parfum-spray-for-men-women",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/saraya_3.png?v=1783938953",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-241.webp",
+      "name": "Khadlaj Zayaan Silver",
+      "source": "https://khadlaj-perfumes.com/products/zayaan-silver-fresh-aquatic-spicy-woody-eau-de-parfum-for-men",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Zayan_Silver-3.jpg?v=1783936580",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-242.webp",
+      "name": "Khadlaj Island Sun",
+      "source": "https://khadlaj-perfumes.com/products/khadlaj-island-sun-100-ml-extrait-de-parfum",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/KHADLAJ_ISLAND_SUN_100_ML_EXTRAIT_DE_PARFUM.png?v=1787209397",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-243.webp",
+      "name": "Khadlaj Shiyaaka Sky",
+      "source": "https://khadlaj-perfumes.com/products/special-edition-shiyaaka-sky-100-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/SPECIAL_EDITION_SHIYAAKA_SKY.png?v=1783938999",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-244.webp",
+      "name": "Khadlaj Azure Velvet",
+      "source": "https://khadlaj-perfumes.com/products/azure-velvet-100-ml-extrait-de-parfum-unisex-fragrance-to-buy-online-dubai-uae",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Azure_Velvet_03.jpg?v=1783946944",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-245.webp",
+      "name": "Khadlaj Bleu Glace",
+      "source": "https://khadlaj-perfumes.com/products/bleu-glace-100-ml-extrait-de-parfum-for-men-fresh-fragrance-online-dubai-uae",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Bleu_Glace_02.jpg?v=1784382935",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-246.webp",
+      "name": "Khadlaj Caffe Latte",
+      "source": "https://khadlaj-perfumes.com/products/caffe-latte-100-ml-extrait-de-parfum-spray",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Cafe_Latte_03.jpg?v=1783947469",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-247.webp",
+      "name": "Khadlaj Cloud Candy",
+      "source": "https://khadlaj-perfumes.com/products/cloud-candy-100-ml-extrait-de-parfum-fruity-marshmallow-fragrance-for-women-to-shop-online-in-dubai-uae",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Cloud_Candy-3.jpg?v=1783945979",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-248.webp",
+      "name": "Khadlaj Cream Velvet",
+      "source": "https://khadlaj-perfumes.com/products/cream-velvet-100-ml-extrait-de-parfum-for-women-best-perfumes",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Cream_Velvet_03.jpg?v=1783947094",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-249.webp",
+      "name": "Khadlaj Desert Rose",
+      "source": "https://khadlaj-perfumes.com/products/desert-rose-100-ml-extrait-de-parfum-for-women-fragrance-to-shop-online-dubai-uae",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Desert_Rose_02.jpg?v=1784383039",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-250.webp",
+      "name": "Khadlaj Empire Crown",
+      "source": "https://khadlaj-perfumes.com/products/empire-crown-100-ml-edp-spray-best-perfume-spray-for-men-online-dubai-uae",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/EMPIRE_CROWN_100_ML_EDP_SPRAY_-_Khadlaj_Perfumes-1964329.jpg?v=1783950456",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-251.webp",
+      "name": "Khadlaj Fursan Brown",
+      "source": "https://khadlaj-perfumes.com/products/khadlaj-fursan-brown-100-ml-edp-spray-perfume-for-him-and-her",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/3_651eba7e-7275-416f-b294-45ea01b0149a.jpg?v=1783947945",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-252.webp",
+      "name": "Khadlaj Fursan White",
+      "source": "https://khadlaj-perfumes.com/products/khadlaj-fursan-white-100-ml-edp-spray-perfume-for-women-best-price-in-dubai-uae",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/3_e7287acf-841a-4e28-a898-549b1e89d2a2.jpg?v=1783948020",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-253.webp",
+      "name": "Khadlaj Hareem Sultan Gold (75ml)",
+      "source": "https://khadlaj-perfumes.com/products/tiktk-viral-hareem-al-sultan-perfume-in-75-ml-edp-spray-by-khadlaj-dubai",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/HAREEM_AL_SULTAN_Bottle.jpg?v=1783946128",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-254.webp",
+      "name": "Khadlaj Icon",
+      "source": "https://khadlaj-perfumes.com/products/khadlaj-icon-100-ml-eau-de-parfum-spray-for-men",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Icon.1.jpg?v=1783939329",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-255.webp",
+      "name": "Khadlaj Island",
+      "source": "https://khadlaj-perfumes.com/products/island-100-ml-extrait-de-parfum-spray-for-men-and-women",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/KHADLAJ_ISLAND_100_ML.jpg?v=1783946296",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-256.webp",
+      "name": "Khadlaj Island Dreams",
+      "source": "https://khadlaj-perfumes.com/products/island-dreams-100-ml-extrait-de-parfum",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Island_Dreams-3.jpg?v=1783940088",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-257.webp",
+      "name": "Khadlaj Island Vanilla Dunes",
+      "source": "https://khadlaj-perfumes.com/products/khadlaj-island-vanilla-dunes-100-ml-extrait-de-parfum-spray-for-men",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Island_Vanilla-3.jpg?v=1783945707",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-258.webp",
+      "name": "Khadlaj Karus Secret Musk",
+      "source": "https://khadlaj-perfumes.com/products/karus-secret-musk-100-ml-edp-spray",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/KARUS_SECRET_MUSK_100_ML_EDP_SPRAY_-_Khadlaj_Perfumes-1964854.jpg?v=1783949701",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-259.webp",
+      "name": "Khadlaj Karus Blu Spice",
+      "source": "https://khadlaj-perfumes.com/products/karus-blu-spice-100-ml-edp-spray",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/KARUS_BLU_SPICE_100_ML_EDP_SPRAY_-_Khadlaj_Perfumes-1964834.jpg?v=1783949739",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-260.webp",
+      "name": "Khadlaj 25 Heritage",
+      "source": "https://khadlaj-perfumes.com/products/khadlaj-25-heritage-100-ml-edp-spray",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/KHADLAJ_25_HERITAGE_100_ML_EDP_SPRAY_-_Khadlaj_Perfumes-1964913.jpg?v=1783949209",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-261.webp",
+      "name": "Khadlaj 25 Loyalty",
+      "source": "https://khadlaj-perfumes.com/products/khadlaj-25-loyalty-100-ml-edp-spray-best-women-perfume-to-shop-online-dubai-uae",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/KHADLAJ_25_LOYALTY_100_ML_EDP_SPRAY_-_Khadlaj_Perfumes-1964940.jpg?v=1783949037",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-262.webp",
+      "name": "Khadlaj Le Prestige King",
+      "source": "https://khadlaj-perfumes.com/products/le-prestige-king-100-ml-edp-spray",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/LE_PRESTIGE_KING_100_ML_EDP_SPRAY_-_Khadlaj_Perfumes-1965257.jpg?v=1783948286",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-263.webp",
+      "name": "Khadlaj Mansion",
+      "source": "https://khadlaj-perfumes.com/products/mansion-eau-de-parfum-spray-for-unisex-scents-by-khadlaj-dubai-uae",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/mansion_2.jpg?v=1783942858",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-264.webp",
+      "name": "Khadlaj Maison Epoque Artistique",
+      "source": "https://khadlaj-perfumes.com/products/maison-epoque-artistique-100ml-edp-spray",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/MAISON_EPOQUE_ARTISTIQUE_100ML_EDP_SPRAY_-_Khadlaj_Perfumes-1965317.jpg?v=1783950732",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-265.webp",
+      "name": "Khadlaj Mocha Latta",
+      "source": "https://khadlaj-perfumes.com/products/mocha-latte-100-ml-extrait-de-parfum-spray-for-unisex-coffee-fragrance-dubai-uae",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Mocha_Latte_03.jpg?v=1784382482",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-266.webp",
+      "name": "Khadlaj Musk Pure Musk Blend (60ml)",
+      "source": "https://khadlaj-perfumes.com/products/musk-pure-musk-blend-creation-of-iqbal-65-ml-edp-spray-perfume-for-men-and-women-online-dubai-uae",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/MUSK_PURE_MUSK_BLEND_CREATION_OF_IQBAL_60_ML_EDP_SPRAY_-_Khadlaj_Perfumes-1965450.jpg?v=1783948198",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-267.webp",
+      "name": "Khadlaj Musk Al Sabah",
+      "source": "https://khadlaj-perfumes.com/products/musk-al-sabah-100-ml-edp-spray-buy-online-best-price-dubai-uae",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/2_19.jpg?v=1784368941",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-268.webp",
+      "name": "Khadlaj Nafais Magrib",
+      "source": "https://khadlaj-perfumes.com/products/khadlaj-nafais-magrib-100-ml-eau-de-parfum-for-men-women",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Nafais_Magrib-3.jpg?v=1783940515",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-269.webp",
+      "name": "Khadlaj Nafais Sharq",
+      "source": "https://khadlaj-perfumes.com/products/khadlaj-nafais-sharq-edp-designer-fragrance-for-women-dubai-uae",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/NAFAIS-3.jpg?v=1783943403",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-270.webp",
+      "name": "Khadlaj Nuha (85ml)",
+      "source": "https://khadlaj-perfumes.com/products/nuha-85-ml-edp-spray-perfume-for-women-dubai-uae",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/NUHA_100_ML_EDP_SPRAY_-_Khadlaj_Perfumes-1965514.jpg?v=1784382712",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-271.webp",
+      "name": "Khadlaj Nuha Vanilla Pearl (85ml)",
+      "source": "https://khadlaj-perfumes.com/products/nuha-vanilla-pearl-85-ml-edp-spray-for-women-online-dubai-uae",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Nuha_Vanilla_Pearl_03.jpg?v=1783946810",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-272.webp",
+      "name": "Khadlaj Oud Al Sabah",
+      "source": "https://khadlaj-perfumes.com/products/oud-al-sabah-100-ml-edp-spray-dubai-uae-amber-oud-fragrance",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/3_21.jpg?v=1784368894",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-273.webp",
+      "name": "Khadlaj Oud Pour Klassic",
+      "source": "https://khadlaj-perfumes.com/products/oud-pour-klassik-spray-shop-online-best-price-in-dubai-uae",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Copy_of_Untitled-1.jpg?v=1784007738",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-274.webp",
+      "name": "Khadlaj Onyx Gold",
+      "source": "https://khadlaj-perfumes.com/products/khadlaj-onyx-gold-100-ml-eau-de-parfum-for-men-luxury-perfume-online-dubai-uae",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/ONYX-03.jpg?v=1783939937",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-275.webp",
+      "name": "Khadlaj Onyx Silver",
+      "source": "https://khadlaj-perfumes.com/products/khadlaj-onyx-silver-100-ml-eau-de-parfum-for-men-and-women-online-dubai-uae",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/OnyxSilver3.jpg?v=1783939577",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-276.webp",
+      "name": "Khadlaj Panache Angel Dust",
+      "source": "https://khadlaj-perfumes.com/products/panache-angel-dust-100-ml-extrait-de-parfum-spray-for-women-shop-online-dubai-uae",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Panache_1_jpg_c97c705a-aebf-4bf9-a621-f11b565e765d.jpg?v=1783939496",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-277.webp",
+      "name": "Khadlaj Peach Velvet",
+      "source": "https://khadlaj-perfumes.com/products/peach-velvet-100-ml-extrait-de-parfum-for-women-top-women-fragrance-brand-uae",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/PeachVelvet-03.jpg?v=1783942044",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-278.webp",
+      "name": "Khadlaj Rasayel Shagaf",
+      "source": "https://khadlaj-perfumes.com/products/rasayel-shagaf-100-ml-edp-de-parfum-spray-for-men",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/2_ab0ed6b5-ec07-4047-93e1-f6fa159c44df.jpg?v=1776230769",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-279.webp",
+      "name": "Khadlaj Ria",
+      "source": "https://khadlaj-perfumes.com/products/khadlaj-ria-100-ml-eau-de-parfum-spray-for-women-fruity-sweet-fragrance-for-women",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Ria-3.jpg?v=1783941881",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-280.webp",
+      "name": "Khadlaj Sara",
+      "source": "https://khadlaj-perfumes.com/products/khadlaj-sara-100-ml-extrait-de-parfum-spray-for-women-best-price-dubai-uae",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/3_34647ca0-413e-49af-a7d4-042b6d78a207.jpg?v=1783948104",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-281.webp",
+      "name": "Khadlaj Sensuos Night",
+      "source": "https://khadlaj-perfumes.com/products/sensous-night-edp-spray-shop-online-best-price-in-dubai-uae",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/SENSUOS_NIGHT_EDP_SPRAY_100_ML_-_Khadlaj_Perfumes-1965914.jpg?v=1784368457",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-282.webp",
+      "name": "Khadlaj Shiyaaka Shadow",
+      "source": "https://khadlaj-perfumes.com/products/khadlaj-special-edition-shiyaaka-shadow-edp-men-fresh-fragrance-dubai-uae",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Shiyaaka_Shadow-3.jpg?v=1783943040",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-283.webp",
+      "name": "Khadlaj Shiyaaka Snow",
+      "source": "https://khadlaj-perfumes.com/products/special-edition-shiyaaka-snow-100-ml-eau-de-parfum-for-men",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Shiyaaka_Shadow-3_bef3b7fa-b2c9-4ec5-adcc-0b3f9ac42034.jpg?v=1783941783",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-284.webp",
+      "name": "Khadlaj Titan",
+      "source": "https://khadlaj-perfumes.com/products/khadlaj-titan-100-ml-eau-de-parfum-spray-for-men-refreshing-scents-to-buy-online-dubai-uae",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/TITAN-3.jpg?v=1783942163",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-285.webp",
+      "name": "Khadlaj Valor Enigma",
+      "source": "https://khadlaj-perfumes.com/products/valor-enigma-100-ml-edp-spray",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/VALOR_ENIGMA_100_ML_EDP_SPRAY_-_Khadlaj_Perfumes-1966082.jpg?v=1783950074",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-286.webp",
+      "name": "Khadlaj Zayaan Gold",
+      "source": "https://khadlaj-perfumes.com/products/zayaan-gold-100-ml-eau-de-parfum-for-men",
+      "image": "https://cdn.shopify.com/s/files/1/0626/6119/8023/files/Zayan_Gold-3_RESIZE.jpg?v=1783936479",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-288.webp",
+      "name": "Lattafa Badee Al Oud (5×5ml)",
+      "source": "https://lattafa-usa.com/products/badee-al-oud-collection-5-x-5ml-edp-spray",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/1_51d7a95b-8c32-4feb-9ba0-749b520c992b.png?v=1756361492",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-289.webp",
+      "name": "Lattafa Yara Collection (4×5ml)",
+      "source": "https://lattafa-usa.com/products/yara-collection-set",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/IMG-0323.png?v=1753249372",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-290.webp",
+      "name": "Lattafa My Yara Collection (25ml set)",
+      "source": "https://lattafa-usa.com/products/my-yara-collection-25ml-4pcs-gift-set",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/myyaragiftset.png?v=1750374217",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-291.webp",
+      "name": "Lattafa Asad Collection (25ml set)",
+      "source": "https://lattafa-usa.com/products/asad-collection-4x25ml",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/IMG-7082.png?v=1769952439",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-292.webp",
+      "name": "Lattafa Badee Al Oud Collection (25ml set)",
+      "source": "https://lattafa-usa.com/products/badee-al-oud-collection-4x25ml",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Gemini_Generated_Image_4r9xen4r9xen4r9x.png?v=1774031578",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-293.webp",
+      "name": "Lattafa Esraa",
+      "source": "https://lattafa-usa.com/products/esraa-oil",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/1_75dcb946-09f3-4d74-9a04-eaa0ba5a3ad5.png?v=1749494228",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-294.webp",
+      "name": "Lattafa Mashmoom",
+      "source": "https://lattafa-usa.com/products/mashmoon-oil",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/1_b1540258-7ef1-480b-9f13-c963138cbad2.png?v=1749371122",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-295.webp",
+      "name": "Lattafa Yara",
+      "source": "https://fragra.de/products/yara-concentrate-ol-20-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Yara_Concentrate_Oil_20_ml.png?v=1756122029",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-296.webp",
+      "name": "Lattafa Yara Candy",
+      "source": "https://www.lattafaindia.com/products/yara-candy-perfume-oil",
+      "image": "https://cdn.shopify.com/s/files/1/0635/2270/1395/files/02_a74ce01e-669b-4f85-a9a0-946cc3b5ef0b.png?v=1769516088",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-297.webp",
+      "name": "Lattafa Yara Moi",
+      "source": "https://fragra.de/products/yara-moi-concentrate-oil-20-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Yara_Moi_Concentrate_Oil_20_ml_1.jpg?v=1756122026",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-298.webp",
+      "name": "Lattafa Yara Tous",
+      "source": "https://fragra.de/products/yara-tous-concentrate-ol20-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Yara_Tous_Concentrate_Oil_20_ml.png?v=1756122028",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-299.webp",
+      "name": "Lattafa Beyond Precious (55ml)",
+      "source": "https://lattafa-usa.com/products/lattafa-beyond-precious-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/lattafa-beyond-precious-edp-2.jpg?v=1791565586",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-302.webp",
+      "name": "Lattafa Ajwad Pink to Pink Creamy Elixir (60ml)",
+      "source": "https://fragra.de/products/lattafa-ajwad-pink-to-pink-creamy-elixir-eau-de-parfum-60-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Ajwad_Pink_to_Pink_Creamy_Elixir_Eau_de_Parfum_60_ml.webp?v=1789127830",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-303.webp",
+      "name": "Lattafa Badee Al Oud Exposed",
+      "source": "https://fragra.de/products/lattafa-badee-al-oud-black-exposed-eau-de-parfum-100-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/at_bl.png?v=1789463019",
+      "identification": "Top strip cropped to remove a third-party \"Free shipping\" banner."
+    },
+    {
+      "asset": "dist/assets/nov-304.webp",
+      "name": "Lattafa Farfasha",
+      "source": "https://itsmarsa.com/product/farfasha-100ml/",
+      "image": "https://itsmarsa.com/wp-content/uploads/2026/11/farfasha-100ml.jpg",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-305.webp",
+      "name": "Lattafa Salwa",
+      "source": "https://eadistribution.co.uk/product/salwa-100ml-asdaaf-lattafa/",
+      "image": "https://eadistribution.co.uk/wp-content/uploads/2026/10/Salwa-100ml-Product-Image-eaD-1-scaled.jpg",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-306.webp",
+      "name": "Lattafa Afeef",
+      "source": "https://lattafa-usa.com/products/afeef",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Afeef-1.png?v=1747414788",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-307.webp",
+      "name": "Lattafa Ajayab Dubai",
+      "source": "https://www.lattafaindia.com/products/ajayab-dubai",
+      "image": "https://cdn.shopify.com/s/files/1/0635/2270/1395/files/01_9.png?v=1768995232",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-308.webp",
+      "name": "Lattafa Ajayab Dubai Portrait",
+      "source": "https://fragra.de/products/lattafa-perfume-ajayeb-dubai-portrait-gold-eau-de-perfume-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Perfume_Ajayeb_Dubai_Portrait_Gold_Eau_de_Perfume_100ml.jpg?v=1756122770",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-309.webp",
+      "name": "Lattafa Ajwad (60ml)",
+      "source": "https://fragra.de/products/lattafa-perfume-ajwad-eau-de-parfum-60ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Perfume_Ajwad_Eau_de_Parfum_60ml.jpeg?v=1756122524",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-310.webp",
+      "name": "Lattafa Ajwad Pink (60ml)",
+      "source": "https://lattafa-usa.com/products/ajwad-pink-to-pink",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Ajwad-Pink-to-Pink-1_f07e8195-9952-48c7-8445-1779e409295b.png?v=1747415196",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-311.webp",
+      "name": "Lattafa Al Dur Maknoon Gold",
+      "source": "https://fragra.de/products/lattafa-perfume-al-dur-al-maknoon-gold-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Parfum_Al_Dur_Al_Maknoon_Gold_Eau_de_Parfum_100ml.jpg?v=1756122473",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-312.webp",
+      "name": "Lattafa Al Nashama",
+      "source": "https://lattafa-usa.com/products/al-nashama",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Al-Nashama-1_b5c1b4b5-b57a-4747-890f-eb56323c1c9f.png?v=1747415285",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-313.webp",
+      "name": "Lattafa Al Nashama Caprice",
+      "source": "https://fragra.de/products/lattafa-perfume-al-nashama-caprice-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Perfume_Al_Nashama_Caprice_Eau_de_Parfum_100ml.jpg?v=1756122368",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-314.webp",
+      "name": "Lattafa Ameer Al Arab Imperium",
+      "source": "https://www.lattafaindia.com/products/ameer-al-arab-imperium",
+      "image": "https://cdn.shopify.com/s/files/1/0635/2270/1395/files/01_21c18cda-82ac-42df-b6a2-15b20cd5d03a.png?v=1768996460",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-315.webp",
+      "name": "Lattafa Ameer Al Oudh",
+      "source": "https://fragra.de/products/lattafa-perfume-ameer-al-oudh-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Perfume_Ameer_Al_Oudh_Eau_de_Parfum_100ml.jpg?v=1756122705",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-316.webp",
+      "name": "Lattafa Ameer Al Oudh Intense",
+      "source": "https://lattafa-usa.com/products/ameer-al-oud-intense",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/1_f19ccc77-b348-4897-95f8-1a196f56d148.png?v=1747500416",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-317.webp",
+      "name": "Lattafa Ana Abiyedh (60ml)",
+      "source": "https://fragra.de/products/lattafa-perfume-ana-abiyedh-eau-de-parfum-60ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Perfume_Ana_Abiyedh_Eau_de_Parfum_60ml.webp?v=1756122438",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-318.webp",
+      "name": "Lattafa Ana Abiyedh Coral (60ml)",
+      "source": "https://lattafa-usa.com/products/ana-abiyedh-coral",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Ana-Abiyedh-Coral-1_41d503d3-7e8c-47d3-812a-93234a679648.png?v=1747416667",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-319.webp",
+      "name": "Lattafa Ana Abiyedh Leather (60ml)",
+      "source": "https://lattafa-usa.com/products/ana-abiyedh-leather",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/1_312457db-9403-4963-9c27-49eada9f1233.png?v=1756361412",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-320.webp",
+      "name": "Lattafa Ana Abiyedh Poudree (60ml)",
+      "source": "https://fragra.de/products/lattafa-perfume-ana-abiyedh-poudree-eau-de-parfum-60ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Perfume_Ana_Abiyedh_Poudree_Eau_de_Parfum_60ml.jpg?v=1756122436",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-321.webp",
+      "name": "Lattafa Ana Abiyedh Rouge (60ml)",
+      "source": "https://lattafa-usa.com/products/ana-abiyedh-rouge-set",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Ana_Rouge.png?v=1750264009",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-322.webp",
+      "name": "Lattafa Ana Abiyedh Scarat (60ml)",
+      "source": "https://lattafa-usa.com/products/ana-abiyedh-scarlet",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/ANA_ABIYEDH_SCARLET.png?v=1756142896",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-323.webp",
+      "name": "Lattafa Angham",
+      "source": "https://lattafa-usa.com/products/angham",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Angham-1_fea96331-1cd0-467d-be6d-56ad073a7f86.png?v=1747415391",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-324.webp",
+      "name": "Lattafa Angham Second Song",
+      "source": "https://lattafa-usa.com/products/angham-second-song",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/IMG-7057.png?v=1769925903",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-326.webp",
+      "name": "Lattafa Asad Bourbon",
+      "source": "https://fragra.de/products/lattafa-asad-bourbon-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Asad_Bourbon_1.jpg?v=1756122143",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-327.webp",
+      "name": "Lattafa Asad Elixir",
+      "source": "https://lattafa-usa.com/products/asad-elixir",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/ASADELIXIRBOTTLE.png?v=1760805808",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-328.webp",
+      "name": "Lattafa Asad Zanzibar",
+      "source": "https://lattafa-usa.com/products/asad-zanzibar",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Asad-Zanzibar-1_ab5df442-9906-4109-81d1-a21265914bfd.png?v=1747415448",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-330.webp",
+      "name": "Lattafa Asal Teeb Women",
+      "source": "https://www.intenseoud.com/products/asal-al-teeb-women-edp-100ml-3-4-oz-by-lattafa",
+      "image": "https://cdn.shopify.com/s/files/1/0127/7840/5947/files/AsalAlTeebWomenEDP_e1f43c28-0e6b-4cfc-a809-cd8575c14f4a.jpg?v=1774581713",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-331.webp",
+      "name": "Lattafa Atheeri",
+      "source": "https://lattafa-usa.com/products/atheeri",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Atheeri-1_f93156cf-73d9-4455-8540-5665a4312efb.png?v=1747416765",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-332.webp",
+      "name": "Lattafa Atlas (55ml)",
+      "source": "https://lattafa-usa.com/products/atlas",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Atlas_Bottle.png?v=1756143598",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-333.webp",
+      "name": "Lattafa Atyab Al Musk",
+      "source": "https://momperfume.in/products/lattafa-atyab-al-musk-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0827/5548/6008/files/Atyab.jpg?v=1708946262",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-334.webp",
+      "name": "Lattafa Awraq Al Oud",
+      "source": "https://fragra.de/products/lattafa-perfume-awraq-al-oud-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Parfum_Awraq_Al_Oud_Eau_de_Parfum_100ml.jpg?v=1756122472",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-335.webp",
+      "name": "Lattafa Azeezah",
+      "source": "https://fragra.de/products/lattafa-perfume-azeezah-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Parfum_Azeezah_Eau_de_Parfum_100ml.jpg?v=1756122434",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-337.webp",
+      "name": "Lattafa Badee Al Oud Amethyst",
+      "source": "https://lattafa-usa.com/products/badee-al-oud-amethyst",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Badee-Al-Oud-Amethyst-1.png?v=1747422428",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-338.webp",
+      "name": "Lattafa Badee Al Oud Amethyst Fusion",
+      "source": "https://lattafa-usa.com/products/badee-al-oud-amethyst-fusion",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/KV1-1.png?v=1786452719",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-339.webp",
+      "name": "Lattafa Badee Al Oud Honor",
+      "source": "https://lattafa-usa.com/products/badee-al-oud-honor-and-glory",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Badee-Al-Oud-Honor-_-Glory-1_a3e5a0eb-fe3d-4799-8408-2874e3a642fa.png?v=1747415524",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-340.webp",
+      "name": "Lattafa Badee Al Oud Noble Blush",
+      "source": "https://lattafa-usa.com/products/badee-al-oud-noble-blush",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Badee-Al-Oud-Noble-Blush-1_efc7268e-6d5c-413d-ae1e-ef7c9873bb6e.png?v=1747415567",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-341.webp",
+      "name": "Lattafa Badee Al Oud Sublime",
+      "source": "https://lattafa-usa.com/products/badee-al-oud-sublime",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Badee-Al-Oud-Sublime-1.png?v=1747421363",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-342.webp",
+      "name": "Lattafa Bayaan",
+      "source": "https://lattafa-usa.com/products/bayaan",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Bayaan-1_03acf57f-4935-4451-8a60-d5d54f836e4a.png?v=1747415608",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-343.webp",
+      "name": "Lattafa Blue Oud",
+      "source": "https://lattafa-usa.com/products/blue-oud",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/1_fa208a6d-6068-477a-a317-9770a42112f0.png?v=1747500637",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-344.webp",
+      "name": "Lattafa Confidential Silver",
+      "source": "https://arabicparfums.com/products/confidential-silver-lattafa",
+      "image": "https://cdn.shopify.com/s/files/1/0815/8848/6483/files/4312.jpg?v=1771059382",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-345.webp",
+      "name": "Lattafa Dalal",
+      "source": "https://lattafa-usa.com/products/dalal",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/LattafaDalalEDP100mlSpray.png?v=1763744096",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-346.webp",
+      "name": "Lattafa Divine Oud (50ml)",
+      "source": "https://perfumepalace.in/products/lattafa-divine-oud-eau-de-parfum-100ml-for-men-women",
+      "image": "https://cdn.shopify.com/s/files/1/0268/8267/0792/files/9_aeeda5bf-fc80-4008-a031-50d728aebd69.png?v=1732166295",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-347.webp",
+      "name": "Lattafa Dynasty",
+      "source": "https://lattafa-usa.com/products/dynasty",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/1_a9b996dc-705c-47bc-878c-064ae56f411c.png?v=1756143026",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-348.webp",
+      "name": "Lattafa Eclaire",
+      "source": "https://lattafa-usa.com/products/eclaire",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Eclaire-1_5803282e-ea5b-4de5-99a5-7d06f5cbae33.png?v=1747415649",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-349.webp",
+      "name": "Lattafa Eclaire Banoffi",
+      "source": "https://lattafa-usa.com/products/eclaire-banoffi",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/LattafaEclaireBanoffiBottle.png?v=1755279168",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-350.webp",
+      "name": "Lattafa Eclaire Pistache",
+      "source": "https://lattafa-usa.com/products/eclaire-pistache",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/LattafaEclairePistacheBottle.png?v=1755277744",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-351.webp",
+      "name": "Lattafa Ejaazi",
+      "source": "https://lattafa-usa.com/products/ejaazi",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/1_9e48a67b-8701-4929-a666-ca6e8ba5391a.png?v=1747500687",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-352.webp",
+      "name": "Lattafa Ekhtiari",
+      "source": "https://lattafa-usa.com/products/ekhtiari",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/1_f60481d0-20b6-4988-9ff8-6209e4ae5e1b.png?v=1747500706",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-353.webp",
+      "name": "Lattafa Emaan",
+      "source": "https://lattafa-usa.com/products/emaan",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Emaan-1.png?v=1747421403",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-354.webp",
+      "name": "Lattafa Emeer",
+      "source": "https://lattafa-usa.com/products/emeer-1",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/1_b5170684-f609-44ec-af8c-156bb9162336.png?v=1756361597",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-355.webp",
+      "name": "Lattafa Emta Taud Silver",
+      "source": "https://momperfume.in/products/lattafa-emta-taud-silver-100ml-eau-de-parfum",
+      "image": "https://cdn.shopify.com/s/files/1/0827/5548/6008/files/26_1ffb2440-a374-4ce9-acac-6bb965c56ceb.jpg?v=1789821637",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-356.webp",
+      "name": "Lattafa Ente Faqat",
+      "source": "https://fragra.de/products/lattafa-perfume-ente-faqat-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Parfum_Ente_Faqat_Eau_de_Parfum_100ml.jpg?v=1756122702",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-357.webp",
+      "name": "Lattafa Fahad (80ml)",
+      "source": "https://lattafa-usa.com/products/fahad",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/6_090ec2bc-f5f2-4fea-b274-1c8c56badeb9.png?v=1784907396",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-358.webp",
+      "name": "Lattafa Fakhar Extrait",
+      "source": "https://lattafa-usa.com/products/fakhar-extrait",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Fakhar-Lattafa-Extrait-01.png?v=1747745010",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-359.webp",
+      "name": "Lattafa Fakhar Man",
+      "source": "https://lattafa-usa.com/products/fakhar-men",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/1_aa0a5a38-775b-4814-a909-837c1d360d9c.png?v=1747500778",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-360.webp",
+      "name": "Lattafa Fakhar Woman",
+      "source": "https://lattafa-usa.com/products/fakhar",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/1_aef6a220-3fcb-4b87-838d-7f704806476f.png?v=1750614271",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-361.webp",
+      "name": "Lattafa Fakhar Platin",
+      "source": "https://lattafa-usa.com/products/fakhar-platin",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/1_f62c90bc-f6e9-4202-b755-e33db925e687.png?v=1749465623",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-362.webp",
+      "name": "Lattafa Fire On Ice (110ml)",
+      "source": "https://lattafa-usa.com/products/fire-on-ice",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/1_cf2474fb-b1d3-4caf-9adc-86efcccaeb9d.png?v=1756361729",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-363.webp",
+      "name": "Lattafa Give Me Gourmand Choco Berry On Top (75ml)",
+      "source": "https://lattafa-usa.com/products/berry-on-top",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/14.png?v=1756513023",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-364.webp",
+      "name": "Lattafa Give Me Gourmand Choco Overdose (75ml)",
+      "source": "https://lattafa-usa.com/products/choco-overdose",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/13.png?v=1756513023",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-365.webp",
+      "name": "Lattafa Give Me Gourmand Cookie Crave (75ml)",
+      "source": "https://lattafa-usa.com/products/cookie-crave",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/cookie_crave.png?v=1756514481",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-366.webp",
+      "name": "Lattafa Give Me Gourmand Mallow Madness (75ml)",
+      "source": "https://lattafa-usa.com/products/mallow-madness",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/15.png?v=1756513023",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-367.webp",
+      "name": "Lattafa Give Me Gourmand Vanilla Freak (75ml)",
+      "source": "https://lattafa-usa.com/products/vanilla-freak",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/6_247f697e-77a4-45a8-92e3-0578b46b2c70.png?v=1756513022",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-368.webp",
+      "name": "Lattafa Give Me Gourmand Whipped Pleasure (75ml)",
+      "source": "https://lattafa-usa.com/products/whipped-pleasure",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/4_123eed08-6e96-4ef5-a5b1-3d4970772d9e.png?v=1756513022",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-369.webp",
+      "name": "Lattafa Habik Men",
+      "source": "https://lattafa-usa.com/products/habik-for-men-pre-order",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/1_baf250d5-708c-425a-a3c7-94c3ea2d274c.png?v=1756361768",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-370.webp",
+      "name": "Lattafa Habik Women",
+      "source": "https://lattafa-usa.com/products/habik-for-women-preorder",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/1_84eefc4a-71d7-441a-9559-23cae2c9efc3.png?v=1756361803",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-371.webp",
+      "name": "Lattafa Haya",
+      "source": "https://lattafa-usa.com/products/haya",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Haya-1.png?v=1747421439",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-372.webp",
+      "name": "Lattafa Hayati Black",
+      "source": "https://fragra.de/products/lattafa-perfume-hayaati-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Parfum_Hayaati_Eau_de_Parfum_100ml.jpeg?v=1756122495",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-373.webp",
+      "name": "Lattafa Hayati Blue",
+      "source": "https://lattafa-usa.com/products/hayaati-al-maleky",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Hayaati-Al-Maleky-1_82fc5b2a-21fd-4701-a02b-31c167a0104c.png?v=1747415752",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-374.webp",
+      "name": "Lattafa Hayaati Florence",
+      "source": "https://fragra.de/products/lattafa-parfum-hayaati-florence-eau-de-perfume-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Parfum_Hayaati_Florence_Eau_de_Perfume_100ml.webp?v=1756122812",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-375.webp",
+      "name": "Lattafa Hayaati Gold Elixir",
+      "source": "https://lattafa-usa.com/products/hayaati-gold-elixir",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/1_622d5a3a-38d8-4d84-bd4b-d9d5fddcaee4.png?v=1747499445",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-376.webp",
+      "name": "Lattafa Hayaatim",
+      "source": "https://fragra.de/products/lattafa-parfum-hayaatim-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Parfum_Hayaatim_Eau_de_Parfum_100ml.jpg?v=1756122295",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-377.webp",
+      "name": "Lattafa His Confession For Men",
+      "source": "https://lattafa-usa.com/products/his-confession",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/His-Confession-1_2614a68d-8561-4a94-9c54-7739ae06f986.png?v=1747415996",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-378.webp",
+      "name": "Lattafa Her Confession For Women",
+      "source": "https://lattafa-usa.com/products/her-confession",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Her-Confession-1_37f3fdce-b4e7-4c30-969a-f41ff87de13c.png?v=1747415953",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-379.webp",
+      "name": "Lattafa Jasoor",
+      "source": "https://lattafa-usa.com/products/untitled-sep7_12-04",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/IMG-1760.png?v=1757261428",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-382.webp",
+      "name": "Lattafa Khamrah Dukhan",
+      "source": "https://lattafa-usa.com/products/khamrah-dukhan",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Khamrah-Dukhan-1_a62cb1af-0737-4709-86c2-f275a5f5b023.png?v=1747416848",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-383.webp",
+      "name": "Lattafa Khamrah Waha",
+      "source": "https://lattafa-usa.com/products/khamrah-waha",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Untitled_design_2.jpg?v=1778780553",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-384.webp",
+      "name": "Lattafa Khas Lil Rijal",
+      "source": "https://tajperf.com/en/product/latafa-special-m/",
+      "image": "https://tajperf.com/wp-content/uploads/2020/11/latafa-32.png",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-385.webp",
+      "name": "Lattafa Lail Maleki",
+      "source": "https://fragra.de/products/lattafa-perfume-lail-maleki-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Parfum_Lail_Maleki_Eau_de_Parfum_100ml.jpg?v=1756122399",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-386.webp",
+      "name": "Lattafa Lail Maleki Oud Edition",
+      "source": "https://www.myperfumeshop.com.au/products/lattafa-lail-maleki-oud-edp",
+      "image": "https://cdn.shopify.com/s/files/1/0388/7287/5140/files/lattafa-lail-maleki-oud-edp-627700.png?v=1741409528",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-387.webp",
+      "name": "Lattafa Lail Maleki Moroccan Blue",
+      "source": "https://lattafa-usa.com/products/lail-maleki-moroccon-blue",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Lail-Malaki-Moroccan-Blue-1_5ff9b4fb-73cb-42f0-a320-1797668477f3.png?v=1747416915",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-388.webp",
+      "name": "Lattafa Layaan (75ml)",
+      "source": "https://lattafa-usa.com/products/layaan",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/1_56ca40c3-8a27-4c18-93a1-3e43627efcc9.png?v=1759429729",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-389.webp",
+      "name": "Lattafa Liam Grey",
+      "source": "https://fragra.de/products/lattafa-perfume-liam-grey-eau-de-perfume-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Parfum_Liam_Grey_Eau_de_Parfum_100ml.webp?v=1756122792",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-390.webp",
+      "name": "Lattafa Maahir Black",
+      "source": "https://lattafa-usa.com/products/maahir-black-edition",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/1_1d0da0b7-db99-47fe-9cb8-9540f491e47d.png?v=1747501020",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-391.webp",
+      "name": "Lattafa Maahir Gold",
+      "source": "https://lattafa-usa.com/products/maahir",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Maahir-1.png?v=1747422458",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-392.webp",
+      "name": "Lattafa Maahir Legacy",
+      "source": "https://lattafa-usa.com/products/maahir-legacy",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Maahir-Legacy-1.png?v=1747421494",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-393.webp",
+      "name": "Lattafa Maahir Honor",
+      "source": "https://lattafa-usa.com/products/maahir-honor",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/LattafaMaahirBottle.png?v=1779997334",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-394.webp",
+      "name": "Lattafa Mafatin Musk Al Hareer",
+      "source": "https://fragstalk.in/products/lattafa-mafatin-musk-al-hareer-100ml-edp",
+      "image": "https://cdn.shopify.com/s/files/1/0999/6094/7002/files/MafatinMuskAlHareer.png?v=1793945890",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-395.webp",
+      "name": "Lattafa Mafatin Musk Oud",
+      "source": "https://www.oudstore.com/products/mafatin-musk-al-oud-edp-perfume-by-lattafa",
+      "image": "https://cdn.shopify.com/s/files/1/0676/4068/8777/files/file_64fab0ab-7eb3-4a49-af56-382b013b247f.jpg?v=1737516505",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-396.webp",
+      "name": "Lattafa Mashrabya",
+      "source": "https://lattafa-usa.com/products/mashrabya",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Mashrabya-1_6965e7f3-8b92-40dd-939d-12e2de735689.png?v=1747416235",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-397.webp",
+      "name": "Lattafa Mayar",
+      "source": "https://fragra.de/products/lattafa-perfume-mayar-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Parfum_Mayar_Eau_de_Parfum_100ml.jpeg?v=1756122645",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-398.webp",
+      "name": "Lattafa Mayar Natural Intense",
+      "source": "https://lattafa-usa.com/products/mayar-natural-intense",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Mayar-Natural-Intense-1_2b8dfe9b-6ebd-4d24-99e6-68565cda61d5.png?v=1747416289",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-399.webp",
+      "name": "Lattafa Mohra",
+      "source": "https://fragra.de/products/lattafa-perfume-mohra-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Parfum_Mohra_Eau_de_Parfum_100ml.webp?v=1756122634",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-400.webp",
+      "name": "Lattafa Mohra Silky Rose",
+      "source": "https://fragra.de/products/lattafa-perfume-mohra-silky-rose-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Parfum_Mohra_Silky_Rose_Eau_de_Parfum_100ml.webp?v=1756122632",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-401.webp",
+      "name": "Lattafa Mukhallat Kashmiri",
+      "source": "https://www.oriental-style.de/products/lattafa-mukhallat-kashmiri-eau-de-parfum-spray",
+      "image": "https://cdn.shopify.com/s/files/1/0958/5809/8515/files/mukhallat-kashmiri-lattafa-eau-de-parfum-100ml-yuzu-pflaume.jpg?v=1788257033",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-402.webp",
+      "name": "Lattafa Musamam",
+      "source": "https://fragra.de/products/lattafa-perfume-musamam-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Parfum_Musamam_Eau_de_Parfum_100ml.jpg?v=1756122592",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-403.webp",
+      "name": "Lattafa Musamam White",
+      "source": "https://lattafa-usa.com/products/musamam-white-intense",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Musamam-White-1.png?v=1747416325",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-404.webp",
+      "name": "Lattafa Musamam Black Intense",
+      "source": "https://lattafa-usa.com/products/musamam-black-intense-edp-100ml-spray",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/LattafaMusamamBlackIntenseEDP100mlSpray.png?v=1763742607",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-405.webp",
+      "name": "Lattafa Najdia + Deo",
+      "source": "https://www.lattafaindia.com/products/najdia-deo",
+      "image": "https://cdn.shopify.com/s/files/1/0635/2270/1395/files/02_932e1601-2a8a-44a1-bcd2-e595f9402866.png?v=1769237209",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-406.webp",
+      "name": "Lattafa Najdia Gold",
+      "source": "https://www.lattafaindia.com/products/najdia-gold",
+      "image": "https://cdn.shopify.com/s/files/1/0635/2270/1395/files/01_02a9d9ae-197f-4fae-8b82-b906d68b1615.png?v=1769237268",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-407.webp",
+      "name": "Lattafa Najdia Tribute",
+      "source": "https://fragra.de/products/lattafa-perfume-najdia-tribute-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Parfum_Najdia_Tribute_1.jpg?v=1756122617",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-408.webp",
+      "name": "Lattafa Najdia Intense",
+      "source": "https://fragra.de/products/lattafa-najdia-intense-eau-de-parfum-100-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Najdia_Intense_1.jpg?v=1756122079",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-409.webp",
+      "name": "Lattafa Nasamaat",
+      "source": "https://lattafa-usa.com/products/nasmaat",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Nasmaat.png?v=1760130127",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-410.webp",
+      "name": "Lattafa Opulent Dubai",
+      "source": "https://lattafa-usa.com/products/opulent-dubai",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/1_7d5801be-0a5e-4ac4-bffc-3bee4a3c7a6b.png?v=1756143162",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-411.webp",
+      "name": "Lattafa Opulent Musk",
+      "source": "https://fragra.de/products/lattafa-perfume-opulent-musk-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Parfum_Opulent_Musk_Eau_de_Parfum_100ml.jpg?v=1756122388",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-412.webp",
+      "name": "Lattafa Opulent Oud",
+      "source": "https://fragra.de/products/lattafa-perfume-opulent-oud-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Parfum_Opulent_Oud_Eau_de_Parfum_100ml.jpg?v=1756122390",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-413.webp",
+      "name": "Lattafa Opulent Red",
+      "source": "https://fragra.de/products/lattafa-perfume-opulent-red-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Parfum_Opulent_Red_Eau_de_Parfum_100ml.jpeg?v=1756122504",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-414.webp",
+      "name": "Lattafa Oud Mood",
+      "source": "https://lattafa-usa.com/products/oud-mood",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Oud-mood-1.png?v=1747422506",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-415.webp",
+      "name": "Lattafa Oud Mood Elixir",
+      "source": "https://lattafa-usa.com/products/oud-mood-elixir",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/1_2e83b876-5aed-468e-997b-2da2c99c6641.png?v=1747499600",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-416.webp",
+      "name": "Lattafa Oud Mood Reminiscence",
+      "source": "https://lattafa-usa.com/products/oud-mood-reminiscence",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/1_3028b4cb-800c-451c-b020-8d105872df8c.png?v=1747499625",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-417.webp",
+      "name": "Lattafa Oud Mood Musk",
+      "source": "https://arabmusk.eu/products/lattafa-parfum-oud-mood-musk",
+      "image": "https://cdn.shopify.com/s/files/1/0706/2398/5947/files/lattafa-parfum-oud-mood-musk-parfumspray-853.webp?v=1691455491",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-418.webp",
+      "name": "Lattafa Oud Najdia",
+      "source": "https://fragra.de/products/lattafa-parfum-oud-najdia-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Perfume_Oud_Najdia_Eau_de_Parfum_100ml.jpg?v=1756122458",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-419.webp",
+      "name": "Lattafa Oud Salma",
+      "source": "https://perfumepalace.in/products/lattafa-oud-salama-eau-de-parfum-for-men-and-women-100-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0268/8267/0792/products/WhatsAppImage2023-01-04at7.50.19PM_9.jpg?v=1672924585",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-420.webp",
+      "name": "Lattafa Petra",
+      "source": "https://lattafa-usa.com/products/petra",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/1_6e8e4461-9e8c-4346-b7aa-87769f89fad6.png?v=1749465674",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-421.webp",
+      "name": "Lattafa Pure Crystal",
+      "source": "https://lattafa-usa.com/products/pure-crystal",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/PureCrystal.png?v=1761141641",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-422.webp",
+      "name": "Lattafa Pure Musk + Deo",
+      "source": "https://www.lattafaindia.com/products/pure-musk-deo",
+      "image": "https://cdn.shopify.com/s/files/1/0635/2270/1395/files/02_ea938faf-a6ab-4a49-aa19-aa6a5cdaa4ee.png?v=1769509998",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-423.webp",
+      "name": "Lattafa Pure Oudi + Deo",
+      "source": "https://www.lattafaindia.com/products/pure-oudi-deo",
+      "image": "https://cdn.shopify.com/s/files/1/0635/2270/1395/files/04_b42f4e73-907e-452e-b38c-1ed921063d98.png?v=1769510118",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-424.webp",
+      "name": "Lattafa Qaa'ed",
+      "source": "https://lattafa-usa.com/products/qaaed",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/QaaedbyLattafaEauDeParfumSpray-flacon2_750x_be95b436-88d6-43e1-9901-9bdc4bbcaecc.jpg?v=1753800908",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-426.webp",
+      "name": "Lattafa Qaed Al Fursan Unlimited White (90ml)",
+      "source": "https://lattafa-usa.com/products/qaed-al-fursan-unlimited-1",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/1_17a352a1-63bf-4da9-8d37-34b8736451b3.png?v=1750265544",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-427.webp",
+      "name": "Lattafa Qaed Al Fursan Untamed (90ml)",
+      "source": "https://lattafa-usa.com/products/qaed-al-fursan-unlimited",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Qaed-Al-Fursan-Untamed-1_85250e2a-2ec7-4f49-9612-1161bec0e54b.png?v=1747417147",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-428.webp",
+      "name": "Lattafa Qaeed Intense",
+      "source": "https://fragra.de/products/lattafa-perfume-qaaed-intense-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Parfum_Qaaed_Intense_Eau_de_Parfum_100ml.jpg?v=1756122366",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-429.webp",
+      "name": "Lattafa Raeed Absolu",
+      "source": "https://fragra.de/products/lattafa-raed-absolu-eau-de-parfum-100-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Raed_Absolu_Eau_de_Parfum_100_ml.jpg?v=1772547400",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-430.webp",
+      "name": "Lattafa Raeed Intensely",
+      "source": "https://fragra.de/products/lattafa-raed-intensely-eau-de-parfum-100-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Raed_Intensely_Eau_de_Parfum_100_ml.webp?v=1772174342",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-431.webp",
+      "name": "Lattafa Rooh Al Rooh Silver",
+      "source": "https://momperfume.in/products/lattafa-rooh-al-rooh-silver-100ml-eau-de-parfum",
+      "image": "https://cdn.shopify.com/s/files/1/0827/5548/6008/files/1_09abfb9b-333b-42aa-8a16-45a2391ce406.png?v=1789822435",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-432.webp",
+      "name": "Lattafa Rose Kashmiri",
+      "source": "https://fragra.de/products/lattafa-perfume-rose-kashmiri-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Parfum_Rose_Kashmiri.jpeg?v=1756122517",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-433.webp",
+      "name": "Lattafa Rouat Al Ajial",
+      "source": "https://fragra.de/products/lattafa-perfume-rouat-ajial-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Perfume_Rouat_Ajial_Eau_de_Parfum_100ml.webp?v=1756122453",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-434.webp",
+      "name": "Lattafa Raghba + Deo",
+      "source": "https://fragra.de/products/lattafa-perfume-raghba-deo-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Parfum_Raghba_Deo_Eau_de_Parfum_100ml.webp?v=1756122404",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-435.webp",
+      "name": "Lattafa Raghba Wood Intense",
+      "source": "https://lattafa-usa.com/products/raghba-wood-intense",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/1_ffa1241f-15e7-42c7-ae41-0b4b53c4db7e.png?v=1747498771",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-436.webp",
+      "name": "Lattafa Ramz Gold",
+      "source": "https://lattafa-usa.com/products/ramz-gold",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/1_c6d0426c-2ea1-402e-9cfc-23f656a8fddf.png?v=1747499087",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-437.webp",
+      "name": "Lattafa Ramz Silver",
+      "source": "https://lattafa-usa.com/products/ramz-silver",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/1_e65bffe5-9adc-45ac-b08e-88f57ae742ca.png?v=1747499110",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-438.webp",
+      "name": "Lattafa Sakeena",
+      "source": "https://lattafa-usa.com/products/sakeena",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Sakeena-1.png?v=1747422013",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-439.webp",
+      "name": "Lattafa Sehr",
+      "source": "https://lattafa-usa.com/products/sehr",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Sehr-Lattafa-1_ac1003e9-5414-48ce-a22d-624ce8705711.png?v=1747416393",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-440.webp",
+      "name": "Lattafa Sheikh Al Shuyukh Khuskhusi",
+      "source": "https://www.lattafaindia.com/products/sheikh-al-shuyukh-khuskhusi",
+      "image": "https://cdn.shopify.com/s/files/1/0635/2270/1395/files/01_b8bf7dd4-1664-4705-8d7b-1c161e70ca91.png?v=1769513297",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-441.webp",
+      "name": "Lattafa Sheriff",
+      "source": "https://fragra.de/products/lattafa-sherif-eau-de-parfum-100-ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Sherif_Eau_de_Parfum_100_ml.webp?v=1757489544",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-442.webp",
+      "name": "Lattafa Sing (75ml)",
+      "source": "https://lattafa-usa.com/products/sing",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/1_0c9535d0-d0e8-48a3-8fd5-93bb2b2da689.png?v=1749371368",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-443.webp",
+      "name": "Lattafa Stop Wait Go (75ml)",
+      "source": "https://lattafa-usa.com/products/stop-wait-go",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/1_81201445-1898-4216-a0c8-dcfac6052780.png?v=1749371325",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-444.webp",
+      "name": "Lattafa Sumou",
+      "source": "https://theislamicshop.com/products/sumou-eau-de-parfum-100ml-lattafa",
+      "image": "https://cdn.shopify.com/s/files/1/0551/7393/9409/files/IMG-8205.jpg?v=1705345130",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-445.webp",
+      "name": "Lattafa Suqraat",
+      "source": "https://lattafa-usa.com/products/suqraat",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Suqraat-1.png?v=1747422097",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-446.webp",
+      "name": "Lattafa Teriaq",
+      "source": "https://lattafa-usa.com/products/teriaq",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Teriaq-1_9cd52e8c-943a-4aa4-be16-2a30638fc421.png?v=1747416456",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-447.webp",
+      "name": "Lattafa Teriaq Intense",
+      "source": "https://lattafa-usa.com/products/teriaq-intense",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Teriaq-Intense-1_b9408dff-5346-4542-a598-cfffb8454d81.png?v=1747416499",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-448.webp",
+      "name": "Lattafa The Kingdom Man",
+      "source": "https://lattafa-usa.com/products/the-kingdom",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/The-Kingdom-Men-1_ecd1b262-1319-4fee-846b-8b6f30939677.png?v=1747416549",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-449.webp",
+      "name": "Lattafa The Kingdom Women",
+      "source": "https://lattafa-usa.com/products/the-kingdom-women",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/IMG-1625.png?v=1756740801",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-450.webp",
+      "name": "Lattafa Victoria",
+      "source": "https://lattafa-usa.com/products/victoria",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Victoria-1_5951ef1c-61de-4bd1-9d5f-1d2b3d1c18cc.png?v=1747417320",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-451.webp",
+      "name": "Lattafa Velvet Musk",
+      "source": "https://lattafa-usa.com/products/velvet-musk",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Velvet-Musk-1_ed8249fb-fcd1-4c97-896c-5a3ee7a2d06f.png?v=1747417285",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-452.webp",
+      "name": "Lattafa Velvet Oud",
+      "source": "https://fragra.de/products/lattafa-perfume-velvet-oud-unisex-eau-de-parfum-100ml",
+      "image": "https://cdn.shopify.com/s/files/1/0782/8314/5546/files/Lattafa_Perfume_Velvet_Oud_Unisex_Eau_de_Parfum_100ml.jpeg?v=1756122387",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-453.webp",
+      "name": "Lattafa Velvet Rose",
+      "source": "https://lattafa-usa.com/products/velvet-rose",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Velvet-Rose-1.png?v=1747422146",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-455.webp",
+      "name": "Lattafa Yara Candy",
+      "source": "https://lattafa-usa.com/products/yara-candy",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Yara-Candy-1_86796aee-3226-4653-ba72-dd51d747c7f4.png?v=1747416617",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-456.webp",
+      "name": "Lattafa Yara Elixir",
+      "source": "https://lattafa-usa.com/products/yara-elixir",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/YaraElixirBottle.png?v=1760805808",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-457.webp",
+      "name": "Lattafa Yara Moi",
+      "source": "https://lattafa-usa.com/products/yara-moi",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/Yara-Moi-1_81ec2a74-066f-45ef-b35a-465dfda22eac.png?v=1747422182",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    },
+    {
+      "asset": "dist/assets/nov-458.webp",
+      "name": "Lattafa Yara Tous",
+      "source": "https://lattafa-usa.com/products/yara-tous",
+      "image": "https://cdn.shopify.com/s/files/1/0754/4936/8799/files/1_5fe75433-0467-4d06-87e9-d9e81ac2da00.png?v=1749487600",
+      "identification": "Retail or brand product reference photo. Packaging may vary; confirm the exact bottle with the seller."
+    }
   ]
 }

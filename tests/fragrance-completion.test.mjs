@@ -1,3 +1,4 @@
+import {novemberProducts} from '../dist/november-products.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -31,7 +32,7 @@ test('official signature notes can be matched without invented stages, and owner
 });
 test('completion preserves deleted listings, owner copy and custom notes in browser migration',()=>{
  const current={...defaults(),catalogueRevision:6,products:[{...get('nishane-tempfluo'),factsRevision:0,notes:'Owner bespoke notes',notePyramid:{top:['Lemon'],heart:['Rose'],base:['Musk']}}]};
- const migrated=migrateCatalogue(current);assert.equal(migrated.products.length,93);assert.equal(migrated.products[0],current.products[0]);assert.equal(migrated.catalogueRevision,8);assert.equal(migrateCatalogue(migrated),migrated);
+ const migrated=migrateCatalogue(current);assert.equal(migrated.products.length,93+novemberProducts.length);assert.equal(migrated.products[0],current.products[0]);assert.equal(migrated.catalogueRevision,defaults().catalogueRevision);assert.equal(migrateCatalogue(migrated),migrated);
  assert.equal(completeSeedFragrance(current.products[0]),current.products[0]);
 });
 test('new data backfill repairs old seed notes without changing commerce, images, reservations or owner notes',()=>{
