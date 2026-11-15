@@ -914,3 +914,17 @@ html{scrollbar-gutter:stable}
 .bag-drop{position:fixed;left:0;top:0;z-index:40;width:10px;height:10px;border-radius:0 50% 50% 50%;background:radial-gradient(circle at 65% 65%,#f3dfae,#b8975c 55%,#8a6e3f);box-shadow:0 1px 3px rgba(60,44,20,.35);pointer-events:none;opacity:0;will-change:transform,opacity}
 @media(prefers-reduced-motion:reduce){.bag-drop{display:none}}
 body:not(.is-admin) .toast{background:#fbfaf6;color:var(--c-ink);border:1px solid #d9cfba;border-left:3px solid var(--c-brass);border-radius:3px;box-shadow:0 12px 42px #18160e24;font-size:var(--t-sm);line-height:1.45;max-width:min(420px,calc(100vw - 32px));text-align:left}
+
+/* ==== Refresh: notes that settle. The pyramid's three layers come to rest one after another when first scrolled to
+   (dialog-motion.mjs settleNotes adds .is-pending only to a pyramid below the fold), and the gallery's notes view does the same
+   whenever it is chosen. Transform/opacity only; nothing is hidden for reduced motion or in print. */
+@keyframes note-settle{from{opacity:0;transform:translate3d(0,-14px,0)}to{opacity:1;transform:none}}
+#modal .note-pyramid.is-pending .note-stage{opacity:0}
+@media(prefers-reduced-motion:no-preference){
+ #modal .note-pyramid.is-settling .note-stage{animation:note-settle var(--dur-4) var(--ease-settle) backwards}
+ #modal .gallery-notes.is-active .gallery-note-stage{animation:note-settle var(--dur-4) var(--ease-settle) backwards}
+ #modal :is(.note-pyramid.is-settling .note-stage,.gallery-notes.is-active .gallery-note-stage):nth-of-type(2){animation-delay:150ms}
+ #modal :is(.note-pyramid.is-settling .note-stage,.gallery-notes.is-active .gallery-note-stage):nth-of-type(3){animation-delay:300ms}
+}
+@media (prefers-reduced-motion:reduce){#modal .note-pyramid.is-pending .note-stage{opacity:1}}
+@media print{#modal .note-pyramid .note-stage{opacity:1!important;animation:none!important}}

@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {createDialogMotion} from '../dist/dialog-motion.mjs';
+import {createDialogMotion,settleNotes} from '../dist/dialog-motion.mjs';
 function rig({reduced=false,animate=true}={}){
  const active=new Set(),animations=[];let closes=0,opens=0;
  const dialog={open:false,classList:{add:n=>active.add(n),remove:n=>active.delete(n)},showModal(){this.open=true;opens++},close(){this.open=false;closes++}};
@@ -29,4 +29,21 @@ for(const config of [{reduced:true},{animate:false}])test('reduced motion or uns
 });
 test('a failed animation still completes closing without leaving the page locked',async()=>{
  const r=rig();r.motion.open();let done=false;r.motion.close(()=>done=true);r.animations.at(-1).cancel();await settle();assert.equal(r.dialog.open,false);assert.equal(done,true);
+});
+
+function notesRig({reduced=false,observer=true}={}){
+ const set=new Set(),observers=[];const pyramid={isConnected:true,classList:{add:n=>set.add(n),remove:n=>set.delete(n),contains:n=>set.has(n)}};
+ const win={matchMedia:()=>({matches:reduced})};
+ if(observer)win.IntersectionObserver=class{constructor(cb){this.cb=cb;this.off=false;observers.push(this)}observe(){}disconnect(){this.off=true}};
+ const on=settleNotes({querySelector:()=>pyramid},{window:win});
+ return {on,set,observers,report:visible=>observers.at(-1).cb([{isIntersecting:visible}])};
+}
+test('a pyramid below the fold waits hidden, then settles once when scrolled to',()=>{
+ const r=notesRig();assert.equal(r.on,true);r.report(false);assert.deepEqual([...r.set],['is-pending']);
+ r.report(true);assert.deepEqual([...r.set],['is-settling']);assert.equal(r.observers[0].off,true,'one settle per opening');
+});
+test('a pyramid already in view at its first report is never hidden',()=>{const r=notesRig();r.report(true);assert.equal(r.set.size,0);assert.equal(r.observers[0].off,true);});
+test('reduced motion or no IntersectionObserver hides no notes, and a new product replaces the previous observer',()=>{
+ assert.equal(notesRig({reduced:true}).on,false);assert.equal(notesRig({observer:false}).on,false);
+ const a=notesRig();const first=a.observers[0];notesRig();assert.equal(first.off,true);
 });

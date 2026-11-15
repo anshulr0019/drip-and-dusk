@@ -24,3 +24,21 @@ export function createDialogMotion(dialog,{window:win=window}={}){
  function refresh(element){if(element&&allowed()&&!closing)element.animate([{opacity:.45,transform:'translateY(6px)'},{opacity:1,transform:'translateY(0)'}],{duration:170,easing:'ease-out'});}
  return {open,close,refresh};
 }
+
+// In a freshly opened product, the note pyramid settles in layers (opening, heart, base) the first time it scrolls into
+// view, like drops coming to rest. Only a pyramid that is below the fold at its first report is hidden, and only until it
+// is reported in view; reduced motion or no IntersectionObserver hides nothing. One observer at a time.
+let settling=null;
+export function settleNotes(scope,{window:win=window}={}){
+ settling?.disconnect();settling=null;
+ const pyramid=scope?.querySelector('.note-pyramid');
+ if(!pyramid||!win.IntersectionObserver||win.matchMedia('(prefers-reduced-motion: reduce)').matches)return false;
+ let first=true;
+ const io=settling=new win.IntersectionObserver(entries=>{
+  const entry=entries[entries.length-1];
+  if(!pyramid.isConnected){io.disconnect();return;}
+  if(first){first=false;if(entry.isIntersecting){io.disconnect();return;}pyramid.classList.add('is-pending');return;}
+  if(entry.isIntersecting){pyramid.classList.remove('is-pending');pyramid.classList.add('is-settling');io.disconnect();}
+ },{threshold:.2});
+ io.observe(pyramid);return true;
+}
