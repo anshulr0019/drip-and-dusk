@@ -908,3 +908,9 @@ html{scrollbar-gutter:stable}
  #storefront .photo-format{transition:opacity var(--dur-1)}
 }
 @media(prefers-reduced-motion:reduce){#storefront .product-card .product-photo img{scale:none!important;translate:none!important}}
+
+/* ==== Refresh: the bag moment. cart-feedback.mjs flies a brass drop (a rotated teardrop) from the tapped button into the
+   header bag; it never takes pointer events and is removed when it lands. Storefront notices share the bag panel's paper and brass. */
+.bag-drop{position:fixed;left:0;top:0;z-index:40;width:10px;height:10px;border-radius:0 50% 50% 50%;background:radial-gradient(circle at 65% 65%,#f3dfae,#b8975c 55%,#8a6e3f);box-shadow:0 1px 3px rgba(60,44,20,.35);pointer-events:none;opacity:0;will-change:transform,opacity}
+@media(prefers-reduced-motion:reduce){.bag-drop{display:none}}
+body:not(.is-admin) .toast{background:#fbfaf6;color:var(--c-ink);border:1px solid #d9cfba;border-left:3px solid var(--c-brass);border-radius:3px;box-shadow:0 12px 42px #18160e24;font-size:var(--t-sm);line-height:1.45;max-width:min(420px,calc(100vw - 32px));text-align:left}
