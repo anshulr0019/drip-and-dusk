@@ -928,3 +928,13 @@ body:not(.is-admin) .toast{background:#fbfaf6;color:var(--c-ink);border:1px soli
 }
 @media (prefers-reduced-motion:reduce){#modal .note-pyramid.is-pending .note-stage{opacity:1}}
 @media print{#modal .note-pyramid .note-stage{opacity:1!important;animation:none!important}}
+
+/* ==== Refresh: finder steps. On a new step the choices (and, at the end, the results) arrive in a short cascade, at most
+   about 280 ms, and the current progress segment fills. Choosing an option re-renders without .is-entering, so nothing replays. */
+@keyframes finder-arrive{from{opacity:0;transform:translate3d(0,8px,0)}to{opacity:1;transform:none}}
+@keyframes finder-fill{from{transform:scaleX(0)}to{transform:none}}
+@media(prefers-reduced-motion:no-preference){
+ #modal.finder-dialog :is(.finder-options,.finder-results).is-entering>*{animation:finder-arrive var(--dur-3) var(--ease-settle) calc(var(--i,0) * 35ms) backwards}
+ #modal.finder-dialog .finder-progress.is-entering li.current{background:var(--c-line)}
+ #modal.finder-dialog .finder-progress.is-entering li.current:after{display:block;content:'';position:absolute;inset:0;height:auto;background:var(--c-brass);transform-origin:left center;animation:finder-fill 520ms var(--ease-settle) 60ms backwards}
+}
