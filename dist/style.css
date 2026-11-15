@@ -888,3 +888,23 @@ html{scrollbar-gutter:stable}
 #storefront #hot-sellers{background:linear-gradient(180deg,#f3ece1 0,var(--c-paper) 280px)}
 #storefront .featured-section{background:radial-gradient(85% 70% at 92% -12%,rgba(205,160,98,.2),transparent 62%),radial-gradient(70% 65% at -4% 112%,rgba(122,78,72,.24),transparent 62%),#262722}
 #storefront .contact-section{background:linear-gradient(112deg,#f0e8db 0%,#ebdcca 55%,#e5d2c5 100%);border-color:#dccbb8}
+
+/* ==== Refresh: product cards. Photos fade in once decoded (.img-fade is set by hero-motion.mjs; without it nothing is hidden).
+   Desktop pointers get a slow settle of the bottle and the opening notes; touch gets a clear press. The individual scale and
+   translate properties compose with each photo's framing transform, so per-bottle framing is untouched. */
+.img-fade :is(.product-photo,.edit-bottle,.feature-bottle) img:not(.is-loaded){opacity:0}
+.img-fade :is(.product-photo,.edit-bottle,.feature-bottle) img{transition:opacity 260ms ease-out,transform .55s,scale var(--dur-4) var(--ease-settle),translate var(--dur-4) var(--ease-settle)}
+#storefront .photo-notes{display:none}
+#storefront .product-name{-webkit-tap-highlight-color:transparent}
+#storefront .product-card:has(.product-name:active) .product-photo img{scale:.97;transition-duration:260ms,.55s,120ms,120ms}
+#storefront .product-card:has(.product-name:active) .product-name{color:var(--c-brass-text)}
+@media(hover:hover) and (pointer:fine){
+ #storefront .product-card:hover .product-photo img{scale:1.035;translate:0 -3px}
+ #storefront .product-card:hover .product-name{text-decoration:underline;text-decoration-color:var(--c-brass);text-decoration-thickness:1px;text-underline-offset:5px}
+ #storefront .photo-notes{display:block;position:absolute;z-index:2;left:0;right:0;bottom:0;padding:30px var(--s-3) var(--s-3);background:linear-gradient(rgba(250,248,243,0),rgba(250,248,243,.95) 42%);color:var(--c-ink-soft);font-size:var(--t-xs);line-height:1.45;opacity:0;transform:translateY(6px);transition:opacity var(--dur-2) var(--ease),transform var(--dur-3) var(--ease);pointer-events:none}
+ #storefront .photo-notes b{display:block;margin-bottom:2px;color:var(--c-brass-text);font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+ #storefront .product-card:is(:hover,:focus-within) .photo-notes{opacity:1;transform:none}
+ #storefront .product-card:is(:hover,:focus-within) .photo-format{opacity:0}
+ #storefront .photo-format{transition:opacity var(--dur-1)}
+}
+@media(prefers-reduced-motion:reduce){#storefront .product-card .product-photo img{scale:none!important;translate:none!important}}

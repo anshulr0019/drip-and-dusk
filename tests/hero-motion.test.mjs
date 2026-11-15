@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-import {initHeroMotion,initReveal} from '../dist/hero-motion.mjs';
+import {initHeroMotion,initReveal,initImageFade} from '../dist/hero-motion.mjs';
 function classes(){const s=new Set();return {add:(...x)=>x.forEach(v=>s.add(v)),remove:x=>s.delete(x),contains:x=>s.has(x),toggle(x,on){on?s.add(x):s.delete(x)}}}
 // Any window listener is recorded (the old scroll/resize ones would show up here); an IntersectionObserver is only present when asked for.
 function rig({reduced=false,fine=true,observer=false}={}){
@@ -113,4 +113,24 @@ test('the photo drift is a named view-timeline, motion-safe, supported-only and 
  assert.match(block,/\.hero\.is-still \.hero-media\{animation:none\}/);
  assert.match(block,/@keyframes hero-drift\{to\{translate:0 5%\}\}/,'the individual translate property composes with the pointer transform');
  assert.doesNotMatch(block,/is-alive/,'active from first paint, never gated by the script');
+});
+
+function fadeRig({reduced=false}={}){
+ const root=new EventTarget(),img=(complete,tag='IMG')=>({tagName:tag,complete,classList:classes(),matches:()=>tag==='IMG'});
+ const imgs=[img(true),img(false)];root.querySelectorAll=()=>imgs;
+ const doc={documentElement:{classList:classes()}};const win={matchMedia:()=>({matches:reduced})};
+ return {root,imgs,doc,img,on:initImageFade({document:doc,window:win,root})};
+}
+test('photos fade in only once loaded or failed, and cached photos are shown at once',()=>{
+ const r=fadeRig();assert.equal(r.on,true);assert.equal(r.doc.documentElement.classList.contains('img-fade'),true);
+ assert.equal(r.imgs[0].classList.contains('is-loaded'),true,'already decoded: never hidden');assert.equal(r.imgs[1].classList.contains('is-loaded'),false);
+ const later=r.img(false),failed=r.img(false),other=r.img(false,'VIDEO');
+ for(const [type,target] of [['load',later],['error',failed],['load',other]]){const e=new Event(type);Object.defineProperty(e,'target',{value:target});r.root.dispatchEvent(e);}
+ assert.equal(later.classList.contains('is-loaded'),true);assert.equal(failed.classList.contains('is-loaded'),true,'a broken photo still shows its alt text');assert.equal(other.classList.contains('is-loaded'),false);
+});
+test('reduced motion hides no photo',()=>{const r=fadeRig({reduced:true});assert.equal(r.on,false);assert.equal(r.doc.documentElement.classList.contains('img-fade'),false);});
+test('the photo fade has a single hidden state, gated by .img-fade',async()=>{
+ const css=await readFile(new URL('../dist/style.css',import.meta.url),'utf8');
+ assert.match(css,/\.img-fade :is\(\.product-photo,\.edit-bottle,\.feature-bottle\) img:not\(\.is-loaded\)\{opacity:0\}/);
+ assert.equal((css.match(/is-loaded\)\{opacity:0\}/g)||[]).length,1);
 });

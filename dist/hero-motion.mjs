@@ -63,3 +63,15 @@ export function initReveal({document:doc=document,window:win=window,root=doc.que
  doc.documentElement.classList.add('reveal-ready');refresh();
  return {refresh};
 }
+
+// Product photos (cards, mood tiles, the featured edit) fade in once decoded instead of popping in line by line.
+// load/error do not bubble, so one capture listener on the store covers every render. The hidden state needs
+// .img-fade, which only this function adds, and every image (even a cached one) fires load or error.
+const FADE='.product-photo img,.edit-bottle img,.feature-bottle img';
+export function initImageFade({document:doc=document,window:win=window,root=doc.querySelector('#storefront')}={}){
+ if(!root||win.matchMedia('(prefers-reduced-motion: reduce)').matches)return false;
+ const done=e=>{const img=e.target;if(img.tagName==='IMG'&&img.matches(FADE))img.classList.add('is-loaded');};
+ root.addEventListener('load',done,true);root.addEventListener('error',done,true);
+ for(const img of root.querySelectorAll(FADE))if(img.complete)img.classList.add('is-loaded');
+ doc.documentElement.classList.add('img-fade');return true;
+}
