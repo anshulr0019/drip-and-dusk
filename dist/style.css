@@ -875,3 +875,16 @@ html{scrollbar-gutter:stable}
 #storefront .filters select:hover{border-color:#cfc6b5}
 #storefront .filters select:focus-visible{outline:2px solid var(--c-focus);outline-offset:1px;border-color:var(--c-ink-soft)}
 @media(min-width:761px){#storefront .filters select{font-size:var(--t-sm);min-height:46px}}
+
+/* ==== Refresh: dusk light. Static gradients only (no fixed attachment, no animation), so scrolling costs nothing extra.
+   The mood tiles run from daylight to evening: fresh, golden hour, sunset, after dark. */
+#storefront .scent-edit.edit-fresh{background:linear-gradient(165deg,#f3f1e8,#e8eae0)}
+#storefront .scent-edit.edit-under3000{background:linear-gradient(165deg,#f5eee3,#ece1d1)}
+#storefront .scent-edit.edit-warm{background:linear-gradient(165deg,#f6eadd,#eed9c4)}
+#storefront .scent-edit.edit-dark{background:linear-gradient(165deg,#eee6e3,#e2d6d8)}
+#storefront .scent-edit{border-color:rgba(122,101,64,.16)}
+@media(hover:hover){#storefront .scent-edit:hover{border-color:rgba(122,101,64,.55);box-shadow:inset 0 0 0 100vmax rgba(41,38,34,.025)}}
+#storefront .scent-edit[aria-pressed=true]{border-color:var(--c-brass);box-shadow:inset 0 0 0 100vmax rgba(41,38,34,.03)}
+#storefront #hot-sellers{background:linear-gradient(180deg,#f3ece1 0,var(--c-paper) 280px)}
+#storefront .featured-section{background:radial-gradient(85% 70% at 92% -12%,rgba(205,160,98,.2),transparent 62%),radial-gradient(70% 65% at -4% 112%,rgba(122,78,72,.24),transparent 62%),#262722}
+#storefront .contact-section{background:linear-gradient(112deg,#f0e8db 0%,#ebdcca 55%,#e5d2c5 100%);border-color:#dccbb8}
