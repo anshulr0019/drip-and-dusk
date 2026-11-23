@@ -3,15 +3,15 @@
 const cleaned=new Map(),clean=s=>{s=String(s||'');let v=cleaned.get(s);if(v===undefined){if(cleaned.size>5000)cleaned.clear();v=s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();cleaned.set(s,v)}return v};
 export const matchesNoteTerm=(note,term)=>term==='sand'?/\bsand\b/.test(clean(note)):clean(note).includes(term);
 export const noteTerms={
- fresh:['bergamot','lemon','lime','orange','mandarin','tangerine','grapefruit','apple','pineapple','aquatic','marine','citrus','mint','green','pear','sea water','ambergris'],
- sweet:['vanilla','praline','tonka','dates','candied','gourmand','caramel','chocolate','honey','tropical'],
- woody:['wood','patchouli','cedar','sandalwood','oud','fir balsam','vetiver'],
- floral:['flower','jasmine','orchid','heliotrope','iris','tuberose','lily','peony','rose','lavender','violet','magnolia','neroli','freesia','orris'],
- coffee:['coffee'],
- spicy:['pepper','cinnamon','nutmeg','saffron','cardamom','ginger','basil','thyme','armoise'],
- leather:['leather'],
- marine:['sea water','marine','aquatic','ambergris','sand','driftwood'],
- tea:['tea']
+ fresh:['bergamot','lemon','lime','orange','mandarin','tangerine','grapefruit','apple','pineapple','aquatic','marine','citrus','mint','green','pear','sea water','ambergris','yuzu','citron','petitgrain','petit grain','clementine','kumquat','verbena','litsea','raspberr','blackcurrant','black currant','black current','redcurrant','cassis','peach','nectarine','apricot','plum','mango','lychee','litchi','strawberr','rhubarb','passionfruit','passion fruit','guava','melon','pomegranate','cherry','berries','blueberry','blackberry','kiwi','papaya','dragon fruit','pitahaya','fig','fruit','cucumber','galbanum','bamboo','cactus','tomato lea','granny smith','anjou','cedrat','sea notes','sea accord','sea salt','seaweed','ozon','calone','aquozone','cascalone','water notes','dew'],
+ sweet:['vanilla','praline','tonka','toka bean','dates','candied','gourmand','caramel','chocolate','honey','tropical','sugar','toffee','butterscotch','marshmallow','almond','coconut','milk','cream','cocoa','cacao','brulee','meringue','biscuit','cookie','cupcake','candy','pistachio','hazelnut','chestnut','nutty','coumarin','maltol','lactonic','butter','gelato','panna cotta','dulce de leche','frosting','jam','rum','cognac','whiskey','amaretto','liqueur','liquor','boozy','banana','sapodilla','champagne','sweet note','sweet accord'],
+ woody:['wood','patchouli','cedar','sandalwood','oud','fir balsam','vetiver','vetivar','oakmoss','oak moss','moss','oak','cypress','cypriol','nagarmotha','guaiac','gaiac','birch','mahogany','pine tree','siberian pine','pine needle','spruce','cashmeran','cashmere','iso e super','papyrus','palo santo','gurjan','gurjum','incense','frankincense','olibanum','smoke','smoky','cade','truffle','earthy','orris root'],
+ floral:['flower','jasmine','jasmin','sambac','orchid','heliotrop','iris','tuberose','lily','peony','rose','lavender','lavandin','violet','magnolia','neroli','freesia','orris','floral','blossom','petal','ylang','gardenia','osmanthus','frangipani','tiare','muguet','lotus','cyclamen','carnation','narcissus','mimosa','lilac','hibiscus','daisy','marigold','geranium','pelargonium','linden','broom','hawthorn','honeysuckle','champaca','mahonia','hedione','reseda','chamomile','rangoon creeper','rosyfolia','tubercose','immortelle','plumeria'],
+ coffee:['coffee','espresso','arabica','mocha'],
+ spicy:['pepper','cinnamon','nutmeg','saffron','cardamom','ginger','basil','thyme','armoise','spic','clove','pimento','allspice','turmeric','cumin','coriander','caraway','star anise','anise','licorice','liquorice','sage','rosemary','bay leaf','laurel','oregano','myrtle','artemisia','mugwort','tarragon','juniper','angelica','davana','aromatic','herbal','elemi','mastic','lentisk'],
+ leather:['leather','suede','castoreum','birch tar','cade','animalic'],
+ marine:['sea water','marine','aquatic','ambergris','amber gris','sand','driftwood','sea notes','sea accord','sea salt','salt','seaweed','ozon','calone','aquozone','cascalone','water notes','mineral notes'],
+ tea:['tea','mate','matcha','oolong','earl grey']
 };
 const split=s=>(Array.isArray(s)?s:String(s||'').split(/[·,;\n]/)).map(n=>String(n).trim()).filter(Boolean);
 export function notePyramid(p){

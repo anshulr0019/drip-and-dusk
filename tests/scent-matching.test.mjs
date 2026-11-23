@@ -45,3 +45,12 @@ test('a single citrus or flower note does not misclassify a rich gourmand as a f
  const seed=products.filter(p=>p.order<1000),fresh=recommendScents(seed,{...answers,style:'fresh',budget:'any'});assert.deepEqual(new Set(fresh.map(m=>m.product.group)),new Set(['hawas','qaed']));
  const floral=recommendScents(seed,{...answers,style:'floral'});assert.deepEqual(floral.map(m=>m.product.group),['yara']);
 });
+test('common perfumery notes reach the right finder style, and look-alike words do not cross over',async()=>{
+ const {noteTerms,matchesNoteTerm}=await import('../dist/fragrance-notes.mjs');
+ const styleOf=n=>Object.keys(noteTerms).filter(s=>noteTerms[s].some(t=>matchesNoteTerm(n,t)));
+ for(const [note,style] of [['Raspberry','fresh'],['Yuzu','fresh'],['Gardenia','floral'],['Ylang-ylang','floral'],['Marshmallow','sweet'],['Coconut','sweet'],['Oakmoss','woody'],['Frankincense','woody'],['Clary Sage','spicy'],['Suede','leather'],['Sea salt','marine'],['Maté','tea']])assert.ok(styleOf(note).includes(style),note+' should count as '+style);
+ assert.deepEqual(styleOf('Pineapple'),['fresh']);
+ assert.ok(!styleOf('Coconut water').includes('marine'));
+ // Amber and musk are left out on purpose: no current finder style describes them honestly.
+ assert.deepEqual(styleOf('Musk'),[]);assert.deepEqual(styleOf('Amber'),[]);
+});
