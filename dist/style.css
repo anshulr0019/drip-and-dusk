@@ -938,3 +938,15 @@ body:not(.is-admin) .toast{background:#fbfaf6;color:var(--c-ink);border:1px soli
  #modal.finder-dialog .finder-progress.is-entering li.current{background:var(--c-line)}
  #modal.finder-dialog .finder-progress.is-entering li.current:after{display:block;content:'';position:absolute;inset:0;height:auto;background:var(--c-brass);transform-origin:left center;animation:finder-fill 520ms var(--ease-settle) 60ms backwards}
 }
+
+.finder-specific-note{display:grid;gap:8px;margin:16px 0}
+.finder-specific-note label{font-weight:600}
+.finder-specific-note input{width:100%;min-height:44px;padding:8px 12px;border:1px solid var(--line);background:var(--paper);color:var(--ink)}
+
+.owner-note-entry{min-width:0;margin:0 0 12px}
+.owner-note-entry label{display:block;margin:0 0 4px}
+.owner-note-entry textarea{display:block;width:100%}
+.owner-note-suggestions{margin:2px 0 0;padding:0;list-style:none;border:1px solid var(--line);background:var(--paper)}
+.owner-note-suggestions li{display:flex;align-items:center;min-height:44px;padding:8px 12px;color:var(--ink);cursor:pointer;overflow-wrap:anywhere}
+.owner-note-suggestions li+li{border-top:1px solid var(--line)}
+.owner-note-suggestions li:hover,.owner-note-suggestions [aria-selected=true]{background:var(--cream);outline:1px solid var(--accent);outline-offset:-1px}

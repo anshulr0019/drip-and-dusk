@@ -1,4 +1,4 @@
-import {notePyramid,processNotes,notesError,noteTerms,matchesNoteTerm,validNoteList} from './fragrance-notes.mjs';
+import {notePyramid,processNotes,notesError,noteStyles,normalizeNote,validNoteList} from './fragrance-notes.mjs';
 import {catalogue,defaults,inStock,fragranceProfile} from './core.mjs';
 
 export const occasions = [
@@ -19,6 +19,15 @@ export const styles = [
  {id:'leather',label:'Leathery',detail:'Leather accords & a darker texture'},
  {id:'marine',label:'Marine',detail:'Sea-water, ambergris & coastal accords'},
  {id:'tea',label:'Tea notes',detail:'Tea listed in the note pyramid'},
+ {id:'green',label:'Green & leafy',detail:'Cut grass, fig leaf & green accords'},
+ {id:'amber',label:'Amber & resins',detail:'Amber, benzoin & labdanum'},
+ {id:'musk',label:'Musky',detail:'Musk, ambrette & soft skin accords'},
+ {id:'powdery',label:'Powdery',detail:'Orris, talc & powder accords'},
+ {id:'smoky',label:'Smoky & incense',detail:'Incense, smoke & tobacco'},
+ {id:'boozy',label:'Boozy',detail:'Rum, whisky, cognac & wine accords'},
+ {id:'drinks',label:'Drink accords',detail:'Cola, tea, juices & cocktails'},
+ {id:'unusual',label:'Unusual accords',detail:'Less common and hard-to-classify notes'},
+ {id:'note',label:'Specific note',detail:'Search for a note in the collection'},
  {id:'unsure',label:'Not sure yet',detail:'Help me explore the collection'}
 ];
 export const budgets = [
@@ -31,19 +40,45 @@ export const formats = [
  {id:'either',label:'Either format'}
 ];
 const knownNotes=new Map(defaults().products.filter(p=>!p.instagramSource&&p.group!=='oud-for-glory').map(p=>[p.group,p.notes]));
-const terms=noteTerms;
 const directions={fresh:/fresh|aquatic|citrus|fruity/,sweet:/sweet|gourmand|vanilla/,floral:/floral/,woody:/wood|oud|earth/,coffee:/coffee/};
 const clean=s=>String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
 export function verifiedForFinder(p){
  if(!p.notePyramid&&p.signatureNotes)return p.finderVerified===true&&validNoteList(p.signatureNotes)&&p.notes===processNotes(p).notes;
  const notes=p.notePyramid?processNotes(p).notes:String(p.notes||'');
- if(notesError(notePyramid(p))||(p.notePyramid&&p.notes&&p.notes!==notes))return false;
- if(p.finderVerified===false||notes.split('/').length!==3||notes.split('/').some(s=>!s.trim())||/pending|conflict|unverified|unknown|confirm|verification/i.test(notes))return false;
+ if(p.finderVerified===false||notesError(notePyramid(p)))return false;
+ if(p.notePyramid&&p.notes&&p.notes!==notes)return false;
+ if(!p.notePyramid&&notes.split('/').length!==3)return false;
  return p.finderVerified===true||knownNotes.get(p.group)===notes;
 }
-function evidence(p,style){
- if(p.signatureNotes&&!p.notePyramid)return p.signatureNotes.filter(n=>terms[style].some(t=>matchesNoteTerm(n,t))).map(note=>({note,weight:3}));
- return [notePyramid(p).top.join(' · '),notePyramid(p).heart.join(' · '),notePyramid(p).base.join(' · ')].flatMap((stage,i)=>stage.split(/[·,;]/).map(n=>n.trim()).filter(n=>n&&terms[style].some(t=>matchesNoteTerm(n,t))).map(note=>({note,weight:[2,3,2][i]})));
+function noteStages(p){
+ if(p.signatureNotes&&!p.notePyramid)return [[p.signatureNotes,3]];
+ const {top,heart,base}=notePyramid(p);
+ return [[top,2],[heart,3],[base,2]];
+}
+function evidence(p,style,wantedNote){
+ const found=new Map();
+ for(const [notes,weight] of noteStages(p)){
+  for(const note of notes){
+   const key=normalizeNote(note);
+   const matches=style==='note'?key===wantedNote:noteStyles(note).includes(style);
+   if(matches&&weight>(found.get(key)?.weight||0))found.set(key,{note,weight});
+  }
+ }
+ return [...found.values()];
+}
+export const specificNoteKey=value=>typeof value==='string'&&value.length<=80&&validNoteList([value])?normalizeNote(value):'';
+export function catalogueNoteOptions(products){
+ const options=new Map();
+ for(const p of catalogue(products)){
+  if(!formats.slice(0,2).some(f=>f.id===p.format)||!(p.enquiryOnly||inStock(p))||!verifiedForFinder(p))continue;
+  for(const [notes] of noteStages(p)){
+   for(const note of notes){
+    const key=specificNoteKey(note);
+    if(key&&!options.has(key))options.set(key,note);
+   }
+  }
+ }
+ return [...options.values()].sort((a,b)=>a.localeCompare(b));
 }
 function affinity(p,occasion){
 
@@ -60,10 +95,12 @@ export function discoverScents(products,answers){
 }
 function rankScents(products,answers,references){
  if(!occasions.some(o=>o.id===answers?.occasion)||!styles.some(s=>s.id===answers?.style)||!budgets.some(b=>b.id===String(answers?.budget))||!formats.some(f=>f.id===answers?.format))return [];
+ const wantedNote=answers.style==='note'?specificNoteKey(answers.note):'';
+ if(answers.style==='note'&&!wantedNote)return [];
  const limit=answers.budget==='any'?Infinity:Number(answers.budget),byGroup=new Map();
  for(const p of catalogue(products)){
   if(!['Full bottle','Decant'].includes(p.format)||!(references?p.enquiryOnly:inStock(p))||!verifiedForFinder(p)||(!references&&p.price>limit)||(answers.format!=='either'&&p.format!==answers.format))continue;
-  const found=answers.style==='unsure'?[]:evidence(p,answers.style);
+  const found=answers.style==='unsure'?[]:evidence(p,answers.style,wantedNote);
   if(answers.style!=='unsure'&&!found.length)continue;
   const primary=answers.style!=='unsure'&&(directions[answers.style]?.test(clean(fragranceProfile(p).family))||(answers.style==='sweet'&&/creamy|sweet|gourmand/.test(clean(p.description))));
   // A citrus top note alone does not make a warm amber scent a fresh recommendation.
@@ -80,7 +117,9 @@ function rankScents(products,answers,references){
 }
 function explain(item,answers){
  const p=item.product,profile=fragranceProfile(p),selected=styles.find(s=>s.id===answers.style);
- const reason=answers.style==='unsure'?`${profile.family} is a direction to explore for ${occasions.find(o=>o.id===answers.occasion).label.toLowerCase()}. ${profile.pairing}.`:`${item.notes.join(', ')} ${item.notes.length===1?'is listed':'are listed'} in its published notes, matching your ${selected.label.toLowerCase()} preference.`;
+ const reason=answers.style==='note'
+  ? `${item.notes.join(', ')} ${item.notes.length===1?'is':'are'} listed in this fragrance’s published notes.`
+  : answers.style==='unsure'?`${profile.family} is a direction to explore for ${occasions.find(o=>o.id===answers.occasion).label.toLowerCase()}. ${profile.pairing}.`:`${item.notes.join(', ')} ${item.notes.length===1?'is listed':'are listed'} in its published notes, matching your ${selected.label.toLowerCase()} preference.`;
  const tradeOff=answers.style==='coffee'&&!/coffee/i.test(profile.family)?`Coffee is one note within a ${profile.family.toLowerCase()} profile; it is not necessarily the dominant impression.`:answers.occasion==='gift'?'A scent preference is personal. A decant can help the recipient try it first.':answers.occasion==='office'||answers.occasion==='cafe'?'For a shared indoor space, start with a light application.':p.format==='Decant'?'A seller-filled discovery size; the original bottle photo is a fragrance reference.':'A full-bottle choice. Consider a decant first if this scent direction is new to you.';
  return {reason,tradeOff};
 }

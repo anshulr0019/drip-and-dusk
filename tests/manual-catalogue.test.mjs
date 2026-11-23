@@ -36,3 +36,19 @@ test('a burst of 150 catalogue reads shares one short-lived public snapshot and 
  assert(responses.every(r=>r.status===200&&r.data.products.length===defaults().products.length));assert.equal(reads,1);assert.equal(expiryWrites,1);
  s.advance(5001);await s.request('/api/catalogue');assert.equal(reads,2);
 });
+
+test('owner-saved reference notes and custom notes immediately reach the finder',async t=>{
+ const s=setup(t);
+ const p={...defaults().products[0],id:'test-expanded-notes',group:'test-expanded-notes',name:'Note Finder Test',
+  quantity:3,price:1800,reference:null,finderVerified:true,family:'',notes:'',
+  notePyramid:{top:['Yuzu'],heart:['Hojicha','Handmade paper accord'],base:['Beer/Ale','Benzoin']}};
+ const saved=await s.request('/api/admin/products/'+p.id,{method:'PUT',asOwner:true,body:{product:p,expectedRevision:null}});
+ assert.equal(saved.status,200);
+ const publicProduct=(await s.request('/api/catalogue')).data.products.find(row=>row.id===p.id);
+ assert.deepEqual(publicProduct.notePyramid,p.notePyramid);
+ const base={occasion:'daily',format:'Full bottle',budget:'3000'};
+ for(const preference of [{style:'tea'},{style:'boozy'},{style:'note',note:'handmade paper accord'}]){
+  const result=await s.request('/api/scent-matches',{method:'POST',body:{answers:{...base,...preference}}});
+  assert.ok(result.data.matches.some(match=>match.product.id===p.id),preference.style);
+ }
+});
