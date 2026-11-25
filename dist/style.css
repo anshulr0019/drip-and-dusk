@@ -835,13 +835,13 @@ body.hero-in-view:not(.is-admin) .header #bag-count{background:#f7f4eb;color:#29
 /* Mehas puts three individually linked products in the first screen. */
 #storefront .hero-mehas{
  display:grid;
- grid-template-columns:minmax(0,.85fr) minmax(0,1.4fr);
+ grid-template-columns:minmax(230px,.65fr) minmax(0,1.65fr);
  align-items:center;
  align-content:center;
- gap:14px clamp(20px,4vw,72px);
+ gap:14px clamp(20px,3vw,58px);
  height:auto;
  min-height:max(560px,100svh);
- padding:98px max(5vw,calc((100vw - 1370px)/2)) 80px;
+ padding:98px max(3.4vw,calc((100vw - 1520px)/2)) 80px;
 }
 #storefront .hero-mehas .mehas-backdrop{
  background:radial-gradient(ellipse at 80% 43%,#534238 0%,#282727 36%,#111416 76%);
@@ -849,7 +849,7 @@ body.hero-in-view:not(.is-admin) .header #bag-count{background:#f7f4eb;color:#29
 #storefront .hero-mehas .hero-content{height:auto;padding:0;min-width:0;grid-column:1;grid-row:1}
 #storefront .hero-mehas .hero-buttons{position:relative;z-index:1;grid-column:1;grid-row:2}
 #storefront .hero-mehas .hero-content>p:not(.eyebrow){margin-bottom:0}
-#storefront .hero-mehas h1{font-size:clamp(47px,6vw,86px)}
+#storefront .hero-mehas h1{font-size:clamp(44px,5.4vw,86px)}
 .mehas-spotlight{position:relative;z-index:1;min-width:0;grid-column:2;grid-row:1 / span 2}
 .mehas-spotlight h2{
  margin:0 0 14px;
@@ -884,7 +884,7 @@ body.hero-in-view:not(.is-admin) .header #bag-count{background:#f7f4eb;color:#29
   align-content:center;
   gap:10px;
   min-height:100svh;
-  padding:74px 16px 64px;
+  padding:74px 8px 76px;
   text-align:center;
  }
  #storefront .hero-mehas .hero-content{display:contents}
@@ -892,14 +892,15 @@ body.hero-in-view:not(.is-admin) .header #bag-count{background:#f7f4eb;color:#29
  #storefront .hero-mehas .eyebrow{display:none}
  #storefront .hero-mehas h1{margin:0;font-size:clamp(38px,10vw,50px);line-height:1;letter-spacing:-.035em}
  #storefront .hero-mehas #hero-description{justify-self:center;margin:0}
- #storefront .hero-mehas .mehas-spotlight{grid-area:auto;margin:4px auto;max-width:440px;width:100%}
+ #storefront .hero-mehas .mehas-spotlight{grid-area:auto;margin:4px auto;max-width:560px;width:100%}
  #storefront .hero-mehas .hero-buttons{grid-area:auto;inset:auto;flex-direction:row;align-items:center;justify-content:center;flex-wrap:wrap;gap:2px 12px}
  #storefront .hero-mehas .hero-buttons .btn{width:auto;min-height:44px;max-width:100%;padding:10px 12px;font-size:11px}
  #storefront .hero-mehas .hero-finder{font-size:11px;gap:5px}
  #storefront .hero-mehas .hero-scroll{bottom:23px}
  .mehas-spotlight h2{margin-bottom:8px}
- .mehas-card-name{padding:7px 2px 0;font-size:clamp(15px,4.1vw,24px)}
- .mehas-card-meta,.mehas-card-stock{padding-inline:2px}
+ .mehas-card img{aspect-ratio:5/6;object-position:43% center}
+ .mehas-card-name{padding:7px 2px 0;font-size:clamp(16px,4.5vw,24px)}
+ .mehas-card-meta,.mehas-card-stock{padding-inline:2px;font-size:11px}
  .mehas-card-stock{padding-bottom:7px}
 }
 
