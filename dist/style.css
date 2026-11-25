@@ -832,6 +832,77 @@ body.hero-in-view:not(.is-admin) .header #bag-count{background:#f7f4eb;color:#29
 @media(prefers-reduced-motion:reduce){#storefront .hero-content>*{animation:none!important}body:not(.is-admin) .header{transition:none}}
 @media(min-width:761px){body.hero-in-view:not(.is-admin) :is(.finder-launcher,.community-launcher){opacity:0;visibility:hidden;pointer-events:none}}
 
+/* Mehas puts three individually linked products in the first screen. */
+#storefront .hero-mehas{
+ display:grid;
+ grid-template-columns:minmax(0,.85fr) minmax(0,1.4fr);
+ align-items:center;
+ align-content:center;
+ gap:14px clamp(20px,4vw,72px);
+ height:auto;
+ min-height:max(560px,100svh);
+ padding:98px max(5vw,calc((100vw - 1370px)/2)) 80px;
+}
+#storefront .hero-mehas .mehas-backdrop{
+ background:radial-gradient(ellipse at 80% 43%,#534238 0%,#282727 36%,#111416 76%);
+}
+#storefront .hero-mehas .hero-content{height:auto;padding:0;min-width:0;grid-column:1;grid-row:1}
+#storefront .hero-mehas .hero-buttons{position:relative;z-index:1;grid-column:1;grid-row:2}
+#storefront .hero-mehas .hero-content>p:not(.eyebrow){margin-bottom:0}
+#storefront .hero-mehas h1{font-size:clamp(47px,6vw,86px)}
+.mehas-spotlight{position:relative;z-index:1;min-width:0;grid-column:2;grid-row:1 / span 2}
+.mehas-spotlight h2{
+ margin:0 0 14px;
+ color:#dfcca7;
+ font:600 11px/1.3 var(--sans);
+ text-transform:uppercase;
+ letter-spacing:.2em;
+}
+.mehas-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(6px,1vw,16px)}
+.mehas-card{
+ display:flex;
+ flex-direction:column;
+ min-width:0;
+ overflow:hidden;
+ color:#f7f1e6;
+ background:#1a1919;
+ border:1px solid #a48d695c;
+}
+.mehas-card img{width:100%;height:auto;aspect-ratio:1;object-fit:cover;background:#fff}
+.mehas-card-name{padding:9px 8px 0;font:400 clamp(16px,2.25vw,30px)/1.15 var(--serif);overflow-wrap:anywhere}
+.mehas-card-meta,.mehas-card-stock{padding-inline:8px;font-size:clamp(10px,1.02vw,13px);line-height:1.45}
+.mehas-card-meta{padding-top:4px}
+.mehas-card-stock{padding-block:4px 10px;color:#dfcca7}
+.mehas-card:focus-visible{outline:2px solid #dfcca7;outline-offset:2px}
+@media(hover:hover){.mehas-card:hover{border-color:#dfcca7}}
+.mehas-packaging{margin-top:14px}
+.mehas-packaging summary{cursor:pointer;text-underline-offset:3px;text-decoration:underline}
+.mehas-packaging img{display:block;width:100%;height:auto;margin-top:10px}
+@media(max-width:760px){
+ #storefront .hero-mehas{
+  grid-template-columns:minmax(0,1fr);
+  align-content:center;
+  gap:10px;
+  min-height:100svh;
+  padding:74px 16px 64px;
+  text-align:center;
+ }
+ #storefront .hero-mehas .hero-content{display:contents}
+ #storefront .hero-mehas .hero-content>*,#storefront .hero-mehas .hero-buttons{position:relative;z-index:1}
+ #storefront .hero-mehas .eyebrow{display:none}
+ #storefront .hero-mehas h1{margin:0;font-size:clamp(38px,10vw,50px);line-height:1;letter-spacing:-.035em}
+ #storefront .hero-mehas #hero-description{justify-self:center;margin:0}
+ #storefront .hero-mehas .mehas-spotlight{grid-area:auto;margin:4px auto;max-width:440px;width:100%}
+ #storefront .hero-mehas .hero-buttons{grid-area:auto;inset:auto;flex-direction:row;align-items:center;justify-content:center;flex-wrap:wrap;gap:2px 12px}
+ #storefront .hero-mehas .hero-buttons .btn{width:auto;min-height:44px;max-width:100%;padding:10px 12px;font-size:11px}
+ #storefront .hero-mehas .hero-finder{font-size:11px;gap:5px}
+ #storefront .hero-mehas .hero-scroll{bottom:23px}
+ .mehas-spotlight h2{margin-bottom:8px}
+ .mehas-card-name{padding:7px 2px 0;font-size:clamp(15px,4.1vw,24px)}
+ .mehas-card-meta,.mehas-card-stock{padding-inline:2px}
+ .mehas-card-stock{padding-bottom:7px}
+}
+
 /* Mobile shortcuts stay available on the hero and collection. Native dialogs sit above them. */
 @media(max-width:760px){
  body:not(.is-admin) :is(.finder-launcher,.community-launcher){position:fixed;bottom:max(14px,calc(env(safe-area-inset-bottom) + 10px));width:48px;height:48px;min-height:48px;max-width:none;padding:0;border-radius:50%;opacity:1;visibility:visible;transform:none;pointer-events:auto;justify-content:center}

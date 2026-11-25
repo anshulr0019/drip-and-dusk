@@ -1,3 +1,4 @@
+import {mehasProducts} from '../dist/mehas-products.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync,existsSync} from 'node:fs';
@@ -17,7 +18,7 @@ test('Existing identities stay unchanged and catalogue upgrade is idempotent',()
  const original=defaults().products.filter(p=>p.order<2000).map(p=>({...p,price:123,quantity:2}));
  const state={catalogueRevision:8,products:original,settings:{}};const next=migrateCatalogue(state);
  assert.deepEqual(next.products.slice(0,original.length),original);
- assert.equal(next.products.length,original.length+novemberProducts.length);assert.equal(migrateCatalogue(next),next);
+ assert.equal(next.products.length,original.length+novemberProducts.length+mehasProducts.length);assert.equal(migrateCatalogue(next),next);
 });
 test('All imported assets and source links are real; kits never pretend to share a pyramid',()=>{
  for(const p of novemberProducts){assert.ok(existsSync(new URL('../dist/'+p.image,import.meta.url)),p.image);if(p.source)assert.match(p.source,/^https:\/\//);if(p.format==='Discovery kit'){assert.equal(p.finderVerified,false);assert.ok(p.packContents?.length);assert.equal(p.notePyramid,undefined);}}

@@ -1,3 +1,4 @@
+import {mehasProducts} from '../dist/mehas-products.mjs';
 import {novemberProducts,novemberFragranceFacts} from '../dist/november-products.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -21,7 +22,7 @@ test('browser revision upgrades pending seed data, preserving commerce, media, a
  for(const k of ['notePyramid','factsRevision','finderVerified'])delete pending[k];
  const custom={...all[0],notePyramid:{top:['Lemon'],heart:['Rose'],base:['Musk']},notes:'Lemon / Rose / Musk'};delete custom.factsRevision;
  const state={...defaults(),catalogueRevision:3,products:[pending,custom]};const next=migrateCatalogue(state);
- assert.equal(next.products.length,141+novemberProducts.length);assert.equal(next.products[0].price,4567);assert.equal(next.products[0].size,150);assert.equal(next.products[0].quantity,9);assert.equal(next.products[0].hidden,true);assert.equal(next.products[0].image,pending.image);assert(next.products[0].notePyramid.heart.includes('Leather'));assert.equal(next.products[1],custom);assert.equal(migrateCatalogue(next),next);assert(!pending.notePyramid);
+ assert.equal(next.products.length,141+novemberProducts.length+mehasProducts.length);assert.equal(next.products[0].price,4567);assert.equal(next.products[0].size,150);assert.equal(next.products[0].quantity,9);assert.equal(next.products[0].hidden,true);assert.equal(next.products[0].image,pending.image);assert(next.products[0].notePyramid.heart.includes('Leather'));assert.equal(next.products[1],custom);assert.equal(migrateCatalogue(next),next);assert(!pending.notePyramid);
 });
 test('discovery suggestions support tea, marine and leather without implying available stock or satisfying an unknown price cap',()=>{
  for(const style of ['tea','marine','leather','spicy']){const results=discoverScents(all,{...answer,style});assert(results.length,style);assert(results.every(m=>m.product.enquiryOnly&&!inStock(m.product)&&m.notes.length));assert(results.every(m=>m.tradeOff.includes('seller confirmation')));}

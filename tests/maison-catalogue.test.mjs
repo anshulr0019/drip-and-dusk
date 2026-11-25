@@ -1,3 +1,4 @@
+import {mehasProducts} from '../dist/mehas-products.mjs';
 import {novemberProducts} from '../dist/november-products.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -23,13 +24,13 @@ test('all 92 requested bottles preserve the exact prices, nine-bottle stock and 
   for(const source of p.noteSources)assert.equal(new URL(source.url).protocol,'https:');
   if(!p.finderVerified){assert(p.notesCaveat,p.name);assert.equal(verifiedForFinder(p),false,p.name);}
  }
- assert.equal(defaults().products.length,170+novemberProducts.length);
+ assert.equal(defaults().products.length,170+novemberProducts.length+mehasProducts.length);
 });
 test('the one-time browser addition preserves existing owner changes and later deletions',()=>{
  const owned={...maisonProducts[0],price:777,quantity:3,available:false,hidden:true,image:'data:image/jpeg;base64,eA=='};
  const merged=mergeMaisonProducts([owned]);assert.equal(merged.length,92);assert.equal(merged[0],owned);
  const before={...defaults(),catalogueRevision:7,products:[owned]};const after=migrateCatalogue(before);
- assert.equal(after.products.length,92+novemberProducts.length);assert.equal(after.products[0],owned);assert.equal(after.catalogueRevision,defaults().catalogueRevision);
+ assert.equal(after.products.length,92+novemberProducts.length+mehasProducts.length);assert.equal(after.products[0],owned);assert.equal(after.catalogueRevision,defaults().catalogueRevision);
  const removed={...after,products:after.products.slice(1)};assert.equal(migrateCatalogue(removed),removed);
 });
 test('production insert is additive and replay-safe, preserving reservations and existing stock',()=>{
@@ -57,8 +58,10 @@ test('checkout accepts a stocked new bottle and refuses an N/A bottle',async t=>
  const tooMany=await s.request('/api/checkout/quote',{method:'POST',body:{basket:[{id:stocked.id,qty:10}],postcode:'411001'}});
  assert.equal(tooMany.status,400);
 });
-test('our edit lists buyable bottles first and keeps the curated order within each group',()=>{
- const list=filterProducts(defaults().products,{sort:'curated'}),n=list.filter(inStock).length;
+test('our edit keeps buyable bottles first after the Mehas spotlight and preserves the curated order',()=>{
+ const ranked=filterProducts(defaults().products,{sort:'curated'});
+ assert.deepEqual(ranked.slice(0,mehasProducts.length).map(p=>p.id),mehasProducts.map(p=>p.id));
+ const list=ranked.slice(mehasProducts.length),n=list.filter(inStock).length;
  assert(n>=59);assert(list.slice(0,n).every(inStock));assert(!list.slice(n).some(inStock));
  for(const part of [list.slice(0,n),list.slice(n)])assert.deepEqual(part.map(p=>p.order),[...part.map(p=>p.order)].sort((a,b)=>a-b));
 });

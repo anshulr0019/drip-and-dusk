@@ -1,3 +1,4 @@
+import {mehasProducts} from '../dist/mehas-products.mjs';
 import {novemberProducts} from '../dist/november-products.mjs';
 import test from 'node:test';import assert from 'node:assert/strict';import {readFileSync,existsSync} from 'node:fs';import {DatabaseSync} from 'node:sqlite';
 import {communityProducts,mergeCommunityOffers} from '../dist/community-products.mjs';
@@ -5,7 +6,7 @@ import {defaults,migrateCatalogue,validateProduct,inStock,priceLabel,referenceEn
 import {prepareProduct} from '../backend/catalogue.mjs';
 const get=id=>communityProducts.find(p=>p.id===id);
 test('47 deduplicated dated offers add 46 variants and update existing Inception without creating sellable stock',()=>{
- const all=defaults().products;assert.equal(communityProducts.length,47);assert.equal(all.length,170+novemberProducts.length);assert.equal(new Set(all.map(p=>p.id)).size,all.length);
+ const all=defaults().products;assert.equal(communityProducts.length,47);assert.equal(all.length,170+novemberProducts.length+mehasProducts.length);assert.equal(new Set(all.map(p=>p.id)).size,all.length);
  for(const p of communityProducts){assert.equal(validateProduct(p),'',p.id);assert.equal(inStock(p),false);assert.equal(p.quantity,0);assert.equal(p.available,false);assert(existsSync(new URL('../dist/'+p.image,import.meta.url)));assert.equal(p.communityOffer.contact,'917021915706');assert.equal(basketSummary(all,[{id:p.id,qty:1}]).valid,false);const saved=prepareProduct(p);assert.deepEqual(saved.communityOffer,p.communityOffer);}
  const inception=all.find(p=>p.id==='mykonos-inception-bottle');assert.equal(inception.price,2899);assert.equal(inception.size,100);assert(inception.notePyramid.heart.includes('Black tea'));
 });
