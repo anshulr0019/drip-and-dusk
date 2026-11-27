@@ -50,6 +50,15 @@ The owner gets a Telegram message for every new Direct UPI order, every submitte
    ```
 5. In Owner studio → Today, press **Send a test alert**.
 
+### Shipmozo shipping
+
+Paid orders get a **Book Shipmozo shipment** panel in Owner studio → Orders. The owner picks the pickup address (listed live from the Shipmozo account), checks the parcel weight and box size, presses **Get courier prices**, chooses a courier and presses **Book shipment**. The site sends the order to Shipmozo, assigns the courier, schedules the pickup and saves the AWB. **Print shipping label**, **Refresh tracking** and **Cancel Shipmozo shipment** then appear on the order. Every 5 minutes the Worker asks Shipmozo for the courier status of booked orders (each order at most every 30 minutes) and moves them to Shipped or Delivered; problem statuses such as RTO are shown to the owner without changing the stage.
+
+Shipmozo has no test mode, so only **live** orders can be booked. Test orders can compare prices but the Book button is off, because demo mode saves a sample address.
+
+1. Check the keys and save them: `node scripts/shipmozo-check.mjs --login` (or without `--login` to paste the keys).
+2. Apply migration `0015_shipmozo.sql` and redeploy the Worker.
+
 ### Photo storage
 
 Uploaded product photos are stored in a Cloudflare R2 bucket (binding `MEDIA`) and served from `/media/…` with long-lived caching, instead of being embedded in the catalogue. Create the bucket once before deploying the Worker:

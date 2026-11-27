@@ -43,3 +43,6 @@ REQUIRE_SIGNED_PROXY=false
 # Optional owner alerts on Telegram (see README → Telegram order alerts).
 TELEGRAM_BOT_TOKEN=
 TELEGRAM_CHAT_ID=
+# Optional Shipmozo courier booking (see README → Shipmozo shipping). Check keys first with: node scripts/shipmozo-check.mjs --login
+SHIPMOZO_PUBLIC_KEY=
+SHIPMOZO_PRIVATE_KEY=
